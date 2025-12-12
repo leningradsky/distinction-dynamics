@@ -3,16 +3,16 @@
 {-
   STANDARD MODEL GAUGE GROUP FROM DD
   ==================================
-  
-  Цепочка: Δ ≠ ∅ → Уровни различий → U(1) × SU(2) × SU(3)
-  
-  ВЕРСИЯ 2.0: ВСЕ ПОСТУЛАТЫ ЗАМЕНЕНЫ НА ДОКАЗАТЕЛЬСТВА
+
+  Chain: Δ ≠ ∅ → Levels of distinctions → U(1) × SU(2) × SU(3)
+
+  VERSION 2.0: ALL POSTULATES REPLACED WITH PROOFS
 -}
 
 module StandardModelFromDD where
 
 ------------------------------------------------------------------------
--- Базовые определения
+-- Basic definitions
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -50,65 +50,65 @@ zero  + n = n
 suc m + n = suc (m + n)
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 1: МОНАДА → U(1)
+-- LEVEL 1: MONAD → U(1)
 ------------------------------------------------------------------------
 
 {-
-  Монада: ОДНО различие от "ничто"
-  
-  Элемент a отличается от ∅.
-  Но "насколько" он отличается? На произвольную фазу!
-  
-  a ~ e^{iθ} · a для любого θ
-  
-  Группа таких фаз: U(1) = {e^{iθ} | θ ∈ [0, 2π)}
-  
-  Физика: электромагнитный заряд = "сила различия от вакуума"
+  Monad: ONE distinction from "nothing"
+
+  Element a is distinct from ∅.
+  But "how much" is it distinct? By arbitrary phase!
+
+  a ~ e^{iθ} · a for any θ
+
+  Group of such phases: U(1) = {e^{iθ} | θ ∈ [0, 2π)}
+
+  Physics: electromagnetic charge = "strength of distinction from vacuum"
 -}
 
--- Монада: один элемент
+-- Monad: one element
 data One : Set where
   • : One
 
--- Единственный элемент различим от "ничего" (⊥)
+-- Single element is distinct from "nothing" (⊥)
 •-exists : One
 •-exists = •
 
--- "Симметрия" монады: только тождество (дискретно)
+-- "Symmetry" of monad: only identity (discrete)
 data Sym₁ : Set where
   id₁ : Sym₁
 
 act₁ : Sym₁ → One → One
 act₁ id₁ • = •
 
--- ВЫВОД U(1):
--- Непрерывное расширение тривиальной группы {e} = U(1)
--- Потому что U(1) — единственная связная компактная абелева группа Ли размерности 1
+-- DERIVATION OF U(1):
+-- Continuous extension of trivial group {e} = U(1)
+-- Because U(1) is the unique connected compact abelian Lie group of dimension 1
 
--- Доказательство через размерность:
+-- Proof via dimension:
 dim-U1 : ℕ
 dim-U1 = 1  -- dim(U(1)) = 1
 
--- U(1) из монады: фаза различия
-U1-from-Monad : One × (ℕ × ℕ)  -- (элемент, (dim группы, порядок элементов))
+-- U(1) from monad: phase of distinction
+U1-from-Monad : One × (ℕ × ℕ)  -- (element, (group dim, element order))
 U1-from-Monad = • , (1 , 1)
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 2: ДИАДА → SU(2)
+-- LEVEL 2: DYAD → SU(2)
 ------------------------------------------------------------------------
 
 {-
-  Диада: ДВА различимых элемента
-  
-  A ≠ B, и оба ≠ ∅
-  
-  Дискретные симметрии: S₂ = {id, swap}
-  Непрерывное расширение: SU(2)
-  
-  Почему SU(2), а не U(2)?
-  - U(2) = U(1) × SU(2) имеет лишний U(1) фактор
-  - Для "чистых" различий (без фазы) берём SU(2)
-  - det = 1 означает сохранение "объёма различий"
+  Dyad: TWO distinguishable elements
+
+  A ≠ B, and both ≠ ∅
+
+  Discrete symmetries: S₂ = {id, swap}
+  Continuous extension: SU(2)
+
+  Why SU(2) and not U(2)?
+  - U(2) = U(1) × SU(2) has extra U(1) factor
+  - For "pure" distinctions (without phase) take SU(2)
+  - det = 1 means preserving "volume of distinctions"
 -}
 
 data Two : Set where
@@ -117,7 +117,7 @@ data Two : Set where
 X≢Y : X ≡ Y → ⊥
 X≢Y ()
 
--- Симметрии диады: S₂
+-- Symmetries of dyad: S₂
 data S₂ : Set where
   id₂  : S₂
   swap : S₂
@@ -127,7 +127,7 @@ act₂ id₂  t = t
 act₂ swap X = Y
 act₂ swap Y = X
 
--- Свойства S₂
+-- Properties of S₂
 swap² : S₂ → S₂
 swap² id₂  = id₂
 swap² swap = id₂
@@ -139,23 +139,23 @@ swap-involution = refl
 order-S₂ : ℕ
 order-S₂ = 2
 
--- ВЫВОД SU(2):
--- SU(2) — единственная односвязная компактная группа Ли размерности 3
--- содержащая S₂ как подгруппу (через матрицы Паули)
+-- DERIVATION OF SU(2):
+-- SU(2) is the unique simply connected compact Lie group of dimension 3
+-- containing S₂ as subgroup (via Pauli matrices)
 
 dim-SU2 : ℕ
 dim-SU2 = 3  -- dim(SU(2)) = 3 = 2² - 1
 
--- SU(2) содержит S₂:
+-- SU(2) contains S₂:
 -- id₂ ↦ I₂, swap ↦ σ₁ = |0 1|
 --                       |1 0|
--- σ₁² = I₂, det(σ₁) = -1, но -σ₁ ∈ SU(2) и (-σ₁)² = I₂
+-- σ₁² = I₂, det(σ₁) = -1, but -σ₁ ∈ SU(2) and (-σ₁)² = I₂
 
 SU2-from-Dyad : Two × (ℕ × ℕ)
 SU2-from-Dyad = X , (3 , 2)
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 3: ТРИАДА → SU(3)
+-- LEVEL 3: TRIAD → SU(3)
 ------------------------------------------------------------------------
 
 data Three : Set where
@@ -170,7 +170,7 @@ B≢C ()
 C≢A : C ≡ A → ⊥
 C≢A ()
 
--- Симметрии триады: S₃
+-- Symmetries of triad: S₃
 data S₃ : Set where
   e   : S₃
   r   : S₃
@@ -197,7 +197,7 @@ act₃ s₃ A = C
 act₃ s₃ B = B
 act₃ s₃ C = A
 
--- Порядок r = 3
+-- Order of r = 3
 order-r : ℕ
 order-r = 3
 
@@ -208,165 +208,165 @@ order-S₃ = 6
 dim-SU3 : ℕ
 dim-SU3 = 8  -- dim(SU(3)) = 8 = 3² - 1
 
--- SU(3) содержит S₃ (через перестановочные матрицы)
+-- SU(3) contains S₃ (via permutation matrices)
 SU3-from-Triad : Three × (ℕ × ℕ)
 SU3-from-Triad = A , (8 , 6)
 
 ------------------------------------------------------------------------
--- ИЕРАРХИЯ УРОВНЕЙ
+-- HIERARCHY OF LEVELS
 ------------------------------------------------------------------------
 
 {-
-  Почему три уровня, а не больше?
-  
-  Уровень 1: Точка (0D замыкание) — "есть/нет"
-  Уровень 2: Линия (1D замыкание) — "туда/сюда"
-  Уровень 3: Цикл  (2D замыкание) — "A→B→C→A"
-  
-  После уровня 3 новых топологических структур нет!
-  Уровень 4 = уровень 3 + лишний элемент (не даёт нового)
-  
-  Математически: π₂(S²) = ℤ ≠ 0, но π₃(S³) = ℤ, π₄(S⁴) = 0
-  Физически: только 3+1 измерения наблюдаются
+  Why three levels, not more?
+
+  Level 1: Point (0D closure) — "exists/doesn't exist"
+  Level 2: Line (1D closure) — "forward/backward"
+  Level 3: Cycle (2D closure) — "A→B→C→A"
+
+  After level 3 there are no new topological structures!
+  Level 4 = level 3 + extra element (doesn't give anything new)
+
+  Mathematically: π₂(S²) = ℤ ≠ 0, but π₃(S³) = ℤ, π₄(S⁴) = 0
+  Physically: only 3+1 dimensions are observed
 -}
 
--- Минимальность триады: порядок 3 — минимальный нетривиальный цикл
+-- Minimality of triad: order 3 is minimal non-trivial cycle
 triad-minimal : (order-r ≡ 3) × (order-S₂ ≡ 2)
 triad-minimal = refl , refl
 
 ------------------------------------------------------------------------
--- СТАНДАРТНАЯ МОДЕЛЬ: ТРИ УРОВНЯ СИМУЛЬТАННО
+-- STANDARD MODEL: THREE LEVELS SIMULTANEOUSLY
 ------------------------------------------------------------------------
 
--- Структура калибровочных групп
+-- Structure of gauge groups
 record GaugeHierarchy : Set where
   field
     level₁ : One    -- U(1)
     level₂ : Two    -- SU(2)
     level₃ : Three  -- SU(3)
-    
--- Стандартная Модель = все три уровня
+
+-- Standard Model = all three levels
 SM-structure : GaugeHierarchy
 SM-structure = record { level₁ = • ; level₂ = X ; level₃ = A }
 
--- Размерности
+-- Dimensions
 total-dim : ℕ
 total-dim = dim-U1 + dim-SU2 + dim-SU3  -- 1 + 3 + 8 = 12
 
 dim-check : total-dim ≡ 12
 dim-check = refl
 
--- Калибровочные бозоны: dim(G) штук для каждой группы
--- U(1):  1 бозон (фотон)
--- SU(2): 3 бозона (W⁺, W⁻, Z⁰)
--- SU(3): 8 бозонов (глюоны)
--- Итого: 12 бозонов
+-- Gauge bosons: dim(G) pieces for each group
+-- U(1):  1 boson (photon)
+-- SU(2): 3 bosons (W⁺, W⁻, Z⁰)
+-- SU(3): 8 bosons (gluons)
+-- Total: 12 bosons
 
 ------------------------------------------------------------------------
--- ГИПЕРЗАРЯД: связь уровней
+-- HYPERCHARGE: connection of levels
 ------------------------------------------------------------------------
 
 {-
-  Электрический заряд: Q = I₃ + Y/2
-  
-  I₃ = проекция изоспина (уровень 2)
-  Y  = гиперзаряд (комбинация уровней 1 и 3)
-  
-  Это НЕ произвольное соглашение!
-  
-  DD объяснение:
-  - Заряд = "сумма весов" на разных уровнях различий
-  - Коэффициенты (1, 1/2) фиксируются аномалиями
+  Electric charge: Q = I₃ + Y/2
+
+  I₃ = isospin projection (level 2)
+  Y  = hypercharge (combination of levels 1 and 3)
+
+  This is NOT an arbitrary convention!
+
+  DD explanation:
+  - Charge = "sum of weights" at different levels of distinctions
+  - Coefficients (1, 1/2) are fixed by anomalies
 -}
 
--- Заряды кварков и лептонов
+-- Charges of quarks and leptons
 data Fermion : Set where
-  u-L d-L : Fermion  -- левые кварки (дублет)
-  u-R d-R : Fermion  -- правые кварки (синглеты)
-  e-L ν-L : Fermion  -- левые лептоны (дублет)
-  e-R     : Fermion  -- правый электрон
+  u-L d-L : Fermion  -- left quarks (doublet)
+  u-R d-R : Fermion  -- right quarks (singlets)
+  e-L ν-L : Fermion  -- left leptons (doublet)
+  e-R     : Fermion  -- right electron
 
--- Изоспин I₃ (уровень 2)
-I₃ : Fermion → ℕ  -- упрощённо: 0 = -1/2, 1 = +1/2, 2 = 0
+-- Isospin I₃ (level 2)
+I₃ : Fermion → ℕ  -- simplified: 0 = -1/2, 1 = +1/2, 2 = 0
 I₃ u-L = 1  -- +1/2
 I₃ d-L = 0  -- -1/2
 I₃ ν-L = 1  -- +1/2
 I₃ e-L = 0  -- -1/2
-I₃ u-R = 2  -- 0 (синглет)
+I₃ u-R = 2  -- 0 (singlet)
 I₃ d-R = 2  -- 0
 I₃ e-R = 2  -- 0
 
--- Гиперзаряд Y (уровень 1 + 3)
--- Значения: Y(q-L) = 1/3, Y(u-R) = 4/3, Y(d-R) = -2/3
+-- Hypercharge Y (level 1 + 3)
+-- Values: Y(q-L) = 1/3, Y(u-R) = 4/3, Y(d-R) = -2/3
 -- Y(l-L) = -1, Y(e-R) = -2
 
 ------------------------------------------------------------------------
--- АНОМАЛИИ: почему именно эти заряды?
+-- ANOMALIES: why these charges?
 ------------------------------------------------------------------------
 
 {-
-  Условие отсутствия аномалий:
-  
-  ∑ Y³ = 0  (U(1)³ аномалия)
-  ∑ Y  = 0  (гравитационная аномалия)
-  ∑ T² Y = 0 (смешанная SU(2)²-U(1))
-  
-  Эти условия ФИКСИРУЮТ заряды!
-  
-  DD интерпретация:
-  Аномалия = нарушение самосогласованности различий
-  Отсутствие аномалий = различия образуют замкнутую структуру
+  Anomaly cancellation condition:
+
+  ∑ Y³ = 0  (U(1)³ anomaly)
+  ∑ Y  = 0  (gravitational anomaly)
+  ∑ T² Y = 0 (mixed SU(2)²-U(1))
+
+  These conditions FIX the charges!
+
+  DD interpretation:
+  Anomaly = violation of self-consistency of distinctions
+  Anomaly freedom = distinctions form closed structure
 -}
 
--- Аномалия = несогласованность → ⊥
+-- Anomaly = inconsistency → ⊥
 Anomaly-free : Set
-Anomaly-free = ⊤  -- конструктивно: существует согласованное присвоение зарядов
+Anomaly-free = ⊤  -- constructively: consistent charge assignment exists
 
 anomaly-cancellation : Anomaly-free
 anomaly-cancellation = tt
 
 ------------------------------------------------------------------------
--- СПОНТАННОЕ НАРУШЕНИЕ СИММЕТРИИ
+-- SPONTANEOUS SYMMETRY BREAKING
 ------------------------------------------------------------------------
 
 {-
-  При низких энергиях: SU(2) × U(1) → U(1)_em
-  
-  Механизм Хиггса: поле ⟨φ⟩ ≠ 0 "фиксирует направление" в пространстве изоспина
-  
-  DD интерпретация:
-  - Высокая энергия: все уровни различимы
-  - Низкая энергия: уровни 1 и 2 "сливаются" через Хиггс
-  - Результат: только электромагнитное различие остаётся явным
+  At low energies: SU(2) × U(1) → U(1)_em
+
+  Higgs mechanism: field ⟨φ⟩ ≠ 0 "fixes direction" in isospin space
+
+  DD interpretation:
+  - High energy: all levels are distinguishable
+  - Low energy: levels 1 and 2 "merge" through Higgs
+  - Result: only electromagnetic distinction remains explicit
 -}
 
--- Нарушение симметрии: структура остатка
+-- Symmetry breaking: structure of remnant
 record SymmetryBreaking : Set where
   field
     high-E : GaugeHierarchy           -- SU(3) × SU(2) × U(1)
     low-E  : One × Three              -- U(1)_em × SU(3)_color
-    
+
 symmetry-breaking : SymmetryBreaking
-symmetry-breaking = record 
-  { high-E = SM-structure 
-  ; low-E = • , A 
+symmetry-breaking = record
+  { high-E = SM-structure
+  ; low-E = • , A
   }
 
 ------------------------------------------------------------------------
--- УГОЛ ВАЙНБЕРГА
+-- WEINBERG ANGLE
 ------------------------------------------------------------------------
 
 {-
   sin²θ_W ≈ 0.231
-  
-  Связь: tan θ_W = g'/g, где g, g' — константы связи SU(2) и U(1)
-  
-  DD гипотеза: θ_W определяется отношением "весов" уровней 1 и 2
-  
-  Приближение Фибоначчи: sin²θ_W ≈ 3/13 = F(4)/F(7)
+
+  Relation: tan θ_W = g'/g, where g, g' are coupling constants of SU(2) and U(1)
+
+  DD hypothesis: θ_W is determined by ratio of "weights" of levels 1 and 2
+
+  Fibonacci approximation: sin²θ_W ≈ 3/13 = F(4)/F(7)
 -}
 
--- Числа Фибоначчи
+-- Fibonacci numbers
 fib : ℕ → ℕ
 fib zero = 1
 fib (suc zero) = 1
@@ -385,42 +385,42 @@ check-F4 = refl
 check-F7 : F7 ≡ 13
 check-F7 = refl
 
--- sin²θ_W ≈ 3/13 ≈ 0.2308 (эксперимент: 0.2312)
--- Ошибка: 0.17%
+-- sin²θ_W ≈ 3/13 ≈ 0.2308 (experiment: 0.2312)
+-- Error: 0.17%
 
 ------------------------------------------------------------------------
--- ТРИ ПОКОЛЕНИЯ
+-- THREE GENERATIONS
 ------------------------------------------------------------------------
 
 {-
-  Почему 3 поколения фермионов?
-  
+  Why 3 generations of fermions?
+
   (e, ν_e), (μ, ν_μ), (τ, ν_τ)
   (u, d), (c, s), (t, b)
-  
-  DD ответ: число поколений = число уровней различений = 3
-  
-  Каждое поколение — "проекция" на один из уровней триады
+
+  DD answer: number of generations = number of levels of distinctions = 3
+
+  Each generation is a "projection" onto one of the levels of the triad
 -}
 
 data Generation : Set where
   gen₁ gen₂ gen₃ : Generation
 
--- Связь с триадой
+-- Connection to triad
 gen-to-triad : Generation → Three
 gen-to-triad gen₁ = A
 gen-to-triad gen₂ = B
 gen-to-triad gen₃ = C
 
--- Матрица смешивания (CKM) требует ≥3 поколений для CP-нарушения
--- 2×2 матрица вещественна, нет фазы
--- 3×3 матрица имеет 1 фазу → CP-нарушение
+-- Mixing matrix (CKM) requires ≥3 generations for CP violation
+-- 2×2 matrix is real, no phase
+-- 3×3 matrix has 1 phase → CP violation
 
 three-generations : Generation × (Generation × Generation)
 three-generations = gen₁ , (gen₂ , gen₃)
 
 ------------------------------------------------------------------------
--- ПОЛНЫЙ ВЫВОД: DD → SM
+-- COMPLETE DERIVATION: DD → SM
 ------------------------------------------------------------------------
 
 record StandardModel : Set where
@@ -439,34 +439,34 @@ DD-to-StandardModel = record
   }
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ: 0 постулатов
+-- SUMMARY: 0 postulates
 ------------------------------------------------------------------------
 {-
-  ВЫВЕДЕНО КОНСТРУКТИВНО:
-  
-  1. U(1) из монады (уровень 1)
+  CONSTRUCTIVELY DERIVED:
+
+  1. U(1) from monad (level 1)
      - dim = 1
-     - Фаза различия
-     
-  2. SU(2) из диады (уровень 2)
+     - Phase of distinction
+
+  2. SU(2) from dyad (level 2)
      - dim = 3
-     - Изоспин
-     
-  3. SU(3) из триады (уровень 3)
+     - Isospin
+
+  3. SU(3) from triad (level 3)
      - dim = 8
-     - Цвет
-     
-  4. Иерархия 1 < 2 < 3 (замыкание)
-  
-  5. Три поколения = три уровня
-  
-  6. Угол Вайнберга ≈ 3/13 (Фибоначчи)
-  
-  7. Спонтанное нарушение: high-E → low-E
-  
-  ОТКРЫТЫЕ ВОПРОСЫ (требуют ℝ и дифф. геометрии):
-  
-  - Точное значение θ_W из первых принципов
-  - Массы частиц
-  - Константа связи α
+     - Color
+
+  4. Hierarchy 1 < 2 < 3 (closure)
+
+  5. Three generations = three levels
+
+  6. Weinberg angle ≈ 3/13 (Fibonacci)
+
+  7. Spontaneous breaking: high-E → low-E
+
+  OPEN QUESTIONS (require ℝ and differential geometry):
+
+  - Exact value of θ_W from first principles
+  - Particle masses
+  - Coupling constant α
 -}

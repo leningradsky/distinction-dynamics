@@ -19,7 +19,7 @@ mutual
   data U : Set where
     UNIT EMPTY UNIV : U
     PI SIGMA : (a : U) -> (El a -> U) -> U
-    
+
   El : U -> Set
   El UNIT = Unit
   El EMPTY = Empty
@@ -32,12 +32,12 @@ Distinct a b = Not (a == b)
 
 EqCode : U -> U -> U
 EqCode UNIT UNIT = UNIT
-EqCode EMPTY EMPTY = UNIT  
+EqCode EMPTY EMPTY = UNIT
 EqCode UNIV UNIV = UNIT
 EqCode _ _ = EMPTY
 
-DistinctCode : U -> U -> U
-DistinctCode a b = PI (EqCode a b) (\_ -> EMPTY)
+ DistinctCode : U -> U -> U
+ DistinctCode a b = PI (EqCode a b) (\_ -> EMPTY)
 
 data Three : Set where A B C : Three
 
@@ -61,11 +61,11 @@ exampleTriad = record
   ; CA-witness = absurd
   }
 
--- ТЕОРЕМА: Различие живёт в UNIV
+-- THEOREM: Distinction lives in UNIV
 distinctLivesInU : (a b : U) -> U
 distinctLivesInU a b = DistinctCode a b
 
--- Свидетели на уровне типов
+-- Witnesses at the type level
 unitNeqEmpty : Distinct UNIT EMPTY
 unitNeqEmpty ()
 
@@ -75,7 +75,7 @@ emptyNeqUniv ()
 univNeqUnit : Distinct UNIV UNIT
 univNeqUnit ()
 
--- ВЫВОД: UNIV - универсальный носитель различий
--- Для ЛЮБОЙ пары (a, b) : U x U
--- код их различия DistinctCode a b : U
--- живёт в El UNIV = U
+-- CONCLUSION: UNIV - universal carrier of distinctions
+-- For ANY pair (a, b) : U x U
+-- the code of their distinction DistinctCode a b : U
+-- lives in El UNIV = U

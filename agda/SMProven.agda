@@ -1,21 +1,21 @@
 {-# OPTIONS --safe --without-K #-}
 
 {-
-  STANDARD MODEL FROM DD — ПОЛНОСТЬЮ ДОКАЗАНО
+  STANDARD MODEL FROM DD — FULLY PROVEN
   ============================================
-  
-  Все постулаты заменены конструктивными доказательствами.
-  
-  Цепочка:
-    Монада (1) → U(1) (заряд)
-    Диада (2)  → SU(2) (изоспин)  
-    Триада (3) → SU(3) (цвет)
+
+  All postulates replaced with constructive proofs.
+
+  Chain:
+    Monad (1) → U(1) (charge)
+    Dyad (2)  → SU(2) (isospin)
+    Triad (3) → SU(3) (color)
 -}
 
 module SMProven where
 
 ------------------------------------------------------------------------
--- Базовые определения
+-- Basic definitions
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -23,7 +23,7 @@ data ⊥ : Set where
 record ⊤ : Set where
   constructor tt
 
-¬_ : Set → Set  
+¬_ : Set → Set
 ¬ A = A → ⊥
 
 infix 4 _≡_
@@ -42,7 +42,7 @@ cong : {A B : Set} (f : A → B) {x y : A} → x ≡ y → f x ≡ f y
 cong f refl = refl
 
 ------------------------------------------------------------------------
--- Натуральные числа
+-- Natural numbers
 ------------------------------------------------------------------------
 
 data ℕ : Set where
@@ -62,30 +62,30 @@ zero  * _ = zero
 suc m * n = n + m * n
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 1: МОНАДА → U(1)
+-- LEVEL 1: MONAD → U(1)
 ------------------------------------------------------------------------
 
 {-
-  Монада: ОДНО различие от пустоты
-  
-  Структура: {∗} — единственный элемент
-  
-  Симметрия: автоморфизмы {∗} — только тождество
-  
-  Но! В КОМПЛЕКСНОЙ реализации:
-    ∗ → e^{iθ} ∗ (умножение на фазу)
-    |∗|² сохраняется
-    
-  Это группа U(1) = {e^{iθ} | θ ∈ ℝ/2πℤ}
-  
-  Физика: электромагнитный заряд
+  Monad: ONE distinction from emptiness
+
+  Structure: {∗} — single element
+
+  Symmetry: automorphisms of {∗} — only identity
+
+  But! In COMPLEX realization:
+    ∗ → e^{iθ} ∗ (multiplication by phase)
+    |∗|² is preserved
+
+  This is the group U(1) = {e^{iθ} | θ ∈ ℝ/2πℤ}
+
+  Physics: electromagnetic charge
 -}
 
--- Монада как тип с одним элементом
+-- Monad as type with one element
 data One : Set where
   ∗ : One
 
--- Автоморфизмы One (дискретно)
+-- Automorphisms of One (discrete)
 data Aut-One : Set where
   id₁ : Aut-One
 
@@ -94,19 +94,19 @@ aut-one-unique : (f : Aut-One) → f ≡ id₁
 aut-one-unique id₁ = refl
 
 {-
-  КОНСТРУКТИВНОЕ ДОКАЗАТЕЛЬСТВО:
-  
-  U(1) — это НЕ дискретные автоморфизмы, а непрерывное расширение.
-  
-  В Agda без вещественных чисел мы можем только:
-  1. Определить структуру (один элемент)
-  2. Показать что дискретная симметрия тривиальна
-  3. Указать что непрерывное расширение = U(1)
-  
-  Формально: U(1) = минимальная связная компактная абелева группа Ли.
+  CONSTRUCTIVE PROOF:
+
+  U(1) is NOT discrete automorphisms, but a continuous extension.
+
+  In Agda without real numbers we can only:
+  1. Define the structure (one element)
+  2. Show that discrete symmetry is trivial
+  3. Indicate that continuous extension = U(1)
+
+  Formally: U(1) = minimal connected compact abelian Lie group.
 -}
 
--- Свойство: монада порождает абелеву группу
+-- Property: monad generates abelian group
 record Monad-Structure : Set₁ where
   field
     carrier : Set
@@ -120,25 +120,25 @@ monad-instance = record
   ; unique = λ { ∗ → refl }
   }
 
--- U(1) характеризуется: связность + компактность + абелевость + dim=1
--- Монада даёт dim=1 (один генератор)
+-- U(1) is characterized by: connectedness + compactness + abelianness + dim=1
+-- Monad gives dim=1 (one generator)
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 2: ДИАДА → SU(2)
+-- LEVEL 2: DYAD → SU(2)
 ------------------------------------------------------------------------
 
 {-
-  Диада: ДВА различимых элемента
-  
+  Dyad: TWO distinguishable elements
+
   X ≠ Y
-  
-  Симметрии: S₂ = {e, τ} где τ: X↔Y
-  
-  Комплексное расширение с det=1: SU(2)
-  
-  SU(2) = унитарные 2×2 матрицы с det=1
+
+  Symmetries: S₂ = {e, τ} where τ: X↔Y
+
+  Complex extension with det=1: SU(2)
+
+  SU(2) = unitary 2×2 matrices with det=1
         = {(α, -β*; β, α*) | |α|²+|β|²=1}
-        ≅ S³ (3-сфера)
+        ≅ S³ (3-sphere)
 -}
 
 data Two : Set where
@@ -147,101 +147,101 @@ data Two : Set where
 X≢Y : X ≡ Y → ⊥
 X≢Y ()
 
--- Группа S₂
+-- Group S₂
 data S₂ : Set where
   e₂ : S₂
-  τ  : S₂  -- транспозиция
+  τ  : S₂  -- transposition
 
--- Действие
+-- Action
 act₂ : S₂ → Two → Two
 act₂ e₂ x = x
 act₂ τ  X = Y
 act₂ τ  Y = X
 
--- Композиция
+-- Composition
 infixl 7 _∘₂_
 _∘₂_ : S₂ → S₂ → S₂
 e₂ ∘₂ g  = g
 τ  ∘₂ e₂ = τ
 τ  ∘₂ τ  = e₂
 
--- S₂ абелева
+-- S₂ is abelian
 S₂-abelian : (f g : S₂) → f ∘₂ g ≡ g ∘₂ f
 S₂-abelian e₂ e₂ = refl
 S₂-abelian e₂ τ  = refl
 S₂-abelian τ  e₂ = refl
 S₂-abelian τ  τ  = refl
 
--- τ² = e (инволюция)
+-- τ² = e (involution)
 τ-involution : τ ∘₂ τ ≡ e₂
 τ-involution = refl
 
 {-
-  КОНСТРУКТИВНОЕ ДОКАЗАТЕЛЬСТВО:
-  
+  CONSTRUCTIVE PROOF:
+
   S₂ → SU(2)?
-  
-  Да! τ представляется матрицей Паули σ₁:
-  
+
+  Yes! τ is represented by Pauli matrix σ₁:
+
   σ₁ = |0 1|
        |1 0|
-  
+
   σ₁² = I, det(σ₁) = -1
-  
-  Для det=1: используем iσ₁ (умножаем на i)
-  
+
+  For det=1: use iσ₁ (multiply by i)
+
   (iσ₁)² = -I ≠ I
-  
-  Но! S₂ вкладывается в PSU(2) = SU(2)/{±I}
-  
-  Или: S₂ вкладывается в SU(2) как {I, iσ₁, -I, -iσ₁}/±I
-  
-  Фактически: S₂ ⊂ SU(2)/{±I} ≅ SO(3)
+
+  But! S₂ embeds in PSU(2) = SU(2)/{±I}
+
+  Or: S₂ embeds in SU(2) as {I, iσ₁, -I, -iσ₁}/±I
+
+  Actually: S₂ ⊂ SU(2)/{±I} ≅ SO(3)
 -}
 
--- Матрица 2×2 (для демонстрации)
+-- Matrix 2×2 (for demonstration)
 data Fin2 : Set where
   f0 f1 : Fin2
 
 Mat2 : Set
-Mat2 = Fin2 → Fin2 → ℕ  -- упрощённо над ℕ
+Mat2 = Fin2 → Fin2 → ℕ  -- simplified over ℕ
 
--- Перестановочная матрица для τ
+-- Permutation matrix for τ
 τ-matrix : Mat2
 τ-matrix f0 f0 = 0
 τ-matrix f0 f1 = 1
 τ-matrix f1 f0 = 1
 τ-matrix f1 f1 = 0
 
--- Тождественная матрица
+-- Identity matrix
 I₂ : Mat2
 I₂ f0 f0 = 1
 I₂ f0 f1 = 0
 I₂ f1 f0 = 0
 I₂ f1 f1 = 1
 
--- Представление S₂ → Mat2
+-- Representation S₂ → Mat2
 perm₂ : S₂ → Mat2
 perm₂ e₂ = I₂
 perm₂ τ  = τ-matrix
 
 ------------------------------------------------------------------------
--- УРОВЕНЬ 3: ТРИАДА → SU(3)
+-- LEVEL 3: TRIAD → SU(3)
 ------------------------------------------------------------------------
 
 {-
-  Триада: ТРИ различимых элемента
-  
+  Triad: THREE distinguishable elements
+
   A ≠ B, B ≠ C, C ≠ A
-  
-  Симметрии: S₃ = {e, r, r², s₁, s₂, s₃}
+
+  Symmetries: S₃ = {e, r, r², s₁, s₂, s₃}
   |S₃| = 6 = 3!
-  
-  S₃ НЕАБЕЛЕВА: r∘s₁ ≠ s₁∘r
-  
-  SU(3) = минимальная унитарная группа содержащая S₃
-  
-  (Доказано в SU3Proven.agda)
+
+  S₃ is NON-ABELIAN: r∘s₁ ≠ s₁∘r
+
+  SU(3) = minimal unitary group containing S₃
+
+  (Proven in SU3Proven.agda)
 -}
 
 data Three : Set where
@@ -283,7 +283,7 @@ act₃ s₃ A = C
 act₃ s₃ B = B
 act₃ s₃ C = A
 
--- Композиция (частично)
+-- Composition (partial)
 infixl 7 _∘₃_
 _∘₃_ : S₃ → S₃ → S₃
 e ∘₃ g = g
@@ -294,10 +294,10 @@ r² ∘₃ r = e
 r² ∘₃ r² = r
 r ∘₃ s₁ = s₃
 s₁ ∘₃ r = s₂
--- (остальные случаи аналогично)
-_ ∘₃ _ = e  -- fallback для неопределённых (упрощение)
+-- (remaining cases similarly)
+_ ∘₃ _ = e  -- fallback for undefined (simplification)
 
--- S₃ неабелева
+-- S₃ is non-abelian
 r∘s₁≡s₃ : r ∘₃ s₁ ≡ s₃
 r∘s₁≡s₃ = refl
 
@@ -314,24 +314,24 @@ S₃-nonabelian : r ∘₃ s₁ ≡ s₁ ∘₃ r → ⊥
 S₃-nonabelian p = s₃≢s₂ (trans (sym r∘s₁≡s₃) (trans p s₁∘r≡s₂))
 
 ------------------------------------------------------------------------
--- ИЕРАРХИЯ: 1 < 2 < 3
+-- HIERARCHY: 1 < 2 < 3
 ------------------------------------------------------------------------
 
 {-
-  Почему именно три уровня?
-  
-  1. МОНАДА: точка — нет структуры кроме "есть/нет"
-  2. ДИАДА: линия — есть направление, но нет цикла
-  3. ТРИАДА: треугольник — минимальный замкнутый цикл
-  
-  После 3: избыточность
-  - Тетрада = триада + "лишний" элемент
-  - Квадрат не примитивнее треугольника
-  
-  Формально: S₃ имеет элементы порядка 3 (минимальный нетривиальный цикл)
+  Why exactly three levels?
+
+  1. MONAD: point — no structure except "exists/doesn't exist"
+  2. DYAD: line — has direction, but no cycle
+  3. TRIAD: triangle — minimal closed cycle
+
+  After 3: redundancy
+  - Tetrad = triad + "extra" element
+  - Square is not more primitive than triangle
+
+  Formally: S₃ has elements of order 3 (minimal non-trivial cycle)
 -}
 
--- Порядок элемента
+-- Order of element
 order : S₃ → ℕ
 order e  = 1
 order r  = 3
@@ -340,11 +340,11 @@ order s₁ = 2
 order s₂ = 2
 order s₃ = 2
 
--- Есть элемент порядка 3
+-- Has element of order 3
 has-order-3 : order r ≡ 3
 has-order-3 = refl
 
--- В S₂ максимальный порядок = 2
+-- In S₂ maximal order = 2
 order₂ : S₂ → ℕ
 order₂ e₂ = 1
 order₂ τ  = 2
@@ -354,11 +354,11 @@ max-order-S₂ e₂ _ = refl
 max-order-S₂ τ ()
 
 ------------------------------------------------------------------------
--- ВЛОЖЕНИЯ: S₂ ⊂ S₃
+-- EMBEDDINGS: S₂ ⊂ S₃
 ------------------------------------------------------------------------
 
--- S₂ вкладывается как стабилизатор
--- Стабилизатор C в S₃ = {e, s₁} ≅ S₂
+-- S₂ embeds as stabilizer
+-- Stabilizer of C in S₃ = {e, s₁} ≅ S₂
 
 stab-C : S₃ → Three
 stab-C g = act₃ g C
@@ -367,11 +367,11 @@ s₂-to-s₃ : S₂ → S₃
 s₂-to-s₃ e₂ = e
 s₂-to-s₃ τ  = s₁
 
--- s₁ фиксирует C
+-- s₁ fixes C
 s₁-fixes-C : act₃ s₁ C ≡ C
 s₁-fixes-C = refl
 
--- Это инъекция
+-- This is an injection
 s₂-to-s₃-injective : (g h : S₂) → s₂-to-s₃ g ≡ s₂-to-s₃ h → g ≡ h
 s₂-to-s₃-injective e₂ e₂ _ = refl
 s₂-to-s₃-injective e₂ τ ()
@@ -379,58 +379,58 @@ s₂-to-s₃-injective τ e₂ ()
 s₂-to-s₃-injective τ τ _ = refl
 
 ------------------------------------------------------------------------
--- СПОНТАННОЕ НАРУШЕНИЕ СИММЕТРИИ
+-- SPONTANEOUS SYMMETRY BREAKING
 ------------------------------------------------------------------------
 
 {-
-  Стандартная Модель: SU(3) × SU(2) × U(1) → SU(3) × U(1)_em
-  
-  DD интерпретация:
-  
-  Высокие энергии: все три уровня различимы
-    Триада (цвет) × Диада (изоспин) × Монада (гиперзаряд)
-    
-  Низкие энергии: диада "сливается" с монадой
-    Триада × (Диада ⊕ Монада → U(1)_em)
-    
-  Хиггс = механизм "склеивания" уровней 1 и 2
+  Standard Model: SU(3) × SU(2) × U(1) → SU(3) × U(1)_em
+
+  DD interpretation:
+
+  High energies: all three levels are distinguishable
+    Triad (color) × Dyad (isospin) × Monad (hypercharge)
+
+  Low energies: dyad "merges" with monad
+    Triad × (Dyad ⊕ Monad → U(1)_em)
+
+  Higgs = mechanism of "gluing" levels 1 and 2
 -}
 
--- Электромагнитный заряд = комбинация изоспина и гиперзаряда
+-- Electromagnetic charge = combination of isospin and hypercharge
 -- Q = I₃ + Y/2
 
 record Fermion : Set where
   field
-    isospin    : ℕ  -- I₃ (упрощённо)
+    isospin    : ℕ  -- I₃ (simplified)
     hypercharge : ℕ  -- Y
 
--- Электрон: I₃ = -1/2, Y = -1 → Q = -1
--- Нейтрино: I₃ = +1/2, Y = -1 → Q = 0
+-- Electron: I₃ = -1/2, Y = -1 → Q = -1
+-- Neutrino: I₃ = +1/2, Y = -1 → Q = 0
 
 ------------------------------------------------------------------------
--- ГЛАВНАЯ ТЕОРЕМА
+-- MAIN THEOREM
 ------------------------------------------------------------------------
 
 record StandardModel-from-DD : Set₁ where
   field
-    -- Уровень 1: Монада
+    -- Level 1: Monad
     monad      : Set
     monad-pt   : monad
     monad-uniq : (x : monad) → x ≡ monad-pt
-    
-    -- Уровень 2: Диада  
+
+    -- Level 2: Dyad
     dyad       : Set
     dyad-X     : dyad
     dyad-Y     : dyad
     dyad-dist  : dyad-X ≡ dyad-Y → ⊥
     S₂-sym     : S₂ → dyad → dyad
-    
-    -- Уровень 3: Триада
+
+    -- Level 3: Triad
     triad      : Set
     S₃-sym     : S₃ → triad → triad
     S₃-nonab   : r ∘₃ s₁ ≡ s₁ ∘₃ r → ⊥
-    
-    -- Вложение
+
+    -- Embedding
     embed₂₃   : S₂ → S₃
 
 SM-proof : StandardModel-from-DD
@@ -450,40 +450,40 @@ SM-proof = record
   }
 
 ------------------------------------------------------------------------
--- ФИЗИЧЕСКИЕ СЛЕДСТВИЯ
+-- PHYSICAL CONSEQUENCES
 ------------------------------------------------------------------------
 
 {-
-  КАЛИБРОВОЧНЫЕ ГРУППЫ:
-  
-  U(1): электромагнетизм
-    - 1 генератор
-    - Фотон (безмассовый)
-    
-  SU(2): слабое взаимодействие
-    - 3 генератора (σ₁, σ₂, σ₃)
-    - W⁺, W⁻, Z⁰ (массивные после нарушения)
-    
-  SU(3): сильное взаимодействие  
-    - 8 генераторов (матрицы Гелл-Манна)
-    - 8 глюонов (безмассовые, но конфайнмент)
-    
-  РАЗМЕРНОСТИ:
+  GAUGE GROUPS:
+
+  U(1): electromagnetism
+    - 1 generator
+    - Photon (massless)
+
+  SU(2): weak interaction
+    - 3 generators (σ₁, σ₂, σ₃)
+    - W⁺, W⁻, Z⁰ (massive after breaking)
+
+  SU(3): strong interaction
+    - 8 generators (Gell-Mann matrices)
+    - 8 gluons (massless, but confinement)
+
+  DIMENSIONS:
     dim U(1) = 1
     dim SU(2) = 3 = 2² - 1
     dim SU(3) = 8 = 3² - 1
-    
-    Итого: 1 + 3 + 8 = 12 калибровочных бозонов
+
+    Total: 1 + 3 + 8 = 12 gauge bosons
 -}
 
 dim-U1 : ℕ
 dim-U1 = 1
 
 dim-SU2 : ℕ
-dim-SU2 = 3  -- n² - 1 при n = 2
+dim-SU2 = 3  -- n² - 1 for n = 2
 
 dim-SU3 : ℕ
-dim-SU3 = 8  -- n² - 1 при n = 3
+dim-SU3 = 8  -- n² - 1 for n = 3
 
 total-gauge-bosons : ℕ
 total-gauge-bosons = dim-U1 + dim-SU2 + dim-SU3
@@ -492,27 +492,27 @@ theorem-12-bosons : total-gauge-bosons ≡ 12
 theorem-12-bosons = refl
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ: ВСЕ ПОСТУЛАТЫ УСТРАНЕНЫ
+-- SUMMARY: ALL POSTULATES ELIMINATED
 ------------------------------------------------------------------------
 
 {-
-  Было:
+  Was:
     postulate U1-from-Monad : Unit
     postulate SU2-from-Dyad : Unit
     postulate SU3-from-Triad : Unit
     postulate Higgs-mechanism : Unit
     postulate No-simple-GUT : Unit
     postulate Weinberg-angle-open : Unit
-    
-  Стало:
-    - Monad-Structure : конструктивно построена
-    - S₂ : определена с доказательствами (абелевость, инволюция)
-    - S₃ : определена с доказательствами (неабелевость)
-    - Вложение S₂ → S₃ : конструктивно с инъективностью
-    - Размерности : вычислены (1 + 3 + 8 = 12)
-    
-  Открытые вопросы (НЕ постулаты, а направления):
-    - Угол Вайнберга (требует вещественных чисел)
-    - Механизм Хиггса (требует теории поля)
-    - Три поколения (связь с k=2?)
+
+  Became:
+    - Monad-Structure : constructively built
+    - S₂ : defined with proofs (abelianness, involution)
+    - S₃ : defined with proofs (non-abelianness)
+    - Embedding S₂ → S₃ : constructive with injectivity
+    - Dimensions : computed (1 + 3 + 8 = 12)
+
+  Open questions (NOT postulates, but directions):
+    - Weinberg angle (requires real numbers)
+    - Higgs mechanism (requires field theory)
+    - Three generations (connection to k=2?)
 -}

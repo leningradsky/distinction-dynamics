@@ -1,10 +1,10 @@
 {-# OPTIONS --safe --without-K #-}
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ФУНДАМЕНТАЛЬНЫЕ КОНСТАНТЫ ИЗ DD
+-- FUNDAMENTAL CONSTANTS FROM DD
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Все константы выводятся из N = 3 (уровни различений)
+-- All constants derived from N = 3 (levels of distinctions)
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
@@ -13,7 +13,7 @@ module FundamentalConstants where
 open import DD-Core
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- РАЗМЕРНОСТИ КАЛИБРОВОЧНЫХ ГРУПП
+-- DIMENSIONS OF GAUGE GROUPS
 -- ═══════════════════════════════════════════════════════════════════════════
 
 dim-U1 : ℕ
@@ -25,7 +25,7 @@ dim-SU2 = 3
 dim-SU3 : ℕ
 dim-SU3 = 8
 
--- Общая размерность
+-- Total dimension
 dim-total : ℕ
 dim-total = dim-U1 + dim-SU2 + dim-SU3  -- = 12
 
@@ -33,7 +33,7 @@ theorem-dim-total : dim-total ≡ 12
 theorem-dim-total = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ФОРМУЛА КОИДЕ: Q = 2/3 = (N-1)/N
+-- KOIDE FORMULA: Q = 2/3 = (N-1)/N
 -- ═══════════════════════════════════════════════════════════════════════════
 
 N-levels : ℕ
@@ -45,12 +45,12 @@ koide-Q-numerator = 2  -- N - 1
 koide-Q-denominator : ℕ
 koide-Q-denominator = 3  -- N
 
--- Q = 2/3 для 3 поколений
+-- Q = 2/3 for 3 generations
 theorem-koide-Q : koide-Q-numerator ≡ N-levels ∸ 1
 theorem-koide-Q = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ФАЗА КОИДЕ: δ = 2/9 = (N-1)/N²
+-- KOIDE PHASE: δ = 2/9 = (N-1)/N²
 -- ═══════════════════════════════════════════════════════════════════════════
 
 koide-delta-num : ℕ
@@ -63,7 +63,7 @@ theorem-koide-delta-denom : koide-delta-denom ≡ N-levels * N-levels
 theorem-koide-delta-denom = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- УГОЛ ВАЙНБЕРГА: sin²θ_W = 3/13 = F(4)/F(7)
+-- WEINBERG ANGLE: sin²θ_W = 3/13 = F(4)/F(7)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 weinberg-numerator : ℕ
@@ -72,8 +72,8 @@ weinberg-numerator = 3  -- F(4)
 weinberg-denominator : ℕ
 weinberg-denominator = 13  -- F(7)
 
--- Проверка Фибоначчи
--- В нашей нумерации: fib 0 = 1, fib 1 = 1, fib 2 = 2, fib 3 = 3, fib 4 = 5, fib 5 = 8, fib 6 = 13
+-- Fibonacci checks
+-- In our numbering: fib 0 = 1, fib 1 = 1, fib 2 = 2, fib 3 = 3, fib 4 = 5, fib 5 = 8, fib 6 = 13
 theorem-weinberg-num-is-F3 : weinberg-numerator ≡ fib 3
 theorem-weinberg-num-is-F3 = refl
 
@@ -81,54 +81,54 @@ theorem-weinberg-denom-is-F6 : weinberg-denominator ≡ fib 6
 theorem-weinberg-denom-is-F6 = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ПОСТОЯННАЯ ТОНКОЙ СТРУКТУРЫ: 1/α = 137 + φ/45
+-- FINE STRUCTURE CONSTANT: 1/α = 137 + φ/45
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Базовое значение 137 = 3*5*10 - 13
--- В нашей нумерации fib 6 = 13
+-- Base value 137 = 3*5*10 - 13
+-- In our numbering fib 6 = 13
 alpha-base : ℕ
 alpha-base = (dim-U1 + 2) * (dim-SU2 + 2) * (dim-SU3 + 2) ∸ fib 6
 
 theorem-alpha-base : alpha-base ≡ 137
 theorem-alpha-base = refl
 
--- Проверка формулы: (1+2)(3+2)(8+2) - 13 = 3*5*10 - 13 = 150 - 13 = 137
+-- Check formula: (1+2)(3+2)(8+2) - 13 = 3*5*10 - 13 = 150 - 13 = 137
 theorem-alpha-decomposition : 3 * 5 * 10 ∸ 13 ≡ 137
 theorem-alpha-decomposition = refl
 
--- Знаменатель поправки: 45 = T_9 = 9*10/2 = 45
--- где 9 = N² = 3²
+-- Correction denominator: 45 = T_9 = 9*10/2 = 45
+-- where 9 = N² = 3²
 correction-denom : ℕ
 correction-denom = 45
 
--- 45 = 9 * 5 = N² * F(4) в нашей нумерации (fib 4 = 5)
+-- 45 = 9 * 5 = N² * F(4) in our numbering (fib 4 = 5)
 theorem-correction-denom : correction-denom ≡ (N-levels * N-levels) * fib 4
 theorem-correction-denom = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- РЕЗЮМЕ: ВСЕ КОНСТАНТЫ ИЗ N = 3
+-- SUMMARY: ALL CONSTANTS FROM N = 3
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- N = 3 (число уровней различений = число поколений фермионов)
+-- N = 3 (number of distinction levels = number of fermion generations)
 --
--- ФОРМУЛЫ:
+-- FORMULAS:
 --
---   Koide Q      = (N-1)/N     = 2/3      (ошибка 0.0009%)
---   Koide δ      = (N-1)/N²    = 2/9      (ошибка 0.02%)
---   sin²θ_W      = F(4)/F(7)   = 3/13     (ошибка 0.19%)
---   1/α (base)   = 3*5*10 - 13 = 137      (ошибка 0.026%)
---   1/α (exact)  = 137 + φ/45             (ошибка 0.00003%)
+--   Koide Q      = (N-1)/N     = 2/3      (error 0.0009%)
+--   Koide δ      = (N-1)/N²    = 2/9      (error 0.02%)
+--   sin²θ_W      = F(4)/F(7)   = 3/13     (error 0.19%)
+--   1/α (base)   = 3*5*10 - 13 = 137      (error 0.026%)
+--   1/α (exact)  = 137 + φ/45             (error 0.00003%)
 --
--- ГДЕ:
+-- WHERE:
 --   3, 5, 10 = dim(U1)+2, dim(SU2)+2, dim(SU3)+2
 --   13 = F(7)
 --   45 = N² * F(5) = 9 * 5
---   φ = золотое сечение (из k=2 рекурсии)
+--   φ = golden ratio (from k=2 recursion)
 --
--- ВСЁ ВЫВОДИТСЯ ИЗ:
---   1. Δ ≠ ∅ (аксиома существования различения)
---   2. k = 2 (минимальная память для нетривиальной рекурсии)
---   3. N = 3 (минимальное замыкание → триада)
+-- ALL DERIVED FROM:
+--   1. Δ ≠ ∅ (axiom of existence of distinction)
+--   2. k = 2 (minimal memory for non-trivial recursion)
+--   3. N = 3 (minimal closure → triad)
 --
 -- ═══════════════════════════════════════════════════════════════════════════

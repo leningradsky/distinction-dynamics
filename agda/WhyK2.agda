@@ -1,27 +1,27 @@
 {-# OPTIONS --safe #-}
 
 {-
-  WHY k=2? - Формальное доказательство необходимости глубины памяти 2
+  WHY k=2? - Formal proof of necessity of memory depth 2
   ===================================================================
-  
-  Вопрос: Почему Fibonacci (k=2), а не k=1 или k=3?
-  
-  Ответ: k=2 — МИНИМАЛЬНОЕ k дающее нетривиальную динамику
-  
-  k=1: x(n+1) = f(x(n))         → экспонента или константа
-  k=2: x(n+1) = f(x(n), x(n-1)) → Fibonacci, φ, сложность
-  k=3: x(n+1) = f(x(n), x(n-1), x(n-2)) → избыточно, не даёт нового
-  
-  ТЕОРЕМА: k=2 — единственное k дающее:
-  1. Нетривиальную рекурсию (не k=1)
-  2. Минимальную сложность (не k≥3)
-  3. Золотое сечение как аттрактор
+
+  Question: Why Fibonacci (k=2), and not k=1 or k=3?
+
+  Answer: k=2 — MINIMAL k giving non-trivial dynamics
+
+  k=1: x(n+1) = f(x(n))         → exponential or constant
+  k=2: x(n+1) = f(x(n), x(n-1)) → Fibonacci, φ, complexity
+  k=3: x(n+1) = f(x(n), x(n-1), x(n-2)) → redundant, gives nothing new
+
+  THEOREM: k=2 — unique k giving:
+  1. Non-trivial recursion (not k=1)
+  2. Minimal complexity (not k≥3)
+  3. Golden ratio as attractor
 -}
 
 module WhyK2 where
 
 ------------------------------------------------------------------------
--- Натуральные числа и арифметика
+-- Natural numbers and arithmetic
 ------------------------------------------------------------------------
 
 data Nat : Set where
@@ -37,58 +37,58 @@ zero * m = zero
 suc n * m = m + (n * m)
 
 ------------------------------------------------------------------------
--- k=1: Тривиальная рекурсия
+-- k=1: Trivial recursion
 ------------------------------------------------------------------------
 
--- Общая форма: x(n+1) = a * x(n)
--- Решение: x(n) = a^n * x(0)
--- Это просто экспонента — нет структуры
+-- General form: x(n+1) = a * x(n)
+-- Solution: x(n) = a^n * x(0)
+-- This is just exponential — no structure
 
--- Пример: удвоение
+-- Example: doubling
 double : Nat -> Nat
 double zero = zero
 double (suc n) = suc (suc (double n))
 
--- double n = 2^n при x(0) = 1
--- Никакого φ, никакой сложности
+-- double n = 2^n when x(0) = 1
+-- No φ, no complexity
 
--- ВЫВОД k=1: Слишком просто, нет emergence
+-- CONCLUSION k=1: Too simple, no emergence
 
 ------------------------------------------------------------------------
--- k=2: Fibonacci — минимальная нетривиальная рекурсия
+-- k=2: Fibonacci — minimal non-trivial recursion
 ------------------------------------------------------------------------
 
--- Общая форма: x(n+1) = a*x(n) + b*x(n-1)
--- Простейший случай: a = b = 1
+-- General form: x(n+1) = a*x(n) + b*x(n-1)
+-- Simplest case: a = b = 1
 
 fib : Nat -> Nat
 fib zero = zero
 fib (suc zero) = suc zero
 fib (suc (suc n)) = fib (suc n) + fib n
 
--- Характеристическое уравнение: λ² = λ + 1
--- Корни: φ = (1+√5)/2 и ψ = (1-√5)/2
--- Общее решение: fib(n) = (φⁿ - ψⁿ)/√5
+-- Characteristic equation: λ² = λ + 1
+-- Roots: φ = (1+√5)/2 and ψ = (1-√5)/2
+-- General solution: fib(n) = (φⁿ - ψⁿ)/√5
 
--- КЛЮЧЕВОЕ: φ появляется НЕОБХОДИМО из k=2!
+-- KEY: φ appears NECESSARILY from k=2!
 
 ------------------------------------------------------------------------
--- Почему φ — аттрактор?
+-- Why φ — attractor?
 ------------------------------------------------------------------------
 
--- Рассмотрим отношение r(n) = fib(n+1)/fib(n)
--- 
+-- Consider the ratio r(n) = fib(n+1)/fib(n)
+--
 -- fib(n+2) = fib(n+1) + fib(n)
--- Делим на fib(n+1):
+-- Divide by fib(n+1):
 -- r(n+1) = 1 + 1/r(n)
 --
--- Фиксированная точка: r = 1 + 1/r
+-- Fixed point: r = 1 + 1/r
 -- => r² = r + 1
 -- => r = φ
 --
--- Это АТТРАКТОР: любое начальное r(0) > 0 сходится к φ
+-- This is an ATTRACTOR: any initial r(0) > 0 converges to φ
 
--- Итерация: r -> 1 + 1/r
+-- Iteration: r -> 1 + 1/r
 -- r=1: 1 + 1/1 = 2
 -- r=2: 1 + 1/2 = 1.5
 -- r=1.5: 1 + 1/1.5 = 1.666...
@@ -97,7 +97,7 @@ fib (suc (suc n)) = fib (suc n) + fib n
 -- r -> φ = 1.618...
 
 ------------------------------------------------------------------------
--- k=3: Избыточность
+-- k=3: Redundancy
 ------------------------------------------------------------------------
 
 -- Tribonacci: x(n+1) = x(n) + x(n-1) + x(n-2)
@@ -108,82 +108,82 @@ trib (suc zero) = zero
 trib (suc (suc zero)) = suc zero
 trib (suc (suc (suc n))) = (trib (suc (suc n)) + trib (suc n)) + trib n
 
--- Характеристическое уравнение: λ³ = λ² + λ + 1
--- Корни: один действительный ≈ 1.839, два комплексных
+-- Characteristic equation: λ³ = λ² + λ + 1
+-- Roots: one real ≈ 1.839, two complex
 --
--- Отношение сходится к ≈ 1.839 (tribonacci constant)
--- Но это НЕ даёт новой структуры:
--- - Нет простого алгебраического выражения
--- - Не связано с геометрией (пятиугольник, спираль)
--- - Избыточная сложность без выгоды
+-- Ratio converges to ≈ 1.839 (tribonacci constant)
+-- But this does NOT give new structure:
+-- - No simple algebraic expression
+-- - Not connected to geometry (pentagon, spiral)
+-- - Redundant complexity without benefit
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА: k=2 оптимально
+-- THEOREM: k=2 is optimal
 ------------------------------------------------------------------------
 
--- Критерий оптимальности: минимальная сложность для emergence
+-- Optimality criterion: minimal complexity for emergence
 --
--- k=1: Сложность 1, emergence 0 — тривиально
--- k=2: Сложность 2, emergence > 0 — φ, спираль, фракталы
--- k=3: Сложность 3, emergence ~ emergence(k=2) — избыточно
+-- k=1: Complexity 1, emergence 0 — trivial
+-- k=2: Complexity 2, emergence > 0 — φ, spiral, fractals
+-- k=3: Complexity 3, emergence ~ emergence(k=2) — redundant
 --
--- По принципу Оккама: выбираем k=2
+-- By Occam's principle: choose k=2
 
--- Формально: emergence(k) / complexity(k) максимально при k=2
+-- Formally: emergence(k) / complexity(k) is maximal at k=2
 
 data Unit : Set where
   tt : Unit
 
--- k=2 оптимально (утверждение)
+-- k=2 is optimal (statement)
 k2-optimal : Unit
 k2-optimal = tt
 
 ------------------------------------------------------------------------
--- Связь с различием
+-- Connection to distinction
 ------------------------------------------------------------------------
 
--- Почему k=2 связано с Δ ≠ ∅?
+-- Why k=2 is related to Δ ≠ ∅?
 --
--- Различие требует ДВА объекта: a ≠ b
--- Память различия требует помнить ОБА: (a, b)
--- Следующее различие: c ≠ (a,b) требует помнить (a,b) и c
--- Но (a,b) — это УЖЕ два слота памяти!
+-- Distinction requires TWO objects: a ≠ b
+-- Memory of distinction requires remembering BOTH: (a, b)
+-- Next distinction: c ≠ (a,b) requires remembering (a,b) and c
+-- But (a,b) — is ALREADY two memory slots!
 --
--- Итого: минимальная память для различия = 2 слота = k=2
+-- Total: minimal memory for distinction = 2 slots = k=2
 
--- Различие (как тип)
--- Distinct a b населён если a ≠ b
+-- Distinction (as type)
+-- Distinct a b is inhabited if a ≠ b
 
--- Пара (память глубины 2)
+-- Pair (memory depth 2)
 record Pair (A B : Set) : Set where
   constructor _,_
   field
     fst : A
     snd : B
 
--- Для различия двух объектов нужно хранить Pair
--- Это и есть k=2!
+-- To distinguish two objects need to store Pair
+-- This is k=2!
 
 ------------------------------------------------------------------------
--- ИТОГ
+-- CONCLUSION
 ------------------------------------------------------------------------
 
 {-
-  ПОЧЕМУ k=2:
-  
-  1. НЕОБХОДИМОСТЬ: k=1 тривиально (экспонента)
-  2. ДОСТАТОЧНОСТЬ: k=2 даёт φ и всю структуру
-  3. МИНИМАЛЬНОСТЬ: k≥3 избыточно
-  4. СВЯЗЬ С Δ: различие требует пару = 2 слота
-  
-  Следствия k=2:
-  - Fibonacci числа
-  - Золотое сечение φ = 1.618...
-  - Логарифмическая спираль
-  - Фракталы и самоподобие
-  - Квазикристаллы (Penrose tiling)
-  
-  k=2 — это НЕ произвольный выбор, а СЛЕДСТВИЕ из Δ ≠ ∅!
+  WHY k=2:
+
+  1. NECESSITY: k=1 is trivial (exponential)
+  2. SUFFICIENCY: k=2 gives φ and all structure
+  3. MINIMALITY: k≥3 is redundant
+  4. CONNECTION TO Δ: distinction requires pair = 2 slots
+
+  Consequences of k=2:
+  - Fibonacci numbers
+  - Golden ratio φ = 1.618...
+  - Logarithmic spiral
+  - Fractals and self-similarity
+  - Quasicrystals (Penrose tiling)
+
+  k=2 — this is NOT an arbitrary choice, but a CONSEQUENCE of Δ ≠ ∅!
 -}
 
 conclusion : Unit
