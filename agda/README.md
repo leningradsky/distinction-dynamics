@@ -1,129 +1,129 @@
-# DD Agda Formalization — ПОЛНАЯ ВЕРИФИКАЦИЯ
+# DD Agda Formalization — COMPLETE VERIFICATION
 
-**Статус: 16/16 файлов компилируются, 0 постулатов**
+**Status: 16/16 files compile, 0 postulates**
 
-## Файлы
+## Files
 
-| Файл | Описание | Статус |
-|------|----------|--------|
-| `DD-Core.agda` | Минимальное ядро (20 определений, 5 теорем) | ✅ 0 постулатов |
-| `DDComplete.agda` | Рефлексивная вселенная без stdlib | ✅ 0 постулатов |
-| `DDWithStdlib.agda` | С agda-stdlib (514 строк) | ✅ 0 постулатов |
-| `DDUniverse.agda` | Полная цепочка DD → SM | ✅ 0 постулатов |
-| `DDUniverseASCII.agda` | ASCII версия | ✅ 0 постулатов |
-| `DDAxiomatic.agda` | Аксиоматическая версия | ✅ 0 постулатов |
-| `ThirdNecessity.agda` | Необходимость третьего | ✅ 0 постулатов |
-| `GoldenRatio.agda` | Фибоначчи и φ | ✅ 0 постулатов |
-| `DistCategory.agda` | Категория различений | ✅ 0 постулатов |
-| `SU3Necessity.agda` | SU(3) необходима | ✅ 0 постулатов |
-| `SU2FromDyad.agda` | SU(2) из диады | ✅ 0 постулатов |
-| `StandardModelFromDD.agda` | SM из DD | ✅ 0 постулатов |
-| `FundamentalConstants.agda` | α, Koide, Weinberg | ✅ 0 постулатов |
-| `ThreeGenerations.agda` | Три поколения | ✅ 0 постулатов |
-| `WhyK2.agda` | Почему k=2 | ✅ 0 постулатов |
-| `ReflexiveU.agda` | Рефлексивная вселенная | ✅ 0 постулатов |
+| File | Description | Status |
+|------|-------------|--------|
+| `DD-Core.agda` | Minimal core (20 definitions, 5 theorems) | ✅ 0 postulates |
+| `DDComplete.agda` | Reflexive universe without stdlib | ✅ 0 postulates |
+| `DDWithStdlib.agda` | With agda-stdlib (514 lines) | ✅ 0 postulates |
+| `DDUniverse.agda` | Complete chain DD → SM | ✅ 0 postulates |
+| `DDUniverseASCII.agda` | ASCII version | ✅ 0 postulates |
+| `DDAxiomatic.agda` | Axiomatic version | ✅ 0 postulates |
+| `ThirdNecessity.agda` | Necessity of the third | ✅ 0 postulates |
+| `GoldenRatio.agda` | Fibonacci and φ | ✅ 0 postulates |
+| `DistCategory.agda` | Category of distinctions | ✅ 0 postulates |
+| `SU3Necessity.agda` | SU(3) is necessary | ✅ 0 postulates |
+| `SU2FromDyad.agda` | SU(2) from dyad | ✅ 0 postulates |
+| `StandardModelFromDD.agda` | SM from DD | ✅ 0 postulates |
+| `FundamentalConstants.agda` | α, Koide, Weinberg | ✅ 0 postulates |
+| `ThreeGenerations.agda` | Three generations | ✅ 0 postulates |
+| `WhyK2.agda` | Why k=2 | ✅ 0 postulates |
+| `ReflexiveU.agda` | Reflexive universe | ✅ 0 postulates |
 
-## Что ДОКАЗАНО (type-checker verified)
+## What is PROVEN (type-checker verified)
 
-### Фундаментальные теоремы
+### Fundamental Theorems
 
-1. **DD-Axiom**: ∃ x y. x ≢ y — (true, false) различимы
-2. **UNIT ≢ EMPTY ≢ UNIV** — три различных кода
-3. **El UNIV = U** — рефлексивная вселенная существует
-4. **fib(n+2) = fib(n+1) + fib(n)** — рекурсия Фибоначчи
-5. **Триада замкнута** — A ≢ B ≢ C ≢ A
+1. **DD-Axiom**: ∃ x y. x ≢ y — (true, false) are distinguishable
+2. **UNIT ≢ EMPTY ≢ UNIV** — three distinct codes
+3. **El UNIV = U** — reflexive universe exists
+4. **fib(n+2) = fib(n+1) + fib(n)** — Fibonacci recurrence
+5. **Triad is closed** — A ≢ B ≢ C ≢ A
 
-### Групповая структура
+### Group Structure
 
-6. **S₃ — группа**: e-left, e-right, assoc, inv-left, inv-right
-7. **r³ = e** — элемент порядка 3
-8. **s² = e** — инволюции
-9. **|S₃| = 6** — мощность группы
-10. **apply-homo** — гомоморфизм действия
+6. **S₃ is a group**: e-left, e-right, assoc, inv-left, inv-right
+7. **r³ = e** — element of order 3
+8. **s² = e** — involutions
+9. **|S₃| = 6** — group cardinality
+10. **apply-homo** — action homomorphism
 
-### Связь с физикой
+### Connection to Physics
 
-11. **order(r) = 3, order(swap) ≤ 2** — S₂ не содержит порядок 3
-12. **SU2-too-small** — SU(2) недостаточна для триады
-13. **A₃ ⊂ SU(3)** — чётные перестановки имеют det = 1
-14. **S₃ = Z₂ ⋉ A₃** — декомпозиция
-15. **isometry** — S₃ сохраняет метрику на Three
+11. **order(r) = 3, order(swap) ≤ 2** — S₂ does not contain order 3
+12. **SU2-too-small** — SU(2) is insufficient for triad
+13. **A₃ ⊂ SU(3)** — even permutations have det = 1
+14. **S₃ = Z₂ ⋉ A₃** — decomposition
+15. **isometry** — S₃ preserves metric on Three
 
-### Константы
+### Constants
 
-16. **dim-total = 12** — размерность SM группы
-17. **alpha-base = 137** — из (1+2)(3+2)(8+2) - 13
-18. **koide-Q = 2/3** — формула Коиде
-19. **weinberg = 3/13** — угол Вайнберга (Фибоначчи)
+16. **dim-total = 12** — SM group dimension
+17. **alpha-base = 137** — from (1+2)(3+2)(8+2) - 13
+18. **koide-Q = 2/3** — Koide formula
+19. **weinberg = 3/13** — Weinberg angle (Fibonacci)
 
-### Категорная структура
+### Categorical Structure
 
-20. **Категория D** — id-left, id-right, assoc
-21. **ConsciousnessF** — контравариантный функтор
-22. **TriadMorphism** — морфизмы триад
-23. **Orbit/Stabilizer** — орбиты и стабилизаторы
+20. **Category D** — id-left, id-right, assoc
+21. **ConsciousnessF** — contravariant functor
+22. **TriadMorphism** — triad morphisms
+23. **Orbit/Stabilizer** — orbits and stabilizers
 
-## Структура доказательств
+## Proof Structure
 
 ```
-Δ ≠ ∅  (DD-Axiom: конструктивно)
+Δ ≠ ∅  (DD-Axiom: constructive)
    │
-   ├── Bool (true ≢ false: конструктивно)
+   ├── Bool (true ≢ false: constructive)
    │
-   ├── ℕ (suc n ≢ n: конструктивно)
+   ├── ℕ (suc n ≢ n: constructive)
    │
-   ├── Fib (k=2 память: конструктивно)
+   ├── Fib (k=2 memory: constructive)
    │
-   ├── Three (триада замкнута: конструктивно)
+   ├── Three (triad is closed: constructive)
    │
-   ├── S₃ (группа перестановок: конструктивно)
+   ├── S₃ (permutation group: constructive)
    │   ├── order(r) = 3
-   │   ├── S₂ не имеет порядка 3
-   │   └── A₃ ⊂ SU(3) через det = 1
+   │   ├── S₂ does not have order 3
+   │   └── A₃ ⊂ SU(3) via det = 1
    │
    ├── SM = SU(3) × SU(2) × U(1)
-   │   ├── Level 3: Триада → SU(3)
-   │   ├── Level 2: Диада → SU(2)
-   │   └── Level 1: Монада → U(1)
+   │   ├── Level 3: Triad → SU(3)
+   │   ├── Level 2: Dyad → SU(2)
+   │   └── Level 1: Monad → U(1)
    │
-   └── Константы
+   └── Constants
        ├── α ≈ 1/137
        ├── Q = 2/3 (Koide)
        └── sin²θ_W = 3/13
 ```
 
-## Запуск верификации
+## Running Verification
 
 ```bash
 cd E:\claudecode\DD_v2\agda
 .\verify_all.bat
 ```
 
-Ожидаемый результат:
+Expected result:
 ```
 PASS: 16
 FAIL: 0
 ```
 
-## Что НЕ формализовано (требует расширенных библиотек)
+## What is NOT Formalized (requires extended libraries)
 
-- **ℝ** — вещественные числа (коиндукция)
-- **φ как предел** — нужен анализ
-- **Fisher information** — нужна теория меры
-- **QM из Fisher** — нужны дифференциальные уравнения
-- **GR из Ricci** — нужна дифференциальная геометрия
+- **ℝ** — real numbers (coinduction)
+- **φ as limit** — requires analysis
+- **Fisher information** — requires measure theory
+- **QM from Fisher** — requires differential equations
+- **GR from Ricci** — requires differential geometry
 
-Эти части **концептуально выведены** в LaTeX документации, но формальная верификация требует библиотек, которых нет в стандартном Agda.
+These parts are **conceptually derived** in LaTeX documentation, but formal verification requires libraries not available in standard Agda.
 
-## Ключевые файлы для понимания
+## Key Files for Understanding
 
-1. **DD-Core.agda** — минимальное ядро, читается за 5 минут
-2. **DDUniverse.agda** — полная цепочка DD → SM
-3. **SU3Necessity.agda** — почему именно SU(3)
-4. **FundamentalConstants.agda** — вывод констант
+1. **DD-Core.agda** — minimal core, readable in 5 minutes
+2. **DDUniverse.agda** — complete chain DD → SM
+3. **SU3Necessity.agda** — why exactly SU(3)
+4. **FundamentalConstants.agda** — constant derivation
 
-## Дата верификации
+## Verification Date
 
 **December 2025**
 
-Все 16 файлов скомпилированы Agda 2.8.0 без ошибок и без постулатов.
+All 16 files compiled with Agda 2.8.0 without errors and without postulates.
