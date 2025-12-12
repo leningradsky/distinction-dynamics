@@ -21,6 +21,10 @@ Author: Based on Andrey Shkursky's DD Theory
 Date: December 2025
 """
 
+import sys
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 import numpy as np
 from fractions import Fraction
 from typing import Tuple, List, Set, Callable, Any

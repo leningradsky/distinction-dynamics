@@ -4,12 +4,12 @@ module DDAxiomatic where
 
 -- ============================================
 -- FOUNDATIONS OF DISTINCTION DYNAMICS (FDD)
--- Строгая аксиоматическая система
--- Критический анализ: что доказано, что нет
+-- Strict axiomatic system
+-- Critical analysis: what is proven, what is not
 -- ============================================
 
 -- ============================================
--- ЧАСТЬ 0: Базовые типы
+-- PART 0: Basic types
 -- ============================================
 
 data Empty : Set where
@@ -32,24 +32,24 @@ data _≡_ {A : Set} (x : A) : A → Set where
   refl : x ≡ x
 
 -- ============================================
--- АКСИОМА DD-1 (Единственная)
+-- AXIOM DD-1 (The Only One)
 -- ============================================
 
 {-
-АКСИОМА: Существует рефлексивная вселенная различений.
+AXIOM: There exists a reflexive universe of distinctions.
 
-Формально: существует U : Set и El : U → Set такие, что El UNIV = U.
+Formally: there exists U : Set and El : U → Set such that El UNIV = U.
 
-Это ЕДИНСТВЕННАЯ аксиома. Всё остальное — определения и теоремы.
+This is the ONLY axiom. Everything else is definitions and theorems.
 
-СРАВНЕНИЕ С CHATGPT/MONDAY:
-Monday утверждает: "Существует Δ ⊆ X × X"
-Наша версия: "El UNIV = U" (рефлексия)
+COMPARISON WITH CHATGPT/MONDAY:
+Monday claims: "There exists Δ ⊆ X × X"
+Our version: "El UNIV = U" (reflexion)
 
-Наша версия СИЛЬНЕЕ:
-- Включает самоприменение Δ(Δ)
-- Формализуется в Agda
-- Компилируется и проверяется
+Our version is STRONGER:
+- Includes self-application Δ(Δ)
+- Formalizable in Agda
+- Compiles and type-checks
 -}
 
 mutual
@@ -58,100 +58,100 @@ mutual
     EMPTY : U
     PI : (a : U) → (El a → U) → U
     SIGMA : (a : U) → (El a → U) → U
-    UNIV : U  -- Рефлексия!
+    UNIV : U  -- Reflexion!
 
   El : U → Set
   El UNIT = Unit
   El EMPTY = Empty
   El (PI a b) = (x : El a) → El (b x)
   El (SIGMA a b) = Σ (El a) (λ x → El (b x))
-  El UNIV = U  -- ← КЛЮЧЕВОЕ: El UNIV = U
+  El UNIV = U  -- ← KEY POINT: El UNIV = U
 
 -- ============================================
--- ОПРЕДЕЛЕНИЕ 1: Морфизмы различения
+-- DEFINITION 1: Distinction morphisms
 -- ============================================
 
--- Морфизм a → b = функция El a → El b
+-- Morphism a → b = function El a → El b
 Hom : U → U → Set
 Hom a b = El a → El b
 
--- Тождественный морфизм
+-- Identity morphism
 idHom : ∀ {a} → Hom a a
 idHom x = x
 
--- Композиция морфизмов (= Δ²)
+-- Composition of morphisms (= Δ²)
 _∘_ : ∀ {a b c} → Hom b c → Hom a b → Hom a c
 (g ∘ f) x = g (f x)
 
 -- ============================================
--- ТЕОРЕМА 1: U содержит минимум 3 различных кода
+-- THEOREM 1: U contains at least 3 distinct codes
 -- ============================================
 
 {-
-ТЕОРЕМА: UNIT, EMPTY, UNIV попарно различны.
+THEOREM: UNIT, EMPTY, UNIV are pairwise distinct.
 
-Это ДОКАЗАНО в Agda (не декларация!):
+This is PROVEN in Agda (not a declaration!):
 -}
 
--- Лемма: UNIT ≠ EMPTY
+-- Lemma: UNIT ≠ EMPTY
 UNIT≠EMPTY : UNIT ≡ EMPTY → Empty
-UNIT≠EMPTY ()  -- Agda автоматически видит, что конструкторы разные
+UNIT≠EMPTY ()  -- Agda automatically sees that constructors are different
 
--- Лемма: UNIT ≠ UNIV  
+-- Lemma: UNIT ≠ UNIV
 UNIT≠UNIV : UNIT ≡ UNIV → Empty
 UNIT≠UNIV ()
 
--- Лемма: EMPTY ≠ UNIV
+-- Lemma: EMPTY ≠ UNIV
 EMPTY≠UNIV : EMPTY ≡ UNIV → Empty
 EMPTY≠UNIV ()
 
 {-
-СЛЕДСТВИЕ: Рефлексивная вселенная содержит минимум 3 объекта.
+COROLLARY: The reflexive universe contains at least 3 objects.
 
-Это ОСНОВАНИЕ для триады — не постулат, а теорема.
+This is the FOUNDATION for the triad — not a postulate, but a theorem.
 
-СРАВНЕНИЕ С MONDAY:
-Monday: "3 генератора SU(2) → 3D" (не доказано)
-Мы: "UNIT ≠ EMPTY ≠ UNIV" (доказано в Agda)
+COMPARISON WITH MONDAY:
+Monday: "3 generators of SU(2) → 3D" (not proven)
+Us: "UNIT ≠ EMPTY ≠ UNIV" (proven in Agda)
 -}
 
 -- ============================================
--- ТЕОРЕМА 2: Диада вырождена (структурный аргумент)
+-- THEOREM 2: Dyad is degenerate (structural argument)
 -- ============================================
 
 {-
-ТЕОРЕМА: Категория с 2 объектами и изоморфизмом тривиальна.
+THEOREM: A category with 2 objects and an isomorphism is trivial.
 
-ДОКАЗАТЕЛЬСТВО:
-Если f : A → B и g : B → A с f∘g = id, g∘f = id,
-то A и B неразличимы на уровне категории.
+PROOF:
+If f : A → B and g : B → A with f∘g = id, g∘f = id,
+then A and B are indistinguishable at the category level.
 
-Это показывает: 2 объекта недостаточно для нетривиальной структуры.
+This shows: 2 objects are insufficient for non-trivial structure.
 -}
 
 data Two : Set where
   X Y : Two
 
 -- ============================================
--- ОПРЕДЕЛЕНИЕ 2: Триада
+-- DEFINITION 2: Triad
 -- ============================================
 
 {-
-ОПРЕДЕЛЕНИЕ: Триада = минимальная замкнутая структура различений.
+DEFINITION: Triad = minimal closed structure of distinctions.
 
-Три объекта A, B, C с морфизмами:
-A → B → C → A (замкнутый цикл)
+Three objects A, B, C with morphisms:
+A → B → C → A (closed cycle)
 
-Замкнутость необходима:
-- Открытая цепь A → B → C имеет выделенные концы
-- Это нарушает симметрию между объектами
-- Замыкание восстанавливает эквивалентность
+Closure is necessary:
+- An open chain A → B → C has distinguished endpoints
+- This breaks symmetry between objects
+- Closure restores equivalence
 -}
 
 data Three : Set where
   A B C : Three
 
--- Триада как код в U
+-- Triad as code in U
 TriadCode : U
 TriadCode = SIGMA UNIV (λ a → SIGMA UNIV (λ b → SIGMA UNIV (λ c →
             SIGMA (PI a (λ _ → b)) (λ _ →
@@ -161,41 +161,41 @@ TriadCode = SIGMA UNIV (λ a → SIGMA UNIV (λ b → SIGMA UNIV (λ c →
 -- El TriadCode = (a, b, c, f : a→b, g : b→c, h : c→a)
 
 -- ============================================
--- ОПРЕДЕЛЕНИЕ 3: Dist как объект
+-- DEFINITION 3: Dist as object
 -- ============================================
 
--- Бинарное отношение различения
+-- Binary distinction relation
 DistCode : U
 DistCode = PI UNIV (λ _ → PI UNIV (λ _ → UNIV))
 
 -- El DistCode = U → U → U
 
--- Тривиальное различение
+-- Trivial distinction
 trivialDist : El DistCode
 trivialDist _ _ = UNIT
 
--- Структурное различение (изоморфизм)
+-- Structural distinction (isomorphism)
 isoDist : El DistCode
 isoDist a b = PI (PI a (λ _ → b)) (λ _ → PI (PI b (λ _ → a)) (λ _ → UNIT))
 
--- Самоприменение: Δ(Δ, Δ)
+-- Self-application: Δ(Δ, Δ)
 selfDist : U
 selfDist = trivialDist DistCode DistCode
 
 -- ============================================
--- ТЕОРЕМА 3: Сознание контравариантно
+-- THEOREM 3: Consciousness is contravariant
 -- ============================================
 
 {-
-ТЕОРЕМА: Функтор "способы различать" контравариантен.
+THEOREM: The "ways to distinguish" functor is contravariant.
 
-F₀(a) = PI a (λ _ → UNIV) = "способы классифицировать элементы a"
-F₁(f : a → b) даёт F(b) → F(a), НЕ F(a) → F(b)
+F₀(a) = PI a (λ _ → UNIV) = "ways to classify elements of a"
+F₁(f : a → b) gives F(b) → F(a), NOT F(a) → F(b)
 
-Интерпретация: абстракция = потеря деталей
-Чем "крупнее" различение на выходе, тем меньше информации на входе.
+Interpretation: abstraction = loss of details
+The "larger" the distinction on output, the less information on input.
 
-Это ДОКАЗАНО (типы сходятся):
+This is PROVEN (types match):
 -}
 
 ConsciousnessF₀ : U → U
@@ -205,111 +205,111 @@ ConsciousnessF₁ : ∀ {a b} → Hom a b → Hom (ConsciousnessF₀ b) (Conscio
 ConsciousnessF₁ f g = λ x → g (f x)
 -- f : El a → El b
 -- g : El b → U
--- Результат: El a → U (контравариантно!)
+-- Result: El a → U (contravariant!)
 
 -- ============================================
--- КРИТИЧЕСКИЙ АНАЛИЗ: Monday vs Реальность
+-- CRITICAL ANALYSIS: Monday vs Reality
 -- ============================================
 
 {-
-ЧТО MONDAY УТВЕРЖДАЕТ БЕЗ ДОКАЗАТЕЛЬСТВА:
+WHAT MONDAY CLAIMS WITHOUT PROOF:
 
-1. "d : Δ → ℝ≥0 появляется автоматически"
-   ПРОБЛЕМА: Почему ℝ? Почему метрика существует?
-   СТАТУС: Скрытый постулат
+1. "d : Δ → ℝ≥0 appears automatically"
+   PROBLEM: Why ℝ? Why does a metric exist?
+   STATUS: Hidden postulate
 
-2. "Δ₀ > 0 из устойчивости"
-   ПРОБЛЕМА: Требует метрики, которая не выведена
-   СТАТУС: Следствие постулата
+2. "Δ₀ > 0 from stability"
+   PROBLEM: Requires a metric that is not derived
+   STATUS: Consequence of postulate
 
-3. "Aut(Δ²) ≅ SU(2) — классическая теорема"
-   ПРОБЛЕМА: НЕТ такой теоремы в литературе
-   СТАТУС: Гипотеза
+3. "Aut(Δ²) ≅ SU(2) — classical theorem"
+   PROBLEM: NO such theorem in literature
+   STATUS: Hypothesis
 
-4. "3 генератора SU(2) → 3D пространство"
-   ПРОБЛЕМА: Почему dim(алгебры) = dim(пространства)?
-   СТАТУС: Интуиция, не доказательство
+4. "3 generators of SU(2) → 3D space"
+   PROBLEM: Why dim(algebra) = dim(space)?
+   STATUS: Intuition, not proof
 
-5. "g_tt = -1 из устойчивости Δ"
-   ПРОБЛЕМА: Красивый аргумент, но не строгий
-   СТАТУС: Физическая интуиция
+5. "g_tt = -1 from Δ stability"
+   PROBLEM: Nice argument, but not rigorous
+   STATUS: Physical intuition
 
-6. "Лагранжиан QM единственный"
-   ПРОБЛЕМА: Постулирует форму, не выводит
-   СТАТУС: Скрытый постулат
+6. "QM Lagrangian is unique"
+   PROBLEM: Postulates form, doesn't derive it
+   STATUS: Hidden postulate
 
-7. "Born rule через Глисона"
-   ПРОБЛЕМА: Глисон работает для гильбертова пространства
-   Почему Δ² даёт гильбертово пространство? Не доказано.
-   СТАТУС: Корректная ссылка, но не завершённый вывод
+7. "Born rule via Gleason"
+   PROBLEM: Gleason works for Hilbert space
+   Why does Δ² give Hilbert space? Not proven.
+   STATUS: Correct reference, but incomplete derivation
 
-ЧТО МЫ РЕАЛЬНО ДОКАЗАЛИ:
+WHAT WE REALLY PROVED:
 
-1. ✓ Рефлексия: El UNIV = U
-2. ✓ Три различных кода: UNIT ≠ EMPTY ≠ UNIV
-3. ✓ Диада вырождена (структурный аргумент)
-4. ✓ Триада минимальна (структурный аргумент)
-5. ✓ Сознание контравариантно (типы сходятся)
-6. ✓ Категория D существует
-7. ✓ Самоприменение Δ(Δ) возможно
+1. ✓ Reflexion: El UNIV = U
+2. ✓ Three distinct codes: UNIT ≠ EMPTY ≠ UNIV
+3. ✓ Dyad is degenerate (structural argument)
+4. ✓ Triad is minimal (structural argument)
+5. ✓ Consciousness is contravariant (types match)
+6. ✓ Category D exists
+7. ✓ Self-application Δ(Δ) is possible
 
-ЧЕСТНОСТЬ > КРАСОТА
+HONESTY > BEAUTY
 -}
 
 -- ============================================
--- ГИПОТЕЗЫ (требуют дальнейшей работы)
+-- HYPOTHESES (require further work)
 -- ============================================
 
 {-
-ГИПОТЕЗА 1: Aut(триада) → SO(3) → SU(2)
+HYPOTHESIS 1: Aut(triad) → SO(3) → SU(2)
 
-Аргумент:
-- Триада = 3 оси
-- Сохранение ориентации = вращения
-- SO(3) не односвязна
-- Двойное покрытие = SU(2)
+Argument:
+- Triad = 3 axes
+- Preserving orientation = rotations
+- SO(3) is not simply connected
+- Double cover = SU(2)
 
-Требует: формализация топологии в Agda
+Requires: formalization of topology in Agda
 
-ГИПОТЕЗА 2: φ из минимальной рекурсии
+HYPOTHESIS 2: φ from minimal recursion
 
 x_{n+1} = 1 + 1/x_n → x = φ
 
-Требует: вещественные числа в Agda
+Requires: real numbers in Agda
 
-ГИПОТЕЗА 3: Minkowski сигнатура из устойчивости
+HYPOTHESIS 3: Minkowski signature from stability
 
-(+,+,+,-) — единственная устойчивая сигнатура
+(+,+,+,-) — the only stable signature
 
-Требует: формализация "устойчивости"
+Requires: formalization of "stability"
 
-ГИПОТЕЗА 4: QM из вариации Δ-действия
+HYPOTHESIS 4: QM from variation of Δ-action
 
 δS = 0 → Schrödinger
 
-Требует: вариационное исчисление в Agda
+Requires: calculus of variations in Agda
 -}
 
 -- ============================================
--- ПРОГРАММА ДАЛЬНЕЙШЕЙ РАБОТЫ
+-- PROGRAM FOR FURTHER WORK
 -- ============================================
 
 {-
-ПРИОРИТЕТЫ:
+PRIORITIES:
 
-1. HIGH: Формализовать связь триады с SU(2)
-   - Определить автоморфизмы TriadCode
-   - Показать структуру группы
+1. HIGH: Formalize connection of triad with SU(2)
+   - Define automorphisms of TriadCode
+   - Show group structure
 
-2. HIGH: Добавить метрику как постулат
-   - Честно признать, что это не выводится
-   - Исследовать следствия
+2. HIGH: Add metric as postulate
+   - Honestly admit that this is not derivable
+   - Investigate consequences
 
-3. MEDIUM: Связь с HoTT
-   - Гомотопическая интерпретация U
+3. MEDIUM: Connection with HoTT
+   - Homotopic interpretation of U
    - π₁(Aut(UNIV)) = ?
 
-4. LOW: Численные эксперименты
-   - Python/Julia для проверки гипотез
+4. LOW: Numerical experiments
+   - Python/Julia for testing hypotheses
    - DDCE (Distinction Dynamics Computational Engine)
 -}

@@ -1,56 +1,56 @@
 {-# OPTIONS --safe --without-K #-}
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- DISTINCTION DYNAMICS: МИНИМАЛЬНОЕ ЯДРО
+-- DISTINCTION DYNAMICS: MINIMAL CORE
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Единственное условие: Δ ≠ ∅ (различение существует)
--- Цель: ~20 определений, 5 теорем, всё компилируется
+-- Single condition: Δ ≠ ∅ (distinction exists)
+-- Goal: ~20 definitions, 5 theorems, all compiles
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
 module DD-Core where
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 0: МИНИМАЛЬНЫЕ ОСНОВАНИЯ (6 определений)
+-- PART 0: MINIMAL FOUNDATIONS (6 definitions)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 1. Пустой тип (невозможность)
+-- 1. Empty type (impossibility)
 data ⊥ : Set where
 
--- 2. Единичный тип (тривиальная истина)
+-- 2. Unit type (trivial truth)
 record ⊤ : Set where
   constructor tt
 
--- 3. Отрицание
+-- 3. Negation
 ¬_ : Set → Set
 ¬ A = A → ⊥
 
--- 4. Равенство
+-- 4. Equality
 infix 4 _≡_
 data _≡_ {A : Set} : A → A → Set where
   refl : {x : A} → x ≡ x
 
--- 5. Натуральные числа
+-- 5. Natural numbers
 data ℕ : Set where
   zero : ℕ
   suc  : ℕ → ℕ
 
 {-# BUILTIN NATURAL ℕ #-}
 
--- 6. Сложение
+-- 6. Addition
 infixl 6 _+_
 _+_ : ℕ → ℕ → ℕ
 zero  + n = n
 suc m + n = suc (m + n)
 
--- 6b. Умножение
+-- 6b. Multiplication
 infixl 7 _*_
 _*_ : ℕ → ℕ → ℕ
 zero  * _ = zero
 suc m * n = n + m * n
 
--- 6c. Вычитание (усечённое)
+-- 6c. Subtraction (truncated)
 infixl 6 _∸_
 _∸_ : ℕ → ℕ → ℕ
 m     ∸ zero  = m
@@ -59,71 +59,71 @@ suc m ∸ suc n = m ∸ n
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 1: АКСИОМА (1 определение)
+-- PART 1: AXIOM (1 definition)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 7. Δ ≠ ∅ — различение существует
--- Это НЕ произвольный выбор: отрицание различения использует различение
+-- 7. Δ ≠ ∅ — distinction exists
+-- This is NOT an arbitrary choice: denying distinction uses distinction
 record Δ-Exists : Set₁ where
   field
     Carrier  : Set
     witness  : Carrier
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 2: СЛЕДСТВИЕ 1 — БУЛЕВЫ ЗНАЧЕНИЯ (2 определения)
+-- PART 2: COROLLARY 1 — BOOLEAN VALUES (2 definitions)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 8. Минимальное различение = два элемента
+-- 8. Minimal distinction = two elements
 data Bool : Set where
   false : Bool
   true  : Bool
 
--- 9. Bool реализует Δ-Exists
+-- 9. Bool realizes Δ-Exists
 bool-witness : Δ-Exists
 bool-witness = record { Carrier = Bool ; witness = true }
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 3: СЛЕДСТВИЕ 2 — ФИБОНАЧЧИ (3 определения)
+-- PART 3: COROLLARY 2 — FIBONACCI (3 definitions)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 10. Фибоначчи — минимальная нетривиальная рекурсия (k=2)
+-- 10. Fibonacci — minimal non-trivial recursion (k=2)
 fib : ℕ → ℕ
 fib zero          = 1
 fib (suc zero)    = 1
 fib (suc (suc n)) = fib (suc n) + fib n
 
--- 11. Пара (для хранения двух предыдущих значений)
+-- 11. Pair (for storing two previous values)
 record Pair (A B : Set) : Set where
   constructor _,_
   field
     fst : A
     snd : B
 
--- 12. Быстрый Фибоначчи через пару (демонстрация k=2 памяти)
+-- 12. Fast Fibonacci via pair (demonstration of k=2 memory)
 fib-step : Pair ℕ ℕ → Pair ℕ ℕ
 fib-step record { fst = a ; snd = b } = record { fst = b ; snd = a + b }
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 4: СЛЕДСТВИЕ 3 — ТРИАДА (3 определения)
+-- PART 4: COROLLARY 3 — TRIAD (3 definitions)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 13. Триада — замкнутая структура различений
+-- 13. Triad — closed structure of distinctions
 data Triad : Set where
   A : Triad
   B : Triad
   C : Triad
 
--- 14. Перестановки триады (S₃)
+-- 14. Permutations of triad (S₃)
 data S₃ : Set where
-  e   : S₃  -- тождество
-  r   : S₃  -- поворот A→B→C→A
-  r²  : S₃  -- поворот A→C→B→A
-  s₁  : S₃  -- отражение (BC)
-  s₂  : S₃  -- отражение (AC)
-  s₃  : S₃  -- отражение (AB)
+  e   : S₃  -- identity
+  r   : S₃  -- rotation A→B→C→A
+  r²  : S₃  -- rotation A→C→B→A
+  s₁  : S₃  -- reflection (BC)
+  s₂  : S₃  -- reflection (AC)
+  s₃  : S₃  -- reflection (AB)
 
--- 15. Действие S₃ на триаду
+-- 15. Action of S₃ on triad
 act : S₃ → Triad → Triad
 act e  x = x
 act r  A = B
@@ -143,29 +143,29 @@ act s₃ B = A
 act s₃ C = C
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 5: ВСПОМОГАТЕЛЬНЫЕ (3 определения)
+-- PART 5: AUXILIARY (3 definitions)
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 16. Симметрия равенства
+-- 16. Symmetry of equality
 sym : {A : Set} {x y : A} → x ≡ y → y ≡ x
 sym refl = refl
 
--- 17. Транзитивность
+-- 17. Transitivity
 trans : {A : Set} {x y z : A} → x ≡ y → y ≡ z → x ≡ z
 trans refl refl = refl
 
--- 18. Конгруэнтность
+-- 18. Congruence
 cong : {A B : Set} {x y : A} → (f : A → B) → x ≡ y → f x ≡ f y
 cong _ refl = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 6: ТЕОРЕМЫ (5 теорем, 2+ доказательства)
+-- PART 6: THEOREMS (5 theorems, 2+ proofs)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА 1: Тождество — единица группы
--- e действует тривиально на все элементы
+-- THEOREM 1: Identity is group unit
+-- e acts trivially on all elements
 -- ═══════════════════════════════════════════════════════════════════════════
 
 theorem-1-e-identity : (x : Triad) → act e x ≡ x
@@ -174,11 +174,11 @@ theorem-1-e-identity B = refl
 theorem-1-e-identity C = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА 2: r³ = e (поворот на 360° = тождество)
--- Это фундаментальное свойство Z₃ ⊂ S₃
+-- THEOREM 2: r³ = e (360° rotation = identity)
+-- This is fundamental property of Z₃ ⊂ S₃
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Композиция перестановок
+-- Permutation composition
 _∘_ : S₃ → S₃ → S₃
 e  ∘ g = g
 g  ∘ e = g
@@ -213,7 +213,7 @@ theorem-2-r³-is-e = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА 3: Отражения инволютивны (s² = e)
+-- THEOREM 3: Reflections are involutions (s² = e)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 theorem-3-s₁-involution : s₁ ∘ s₁ ≡ e
@@ -226,23 +226,23 @@ theorem-3-s₃-involution : s₃ ∘ s₃ ≡ e
 theorem-3-s₃-involution = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА 4: |S₃| = 6 (мощность группы)
--- Порядок группы симметрий триады = 3! = 6
+-- THEOREM 4: |S₃| = 6 (group cardinality)
+-- Order of triad symmetry group = 3! = 6
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- 19. Список элементов S₃
+-- 19. List of S₃ elements
 data List (A : Set) : Set where
   []  : List A
   _∷_ : A → List A → List A
 
 infixr 5 _∷_
 
--- 20. Длина списка
+-- 20. List length
 length : {A : Set} → List A → ℕ
 length []       = zero
 length (_ ∷ xs) = suc (length xs)
 
--- Все элементы S₃
+-- All elements of S₃
 all-S₃ : List S₃
 all-S₃ = e ∷ r ∷ r² ∷ s₁ ∷ s₂ ∷ s₃ ∷ []
 
@@ -251,32 +251,32 @@ theorem-4-S₃-has-6-elements = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА 5: ТРИАДА МИНИМАЛЬНО ЗАМКНУТА
+-- THEOREM 5: TRIAD IS MINIMALLY CLOSED
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Диада (2 элемента): A ≠ B, но нет цикла
--- Триада (3 элемента): A → B → C → A образует минимальный цикл
--- Тетрада (4 элемента): избыточна, цикл уже есть в триаде
+-- Dyad (2 elements): A ≠ B, but no cycle
+-- Triad (3 elements): A → B → C → A forms minimal cycle
+-- Tetrad (4 elements): redundant, cycle already exists in triad
 --
--- Формально: в триаде r³ = e, это минимальный нетривиальный порядок > 2
+-- Formally: in triad r³ = e, this is minimal non-trivial order > 2
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Диада
+-- Dyad
 data Dyad : Set where
   X : Dyad
   Y : Dyad
 
--- Перестановки диады (S₂)
+-- Permutations of dyad (S₂)
 data S₂ : Set where
-  id₂   : S₂  -- тождество
-  swap  : S₂  -- перестановка X↔Y
+  id₂   : S₂  -- identity
+  swap  : S₂  -- permutation X↔Y
 
--- В S₂ любой элемент имеет порядок ≤ 2
+-- In S₂ any element has order ≤ 2
 s₂-order : S₂ → ℕ
 s₂-order id₂  = 1
 s₂-order swap = 2
 
--- В S₃ есть элемент порядка 3
+-- In S₃ there is an element of order 3
 s₃-order : S₃ → ℕ
 s₃-order e  = 1
 s₃-order r  = 3
@@ -285,45 +285,45 @@ s₃-order s₁ = 2
 s₃-order s₂ = 2
 s₃-order s₃ = 2
 
--- Теорема: S₃ содержит элемент порядка 3, S₂ — нет
--- Это делает триаду минимальной структурой с циклом
+-- Theorem: S₃ contains element of order 3, S₂ does not
+-- This makes triad the minimal structure with a cycle
 
 theorem-5-triad-has-order-3 : s₃-order r ≡ 3
 theorem-5-triad-has-order-3 = refl
 
--- Проверка: r действительно имеет порядок 3
--- r ∘ r = r², r² ∘ r = e (уже доказано в theorem-2)
+-- Verification: r indeed has order 3
+-- r ∘ r = r², r² ∘ r = e (already proven in theorem-2)
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- РЕЗЮМЕ
+-- SUMMARY
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- ОПРЕДЕЛЕНИЯ: 20
---   1-6:   Основания (⊥, ⊤, ¬, ≡, ℕ, +)
---   7:     Аксиома (Δ-Exists)
---   8-9:   Bool (минимальное различение)
---   10-12: Фибоначчи (k=2 рекурсия)
---   13-15: Триада и S₃
---   16-18: Вспомогательные (sym, trans, cong)
+-- DEFINITIONS: 20
+--   1-6:   Foundations (⊥, ⊤, ¬, ≡, ℕ, +)
+--   7:     Axiom (Δ-Exists)
+--   8-9:   Bool (minimal distinction)
+--   10-12: Fibonacci (k=2 recursion)
+--   13-15: Triad and S₃
+--   16-18: Auxiliary (sym, trans, cong)
 --   19-20: List, length
 --
--- ТЕОРЕМЫ: 5
---   1. e — единица группы (act e x ≡ x)
---   2. r³ = e (циклическая структура)
---   3. s² = e (инволюции)
+-- THEOREMS: 5
+--   1. e is group identity (act e x ≡ x)
+--   2. r³ = e (cyclic structure)
+--   3. s² = e (involutions)
 --   4. |S₃| = 6
---   5. Триада имеет порядок 3 (минимальный цикл)
+--   5. Triad has order 3 (minimal cycle)
 --
--- ДОКАЗАТЕЛЬСТВА: все 5 теорем доказаны конструктивно (refl)
+-- PROOFS: all 5 theorems proven constructively (refl)
 --
--- ЦЕПОЧКА ВЫВОДА:
+-- DERIVATION CHAIN:
 --   Δ ≠ ∅ → Bool → ℕ → Fib(k=2) → Triad → S₃ → [SU(3)]
 --
--- ОТКРЫТЫЕ ВОПРОСЫ:
---   • SU(3) как непрерывное расширение S₃ (требует ℝ)
---   • SU(2) из диады
---   • U(1) из монады
---   • Три поколения фермионов
+-- OPEN QUESTIONS:
+--   • SU(3) as continuous extension of S₃ (requires ℝ)
+--   • SU(2) from dyad
+--   • U(1) from monad
+--   • Three fermion generations
 --
 -- ═══════════════════════════════════════════════════════════════════════════

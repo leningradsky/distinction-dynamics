@@ -36,7 +36,7 @@ mutual
   El (PI a b) = (x : El a) -> El (b x)
   El (SIGMA a b) = Sigma (El a) (\x -> El (b x))
 
--- ТЕОРЕМА 1: Три различных кода (ДОКАЗАНО)
+-- THEOREM 1: Three distinct codes (PROVEN)
 UNIT-neq-EMPTY : Distinct UNIT EMPTY
 UNIT-neq-EMPTY ()
 
@@ -46,7 +46,7 @@ UNIT-neq-UNIV ()
 EMPTY-neq-UNIV : Distinct EMPTY UNIV
 EMPTY-neq-UNIV ()
 
--- Триада
+-- Triad
 data Three : Set where A B C : Three
 
 sym : {A : Set} {x y : A} -> x == y -> y == x
@@ -67,7 +67,7 @@ canonicalTriad = record
   ; CA = \p -> UNIT-neq-UNIV (sym p)
   }
 
--- Категория D
+-- Category D
 record Category : Set1 where
   field
     Obj : Set
@@ -83,14 +83,14 @@ D = record
   ; compose = \g f x -> g (f x)
   }
 
--- Контравариантность сознания (ДОКАЗАНО)
+-- Contravariance of consciousness (PROVEN)
 ConsciousnessF0 : U -> U
 ConsciousnessF0 a = PI a (\_ -> UNIV)
 
 ConsciousnessF1 : {a b : U} -> (El a -> El b) -> (El (ConsciousnessF0 b) -> El (ConsciousnessF0 a))
 ConsciousnessF1 f g = \x -> g (f x)
 
--- Перестановки S3
+-- Permutations S3
 data Perm3 : Set where
   e r r2 s1 s2 s3 : Perm3
 
@@ -112,7 +112,7 @@ apply s3 A = C
 apply s3 B = B
 apply s3 C = A
 
--- Код различия живёт в UNIV (ДОКАЗАНО)
+-- Distinction code lives in UNIV (PROVEN)
 EqCode : U -> U -> U
 EqCode UNIT UNIT = UNIT
 EqCode EMPTY EMPTY = UNIT
@@ -129,7 +129,7 @@ distinctUE ()
 distinctUU : El (DistinctCode UNIT UNIV)
 distinctUU ()
 
--- Арифметика
+-- Arithmetic
 _+_ : Nat -> Nat -> Nat
 zero + m = m
 suc n + m = suc (n + m)
