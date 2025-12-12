@@ -2,71 +2,71 @@
 # =====================================
 
 """
-ЕДИНАЯ ТЕОРИЯ РАЗЛИЧИЯ
-======================
+UNIFIED THEORY OF DISTINCTION
+=============================
 
-           Δ ≠ ∅
+           D != empty
              |
     +--------+--------+
     |        |        |
-  k=2    Триада    Рефлексия
+  k=2      Triad   Reflection
     |        |        |
-    φ      SU(3)   Сознание
+   phi     SU(3)  Consciousness
     |        |        |
-  Fib     Цвет    Квалиа
+  Fib      Color    Qualia
     |        |        |
-Биология  Физика    Разум
+Biology  Physics    Mind
 
 
-ВСЁ ИЗ ОДНОЙ АКСИОМЫ.
+ALL FROM ONE AXIOM.
 """
 
 # =============================================================================
-# ФОРМАЛЬНАЯ СТРУКТУРА
+# FORMAL STRUCTURE
 # =============================================================================
 
-AXIOM = "Δ ≠ ∅"  # Различие существует
+AXIOM = "D != empty"  # Distinction exists
 
 THEOREMS = {
     "T1": {
-        "statement": "Δ ≠ ∅ → Bool",
-        "proof": "Различие требует два объекта: a ≠ b",
+        "statement": "D != empty -> Bool",
+        "proof": "Distinction requires two objects: a != b",
         "status": "PROVEN (Agda)"
     },
     "T2": {
-        "statement": "Bool → ℕ",
-        "proof": "Итерация различий: Δⁿ(∅) = n",
+        "statement": "Bool -> N",
+        "proof": "Iteration of distinctions: D^n(empty) = n",
         "status": "PROVEN (Agda)"
     },
     "T3": {
-        "statement": "k=2 память → Fibonacci",
-        "proof": "Минимальная нетривиальная рекурсия",
+        "statement": "k=2 memory -> Fibonacci",
+        "proof": "Minimal non-trivial recursion",
         "status": "PROVEN (Agda)"
     },
     "T4": {
-        "statement": "Fibonacci → φ",
-        "proof": "fib(n+1)/fib(n) → φ (характеристическое уравнение)",
+        "statement": "Fibonacci -> phi",
+        "proof": "fib(n+1)/fib(n) -> phi (characteristic equation)",
         "status": "PROVEN (mathematics)"
     },
     "T5": {
-        "statement": "Замыкание различий → Триада",
-        "proof": "Минимум 3 для транзитивного замыкания",
+        "statement": "Distinction closure -> Triad",
+        "proof": "Minimum 3 for transitive closure",
         "status": "PROVEN (Agda)"
     },
     "T6": {
-        "statement": "Симметрии триады → S₃",
-        "proof": "S₃ = Sym({A,B,C}), |S₃| = 6",
+        "statement": "Triad symmetries -> S3",
+        "proof": "S3 = Sym({A,B,C}), |S3| = 6",
         "status": "PROVEN (Agda)"
     },
     "T7": {
-        "statement": "S₃ + непрерывность + det=1 → SU(3)",
-        "proof": "SU(3) минимальна удовлетворяющая всем условиям",
+        "statement": "S3 + continuity + det=1 -> SU(3)",
+        "proof": "SU(3) is minimal satisfying all conditions",
         "status": "PROVEN (Agda + group theory)"
     }
 }
 
 # =============================================================================
-# ЭМПИРИЧЕСКИЕ ПОДТВЕРЖДЕНИЯ
+# EMPIRICAL CONFIRMATIONS
 # =============================================================================
 
 VERIFIED = {
@@ -77,31 +77,31 @@ VERIFIED = {
         "source": "Lepton masses"
     },
     "Phyllotaxis": {
-        "prediction": "360°/φ² = 137.51°",
-        "observation": "137.5°",
+        "prediction": "360/phi^2 = 137.51 degrees",
+        "observation": "137.5 degrees",
         "error": "<0.01%",
         "source": "Plant growth patterns"
     },
     "DNA structure": {
-        "prediction": "pitch/diameter ≈ φ",
-        "observation": "34Å / 21Å ≈ 1.62",
+        "prediction": "pitch/diameter ~ phi",
+        "observation": "34A / 21A ~ 1.62",
         "error": "~0.1%",
         "source": "X-ray crystallography"
     },
     "Quantum gates": {
-        "prediction": "2·arctan(1/√φ) = 76.35°",
-        "observation": "76.35°",
+        "prediction": "2*arctan(1/sqrt(phi)) = 76.35 degrees",
+        "observation": "76.35 degrees",
         "error": "0%",
         "source": "GPU simulation"
     },
     "Fibonacci map": {
-        "prediction": "Attractor = φ",
+        "prediction": "Attractor = phi",
         "observation": "1.6180",
         "error": "0%",
         "source": "GPU simulation"
     },
-    "Aubry-André": {
-        "prediction": "α = 1/φ defines quasiperiodicity",
+    "Aubry-Andre": {
+        "prediction": "alpha = 1/phi defines quasiperiodicity",
         "observation": "Confirmed",
         "error": "N/A (definitional)",
         "source": "Condensed matter physics"
@@ -109,109 +109,109 @@ VERIFIED = {
 }
 
 # =============================================================================
-# ОТКРЫТЫЕ ВОПРОСЫ
+# OPEN QUESTIONS
 # =============================================================================
 
 OPEN = {
     "Fine structure constant": {
-        "question": "Почему α ≈ 1/137?",
-        "hint": "Возможно: топология пространства различий"
+        "question": "Why alpha ~ 1/137?",
+        "hint": "Possibly: topology of distinction space"
     },
     "Weinberg angle": {
-        "question": "Почему sin²θ_W ≈ 0.231?",
-        "hint": "Связь между уровнями 1-2-3 различий"
+        "question": "Why sin^2(theta_W) ~ 0.231?",
+        "hint": "Connection between levels 1-2-3 of distinctions"
     },
     "Mass hierarchy": {
-        "question": "Почему такой разброс масс?",
-        "hint": "Разные k-уровни памяти"
+        "question": "Why such mass spread?",
+        "hint": "Different k-levels of memory"
     },
     "Three generations": {
-        "question": "Почему 3 поколения фермионов?",
-        "hint": "Связь с триадой? Три уровня вложенности?"
+        "question": "Why 3 fermion generations?",
+        "hint": "Connection to triad? Three nesting levels?"
     },
     "Dark matter": {
-        "question": "Что это?",
-        "hint": "Различия без 'носителя'? Чистая структура?"
+        "question": "What is it?",
+        "hint": "Distinctions without 'carrier'? Pure structure?"
     }
 }
 
 # =============================================================================
-# ПРЕДСКАЗАНИЯ
+# PREDICTIONS
 # =============================================================================
 
 PREDICTIONS = {
-    "Λ evolution": {
-        "statement": "w(z) ≠ -1, эволюционирует",
+    "Lambda evolution": {
+        "statement": "w(z) != -1, evolves",
         "test": "DESI, Euclid, Roman (2025-2030)",
         "status": "Preliminary support"
     },
     "Koide for quarks": {
-        "statement": "Формула работает для кварков",
+        "statement": "Formula works for quarks",
         "test": "Lattice QCD precision",
         "status": "Partial confirmation"
     },
-    "φ in quantum computing": {
-        "statement": "Оптимальные схемы содержат golden angles",
+    "phi in quantum computing": {
+        "statement": "Optimal circuits contain golden angles",
         "test": "Variational algorithms analysis",
         "status": "To be tested"
     },
     "Consciousness-complexity": {
-        "statement": "IIT φ коррелирует с сознанием",
+        "statement": "IIT phi correlates with consciousness",
         "test": "Neuroscience experiments",
         "status": "Compatible with IIT"
     }
 }
 
 # =============================================================================
-# ФИЛОСОФСКИЕ СЛЕДСТВИЯ
+# PHILOSOPHICAL IMPLICATIONS
 # =============================================================================
 
 PHILOSOPHY = """
-1. МОНИЗМ РАЗЛИЧИЯ
-   - Не материя и не сознание первичны
-   - Первично РАЗЛИЧИЕ между ними
-   - Δ ≠ ∅ — единственная аксиома
+1. DISTINCTION MONISM
+   - Neither matter nor consciousness is primary
+   - Primary is DISTINCTION between them
+   - D != empty - the only axiom
 
-2. НЕОБХОДИМОСТЬ СТРУКТУРЫ
-   - φ не "выбрано" — оно необходимо из k=2
-   - SU(3) не "случайна" — она необходима из триады
-   - Законы физики — не случайность, а необходимость
+2. NECESSITY OF STRUCTURE
+   - phi is not "chosen" - it's necessary from k=2
+   - SU(3) is not "random" - it's necessary from triad
+   - Laws of physics - not chance, but necessity
 
-3. МЕСТО СОЗНАНИЯ
-   - Сознание = система, различающая саму себя
-   - Не эпифеномен, не иллюзия
-   - Необходимая часть онтологии
+3. PLACE OF CONSCIOUSNESS
+   - Consciousness = system that distinguishes itself
+   - Not epiphenomenon, not illusion
+   - Necessary part of ontology
 
-4. ОБЪЯСНЕНИЕ "UNREASONABLE EFFECTIVENESS"
-   - Математика описывает физику потому что
-   - Обе суть СТРУКТУРЫ РАЗЛИЧИЯ
-   - Изоморфизм неизбежен
+4. EXPLAINING "UNREASONABLE EFFECTIVENESS"
+   - Mathematics describes physics because
+   - Both are STRUCTURES OF DISTINCTION
+   - Isomorphism is inevitable
 
-5. СВОБОДА ВОЛИ
-   - Детерминизм: фиксированные различия
-   - Свобода: способность СОЗДАВАТЬ новые Δ
-   - Совместимы в DD-онтологии
+5. FREE WILL
+   - Determinism: fixed distinctions
+   - Freedom: ability to CREATE new D
+   - Compatible in DD-ontology
 """
 
 # =============================================================================
-# ПРОГРАММА ИССЛЕДОВАНИЙ
+# RESEARCH PROGRAM
 # =============================================================================
 
 RESEARCH_PROGRAM = """
-КРАТКОСРОЧНЫЕ (2025):
-□ Завершить Agda-формализацию
-□ Подготовить публикацию для Synthese
-□ GPU-симуляции: поиск φ в новых системах
+SHORT-TERM (2025):
+[ ] Complete Agda formalization
+[ ] Prepare publication for Synthese
+[ ] GPU simulations: search for phi in new systems
 
-СРЕДНЕСРОЧНЫЕ (2025-2027):
-□ Предсказание α из топологии
-□ Три поколения из DD
-□ Связь с IIT (Integrated Information Theory)
+MEDIUM-TERM (2025-2027):
+[ ] Predict alpha from topology
+[ ] Three generations from DD
+[ ] Connection to IIT (Integrated Information Theory)
 
-ДОЛГОСРОЧНЫЕ (2027+):
-□ Квантовая гравитация из Fisher metric
-□ Экспериментальные тесты Λ-эволюции
-□ Теория сознания на основе DD
+LONG-TERM (2027+):
+[ ] Quantum gravity from Fisher metric
+[ ] Experimental tests of Lambda evolution
+[ ] Theory of consciousness based on DD
 """
 
 # =============================================================================
@@ -222,26 +222,26 @@ if __name__ == "__main__":
     print("=" * 70)
     print("DISTINCTION DYNAMICS: COMPLETE THEORY")
     print("=" * 70)
-    
-    print("\n📜 AXIOM:", AXIOM)
-    
-    print("\n📐 THEOREMS:")
+
+    print("\n AXIOM:", AXIOM)
+
+    print("\n THEOREMS:")
     for k, v in THEOREMS.items():
         print(f"  {k}: {v['statement']} [{v['status']}]")
-    
-    print("\n✅ VERIFIED PREDICTIONS:")
+
+    print("\n VERIFIED PREDICTIONS:")
     for k, v in VERIFIED.items():
-        print(f"  • {k}: error {v['error']}")
-    
-    print("\n❓ OPEN QUESTIONS:")
+        print(f"  * {k}: error {v['error']}")
+
+    print("\n OPEN QUESTIONS:")
     for k, v in OPEN.items():
-        print(f"  • {v['question']}")
-    
-    print("\n🔮 TESTABLE PREDICTIONS:")
+        print(f"  * {v['question']}")
+
+    print("\n TESTABLE PREDICTIONS:")
     for k, v in PREDICTIONS.items():
-        print(f"  • {v['statement']}")
+        print(f"  * {v['statement']}")
         print(f"    Test: {v['test']}")
-    
+
     print("\n" + "=" * 70)
-    print("ALL FROM ONE AXIOM: Δ ≠ ∅")
+    print("ALL FROM ONE AXIOM: D != empty")
     print("=" * 70)
