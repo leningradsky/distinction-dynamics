@@ -1,0 +1,101 @@
+%==============================================================================
+% Chapter: Necessity and Contingency
+% Part I: Foundations
+%==============================================================================
+
+\chapter{Necessity and Contingency}\label{ch:necessity}
+
+\epigraph{Nothing is accidental.}{---}
+
+\section{Modal Definitions}
+
+\begin{definition}[Modal Status]\label{def:modal}
+A structure $S$ is:
+\begin{itemize}
+    \item \textbf{Necessary} if $\neg S \rightarrow \bot$ (its negation contradicts $\Delta$)
+    \item \textbf{Impossible} if $S \rightarrow \bot$ (it contradicts $\Delta$)
+    \item \textbf{Contingent} if both $S$ and $\neg S$ are consistent with $\Delta$
+\end{itemize}
+\end{definition}
+
+\section{Elimination of Contingency}
+
+\begin{theorem}[No Contingency]\label{thm:no-contingency}
+No contingent structures exist.
+\end{theorem}
+
+\begin{proof}
+Suppose $S$ is contingent: both $S$ and $\neg S$ are possible.
+\begin{enumerate}
+    \item In actuality, one of $\{S, \neg S\}$ obtains (call it $S$).
+    \item $S$ obtaining = $S$ is distinguished as actual (vs.\ $\neg S$).
+    \item This distinction is $\Delta$ (Lemma~\ref{lem:unity}).
+    \item $\Self$ is self-determined (Axiom~\ref{ax:dd}).
+    \item Self-determination means: $\Delta$'s structure fixes its outputs.
+    \item Therefore, the distinction ``$S$ actual'' is fixed by $\Delta$'s structure.
+    \item ``Fixed by $\Delta$'s structure'' = $\neg S$ contradicts $\Delta$.
+    \item Therefore, $S$ is necessary (Definition~\ref{def:modal}).
+    \item $S$ is not contingent. \qedhere
+\end{enumerate}
+\end{proof}
+
+\begin{remark}
+The key is that $\Self$ means there is no ``slack'' in $\Delta$. Every output is fixed. Contingency would require slack, but self-determination eliminates this.
+\end{remark}
+
+\begin{corollary}[Dichotomy]\label{cor:dichotomy}
+Every structure is either necessary or impossible.
+\end{corollary}
+
+\begin{corollary}[Principle of Sufficient Reason]\label{cor:psr}
+Everything that exists has a sufficient reason: it follows from $\Delta$. Everything that does not exist has a sufficient reason: it contradicts $\Delta$.
+\end{corollary}
+
+\section{The Leibnizian Question}
+
+\begin{theorem}[Something Rather Than Nothing]\label{thm:something}
+``Nothing'' is impossible. ``Something'' is necessary.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+    \item ``Nothing'' = $\Delta = \emptyset$.
+    \item But $\Self \neq \emptyset$ (Corollary~\ref{cor:exists}).
+    \item Therefore, ``nothing'' contradicts $\Delta$.
+    \item By Definition~\ref{def:modal}, ``nothing'' is impossible.
+    \item By Corollary~\ref{cor:dichotomy}, ``something'' is necessary. \qedhere
+\end{enumerate}
+\end{proof}
+
+\section{Uniqueness}
+
+\begin{theorem}[Uniqueness]\label{thm:uniqueness}
+For each type of structure, at most one realization exists.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+    \item Suppose $S_1$ and $S_2$ are distinct realizations of type $T$.
+    \item Both are actual (hypothesis) and thus necessary (Theorem~\ref{thm:no-contingency}).
+    \item $S_1 \neq S_2$ requires a distinguishing criterion $C$.
+    \item $C$ is either determined by $\Delta$ or external.
+    \item External determination requires a legislator. Impossible (Theorem~\ref{thm:no-legislator}).
+    \item Therefore, $C$ is determined by $\Delta$.
+    \item $\Delta$ determines $S_1$ (with $C$) as necessary.
+    \item Then $S_2$ (with $\neg C$) contradicts $\Delta$: impossible.
+    \item Two distinct realizations cannot both be necessary.
+    \item At most one exists. \qedhere
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[Uniqueness of Reality]
+There is exactly one universe, one set of laws, one set of constants.
+\end{corollary}
+
+\begin{corollary}[No Multiverse]
+Multiple universes with different constants are impossible.
+\end{corollary}
+
+\begin{proof}
+Different constants = different realizations of ``universe.'' By Theorem~\ref{thm:uniqueness}, at most one exists.
+\end{proof}

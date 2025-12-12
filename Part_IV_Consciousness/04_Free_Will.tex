@@ -1,0 +1,214 @@
+%==============================================================================
+% FREE WILL
+% Freedom as Metaplasticity
+% Part IV, Chapter 4
+%==============================================================================
+
+\chapter{Free Will}\label{ch:free-will}
+
+\epigraph{Freedom is not the ability to choose a reaction, but the ability to change ways of distinguishing before the choice.}{---}
+
+\section{The Problem of Free Will}
+
+Classical debate:
+\begin{itemize}
+    \item \textbf{Determinism}: Every event is caused by prior events
+    \item \textbf{Libertarianism}: Some events are uncaused (quantum randomness?)
+    \item \textbf{Compatibilism}: Free will is compatible with determinism
+\end{itemize}
+
+DD offers a new formulation: freedom is \textbf{meta-level dynamics}.
+
+\section{Determinism in DD}
+
+\begin{theorem}[Determinism at Level 0]
+At the level of fixed reaction functions $F$, the system is deterministic.
+\end{theorem}
+
+\begin{proof}
+If $F$ is fixed:
+\begin{equation}
+\Delta_1(t) = F(\Delta_0(t))
+\end{equation}
+
+Same input $\Delta_0$ always gives same output $\Delta_1$.
+
+This is the automaton: no freedom.
+\end{proof}
+
+\section{Freedom at Meta-Level}
+
+\begin{theorem}[Freedom from Meta-Dynamics]
+Freedom appears when $\dfrac{dF}{dt} \neq 0$.
+\end{theorem}
+
+\begin{proof}
+When the meta-operator $M$ acts:
+\begin{equation}
+\frac{dF}{dt} = M(\Delta, H, V)
+\end{equation}
+
+The reaction function $F$ changes over time.
+
+The same input $\Delta_0$ at time $t_1$ vs. $t_2$ gives different outputs:
+\begin{equation}
+\Delta_1(t_1) = F_{t_1}(\Delta_0) \neq F_{t_2}(\Delta_0) = \Delta_1(t_2)
+\end{equation}
+
+This is non-determinism at the observable level, even though the meta-dynamics may be deterministic.
+\end{proof}
+
+\section{Levels of Freedom}
+
+\begin{definition}[Freedom Hierarchy]
+\begin{align}
+\text{No freedom} &: \frac{dF}{dt} = 0 \quad \text{(automaton)} \\
+\text{Basic freedom} &: \frac{dF}{dt} \neq 0 \quad \text{(adaptive)} \\
+\text{Meta-freedom} &: \frac{dM}{dt} \neq 0 \quad \text{(can change how we change)} \\
+\text{Radical freedom} &: \text{Can choose } M \quad \text{(self-determining)}
+\end{align}
+\end{definition}
+
+\subsection{No Freedom (Automaton)}
+
+\begin{itemize}
+    \item Fixed $F$, no learning
+    \item Simple reflexes, instincts
+    \item Deterministic behavior
+\end{itemize}
+
+\subsection{Basic Freedom (Adaptive)}
+
+\begin{itemize}
+    \item $F$ changes based on feedback
+    \item Learning from environment
+    \item Most animals, machine learning systems
+\end{itemize}
+
+\subsection{Meta-Freedom (Reflective)}
+
+\begin{itemize}
+    \item Can change the learning rule itself
+    \item Metacognition, self-reflection
+    \item Humans, possibly some AI systems
+\end{itemize}
+
+\subsection{Radical Freedom (Self-Determining)}
+
+\begin{itemize}
+    \item Chooses one's own criteria for change
+    \item Existential freedom (Sartre)
+    \item Highest form of consciousness
+\end{itemize}
+
+\section{Formal Criterion}
+
+\begin{theorem}[DD Criterion for Free Will]
+A system has free will if and only if it can modify its own meta-operator $M$ through internal dynamics.
+\end{theorem}
+
+\begin{equation}
+\text{Free will} \iff \frac{dM}{dt} = f(M, \Delta, H)
+\end{equation}
+
+where $f$ depends on the system's own state, not just external inputs.
+
+\section{Randomness is Not Freedom}
+
+\begin{theorem}[Randomness $\neq$ Freedom]
+Quantum randomness does not provide free will.
+\end{theorem}
+
+\begin{proof}
+\begin{itemize}
+    \item Randomness: outcome is unpredictable
+    \item Freedom: outcome reflects agent's values/goals
+    \item Random choices are not ``mine'' — they're just noise
+    \item True freedom requires $M$ to reflect $V$ (value function)
+\end{itemize}
+\end{proof}
+
+\section{Compatibilism in DD}
+
+\begin{theorem}[DD Compatibilism]
+Free will is compatible with determinism at the meta-level.
+\end{theorem}
+
+\begin{proof}
+\begin{itemize}
+    \item The dynamics $dM/dt = f(M, \Delta, H)$ may be deterministic
+    \item But this determinism \emph{is} the agent's will
+    \item ``I'' am my distinction structure (including $M$)
+    \item My determined meta-dynamics is my freedom, not a constraint on it
+\end{itemize}
+\end{proof}
+
+This resolves the apparent paradox: freedom is not escape from causation, but self-causation through meta-dynamics.
+
+\section{Responsibility}
+
+\begin{theorem}[Responsibility from M-Control]
+An agent is responsible for an action if that action followed from their $M$.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item If the action resulted from fixed $F$ (reflex), reduced responsibility
+    \item If the action resulted from $M$-mediated $F$, full responsibility
+    \item $M$ is the locus of the ``self'' that can be held accountable
+\end{itemize}
+\end{proof}
+
+\section{Clinical Implications}
+
+\begin{definition}[Impaired Free Will]
+\begin{align}
+\text{Compulsion} &: M \text{ cannot override } F \\
+\text{Mania} &: M \text{ too fast, unstable} \\
+\text{Depression} &: M \text{ too slow, stuck} \\
+\text{Trauma} &: M \text{ deformed, hyperactive to triggers}
+\end{align}
+\end{definition}
+
+Therapy aims to restore healthy $M$ dynamics:
+\begin{itemize}
+    \item Not changing $F$ directly
+    \item But restoring the capacity to change $F$
+    \item This is why therapy is ``teaching to fish'' not ``giving fish''
+\end{itemize}
+
+\section{AI and Free Will}
+
+\begin{theorem}[AI Freedom Criterion]
+An AI has (proto-)free will if it can modify its own learning algorithm.
+\end{theorem}
+
+Current AI:
+\begin{itemize}
+    \item Neural networks: $F$ adapts, but $M$ (optimizer) is fixed
+    \item Meta-learning: some $M$ adaptation, but meta-meta is fixed
+    \item True AI freedom would require self-modifying $M$
+\end{itemize}
+
+This is a concrete criterion, not philosophy: does the system update its update rule?
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.85\textwidth}{
+\textbf{Result}: Free will is real but redefined.
+
+\begin{itemize}
+    \item Freedom $\neq$ escape from causation
+    \item Freedom = meta-level self-determination
+    \item Criterion: $dM/dt \neq 0$ under self-control
+    \item Responsibility follows from $M$-mediation
+\end{itemize}
+
+The debate between determinism and free will dissolves: both are true at different levels of the distinction hierarchy.
+}}
+\end{center}
+
+\begin{center}
+\textit{``I am not free because I can do anything. I am free because I can change how I respond.''}
+\end{center}

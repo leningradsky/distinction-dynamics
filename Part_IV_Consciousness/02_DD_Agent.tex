@@ -1,0 +1,115 @@
+% DD-Agent - Part IV
+% NEW IN v2.0
+\chapter{The DD-Agent: Equations of Consciousness}\label{ch:dd-agent}
+\epigraph{Mind as dynamic system of distinctions.}{---}
+
+\vnew{This chapter is new in DD v2.0.}
+
+\section{The Model}
+
+Consciousness is a dynamical system in distinction space.
+
+\subsection{State Variables}
+
+\begin{itemize}
+    \item $\Delta(t) \in \mathbb{R}^n$ — current distinctions
+    \item $H(t)$ — memory (accumulated trace)
+    \item $F_i$ — functions of distinction
+    \item $M$ — meta-operator (changes $F_i$)
+\end{itemize}
+
+\subsection{Fundamental Equations}
+
+\begin{equation}\label{eq:delta-dynamics}
+\frac{d\Delta}{dt} = \sum_i F_i(\Delta) + G(S)
+\end{equation}
+
+\begin{equation}\label{eq:meta-dynamics}
+\frac{dF_i}{dt} = M(\Delta, \nabla_\Delta V)
+\end{equation}
+
+\begin{equation}\label{eq:memory}
+H(t) = \alpha H(t-1) + (1-\alpha)\Delta(t)
+\end{equation}
+
+\begin{equation}\label{eq:emotion}
+E(t) = \left\| \frac{d\Delta}{dt} \right\|
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item $G(S)$ — external input
+    \item $V(\Delta) = -\|\Delta - \Delta^*\|^2$ — value function
+    \item $\Delta^*$ — goal state
+    \item $\alpha \approx 0.95$ — memory decay
+\end{itemize}
+
+\section{Interpretation}
+
+\subsection{Equation \eqref{eq:delta-dynamics}: Distinction Flow}
+Distinctions evolve under internal operators $F_i$ and external stimuli $G(S)$.
+
+\subsection{Equation \eqref{eq:meta-dynamics}: Meta-Consciousness}
+The crucial step: $F_i$ themselves change based on current state and goals. This is $\Delta(\Delta)$ realized.
+
+\textbf{Criterion of consciousness}: A system is conscious iff it can modify its own $F_i$ through $M$.
+
+\subsection{Equation \eqref{eq:memory}: Temporal Integration}
+Memory $H$ is the exponentially-weighted history of distinctions.
+
+\textbf{Internal time}: The difference $\|\Delta(t) - H(t)\|$ constitutes subjective temporal flow.
+
+\subsection{Equation \eqref{eq:emotion}: Emotional Intensity}
+Emotion $E$ measures rate of change of distinctions.
+
+\begin{itemize}
+    \item High $E$ → anxiety, excitement
+    \item Low $E$ → calm, boredom
+\end{itemize}
+
+\section{Hierarchical Structure}
+
+\begin{itemize}
+    \item $\Delta_0$: Sensory distinctions (raw input)
+    \item $\Delta_1$: Cognitive distinctions (interpretation)
+    \item $\Delta_2$: Meta-cognitive (self-awareness)
+\end{itemize}
+
+Each level has its own $F^{(k)}$, $M^{(k)}$, $H_k$.
+
+\section{Character, Trauma, Adaptation}
+
+\subsection{Character}
+Character = stable patterns in $F_i$. The ``lens'' through which distinctions are made.
+
+\subsection{Trauma}
+Trauma = pathological deformation of $M$:
+\[
+M^{trauma}(\Delta) = \beta \cdot M^{normal}(\Delta), \quad \beta \gg 1
+\]
+
+Overactive meta-response to minor stimuli.
+
+\subsection{Adaptation}
+Learning = gradual modification of $F_i$ through $M$ toward better $V$.
+
+\section{Comparison to Other Theories}
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Theory} & \textbf{Mechanism} & \textbf{DD Equivalent} \\
+\midrule
+IIT (Tononi) & $\Phi$ (integration) & $\rank(\Delta)$ \\
+Global Workspace & Broadcasting & $M$ updating all $F_i$ \\
+Predictive Processing & Prediction error & $\|\Delta - H\|$ \\
+Higher-Order & Meta-representation & $\Delta_2$ level \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Implementation}
+
+See \texttt{DD\_v2/code/dd\_agent.py} for Python implementation.
+
+% TODO: Full code, experiments, validation

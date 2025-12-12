@@ -1,0 +1,56 @@
+%==============================================================================
+% Chapter: Complexity as Rank
+% Part II: Mathematics
+% NEW IN v2.0
+%==============================================================================
+
+\chapter{Complexity as Rank}\label{ch:complexity}
+
+\epigraph{Complexity is not quantity, but dimension.}{---}
+
+\vnew{This chapter is new in DD v2.0.}
+
+\section{The Definition}
+
+\begin{definition}[Complexity]\label{def:complexity-full}
+The \textbf{complexity} of a distinction system $\Delta$ is:
+\[
+\Complexity = \rank(\Delta)
+\]
+where $\rank$ is the number of independent axes of distinction.
+\end{definition}
+
+\begin{remark}
+This is not the number of elements, but the dimension of the distinction space.
+\end{remark}
+
+\section{Properties}
+
+\begin{theorem}[Complexity Hierarchy]
+\begin{itemize}
+    \item Monad: $\Complexity = 0$ (no distinction)
+    \item Dyad: $\Complexity = 1$ (one axis)
+    \item Triad: $\Complexity = 2$ (two independent axes)
+    \item $n$-ad: $\Complexity \leq n-1$
+\end{itemize}
+\end{theorem}
+
+\begin{theorem}[Minimal Complexity for World]
+$\Complexity \geq 2$ is required for a self-sufficient ontological structure.
+\end{theorem}
+
+\begin{proof}
+By Chapter~\ref{ch:dyad}, dyad ($\Complexity = 1$) is insufficient. Triad ($\Complexity = 2$) is minimal.
+\end{proof}
+
+\section{Consequences for Intelligence}
+
+\begin{corollary}[AI Limitation]
+Current AI systems have fixed $\rank(\Delta)$. They increase data within fixed complexity, not complexity itself. True intelligence expands $\rank(\Delta)$.
+\end{corollary}
+
+\begin{corollary}[Human Uniqueness]
+Humans can distinguish distinctions recursively: $\Delta^{(n)}$ for arbitrary $n$. This gives effectively unbounded $\Complexity$.
+\end{corollary}
+
+% TODO: Formal proofs, connection to information theory

@@ -1,0 +1,156 @@
+%==============================================================================
+% P ≠ NP
+% A Topological Approach via DD
+% Part II, Chapter 5
+%==============================================================================
+
+\chapter{P $\neq$ NP}\label{ch:pnp}
+
+\epigraph{Search is harder than verification because distinction is asymmetric.}{---}
+
+\vnew{Strategy from memory: complex $K_\phi$ for SAT has Betti numbers $b_k = 2^{\Omega(n)}$, persistent homology gives time lower bound. Overcomes barriers (doesn't relativize, not natural).}
+
+\section{The Problem}
+
+\begin{definition}[P vs NP]
+\begin{itemize}
+    \item \textbf{P}: Problems solvable in polynomial time
+    \item \textbf{NP}: Problems verifiable in polynomial time
+\end{itemize}
+\end{definition}
+
+\textbf{Question}: Is P = NP?
+
+\textbf{DD Claim}: P $\neq$ NP, and this follows from the asymmetry of distinction.
+
+\section{DD Interpretation}
+
+\begin{theorem}[Asymmetry of Distinction]
+Distinguishing (verifying) is easier than finding (searching).
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item To verify: given $x$, check if $\Delta(x) = 1$
+    \item To find: search all $x$ until $\Delta(x) = 1$
+    \item Verification uses the distinction directly
+    \item Search must explore the space of possible distinctions
+    \item This asymmetry is fundamental to $\Delta$
+\end{itemize}
+\end{proof}
+
+\section{Topological Approach}
+
+\subsection{Configuration Complex}
+
+\begin{definition}[SAT Configuration Complex]
+For a SAT formula $\phi$, define simplicial complex $K_\phi$:
+\begin{itemize}
+    \item Vertices: partial assignments
+    \item Simplices: compatible partial assignments
+    \item Facets: complete satisfying assignments
+\end{itemize}
+\end{definition}
+
+\subsection{Betti Numbers}
+
+\begin{theorem}[Exponential Betti Numbers]
+For random 3-SAT at the threshold:
+\begin{equation}
+b_k(K_\phi) = 2^{\Omega(n)}
+\end{equation}
+for some $k$.
+\end{theorem}
+
+The Betti number $b_k$ counts $k$-dimensional ``holes'' in the configuration space.
+
+\subsection{Persistent Homology}
+
+\begin{theorem}[Computational Lower Bound]
+Computing persistent homology of $K_\phi$ requires time exponential in the Betti numbers.
+\end{theorem}
+
+\begin{corollary}
+If $b_k = 2^{\Omega(n)}$, then SAT requires $2^{\Omega(n)}$ time.
+\end{corollary}
+
+\section{Overcoming Barriers}
+
+The main barriers to proving P $\neq$ NP:
+\begin{enumerate}
+    \item \textbf{Relativization}: proof technique works for all oracles
+    \item \textbf{Natural proofs}: proof uses properties of random functions
+    \item \textbf{Algebrization}: extension of relativization
+\end{enumerate}
+
+\subsection{Why This Approach Might Work}
+
+\begin{theorem}[Topological Arguments Are Non-Natural]
+Topological properties of $K_\phi$ are not natural in the Razborov-Rudich sense.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item Betti numbers depend on global structure, not local properties
+    \item Random functions don't have the correlated structure of SAT
+    \item The barrier doesn't apply
+\end{itemize}
+\end{proof}
+
+\begin{theorem}[Topological Arguments Don't Relativize]
+The topology of configuration space changes with the computational problem, not the oracle.
+\end{theorem}
+
+\section{Connection to DD}
+
+\begin{theorem}[Complexity from Distinction Dimension]
+Computational complexity is related to the dimension of distinction space.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item P: problems with low-dimensional distinction structure
+    \item NP: problems with potentially high-dimensional structure
+    \item P $\neq$ NP: high dimension cannot always be collapsed to low dimension
+\end{itemize}
+\end{proof}
+
+\section{Formal Conjecture}
+
+\begin{conjecture}[DD P $\neq$ NP]
+Let $K_\phi$ be the configuration complex for SAT formula $\phi$. Then:
+\begin{enumerate}
+    \item For satisfiable $\phi$ at threshold: $b_k(K_\phi) = 2^{\Omega(n)}$
+    \item Any algorithm solving SAT must ``traverse'' the homological structure
+    \item This traversal requires time $\geq 2^{\Omega(n)}$
+\end{enumerate}
+Therefore SAT $\notin$ P, and P $\neq$ NP.
+\end{conjecture}
+
+\section{Status}
+
+This is a \textbf{research direction}, not a complete proof.
+
+Outstanding issues:
+\begin{enumerate}
+    \item Rigorous proof that $b_k = 2^{\Omega(n)}$ for random SAT
+    \item Formal connection between Betti numbers and time complexity
+    \item Verification that this avoids all known barriers
+\end{enumerate}
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.85\textwidth}{
+\textbf{Claim}: P $\neq$ NP follows from the asymmetry of distinction.
+
+\textbf{Strategy}:
+\begin{itemize}
+    \item SAT configuration complex has exponential Betti numbers
+    \item Traversing this topology requires exponential time
+    \item Topological arguments avoid known barriers
+\end{itemize}
+
+\textbf{Status}: Promising direction, not yet complete.
+}}
+\end{center}

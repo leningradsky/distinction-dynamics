@@ -1,0 +1,197 @@
+%==============================================================================
+% GENERAL RELATIVITY FROM RICCI FLOW
+% Einstein Equations as Information Geometry
+% Part III, Chapter 5
+%==============================================================================
+
+\chapter{General Relativity from Ricci Flow}\label{ch:gr-ricci}
+
+\epigraph{Gravity is the curvature of distinction space.}{---}
+
+\vnew{This chapter is new in DD v2.0. Derives GR from information geometry.}
+
+\section{The Connection}
+
+We established in Chapter~\ref{ch:info-ricci} that:
+\begin{equation}
+\partial_t g_{ij} = -2\, \mathrm{Ric}_{ij} + 2\, \nabla_i \nabla_j \log p
+\end{equation}
+
+Now we show how this connects to Einstein's equations.
+
+\section{Ricci Flow and Einstein Equations}
+
+\subsection{Static Case}
+
+\begin{theorem}[Ricci-Flat $\Leftrightarrow$ Vacuum Einstein]
+A manifold satisfies the vacuum Einstein equations:
+\begin{equation}
+R_{ij} = 0
+\end{equation}
+if and only if it is a fixed point of the Ricci flow:
+\begin{equation}
+\partial_t g_{ij} = -2 R_{ij} = 0
+\end{equation}
+\end{theorem}
+
+\textbf{Interpretation:} Vacuum spacetime = equilibrium of distinction flow.
+
+\subsection{With Matter}
+
+The Einstein equations with matter:
+\begin{equation}
+R_{ij} - \frac{1}{2}R g_{ij} + \Lambda g_{ij} = 8\pi G\, T_{ij}
+\end{equation}
+
+In Ricci flow with source:
+\begin{equation}
+\partial_t g_{ij} = -2 R_{ij} + \lambda g_{ij} + S_{ij}
+\end{equation}
+
+where $S_{ij}$ is a source term and $\lambda$ is a scaling parameter.
+
+\section{The Padmanabhan Program}
+
+T. Padmanabhan (2010, 2015) showed that:
+
+\begin{theorem}[Emergent Gravity]
+Einstein's equations can be derived from thermodynamic/information-theoretic principles:
+\begin{equation}
+\Delta V = \frac{1}{H}(N_{\text{sur}} - N_{\text{bulk}})
+\end{equation}
+where:
+\begin{itemize}
+    \item $\Delta V$ = change in spatial volume
+    \item $N_{\text{sur}}$ = degrees of freedom on surface
+    \item $N_{\text{bulk}}$ = degrees of freedom in bulk
+\end{itemize}
+\end{theorem}
+
+This is \textbf{holographic equipartition} — the universe expands to equilibrate surface and bulk information.
+
+\section{DD Synthesis}
+
+\subsection{Information $\to$ Curvature}
+
+From Chapter~\ref{ch:info-ricci}:
+\begin{equation}
+\mathrm{Ric}_{ij} = \frac{1}{2}\partial_t g_{ij} + \nabla_i \nabla_j \log p
+\end{equation}
+
+\textbf{DD interpretation:}
+\begin{itemize}
+    \item $\mathrm{Ric}_{ij}$ = curvature = interaction of distinctions
+    \item $\nabla_i \nabla_j \log p$ = information gradient = distinguishability field
+\end{itemize}
+
+\subsection{Matter as Distinction Density}
+
+\begin{definition}[Matter-Distinction Correspondence]
+The stress-energy tensor corresponds to distinction density:
+\begin{equation}
+T_{ij} \sim \nabla_i \nabla_j \log p - \frac{1}{2}g_{ij} |\nabla \log p|^2
+\end{equation}
+\end{definition}
+
+\textbf{Physical meaning:} Mass-energy = concentration of distinguishability.
+
+\section{Derivation Sketch}
+
+\begin{theorem}[Einstein from Fisher-Ricci]
+Starting from:
+\begin{enumerate}
+    \item Fisher metric $g_{ij}$ on statistical manifold
+    \item Ricci flow $\partial_t g = -2 \mathrm{Ric}$
+    \item Information source $\nabla\nabla \log p$
+\end{enumerate}
+
+At equilibrium ($\partial_t g = 0$) with source:
+\begin{equation}
+\mathrm{Ric}_{ij} = \nabla_i \nabla_j \log p
+\end{equation}
+
+Tracing:
+\begin{equation}
+R = \Delta \log p
+\end{equation}
+
+Combining:
+\begin{equation}
+R_{ij} - \frac{1}{2}R g_{ij} = \nabla_i \nabla_j \log p - \frac{1}{2}g_{ij}\Delta\log p
+\end{equation}
+
+This has the \textbf{form of Einstein equations} with the RHS as an effective stress-energy tensor.
+\end{theorem}
+
+\section{Cosmological Constant}
+
+\begin{theorem}[Dynamic $\Lambda$]
+In DDCE, the cosmological ``constant'' is:
+\begin{equation}
+\Lambda_{\text{eff}} = k(\Delta + F + M)
+\end{equation}
+
+This is \textbf{not constant} — it grows with distinction complexity.
+\end{theorem}
+
+\textbf{Connection to DESI observations:} $w(z) \neq -1$ indicates evolving dark energy, consistent with DDCE prediction.
+
+\section{The Complete Picture}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Standard GR} & \textbf{DD/Information} & \textbf{Interpretation} \\
+\midrule
+Metric $g_{ij}$ & Fisher metric & Distinguishability of states \\
+Curvature $R_{ij}$ & Ricci tensor & Interaction of distinctions \\
+Matter $T_{ij}$ & $\nabla\nabla\log p$ & Distinction density \\
+$\Lambda$ & $k(\Delta+F+M)$ & Total distinction complexity \\
+Geodesic & Info-geodesic & Path of minimal distinction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Key Equations}
+
+\subsection{Vacuum}
+\begin{equation}
+R_{ij} = 0 \quad\Leftrightarrow\quad \text{Fixed point of Ricci flow}
+\end{equation}
+
+\subsection{With Matter}
+\begin{equation}
+G_{ij} + \Lambda g_{ij} = 8\pi G \left(\nabla_i \nabla_j \log p - \frac{1}{2}g_{ij}|\nabla\log p|^2\right)
+\end{equation}
+
+\subsection{Dynamic (DDCE)}
+\begin{equation}
+\partial_t g_{ij} = -2 R_{ij} + 2\nabla_i\nabla_j\log p + k(\Delta + F + M)g_{ij}
+\end{equation}
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{General relativity is the equilibrium dynamics of distinction geometry.}
+
+\begin{itemize}
+    \item Spacetime metric = Fisher metric of physical states
+    \item Curvature = interaction between distinctions
+    \item Matter = concentration of distinguishability
+    \item Expansion = growth of distinction complexity
+\end{itemize}
+
+Einstein's equations are the \textbf{fixed-point condition} of Ricci flow with informational source.
+}}
+\end{center}
+
+\section{Literature}
+
+\begin{itemize}
+    \item Padmanabhan, T. (2010). Thermodynamical aspects of gravity. \textit{Rep. Prog. Phys.}
+    \item Verlinde, E. (2011). On the origin of gravity. \textit{JHEP}.
+    \item Jacobson, T. (1995). Thermodynamics of spacetime. \textit{Phys. Rev. Lett.}
+\end{itemize}
+
+DD synthesizes these approaches through \textbf{distinction dynamics}.

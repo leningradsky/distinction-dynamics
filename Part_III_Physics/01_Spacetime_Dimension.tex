@@ -1,0 +1,170 @@
+%==============================================================================
+% SPACETIME DIMENSION FROM TRIADIC NECESSITY
+% Why 3+1 Dimensions
+% Part III, Chapter 1
+%==============================================================================
+
+\chapter{Spacetime Dimension from Triadic Necessity}\label{ch:dimension}
+
+\epigraph{Space has three dimensions because distinction requires three.}{---}
+
+\vnew{This chapter derives D=3+1 from DD principles.}
+
+\section{The Problem}
+
+Why does spacetime have 3 spatial dimensions and 1 time dimension?
+
+Standard physics: this is a brute fact, input to the theory.
+
+DD claim: this follows from triadic necessity.
+
+\section{Review: Triadic Necessity}
+
+From Part I, we established:
+\begin{itemize}
+    \item Dyad is ontologically insufficient (Chapter~\ref{ch:dyad})
+    \item Triad is the minimal self-sufficient structure
+    \item $\mathrm{rank}(\Delta) \geq 2$ for dynamics
+\end{itemize}
+
+\section{Spatial Dimensions from Spectral Realization}
+
+\begin{theorem}[Three Spatial Dimensions]
+The triad $(A, B, C)$ requires three independent spectral directions for its realization.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{enumerate}
+    \item The triad has three elements with pairwise distinctions: $\delta_{AB}, \delta_{BC}, \delta_{CA}$.
+    \item Each distinction requires a direction in which it can be measured.
+    \item For three independent distinctions, we need three linearly independent directions.
+    \item These directions constitute a 3-dimensional space.
+\end{enumerate}
+\end{proof}
+
+\subsection{Group-Theoretic Argument}
+
+\begin{theorem}[SU(3) Requires 3D]
+The group $SU(3)$ — the minimal non-abelian group of rank $\geq 2$ — has:
+\begin{itemize}
+    \item 3 colors (fundamental representation)
+    \item 8 generators (adjoint representation)
+    \item 2 Casimir operators (rank 2)
+\end{itemize}
+
+The spectral realization requires 3 independent eigenvalues $(\lambda_1, \lambda_2, \lambda_3)$ with $\sum \lambda_i = 0$.
+
+This naturally embeds in 3D space.
+\end{theorem}
+
+\section{Time from Phase Evolution}
+
+\begin{theorem}[Time from Non-Eliminable Phases]
+In the triad, phase differences between states cannot be globally eliminated.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{enumerate}
+    \item SU(2) (dyad) has rank 1: one phase, globally eliminable.
+    \item SU(3) (triad) has rank 2: two independent phases.
+    \item Phase evolution: $\phi_{ij}(t) = (E_i - E_j)t$.
+    \item With three eigenvalues, two independent phase evolutions exist.
+    \item These cannot all be eliminated by global transformation.
+    \item Non-eliminable phase $\Rightarrow$ intrinsic time.
+\end{enumerate}
+\end{proof}
+
+\section{Why 3+1 and Not Other Signatures}
+
+\subsection{Why Not 2+1?}
+
+\begin{itemize}
+    \item 2 spatial dimensions = dyadic (rank 1)
+    \item No stable atoms, no chemistry
+    \item No gravity propagation (GR trivial in 2+1)
+\end{itemize}
+
+\subsection{Why Not 4+1 or Higher?}
+
+\begin{itemize}
+    \item More than 3 spatial dimensions: unstable orbits (Ehrenfest)
+    \item No stable planetary systems
+    \item No stable atoms (Coulomb potential wrong scaling)
+\end{itemize}
+
+\subsection{Why Not 3+2 (Two Time Dimensions)?}
+
+\begin{itemize}
+    \item Closed timelike curves everywhere
+    \item No well-posed initial value problem
+    \item Causality violation
+\end{itemize}
+
+\section{The DD Argument}
+
+\begin{theorem}[Uniqueness of 3+1]
+3+1 is the unique signature satisfying:
+\begin{enumerate}
+    \item Triadic spatial necessity (from $\mathrm{rank}(\Delta) = 2$)
+    \item Causal structure (from phase non-eliminability)
+    \item Physical stability (atoms, orbits, propagation)
+\end{enumerate}
+\end{theorem}
+
+\section{Connection to Fisher-Ricci}
+
+The Fisher metric on the triadic state space is:
+\begin{equation}
+g_{ij}(\theta) = \mathbb{E}[\partial_i \log p \cdot \partial_j \log p]
+\end{equation}
+
+For three states with two independent parameters ($\mathrm{rank} = 2$):
+\begin{equation}
+\dim(\Theta) = 3 - 1 = 2 \quad\text{(parameter space)}
+\end{equation}
+
+But the \textbf{embedding} space (where states live) is 3-dimensional.
+
+Time emerges from the \textbf{flow} on this manifold:
+\begin{equation}
+\partial_t g_{ij} = -2 \mathrm{Ric}_{ij} + \ldots
+\end{equation}
+
+\section{Anthropic vs DD}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Anthropic} & \textbf{DD} \\
+\midrule
+3+1 because observers exist & 3+1 because triadic structure \\
+Selection effect & Necessity \\
+Many universes, we're in right one & Only one possibility \\
+Post hoc explanation & A priori derivation \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+DD does not invoke observers. 3+1 follows from the mathematics of distinction.
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{Dimension Theorem}
+
+Space has 3 dimensions because:
+\begin{itemize}
+    \item Triadic structure requires 3 independent spectral directions
+    \item $SU(3)$ is the minimal rank-2 non-abelian group
+\end{itemize}
+
+Time has 1 dimension because:
+\begin{itemize}
+    \item Phase evolution is intrinsically 1-dimensional
+    \item More time dimensions violate causality
+\end{itemize}
+
+3+1 is \textbf{necessary}, not contingent.
+}}
+\end{center}

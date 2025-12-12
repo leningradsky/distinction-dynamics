@@ -1,0 +1,256 @@
+%==============================================================================
+% ELECTROWEAK GAUGE GROUP
+% SU(2)_L × U(1)_Y from DD Principles
+% Part III, Chapter 3
+%==============================================================================
+
+\chapter{Electroweak Gauge Group}\label{ch:gauge-groups}
+
+\epigraph{Chirality is the trace of the triadic direction.}{---}
+
+\vnew{This chapter derives the electroweak structure from DD.}
+
+\section{The Problem}
+
+We derived $SU(3)_C$ for the strong force. Now:
+
+\textbf{Why $SU(2)_L \times U(1)_Y$ for electroweak?}
+
+\section{Chirality from Triadic Direction}
+
+\subsection{The Argument}
+
+From Chapter~\ref{ch:chirality}:
+\begin{itemize}
+    \item The triad has an intrinsic direction: $A \to B \to C \to A$
+    \item This direction is non-eliminable (holonomy)
+    \item Physical manifestation: chirality (left vs right)
+\end{itemize}
+
+\begin{theorem}[Chirality Necessity]
+A triadic system necessarily distinguishes between two orientations.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+    \item Cycle $A \to B \to C \to A$ has orientation
+    \item Reverse cycle $A \to C \to B \to A$ is distinct
+    \item No continuous transformation connects them
+    \item Therefore: two chiralities exist necessarily
+\end{enumerate}
+\end{proof}
+
+\subsection{Physical Chirality}
+
+In the Standard Model:
+\begin{itemize}
+    \item Left-handed fermions: $SU(2)_L$ doublets
+    \item Right-handed fermions: $SU(2)_L$ singlets
+\end{itemize}
+
+This asymmetry is \textbf{not arbitrary} — it follows from triadic direction.
+
+\section{Why SU(2) for Weak Isospin}
+
+\subsection{Rank Considerations}
+
+\begin{itemize}
+    \item Strong: rank 2 (triadic, independent dynamics)
+    \item Weak: rank 1 (chiral projection of triad)
+\end{itemize}
+
+\begin{theorem}[Weak Isospin Rank]
+The chiral projection of a triadic structure has rank 1.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{enumerate}
+    \item Full triad: 3 elements, rank 2
+    \item Chiral projection: selects one orientation
+    \item Projected structure: doublet (2 elements)
+    \item Doublet: rank 1
+\end{enumerate}
+\end{proof}
+
+Therefore: weak isospin is $SU(2)$, not $SU(3)$.
+
+\subsection{Left-Handed Coupling}
+
+\begin{theorem}[Parity Violation]
+Weak interactions couple only to left-handed fermions because chirality projection selects one orientation.
+\end{theorem}
+
+This is observed experimentally (Wu experiment, 1957).
+
+DD explains \textbf{why} parity is violated — it's the trace of triadic direction.
+
+\section{Why U(1) for Hypercharge}
+
+\subsection{Phase Freedom}
+
+After fixing:
+\begin{itemize}
+    \item $SU(3)_C$ (color)
+    \item $SU(2)_L$ (weak isospin)
+\end{itemize}
+
+There remains a residual $U(1)$ phase freedom.
+
+\begin{theorem}[Hypercharge Emergence]
+The $U(1)_Y$ hypercharge is the remaining phase after triadic and chiral projections.
+\end{theorem}
+
+\subsection{Anomaly Constraints on Hypercharge}
+
+For anomaly cancellation:
+\begin{equation}
+\sum_f Y_f = 0 \quad \text{(per generation)}
+\end{equation}
+
+This constrains hypercharge assignments:
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Particle} & $SU(2)_L$ & $Y$ \\
+\midrule
+$Q_L = (u_L, d_L)$ & $\mathbf{2}$ & $+1/6$ \\
+$u_R$ & $\mathbf{1}$ & $+2/3$ \\
+$d_R$ & $\mathbf{1}$ & $-1/3$ \\
+$L = (\nu_L, e_L)$ & $\mathbf{2}$ & $-1/2$ \\
+$e_R$ & $\mathbf{1}$ & $-1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Check: $3 \times 2 \times \frac{1}{6} + 3 \times \frac{2}{3} + 3 \times (-\frac{1}{3}) + 2 \times (-\frac{1}{2}) + (-1) = 1 + 2 - 1 - 1 - 1 = 0$ ✓
+
+\section{The Full Standard Model Gauge Group}
+
+\begin{equation}
+G_{SM} = SU(3)_C \times SU(2)_L \times U(1)_Y
+\end{equation}
+
+\subsection{DD Derivation Summary}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Group} & \textbf{DD Origin} & \textbf{Constraint} \\
+\midrule
+$SU(3)_C$ & Triadic necessity & Rank $\geq 2$, anomaly-free \\
+$SU(2)_L$ & Chiral projection & Rank 1, left-handed \\
+$U(1)_Y$ & Residual phase & Anomaly cancellation \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Electroweak Symmetry Breaking}
+
+\subsection{The Higgs Mechanism}
+
+At low energies:
+\begin{equation}
+SU(2)_L \times U(1)_Y \xrightarrow{\langle H \rangle} U(1)_{EM}
+\end{equation}
+
+\begin{theorem}[Symmetry Breaking Necessity]
+Spontaneous symmetry breaking is required for:
+\begin{enumerate}
+    \item Massive $W^\pm$, $Z$ bosons
+    \item Massless photon
+    \item Fermion masses via Yukawa couplings
+\end{enumerate}
+\end{theorem}
+
+\subsection{DD Interpretation}
+
+Symmetry breaking = \textbf{distinction crystallization}.
+
+At high energy: all distinctions equivalent (symmetric).
+
+At low energy: specific distinctions become stable (broken).
+
+The Higgs field $H$ is the \textbf{order parameter} of distinction crystallization.
+
+\section{Three Generations}
+
+\subsection{The Mystery}
+
+Why exactly 3 generations of fermions?
+
+\subsection{DD Argument}
+
+\begin{theorem}[Three Generations from Triad]
+The number of fermion generations equals the number of elements in the minimal triadic structure.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{enumerate}
+    \item Triad: $(A, B, C)$ — three elements
+    \item Each element corresponds to one generation
+    \item Generations are ``flavors'' of the same triadic structure
+    \item Therefore: 3 generations
+\end{enumerate}
+\end{proof}
+
+This is consistent with:
+\begin{itemize}
+    \item LEP measurement: $N_\nu = 2.984 \pm 0.008$
+    \item CKM/PMNS mixing matrices are $3 \times 3$
+\end{itemize}
+
+\section{CP Violation}
+
+\subsection{Complex Phases}
+
+The CKM matrix has one physical CP-violating phase.
+
+\begin{theorem}[CP Violation from Triadic Phases]
+CP violation arises from non-eliminable phases in the triadic structure.
+\end{theorem}
+
+Recall from Chapter~\ref{ch:dyad}:
+\begin{itemize}
+    \item SU(2): all phases eliminable (rank 1)
+    \item SU(3): two independent phases (rank 2)
+    \item One phase becomes CP-violating
+\end{itemize}
+
+\section{The Complete Picture}
+
+\begin{center}
+\fbox{\parbox{0.95\textwidth}{
+\textbf{Standard Model Gauge Structure from DD:}
+
+\begin{enumerate}
+    \item \textbf{Existence} ($\Delta \neq \emptyset$) $\Rightarrow$ Something
+    \item \textbf{Triadic necessity} (rank $\geq 2$) $\Rightarrow$ $SU(3)_C$
+    \item \textbf{Chirality} (triadic direction) $\Rightarrow$ $SU(2)_L$ (left-handed)
+    \item \textbf{Phase freedom} $\Rightarrow$ $U(1)_Y$
+    \item \textbf{Anomaly cancellation} $\Rightarrow$ Hypercharge assignments
+    \item \textbf{Triadic count} $\Rightarrow$ 3 generations
+    \item \textbf{Non-eliminable phases} $\Rightarrow$ CP violation
+\end{enumerate}
+
+The Standard Model is \textbf{not arbitrary}. It is the unique self-consistent realization of distinction dynamics.
+}}
+\end{center}
+
+\section{What DD Does Not (Yet) Derive}
+
+\begin{itemize}
+    \item Specific values of coupling constants
+    \item Fermion mass ratios
+    \item Higgs mass
+    \item Neutrino masses and mixing
+\end{itemize}
+
+These may require additional structure (see Chapter~\ref{ch:constants}).
+
+\section{Summary}
+
+\begin{theorem}[Standard Model Uniqueness]
+The gauge group $SU(3)_C \times SU(2)_L \times U(1)_Y$ with 3 generations is the unique anomaly-free, asymptotically free, confining, chiral gauge theory compatible with triadic necessity.
+\end{theorem}
+
+There is no choice. There is no legislator. There is only consistency.

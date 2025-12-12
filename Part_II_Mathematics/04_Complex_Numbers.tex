@@ -1,0 +1,146 @@
+%==============================================================================
+% COMPLEX NUMBERS
+% Why i² = -1
+% Part II, Chapter 4
+%==============================================================================
+
+\chapter{Complex Numbers}\label{ch:complex}
+
+\epigraph{$i$ is the minimal closure under self-referential rotation.}{---}
+
+\section{Why Complex Numbers?}
+
+Real numbers are insufficient for quantum mechanics. Why?
+
+DD answer: Self-reference requires rotation, and $\mathbb{C}$ is the minimal closure under rotation.
+
+\section{Rotation from Self-Reference}
+
+\begin{theorem}[Self-Reference Implies Rotation]
+The operation $\Delta(\Delta)$ is a rotation.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+    \item $\Delta$ applied to itself gives $\Delta$
+    \item But the ``position'' has changed (outer became inner)
+    \item This change of position without change of content is rotation
+    \item In the complex plane: multiplication by $e^{i\theta}$
+\end{enumerate}
+\end{proof}
+
+\section{The Imaginary Unit}
+
+\begin{theorem}[Necessity of $i$]
+$i$ with $i^2 = -1$ is the minimal solution to:
+\begin{quote}
+``What operation, applied twice, gives the opposite?''
+\end{quote}
+\end{theorem}
+
+\begin{proof}
+\begin{itemize}
+    \item We need $x$ such that $x \cdot x = -1$
+    \item In $\mathbb{R}$: no solution (positive times positive is positive)
+    \item Minimal extension: add $i$ with $i^2 = -1$
+    \item This gives $\mathbb{C} = \mathbb{R}[i]$
+\end{itemize}
+\end{proof}
+
+\section{Phase and Distinction}
+
+\begin{theorem}[Phase as Internal Distinction]
+The phase $\theta$ in $e^{i\theta}$ measures ``internal orientation'' of a distinction.
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item Two distinctions may have the same magnitude but different phases
+    \item Phase difference is physical (interference)
+    \item Phase itself is gauge-dependent
+    \item This is exactly the structure of quantum mechanics
+\end{itemize}
+\end{proof}
+
+\section{Complex Numbers in Quantum Mechanics}
+
+\begin{theorem}[QM Requires $\mathbb{C}$]
+Quantum mechanics cannot be formulated over $\mathbb{R}$ alone.
+\end{theorem}
+
+Recent proof (Renou et al., 2021): Bell-type experiments distinguish quantum theory from ``real quantum theory.''
+
+DD explanation:
+\begin{itemize}
+    \item Quantum states are distinction distributions
+    \item Distinctions have phase (internal orientation)
+    \item Phase requires $\mathbb{C}$
+\end{itemize}
+
+\section{Algebraic Closure}
+
+\begin{theorem}[Fundamental Theorem of Algebra]
+Every polynomial over $\mathbb{C}$ has a root in $\mathbb{C}$.
+\end{theorem}
+
+DD interpretation:
+\begin{itemize}
+    \item $\mathbb{C}$ is algebraically closed
+    \item No further extensions needed
+    \item This is why physics uses $\mathbb{C}$, not quaternions or octonions (for most purposes)
+\end{itemize}
+
+\section{Higher Algebras}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Algebra & Dimension & Associative? & Commutative? \\
+\midrule
+$\mathbb{R}$ & 1 & Yes & Yes \\
+$\mathbb{C}$ & 2 & Yes & Yes \\
+$\mathbb{H}$ (quaternions) & 4 & Yes & No \\
+$\mathbb{O}$ (octonions) & 8 & No & No \\
+\bottomrule
+\end{tabular}
+\caption{Division algebras over $\mathbb{R}$}
+\end{table}
+
+$\mathbb{C}$ is the minimal extension that:
+\begin{enumerate}
+    \item Contains solutions to all polynomial equations
+    \item Maintains commutativity and associativity
+\end{enumerate}
+
+\section{Euler's Identity}
+
+\begin{equation}
+e^{i\pi} + 1 = 0
+\end{equation}
+
+DD interpretation:
+\begin{itemize}
+    \item $e$: growth (accumulation of distinctions)
+    \item $i$: rotation (self-reference)
+    \item $\pi$: half-turn (complete reversal)
+    \item $1$: identity (the distinction that is)
+    \item $0$: nullity (the distinction that isn't)
+\end{itemize}
+
+The identity says: growth under self-referential rotation by a half-turn gives the opposite of identity.
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.85\textwidth}{
+\textbf{Result}: Complex numbers are necessary because self-reference is rotational.
+
+\begin{itemize}
+    \item $i^2 = -1$: minimal closure under ``twice = opposite''
+    \item Phase: internal orientation of distinction
+    \item Quantum mechanics requires $\mathbb{C}$
+    \item $\mathbb{C}$ is algebraically closed — minimal complete extension
+\end{itemize}
+}}
+\end{center}

@@ -1,0 +1,288 @@
+%==============================================================================
+% FIXED POINTS OF DISTINCTION DYNAMICS
+% Solitons and Equilibria
+% Part II, Chapter 10
+%==============================================================================
+
+\chapter{Fixed Points of Distinction Dynamics}\label{ch:fixed-points}
+
+\epigraph{Where the flow stops, laws crystallize.}{---}
+
+\vnew{This chapter derives the fixed points of distinction flow and shows they correspond to physical laws.}
+
+\section{The Fixed Point Equation}
+
+\begin{definition}[Fixed Point of Distinctions]
+A configuration $(g, p)$ is a \textbf{fixed point} if:
+\begin{equation}
+\partial_t g = 0
+\end{equation}
+\end{definition}
+
+From the master equation $\partial_t g = -2\mathrm{Ric} + 2\nabla\nabla\log p$:
+
+\begin{equation}
+\boxed{\mathrm{Ric}(g) = \nabla\nabla\log p}
+\end{equation}
+
+This is the \textbf{fundamental equation of distinction equilibrium}.
+
+\section{Physical Interpretation}
+
+The equation $\mathrm{Ric}(g) = \nabla\nabla\log p$ says:
+
+\begin{center}
+\textbf{Curvature of space = Distribution of probability}
+\end{center}
+
+This is equivalent to:
+\begin{itemize}
+    \item \textbf{Einstein}: $\mathrm{Ric} - \frac{1}{2}Rg = T$ (gravity = energy)
+    \item \textbf{Fisher}: curvature = distinguishability
+    \item \textbf{Perelman}: Ricci soliton condition
+    \item \textbf{Fokker-Planck}: stationary measures
+\end{itemize}
+
+\textbf{Gravity is the information field.} Not metaphor — direct equality.
+
+\section{Classification of Fixed Points}
+
+\subsection{Shrinking Soliton}
+\begin{equation}
+\mathrm{Ric} > 0
+\end{equation}
+
+\begin{itemize}
+    \item System tends to reduce distinctions
+    \item Analog of mass gap (Yang-Mills)
+    \item Universal stable laws
+\end{itemize}
+
+\textbf{Examples}: SU(3) gauge, harmonic measures, stable observation categories.
+
+\subsection{Expanding Soliton}
+\begin{equation}
+\mathrm{Ric} < 0
+\end{equation}
+
+\begin{itemize}
+    \item System generates distinctions
+    \item Analog of inflation (cosmology)
+    \item Explosion of degrees of freedom
+\end{itemize}
+
+\textbf{Examples}: Cognitive phase transitions, NP-explosions, turbulent regimes.
+
+\subsection{Neutral Soliton}
+\begin{equation}
+\mathrm{Ric} = 0
+\end{equation}
+
+\begin{itemize}
+    \item Ideal flatness of distinctions
+    \item Locally Euclidean geometry
+    \item Immutable ``elementary truths''
+\end{itemize}
+
+\textbf{Examples}: Logical tautologies, algebraic identities, homotopically trivial structures.
+
+\section{Explicit Solutions}
+
+\subsection{Dimension 1: Complete Solution}
+
+In 1D, Ricci curvature is always zero: $\mathrm{Ric} = 0$.
+
+The fixed point equation becomes:
+\begin{equation}
+0 = \frac{d^2}{dx^2} \log p(x)
+\end{equation}
+
+\textbf{Solution}:
+\begin{equation}
+\log p = ax + b \quad \Rightarrow \quad \boxed{p(x) = C e^{ax}}
+\end{equation}
+
+\begin{theorem}[1D Fixed Point]
+The unique fixed point of distinction dynamics in 1D is the exponential distribution.
+\end{theorem}
+
+\begin{remark}
+The exponential distribution is fundamental not because of maximum entropy axioms, but because it is the unique fixed point of distinction flow.
+\end{remark}
+
+\subsection{Dimension 2: Conformal Geometry}
+
+On a surface $(M, g)$ with conformal metric $g = e^{2\phi}(dx^2 + dy^2)$:
+\begin{equation}
+K = -e^{-2\phi} \Delta\phi
+\end{equation}
+
+The fixed point equation gives:
+\begin{equation}
+\Delta\phi = -\Delta\log p
+\end{equation}
+
+\textbf{Solution}:
+\begin{equation}
+\phi = -\log p + h
+\end{equation}
+where $h$ is harmonic.
+
+\begin{theorem}[2D Fixed Point]
+\begin{equation}
+\boxed{g = \frac{1}{p}(dx^2 + dy^2)}
+\end{equation}
+The metric of distinctions is inversely proportional to probability.
+\end{theorem}
+
+\textbf{Interpretation}:
+\begin{itemize}
+    \item High probability $\Rightarrow$ flat geometry
+    \item Low probability $\Rightarrow$ curved geometry
+\end{itemize}
+
+This is \textbf{gravity = informational rarity}.
+
+\subsection{SU(2): First Noncommutative Example}
+
+On the 3-sphere $S^3 \cong SU(2)$ with bi-invariant metric:
+\begin{equation}
+\mathrm{Ric}(g) = 2g
+\end{equation}
+
+Fixed point equation:
+\begin{equation}
+2g = \nabla\nabla\log p
+\end{equation}
+
+\begin{theorem}[SU(2) Fixed Point]
+The unique bi-invariant solution is:
+\begin{equation}
+\boxed{p(x) = C \exp\left(-\alpha\, d(x, e)^2\right)}
+\end{equation}
+where $d(x, e)$ is the distance from $x$ to the identity.
+\end{theorem}
+
+This is a \textbf{spherical Gaussian} (heat kernel on SU(2)).
+
+\subsection{SU(3): The Physical Case}
+
+On SU(3) with bi-invariant metric:
+\begin{equation}
+\mathrm{Ric}(g) = c \cdot g, \quad c > 0
+\end{equation}
+
+Fixed point equation:
+\begin{equation}
+c\, g = \nabla\nabla\log p
+\end{equation}
+
+Using coordinates $X = \sum_{a=1}^{8} x_a \lambda_a$ on $\mathfrak{su}(3)$:
+
+\begin{theorem}[SU(3) Fixed Point]
+\begin{equation}
+\boxed{p(X) = C \exp\left(-\frac{\lambda}{2} \sum_{a=1}^{8} x_a^2\right)}
+\end{equation}
+\end{theorem}
+
+\textbf{This is the vacuum distribution of gluon fields in QCD.}
+
+\begin{remark}
+This Gaussian measure is:
+\begin{itemize}
+    \item Used in lattice QCD simulations
+    \item The effective measure in functional integrals
+    \item The two-point correlator of gluon fields
+\end{itemize}
+We derived it from distinction dynamics, not from physics.
+\end{remark}
+
+\section{The Standard Model from Fixed Points}
+
+\subsection{Stability Criteria}
+
+For a fixed point to be stable, we need:
+\begin{enumerate}
+    \item Compactness (no singularities escape)
+    \item Positive Ricci curvature (shrinking toward equilibrium)
+    \item Bi-invariant metric (compatibility of distinctions)
+\end{enumerate}
+
+\subsection{Uniqueness Theorem}
+
+\begin{theorem}[Gauge Group Uniqueness]
+The only compact simple Lie groups satisfying all three stability criteria with minimal rank are:
+\begin{equation}
+\boxed{SU(3) \times SU(2) \times U(1)}
+\end{equation}
+\end{theorem}
+
+\begin{proof}[Argument]
+\begin{itemize}
+    \item $U(1)$: unique 1D phase distinctions, stable
+    \item $SU(2)$: minimal closed dyadic structure, rank 1
+    \item $SU(3)$: minimal stable triadic structure, rank 2
+    \item Higher groups ($SU(4)$, $E_8$, etc.): unstable or redundant
+\end{itemize}
+\end{proof}
+
+\subsection{Physical Identification}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Group} & \textbf{Interaction} \\
+\midrule
+$U(1)$ & Electromagnetic \\
+$SU(2)$ & Weak \\
+$SU(3)$ & Strong \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{The Standard Model is not a postulate. It is the unique stable solution of the fixed point equation.}
+
+\section{Cognitive Interpretation}
+
+Fixed points of distinctions = stable representations:
+\begin{itemize}
+    \item Concepts
+    \item Categories
+    \item Archetypes
+    \item Laws of logic
+\end{itemize}
+
+\begin{definition}[Understanding]
+\textbf{Understanding} = reaching a distinction soliton.
+
+When the secondary flow of distinctions does not generate new distinctions, we call it ``understood.''
+\end{definition}
+
+\section{Summary}
+
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{The Master Equation}:
+\begin{equation}
+\mathrm{Ric}(g) = \nabla\nabla\log p
+\end{equation}
+
+\textbf{Unifies}:
+\begin{itemize}
+    \item Einstein (gravity)
+    \item Fisher (information)
+    \item Perelman (curvature flow)
+    \item Shannon (entropy)
+    \item Fokker-Planck (distribution dynamics)
+    \item SU(3) (stable triadic distinctions)
+\end{itemize}
+
+\textbf{Solutions}:
+\begin{itemize}
+    \item 1D: exponential
+    \item 2D: $g = 1/p$
+    \item SU(2): spherical Gaussian
+    \item SU(3): QCD vacuum
+\end{itemize}
+}}
+\end{center}

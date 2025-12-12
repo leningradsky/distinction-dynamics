@@ -1,0 +1,28 @@
+# Dependencies
+agda-stdlib/
+lean/.lake/packages/
+
+# Build artifacts
+*.agdai
+agda/_build/
+lean/.lake/build/
+
+# LaTeX artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

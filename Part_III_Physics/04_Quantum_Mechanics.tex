@@ -1,0 +1,174 @@
+%==============================================================================
+% QUANTUM MECHANICS FROM FISHER INFORMATION
+% Schrödinger Equation as Information Extremum
+% Part III, Chapter 4
+%==============================================================================
+
+\chapter{Quantum Mechanics from Fisher Information}\label{ch:qm-fisher}
+
+\epigraph{The Schrödinger equation is the Euler-Lagrange equation of Fisher information.}{---B. Roy Frieden}
+
+\vnew{This chapter is new in DD v2.0. Derives QM from information geometry.}
+
+\section{The Frieden Program}
+
+B. Roy Frieden (1998, 2004) showed that fundamental physical laws can be derived from a single variational principle:
+
+\begin{center}
+\fbox{Minimize Fisher Information}
+\end{center}
+
+This is not speculation — it is a published, peer-reviewed result.
+
+\section{Fisher Information Functional}
+
+\begin{definition}[Fisher Information]
+For a probability amplitude $\psi(x)$ with $p(x) = |\psi(x)|^2$:
+\begin{equation}
+I[\psi] = 4 \int |\nabla\psi|^2 \, dx
+\end{equation}
+\end{definition}
+
+\begin{remark}
+This is the kinetic term in quantum mechanics disguised as information.
+\end{remark}
+
+\section{The Variational Principle}
+
+\begin{definition}[Bound Information]
+The physical constraint (``bound information'') is:
+\begin{equation}
+J[\psi] = \int V(x) |\psi|^2 \, dx
+\end{equation}
+where $V(x)$ is the potential.
+\end{definition}
+
+\begin{principle}[Extreme Physical Information (EPI)]
+Physical laws emerge from extremizing:
+\begin{equation}
+K = I - J = 4\int |\nabla\psi|^2 dx - \int V|\psi|^2 dx
+\end{equation}
+subject to normalization $\int |\psi|^2 dx = 1$.
+\end{principle}
+
+\section{Derivation of Schrödinger Equation}
+
+\begin{theorem}[Frieden]\label{thm:schrodinger}
+The Euler-Lagrange equation for the EPI functional $K$ is the time-independent Schrödinger equation.
+\end{theorem}
+
+\begin{proof}
+The Lagrangian density is:
+\[
+\mathcal{L} = 4|\nabla\psi|^2 - V|\psi|^2 - E|\psi|^2
+\]
+where $E$ is a Lagrange multiplier for normalization.
+
+Euler-Lagrange equation:
+\[
+\frac{\partial \mathcal{L}}{\partial \psi^*} - \nabla \cdot \frac{\partial \mathcal{L}}{\partial(\nabla\psi^*)} = 0
+\]
+
+Computing:
+\begin{align}
+\frac{\partial \mathcal{L}}{\partial \psi^*} &= -V\psi - E\psi \\
+\frac{\partial \mathcal{L}}{\partial(\nabla\psi^*)} &= 4\nabla\psi
+\end{align}
+
+Therefore:
+\[
+-V\psi - E\psi - 4\nabla^2\psi = 0
+\]
+
+Rewriting with $\hbar^2/2m = 1$ (natural units):
+\[
+-\frac{\hbar^2}{2m}\nabla^2\psi + V\psi = E\psi
+\]
+
+This is the \textbf{time-independent Schrödinger equation}.
+\end{proof}
+
+\section{Time-Dependent Case}
+
+For time evolution, we use:
+\begin{equation}
+S = \int_0^T \left(I[\psi(t)] - J[\psi(t)]\right) dt
+\end{equation}
+
+The Euler-Lagrange equation gives:
+\begin{equation}
+i\hbar \frac{\partial\psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2\psi + V\psi
+\end{equation}
+
+The \textbf{full Schrödinger equation}.
+
+\section{DD Interpretation}
+
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{Quantum mechanics is the dynamics of minimal distinguishability.}
+
+The wavefunction $\psi$ encodes the probability of distinguishing states. The Schrödinger equation is the flow that minimizes the ``cost'' of distinction while respecting physical constraints.
+}}
+\end{center}
+
+In DD terms:
+\begin{align}
+|\psi|^2 &= p(x|\theta) && \text{(probability of distinction)} \\
+I[\psi] &= g_{ij} \dot{\theta}^i \dot{\theta}^j && \text{(Fisher metric)} \\
+V(x) &= \text{constraint on } \Delta && \text{(bound information)}
+\end{align}
+
+\section{Uncertainty Principle}
+
+\begin{theorem}[Cramér-Rao Bound]
+For any unbiased estimator $\hat{\theta}$ of parameter $\theta$:
+\begin{equation}
+\mathrm{Var}(\hat{\theta}) \geq \frac{1}{I(\theta)}
+\end{equation}
+\end{theorem}
+
+\begin{corollary}[Heisenberg from Fisher]
+The Heisenberg uncertainty principle is a special case of the Cramér-Rao bound applied to position and momentum as conjugate parameters.
+\end{corollary}
+
+\textbf{DD translation:} Uncertainty = minimum cost of distinction.
+
+\section{Comparison with Standard QM}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Standard QM} & \textbf{DD/Fisher QM} \\
+\midrule
+$\psi$ is primitive & $\psi$ encodes distinctions \\
+Schrödinger is postulated & Schrödinger is derived \\
+Uncertainty is fundamental & Uncertainty = Cramér-Rao \\
+$\hbar$ is a constant & $\hbar$ sets distinction scale \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Key Result}
+
+\begin{theorem}[QM from DD]
+Quantum mechanics is the extremal dynamics of distinction in the presence of constraints.
+
+The Schrödinger equation is:
+\begin{equation}
+\delta I - \delta J = 0 \quad\Rightarrow\quad i\hbar\partial_t\psi = H\psi
+\end{equation}
+\end{theorem}
+
+\section{References to Literature}
+
+\begin{itemize}
+    \item Frieden, B.R. (1998). \textit{Physics from Fisher Information}. Cambridge.
+    \item Frieden, B.R. (2004). \textit{Science from Fisher Information}. Cambridge.
+    \item Hall, M.J.W. (2000). Quantum mechanics from Fisher information. \textit{Phys. Rev. A}.
+\end{itemize}
+
+This is \textbf{not DD-specific} — it is established physics.
+
+DD provides the \textbf{interpretation}: Fisher information = geometry of distinctions.

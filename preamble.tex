@@ -1,0 +1,77 @@
+%==============================================================================
+% DISTINCTION DYNAMICS v2.0 — PREAMBLE
+% Common packages, theorem environments, and commands
+%==============================================================================
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{epigraph}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%==============================================================================
+% THEOREM ENVIRONMENTS
+%==============================================================================
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}{Axiom}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+%==============================================================================
+% CUSTOM COMMANDS
+%==============================================================================
+
+% Core DD symbols
+\newcommand{\DD}{\ensuremath{\Delta \neq \emptyset}}
+\newcommand{\Dist}{\ensuremath{\Delta}}
+\newcommand{\Self}{\ensuremath{\Delta(\Delta)}}
+
+% Complexity
+\newcommand{\Complexity}{\ensuremath{\mathcal{C}}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+
+% Operators
+\newcommand{\F}{\ensuremath{\mathcal{F}}}
+\newcommand{\M}{\ensuremath{\mathcal{M}}}
+
+% Version markers
+\newcommand{\vnew}[1]{\marginpar{\footnotesize\textbf{NEW}}\textit{#1}}
+
+%==============================================================================
+% HEADER/FOOTER
+%==============================================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+
+%==============================================================================
+% EPIGRAPH STYLE
+%==============================================================================
+
+\setlength{\epigraphwidth}{0.6\textwidth}
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\sourceflush}{center}
