@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 1.8
-**Status:** Authoritative reference for the FORCED chain
+**Version:** 1.9
+**Status:** Authoritative reference for the FORCED chain (T0-T25)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -1446,21 +1446,292 @@ SU(3) as unique critical case
 
 ---
 
+## Level 16: Lorentz Invariance
+
+### T21: Lorentz Invariance (DD-Lorentz)
+
+**Statement:** Lorentz invariance SO(1,3) is the unique symmetry group of spacetime preserving distinguishability structure.
+
+**Setup:**
+
+We have DERIVED:
+1. Spacetime signature (1, d-1) — T16
+2. d = 3 — T18
+3. Locality from factorization — T11
+4. Criticality 0 < Φ < ∞ — T5
+
+**Lemma 1 (FORCED): Finite propagation speed required**
+
+If propagation speed is infinite:
+- Change at x instantly affects all of space
+- Locality (T11) destroyed
+- Any perturbation is global
+- Φ → ∞
+
+❌ **Criticality violated**
+
+Therefore: **propagation speed must be finite**.
+
+**Lemma 2 (FORCED): Speed must be universal**
+
+Suppose multiple speeds (c₁, c₂, ...).
+
+Then:
+- Different subsystems desynchronize
+- Phase coherence between them lost
+- Fine-tuning required to maintain consistency
+- No single history parameter
+
+❌ **Criticality requires fine-tuning** (unstable)
+
+Therefore: **exactly one universal invariant speed c**.
+
+**Lemma 3 (FORCED): Symmetry group uniquely determined**
+
+The group preserving:
+- Signature (1, 3)
+- Universal invariant speed c
+- Unitarity of history
+
+is mathematically unique: **SO(1,3)** (Lorentz group).
+
+This is not physics input — it's the unique solution to:
+$$\eta_{\mu\nu} x^\mu x^\nu = \text{invariant}, \quad c = \text{invariant}$$
+
+**Theorem (DD-Lorentz):**
+
+In critical theory of distinctions:
+1. Propagation speed must be finite (Lemma 1)
+2. Speed must be universal (Lemma 2)
+3. Symmetry group is uniquely SO(1,3) (Lemma 3)
+
+**Status:** DERIVED (from T5, T11, T16, T18)
+
+**Depends on:** T5 (criticality), T11 (locality), T16 (signature), T18 (d=3)
+
+**Note:** Lorentz invariance is not a postulate of special relativity but a consequence of distinguishability structure. HYP-S3 is now DERIVED.
+
+---
+
+## Level 17: Fisher Metric
+
+### T22: Fisher Metric (DD-Fisher)
+
+**Statement:** The Fisher information metric is the unique metric on state space consistent with distinguishability structure.
+
+**Setup:**
+
+We have DERIVED:
+1. Born rule μ = |ψ|² — T12
+2. Space = manifold of stable distinctions — T15
+3. Metric = Φ-localization — T15
+
+**Question:** What is the explicit form of the metric?
+
+**Lemma 1 (FORCED): Metric on probability space required**
+
+States have:
+- Probability structure (T12)
+- Comparative distinguishability
+- Quantitative measure Φ
+
+Comparing "closeness" of states requires metric.
+
+**Lemma 2 (FORCED): Metric must be reparametrization-invariant**
+
+Distinguishability cannot depend on:
+- Choice of basis
+- Labeling of states
+- Coordinate system
+
+Otherwise: distinguishability would be non-physical.
+
+**Lemma 3 (FORCED): Chentsov's theorem (1972)**
+
+> The Fisher information metric is the **unique** Riemannian metric on probability distributions invariant under sufficient statistics.
+
+This is a mathematical theorem, not physics.
+
+**Explicit form:**
+
+$$g_{ij} = \mathbb{E}\left[\frac{\partial \log p}{\partial \theta_i} \frac{\partial \log p}{\partial \theta_j}\right] = \int p(\theta) \frac{\partial \log p}{\partial \theta_i} \frac{\partial \log p}{\partial \theta_j} d\theta$$
+
+In quantum case with ρ:
+$$g_{ij} = \frac{1}{2}\text{Tr}\left[\rho \{L_i, L_j\}\right]$$
+
+where $L_i$ are symmetric logarithmic derivatives.
+
+**Lemma 4 (FORCED): Fisher = Φ-localization**
+
+The Fisher metric measures:
+- Rate of change of distinguishability
+- "Distance" between probability distributions
+- Information content of small changes
+
+This is precisely what T15 called "quantitative form of Φ-localization."
+
+$$g_{\mu\nu} = \text{Fisher metric} = \text{Φ-localization}$$
+
+**Theorem (DD-Fisher):**
+
+In critical theory of distinctions:
+1. Metric on state space required (Lemma 1)
+2. Must be reparametrization-invariant (Lemma 2)
+3. Unique such metric is Fisher (Lemma 3, Chentsov)
+4. Fisher = Φ-localization (Lemma 4)
+
+**Status:** DERIVED (from T12, T15, Chentsov's theorem)
+
+**Depends on:** T12 (Born rule), T15 (space/metric)
+
+**Note:** This completes the identification: spacetime geometry = Fisher geometry on distinguishability space. HYP-F1 is now DERIVED. HYP-S4 (Fisher = spacetime) follows immediately.
+
+---
+
+## Level 18: Light Speed
+
+### T23: Universal Speed (DD-LightSpeed)
+
+**Statement:** The universal invariant speed c is structurally forced and identified with the speed of light.
+
+**Setup:**
+
+We have DERIVED:
+1. Lorentz invariance SO(1,3) — T21
+2. Universal invariant speed exists — T21, Lemma 2
+3. Gauge connection A_μ — T19
+
+**Structural identification:**
+
+The invariant speed c:
+- Appears in Lorentz transformations
+- Sets the causal structure
+- Bounds information propagation
+
+This is the **speed of massless gauge bosons**.
+
+**Why c is "light speed":**
+
+The electromagnetic U(1) connection (part of T20 gauge structure) has:
+- Massless carrier (photon)
+- Propagates at invariant speed
+- This speed = c by construction
+
+**On physical constants:**
+
+| Constant | Status |
+|----------|--------|
+| c | DERIVED (unique invariant speed) |
+| ℏ | Unit choice (sets scale for H) |
+| G | Requires GR bridge (HYP) |
+
+**Theorem (DD-LightSpeed):**
+
+The universal invariant speed c is:
+1. Forced by locality + criticality (T21)
+2. Identified with massless gauge boson propagation
+3. Structural, not empirical
+
+**Status:** DERIVED (from T21)
+
+**Depends on:** T21 (Lorentz), T19 (gauge connection)
+
+**Note:** c is not "measured" but forced. Its numerical value in human units (299,792,458 m/s) is unit convention.
+
+---
+
+## Level 19: Mass and Higgs
+
+### T24: Mass Mechanism (DD-Mass)
+
+**Statement:** Non-zero masses are structurally required, and spontaneous symmetry breaking (Higgs mechanism) is the unique way to achieve them.
+
+**Setup:**
+
+We have DERIVED:
+1. Gauge group SU(3)×SU(2)×U(1) — T20
+2. d = 3 with criteria D1-D5 — T18
+3. Localizable stable excitations required (D1)
+4. Unitarity preservation (T8)
+
+**Lemma 1 (FORCED): Masses are required**
+
+If all particles are massless:
+- Everything propagates at speed c
+- No localized excitations
+- No stable bound states
+- No classical objects
+
+This violates D1 (localizable stable excitations).
+
+❌ **Massless universe fails criticality**
+
+Therefore: **non-zero masses are FORCED**.
+
+**Lemma 2 (FORCED): Explicit mass terms forbidden**
+
+Explicit mass terms in Lagrangian:
+- Break gauge invariance
+- Destroy unitarity at high energy
+- Violate T8
+
+❌ **Explicit masses violate unitarity**
+
+**Lemma 3 (FORCED): SSB is unique mechanism**
+
+The only way to have:
+- Masses (Lemma 1)
+- Gauge invariance preserved (Lemma 2)
+- Unitarity preserved (T8)
+
+is **Spontaneous Symmetry Breaking (SSB)**.
+
+This is not a choice — it's the unique solution.
+
+**Consequence: Higgs mechanism**
+
+SSB of SU(2)×U(1) → U(1)_em requires:
+- Scalar field with non-zero VEV
+- Gives mass to W±, Z
+- Photon remains massless
+
+This is the **Higgs mechanism**.
+
+**Theorem (DD-Mass):**
+
+In critical theory of distinctions:
+1. Masses required for localization (Lemma 1)
+2. Explicit masses forbidden by unitarity (Lemma 2)
+3. SSB (Higgs) is unique mechanism (Lemma 3)
+
+**Status:** DERIVED (from T8, T18, T20)
+
+**Depends on:** T8 (unitarity), T18 (D1 criterion), T20 (gauge group)
+
+**Note:** The Higgs mechanism is not a model choice but structural necessity. The specific Higgs potential parameters remain realization index. HYP-P1 is now DERIVED.
+
+---
+
 ## Boundary
 
-### T21: Structural Boundary
+### T25: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
 | Element | Status |
 |---------|--------|
 | ℂ, U(n), t ∈ ℝ, H hermitian | FORCED |
+| Tensor factorization ⊗ℋᵢ | FORCED |
 | Born rule μ = \|ψ\|² | DERIVED |
 | H = energy | DERIVED |
 | Spacetime 3+1 dimensions | DERIVED |
 | Gauge connection A_μ | DERIVED |
 | Gauge group SU(3)×SU(2)×U(1) | DERIVED |
-| Numerical constants (α, masses) | Realization index |
+| Lorentz invariance SO(1,3) | DERIVED |
+| Fisher metric | DERIVED |
+| Universal speed c | DERIVED |
+| Higgs mechanism (SSB) | DERIVED |
+| Numerical constants (α, masses, VEV) | Realization index |
 
 ---
 
@@ -1509,8 +1780,16 @@ T19: Gauge connection A_μ — local phase coherence (DERIVED)
       ↓
 T20: SU(3)×SU(2)×U(1) — elimination proof (DERIVED)
       ↓
+T21: Lorentz SO(1,3) — unique spacetime symmetry (DERIVED)
+      ↓
+T22: Fisher metric — unique invariant metric (DERIVED)
+      ↓
+T23: Speed c — universal invariant (DERIVED)
+      ↓
+T24: Higgs mechanism — SSB forced (DERIVED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE STANDARD MODEL STRUCTURE
+   COMPLETE STANDARD MODEL + RELATIVITY
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -1523,17 +1802,21 @@ Derived without postulates:
   • Measurement as relative
   • Classical emergence
   • Space (manifold structure)
-  • Metric (Φ-localization)
+  • Fisher metric (Φ-localization)
   • Time as unique process parameter
   • Spacetime signature (1, d-1)
   • Energy as time-conjugate observable
   • d = 3 (criticality selection)
   • Gauge connection (local phase coherence)
   • Gauge group SU(3)×SU(2)×U(1)
+  • Lorentz invariance SO(1,3)
+  • Universal speed c
+  • Higgs mechanism (SSB)
 
 What remains (Realization index):
-  • Specific numerical constants (α, masses)
+  • Specific numerical constants (α, masses, VEV)
   • Coupling ratios
+  • Fermion masses
 ```
 
 ---

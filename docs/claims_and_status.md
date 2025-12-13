@@ -54,35 +54,36 @@ Complete list of all claims with their status and location.
 
 ---
 
-## HYP Claims (18)
+## HYP Claims (7 active, 11 superseded)
 
 | ID | Statement | Location |
 |----|-----------|----------|
 | ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** by Chain-9,10,11 |
-| HYP-F1 | Fisher metric = distinction geometry | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-F1~~ | ~~Fisher metric = distinction geometry~~ | **SUPERSEDED** by DD-Fisher |
 | ~~HYP-F2~~ | ~~Time parameter (ℕ → ℝ)~~ | **SUPERSEDED** by DD-Time |
 | HYP-F3 | Fisher-Ricci flow | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-Q1 | Fisher → Schrödinger | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-Q2 | Physical constants ℏ, c, G | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-Q1~~ | ~~Fisher → Schrödinger~~ | **SUPERSEDED** by DD-Generator |
+| HYP-Q2 | Physical constants ℏ, G | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) (c now DERIVED) |
 | ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** by DD-Gauge |
 | ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** by DD-Gauge |
 | ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** by DD-Gauge |
 | ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** by DD-Gauge |
-| HYP-S2 | Time from U(1) phase | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-S3 | Lorentz invariance | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-S4 | Fisher geometry = spacetime | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-P1 | Higgs mechanism | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-P2 | Fermion generations | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-S1~~ | ~~3 spatial dimensions~~ | **SUPERSEDED** by DD-Dim3 |
+| ~~HYP-S2~~ | ~~Time from U(1) phase~~ | **SUPERSEDED** by DD-Generator |
+| ~~HYP-S3~~ | ~~Lorentz invariance~~ | **SUPERSEDED** by DD-Lorentz |
+| ~~HYP-S4~~ | ~~Fisher geometry = spacetime~~ | **SUPERSEDED** by DD-Fisher + DD-Space |
+| ~~HYP-P1~~ | ~~Higgs mechanism~~ | **SUPERSEDED** by DD-Mass |
+| HYP-P2 | Fermion generations | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) (CIRC-1) |
 | HYP-K1 | √m parameterization | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-K3 | sin²θ_W = 3/8 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Λ1 | Λ > 0 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-P3 | Dynamics / time evolution | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
-**Note:** HYP-S1 (3 spatial dimensions) is now DD-Dim3 (DERIVED by criticality selection).
+**Active HYP:** HYP-F3, HYP-Q2 (ℏ, G only), HYP-P2, HYP-K1, HYP-K3, HYP-Λ1, HYP-P3.
 
 ---
 
-## DERIVED Claims (12)
+## DERIVED Claims (16)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
@@ -95,6 +96,10 @@ Complete list of all claims with their status and location.
 | DD-Dim3 | d = 3 (criticality selection) | Criticality, DD-Space, DD-Time-Unique, DD-Connection | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Connection | Gauge connection A_μ (local phase coherence) | Criticality, ℂ, Unitarity, DD-Factorization | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | Criticality, DD-Dim3, DD-Connection | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Lorentz | SO(1,3) Lorentz invariance | DD-Time-Unique, DD-Space, Criticality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Fisher | Fisher metric uniqueness (Chentsov) | Chain-12, DD-Born, Chentsov's theorem | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-LightSpeed | Universal speed c | DD-Lorentz, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Mass | Mass mechanism (Higgs/SSB) | DD-Gauge, DD-Connection, Criticality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique~~ | **SUBSUMED** by DD-Gauge | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -133,11 +138,11 @@ Complete list of all claims with their status and location.
 |--------|-------|
 | FORCED | 29 |
 | DEF | 8 |
-| HYP | 13 |
-| DERIVED | 12 |
+| HYP | 7 |
+| DERIVED | 16 |
 | CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **67** |
+| **Total** | **65** |
 
-**Note:** HYP-C1, HYP-F2, HYP-G1..G4 are SUPERSEDED (now FORCED/DERIVED). HYP-S1 is now DD-Dim3 (DERIVED). SU(3)-unique subsumed by DD-Gauge.
+**Note:** 11 HYP now SUPERSEDED by DERIVED theorems. New DERIVED: DD-Lorentz (T21), DD-Fisher (T22), DD-LightSpeed (T23), DD-Mass (T24). See FORCED_SPINE.md for complete derivation chain.

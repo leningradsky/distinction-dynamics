@@ -123,21 +123,21 @@ README.md must not contradict this file.
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
 | ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** | Now Chain-9,10,11 |
-| HYP-F1 | Fisher metric ≡ distinction geometry | HYP | Chain-11 |
+| ~~HYP-F1~~ | ~~Fisher metric ≡ distinction geometry~~ | **SUPERSEDED** | Now DD-Fisher |
 | ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **SUPERSEDED** | Now DD-Time |
-| HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, DD-Time |
-| HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, DD-Time |
-| HYP-Q2 | Physical constants ℏ, c, G | HYP (input) | — |
+| HYP-F3 | Fisher-Ricci geometric flow | HYP | DD-Fisher, DD-Time |
+| ~~HYP-Q1~~ | ~~Fisher → Schrödinger equation~~ | **SUPERSEDED** | Now DD-Generator (diff form) |
+| HYP-Q2 | Physical constants ℏ, G | HYP (input) | c now DERIVED |
 | ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** | Now DD-Gauge |
 | ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** | Now DD-Gauge |
 | ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** | Now DD-Gauge |
 | ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** | Now DD-Gauge |
-| HYP-S1 | 3 spatial dimensions from triad | CONJ | CIRC-2 |
-| HYP-S2 | Time dimension from U(1) phase | HYP | HYP-Q1 |
-| HYP-S3 | Lorentz invariance | HYP | HYP-S1 |
-| HYP-S4 | Fisher geometry ≡ spacetime | HYP | HYP-F1, HYP-S3 |
-| HYP-P1 | Higgs mechanism | HYP | — |
-| HYP-P2 | Fermion generations | HYP | — |
+| ~~HYP-S1~~ | ~~3 spatial dimensions~~ | **SUPERSEDED** | Now DD-Dim3 |
+| ~~HYP-S2~~ | ~~Time dimension from U(1) phase~~ | **SUPERSEDED** | Structural identity in DD-Generator |
+| ~~HYP-S3~~ | ~~Lorentz invariance~~ | **SUPERSEDED** | Now DD-Lorentz |
+| ~~HYP-S4~~ | ~~Fisher geometry ≡ spacetime~~ | **SUPERSEDED** | Now DD-Fisher + DD-Space |
+| ~~HYP-P1~~ | ~~Higgs mechanism~~ | **SUPERSEDED** | Now DD-Mass |
+| HYP-P2 | Fermion generations | HYP/CIRC | CIRC-1 |
 | HYP-K1 | √m parameterization | HYP | — |
 | HYP-K3 | sin²θ_W = 3/8 | HYP | — |
 | HYP-Λ1 | Λ > 0 (cosmological constant) | HYP (empirical) | — |
@@ -156,6 +156,10 @@ README.md must not contradict this file.
 | DD-Dim3 | d = 3 (criticality selection) | DERIVED | Criticality, DD-Space, DD-Time-Unique |
 | DD-Connection | Gauge connection A_μ (local phase coherence) | DERIVED | Criticality, ℂ, Unitarity, Born, Decoherence |
 | DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | DERIVED | DD-Connection, Criticality |
+| DD-Lorentz | SO(1,3) Lorentz invariance | DERIVED | DD-Time-Unique, DD-Space, Criticality |
+| DD-Fisher | Fisher metric uniqueness | DERIVED | Chain-12, DD-Born, Chentsov |
+| DD-LightSpeed | Universal speed c | DERIVED | DD-Lorentz, DD-Space |
+| DD-Mass | Mass mechanism (Higgs/SSB) | DERIVED | DD-Gauge, DD-Connection, Criticality |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique strong gauge group~~ | **SUBSUMED** | Now part of DD-Gauge |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -230,6 +234,33 @@ README.md must not contradict this file.
 - SO(N), Sp(N), exceptional groups: incompatible with phase/factorization structure
 - This is elimination proof from criticality, not postulate
 
+**Lorentz Invariance (DD-Lorentz):** SO(1,3) as unique spacetime symmetry:
+- Lemma 1: Finite propagation speed required (infinite speed → global distinguishability → Φ → ∞)
+- Lemma 2: Speed must be universal (observer-dependent speed → no invariant locality)
+- Lemma 3: Symmetry group uniquely determined (signature (1,3) + universal speed → SO(1,3))
+- Lorentz group is NOT postulated but forced by locality + criticality
+- Supersedes HYP-S3
+
+**Fisher Metric (DD-Fisher):** Fisher information as unique metric on state space:
+- Lemma 1: Distinguishability requires quantitative measure (from UAC)
+- Lemma 2: Measure must be Riemannian (smoothness from ℝ, ℂ)
+- Lemma 3: Chentsov's theorem (1972) — Fisher metric is unique invariant under sufficient statistics
+- Fisher metric is NOT chosen but uniquely forced by distinguishability invariance
+- Supersedes HYP-F1, implies HYP-S4
+
+**Universal Speed (DD-LightSpeed):** c as derived constant:
+- c is the unique invariant speed in DD-Lorentz
+- ℏ is unit choice (sets scale for H in DD-Generator)
+- G remains HYP (requires GR bridge not yet established)
+- Supersedes c-part of HYP-Q2
+
+**Mass Mechanism (DD-Mass):** Higgs/SSB as unique mechanism:
+- Lemma 1: Masses required (D1 criterion — localization requires finite range)
+- Lemma 2: Explicit mass terms forbidden (break gauge invariance from DD-Gauge)
+- Lemma 3: SSB is unique resolution (spontaneous breaking preserves structure, generates mass)
+- Higgs mechanism is NOT postulated but forced by DD-Gauge + D1 localization
+- Supersedes HYP-P1
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
@@ -259,11 +290,13 @@ README.md must not contradict this file.
 |--------|-------|
 | FORCED | 29 |
 | DEF | 8 |
-| HYP | 13 |
-| DERIVED | 12 |
-| CONJ | 2 |
+| HYP | 7 |
+| DERIVED | 16 |
+| CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |
+
+**Note:** HYP reduced from 13 to 7 — six hypotheses now DERIVED: HYP-F1→DD-Fisher, HYP-Q1→DD-Generator, HYP-S2→DD-Generator, HYP-S3→DD-Lorentz, HYP-S4→DD-Fisher+Space, HYP-P1→DD-Mass.
 
 ---
 

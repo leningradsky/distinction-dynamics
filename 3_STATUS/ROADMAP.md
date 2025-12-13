@@ -29,7 +29,7 @@ Items are ordered by logical priority, not by difficulty or time.
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
 | GAP-5 | α = 137 formula | CONJ-A1 | Either derive (gen+gluons)²+(charge)² structure or downgrade to pattern-only |
-| GAP-6 | 3+1 dimensions | HYP-S1 → CONJ | Already downgraded; need explicit derivation or delete claim |
+| ~~GAP-6~~ | ~~3+1 dimensions~~ | **CLOSED** | DD-Dim3 + DD-Time-Unique: d=3, signature (1,3) derived |
 | GAP-8 | θ ≈ 2/9 | CONJ-K2 | Either derive 2/9 from triad structure or mark as coincidence |
 
 ### Priority 4: Circular Dependencies (Must document, not necessarily resolve)
@@ -99,3 +99,8 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Connection | Gauge connection from local phase coherence | DERIVED — T18, Lemmas 1-4 |
 | 2025-12-13 | DD-Gauge | Enhanced with Lemmas 1-6 elimination proof | SU(3)×SU(2)×U(1) unique by structural elimination |
 | 2025-12-13 | DD-Factorization | Tensor structure ⊗ℋᵢ FORCED by criticality | T11 — locality emerges from factorization |
+| 2025-12-13 | DD-Lorentz | SO(1,3) from locality + universal speed | DERIVED — T21, HYP-S3 superseded |
+| 2025-12-13 | DD-Fisher | Fisher metric from Chentsov's theorem | DERIVED — T22, HYP-F1 superseded |
+| 2025-12-13 | DD-LightSpeed | Universal speed c from Lorentz structure | DERIVED — T23, c-part of HYP-Q2 superseded |
+| 2025-12-13 | DD-Mass | Higgs/SSB from gauge + localization | DERIVED — T24, HYP-P1 superseded |
+| 2025-12-13 | GAP-6 | d=3 + signature (1,3) fully derived | CLOSED — DD-Dim3 + DD-Time-Unique + DD-Lorentz |
