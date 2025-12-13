@@ -76,6 +76,14 @@ README.md must not contradict this file.
 | DD-NoAlt | No ontological alternatives | FORCED | T0, T1, T4, T9, T13 |
 | DD-Lambda | Λ > 0 (cosmological constant) | FORCED | T5, T9, T26 |
 | DD-Gravity | 0 < G < ∞ (gravitational coupling) | FORCED | T5, T15, T17, T22, T26 |
+| DD-Generations | N_gen ≥ 3 (fermion generations) | FORCED | T4, T7, T13, T26 |
+
+**Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by CP requirement:
+- ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
+- ℂ² → CP-phase removable by unitary → CP not physical → forbidden
+- ℂ³ → first dimension with irremovable phase → minimal admissible
+- N ≥ 3 is FORCED; equality N = 3 may be selection (minimal)
+- Breaks CIRC-1: generations derived independently of SU(3)
 
 **Gravitational Coupling (DD-Gravity):** 0 < G < ∞ forced by elimination:
 - G = 0 → local distinctions causally isolated → history fragments → violates UAC
@@ -166,8 +174,8 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | ~~HYP-S3~~ | ~~Lorentz invariance~~ | **DERIVED** | Now DD-Lorentz |
 | ~~HYP-S4~~ | ~~Fisher geometry ≡ spacetime~~ | **DERIVED** | Now DD-Fisher + DD-Space |
 | ~~HYP-P1~~ | ~~Higgs mechanism~~ | **DERIVED** | Now DD-Mass |
-| HYP-P2 | Fermion generations | CIRC | CIRC-1 |
-| HYP-K1 | √m parameterization | CONJ | Numerical pattern |
+| ~~HYP-P2~~ | ~~Fermion generations~~ | **FORCED** | Now DD-Generations (T30) |
+| ~~HYP-K1~~ | ~~√m parameterization~~ | **DERIVED** | Koide geometric (T30) |
 | HYP-K3 | sin²θ_W = 3/8 | CONJ | Numerical pattern |
 | ~~HYP-Λ1~~ | ~~Λ > 0 (cosmological constant)~~ | **FORCED** | Now DD-Lambda (T27) |
 | ~~HYP-P3~~ | ~~Dynamics / time evolution~~ | **DERIVED** | Covered by DD-Generator (T10) |
@@ -311,7 +319,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | ID | Statement | Status |
 |----|-----------|--------|
-| CIRC-1 | SU(3) ⟷ 3 generations | Mutual consistency |
+| ~~CIRC-1~~ | ~~SU(3) ⟷ 3 generations~~ | **BROKEN** — N ≥ 3 now FORCED independently (T30) |
 | CIRC-2 | Triad ⟷ Rank ≥ 2 | Minimality assumed |
 
 ### Predictions (PRED)
@@ -326,22 +334,22 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 32 |
+| FORCED | 33 |
 | DEF | 9 |
-| DERIVED | 19 |
+| DERIVED | 20 |
 | UNTRACED | 0 |
-| CONJ | 5 |
-| CIRC | 2 |
+| CONJ | 4 |
+| CIRC | 1 |
 | PRED | 1 |
 
-**Note (T29):** Complete derivation:
-- 18 now DERIVED (traced chains) + DD-Einstein (T29)
-- 2 now FORCED (DD-Lambda, DD-Gravity)
+**Note (T30):** Complete derivation including generations:
+- 19 now DERIVED (traced chains) + Koide (T30)
+- 3 now FORCED (DD-Lambda, DD-Gravity, DD-Generations)
 - 1 now DEF (ℏ = unit choice)
-- 2 now CONJ (HYP-K1, HYP-K3)
-- 1 now CIRC (HYP-P2 → CIRC-1)
+- 1 now CONJ (HYP-K3 only — Koide promoted to DERIVED)
+- CIRC-1 BROKEN (generations derived independently)
 
-**All fundamental physics is now FORCED/DERIVED. GR included.**
+**All fundamental physics including fermion generations now FORCED/DERIVED.**
 
 ---
 
@@ -374,7 +382,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T29 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T30 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`

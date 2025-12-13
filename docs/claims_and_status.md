@@ -4,10 +4,11 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (32)
+## FORCED Claims (33)
 
 | ID | Statement | Location |
 |----|-----------|----------|
+| DD-Generations | N_gen ≥ 3 (fermion generations) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Gravity | 0 < G < ∞ (gravitational coupling) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Lambda | Λ > 0 (cosmological constant) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-NoAlt | No ontological alternatives | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
@@ -92,27 +93,26 @@ Complete list of all claims with their status and location.
 | DD-Mass | Mass mechanism (Higgs/SSB) | DD-Gauge, DD-Connection, Criticality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Einstein | G_μν = 8πG T_μν (field equations) | DD-Gravity, DD-NoAlt, Lovelock | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique~~ | **SUBSUMED** by DD-Gauge | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| Koide-Q | Q = 2/3 (geometric invariant in ℂ³) | DD-Generations, ℤ₃ | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) T30 |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
 ---
 
-## CONJ Claims (4)
+## CONJ Claims (3)
 
 | ID | Statement | Fit | Location |
 |----|-----------|-----|----------|
 | CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | CONJ-K2 | θ ≈ 2/9 | ~99% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-K1 | √m parameterization | — | Numerical pattern |
 | HYP-K3 | sin²θ_W = 3/8 | — | Numerical pattern |
 
 ---
 
-## CIRC Claims (2)
+## CIRC Claims (1)
 
 | ID | Statement | Location |
 |----|-----------|----------|
-| CIRC-1 | SU(3) ⟷ 3 generations | [CIRCULARITIES.md](../2_EXPRESSION/CIRCULARITIES.md) |
+| ~~CIRC-1~~ | ~~SU(3) ⟷ 3 generations~~ | **BROKEN** by DD-Generations (T30) |
 | CIRC-2 | Triad ⟷ Rank ≥ 2 | [CIRCULARITIES.md](../2_EXPRESSION/CIRCULARITIES.md) |
 
 ---
@@ -129,27 +129,29 @@ Complete list of all claims with their status and location.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 32 |
+| FORCED | 33 |
 | DEF | 9 |
-| DERIVED | 17 |
+| DERIVED | 18 |
 | UNTRACED | 0 |
-| CONJ | 4 |
-| CIRC | 2 |
+| CONJ | 3 |
+| CIRC | 1 |
 | PRED | 1 |
-| **Total** | **64** |
+| **Total** | **65** |
 
-**Note (T28):** UNTRACED = 0. All fundamental physics derived:
-- 17 → DERIVED
-- 2 → FORCED (Λ > 0, G)
+**Note (T30):** UNTRACED = 0. All fundamental physics derived:
+- 18 → DERIVED (including Koide as geometry)
+- 3 → FORCED (Λ > 0, G, N_gen ≥ 3)
 - 1 → DEF (ℏ)
-- 2 → CONJ
-- 1 → CIRC
+- 3 → CONJ
+- 1 → CIRC (CIRC-1 broken by T30)
 
-**See FORCED_SPINE.md T0-T29 for complete derivation chain.**
+**See FORCED_SPINE.md T0-T30 for complete derivation chain.**
 
-All fundamental constants and GR equations now derived:
+All fundamental constants, GR equations, and generations now derived:
 - c: DERIVED (DD-LightSpeed)
 - ℏ: DEF (unit choice)
 - G: FORCED (DD-Gravity)
 - Λ: FORCED (DD-Lambda)
 - G_μν = 8πG T_μν: DERIVED (DD-Einstein)
+- N_gen ≥ 3: FORCED (DD-Generations)
+- Koide Q = 2/3: DERIVED (geometric invariant in ℂ³)

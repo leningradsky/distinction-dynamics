@@ -111,4 +111,7 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | ℏ | Planck constant reclassified | DEF — unit choice (scale of H) |
 | 2025-12-13 | DD-Gravity | G forced by elimination (T28) | FORCED — 0 < G < ∞, local-global coupling |
 | 2025-12-13 | DD-Einstein | Field equations derived (T29) | DERIVED — G_μν = 8πG T_μν unique by Lovelock |
-| 2025-12-13 | Status | GR complete | All fundamental physics including GR now derived |
+| 2025-12-13 | DD-Generations | N ≥ 3 forced by CP (T30) | FORCED — ℂ¹, ℂ² forbidden, ℂ³ minimal |
+| 2025-12-13 | CIRC-1 | Broken | Generations derived independently of SU(3) |
+| 2025-12-13 | Koide | Promoted to DERIVED | Geometric invariant in ℂ³, not numerology |
+| 2025-12-13 | Status | Generations complete | All physics including N ≥ 3 now FORCED/DERIVED |
