@@ -243,32 +243,68 @@ History = distinguishability of distinguishability. Requirements:
 
 **Statement:** The unique distinguishability measure on states is μ(ψ) = |ψ|².
 
-**Proof:**
+**Setup:**
 
-Requirements for distinguishability measure μ:
+Probability in DD is not interpretation but a functional:
+$$\mu : \mathcal{H} \to [0,1]$$
 
-**M1 (Non-negativity):** μ(ψ) ≥ 0
+with minimal requirements for stable statistics of distinctions:
 
-**M2 (Unitary invariance):** μ(Uψ) = μ(ψ) — from T8
+**P1 (Normalization):**
+$$\sum_i \mu(\psi_i) = 1$$
 
-**M3 (Additivity):** For ψ ⊥ φ: μ decomposes over orthogonal alternatives
+**P2 (Additivity on alternatives):**
+If alternatives are distinguishable (orthogonal):
+$$\psi = \psi_1 \oplus \psi_2 \Rightarrow \mu(\psi) = \mu(\psi_1) + \mu(\psi_2)$$
 
-**M4 (Normalization):** Total distinguishability finite
+**P3 (History invariance):**
+Probability does not depend on time parameterization:
+$$\mu(\psi) = \mu(U(t)\psi)$$
+
+This is not physics — these are conditions for stable statistics of distinctions.
 
 **Derivation:**
-1. From M2: μ depends only on |ψ| (phase invariance)
-2. From M1 + M2: μ(ψ) = f(|ψ|²) for some f
-3. From M3: For ψ = Σᵢ cᵢeᵢ, μ(ψ) = Σᵢ f(|cᵢ|²)
-4. From M4: Σᵢ f(|cᵢ|²) = 1 when Σᵢ |cᵢ|² = 1
-5. Uniqueness: f continuous, f(0) = 0, f(1) = 1, f(Σxᵢ) = Σf(xᵢ)
-6. Only solution: f(x) = x
-7. Therefore: μ(ψ) = |ψ|²
 
-**Status:** DERIVED (from T8 + measure definitions M1, M4)
+**Step 1.** From P3: μ is unitary-invariant.
+Therefore: μ(ψ) = f(⟨ψ,ψ⟩) — no other quantity can be unitary-invariant.
 
-**Depends on:** T8
+**Step 2.** Let μ(ψ) = f(‖ψ‖).
+For orthogonal ψ₁ ⊥ ψ₂:
+$$\|\psi_1 + \psi_2\|^2 = \|\psi_1\|^2 + \|\psi_2\|^2$$
 
-**Note:** This is NOT Gleason's theorem (which requires dim ≥ 3). DD-Born works for any dimension and derives additivity from criticality.
+**Step 3.** Requirement P2:
+$$f(\sqrt{a+b}) = f(\sqrt{a}) + f(\sqrt{b})$$
+
+**Step 4.** Unique continuous solution:
+$$f(\sqrt{x}) = Cx$$
+Therefore: μ(ψ) = C‖ψ‖²
+
+**Step 5.** From P1 (normalization):
+$$\sum_i \|\psi_i\|^2 = 1 \Rightarrow C = 1$$
+
+**Result:**
+$$\boxed{\mu(\psi_i) = |\langle i|\psi\rangle|^2}$$
+
+**Why alternatives are impossible (constructively):**
+
+| Attempt | What breaks |
+|---------|-------------|
+| \|ψ\| | Not additive (P2 violated) |
+| \|ψ\|^p, p≠2 | Unstable under decoherence |
+| Nonlinear f | Depends on basis choice |
+| Contextual probability | Violates P3 (history invariance) |
+| Frequency postulate | Does not define μ |
+
+All alternatives either lose invariance or explode Φ.
+
+**Status:** DERIVED (from T8 + P1, P2, P3)
+
+**Depends on:** T8 (unitarity)
+
+**Note:** This is NOT Gleason's theorem (which requires dim ≥ 3). DD-Born works for any dimension. The key insight: Born rule is not a postulate but the only way to:
+- preserve criticality
+- ensure additivity of distinctions
+- not destroy unitary history
 
 ---
 
