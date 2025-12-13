@@ -188,13 +188,12 @@ README.md must not contradict this file.
 - Must be unique (multiple times → unitarity destroyed)
 - Spacetime signature (1, d-1) is forced, not postulated
 
-**Energy (DD-Energy):** H = energy is structural identification:
-- H is unique Hermitian generator of time translation (Stone)
-- Time symmetry t → t + δ has unique conserved generator (Noether)
-- Cannot be charge (no internal symmetries yet), cannot be momentum (no space in this context)
-- Generator must be observable distinction (criticality)
-- Energy ≡ generator of time translation in unitary evolution
-- This is not interpretation but uniqueness argument
+**Energy (DD-Energy):** H = energy by elimination of alternatives:
+- Lemma 1: H measures intensity of distinguishability (⟨ψ|H|ψ⟩ real, conserved, additive)
+- Lemma 2: H generates rate of history change (H=0 → frozen, H large → decoherence)
+- Lemma 3: All alternatives fail — "just operator" (not distinguished), "generator of time" (tautology), "information" (not additive), "action" (secondary)
+- Lemma 4: Unique stable interpretation = density of history distinguishability = energy
+- Energy ≡ inevitable invariant of unitary history (not postulate, not choice)
 
 **Dimension (DD-Dim3):** d = 3 as unique admissible dimension:
 - Five admissibility criteria: D1 (localizable excitations), D2 (non-trivial dynamics), D3 (factorizing decoherence), D4 (non-trivial gauge), D5 (criticality)
