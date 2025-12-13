@@ -15,7 +15,7 @@
 
 ---
 
-## Repository Structure (3-Layer Spine)
+## Repository Structure
 
 ### 0_CORE: Primitive Prohibition
 
@@ -24,34 +24,25 @@
 
 ### 1_DERIVATION: Forced Chain
 
-- [1_DERIVATION/FORCED_CHAIN.md](1_DERIVATION/FORCED_CHAIN.md): FORCED consequences of CORE definitions with explicit dependencies
+- [1_DERIVATION/FORCED_CHAIN.md](1_DERIVATION/FORCED_CHAIN.md): FORCED consequences of CORE definitions
 - [1_DERIVATION/DEPENDENCY_GRAPH.md](1_DERIVATION/DEPENDENCY_GRAPH.md): Visual dependency map
-
-**What is FORCED today:**
-- L1-L4: Elementary category theory properties
-- Chain-5: Binary structure (Bool)
-- Chain-6: Self-application Δ = Δ(Δ)
-- Chain-7*: Recursion (with caveat about "unfolding")
-- Chain-8: Natural numbers ℕ
-
-**What is NOT FORCED:**
-- Continuum, Lie groups, spacetime, gauge theory, Higgs, generations, cosmology, numerical constants
 
 ### 2_EXPRESSION: Bridges to Physics
 
-- [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md): All non-forced bridge steps (discrete→continuous; math→physics) tagged HYP/CONJ/DEF
+- [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md): All HYP/CONJ/DERIVED bridges
+- [2_EXPRESSION/CIRCULARITIES.md](2_EXPRESSION/CIRCULARITIES.md): Documented circular dependencies
 
-**Major hypotheses (HYP):**
-- HYP-C1: Continuum emergence
-- HYP-F1: Fisher metric ≡ distinction geometry
-- HYP-F2: Time parameter emergence
-- HYP-Q1: Fisher information → Schrödinger equation
-- HYP-G1..G4: Gauge theory requirements (anomaly freedom, asymptotic freedom, confinement)
-- HYP-S3: Lorentz invariance
+### 3_STATUS: Truth Files
 
-**Circular dependencies (CIRC):**
-- CIRC-1: SU(3) ⟷ 3 generations (mutual consistency)
-- CIRC-2: Triad ⟷ Rank ≥ 2 (minimality assumed, rank follows)
+- [3_STATUS/STATUS.md](3_STATUS/STATUS.md): **Master truth file** — authoritative status of all claims
+- [3_STATUS/THEORY_POSITION.md](3_STATUS/THEORY_POSITION.md): Post-audit theory statement
+- [3_STATUS/ROADMAP.md](3_STATUS/ROADMAP.md): Gap closure queue (not promises)
+
+### 6_AUDITS: Self-Criticism
+
+- [6_AUDITS/internal_audit.md](6_AUDITS/internal_audit.md): Structural issues identified
+- [6_AUDITS/known_objections.md](6_AUDITS/known_objections.md): Anticipated criticisms acknowledged
+- [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md): How the theory can be broken
 
 ---
 
