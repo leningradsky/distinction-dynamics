@@ -81,13 +81,14 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DERIVED Claims (6)
+## DERIVED Claims (7)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
 | DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DD-Unitarity | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Decoherence | No collapse, measurement relative | DD-Unitarity, DD-Born | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Classicality | Classical states = stable fixed points | Criticality, DD-Decoherence | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Space | Manifold structure of space | Criticality, DD-Classicality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | SU(3)-unique | SU(3) is unique | HYP-G1..G4 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -129,10 +130,10 @@ Complete list of all claims with their status and location.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 6 |
+| DERIVED | 7 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **67** |
+| **Total** | **68** |
 
 **Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 moved to CONJ.

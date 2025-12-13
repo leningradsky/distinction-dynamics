@@ -2,6 +2,32 @@
 
 All notable changes to this project are documented here.
 
+## [1.3] - 2025-12-13
+
+### Added
+- **DD-Space theorem (T14)**: Space as structure of distinguishability
+  - Classical distinctions form connected structure
+  - Graph structure forbidden (Φ → 0 or ∞)
+  - Manifold structure uniquely forced
+  - Space = parameterization of stable distinctions
+  - Metric = quantitative form of Φ-localization
+  - Dimension: finite d > 1 required (0, 1, ∞ forbidden)
+
+### Changed
+- DERIVED count: 6 → 7 (added DD-Space)
+- T14 → T15 (Boundary renumbered)
+
+### Summary
+QM + classical emergence + space emergence complete:
+- Unitary dynamics (FORCED)
+- Born rule (DERIVED)
+- Decoherence (DERIVED)
+- No collapse (FORCED by unitarity)
+- Measurement as relative (DERIVED)
+- Classical emergence (DERIVED)
+- **Space (manifold structure) (DERIVED)**
+- **Metric (Φ-localization) (DERIVED)**
+
 ## [1.2] - 2025-12-13
 
 ### Added

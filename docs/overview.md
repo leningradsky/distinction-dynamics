@@ -36,9 +36,10 @@ From this, structural necessities follow:
 - Born rule μ = |ψ|² (DD-Born theorem)
 - Decoherence without collapse (DD-Decoherence theorem)
 - Classical emergence (DD-Classicality theorem)
+- Space (manifold structure) (DD-Space theorem)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 6 claims
+- Total: 7 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula

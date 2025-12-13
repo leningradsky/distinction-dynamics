@@ -1,6 +1,6 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 1.0
+**Version:** 1.3
 **Status:** Authoritative reference for the FORCED chain
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
@@ -511,9 +511,129 @@ No interpretation needed. Classicality is structurally inevitable.
 
 ---
 
+## Level 9: Space
+
+### T14: Space (DD-Space)
+
+**Statement:** Space is the parameterization of stable distinctions. Manifold structure is forced.
+
+**Setup:**
+
+We have DERIVED:
+1. Classical distinctions exist (T13)
+2. Classicality = stable fixed points under decoherence
+3. Criticality requires 0 < Φ < ∞ (T5)
+
+**Question:** What structure do classical distinctions form?
+
+**Step 1. Classical distinctions need relations:**
+
+Classical distinction X:
+- Distinguishes region X from ¬X
+- Must be locally stable (T13)
+- Must relate to other distinctions
+
+If distinctions were isolated (no relations):
+- Each region would be its own universe
+- No comparative distinguishability
+- Φ(universe) = sum of independent Φᵢ
+- Violates criticality closure
+
+Therefore: **classical distinctions form connected structure**.
+
+**Step 2. Why graph structure is forbidden:**
+
+Suppose distinctions form discrete graph G = (V, E).
+
+At graph vertices (nodes):
+- Finite number of neighbors
+- Distinguishability compresses
+- Local Φ → 0 (insufficient alternatives)
+
+At graph edges (connections):
+- Jump between nodes
+- Discontinuous Φ
+- Criticality violated at discontinuity
+
+Graph structure leads to:
+$$\Phi_{\text{local}} \to 0 \text{ or } \Phi_{\text{local}} \to \infty$$
+
+Both violate T5.
+
+**Step 3. Continuous structure is required:**
+
+For 0 < Φ < ∞ everywhere:
+- No isolated points
+- No discrete jumps
+- All limits exist within structure
+- Local homeomorphism to ℝⁿ
+
+This is the definition of **manifold**.
+
+**Step 4. Manifold = unique stable form:**
+
+Key theorem (topology):
+
+A connected Hausdorff space where every point has neighborhood homeomorphic to ℝⁿ is a topological manifold.
+
+In DD terms:
+- Connected: distinctions form single structure
+- Hausdorff: different points are distinguishable
+- Local ℝⁿ: continuous distinguishability
+
+**Step 5. Space = parameterization of stable distinctions:**
+
+Space is NOT:
+- Fundamental arena
+- Pre-existing container
+- Background for physics
+
+Space IS:
+- Structure of relations between stable distinctions
+- Parameterization of classical alternatives
+- Emergent from distinguishability
+
+**Step 6. Metric = quantitative form of Φ:**
+
+Distinctions have quantitative measure: Φ.
+
+Localization of Φ determines:
+- "How much" distinguishability between points
+- Rate of change of distinguishability
+- Comparison of distinguishability paths
+
+This is precisely **metric structure**:
+$$g_{\mu\nu} = \text{quantitative form of } \Phi\text{-localization}$$
+
+**Step 7. Dimension constraints:**
+
+Dimension d:
+- d = 0: no structure
+- d = 1: insufficient alternatives (only linear chains)
+- d = ∞: no local finiteness, Φ → ∞
+- d finite, d > 1: required for stable criticality
+
+**Theorem (DD-Space):**
+
+In critical theory of distinctions:
+1. Classical distinctions form connected structure
+2. Graph structure is forbidden (Φ collapses or explodes)
+3. Manifold structure is uniquely forced
+4. Space = parameterization of stable distinctions
+5. Metric = quantitative form of Φ-localization
+6. Dimension must be finite and d > 1
+
+**Status:** DERIVED (from T5, T13)
+
+**Depends on:** T5 (criticality), T13 (classicality)
+
+**Note:** This derives the existence of space (manifold structure), not specific dimension. Why d = 3+1 is a separate question (realization index or derivable constraint).
+
+---
+
 ## Boundary
 
-### T14: Structural Boundary
+### T15: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
@@ -560,8 +680,10 @@ T12: Decoherence — no collapse (DERIVED)
       ↓
 T13: Classicality — stable fixed points (DERIVED)
       ↓
+T14: Space — manifold structure (DERIVED)
+      ↓
 ═══════════════════════════════════════
-   QM + CLASSICAL EMERGENCE COMPLETE
+  QM + CLASSICAL + SPACE EMERGENCE
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -572,10 +694,12 @@ Derived without postulates:
   • No collapse
   • Measurement as relative
   • Classical emergence
+  • Space (manifold structure)
+  • Metric (Φ-localization)
 
 What remains (HYP/interpretation):
   • Energy interpretation of H
-  • Spacetime as coordination of histories
+  • Why d = 3+1 specifically
   • Gauge groups as local automorphisms
   • Specific realization (our universe)
 ```

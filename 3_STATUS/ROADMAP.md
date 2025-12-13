@@ -89,3 +89,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | FORCED_SPINE | 12-thesis derivation T0-T11 | Created — authoritative reference for complete chain |
 | 2025-12-13 | DD-Decoherence | No collapse, measurement relative | DERIVED — factorization of distinguishability |
 | 2025-12-13 | DD-Classicality | Classical emergence | DERIVED — stable fixed points of decoherence |
+| 2025-12-13 | DD-Space | Manifold structure forced | DERIVED — space = parameterization of distinctions |

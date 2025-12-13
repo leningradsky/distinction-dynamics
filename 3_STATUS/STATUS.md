@@ -142,6 +142,7 @@ README.md must not contradict this file.
 | DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DERIVED | DD-Unitarity, P1-P3 |
 | DD-Decoherence | No collapse, measurement relative | DERIVED | DD-Unitarity, DD-Born |
 | DD-Classicality | Classical states = stable fixed points | DERIVED | Criticality, DD-Decoherence |
+| DD-Space | Manifold structure of space | DERIVED | Criticality, DD-Classicality |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -166,6 +167,14 @@ README.md must not contradict this file.
 - If all states unstable → Φ → 0 → criticality violated
 - Classical objects = stable orbits of distinguishability
 - Classicality is local, not fundamental
+
+**Space (DD-Space):** Manifold structure from distinguishability:
+- Classical distinctions form connected structure (isolated → Φ fails closure)
+- Graph structure forbidden (Φ → 0 at nodes, Φ discontinuous at edges)
+- Continuous structure required: manifold uniquely forced
+- Space = parameterization of stable distinctions
+- Metric = quantitative form of Φ-localization
+- Dimension: 0, 1, ∞ forbidden; finite d > 1 required
 
 ### Conjectures (CONJ)
 
@@ -197,7 +206,7 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 6 |
+| DERIVED | 7 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |
