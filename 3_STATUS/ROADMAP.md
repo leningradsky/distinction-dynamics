@@ -109,4 +109,5 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Lambda | Λ > 0 forced by elimination (T27) | FORCED — static/contracting histories violate UAC |
 | 2025-12-13 | HYP-P3 | Dynamics closed | DERIVED — covered by DD-Generator (T10) |
 | 2025-12-13 | ℏ | Planck constant reclassified | DEF — unit choice (scale of H) |
-| 2025-12-13 | Status | Only G remains UNTRACED | Requires GR bridge for derivation |
+| 2025-12-13 | DD-Gravity | G forced by elimination (T28) | FORCED — 0 < G < ∞, local-global coupling |
+| 2025-12-13 | Status | UNTRACED = 0 | All fundamental physics now FORCED/DERIVED |

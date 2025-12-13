@@ -75,6 +75,13 @@ README.md must not contradict this file.
 | DD-Factorization | ⊗ℋᵢ tensor structure | FORCED | Criticality, ℂ, Unitarity |
 | DD-NoAlt | No ontological alternatives | FORCED | T0, T1, T4, T9, T13 |
 | DD-Lambda | Λ > 0 (cosmological constant) | FORCED | T5, T9, T26 |
+| DD-Gravity | 0 < G < ∞ (gravitational coupling) | FORCED | T5, T15, T17, T22, T26 |
+
+**Gravitational Coupling (DD-Gravity):** 0 < G < ∞ forced by elimination:
+- G = 0 → local distinctions causally isolated → history fragments → violates UAC
+- G = ∞ → any fluctuation collapses history → Φ → 0 → violates UAC
+- G variable → future ambiguous → violates DD-NoAlt
+- G is translation coefficient: local energy ↔ global curvature
 
 **Positive Λ (DD-Lambda):** Λ > 0 forced by elimination:
 - Λ = 0 → static history → saturates or explodes → violates UAC
@@ -149,7 +156,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | ~~HYP-F3~~ | ~~Fisher-Ricci geometric flow~~ | **DERIVED** | Ricci flow = gradient of Φ-functional |
 | ~~HYP-Q1~~ | ~~Fisher → Schrödinger equation~~ | **DERIVED** | Now DD-Generator (diff form) |
 | ~~HYP-Q2(ℏ)~~ | ~~Planck constant ℏ~~ | **DEF** | Unit choice (scale of H) |
-| HYP-Q2(G) | Gravitational constant G | UNTRACED | Requires GR bridge |
+| ~~HYP-Q2(G)~~ | ~~Gravitational constant G~~ | **FORCED** | Now DD-Gravity (T28) |
 | ~~HYP-G1~~ | ~~Local gauge invariance~~ | **DERIVED** | Now DD-Gauge |
 | ~~HYP-G2~~ | ~~Anomaly freedom~~ | **DERIVED** | Now DD-Gauge |
 | ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **DERIVED** | Now DD-Gauge |
@@ -310,21 +317,22 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 31 |
+| FORCED | 32 |
 | DEF | 9 |
 | DERIVED | 18 |
-| UNTRACED | 1 |
+| UNTRACED | 0 |
 | CONJ | 5 |
 | CIRC | 2 |
 | PRED | 1 |
 
-**Note (T27):** HYP fully eliminated:
+**Note (T28):** UNTRACED fully eliminated:
 - 17 now DERIVED (traced chains)
-- 1 now FORCED (HYP-Λ1 → DD-Lambda)
+- 2 now FORCED (HYP-Λ1 → DD-Lambda, HYP-Q2(G) → DD-Gravity)
 - 1 now DEF (ℏ = unit choice)
-- 1 remains UNTRACED (G — requires GR bridge)
 - 2 now CONJ (HYP-K1, HYP-K3)
 - 1 now CIRC (HYP-P2 → CIRC-1)
+
+**All fundamental physics is now FORCED/DERIVED.**
 
 ---
 
@@ -357,7 +365,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T27 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T28 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`

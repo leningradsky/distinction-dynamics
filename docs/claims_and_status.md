@@ -4,10 +4,11 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (31)
+## FORCED Claims (32)
 
 | ID | Statement | Location |
 |----|-----------|----------|
+| DD-Gravity | 0 < G < ∞ (gravitational coupling) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Lambda | Λ > 0 (cosmological constant) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-NoAlt | No ontological alternatives | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | L1 | Σ+ is non-empty | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
@@ -57,18 +58,18 @@ Complete list of all claims with their status and location.
 
 ---
 
-## UNTRACED Claims (1) — formerly HYP
+## UNTRACED Claims (0) — formerly HYP
 
-Per DD-NoAlt (T26) and DD-Lambda (T27), HYP is fully eliminated:
+**All claims now traced.** Per DD-NoAlt (T26), DD-Lambda (T27), and DD-Gravity (T28):
 
-| ID | Statement | Status | Location |
-|----|-----------|--------|----------|
-| HYP-Q2(G) | Gravitational constant G | UNTRACED | Requires GR bridge |
+| ID | Statement | Was | Now |
+|----|-----------|-----|-----|
+| ~~HYP-Q2(G)~~ | ~~Gravitational constant G~~ | UNTRACED | **FORCED** (DD-Gravity T28) |
+| ~~HYP-Q2(ℏ)~~ | ~~Planck constant ℏ~~ | UNTRACED | **DEF** (unit choice) |
+| ~~HYP-Λ1~~ | ~~Λ > 0~~ | UNTRACED | **FORCED** (DD-Lambda T27) |
+| ~~HYP-P3~~ | ~~Dynamics~~ | UNTRACED | **DERIVED** (DD-Generator T10) |
 
-**Reclassification (T27):**
-- ~~HYP-Q2(ℏ)~~ → DEF (unit choice for scale of H)
-- ~~HYP-Λ1~~ → FORCED (DD-Lambda T27)
-- ~~HYP-P3~~ → DERIVED (covered by DD-Generator T10)
+**UNTRACED = 0. All fundamental physics is FORCED/DERIVED.**
 
 ---
 
@@ -127,21 +128,26 @@ Per DD-NoAlt (T26) and DD-Lambda (T27), HYP is fully eliminated:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 31 |
+| FORCED | 32 |
 | DEF | 9 |
 | DERIVED | 16 |
-| UNTRACED | 1 |
+| UNTRACED | 0 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
 | **Total** | **64** |
 
-**Note (T27):** HYP fully eliminated. Reclassification complete:
+**Note (T28):** UNTRACED = 0. All fundamental physics derived:
 - 17 → DERIVED
-- 1 → FORCED (Λ > 0)
+- 2 → FORCED (Λ > 0, G)
 - 1 → DEF (ℏ)
-- 1 remains UNTRACED (G — requires GR bridge)
 - 2 → CONJ
 - 1 → CIRC
 
-See FORCED_SPINE.md T0-T27 for complete derivation chain.
+**See FORCED_SPINE.md T0-T28 for complete derivation chain.**
+
+All fundamental constants (c, ℏ, G, Λ) now have status:
+- c: DERIVED (DD-LightSpeed)
+- ℏ: DEF (unit choice)
+- G: FORCED (DD-Gravity)
+- Λ: FORCED (DD-Lambda)

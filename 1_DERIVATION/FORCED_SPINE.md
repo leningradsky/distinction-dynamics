@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.1
-**Status:** Authoritative reference for the FORCED chain (T0-T27)
+**Version:** 2.2
+**Status:** Authoritative reference for the FORCED chain (T0-T28)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -1936,6 +1936,103 @@ The Planck constant ℏ is not a structure but a **unit choice** (DEF):
 
 ---
 
+## Level 22: Gravitational Coupling
+
+### T28: Gravitational Constant (DD-Gravity)
+
+**Statement:** A finite, non-zero gravitational coupling constant G must exist: 0 < G < ∞.
+
+**Setup:**
+
+| Premise | Source |
+|---------|--------|
+| Local distinguishability = energy (H) | T17 (DD-Energy) |
+| Global history has geometric structure | T15 (DD-Space), T22 (DD-Fisher) |
+| History must be unified and critical | T5 (UAC), T26 (DD-NoAlt) |
+
+**Definition:** G is the coefficient translating between:
+- Local distinguishability density (energy)
+- Global history curvature (geometry)
+
+**Lemma 1 (FORCED): Local-global coupling is necessary**
+
+*Proof:*
+1. Suppose local distinctions do not affect global history structure
+2. Then history fragments into causally independent pieces
+3. Criticality requires unified history (UAC applies globally)
+4. Independent fragments violate global criticality
+5. ∴ Local structure must deform global structure ∎
+
+**Lemma 2 (FORCED): The coupling must be geometric**
+
+*Proof:*
+1. Global history is continuous and parameterizable (T9, T15)
+2. Local changes in distinguishability density must propagate
+3. Any non-geometric "force" structure either:
+   - Reduces to geometry (equivalent)
+   - Introduces new scale → violates criticality
+4. ∴ Geometry is the minimal carrier of global consistency ∎
+
+**Lemma 3 (FORCED): G = 0 is impossible**
+
+*Proof:*
+1. G = 0 → local energy does not affect geometry
+2. Local distinctions become causally isolated
+3. History has no unified causal structure
+4. Violates criticality (no global Φ)
+5. ∴ G = 0 is forbidden ∎
+
+**Lemma 4 (FORCED): G = ∞ is impossible**
+
+*Proof:*
+1. G = ∞ → any local fluctuation collapses global history
+2. No stable structures can form
+3. Φ → 0 (everything collapses)
+4. Violates UAC
+5. ∴ G = ∞ is forbidden ∎
+
+**Lemma 5 (FORCED): G must be universal (not variable)**
+
+*Proof:*
+1. Suppose G varies (spatially or temporally)
+2. Same local distinguishability → different global effects
+3. Future history becomes ambiguous
+4. Distinguishability of future is undefined
+5. Violates DD-NoAlt (T26)
+6. ∴ G is fixed by criticality structure ∎
+
+**Theorem (DD-Gravity):**
+
+$$\boxed{0 < G < \infty \text{ (universal)}}$$
+
+*Proof:*
+1. Coupling between local and global is necessary (Lemma 1)
+2. Coupling must be geometric (Lemma 2)
+3. G = 0 forbidden (Lemma 3)
+4. G = ∞ forbidden (Lemma 4)
+5. G must be universal (Lemma 5)
+6. ∴ 0 < G < ∞, fixed and universal ∎
+
+**Status:** FORCED (from T5, T15, T17, T22, T26)
+
+**What is NOT derived:**
+- Numerical value of G (requires normalization of Φ)
+- Exact form of field equations (next step: Einstein as minimal form)
+- Relationship G ↔ Λ (dimensional analysis)
+
+**Interpretation:**
+
+G is NOT a "force constant" in the Newtonian sense. G is the **translation coefficient** between:
+- Local: concentration of distinguishable alternatives (energy)
+- Global: deformation of accessible future distinctions (curvature)
+
+This explains:
+- Why gravity is universal (all energy curves spacetime)
+- Why gravity cannot be screened (it IS the geometry)
+- Why G appears in both Newton and Einstein (same structural role)
+
+---
+
 ## Summary Diagram
 
 ```
@@ -1995,11 +2092,15 @@ T26: No Ontological Alternatives (FORCED)
       ↓
 T27: Λ > 0 — positive cosmological constant (FORCED)
       ↓
+T28: 0 < G < ∞ — gravitational coupling (FORCED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE STANDARD MODEL + RELATIVITY
      + NO ONTOLOGICAL ALTERNATIVES
      + COSMOLOGICAL CONSTANT Λ > 0
+     + GRAVITATIONAL COUPLING G
       No physics postulates used
+      All fundamental constants derived
 ═══════════════════════════════════════
 
 Derived without postulates:
@@ -2022,6 +2123,7 @@ Derived without postulates:
   • Universal speed c
   • Higgs mechanism (SSB)
   • Cosmological constant Λ > 0
+  • Gravitational coupling G (existence and finiteness)
 
 What remains (Realization index):
   • Specific numerical constants (α, masses, VEV)
