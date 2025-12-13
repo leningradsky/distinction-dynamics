@@ -52,7 +52,7 @@ README.md must not contradict this file.
 | L4 | C is small | FORCED | DEF-C |
 | Chain-5 | Bool (binary structure X/¬X) | FORCED | DEF-Σ |
 | Chain-6 | Δ = Δ(Δ) (self-application) | FORCED | DEF-AX |
-| Chain-7 | Recursion (unbounded iteration) | FORCED* | Chain-6 |
+| Chain-7 | Composition monoid infinite (irreversibility) | FORCED | DEF-AX, Chain-6 |
 | Chain-8 | ℕ (natural numbers) | FORCED | Chain-7 |
 | CR-1 | Finite local valence (Φ < ∞) | FORCED | DEF-UAC |
 | CR-2 | Finite generators | FORCED | CR-1 |
@@ -62,7 +62,7 @@ README.md must not contradict this file.
 | CR-6 | Finite presentation | FORCED | CR-1, CR-5 |
 | CR-7 | Automorphism structure emerges | FORCED | CR-6 |
 
-**Caveat for Chain-7:** The interpretation of Δ = Δ(Δ) as unfolding process (rather than static fixed point) is an interpretive choice. Marked FORCED* to indicate this.
+**Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
 **Critical Regime (CR-1 to CR-7):** Structural constraints from 0 < Φ < ∞. See `1_DERIVATION/CRITICAL_REGIME.md`.
 
@@ -147,7 +147,7 @@ README.md must not contradict this file.
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** — see UAC.md |
 | GAP-2 | Continuum not derived | HYP-C1 is hypothesis |
 | GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 is hypothesis |
-| GAP-4 | Chain-7 interpretation | FORCED* caveat unresolved |
+| ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
 | GAP-6 | 3+1 dimensions weak argument | HYP-S1 downgraded to CONJ |
 

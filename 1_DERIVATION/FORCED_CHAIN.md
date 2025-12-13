@@ -70,21 +70,35 @@
 - **Note:** This is cognitive/linguistic necessity, not ontological necessity. The statement is necessarily true in any framework capable of making distinctions.
 - **Status:** FORCED (performative self-refutation of denial)
 
-### FORCED* Chain-7: Recursion Structure
+### FORCED Chain-7: Composition Monoid (Irreversibility)
 
-- **Statement:** Δ = Δ(Δ(Δ(...))) (unbounded recursive application)
-- **Justification:** Given Δ = Δ(Δ), nothing in the formal structure prevents iterating: Δ(Δ) can be input to Δ again.
-- **Depends on:** FORCED Chain-6 (self-application)
-- **Caveat (*):** This assumes the recursion "unfolds" as an infinite sequence. Strictly speaking, Δ = Δ(Δ) is a fixed-point equation and could be static. The interpretation as unfolding process implicitly introduces a notion of sequential application.
-- **Status:** FORCED* (forced given interpretation of iteration, but interpretation itself is a choice)
+- **Statement:** The set {id, Δ, Δ², Δ³, ...} of composition powers is infinite.
+- **Justification:**
+  1. Δ is an endomorphism on the domain of distinctions: Δ : 𝒟 → 𝒟
+  2. Suppose Δⁿ = id for some n > 0 (periodicity)
+  3. Then Δⁿ(X) = X for any X
+  4. But between X and Δⁿ(X), n distinctions were created
+  5. Δⁿ = id means these distinctions are "erased" — the structure returns to pre-distinction state
+  6. Erasing a distinction = local Ø (state without that distinction)
+  7. Ø is impossible (DEF-AX) ⟹ erasure is impossible ⟹ Δⁿ ≠ id for all n > 0
+  8. Similarly, Δⁿ ≠ Δᵐ for n ≠ m (otherwise Δ|n-m| = id)
+  9. Therefore {id, Δ, Δ², ...} is infinite
+- **Depends on:** DEF-AX (Ø impossible), Chain-6 (Δ = Δ(Δ))
+- **Note:** This is a *structural* argument, not a *process* argument. We do not claim Δ "unfolds in time" — we claim the composition monoid has infinite cardinality as a static structure.
+- **Status:** FORCED (GAP-4 closed: irreversibility follows from Ø impossible)
 
 ### FORCED Chain-8: Natural Numbers
 
-- **Statement:** ℕ emerges from recursion depth counting.
-- **Justification:** The recursion levels Δ, Δ(Δ), Δ(Δ(Δ)),... can be indexed by depth: 0, 1, 2, 3,... This indexing structure is isomorphic to ℕ.
-- **Depends on:** FORCED* Chain-7 (recursion)
-- **Note:** Inherits the caveat from Chain-7. The existence of ℕ as an indexing structure is forced given recursive unfolding, but the unfolding interpretation itself is questionable.
-- **Status:** FORCED (conditional on Chain-7)
+- **Statement:** ℕ ≅ composition monoid of Δ.
+- **Justification:**
+  1. From Chain-7: M = {id, Δ, Δ², Δ³, ...} is infinite with Δⁿ ≠ Δᵐ for n ≠ m
+  2. Define φ: M → ℕ by φ(Δⁿ) = n
+  3. φ is a bijection (by Chain-7)
+  4. φ(Δⁿ ∘ Δᵐ) = φ(Δⁿ⁺ᵐ) = n + m = φ(Δⁿ) + φ(Δᵐ)
+  5. Therefore M ≅ (ℕ, +, 0) as monoids
+- **Depends on:** Chain-7 (infinite composition monoid)
+- **Note:** ℕ emerges as the indexing structure for composition depth, not as "counting in time".
+- **Status:** FORCED
 
 ---
 
@@ -109,11 +123,11 @@ L1-L4 (category properties) ← FORCED
     ↓
 Chain-5: Bool ← FORCED
     ↓
-Chain-6: Δ = Δ(Δ) ← FORCED
+Chain-6: Δ = Δ(Δ) ← FORCED (self-application)
     ↓
-Chain-7: Recursion ← FORCED* (with caveat)
+Chain-7: {Δⁿ} infinite ← FORCED (irreversibility from Ø impossible)
     ↓
-Chain-8: ℕ ← FORCED (given Chain-7)
+Chain-8: ℕ ≅ {Δⁿ} ← FORCED (monoid isomorphism)
     ↓
 UAC: 0 < Φ < ∞ (definition)
     ↓

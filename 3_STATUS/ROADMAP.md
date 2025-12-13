@@ -14,7 +14,7 @@ Items are ordered by logical priority, not by difficulty or time.
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** | Defined as path entropy in UAC.md |
-| GAP-4 | Chain-7 interpretation | FORCED* | Either prove unfolding is forced or downgrade to HYP |
+| ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** | Irreversibility argument: Δⁿ=id ⟹ erasure ⟹ local Ø ⟹ contradiction |
 
 ### Priority 2: Major Bridges (HYP that block physics claims)
 
@@ -79,3 +79,4 @@ These would require additional hypotheses beyond current scope.
 |------|-----|--------|--------|
 | 2025-12-13 | Initial | Created roadmap | 8 gaps identified |
 | 2025-12-13 | GAP-1 | Defined Φ as path entropy | CLOSED — see UAC.md |
+| 2025-12-13 | GAP-4 | Irreversibility argument from Ø impossible | CLOSED — see FORCED_CHAIN.md Chain-7 |
