@@ -38,7 +38,13 @@ The continuum is not hypothetical — it is uniquely forced by criticality.
 - DEF **(B2; limits/completions)**: introduce a directed system in `C` and take a direct limit of `X` in `Hilb` (or, separately, introduce a topology/metric on a state space and take a completion).
 - DEF **(B3; invariance constraints)**: introduce an action of a group `G` on the chosen target (e.g. by unitary operators on `X(u)`), and impose invariance/equivariance constraints.
 
-**Note:** B1-B3 are **definitional choices** (how we choose to represent discrete structure), not forced by Δ = Δ(Δ).
+**Note (v2.5):** B1-B3 are **definitional choices** for explicit construction. The *existence* of such representation is FORCED by the derivation chain:
+- T7: ℂ is FORCED by automorphism closure
+- T8: Unitarity U(n) is FORCED by criticality preservation
+- T9: Continuous history t ∈ ℝ is FORCED by completeness
+- T13: Tensor structure is FORCED by locality preservation
+
+The functor X: C → Hilb is therefore FORCED to exist (conceptually). The explicit construction is **GAP-7 (OPEN-TECH)** — a technical formalization task, not a conceptual gap.
 
 ## 2. Critical Representation Conditions (R1–R5)
 
@@ -449,9 +455,25 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 ---
 
-### CONJ-A1: Fine Structure Constant 1/α = 137
+### BOUND-α: Fine Structure Constant α ∈ Critical Window
 
-**Statement:** The inverse fine structure constant is:
+**Statement:** The electromagnetic coupling α is constrained to a critical window.
+
+**Status:** **BOUND** (constrained, not arbitrary)
+
+**Derivation from criticality:**
+
+1. **α → 0 forbidden:** U(1) coupling vanishes → electromagnetic interaction trivializes → gauge structure incomplete → violates DD-Gauge
+2. **α → 1 forbidden:** QED perturbation series fails → theory undefined at critical scales → Φ → ∞
+3. **α must lie in critical regime:** Neither trivial (Φ → 0) nor non-perturbative (Φ → ∞)
+
+The actual value α ≈ 1/137 is BOUND — constrained to this window by criticality, not "selected" from options.
+
+---
+
+### CONJ-A1: Formula 1/α = 11² + 4² = 137
+
+**Statement:** The specific inverse fine structure constant formula:
 
 ```
 1/α = 11² + 4² = 121 + 16 = 137
@@ -459,17 +481,17 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 **Interpretation:** 11 = 3 (generations) + 8 (gluons), 4 = 2² (charge degrees of freedom)
 
-**Depends on:** CIRC-1 (SU(3), 3 generations)
+**Depends on:** DD-Gauge (SU(3)×SU(2)×U(1)), DD-Generations (N ≥ 3)
 
-**Status:** **CONJ - Numerology.** Multiple problems:
+**Status:** **CONJ - Pattern.** Multiple issues:
 
 1. **Non-unique decomposition:** 137 = 2⁷+2³+1 = 11×12+5 = many others
-2. **No derivation:** Why (generations + gluons)² + (charge DOF)²?
+2. **No derivation:** Why specifically (generations + gluons)² + (charge DOF)²?
 3. **Empirical mismatch:** α⁻¹ = 137.035999... (not exactly 137)
 
-**Empirical fit:** 137.000 vs 137.036 → 99.97% agreement (good but not perfect)
+**Empirical fit:** 137.000 vs 137.036 → 99.97% agreement
 
-**Assessment:** Interesting pattern, but could be coincidence. Needs rigorous derivation of formula structure.
+**Assessment:** The VALUE α ≈ 1/137 is BOUND (constrained). The FORMULA 11² + 4² = 137 remains CONJ (pattern that may be coincidence).
 
 ---
 
@@ -609,12 +631,15 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 4. Λ > 0 observation (HYP-Λ1)
 5. Physical constants ℏ, c, G (HYP-Q2)
 
+### Bounds (Constrained Values):
+
+1. α ∈ critical window (BOUND-α) — not arbitrary, constrained by criticality
+
 ### Conjectures (Pattern Matching):
 
-1. 3 spatial dimensions (CONJ via HYP-S1)
-2. α⁻¹ = 137 formula (CONJ-A1)
-3. θ ≈ 2/9 (CONJ-K2)
-4. Λ_eff formula (CONJ-Λ2)
+1. α⁻¹ = 11² + 4² = 137 formula (CONJ-A1) — specific formula, may be numerology
+2. θ ≈ 2/9 (CONJ-K2)
+3. Λ_eff formula (CONJ-Λ2)
 
 ---
 

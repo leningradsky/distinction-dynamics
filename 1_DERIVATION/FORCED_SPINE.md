@@ -2361,6 +2361,46 @@ What remains (Realization index):
 
 ---
 
+## Technical Gaps (OPEN-TECH)
+
+These are formalizations that don't block the derivation but remain to be made explicit:
+
+### GAP-7: Functor C → Hilb
+
+**Status:** OPEN-TECH (technical, not conceptual)
+
+**The question:** The derivation establishes that:
+- ℂ is FORCED (T7)
+- Unitary dynamics U(n) is FORCED (T8)
+- Continuous history ℝ is FORCED (T9)
+- Tensor factorization is FORCED (T13)
+
+Therefore a Hilbert space representation exists. But the explicit functor X: C → Hilb has not been constructed.
+
+**Why this is technical, not conceptual:**
+1. The *existence* of the representation is forced by the derivation chain
+2. The *explicit construction* is category-theoretic formalization
+3. No new physics or principles are required
+4. Standard mathematical machinery (direct limits, GNS construction) applies
+
+**Path to closure:**
+1. C = category of admissible configurations (from DEF-C)
+2. X maps objects to Hilbert spaces (forced to be ℂⁿ by T7, T8)
+3. X maps morphisms to unitary maps (forced by T8)
+4. Limits/completions yield infinite-dimensional ℋ (forced by T9)
+
+This is explicit category theory, not new derivation.
+
+### GAP-8: Koide Angle Numerics
+
+**Status:** CONJ-K2 (may be coincidence)
+
+**The question:** The Koide relation Q = 2/3 is DERIVED (geometric invariant). But the specific angle θ ≈ 2/9 is a numerical pattern without derivation.
+
+**Current status:** Pattern fit, not structure.
+
+---
+
 ## Philosophical Note
 
 This derivation does not "explain why physics exists."

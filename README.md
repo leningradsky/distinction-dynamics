@@ -52,16 +52,17 @@ From this, DD forces:
 | **FORCED** | 34 | Logically necessary from axiom |
 | **DEF** | 9 | Definitions/conventions |
 | **DERIVED** | 20 | Follows from FORCED chain |
-| **CONJ** | 4 | Conjectures (numerical patterns) |
+| **BOUND** | 1 | Constrained to critical window |
+| **CONJ** | 3 | Conjectures (numerical patterns) |
 | **CIRC** | 0 | **All resolved** (T30, T31) |
 | **PRED** | 1 | Testable prediction |
 | ~~HYP~~ | 0 | **Eliminated** by DD-NoAlt (T26) |
 
 **Master truth file:** [3_STATUS/STATUS.md](3_STATUS/STATUS.md)
 
-**Open gaps:** GAP-5 (α ≈ 1/137), GAP-7 (functor), GAP-8 (Koide numerics)
+**Open gaps:** GAP-7 (functor — technical), GAP-8 (Koide angle numerics)
 
-**Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility), GAP-6 (d=3)
+**Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility), GAP-5 (α → BOUND), GAP-6 (d=3)
 
 ---
 

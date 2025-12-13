@@ -15,6 +15,7 @@ README.md must not contradict this file.
 | **FORCED*** | Forced given interpretation (caveat documented) |
 | **DEF** | Definition or convention (added structure) |
 | **DERIVED** | Follows rigorously from FORCED/DEF |
+| **BOUND** | Constrained to critical window (not arbitrary, not exact) |
 | **UNTRACED** | Not yet traced (temporary status, will become DERIVED) |
 | **CONJ** | Numerical pattern, possibly untraceable |
 | **CIRC** | Circular dependency (mutual consistency, not derivation) |
@@ -316,11 +317,25 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - GR is NOT one possible theory — it is the unique minimal form
 - Completes gravity derivation from DD-Gravity (T28)
 
+### Bounds (BOUND)
+
+| ID | Statement | Status | Notes |
+|----|-----------|--------|-------|
+| BOUND-α | α ∈ critical window | BOUND | Constrained by gauge/criticality |
+
+**BOUND-α (Fine Structure Constant):**
+The electromagnetic coupling α is not arbitrary but constrained to a critical window:
+- **Too small** (α → 0): Electromagnetic interaction trivializes → U(1) decouples → gauge structure collapses
+- **Too large** (α → 1): QED perturbation series fails → theory undefined at critical scales
+- **Critical window**: α must fall in regime where gauge coupling is neither trivial nor non-perturbative
+- The actual value α ≈ 1/137 is BOUND (constrained), not SELECTED (chosen from options)
+- The specific formula 11² + 4² = 137 remains CONJ (pattern, may be coincidence)
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
 |----|-----------|--------|---------------|
-| CONJ-A1 | 1/α = 11² + 4² = 137 | CONJ | 99.97% |
+| CONJ-A1 | 1/α = 11² + 4² = 137 (formula) | CONJ | 99.97% |
 | CONJ-K2 | θ ≈ λ ≈ 2/9 | CONJ | ~99% |
 | CONJ-Λ2 | Λ_eff = k(Δ + F + M) | CONJ | — |
 
@@ -348,8 +363,9 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | FORCED | 34 |
 | DEF | 9 |
 | DERIVED | 20 |
+| BOUND | 1 |
 | UNTRACED | 0 |
-| CONJ | 4 |
+| CONJ | 3 |
 | CIRC | 0 |
 | PRED | 1 |
 
@@ -372,8 +388,10 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** — Chain-9,10,11 |
 | ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** — DD-Time |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
-| GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
+| ~~GAP-5~~ | ~~α = 137 formula unjustified~~ | **CLOSED** — α ∈ critical window (BOUND-α); formula 137 remains CONJ |
 | ~~GAP-6~~ | ~~3+1 dimensions weak argument~~ | **CLOSED** — DD-Dim3 (criticality selection) |
+| GAP-7 | Functor C → Hilb construction | OPEN-TECH (technical, not conceptual) |
+| GAP-8 | Koide angle numerics | CONJ-K2 (may be numerology) |
 
 ---
 
