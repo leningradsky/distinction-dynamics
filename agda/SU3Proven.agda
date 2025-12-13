@@ -1,21 +1,21 @@
 {-# OPTIONS --safe --without-K #-}
 
 {-
-  SU(3) NECESSITY — ПОЛНОСТЬЮ ДОКАЗАНО
+  SU(3) NECESSITY — FULLY PROVEN
   =====================================
-  
-  Все постулаты заменены конструктивными доказательствами.
-  
-  Стратегия:
-  1. S₃ представляется перестановочными матрицами 3×3
-  2. SU(2) не содержит S₃ (доказано подсчётом подгрупп)
-  3. Вложение S₃ → GL₃ конструктивно
+
+  All postulates replaced with constructive proofs.
+
+  Strategy:
+  1. S₃ is represented by permutation matrices 3×3
+  2. SU(2) does not contain S₃ (proven by counting subgroups)
+  3. Embedding S₃ → GL₃ is constructive
 -}
 
 module SU3Proven where
 
 ------------------------------------------------------------------------
--- Базовые определения
+-- Basic definitions
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -42,7 +42,7 @@ cong : {A B : Set} (f : A → B) {x y : A} → x ≡ y → f x ≡ f y
 cong f refl = refl
 
 ------------------------------------------------------------------------
--- Натуральные числа и Fin
+-- Natural numbers and Fin
 ------------------------------------------------------------------------
 
 data ℕ : Set where
@@ -61,13 +61,13 @@ pattern i1 = suc zero
 pattern i2 = suc (suc zero)
 
 ------------------------------------------------------------------------
--- Триада
+-- Triad
 ------------------------------------------------------------------------
 
 data Three : Set where
   A B C : Three
 
--- Изоморфизм Three ≃ Fin 3
+-- Isomorphism Three ≃ Fin 3
 three→fin : Three → Fin 3
 three→fin A = i0
 three→fin B = i1
@@ -78,7 +78,7 @@ fin→three i0 = A
 fin→three i1 = B
 fin→three i2 = C
 
--- Доказательства различий
+-- Proofs of distinctness
 A≢B : A ≡ B → ⊥
 A≢B ()
 
@@ -89,18 +89,18 @@ C≢A : C ≡ A → ⊥
 C≢A ()
 
 ------------------------------------------------------------------------
--- S₃: Группа перестановок
+-- S₃: Permutation group
 ------------------------------------------------------------------------
 
 data S₃ : Set where
-  e   : S₃    -- тождество
-  r   : S₃    -- (A B C) цикл
-  r²  : S₃    -- (A C B) цикл  
-  s₁  : S₃    -- (A B) транспозиция
-  s₂  : S₃    -- (B C) транспозиция
-  s₃  : S₃    -- (A C) транспозиция
+  e   : S₃    -- identity
+  r   : S₃    -- (A B C) cycle
+  r²  : S₃    -- (A C B) cycle
+  s₁  : S₃    -- (A B) transposition
+  s₂  : S₃    -- (B C) transposition
+  s₃  : S₃    -- (A C) transposition
 
--- Действие на Three
+-- Action on Three
 act : S₃ → Three → Three
 act e  x = x
 act r  A = B
@@ -119,7 +119,7 @@ act s₃ A = C
 act s₃ B = B
 act s₃ C = A
 
--- Композиция
+-- Composition
 infixl 7 _∘_
 _∘_ : S₃ → S₃ → S₃
 e  ∘ g  = g
@@ -151,10 +151,10 @@ s₃ ∘ s₂ = r
 s₃ ∘ s₃ = e
 
 ------------------------------------------------------------------------
--- МАТРИЧНОЕ ПРЕДСТАВЛЕНИЕ S₃
+-- MATRIX REPRESENTATION OF S₃
 ------------------------------------------------------------------------
 
--- Матрица 3×3 над целыми (достаточно для перестановок)
+-- Matrix 3×3 over integers (sufficient for permutations)
 data ℤ : Set where
   pos  : ℕ → ℤ  -- 0, 1, 2, ...
   negsuc : ℕ → ℤ  -- -1, -2, ...
@@ -163,11 +163,11 @@ pattern +0 = pos 0
 pattern +1 = pos 1
 pattern n1 = negsuc 0  -- -1
 
--- Матрица как функция
+-- Matrix as function
 Mat3 : Set
 Mat3 = Fin 3 → Fin 3 → ℤ
 
--- Перестановочная матрица из S₃
+-- Permutation matrix from S₃
 perm-mat : S₃ → Mat3
 -- e = I₃
 perm-mat e i0 i0 = +1
@@ -180,30 +180,30 @@ perm-mat e i2 i0 = +0
 perm-mat e i2 i1 = +0
 perm-mat e i2 i2 = +1
 
--- r: A→B, B→C, C→A, т.е. столбец j идёт в строку σ(j)
--- M[i,j] = 1 если i = r(j)
-perm-mat r i0 i0 = +0  -- A не идёт в A
-perm-mat r i0 i1 = +0  -- B не идёт в A  
-perm-mat r i0 i2 = +1  -- C идёт в A
-perm-mat r i1 i0 = +1  -- A идёт в B
+-- r: A→B, B→C, C→A, i.e. column j goes to row σ(j)
+-- M[i,j] = 1 if i = r(j)
+perm-mat r i0 i0 = +0  -- A does not go to A
+perm-mat r i0 i1 = +0  -- B does not go to A
+perm-mat r i0 i2 = +1  -- C goes to A
+perm-mat r i1 i0 = +1  -- A goes to B
 perm-mat r i1 i1 = +0
 perm-mat r i1 i2 = +0
 perm-mat r i2 i0 = +0
-perm-mat r i2 i1 = +1  -- B идёт в C
+perm-mat r i2 i1 = +1  -- B goes to C
 perm-mat r i2 i2 = +0
 
 -- r²: A→C, B→A, C→B
 perm-mat r² i0 i0 = +0
-perm-mat r² i0 i1 = +1  -- B идёт в A
+perm-mat r² i0 i1 = +1  -- B goes to A
 perm-mat r² i0 i2 = +0
 perm-mat r² i1 i0 = +0
 perm-mat r² i1 i1 = +0
-perm-mat r² i1 i2 = +1  -- C идёт в B
-perm-mat r² i2 i0 = +1  -- A идёт в C
+perm-mat r² i1 i2 = +1  -- C goes to B
+perm-mat r² i2 i0 = +1  -- A goes to C
 perm-mat r² i2 i1 = +0
 perm-mat r² i2 i2 = +0
 
--- s₁: A↔B, C фикс
+-- s₁: A↔B, C fixed
 perm-mat s₁ i0 i0 = +0
 perm-mat s₁ i0 i1 = +1
 perm-mat s₁ i0 i2 = +0
@@ -214,7 +214,7 @@ perm-mat s₁ i2 i0 = +0
 perm-mat s₁ i2 i1 = +0
 perm-mat s₁ i2 i2 = +1
 
--- s₂: B↔C, A фикс
+-- s₂: B↔C, A fixed
 perm-mat s₂ i0 i0 = +1
 perm-mat s₂ i0 i1 = +0
 perm-mat s₂ i0 i2 = +0
@@ -225,7 +225,7 @@ perm-mat s₂ i2 i0 = +0
 perm-mat s₂ i2 i1 = +1
 perm-mat s₂ i2 i2 = +0
 
--- s₃: A↔C, B фикс
+-- s₃: A↔C, B fixed
 perm-mat s₃ i0 i0 = +0
 perm-mat s₃ i0 i1 = +0
 perm-mat s₃ i0 i2 = +1
@@ -237,62 +237,62 @@ perm-mat s₃ i2 i1 = +0
 perm-mat s₃ i2 i2 = +0
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА 1: perm-mat — гомоморфизм
+-- THEOREM 1: perm-mat is a homomorphism
 ------------------------------------------------------------------------
 
--- Вспомогательное: равенство матриц
+-- Auxiliary: matrix equality
 _≡M_ : Mat3 → Mat3 → Set
 M ≡M N = (i j : Fin 3) → M i j ≡ N i j
 
--- Умножение матриц (нужна арифметика ℤ)
--- Пропустим детали, но структура верна
+-- Matrix multiplication (needs ℤ arithmetic)
+-- Skipping details, but structure is correct
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА 2: SU(2) НЕ СОДЕРЖИТ S₃
+-- THEOREM 2: SU(2) DOES NOT CONTAIN S₃
 ------------------------------------------------------------------------
 
 {-
-  Доказательство через структуру подгрупп:
-  
-  Конечные подгруппы SU(2) классифицированы (ADE классификация):
-  - Циклические Zₙ
-  - Диэдральные D₂ₙ  
-  - A₄ (тетраэдр, |A₄| = 12)
-  - S₄ (октаэдр, |S₄| = 24)
-  - A₅ (икосаэдр, |A₅| = 60)
-  
-  S₃ имеет порядок 6.
-  
-  Проверяем: есть ли подгруппа порядка 6 в SU(2)?
-  - Z₆ ⊂ SU(2) — да, но Z₆ абелева, S₃ — нет
-  - D₆ = D₃ ≅ S₃? Нет! D₃ имеет порядок 6, но D₂ₙ в SU(2) 
-    это бинарная диэдральная группа, и D₃ в обычном смысле
-    это НЕ подгруппа SU(2).
-    
-  Точнее: прообраз D₃ ⊂ SO(3) в SU(2) это бинарная D₃ порядка 12.
-  
-  Ключевой факт: SU(2) → SO(3) это 2:1 накрытие.
-  S₃ ⊂ SO(3), но её прообраз в SU(2) имеет порядок 12, не 6.
-  
-  Следовательно, S₃ как группа порядка 6 НЕ является подгруппой SU(2).
+  Proof via subgroup structure:
+
+  Finite subgroups of SU(2) are classified (ADE classification):
+  - Cyclic Zₙ
+  - Dihedral D₂ₙ
+  - A₄ (tetrahedron, |A₄| = 12)
+  - S₄ (octahedron, |S₄| = 24)
+  - A₅ (icosahedron, |A₅| = 60)
+
+  S₃ has order 6.
+
+  Check: is there a subgroup of order 6 in SU(2)?
+  - Z₆ ⊂ SU(2) — yes, but Z₆ is abelian, S₃ — is not
+  - D₆ = D₃ ≅ S₃? No! D₃ has order 6, but D₂ₙ in SU(2)
+    is the binary dihedral group, and D₃ in the usual sense
+    is NOT a subgroup of SU(2).
+
+  More precisely: the preimage of D₃ ⊂ SO(3) in SU(2) is binary D₃ of order 12.
+
+  Key fact: SU(2) → SO(3) is a 2:1 covering.
+  S₃ ⊂ SO(3), but its preimage in SU(2) has order 12, not 6.
+
+  Therefore, S₃ as a group of order 6 is NOT a subgroup of SU(2).
 -}
 
--- Порядок группы
+-- Group order
 data GroupOrder : Set where
   ord : ℕ → GroupOrder
 
 order-S₃ : GroupOrder
 order-S₃ = ord 6
 
--- Конечные подгруппы SU(2) (перечисление)
+-- Finite subgroups of SU(2) (enumeration)
 data SU2-Subgroup : Set where
-  cyclic    : ℕ → SU2-Subgroup          -- Zₙ любого порядка
-  binary-Dn : ℕ → SU2-Subgroup          -- 2D₂ₙ порядка 4n
-  binary-T  : SU2-Subgroup              -- 2T порядка 24
-  binary-O  : SU2-Subgroup              -- 2O порядка 48
-  binary-I  : SU2-Subgroup              -- 2I порядка 120
+  cyclic    : ℕ → SU2-Subgroup          -- Zₙ of any order
+  binary-Dn : ℕ → SU2-Subgroup          -- 2D₂ₙ of order 4n
+  binary-T  : SU2-Subgroup              -- 2T of order 24
+  binary-O  : SU2-Subgroup              -- 2O of order 48
+  binary-I  : SU2-Subgroup              -- 2I of order 120
 
--- Порядок подгруппы SU(2)
+-- Order of subgroup of SU(2)
 su2-subgroup-order : SU2-Subgroup → ℕ
 su2-subgroup-order (cyclic n) = n
 su2-subgroup-order (binary-Dn n) = 4 * n  -- |2D₂ₙ| = 4n
@@ -308,10 +308,10 @@ su2-subgroup-order binary-T = 24
 su2-subgroup-order binary-O = 48
 su2-subgroup-order binary-I = 120
 
--- Проверка: группа порядка 6 в списке?
--- cyclic 6 = Z₆ — абелева
--- binary-Dn: 4n = 6 → n = 1.5 — не целое!
--- Нет неабелевой группы порядка 6 в SU(2)
+-- Check: group of order 6 in the list?
+-- cyclic 6 = Z₆ — abelian
+-- binary-Dn: 4n = 6 → n = 1.5 — not integer!
+-- No non-abelian group of order 6 in SU(2)
 
 data IsAbelian : Set where
   abelian : IsAbelian
@@ -320,7 +320,7 @@ data IsAbelian : Set where
 s₃-nonabelian : IsAbelian
 s₃-nonabelian = nonabelian
 
--- Доказательство: r ∘ s₁ ≢ s₁ ∘ r
+-- Proof: r ∘ s₁ ≢ s₁ ∘ r
 r∘s₁≡s₃ : r ∘ s₁ ≡ s₃
 r∘s₁≡s₃ = refl
 
@@ -333,62 +333,62 @@ s₂≢s₃ ()
 s₃≢s₂ : s₃ ≡ s₂ → ⊥
 s₃≢s₂ ()
 
--- ТЕОРЕМА: S₃ неабелева
--- Доказательство: r ∘ s₁ = s₃, но s₁ ∘ r = s₂, и s₃ ≠ s₂
+-- THEOREM: S₃ is non-abelian
+-- Proof: r ∘ s₁ = s₃, but s₁ ∘ r = s₂, and s₃ ≠ s₂
 S₃-nonabelian : (r ∘ s₁ ≡ s₁ ∘ r) → ⊥
 S₃-nonabelian p = s₃≢s₂ (trans (sym r∘s₁≡s₃) (trans p s₁∘r≡s₂))
 
--- Единственная группа порядка 6 в SU(2) — это Z₆ (абелева)
--- S₃ неабелева ⟹ S₃ ⊄ SU(2)
+-- The only group of order 6 in SU(2) — is Z₆ (abelian)
+-- S₃ is non-abelian ⟹ S₃ ⊄ SU(2)
 
--- ТЕОРЕМА (без постулата!)
-SU2-too-small : (S₃ → ⊥) → ⊥  -- S₃ существует
+-- THEOREM (without postulate!)
+SU2-too-small : (S₃ → ⊥) → ⊥  -- S₃ exists
 SU2-too-small f = f e  -- e ∈ S₃
 
--- Более точная формулировка:
--- "Не существует инъективного гомоморфизма S₃ → SU(2)"
--- Это следует из классификации конечных подгрупп SU(2)
+-- More precise formulation:
+-- "There exists no injective homomorphism S₃ → SU(2)"
+-- This follows from classification of finite subgroups of SU(2)
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА 3: S₃ ВКЛАДЫВАЕТСЯ В SU(3)
+-- THEOREM 3: S₃ EMBEDS INTO SU(3)
 ------------------------------------------------------------------------
 
--- Вложение: S₃ → GL₃(ℤ) ⊂ GL₃(ℂ) ⊃ SU(3)
--- Перестановочные матрицы с det = ±1
+-- Embedding: S₃ → GL₃(ℤ) ⊂ GL₃(ℂ) ⊃ SU(3)
+-- Permutation matrices with det = ±1
 
--- Чётность перестановки
+-- Parity of permutation
 data Parity : Set where
   even : Parity
   odd  : Parity
 
 parity : S₃ → Parity
 parity e  = even
-parity r  = even  -- (ABC) = (AB)(AC) — два транспозиции
+parity r  = even  -- (ABC) = (AB)(AC) — two transpositions
 parity r² = even  -- (ACB) = (AC)(AB)
-parity s₁ = odd   -- одна транспозиция
+parity s₁ = odd   -- one transposition
 parity s₂ = odd
 parity s₃ = odd
 
--- Чётные перестановки образуют A₃ ≅ Z₃
+-- Even permutations form A₃ ≅ Z₃
 data A₃ : Set where
   a-e  : A₃
   a-r  : A₃
   a-r² : A₃
 
--- A₃ ⊂ SU(3) напрямую (det = +1)
--- Нечётные нужно умножить на фазу ω = e^{2πi/3} для det = +1
+-- A₃ ⊂ SU(3) directly (det = +1)
+-- Odd ones need to be multiplied by phase ω = e^{2πi/3} for det = +1
 
--- Для полноты: вложение существует
--- (детали требуют комплексных чисел)
+-- For completeness: embedding exists
+-- (details require complex numbers)
 
--- КОНСТРУКТИВНОЕ ДОКАЗАТЕЛЬСТВО:
--- Строим отображение S₃ → Mat3
--- и проверяем что это гомоморфизм
+-- CONSTRUCTIVE PROOF:
+-- Build mapping S₃ → Mat3
+-- and check that it's a homomorphism
 
 S₃-to-GL3 : S₃ → Mat3
 S₃-to-GL3 = perm-mat
 
--- Это инъективно (разные перестановки дают разные матрицы)
+-- This is injective (different permutations give different matrices)
 perm-mat-injective : (g h : S₃) → ((i j : Fin 3) → perm-mat g i j ≡ perm-mat h i j) → g ≡ h
 perm-mat-injective e e _ = refl
 perm-mat-injective e r p with p i1 i0
@@ -458,31 +458,31 @@ perm-mat-injective s₃ s₂ p with p i0 i2
 perm-mat-injective s₃ s₃ _ = refl
 
 ------------------------------------------------------------------------
--- ГЛАВНАЯ ТЕОРЕМА: SU(3) необходима и достаточна
+-- MAIN THEOREM: SU(3) is necessary and sufficient
 ------------------------------------------------------------------------
 
 {-
-  Сводка:
-  
-  1. S₃ — группа симметрий триады (|S₃| = 6)
-  2. S₃ неабелева (доказано: r∘s₁ ≠ s₁∘r)
-  3. S₃ ⊄ SU(2) (нет неабелевой подгруппы порядка 6)
-  4. S₃ ⊂ GL₃ (перестановочные матрицы)
-  5. GL₃ ⊃ SU(3) ⊃ A₃ (чётные перестановки)
-  6. Полное S₃ вкладывается в U(3), и в SU(3) с фазами
-  
-  ⟹ SU(3) — минимальная унитарная группа содержащая S₃
+  Summary:
+
+  1. S₃ — symmetry group of triad (|S₃| = 6)
+  2. S₃ is non-abelian (proven: r∘s₁ ≠ s₁∘r)
+  3. S₃ ⊄ SU(2) (no non-abelian subgroup of order 6)
+  4. S₃ ⊂ GL₃ (permutation matrices)
+  5. GL₃ ⊃ SU(3) ⊃ A₃ (even permutations)
+  6. Full S₃ embeds into U(3), and into SU(3) with phases
+
+  ⟹ SU(3) — minimal unitary group containing S₃
 -}
 
--- Итоговая теорема (без постулатов!)
+-- Final theorem (without postulates!)
 record SU3-Necessity : Set₁ where
   field
-    triad-exists    : Three                           -- ✓ Three определено
-    S₃-acts         : S₃ → Three → Three              -- ✓ act определено
-    S₃-nonabel      : (r ∘ s₁ ≡ s₁ ∘ r) → ⊥          -- ✓ доказано
+    triad-exists    : Three                           -- ✓ Three defined
+    S₃-acts         : S₃ → Three → Three              -- ✓ act defined
+    S₃-nonabel      : (r ∘ s₁ ≡ s₁ ∘ r) → ⊥          -- ✓ proven
     S₃-embeds-GL3   : S₃ → Mat3                       -- ✓ perm-mat
-    embedding-injective : (g h : S₃) → 
-      ((i j : Fin 3) → perm-mat g i j ≡ perm-mat h i j) → g ≡ h  -- ✓ доказано
+    embedding-injective : (g h : S₃) →
+      ((i j : Fin 3) → perm-mat g i j ≡ perm-mat h i j) → g ≡ h  -- ✓ proven
 
 su3-necessity-proof : SU3-Necessity
 su3-necessity-proof = record
@@ -494,26 +494,26 @@ su3-necessity-proof = record
   }
 
 ------------------------------------------------------------------------
--- БОНУС: Иерархия SU(2) × U(1) из подуровней
+-- BONUS: Hierarchy of SU(2) × U(1) from sublevels
 ------------------------------------------------------------------------
 
 {-
-  Гипотеза (конструктивная версия):
-  
-  Диада {A, B} ⊂ Триада {A, B, C}
-  
-  S₂ ⊂ S₃ — подгруппа стабилизирующая C
-  
-  S₂ → SU(2) (накрытие)
-  
-  U(1) — дополнительная фаза (центр)
-  
-  Итого: SU(3) ⊃ SU(2) × U(1) / Z₆ ≅ S(U(2) × U(3))
-  
-  Это требует более детальной формализации топологии групп.
+  Hypothesis (constructive version):
+
+  Dyad {A, B} ⊂ Triad {A, B, C}
+
+  S₂ ⊂ S₃ — subgroup stabilizing C
+
+  S₂ → SU(2) (covering)
+
+  U(1) — additional phase (center)
+
+  Result: SU(3) ⊃ SU(2) × U(1) / Z₆ ≅ S(U(2) × U(3))
+
+  This requires more detailed formalization of group topology.
 -}
 
--- Диада как подмножество триады
+-- Dyad as subset of triad
 data Dyad : Set where
   X Y : Dyad
 
@@ -521,16 +521,16 @@ dyad→three : Dyad → Three
 dyad→three X = A
 dyad→three Y = B
 
--- S₂ как подгруппа S₃
+-- S₂ as subgroup of S₃
 data S₂ : Set where
   e₂ : S₂
-  τ  : S₂  -- транспозиция X↔Y
+  τ  : S₂  -- transposition X↔Y
 
 s₂→s₃ : S₂ → S₃
 s₂→s₃ e₂ = e
-s₂→s₃ τ  = s₁  -- (AB) фиксирует C
+s₂→s₃ τ  = s₁  -- (AB) fixes C
 
--- Это инъективный гомоморфизм
+-- This is an injective homomorphism
 s₂-embedding-injective : (g h : S₂) → s₂→s₃ g ≡ s₂→s₃ h → g ≡ h
 s₂-embedding-injective e₂ e₂ _ = refl
 s₂-embedding-injective e₂ τ ()
@@ -538,24 +538,24 @@ s₂-embedding-injective τ e₂ ()
 s₂-embedding-injective τ τ _ = refl
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ: ВСЕ ПОСТУЛАТЫ УСТРАНЕНЫ
+-- SUMMARY: ALL POSTULATES ELIMINATED
 ------------------------------------------------------------------------
 
 {-
-  Было:
+  Was:
     postulate SU2-too-small : Unit
     postulate S3-embeds-SU3 : Unit
     postulate SU2-U1-from-DD : Unit
-    
-  Стало:
-    S₃-nonabelian : доказательство что S₃ неабелева
-    perm-mat : конструктивное вложение S₃ → Mat3
-    perm-mat-injective : доказательство инъективности
-    s₂→s₃ : вложение S₂ ⊂ S₃
-    
-  Открытым остаётся только:
-    - Топологическая связь SU(2) → SO(3) → S₃
-    - Точная структура SU(2) × U(1) из DD
-    
-  Но это НЕ постулаты, а направления исследований.
+
+  Became:
+    S₃-nonabelian : proof that S₃ is non-abelian
+    perm-mat : constructive embedding S₃ → Mat3
+    perm-mat-injective : proof of injectivity
+    s₂→s₃ : embedding S₂ ⊂ S₃
+
+  Remaining open:
+    - Topological connection SU(2) → SO(3) → S₃
+    - Exact structure of SU(2) × U(1) from DD
+
+  But these are NOT postulates, but research directions.
 -}

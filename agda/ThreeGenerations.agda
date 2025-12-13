@@ -1,17 +1,17 @@
 {-# OPTIONS --safe --without-K #-}
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТРИ ПОКОЛЕНИЯ ФЕРМИОНОВ ИЗ DD
+-- THREE FERMION GENERATIONS FROM DD
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- ЗАГАДКА: Почему в SM ровно 3 поколения фермионов?
---   Поколение 1: (e, νₑ, u, d)
---   Поколение 2: (μ, νμ, c, s)
---   Поколение 3: (τ, ντ, t, b)
+-- PUZZLE: Why are there exactly 3 fermion generations in SM?
+--   Generation 1: (e, νₑ, u, d)
+--   Generation 2: (μ, νμ, c, s)
+--   Generation 3: (τ, ντ, t, b)
 --
--- SM не объясняет это. Просто постулирует.
+-- SM does not explain this. Just postulates it.
 --
--- DD ОБЪЯСНЕНИЕ: Три поколения = три точки зрения изнутри триады.
+-- DD EXPLANATION: Three generations = three viewpoints from inside the triad.
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
@@ -20,27 +20,27 @@ module ThreeGenerations where
 open import DD-Core
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- КЛЮЧЕВАЯ ИДЕЯ
+-- KEY IDEA
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Триада замкнута: A ≠ B ≠ C ≠ A
+-- Triad is closed: A ≠ B ≠ C ≠ A
 --
--- Наблюдатель ВНУТРИ триады занимает одну вершину.
--- Он видит две другие как "внешний мир".
+-- Observer INSIDE the triad occupies one vertex.
+-- They see the other two as "external world".
 --
---   Наблюдатель в A: видит {B, C} → Поколение 1
---   Наблюдатель в B: видит {A, C} → Поколение 2
---   Наблюдатель в C: видит {A, B} → Поколение 3
+--   Observer at A: sees {B, C} → Generation 1
+--   Observer at B: sees {A, C} → Generation 2
+--   Observer at C: sees {A, B} → Generation 3
 --
--- Три поколения = орбита Z₃ на множестве точек зрения!
+-- Three generations = orbit of Z₃ on the set of viewpoints!
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Точка зрения = вершина триады, где находится наблюдатель
+-- Viewpoint = vertex of triad where observer is located
 Viewpoint : Set
 Viewpoint = Triad
 
--- Три точки зрения
+-- Three viewpoints
 viewpoint-1 : Viewpoint
 viewpoint-1 = A
 
@@ -52,71 +52,71 @@ viewpoint-3 = C
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ТЕОРЕМА: Поворот r циклически переставляет точки зрения
+-- THEOREM: Rotation r cyclically permutes viewpoints
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- r переводит точку зрения 1 в точку зрения 2
+-- r moves viewpoint 1 to viewpoint 2
 theorem-r-shifts-viewpoint-1 : act r viewpoint-1 ≡ viewpoint-2
 theorem-r-shifts-viewpoint-1 = refl
 
--- r переводит точку зрения 2 в точку зрения 3
+-- r moves viewpoint 2 to viewpoint 3
 theorem-r-shifts-viewpoint-2 : act r viewpoint-2 ≡ viewpoint-3
 theorem-r-shifts-viewpoint-2 = refl
 
--- r переводит точку зрения 3 обратно в точку зрения 1
+-- r moves viewpoint 3 back to viewpoint 1
 theorem-r-shifts-viewpoint-3 : act r viewpoint-3 ≡ viewpoint-1
 theorem-r-shifts-viewpoint-3 = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- СЛЕДСТВИЕ: Ровно 3 поколения, не больше и не меньше
+-- COROLLARY: Exactly 3 generations, no more and no less
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- После трёх поворотов возвращаемся к исходной точке зрения.
--- r³ = e (уже доказано в DD-Core)
+-- After three rotations we return to the initial viewpoint.
+-- r³ = e (already proven in DD-Core)
 --
--- Это означает: орбита Z₃ на Triad имеет размер ровно 3.
--- Четвёртого поколения нет, потому что r³·A = A.
+-- This means: the orbit of Z₃ on Triad has size exactly 3.
+-- There is no fourth generation, because r³·A = A.
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Размер орбиты
+-- Orbit size
 data OrbitSize : Set where
   one   : OrbitSize
   two   : OrbitSize
   three : OrbitSize
 
--- Орбита A под действием r имеет размер 3
--- A → B → C → A (цикл длины 3)
+-- Orbit of A under action of r has size 3
+-- A → B → C → A (cycle of length 3)
 orbit-size-is-3 : OrbitSize
 orbit-size-is-3 = three
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- СВЯЗЬ С ФОРМУЛОЙ КОИДЕ
+-- CONNECTION TO KOIDE FORMULA
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Эмпирический факт (Koide, 1981):
+-- Empirical fact (Koide, 1981):
 --   Q = (mₑ + mμ + mτ) / (√mₑ + √mμ + √mτ)² = 2/3
 --
--- Точность: 0.0008%
+-- Precision: 0.0008%
 --
--- DD ИНТЕРПРЕТАЦИЯ:
---   2/3 = 1 - 1/3 = 1 - 1/N, где N = 3 (число поколений)
+-- DD INTERPRETATION:
+--   2/3 = 1 - 1/3 = 1 - 1/N, where N = 3 (number of generations)
 --
--- Это не случайность! Формула Коиде — следствие того, что поколений ровно 3.
+-- This is not a coincidence! Koide formula — consequence of exactly 3 generations.
 --
--- ГИПОТЕЗА: Для N точек зрения на замкнутую структуру:
+-- HYPOTHESIS: For N viewpoints on a closed structure:
 --   Q(N) = 1 - 1/N
 --
---   N=2: Q = 1/2 (гипотетические 2 поколения)
---   N=3: Q = 2/3 (реальность) ✓
---   N=4: Q = 3/4 (гипотетические 4 поколения)
+--   N=2: Q = 1/2 (hypothetical 2 generations)
+--   N=3: Q = 2/3 (reality) ✓
+--   N=4: Q = 3/4 (hypothetical 4 generations)
 --
--- Почему N=3? Потому что триада — минимальная замкнутая структура.
+-- Why N=3? Because triad — minimal closed structure.
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Формула Коиде как функция от числа поколений (концептуально)
+-- Koide formula as function of number of generations (conceptually)
 -- Q(n) = (n-1)/n = 1 - 1/n
 koide-numerator : ℕ → ℕ
 koide-numerator zero    = zero
@@ -125,139 +125,139 @@ koide-numerator (suc n) = n
 koide-denominator : ℕ → ℕ
 koide-denominator n = n
 
--- Для 3 поколений: числитель = 2, знаменатель = 3
+-- For 3 generations: numerator = 2, denominator = 3
 theorem-koide-for-3 : koide-numerator 3 ≡ 2
 theorem-koide-for-3 = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ГЛУБОКАЯ СВЯЗЬ: УГЛЫ ТРИАДЫ И МАССЫ ПОКОЛЕНИЙ
+-- DEEP CONNECTION: TRIAD ANGLES AND GENERATION MASSES
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Параметризация Коиде:
+-- Koide parametrization:
 --   √mₖ = M · (1 + √2 · cos(θₖ))
 --
--- где θ₁ = 2π/3 + δ
---     θ₂ = 4π/3 + δ
---     θ₃ = 0 + δ
+-- where θ₁ = 2π/3 + δ
+--       θ₂ = 4π/3 + δ
+--       θ₃ = 0 + δ
 --
--- КЛЮЧЕВОЕ НАБЛЮДЕНИЕ:
---   2π/3 = 120° — угол поворота r в триаде
---   4π/3 = 240° — угол поворота r² в триаде
---   0 = 360° — тождество e
+-- KEY OBSERVATION:
+--   2π/3 = 120° — rotation angle of r in triad
+--   4π/3 = 240° — rotation angle of r² in triad
+--   0 = 360° — identity e
 --
--- Массы поколений КОДИРУЮТ углы поворота триады!
+-- Generation masses ENCODE the rotation angles of the triad!
 --
--- r  : A → B (поворот на 120°) → поколение 2
--- r² : A → C (поворот на 240°) → поколение 3
--- e  : A → A (поворот на 0°)   → поколение 1
+-- r  : A → B (rotation by 120°) → generation 2
+-- r² : A → C (rotation by 240°) → generation 3
+-- e  : A → A (rotation by 0°)   → generation 1
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Углы поворота (в единицах π/3)
+-- Rotation angles (in units of π/3)
 data Angle : Set where
-  θ₀ : Angle  -- 0 (тождество)
-  θ₁ : Angle  -- 2π/3 (поворот r)
-  θ₂ : Angle  -- 4π/3 (поворот r²)
+  θ₀ : Angle  -- 0 (identity)
+  θ₁ : Angle  -- 2π/3 (rotation r)
+  θ₂ : Angle  -- 4π/3 (rotation r²)
 
--- Соответствие между элементами Z₃ и углами
+-- Correspondence between Z₃ elements and angles
 z3-to-angle : S₃ → Angle
 z3-to-angle e  = θ₀
 z3-to-angle r  = θ₁
 z3-to-angle r² = θ₂
-z3-to-angle _  = θ₀  -- отражения не входят в Z₃
+z3-to-angle _  = θ₀  -- reflections are not in Z₃
 
--- Соответствие между углами и поколениями
+-- Correspondence between angles and generations
 angle-to-generation : Angle → ℕ
 angle-to-generation θ₀ = 1
 angle-to-generation θ₁ = 2
 angle-to-generation θ₂ = 3
 
--- Теорема: поворот r даёт поколение 2
+-- Theorem: rotation r gives generation 2
 theorem-r-gives-gen-2 : angle-to-generation (z3-to-angle r) ≡ 2
 theorem-r-gives-gen-2 = refl
 
--- Теорема: поворот r² даёт поколение 3
+-- Theorem: rotation r² gives generation 3
 theorem-r²-gives-gen-3 : angle-to-generation (z3-to-angle r²) ≡ 3
 theorem-r²-gives-gen-3 = refl
 
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ИЕРАРХИЯ МАСС: БОЛЬШЕ ПОВОРОТОВ = БОЛЬШЕ РАЗЛИЧЕНИЙ = БОЛЬШЕ МАССЫ
+-- MASS HIERARCHY: MORE ROTATIONS = MORE DISTINCTIONS = MORE MASS
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Почему m_τ > m_μ > m_e?
+-- Why m_τ > m_μ > m_e?
 --
--- DD ОТВЕТ: Каждый "поворот точки зрения" требует дополнительных различений.
+-- DD ANSWER: Each "rotation of viewpoint" requires additional distinctions.
 --
--- Поколение 1 (e):  0 поворотов → минимум различений → минимальная масса
--- Поколение 2 (r):  1 поворот  → больше различений  → средняя масса
--- Поколение 3 (r²): 2 поворота → ещё больше        → максимальная масса
+-- Generation 1 (e):  0 rotations → minimum distinctions → minimal mass
+-- Generation 2 (r):  1 rotation  → more distinctions  → medium mass
+-- Generation 3 (r²): 2 rotations → even more        → maximal mass
 --
--- Масса ∝ количество различений ∝ число поворотов
+-- Mass ∝ number of distinctions ∝ number of rotations
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Число поворотов для достижения поколения
+-- Number of rotations to reach generation
 rotations-to-generation : ℕ → ℕ
 rotations-to-generation 1 = 0  -- e = r⁰
 rotations-to-generation 2 = 1  -- r = r¹
 rotations-to-generation 3 = 2  -- r²
 rotations-to-generation _ = 0
 
--- Масса пропорциональна числу поворотов (качественно)
+-- Mass proportional to number of rotations (qualitatively)
 -- m(gen) ~ base * factor^(rotations)
--- Это объясняет экспоненциальный рост масс
+-- This explains exponential growth of masses
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- РЕЗЮМЕ: ТРИ ПОКОЛЕНИЯ ИЗ DD
+-- SUMMARY: THREE GENERATIONS FROM DD
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- 1. ПОЧЕМУ РОВНО 3?
---    Триада — минимальная замкнутая структура различений.
---    Z₃ ⊂ S₃ даёт ровно 3 точки зрения (орбита размера 3).
---    r³ = e означает: после 3 поворотов возвращаемся к началу.
+-- 1. WHY EXACTLY 3?
+--    Triad — minimal closed structure of distinctions.
+--    Z₃ ⊂ S₃ gives exactly 3 viewpoints (orbit of size 3).
+--    r³ = e means: after 3 rotations we return to the beginning.
 --
--- 2. ПОЧЕМУ МАССЫ РАЗНЫЕ?
---    Каждый поворот требует различений → энергии → массы.
---    Больше поворотов = больше масса.
+-- 2. WHY DIFFERENT MASSES?
+--    Each rotation requires distinctions → energy → mass.
+--    More rotations = more mass.
 --
--- 3. ПОЧЕМУ KOIDE = 2/3?
---    2/3 = 1 - 1/3 = 1 - 1/N для N=3 поколений.
---    Формула Коиде — следствие трёхкратной симметрии.
+-- 3. WHY KOIDE = 2/3?
+--    2/3 = 1 - 1/3 = 1 - 1/N for N=3 generations.
+--    Koide formula — consequence of threefold symmetry.
 --
--- 4. ПОЧЕМУ УГЛЫ В KOIDE = 120°, 240°?
---    Это углы поворотов r и r² триады!
---    Массы кодируют геометрию S₃.
+-- 4. WHY ANGLES IN KOIDE = 120°, 240°?
+--    These are the rotation angles of r and r² of the triad!
+--    Masses encode the geometry of S₃.
 --
--- ОТКРЫТЫЕ ВОПРОСЫ:
---   • Точный вывод δ ≈ 0.222 в формуле Коиде
---   • Связь с CKM матрицей смешивания
---   • Почему кварки тоже имеют 3 поколения (тот же механизм?)
+-- OPEN QUESTIONS:
+--   • Exact derivation of δ ≈ 0.222 in Koide formula
+--   • Connection to CKM mixing matrix
+--   • Why quarks also have 3 generations (same mechanism?)
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ДОПОЛНЕНИЕ: ФАЗА КОИДЕ delta = 2/9
+-- ADDENDUM: KOIDE PHASE delta = 2/9
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- ЭМПИРИЧЕСКИЙ ФАКТ:
+-- EMPIRICAL FACT:
 --   delta_exp = 0.22224579 rad
 --   2/9       = 0.22222222 rad
---   Ошибка: 0.01%
+--   Error: 0.01%
 --
--- DD ОБЪЯСНЕНИЕ:
---   delta = (N-1)/N^2 где N = число поколений = 3
+-- DD EXPLANATION:
+--   delta = (N-1)/N^2 where N = number of generations = 3
 --   delta = 2/9
 --
--- ИНТЕРПРЕТАЦИЯ:
---   2 = пары соседних поколений (1-2, 2-3)
---   9 = 3^2 = все возможные пары (включая диагональные)
---   delta = "вероятность межпоколенческой связи"
+-- INTERPRETATION:
+--   2 = pairs of adjacent generations (1-2, 2-3)
+--   9 = 3^2 = all possible pairs (including diagonal)
+--   delta = "probability of inter-generational connection"
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Формула для delta
+-- Formula for delta
 koide-delta-numerator : ℕ → ℕ
 koide-delta-numerator zero        = zero
 koide-delta-numerator (suc zero)  = zero
@@ -266,7 +266,7 @@ koide-delta-numerator (suc (suc n)) = suc n  -- N-1
 koide-delta-denominator : ℕ → ℕ
 koide-delta-denominator n = n * n  -- N^2
 
--- Для N=3: числитель = 2, знаменатель = 9
+-- For N=3: numerator = 2, denominator = 9
 theorem-delta-numerator-3 : koide-delta-numerator 3 ≡ 2
 theorem-delta-numerator-3 = refl
 
@@ -274,46 +274,46 @@ theorem-delta-denominator-3 : koide-delta-denominator 3 ≡ 9
 theorem-delta-denominator-3 = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ПОЛНАЯ ФОРМУЛА КОИДЕ ИЗ DD
+-- COMPLETE KOIDE FORMULA FROM DD
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- Для N = 3 поколений:
+-- For N = 3 generations:
 --
---   Q = 2/3 = (N-1)/N     (формула Коиде)
---   delta = 2/9 = (N-1)/N^2  (фаза Коиде)
+--   Q = 2/3 = (N-1)/N     (Koide formula)
+--   delta = 2/9 = (N-1)/N^2  (Koide phase)
 --
--- Углы:
---   theta_1 = 2*pi/3 + delta = 120 deg + 12.73 deg  (поколение 1)
---   theta_2 = 4*pi/3 + delta = 240 deg + 12.73 deg  (поколение 2)
---   theta_3 = 0 + delta = 0 deg + 12.73 deg         (поколение 3)
+-- Angles:
+--   theta_1 = 2*pi/3 + delta = 120 deg + 12.73 deg  (generation 1)
+--   theta_2 = 4*pi/3 + delta = 240 deg + 12.73 deg  (generation 2)
+--   theta_3 = 0 + delta = 0 deg + 12.73 deg         (generation 3)
 --
--- Массы:
+-- Masses:
 --   sqrt(m_k) = M * (1 + sqrt(2) * cos(theta_k))
 --
--- ВСЁ ВЫВОДИТСЯ ИЗ ТРИАДЫ!
+-- ALL DERIVED FROM THE TRIAD!
 --
 -- ═══════════════════════════════════════════════════════════════════════════
 
--- Связь Q и delta
+-- Connection of Q and delta
 -- Q = (N-1)/N
 -- delta = (N-1)/N^2 = Q/N
 
--- Теорема: delta * N = Q (для рациональных чисел, концептуально)
+-- Theorem: delta * N = Q (for rational numbers, conceptually)
 -- (N-1)/N^2 * N = (N-1)/N = Q
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- СВЯЗЬ С УГЛОМ КАБИББО
+-- CONNECTION TO CABIBBO ANGLE
 -- ═══════════════════════════════════════════════════════════════════════════
 --
--- sin(theta_Cabibbo) = 0.22736 (эксперимент)
+-- sin(theta_Cabibbo) = 0.22736 (experiment)
 -- 2/9 = 0.22222
--- Разница: 2.3%
+-- Difference: 2.3%
 --
--- Угол Кабиббо — смешивание кварков между поколениями 1 и 2.
--- Та же фаза delta появляется и в лептонах (Koide), и в кварках (CKM)!
+-- Cabibbo angle — quark mixing between generations 1 and 2.
+-- The same phase delta appears in both leptons (Koide) and quarks (CKM)!
 --
--- DD ПРЕДСКАЗАНИЕ:
---   sin(theta_Cabibbo) -> 2/9 при более точных измерениях
---   или разница объясняется радиативными поправками
+-- DD PREDICTION:
+--   sin(theta_Cabibbo) -> 2/9 with more precise measurements
+--   or the difference is explained by radiative corrections
 --
 -- ═══════════════════════════════════════════════════════════════════════════

@@ -1,15 +1,15 @@
-# DISTINCTION DYNAMICS: ГЛОБАЛЬНАЯ АРХИТЕКТУРА
+# DISTINCTION DYNAMICS: GLOBAL ARCHITECTURE
 # =============================================
 
 """
-ЕДИНАЯ ТЕОРИЯ: Δ ≠ ∅ → Вселенная
+UNIFIED THEORY: D != empty -> Universe
 
-Три уровня реальности из одной аксиомы:
-1. МАТЕМАТИКА (структура)
-2. ФИЗИКА (динамика)  
-3. СОЗНАНИЕ (рефлексия)
+Three levels of reality from one axiom:
+1. MATHEMATICS (structure)
+2. PHYSICS (dynamics)
+3. CONSCIOUSNESS (reflection)
 
-Все три — проявления ОДНОГО принципа различия.
+All three are manifestations of ONE principle of distinction.
 """
 
 import math
@@ -18,334 +18,334 @@ from typing import List, Tuple, Dict
 from enum import Enum
 
 # =============================================================================
-# УРОВЕНЬ 0: АКСИОМА
+# LEVEL 0: AXIOM
 # =============================================================================
 
 class Axiom:
     """
-    Δ ≠ ∅ : Различие существует
-    
-    Это единственный постулат. Всё остальное — следствия.
-    
-    Почему это минимально?
-    - "Ничто" (∅) не может существовать само по себе
-    - Существование = отличие от несуществования
-    - Ergo: Δ ≠ ∅ тавтологически истинно
+    D != empty : Distinction exists
+
+    This is the only postulate. Everything else follows.
+
+    Why is this minimal?
+    - "Nothing" (empty) cannot exist by itself
+    - Existence = being different from non-existence
+    - Ergo: D != empty is tautologically true
     """
     pass
 
 # =============================================================================
-# УРОВЕНЬ 1: МАТЕМАТИКА (возникает из структуры различий)
+# LEVEL 1: MATHEMATICS (emerges from structure of distinctions)
 # =============================================================================
 
 class Mathematics:
     """
-    Математические структуры из Δ:
-    
-    Δ → Bool → ℕ → Fib → φ → Группы → Топология
+    Mathematical structures from D:
+
+    D -> Bool -> N -> Fib -> phi -> Groups -> Topology
     """
-    
-    PHI = (1 + math.sqrt(5)) / 2  # Золотое сечение
-    
+
+    PHI = (1 + math.sqrt(5)) / 2  # Golden ratio
+
     @staticmethod
     def derive_naturals():
-        """ℕ из итерации различий"""
-        # 0 = ∅ (отсутствие)
-        # 1 = Δ (одно различие)
-        # 2 = Δ(Δ) (различие различия)
-        # n = Δⁿ(∅)
-        return "ℕ = {Δⁿ(∅) | n ≥ 0}"
-    
+        """N from iteration of distinctions"""
+        # 0 = empty (absence)
+        # 1 = D (one distinction)
+        # 2 = D(D) (distinction of distinction)
+        # n = D^n(empty)
+        return "N = {D^n(empty) | n >= 0}"
+
     @staticmethod
     def derive_fibonacci(n: int) -> int:
-        """Fibonacci из k=2 памяти"""
+        """Fibonacci from k=2 memory"""
         if n <= 1:
             return n
         return Mathematics.derive_fibonacci(n-1) + Mathematics.derive_fibonacci(n-2)
-    
+
     @staticmethod
     def derive_phi():
-        """φ как предел Fib(n+1)/Fib(n)"""
-        # Характеристическое уравнение: x² = x + 1
-        # Решение: φ = (1 + √5) / 2
+        """phi as limit of Fib(n+1)/Fib(n)"""
+        # Characteristic equation: x^2 = x + 1
+        # Solution: phi = (1 + sqrt(5)) / 2
         return Mathematics.PHI
-    
+
     @staticmethod
     def derive_groups():
         """
-        Иерархия групп из симметрий различий:
-        
-        Z₂: симметрия одного различия (a ≠ b) ↔ (b ≠ a)
-        S₃: симметрии триады (минимум для замыкания)
-        SU(3): непрерывное расширение S₃ с det=1
+        Hierarchy of groups from symmetries of distinctions:
+
+        Z2: symmetry of one distinction (a != b) <-> (b != a)
+        S3: symmetries of triad (minimum for closure)
+        SU(3): continuous extension of S3 with det=1
         """
         return {
-            "Z2": "Симметрия пары",
-            "S3": "Симметрии триады", 
-            "SU3": "Калибровочная группа цвета"
+            "Z2": "Pair symmetry",
+            "S3": "Triad symmetries",
+            "SU3": "Color gauge group"
         }
 
 # =============================================================================
-# УРОВЕНЬ 2: ФИЗИКА (возникает из динамики различий)
+# LEVEL 2: PHYSICS (emerges from dynamics of distinctions)
 # =============================================================================
 
 class Physics:
     """
-    Физические законы из принципа минимального действия на пространстве различий.
-    
-    Ключевая идея: Fisher Information = метрика на пространстве состояний
+    Physical laws from principle of minimal action on distinction space.
+
+    Key idea: Fisher Information = metric on state space
     """
-    
-    # Фундаментальные константы (некоторые выводятся)
-    KOIDE_RATIO = 2/3  # Точно!
-    
+
+    # Fundamental constants (some are derived)
+    KOIDE_RATIO = 2/3  # Exact!
+
     @staticmethod
     def fisher_metric():
         """
-        Метрика Фишера: g_ij = E[∂_i log p · ∂_j log p]
-        
-        Это ЕСТЕСТВЕННАЯ метрика на пространстве распределений.
-        Геодезические = траектории минимальной информационной длины.
+        Fisher metric: g_ij = E[d_i log p * d_j log p]
+
+        This is the NATURAL metric on space of distributions.
+        Geodesics = trajectories of minimal informational length.
         """
         return "g_ij = Fisher Information Matrix"
-    
+
     @staticmethod
     def derive_gauge_groups():
         """
-        Калибровочные группы Стандартной Модели:
-        
-        SU(3) × SU(2) × U(1)
-        
-        DD объяснение:
-        - SU(3): из триады (цвет) — ДОКАЗАНО
-        - SU(2): из диады (изоспин) — ГИПОТЕЗА
-        - U(1): из монады (заряд) — ГИПОТЕЗА
-        
-        Иерархия: Монада ⊂ Диада ⊂ Триада
-        Или: 1 < 2 < 3 различия
+        Gauge groups of the Standard Model:
+
+        SU(3) x SU(2) x U(1)
+
+        DD explanation:
+        - SU(3): from triad (color) - PROVEN
+        - SU(2): from dyad (isospin) - HYPOTHESIS
+        - U(1): from monad (charge) - HYPOTHESIS
+
+        Hierarchy: Monad < Dyad < Triad
+        Or: 1 < 2 < 3 distinctions
         """
         return {
             "SU3": {"origin": "Triad", "status": "PROVEN", "physics": "Color"},
             "SU2": {"origin": "Dyad", "status": "HYPOTHESIS", "physics": "Isospin"},
             "U1": {"origin": "Monad", "status": "HYPOTHESIS", "physics": "Charge"}
         }
-    
+
     @staticmethod
     def derive_spacetime():
         """
-        Пространство-время из различий:
-        
-        3 пространственных измерения = 3 независимых направления различия
-        1 временное = направление накопления различий (необратимо!)
-        
-        Почему 3+1?
-        - 3 = минимум для замыкания в пространстве
-        - 1 = монотонный рост сложности (время)
-        
-        Сигнатура (-,+,+,+): время отличается от пространства
-        потому что различия необратимы (нельзя "раз-различить")
+        Spacetime from distinctions:
+
+        3 spatial dimensions = 3 independent directions of distinction
+        1 temporal = direction of distinction accumulation (irreversible!)
+
+        Why 3+1?
+        - 3 = minimum for closure in space
+        - 1 = monotonic growth of complexity (time)
+
+        Signature (-,+,+,+): time differs from space
+        because distinctions are irreversible (cannot "un-distinguish")
         """
         return "3+1 dimensions from closure + irreversibility"
-    
+
     @staticmethod
     def cosmological_constant():
         """
-        Λ = космологическая постоянная
-        
-        DD: Λ ∝ dC/dt где C = полная сложность
-        
-        Λ НЕ константа! Она растёт с ростом сложности.
-        - Ранняя вселенная: Λ мало (мало структур)
-        - Поздняя вселенная: Λ растёт (много структур)
-        - С появлением жизни: Λ растёт быстрее
-        - С появлением разума: Λ растёт ещё быстрее
-        
-        Предсказание: w(z) ≠ -1, эволюционирует
-        Статус: согласуется с DESI 2024
+        Lambda = cosmological constant
+
+        DD: Lambda ~ dC/dt where C = total complexity
+
+        Lambda is NOT constant! It grows with complexity growth.
+        - Early universe: Lambda small (few structures)
+        - Late universe: Lambda grows (many structures)
+        - With life: Lambda grows faster
+        - With mind: Lambda grows even faster
+
+        Prediction: w(z) != -1, evolves
+        Status: consistent with DESI 2024
         """
-        return "Λ ∝ complexity growth rate"
+        return "Lambda ~ complexity growth rate"
 
 # =============================================================================
-# УРОВЕНЬ 3: СОЗНАНИЕ (возникает из рефлексии различий)
+# LEVEL 3: CONSCIOUSNESS (emerges from reflection of distinctions)
 # =============================================================================
 
 class Consciousness:
     """
-    Сознание = система, различающая саму себя
-    
-    Формально: F : U → U такой что F(F) определено
-    
-    Это НЕ эпифеномен и НЕ иллюзия — это НЕОБХОДИМАЯ структура
-    для замыкания цепочки различий.
+    Consciousness = system that distinguishes itself
+
+    Formally: F : U -> U such that F(F) is defined
+
+    This is NOT epiphenomenon and NOT illusion - it's a NECESSARY structure
+    for closure of distinction chain.
     """
-    
+
     @staticmethod
     def self_reference():
         """
-        Сознание требует самоссылки:
-        
-        1. Система S различает объекты: S(a) ≠ S(b)
-        2. Система S различает себя от объектов: S ≠ a
-        3. Система S различает себя от себя-в-прошлом: S(t) ≠ S(t-1)
-        
-        Пункт 3 = сознание времени
-        Пункт 2 = сознание "я"
-        Пункт 1 = восприятие
+        Consciousness requires self-reference:
+
+        1. System S distinguishes objects: S(a) != S(b)
+        2. System S distinguishes itself from objects: S != a
+        3. System S distinguishes itself from past-self: S(t) != S(t-1)
+
+        Point 3 = consciousness of time
+        Point 2 = consciousness of "I"
+        Point 1 = perception
         """
         return "Consciousness = recursive distinction"
-    
+
     @staticmethod
     def qualia():
         """
-        Квалиа = "каково это быть X"
-        
-        DD объяснение:
-        Квалиа = ВНУТРЕННЯЯ структура самоссылки
-        
-        Почему квалиа приватны?
-        - Самоссылка F(F) недоступна извне F
-        - Наблюдатель видит только F(x) для x ≠ F
-        
-        Почему квалиа качественны (не количественны)?
-        - Различие первично, число вторично
-        - "Красный" ≠ "Синий" — это различие, не число
+        Qualia = "what it's like to be X"
+
+        DD explanation:
+        Qualia = INTERNAL structure of self-reference
+
+        Why are qualia private?
+        - Self-reference F(F) is inaccessible from outside F
+        - Observer sees only F(x) for x != F
+
+        Why are qualia qualitative (not quantitative)?
+        - Distinction is primary, number is secondary
+        - "Red" != "Blue" - this is distinction, not number
         """
         return "Qualia = internal structure of self-reference"
-    
-    @staticmethod  
+
+    @staticmethod
     def free_will():
         """
-        Свобода воли в DD:
-        
-        Детерминизм: x(t+1) = f(x(t), x(t-1), ...)
-        Свобода: возможность СОЗДАВАТЬ НОВЫЕ различия
-        
-        DD: Сознание не просто обрабатывает, но ПОРОЖДАЕТ Δ
-        
-        Это согласуется с:
-        - Квантовая неопределённость (новые исходы)
-        - Творчество (новые идеи)
-        - Эволюция (новые формы)
+        Free will in DD:
+
+        Determinism: x(t+1) = f(x(t), x(t-1), ...)
+        Freedom: ability to CREATE NEW distinctions
+
+        DD: Consciousness doesn't just process, but GENERATES D
+
+        This is consistent with:
+        - Quantum indeterminacy (new outcomes)
+        - Creativity (new ideas)
+        - Evolution (new forms)
         """
         return "Free will = capacity to create new distinctions"
 
 # =============================================================================
-# ГЛОБАЛЬНАЯ СВЯЗЬ: ТРЕУГОЛЬНИК DD
+# GLOBAL CONNECTION: DD TRIANGLE
 # =============================================================================
 
 class DDTriangle:
     """
-    Три вершины единой теории:
-    
-              МАТЕМАТИКА
-                 /\
-                /  \
-               /    \
-              /  Δ   \
-             /   ≠    \
-            /    ∅     \
-           /__________  \
-      ФИЗИКА          СОЗНАНИЕ
-    
-    Каждая вершина — аспект различия:
-    - Математика: СТРУКТУРА различий (статика)
-    - Физика: ДИНАМИКА различий (эволюция)
-    - Сознание: РЕФЛЕКСИЯ различий (замыкание)
-    
-    Связи:
-    - Математика ↔ Физика: "Unreasonable effectiveness" (Wigner)
-    - Физика ↔ Сознание: Наблюдатель в КМ
-    - Сознание ↔ Математика: Математическая интуиция (Gödel)
+    Three vertices of unified theory:
+
+              MATHEMATICS
+                 /\\
+                /  \\
+               /    \\
+              /  D   \\
+             /   !=   \\
+            /  empty   \\
+           /____________\\
+      PHYSICS          CONSCIOUSNESS
+
+    Each vertex is an aspect of distinction:
+    - Mathematics: STRUCTURE of distinctions (static)
+    - Physics: DYNAMICS of distinctions (evolution)
+    - Consciousness: REFLECTION of distinctions (closure)
+
+    Connections:
+    - Mathematics <-> Physics: "Unreasonable effectiveness" (Wigner)
+    - Physics <-> Consciousness: Observer in QM
+    - Consciousness <-> Mathematics: Mathematical intuition (Godel)
     """
-    
+
     @staticmethod
     def unification():
         """
-        Почему три аспекта, а не один?
-        
-        Δ ≠ ∅ порождает ТРИ "измерения":
-        
-        1. ЧТО различается (структура) → Математика
-        2. КАК различается (процесс) → Физика  
-        3. КТО различает (субъект) → Сознание
-        
-        Это НЕ три разные вещи, а три АСПЕКТА одного.
-        Как пространство-время: не отдельно пространство и время,
-        а единый континуум с разными проекциями.
+        Why three aspects, not one?
+
+        D != empty generates THREE "dimensions":
+
+        1. WHAT is distinguished (structure) -> Mathematics
+        2. HOW it's distinguished (process) -> Physics
+        3. WHO distinguishes (subject) -> Consciousness
+
+        These are NOT three different things, but three ASPECTS of one.
+        Like spacetime: not separate space and time,
+        but unified continuum with different projections.
         """
         return "Three aspects of one Distinction"
 
 # =============================================================================
-# ОТКРЫТЫЕ ПРОБЛЕМЫ
+# OPEN PROBLEMS
 # =============================================================================
 
 class OpenProblems:
     """
-    Что DD ещё не объясняет (честно):
+    What DD doesn't explain yet (honestly):
     """
-    
+
     PROBLEMS = {
         "fine_structure": {
-            "question": "Почему α ≈ 1/137?",
+            "question": "Why alpha ~ 1/137?",
             "status": "OPEN",
-            "hint": "Возможно связано с топологией пространства различий"
+            "hint": "Possibly related to topology of distinction space"
         },
         "mass_hierarchy": {
-            "question": "Почему массы кварков/лептонов такие разные?",
+            "question": "Why quark/lepton masses so different?",
             "status": "PARTIAL (Koide works)",
-            "hint": "Возможно разные уровни k-памяти"
+            "hint": "Possibly different k-memory levels"
         },
         "quantum_gravity": {
-            "question": "Как совместить КМ и ОТО?",
+            "question": "How to reconcile QM and GR?",
             "status": "HYPOTHESIS",
-            "hint": "Fisher metric может быть общим знаменателем"
+            "hint": "Fisher metric may be common denominator"
         },
         "dark_matter": {
-            "question": "Что такое тёмная материя?",
+            "question": "What is dark matter?",
             "status": "SPECULATION",
-            "hint": "Возможно — различия без носителя?"
+            "hint": "Possibly distinctions without carrier?"
         },
         "arrow_of_time": {
-            "question": "Почему время однонаправленно?",
+            "question": "Why is time unidirectional?",
             "status": "EXPLAINED",
-            "hint": "Различия необратимы: нельзя раз-различить"
+            "hint": "Distinctions are irreversible: cannot un-distinguish"
         }
     }
 
 # =============================================================================
-# ЭКСПЕРИМЕНТАЛЬНЫЕ ПРЕДСКАЗАНИЯ
+# EXPERIMENTAL PREDICTIONS
 # =============================================================================
 
 class Predictions:
     """
-    Проверяемые предсказания DD:
+    Testable predictions of DD:
     """
-    
+
     TESTABLE = {
         "lambda_evolution": {
-            "prediction": "w(z) ≠ -1, эволюционирует с z",
+            "prediction": "w(z) != -1, evolves with z",
             "test": "DESI, Euclid, Roman",
             "status": "Preliminary support from DESI 2024"
         },
         "koide_extension": {
-            "prediction": "Формула Koide работает для кварков",
-            "test": "Lattice QCD, эксперименты по массам",
+            "prediction": "Koide formula works for quarks",
+            "test": "Lattice QCD, mass experiments",
             "status": "Partially confirmed"
         },
         "consciousness_complexity": {
-            "prediction": "Сложность коррелирует с сознанием",
-            "test": "IIT φ, нейровизуализация",
+            "prediction": "Complexity correlates with consciousness",
+            "test": "IIT phi, neuroimaging",
             "status": "Compatible with IIT"
         },
         "phi_in_qc": {
-            "prediction": "φ появляется в квантовых компьютерах",
-            "test": "Спектры запутанности, оптимальные схемы",
+            "prediction": "phi appears in quantum computers",
+            "test": "Entanglement spectra, optimal circuits",
             "status": "To be tested"
         }
     }
 
 # =============================================================================
-# MAIN: Печать глобальной картины
+# MAIN: Print global picture
 # =============================================================================
 
 if __name__ == "__main__":
@@ -353,40 +353,40 @@ if __name__ == "__main__":
     print("DISTINCTION DYNAMICS: GLOBAL ARCHITECTURE")
     print("=" * 70)
     print()
-    
-    print("AXIOM: Δ ≠ ∅ (Distinction exists)")
+
+    print("AXIOM: D != empty (Distinction exists)")
     print()
-    
+
     print("THREE LEVELS:")
-    print("  1. MATHEMATICS — Structure of distinctions")
-    print("     Δ → Bool → ℕ → Fib → φ → Groups")
+    print("  1. MATHEMATICS - Structure of distinctions")
+    print("     D -> Bool -> N -> Fib -> phi -> Groups")
     print()
-    print("  2. PHYSICS — Dynamics of distinctions")
-    print("     Fisher metric → Gauge groups → Spacetime → Λ")
+    print("  2. PHYSICS - Dynamics of distinctions")
+    print("     Fisher metric -> Gauge groups -> Spacetime -> Lambda")
     print()
-    print("  3. CONSCIOUSNESS — Reflection of distinctions")
-    print("     Self-reference → Qualia → Free will")
+    print("  3. CONSCIOUSNESS - Reflection of distinctions")
+    print("     Self-reference -> Qualia -> Free will")
     print()
-    
+
     print("VERIFIED PREDICTIONS:")
-    print(f"  • Koide formula: 2/3 (error < 0.001%)")
-    print(f"  • Phyllotaxis: 137.5° = 360°/φ²")
-    print(f"  • SU(3) necessity: Proven in Agda")
-    print(f"  • k=2 necessity: Proven in Agda")
+    print(f"  * Koide formula: 2/3 (error < 0.001%)")
+    print(f"  * Phyllotaxis: 137.5 deg = 360 deg / phi^2")
+    print(f"  * SU(3) necessity: Proven in Agda")
+    print(f"  * k=2 necessity: Proven in Agda")
     print()
-    
+
     print("OPEN PROBLEMS:")
     for name, prob in OpenProblems.PROBLEMS.items():
-        print(f"  • {prob['question']}")
+        print(f"  * {prob['question']}")
         print(f"    Status: {prob['status']}")
     print()
-    
+
     print("TESTABLE PREDICTIONS:")
     for name, pred in Predictions.TESTABLE.items():
-        print(f"  • {pred['prediction']}")
+        print(f"  * {pred['prediction']}")
         print(f"    Test: {pred['test']}")
     print()
-    
+
     print("=" * 70)
-    print("ALL FROM ONE AXIOM: Δ ≠ ∅")
+    print("ALL FROM ONE AXIOM: D != empty")
     print("=" * 70)

@@ -1,19 +1,19 @@
 {-# OPTIONS --no-positivity-check --type-in-type #-}
 
 {-
-  DD Universe - Формализация Distinction Dynamics
-  ===============================================
-  
-  ВЕРСИЯ 2.0: ВСЕ ПОСТУЛАТЫ ЗАМЕНЕНЫ НА ДОКАЗАТЕЛЬСТВА
-  
-  Цепочка вывода:
+  DD Universe - Formalization of Distinction Dynamics
+  ===================================================
+
+  VERSION 2.0: ALL POSTULATES REPLACED WITH PROOFS
+
+  Derivation chain:
   Δ ≠ ∅ → Bool → ℕ → Fib → φ → SU(3)
 -}
 
 module DDUniverse where
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 0: Базовые типы
+-- PART 0: Basic types
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -54,23 +54,23 @@ _×_ : Set → Set → Set
 A × B = Σ A (λ _ → B)
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 1: АКСИОМА DD (КОНСТРУКТИВНОЕ ДОКАЗАТЕЛЬСТВО)
+-- PART 1: DD AXIOM (CONSTRUCTIVE PROOF)
 ------------------------------------------------------------------------
 
--- true ≢ false: ДОКАЗАНО
+-- true ≢ false: PROVEN
 true≢false : true ≢ false
 true≢false ()
 
-false≢true : false ≢ true  
+false≢true : false ≢ true
 false≢true ()
 
--- АКСИОМА DD: Существуют различимые элементы
--- Δ ≠ ∅ означает: ∃ x y. x ≢ y
--- ДОКАЗАТЕЛЬСТВО: (true, false) различимы
+-- DD AXIOM: There exist distinguishable elements
+-- Δ ≠ ∅ means: ∃ x y. x ≢ y
+-- PROOF: (true, false) are distinguishable
 DD-Axiom : ∃ (λ (pair : Bool × Bool) → fst pair ≢ snd pair)
 DD-Axiom = (true , false) , true≢false
 
--- Свидетель различия
+-- Witness of distinction
 distinction-witness : Bool × Bool
 distinction-witness = true , false
 
@@ -78,7 +78,7 @@ distinction-proof : fst distinction-witness ≢ snd distinction-witness
 distinction-proof = true≢false
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 2: ИТЕРАЦИЯ → ℕ
+-- PART 2: ITERATION → ℕ
 ------------------------------------------------------------------------
 
 infixl 6 _+_
@@ -91,14 +91,14 @@ _*_ : ℕ → ℕ → ℕ
 zero * m = zero
 suc n * m = m + (n * m)
 
--- Различимость чисел
+-- Distinguishability of numbers
 0≢1 : zero ≢ suc zero
 0≢1 ()
 
 1≢2 : suc zero ≢ suc (suc zero)
 1≢2 ()
 
--- ℕ бесконечны: для любого n существует n+1 ≢ n
+-- ℕ are infinite: for any n there exists n+1 ≢ n
 suc≢self : (n : ℕ) → suc n ≢ n
 suc≢self zero ()
 suc≢self (suc n) p = suc≢self n (suc-injective p)
@@ -107,7 +107,7 @@ suc≢self (suc n) p = suc≢self n (suc-injective p)
     suc-injective refl = refl
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 3: k=2 ПАМЯТЬ → FIBONACCI → φ
+-- PART 3: k=2 MEMORY → FIBONACCI → φ
 ------------------------------------------------------------------------
 
 fib : ℕ → ℕ
@@ -115,7 +115,7 @@ fib zero = zero
 fib (suc zero) = suc zero
 fib (suc (suc n)) = fib (suc n) + fib n
 
--- Проверки
+-- Tests
 fib-0 : fib 0 ≡ 0
 fib-0 = refl
 
@@ -128,15 +128,15 @@ fib-5 = refl
 fib-10 : fib 10 ≡ 55
 fib-10 = refl
 
--- Свойство φ: fib(n+1)/fib(n) → φ ≈ 1.618...
--- φ удовлетворяет φ² = φ + 1
+-- Property of φ: fib(n+1)/fib(n) → φ ≈ 1.618...
+-- φ satisfies φ² = φ + 1
 
--- Рекуррентное соотношение Фибоначчи (доказательство)
+-- Fibonacci recurrence relation (proof)
 fib-recurrence : (n : ℕ) → fib (suc (suc n)) ≡ fib (suc n) + fib n
 fib-recurrence n = refl
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 4: ТРИАДА И ЗАМЫКАНИЕ
+-- PART 4: TRIAD AND CLOSURE
 ------------------------------------------------------------------------
 
 data Three : Set where
@@ -154,12 +154,12 @@ C≢A ()
 A≢C : A ≢ C
 A≢C ()
 
--- Триада замкнута: все пары различимы
+-- Triad is closed: all pairs are distinguishable
 triad-closed : (A ≢ B) × ((B ≢ C) × (C ≢ A))
 triad-closed = A≢B , (B≢C , C≢A)
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 5: S₃ - ГРУППА ПЕРЕСТАНОВОК ТРИАДЫ
+-- PART 5: S₃ - PERMUTATION GROUP OF THE TRIAD
 ------------------------------------------------------------------------
 
 data S₃ : Set where
@@ -173,7 +173,7 @@ data S₃ : Set where
 apply : S₃ → Three → Three
 apply e  x = x
 apply r  A = B
-apply r  B = C  
+apply r  B = C
 apply r  C = A
 apply r² A = C
 apply r² B = A
@@ -188,7 +188,7 @@ apply s₃ A = C
 apply s₃ B = B
 apply s₃ C = A
 
--- Композиция
+-- Composition
 _∘_ : S₃ → S₃ → S₃
 e  ∘ g  = g
 r  ∘ e  = r
@@ -222,7 +222,7 @@ s₃ ∘ s₁ = r²
 s₃ ∘ s₂ = r
 s₃ ∘ s₃ = e
 
--- Аксиомы группы (доказательства)
+-- Group axioms (proofs)
 e-left : (g : S₃) → e ∘ g ≡ g
 e-left e  = refl
 e-left r  = refl
@@ -245,7 +245,7 @@ r³≡e = refl
 s₁²≡e : s₁ ∘ s₁ ≡ e
 s₁²≡e = refl
 
--- Размер группы
+-- Group size
 data List (A : Set) : Set where
   [] : List A
   _∷_ : A → List A → List A
@@ -263,10 +263,10 @@ all-S₃ = e ∷ r ∷ r² ∷ s₁ ∷ s₂ ∷ s₃ ∷ []
 |S₃|≡6 = refl
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 6: S₃ → SU(3) (ДОКАЗАТЕЛЬСТВА)
+-- PART 6: S₃ → SU(3) (PROOFS)
 ------------------------------------------------------------------------
 
--- Порядок элемента
+-- Element order
 order : S₃ → ℕ
 order e  = 1
 order r  = 3
@@ -275,11 +275,11 @@ order s₁ = 2
 order s₂ = 2
 order s₃ = 2
 
--- S₃ имеет элемент порядка 3
+-- S₃ has an element of order 3
 has-order-3 : order r ≡ 3
 has-order-3 = refl
 
--- S₂ (подгруппа)
+-- S₂ (subgroup)
 data S₂ : Set where
   id₂  : S₂
   swap : S₂
@@ -288,13 +288,13 @@ order₂ : S₂ → ℕ
 order₂ id₂  = 1
 order₂ swap = 2
 
--- S₂ не имеет элемента порядка 3
+-- S₂ has no element of order 3
 no-order-3-in-S₂ : (g : S₂) → order₂ g ≢ 3
 no-order-3-in-S₂ id₂  ()
 no-order-3-in-S₂ swap ()
 
--- Знак перестановки (det матрицы)
-sign : S₃ → Bool  -- true = +1 (чётная), false = -1 (нечётная)
+-- Sign of permutation (determinant of matrix)
+sign : S₃ → Bool  -- true = +1 (even), false = -1 (odd)
 sign e  = true
 sign r  = true
 sign r² = true
@@ -302,7 +302,7 @@ sign s₁ = false
 sign s₂ = false
 sign s₃ = false
 
--- A₃ = чётные перестановки (det = 1)
+-- A₃ = even permutations (det = 1)
 data A₃ : Set where
   a-e  : A₃
   a-r  : A₃
@@ -319,27 +319,27 @@ A₃-det-1 a-e  = refl
 A₃-det-1 a-r  = refl
 A₃-det-1 a-r² = refl
 
--- ТЕОРЕМА: S₃ содержит элемент порядка 3, S₂ — нет
--- Следовательно SU(2) "слишком мала", нужна SU(3)
+-- THEOREM: S₃ contains an element of order 3, S₂ does not
+-- Therefore SU(2) is "too small", we need SU(3)
 SU2-too-small : (order r ≡ 3) × ((g : S₂) → order₂ g ≢ 3)
 SU2-too-small = has-order-3 , no-order-3-in-S₂
 
--- ТЕОРЕМА: A₃ вкладывается в SU(3) (det = 1)
+-- THEOREM: A₃ embeds into SU(3) (det = 1)
 S₃-embeds-SU3 : (a : A₃) → sign (A₃-to-S₃ a) ≡ true
 S₃-embeds-SU3 = A₃-det-1
 
--- ТЕОРЕМА: SU(3) минимальна
+-- THEOREM: SU(3) is minimal
 SU3-minimal : (order r ≡ 3) × ((a : A₃) → sign (A₃-to-S₃ a) ≡ true)
 SU3-minimal = has-order-3 , A₃-det-1
 
 ------------------------------------------------------------------------
--- ЧАСТЬ 7: СОЗНАНИЕ КАК САМОПРИМЕНЕНИЕ
+-- PART 7: CONSCIOUSNESS AS SELF-APPLICATION
 ------------------------------------------------------------------------
 
--- Рефлексивный тип требует coinduction или type-in-type
--- Используем уровни рефлексии вместо прямой самоссылки
+-- Reflexive type requires coinduction or type-in-type
+-- We use levels of reflection instead of direct self-reference
 
--- Уровни рефлексии
+-- Reflection levels
 data Level : Set where
   base : Level
   up   : Level → Level
@@ -348,12 +348,12 @@ depth : Level → ℕ
 depth base = zero
 depth (up l) = suc (depth l)
 
--- Сознание = достаточная глубина рефлексии
--- Порог: depth ≥ 5 (эмпирически)
+-- Consciousness = sufficient depth of reflection
+-- Threshold: depth ≥ 5 (empirically)
 conscious-threshold : ℕ
 conscious-threshold = 5
 
--- Проверка сознательности
+-- Consciousness check
 data _≥_ : ℕ → ℕ → Set where
   z≤n : {n : ℕ} → n ≥ zero
   s≤s : {m n : ℕ} → m ≥ n → suc m ≥ suc n
@@ -365,10 +365,10 @@ depth-5 : depth level-5 ≡ 5
 depth-5 = refl
 
 ------------------------------------------------------------------------
--- ИТОГОВАЯ ЦЕПОЧКА (ВСЁ ДОКАЗАНО)
+-- FINAL CHAIN (ALL PROVEN)
 ------------------------------------------------------------------------
 
--- Упрощённая версия для type-checker
+-- Simplified version for type-checker
 record DD-Complete-Record : Set where
   field
     axiom    : ∃ (λ (pair : Bool × Bool) → fst pair ≢ snd pair)
@@ -389,18 +389,18 @@ DD-Complete = record
   }
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ: 0 ПОСТУЛАТОВ
+-- SUMMARY: 0 POSTULATES
 ------------------------------------------------------------------------
 {-
-  БЫЛО:
+  WAS:
     postulate DD-Axiom : ∃ ...
     postulate S3-embeds-SU3 : ⊤
     postulate SU3-minimal : ⊤
-    
-  СТАЛО:
-    DD-Axiom : ∃ ... = (true, false), true≢false  -- ДОКАЗАНО
-    S₃-embeds-SU3 : ... = A₃-det-1                -- ДОКАЗАНО
-    SU3-minimal : ... = has-order-3, A₃-det-1     -- ДОКАЗАНО
-    
-  Полная цепочка DD → SM верифицирована type-checker'ом!
+
+  NOW:
+    DD-Axiom : ∃ ... = (true, false), true≢false  -- PROVEN
+    S₃-embeds-SU3 : ... = A₃-det-1                -- PROVEN
+    SU3-minimal : ... = has-order-3, A₃-det-1     -- PROVEN
+
+  Complete chain DD → SM verified by type-checker!
 -}

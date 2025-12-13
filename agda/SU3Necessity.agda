@@ -1,18 +1,18 @@
 {-# OPTIONS --safe --without-K #-}
 
 {-
-  SU(3) NECESSITY - Почему именно SU(3)?
+  SU(3) NECESSITY - Why exactly SU(3)?
   ======================================
-  
-  Цепочка: Триада → S₃ → SU(3)
-  
-  ВЕРСИЯ 2.0: ВСЕ ПОСТУЛАТЫ ЗАМЕНЕНЫ НА ДОКАЗАТЕЛЬСТВА
+
+  Chain: Triad → S₃ → SU(3)
+
+  VERSION 2.0: ALL POSTULATES REPLACED WITH PROOFS
 -}
 
 module SU3Necessity where
 
 ------------------------------------------------------------------------
--- Базовые определения
+-- Basic definitions
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -42,7 +42,7 @@ data ℕ : Set where
 
 {-# BUILTIN NATURAL ℕ #-}
 
--- Произведение типов
+-- Product of types
 infixr 4 _×_
 record _×_ (A B : Set) : Set where
   constructor _,_
@@ -56,7 +56,7 @@ zero + n = n
 suc m + n = suc (m + n)
 
 ------------------------------------------------------------------------
--- Триада: три различимых элемента
+-- Triad: three distinguishable elements
 ------------------------------------------------------------------------
 
 data Three : Set where
@@ -72,7 +72,7 @@ C≢A : C ≡ A → ⊥
 C≢A ()
 
 ------------------------------------------------------------------------
--- S₃: Группа перестановок триады
+-- S₃: Permutation group of the triad
 ------------------------------------------------------------------------
 
 data S₃ : Set where
@@ -83,7 +83,7 @@ data S₃ : Set where
   s₂  : S₃
   s₃  : S₃
 
--- Действие на Three
+-- Action on Three
 act : S₃ → Three → Three
 act e  x = x
 act r  A = B
@@ -102,7 +102,7 @@ act s₃ A = C
 act s₃ B = B
 act s₃ C = A
 
--- Композиция
+-- Composition
 _∘_ : S₃ → S₃ → S₃
 e  ∘ g  = g
 r  ∘ e  = r
@@ -137,7 +137,7 @@ s₃ ∘ s₂ = r
 s₃ ∘ s₃ = e
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 1: r имеет порядок 3
+-- PROOF 1: r has order 3
 ------------------------------------------------------------------------
 
 r³≡e : (r ∘ r) ∘ r ≡ e
@@ -149,12 +149,12 @@ r²≢e ()
 r≢e : r ≡ e → ⊥
 r≢e ()
 
--- Порядок r ровно 3 (не 1, не 2, но 3)
+-- Order of r is exactly 3 (not 1, not 2, but 3)
 order-r-is-3 : (r ≡ e → ⊥) × ((r² ≡ e → ⊥) × ((r ∘ r) ∘ r ≡ e))
 order-r-is-3 = r≢e , (r²≢e , refl)
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 2: S₂ не имеет элемента порядка 3
+-- PROOF 2: S₂ has no element of order 3
 ------------------------------------------------------------------------
 
 data S₂ : Set where
@@ -166,24 +166,24 @@ id₂  ∘₂ g    = g
 swap ∘₂ id₂  = swap
 swap ∘₂ swap = id₂
 
--- Все элементы S₂ имеют порядок ≤ 2
+-- All elements of S₂ have order ≤ 2
 swap²≡id : swap ∘₂ swap ≡ id₂
 swap²≡id = refl
 
--- Порядок каждого элемента
+-- Order of each element
 order₂ : S₂ → ℕ
 order₂ id₂  = 1
 order₂ swap = 2
 
--- В S₂ нет элемента порядка 3
--- Доказательство: перебором всех элементов
+-- S₂ has no element of order 3
+-- Proof: by case analysis of all elements
 no-order-3-in-S₂ : (g : S₂) → ¬ (order₂ g ≡ 3)
 no-order-3-in-S₂ id₂  ()
 no-order-3-in-S₂ swap ()
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 3: S₃ содержит элемент порядка 3, S₂ — нет
--- Следовательно S₃ ≇ S₂ и не вкладывается в S₂
+-- PROOF 3: S₃ contains element of order 3, S₂ does not
+-- Therefore S₃ ≇ S₂ and does not embed into S₂
 ------------------------------------------------------------------------
 
 order₃ : S₃ → ℕ
@@ -194,69 +194,69 @@ order₃ s₁ = 2
 order₃ s₂ = 2
 order₃ s₃ = 2
 
--- S₃ имеет элемент порядка 3
+-- S₃ has an element of order 3
 has-order-3 : order₃ r ≡ 3
 has-order-3 = refl
 
--- Гомоморфизм должен сохранять порядок (делит его)
--- Если φ: S₃ → S₂ гомоморфизм, то order(φ(r)) делит order(r) = 3
--- Но в S₂ порядки только 1 и 2
--- 3 не делится на 1 (если φ(r)=id, то φ не инъективно)
--- 3 не делится на 2
--- Следовательно нет инъективного гомоморфизма S₃ → S₂
+-- Homomorphism must preserve order (divides it)
+-- If φ: S₃ → S₂ is a homomorphism, then order(φ(r)) divides order(r) = 3
+-- But in S₂ orders are only 1 and 2
+-- 3 is not divisible by 1 (if φ(r)=id, then φ is not injective)
+-- 3 is not divisible by 2
+-- Therefore there is no injective homomorphism S₃ → S₂
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 4: SU(2) как непрерывное расширение S₂
+-- PROOF 4: SU(2) as continuous extension of S₂
 ------------------------------------------------------------------------
 
 {-
-  SU(2) = унитарные 2×2 с det = 1
-  
-  Конечные подгруппы SU(2):
-  - Z_n (циклические)
-  - D_n (диэдральные, содержат S₂)
-  - A₄, S₄, A₅ (но это редкие исключения)
-  
-  S₃ = D₃, но D₃ имеет представление в SU(2)?
-  
-  Нет! D₃ ⊂ SO(3), но SO(3) = SU(2)/Z₂
-  При поднятии в SU(2) элемент порядка 3 становится порядка 6
-  
-  Проще: рассмотрим перестановочные матрицы
-  - 2×2 перестановочные: I и swap = |0 1|
-                                      |1 0|
+  SU(2) = unitary 2×2 with det = 1
+
+  Finite subgroups of SU(2):
+  - Z_n (cyclic)
+  - D_n (dihedral, contains S₂)
+  - A₄, S₄, A₅ (but these are rare exceptions)
+
+  S₃ = D₃, but does D₃ have a representation in SU(2)?
+
+  No! D₃ ⊂ SO(3), but SO(3) = SU(2)/Z₂
+  When lifting to SU(2), element of order 3 becomes order 6
+
+  Simpler: consider permutation matrices
+  - 2×2 permutation: I and swap = |0 1|
+                                  |1 0|
   - swap² = I, det(swap) = -1 ≠ 1
-  - Значит swap ∉ SU(2)
-  
-  Чтобы иметь det = 1, нужно умножить на i: i·swap
-  Но (i·swap)² = i²·I = -I ≠ I
-  Порядок стал 4, не 2!
-  
-  Итого: S₂ не вкладывается в SU(2) как перестановочные матрицы
-  S₃ тем более не вкладывается
+  - So swap ∉ SU(2)
+
+  To have det = 1, need to multiply by i: i·swap
+  But (i·swap)² = i²·I = -I ≠ I
+  Order became 4, not 2!
+
+  Result: S₂ does not embed into SU(2) as permutation matrices
+  S₃ even more so does not embed
 -}
 
--- Формализация: тип "SU(2) слишком мала"
--- означает что нет гомоморфизма S₃ → S₂ сохраняющего порядки
+-- Formalization: type "SU(2) is too small"
+-- means there is no homomorphism S₃ → S₂ preserving orders
 SU2-too-small : (order₃ r ≡ 3) × ((g : S₂) → ¬ (order₂ g ≡ 3))
 SU2-too-small = has-order-3 , no-order-3-in-S₂
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 5: S₃ вкладывается в себя (тривиально)
--- и в любую группу содержащую элемент порядка 3 и порядка 2
+-- PROOF 5: S₃ embeds into itself (trivially)
+-- and into any group containing element of order 3 and order 2
 ------------------------------------------------------------------------
 
--- Структура: генераторы r (порядок 3) и s (порядок 2) с rs = sr⁻¹
+-- Structure: generators r (order 3) and s (order 2) with rs = sr⁻¹
 -- S₃ = ⟨r, s | r³ = e, s² = e, srs = r²⟩
 
--- Проверка соотношений:
+-- Checking relations:
 relation-1 : (r ∘ r) ∘ r ≡ e
 relation-1 = refl
 
 relation-2 : s₁ ∘ s₁ ≡ e
 relation-2 = refl
 
--- Соотношение: s₁ r = r² s₁ (сопряжение меняет направление вращения)
+-- Relation: s₁ r = r² s₁ (conjugation reverses rotation direction)
 relation-3 : s₁ ∘ r ≡ s₂
 relation-3 = refl
 
@@ -264,14 +264,14 @@ relation-4 : r ∘ s₁ ≡ s₃
 relation-4 = refl
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 6: 3×3 перестановочные матрицы
+-- PROOF 6: 3×3 permutation matrices
 ------------------------------------------------------------------------
 
--- Представим матрицу как функцию Three → Three → Bool
+-- Represent matrix as function Three → Three → Bool
 data Bool : Set where
   false true : Bool
 
--- Матрица перестановки g
+-- Permutation matrix of g
 Mat : S₃ → Three → Three → Bool
 Mat g i j with act g j
 ... | k = eq-Three i k
@@ -282,16 +282,16 @@ Mat g i j with act g j
     eq-Three C C = true
     eq-Three _ _ = false
 
--- Проверка: Mat e = единичная матрица
+-- Check: Mat e = identity matrix
 Mat-e-diag : (i : Three) → Mat e i i ≡ true
 Mat-e-diag A = refl
 Mat-e-diag B = refl
 Mat-e-diag C = refl
 
--- Проверка: Mat r — матрица циклической перестановки
+-- Check: Mat r — cyclic permutation matrix
 -- r: A→B, B→C, C→A
--- Mat r A B = true (столбец A, строка B)
-Mat-r-AB : Mat r B A ≡ true  -- в позиции (B,A) стоит 1, т.к. r(A)=B
+-- Mat r A B = true (column A, row B)
+Mat-r-AB : Mat r B A ≡ true  -- at position (B,A) stands 1, since r(A)=B
 Mat-r-AB = refl
 
 Mat-r-BC : Mat r C B ≡ true
@@ -301,27 +301,27 @@ Mat-r-CA : Mat r A C ≡ true
 Mat-r-CA = refl
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 7: Детерминант перестановочной матрицы = sign
+-- PROOF 7: Determinant of permutation matrix = sign
 ------------------------------------------------------------------------
 
--- Знак перестановки
+-- Sign of permutation
 sign : S₃ → Bool  -- true = +1, false = -1
 sign e  = true
-sign r  = true   -- чётная (цикл длины 3 = 2 транспозиции)
+sign r  = true   -- even (cycle of length 3 = 2 transpositions)
 sign r² = true
-sign s₁ = false  -- нечётная (транспозиция)
+sign s₁ = false  -- odd (transposition)
 sign s₂ = false
 sign s₃ = false
 
--- det = 1 ⟺ чётная перестановка
--- Подгруппа A₃ = {e, r, r²} имеет det = 1
+-- det = 1 ⟺ even permutation
+-- Subgroup A₃ = {e, r, r²} has det = 1
 
 data A₃ : Set where
   a-e  : A₃
   a-r  : A₃
   a-r² : A₃
 
--- A₃ — нормальная подгруппа S₃
+-- A₃ — normal subgroup of S₃
 A₃-to-S₃ : A₃ → S₃
 A₃-to-S₃ a-e  = e
 A₃-to-S₃ a-r  = r
@@ -333,153 +333,153 @@ sign-A₃ a-r  = refl
 sign-A₃ a-r² = refl
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 8: A₃ ≅ Z₃ вкладывается в SU(3)
+-- PROOF 8: A₃ ≅ Z₃ embeds into SU(3)
 ------------------------------------------------------------------------
 
--- A₃ изоморфна Z₃ (циклическая группа порядка 3)
--- Z₃ вкладывается в SU(3) через диагональные матрицы:
+-- A₃ is isomorphic to Z₃ (cyclic group of order 3)
+-- Z₃ embeds into SU(3) through diagonal matrices:
 --   ω = e^{2πi/3}, ω³ = 1
 --   diag(1, ω, ω²) ∈ SU(3), det = 1·ω·ω² = ω³ = 1
 
--- Полное S₃ вкладывается в U(3), но нечётные перестановки имеют det = -1
--- Умножая на ω, получаем det = -ω, что ≠ 1
+-- Full S₃ embeds into U(3), but odd permutations have det = -1
+-- Multiplying by ω, we get det = -ω, which ≠ 1
 
--- ОДНАКО: можно вложить S₃ в PSU(3) = SU(3)/Z₃
--- или использовать представление с det = ±1 и факторизовать
+-- HOWEVER: can embed S₃ into PSU(3) = SU(3)/Z₃
+-- or use representation with det = ±1 and factorize
 
--- Конструктивно: A₃ ⊂ SU(3) точно
+-- Constructively: A₃ ⊂ SU(3) precisely
 A₃-embeds-SU3 : (a : A₃) → sign (A₃-to-S₃ a) ≡ true
 A₃-embeds-SU3 = sign-A₃
 
 ------------------------------------------------------------------------
--- ДОКАЗАТЕЛЬСТВО 9: S₃ вкладывается в U(3), проекция в PSU(3)
+-- PROOF 9: S₃ embeds into U(3), projection into PSU(3)
 ------------------------------------------------------------------------
 
--- U(3) содержит все перестановочные матрицы
--- SU(3) содержит чётные (A₃)
--- Для нечётных: умножаем на det⁻¹ = e^{iπ} для компенсации
+-- U(3) contains all permutation matrices
+-- SU(3) contains even ones (A₃)
+-- For odd ones: multiply by det⁻¹ = e^{iπ} to compensate
 
--- В PSU(3) = SU(3)/Z₃ фаза не существенна
--- Поэтому S₃ ↪ PSU(3)
+-- In PSU(3) = SU(3)/Z₃ phase is not essential
+-- Therefore S₃ ↪ PSU(3)
 
--- Формализуем как: существует гомоморфизм S₃ → {±1} × A₃
--- где {±1} — знак, A₃ — чётная часть
+-- Formalize as: there exists homomorphism S₃ → {±1} × A₃
+-- where {±1} — sign, A₃ — even part
 
 record S₃-decomposition (g : S₃) : Set where
   field
     parity : Bool
     even-part : A₃
-    
+
 decompose : (g : S₃) → S₃-decomposition g
 decompose e  = record { parity = true  ; even-part = a-e }
 decompose r  = record { parity = true  ; even-part = a-r }
 decompose r² = record { parity = true  ; even-part = a-r² }
-decompose s₁ = record { parity = false ; even-part = a-e }  -- s₁ = (-1)·e в смысле det
+decompose s₁ = record { parity = false ; even-part = a-e }  -- s₁ = (-1)·e in det sense
 decompose s₂ = record { parity = false ; even-part = a-e }
 decompose s₃ = record { parity = false ; even-part = a-e }
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА (бывший постулат): S₃ вкладывается в структуру над SU(3)
+-- THEOREM (formerly postulate): S₃ embeds into structure over SU(3)
 ------------------------------------------------------------------------
 
--- Вложение через: S₃ → Z₂ × A₃, где A₃ ⊂ SU(3)
+-- Embedding through: S₃ → Z₂ × A₃, where A₃ ⊂ SU(3)
 S₃-embeds-SU3 : (g : S₃) → S₃-decomposition g
 S₃-embeds-SU3 = decompose
 
 ------------------------------------------------------------------------
--- ТЕОРЕМА: SU(3) минимальна
+-- THEOREM: SU(3) is minimal
 ------------------------------------------------------------------------
 
--- SU(2) не содержит элемент порядка 3 среди перестановочных матриц
--- (доказано выше через S₂)
+-- SU(2) does not contain element of order 3 among permutation matrices
+-- (proven above through S₂)
 
--- SU(3) содержит A₃ ⊂ S₃
+-- SU(3) contains A₃ ⊂ S₃
 
--- Следовательно SU(3) — минимальная SU(N) содержащая подгруппу порядка 3
+-- Therefore SU(3) — minimal SU(N) containing subgroup of order 3
 
 SU3-minimal : (order₃ r ≡ 3) × ((a : A₃) → sign (A₃-to-S₃ a) ≡ true)
 SU3-minimal = has-order-3 , sign-A₃
 
 ------------------------------------------------------------------------
--- SU(3) необходима: объединение
+-- SU(3) necessity: summary
 ------------------------------------------------------------------------
 
-SU3-necessary : (order₃ r ≡ 3) 
+SU3-necessary : (order₃ r ≡ 3)
               × (((g : S₂) → ¬ (order₂ g ≡ 3))
               × ((a : A₃) → sign (A₃-to-S₃ a) ≡ true))
 SU3-necessary = has-order-3 , (no-order-3-in-S₂ , sign-A₃)
 
 ------------------------------------------------------------------------
--- ИЕРАРХИЯ: SU(2) × U(1) из уровней различия
+-- HIERARCHY: SU(2) × U(1) from levels of distinction
 ------------------------------------------------------------------------
 
--- Уровень 1: Монада (одно различие) — U(1)
+-- Level 1: Monad (one distinction) — U(1)
 data One : Set where
   • : One
 
--- Симметрии One: тривиальная группа
--- Но ФАЗА различия произвольна: e^{iθ} · |1⟩
--- Это даёт U(1)
+-- Symmetries of One: trivial group
+-- But PHASE of distinction is arbitrary: e^{iθ} · |1⟩
+-- This gives U(1)
 
--- Уровень 2: Диада (два различия) — SU(2)
+-- Level 2: Dyad (two distinctions) — SU(2)
 data Two : Set where
   X Y : Two
 
 X≢Y : X ≡ Y → ⊥
 X≢Y ()
 
--- Симметрии Two: S₂ = {id, swap}
--- Непрерывное расширение с det=1: SU(2)
--- (для 2×2 det=1 автоматически из унитарности и trace)
+-- Symmetries of Two: S₂ = {id, swap}
+-- Continuous extension with det=1: SU(2)
+-- (for 2×2 det=1 automatically from unitarity and trace)
 
--- Уровень 3: Триада — SU(3)
--- (уже доказано)
+-- Level 3: Triad — SU(3)
+-- (already proven)
 
 ------------------------------------------------------------------------
--- ВЫВОД SU(2) × U(1): три уровня симультанно
+-- DERIVATION of SU(2) × U(1): three levels simultaneously
 ------------------------------------------------------------------------
 
 record GaugeStructure : Set where
   field
-    level-1 : One   -- U(1) заряд
-    level-2 : Two   -- SU(2) изоспин
-    level-3 : Three -- SU(3) цвет
+    level-1 : One   -- U(1) charge
+    level-2 : Two   -- SU(2) isospin
+    level-3 : Three -- SU(3) color
 
--- Стандартная Модель = все три уровня различий одновременно
--- Каждый уровень даёт свою калибровочную группу
+-- Standard Model = all three levels of distinction simultaneously
+-- Each level gives its own gauge group
 
 SM-gauge-from-DD : GaugeStructure
 SM-gauge-from-DD = record { level-1 = • ; level-2 = X ; level-3 = A }
 
 ------------------------------------------------------------------------
--- Полная цепочка DD → SU(3) × SU(2) × U(1)
+-- Complete chain DD → SU(3) × SU(2) × U(1)
 ------------------------------------------------------------------------
 
-DD-to-SM : (order₃ r ≡ 3) 
+DD-to-SM : (order₃ r ≡ 3)
          × (((g : S₂) → ¬ (order₂ g ≡ 3))
          × (((a : A₃) → sign (A₃-to-S₃ a) ≡ true)
          × GaugeStructure))
 DD-to-SM = has-order-3 , (no-order-3-in-S₂ , (sign-A₃ , SM-gauge-from-DD))
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ: 0 постулатов, всё доказано конструктивно
+-- SUMMARY: 0 postulates, everything proven constructively
 ------------------------------------------------------------------------
 {-
-  БЫЛО (постулаты):
+  WAS (postulates):
     postulate SU2-too-small : Unit
-    postulate S3-embeds-SU3 : Unit  
+    postulate S3-embeds-SU3 : Unit
     postulate SU2-U1-from-DD : Unit
-    
-  СТАЛО (доказательства):
+
+  BECAME (proofs):
     SU2-too-small : (order₃ r ≡ 3) × ((g : S₂) → ¬ (order₂ g ≡ 3))
     S₃-embeds-SU3 : (g : S₃) → S₃-decomposition g
     SM-gauge-from-DD : GaugeStructure
-    
-  Ключевые теоремы:
-    1. r имеет порядок 3 в S₃
-    2. S₂ не имеет элементов порядка 3
-    3. A₃ ⊂ S₃ — чётные перестановки с det = 1
-    4. A₃ ≅ Z₃ вкладывается в SU(3)
-    5. S₃ = Z₂ × A₃ (полупрямое произведение)
-    6. Три уровня различий → SU(3) × SU(2) × U(1)
+
+  Key theorems:
+    1. r has order 3 in S₃
+    2. S₂ has no elements of order 3
+    3. A₃ ⊂ S₃ — even permutations with det = 1
+    4. A₃ ≅ Z₃ embeds into SU(3)
+    5. S₃ = Z₂ × A₃ (semidirect product)
+    6. Three levels of distinction → SU(3) × SU(2) × U(1)
 -}

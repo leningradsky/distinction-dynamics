@@ -3,7 +3,7 @@
 module ReflexiveU where
 
 -- ============================================
--- Рефлексивная вселенная: U с El U = U
+-- Reflexive universe: U with El U = U
 -- ============================================
 
 mutual
@@ -11,7 +11,7 @@ mutual
     UNIT : U
     PI : (a : U) → (El a → U) → U
     SIGMA : (a : U) → (El a → U) → U
-    -- Рефлексия:
+    -- Reflexivity:
     UNIV : U
 
   El : U → Set
@@ -21,109 +21,109 @@ mutual
     where
       data SigmaT (A : Set) (B : A → Set) : Set where
         _,_ : (fst : A) → B fst → SigmaT A B
-  El UNIV = U  -- ← Ключевой момент!
+  El UNIV = U  -- ← Key point!
 
 -- ============================================
--- Проверки
+-- Tests
 -- ============================================
 
--- El UNIV = U, то есть U : Set и El UNIV : Set, и они равны
+-- El UNIV = U, i.e. U : Set and El UNIV : Set, and they are equal
 test1 : El UNIV
 test1 = UNIT  -- UNIT : U = El UNIV
 
 test2 : El UNIV
 test2 = UNIV  -- UNIV : U = El UNIV
 
--- Можем строить типы "внутри" U:
--- Тип функций из U в U
+-- We can build types "inside" U:
+-- Type of functions from U to U
 UtoU : U
 UtoU = PI UNIV (λ _ → UNIV)
 
--- Его интерпретация:
+-- Its interpretation:
 UtoU-type : Set
 UtoU-type = El UtoU  -- = U → U
 
--- Пример функции U → U
+-- Example function U → U
 idU : El UtoU
 idU x = x
 
 -- ============================================
--- Теперь: Dist как код в U
+-- Now: Dist as code in U
 -- ============================================
 
--- Dist = U → U → U (отношения с кодами в U)
+-- Dist = U → U → U (relations with codes in U)
 DistCode : U
 DistCode = PI UNIV (λ _ → PI UNIV (λ _ → UNIV))
 
 DistType : Set
 DistType = El DistCode  -- = U → U → U
 
--- Пример "различения":
+-- Example "distinction":
 trivialDist : DistType
-trivialDist _ _ = UNIT  -- Любые два кода "одинаковы"
+trivialDist _ _ = UNIT  -- Any two codes are "the same"
 
--- Более интересно:
-eqDist : DistType  
+-- More interesting:
+eqDist : DistType
 eqDist a b = PI (PI a (λ _ → b)) (λ _ → PI (PI b (λ _ → a)) (λ _ → UNIT))
--- Это кодирует: (a → b) → (b → a) → Unit
--- Грубо: "a и b изоморфны" как условие неразличимости
+-- This encodes: (a → b) → (b → a) → Unit
+-- Roughly: "a and b are isomorphic" as a condition of indistinguishability
 
 -- ============================================
--- Самоприменение!
+-- Self-application!
 -- ============================================
 
--- DistCode : U, так что можем применить trivialDist к DistCode
+-- DistCode : U, so we can apply trivialDist to DistCode
 -- trivialDist : U → U → U
 -- DistCode : U
--- Значит trivialDist DistCode DistCode : U
+-- So trivialDist DistCode DistCode : U
 
 distDistDist : U
 distDistDist = trivialDist DistCode DistCode
 
--- Это буквально: "различение между Dist и Dist"
--- Результат — код в U
+-- This is literally: "distinction between Dist and Dist"
+-- The result is a code in U
 
 -- ============================================
--- Более глубокое самоприменение
+-- Deeper self-application
 -- ============================================
 
--- Можем ли мы построить d : DistType такой, что
--- d применённый к своему собственному коду даёт что-то осмысленное?
+-- Can we build d : DistType such that
+-- d applied to its own code gives something meaningful?
 
--- Идея: d = λ a b → PI (PI a (λ _ → b)) (λ _ → PI (PI b (λ _ → a)) (λ _ → UNIT))
--- Тогда d DistCode DistCode = ...сложное выражение...
+-- Idea: d = λ a b → PI (PI a (λ _ → b)) (λ _ → PI (PI b (λ _ → a)) (λ _ → UNIT))
+-- Then d DistCode DistCode = ...complex expression...
 
 selfRefDist : U
 selfRefDist = eqDist DistCode DistCode
--- Это: PI (PI DistCode (λ _ → DistCode)) (λ _ → PI (PI DistCode (λ _ → DistCode)) (λ _ → UNIT))
--- То есть: (DistType → DistType) → (DistType → DistType) → Unit
--- Грубо: "если DistType изоморфен себе, то Unit"
+-- This is: PI (PI DistCode (λ _ → DistCode)) (λ _ → PI (PI DistCode (λ _ → DistCode)) (λ _ → UNIT))
+-- That is: (DistType → DistType) → (DistType → DistType) → Unit
+-- Roughly: "if DistType is isomorphic to itself, then Unit"
 
 -- ============================================
--- Ключевой результат
+-- Key result
 -- ============================================
 
--- У нас есть:
+-- We have:
 -- 1. U : Set
 -- 2. El : U → Set
 -- 3. El UNIV = U
--- 4. DistCode : U с El DistCode = U → U → U
--- 5. Можем применять DistCode к себе: distOfDist DistCode DistCode : U
+-- 4. DistCode : U with El DistCode = U → U → U
+-- 5. We can apply DistCode to itself: distOfDist DistCode DistCode : U
 
--- Это близко к Δ = Δ(Δ), но не совсем изоморфизм.
--- Это скорее: "Δ содержит код для (Δ → Δ → Δ)"
+-- This is close to Δ = Δ(Δ), but not quite an isomorphism.
+-- It's more like: "Δ contains code for (Δ → Δ → Δ)"
 
 -- ============================================
--- ТЕСТ КОНСИСТЕНТНОСТИ
+-- CONSISTENCY TEST
 -- ============================================
 
--- Попробуем вывести Empty (пустой тип)
--- Если получится — система противоречива
+-- Let's try to derive Empty (empty type)
+-- If we succeed — the system is inconsistent
 
 data Empty : Set where
-  -- нет конструкторов
+  -- no constructors
 
--- Добавим код для Empty в расширенную вселенную:
+-- Add code for Empty to an extended universe:
 mutual
   data U2 : Set where
     UNIT2 : U2
@@ -137,48 +137,48 @@ mutual
   El2 (PI2 a b) = (x : El2 a) → El2 (b x)
   El2 UNIV2 = U2
 
--- Отрицание:
+-- Negation:
 Not2 : U2 → U2
 Not2 a = PI2 a (λ _ → EMPTY2)
 
--- Попытка парадокса Рассела:
+-- Attempt at Russell's paradox:
 -- Russell = { x | x ∉ x }
--- В типах: R такой что R ≅ (R → Empty)
+-- In types: R such that R ≅ (R → Empty)
 
--- Можем ли мы это построить?
--- Нужно: code : U2 такой что El2 code = (El2 code → Empty)
--- Это потребовало бы: code = PI2 code (λ _ → EMPTY2)
--- Но code появляется в определении code — это не валидная рекурсия
+-- Can we build this?
+-- We need: code : U2 such that El2 code = (El2 code → Empty)
+-- This would require: code = PI2 code (λ _ → EMPTY2)
+-- But code appears in the definition of code — this is not valid recursion
 
--- Попытка через диагонализацию:
+-- Attempt through diagonalization:
 -- diag a = PI2 a (λ f → Not2 (f f))
--- Проблема: f : El2 a, но f f требует f : El2 a → U2
--- Это не типизируется!
--- Диагонализация заблокирована типовой системой
+-- Problem: f : El2 a, but f f requires f : El2 a → U2
+-- This doesn't typecheck!
+-- Diagonalization is blocked by the type system
 
 -- ============================================
--- Почему это (вероятно) безопасно
+-- Why this is (probably) safe
 -- ============================================
 
--- U2 : Set — коды
--- El2 : U2 → Set — интерпретация
--- El2 UNIV2 = U2 — рефлексия
+-- U2 : Set — codes
+-- El2 : U2 → Set — interpretation
+-- El2 UNIV2 = U2 — reflexivity
 --
--- Ключевое отличие от Type : Type:
--- У нас НЕТ Set : Set
--- У нас есть: U2 : Set, и El2 UNIV2 = U2
--- Это разные вещи!
+-- Key difference from Type : Type:
+-- We do NOT have Set : Set
+-- We have: U2 : Set, and El2 UNIV2 = U2
+-- These are different things!
 --
--- Парадокс требует: R : Set с R = (R → Empty)
--- У нас: code : U2 с El2 code = (El2 code → Empty)
--- Но El2 code : Set, а code : U2 — разные уровни
+-- The paradox requires: R : Set with R = (R → Empty)
+-- We have: code : U2 with El2 code = (El2 code → Empty)
+-- But El2 code : Set, while code : U2 — different levels
 
 -- ============================================
--- Итог
+-- Conclusion
 -- ============================================
 
--- Построили рефлексивную вселенную U с El UNIV = U
--- Это позволяет самоприменение кодов
--- Не ясно, ведёт ли это к противоречию
--- --no-positivity-check отключает проверку, которая обычно это предотвращает
--- Нужен более глубокий анализ или формальное доказательство консистентности
+-- Built reflexive universe U with El UNIV = U
+-- This allows self-application of codes
+-- It's not clear whether this leads to contradiction
+-- --no-positivity-check disables the check that usually prevents this
+-- Deeper analysis or formal consistency proof is needed

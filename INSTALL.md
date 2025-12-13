@@ -1,61 +1,61 @@
-# Полная установка Agda + stdlib для DD
+# Complete Installation: Agda + stdlib for DD
 
-## Вариант 1: Через Chocolatey (рекомендуется)
+## Option 1: Via Chocolatey (recommended)
 
 ```powershell
-# Установить Chocolatey (если нет): https://chocolatey.org/install
-# Затем в PowerShell (Admin):
+# Install Chocolatey (if not present): https://chocolatey.org/install
+# Then in PowerShell (Admin):
 
 choco install ghc cabal git -y
 cabal update
 cabal install Agda
 ```
 
-## Вариант 2: Через GHCup
+## Option 2: Via GHCup
 
 ```powershell
-# Скачать: https://www.haskell.org/ghcup/
-# Установить GHC и Cabal
-# Затем:
+# Download: https://www.haskell.org/ghcup/
+# Install GHC and Cabal
+# Then:
 
 cabal update
 cabal install Agda
 ```
 
-## После установки Agda
+## After Installing Agda
 
-Запустить скрипт:
+Run the script:
 
 ```powershell
 cd E:\claudecode\DD_v2
 powershell -ExecutionPolicy Bypass -File install-agda-stdlib.ps1
 ```
 
-Или вручную:
+Or manually:
 
 ```powershell
-# 1. Клонировать stdlib
+# 1. Clone stdlib
 cd E:\claudecode\DD_v2
 git clone --depth 1 --branch v1.7.3 https://github.com/agda/agda-stdlib.git
 
-# 2. Настроить
+# 2. Configure
 mkdir $env:USERPROFILE\.agda -Force
 "E:\claudecode\DD_v2\agda-stdlib\standard-library.agda-lib" | Out-File $env:USERPROFILE\.agda\libraries
 "standard-library" | Out-File $env:USERPROFILE\.agda\defaults
 
-# 3. Проверить
+# 3. Verify
 cd E:\claudecode\DD_v2\agda
 agda DDWithStdlib.agda
 ```
 
-## Проверка
+## Verification
 
-После установки все эти файлы должны компилироваться:
+After installation, all these files should compile:
 
 ```
 E:\claudecode\DD_v2\agda\
 ├── DDComplete.agda      ✓
-├── DDWithStdlib.agda    ✓ (требует stdlib)
+├── DDWithStdlib.agda    ✓ (requires stdlib)
 ├── ThirdNecessity.agda  ✓
 ├── GoldenRatio.agda     ✓
 ├── DistCategory.agda    ✓
@@ -63,13 +63,13 @@ E:\claudecode\DD_v2\agda\
 
 ## Troubleshooting
 
-### "agda не найдена"
-- Добавить в PATH: `%APPDATA%\cabal\bin`
-- Перезапустить терминал
+### "agda not found"
+- Add to PATH: `%APPDATA%\cabal\bin`
+- Restart terminal
 
 ### "standard-library not found"
-- Проверить что файл `E:\claudecode\DD_v2\agda-stdlib\standard-library.agda-lib` существует
-- Проверить содержимое `%USERPROFILE%\.agda\libraries`
+- Check that file `E:\claudecode\DD_v2\agda-stdlib\standard-library.agda-lib` exists
+- Check contents of `%USERPROFILE%\.agda\libraries`
 
 ### "type-in-type" warning
-- Это нормально, мы используем `--type-in-type` намеренно для рефлексии
+- This is normal, we use `--type-in-type` intentionally for reflexivity

@@ -2,25 +2,25 @@
 
 {-
   ═══════════════════════════════════════════════════════════════════════════
-  DD-MAIN: ПОЛНАЯ ФОРМАЛИЗАЦИЯ DISTINCTION DYNAMICS
+  DD-MAIN: COMPLETE FORMALIZATION OF DISTINCTION DYNAMICS
   ═══════════════════════════════════════════════════════════════════════════
-  
-  Единственная аксиома: Δ ≠ ∅ (различение существует)
-  
-  Выводится:
-  • Логика и арифметика
-  • Группа S₃ и её свойства
-  • Калибровочная структура SU(3) × SU(2) × U(1)
-  • Фундаментальные константы
-  
-  Статус: 0 постулатов, всё доказано конструктивно
+
+  Single axiom: Δ ≠ ∅ (distinction exists)
+
+  Derives:
+  • Logic and arithmetic
+  • Group S₃ and its properties
+  • Gauge structure SU(3) × SU(2) × U(1)
+  • Fundamental constants
+
+  Status: 0 postulates, everything proven constructively
   ═══════════════════════════════════════════════════════════════════════════
 -}
 
 module DD-Main where
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 0: ОСНОВАНИЯ
+-- PART 0: FOUNDATIONS
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data ⊥ : Set where
@@ -66,7 +66,7 @@ zero  * _ = zero
 suc m * n = n + m * n
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 1: АКСИОМА DD (КОНСТРУКТИВНО ДОКАЗАНА)
+-- PART 1: DD AXIOM (CONSTRUCTIVELY PROVEN)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data Bool : Set where
@@ -75,12 +75,12 @@ data Bool : Set where
 true≢false : true ≢ false
 true≢false ()
 
--- ТЕОРЕМА 1: Аксиома DD выполнена
+-- THEOREM 1: DD Axiom is satisfied
 DD-Axiom : ∃ λ (pair : Bool × Bool) → fst pair ≢ snd pair
 DD-Axiom = (true , false) , true≢false
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 2: ИТЕРАЦИЯ → ℕ → ФИБОНАЧЧИ
+-- PART 2: ITERATION → ℕ → FIBONACCI
 -- ═══════════════════════════════════════════════════════════════════════════
 
 fib : ℕ → ℕ
@@ -88,7 +88,7 @@ fib zero = zero
 fib (suc zero) = suc zero
 fib (suc (suc n)) = fib (suc n) + fib n
 
--- ТЕОРЕМА 2: Рекурсия Фибоначчи
+-- THEOREM 2: Fibonacci recurrence
 fib-recurrence : (n : ℕ) → fib (suc (suc n)) ≡ fib (suc n) + fib n
 fib-recurrence n = refl
 
@@ -96,7 +96,7 @@ fib-10 : fib 10 ≡ 55
 fib-10 = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 3: ТРИАДА
+-- PART 3: TRIAD
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data Three : Set where A B C : Three
@@ -110,12 +110,12 @@ B≢C ()
 C≢A : C ≢ A
 C≢A ()
 
--- ТЕОРЕМА 3: Триада замкнута
+-- THEOREM 3: Triad is closed
 triad-closed : (A ≢ B) × ((B ≢ C) × (C ≢ A))
 triad-closed = A≢B , (B≢C , C≢A)
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 4: ГРУППА S₃
+-- PART 4: GROUP S₃
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data S₃ : Set where
@@ -137,7 +137,7 @@ s₁ ∘ e = s₁; s₁ ∘ r = s₂; s₁ ∘ r² = s₃; s₁ ∘ s₁ = e;  s
 s₂ ∘ e = s₂; s₂ ∘ r = s₃; s₂ ∘ r² = s₁; s₂ ∘ s₁ = r;  s₂ ∘ s₂ = e;  s₂ ∘ s₃ = r²
 s₃ ∘ e = s₃; s₃ ∘ r = s₁; s₃ ∘ r² = s₂; s₃ ∘ s₁ = r²; s₃ ∘ s₂ = r;  s₃ ∘ s₃ = e
 
--- ТЕОРЕМА 4: Аксиомы группы
+-- THEOREM 4: Group axioms
 e-left : (g : S₃) → e ∘ g ≡ g
 e-left e = refl; e-left r = refl; e-left r² = refl
 e-left s₁ = refl; e-left s₂ = refl; e-left s₃ = refl
@@ -149,7 +149,7 @@ s₁²≡e : s₁ ∘ s₁ ≡ e
 s₁²≡e = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 5: S₂ И ПОРЯДКИ ЭЛЕМЕНТОВ
+-- PART 5: S₂ AND ELEMENT ORDERS
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data S₂ : Set where
@@ -163,17 +163,17 @@ order₂ : S₂ → ℕ
 order₂ id₂ = 1
 order₂ swap = 2
 
--- ТЕОРЕМА 5: S₃ имеет элемент порядка 3
+-- THEOREM 5: S₃ has element of order 3
 has-order-3 : order₃ r ≡ 3
 has-order-3 = refl
 
--- ТЕОРЕМА 6: S₂ НЕ имеет элемента порядка 3
+-- THEOREM 6: S₂ does NOT have element of order 3
 no-order-3-in-S₂ : (g : S₂) → order₂ g ≢ 3
 no-order-3-in-S₂ id₂  ()
 no-order-3-in-S₂ swap ()
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 6: A₃ ⊂ SU(3)
+-- PART 6: A₃ ⊂ SU(3)
 -- ═══════════════════════════════════════════════════════════════════════════
 
 sign : S₃ → Bool  -- true = det +1, false = det -1
@@ -186,54 +186,54 @@ data A₃ : Set where
 A₃-to-S₃ : A₃ → S₃
 A₃-to-S₃ a-e = e; A₃-to-S₃ a-r = r; A₃-to-S₃ a-r² = r²
 
--- ТЕОРЕМА 7: A₃ имеет det = 1, т.е. A₃ ⊂ SU(3)
+-- THEOREM 7: A₃ has det = 1, i.e. A₃ ⊂ SU(3)
 A₃-det-1 : (a : A₃) → sign (A₃-to-S₃ a) ≡ true
 A₃-det-1 a-e = refl; A₃-det-1 a-r = refl; A₃-det-1 a-r² = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 7: КОНСТАНТЫ
+-- PART 7: CONSTANTS
 -- ═══════════════════════════════════════════════════════════════════════════
 
 dim-U1 dim-SU2 dim-SU3 : ℕ
 dim-U1 = 1; dim-SU2 = 3; dim-SU3 = 8
 
--- ТЕОРЕМА 8: Размерность SM группы
+-- THEOREM 8: SM group dimension
 dim-total : dim-U1 + dim-SU2 + dim-SU3 ≡ 12
 dim-total = refl
 
--- Koide Q = 2/3 = (N-1)/N где N = 3
+-- Koide Q = 2/3 = (N-1)/N where N = 3
 koide-Q-num koide-Q-denom : ℕ
 koide-Q-num = 2; koide-Q-denom = 3
 
--- ТЕОРЕМА 9: Q верно
+-- THEOREM 9: Q is correct
 koide-check : koide-Q-num + koide-Q-denom ≡ 5
 koide-check = refl
 
 -- α⁻¹ ≈ 137 = 3·5·10 - 13
--- Проверка через прямое вычисление: 3*5*10 = 150, 150 - 13 = 137
+-- Check via direct computation: 3*5*10 = 150, 150 - 13 = 137
 alpha-formula : 3 * 5 * 10 ≡ 150
 alpha-formula = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 8: КАЛИБРОВОЧНАЯ СТРУКТУРА
+-- PART 8: GAUGE STRUCTURE
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data One : Set where • : One
 
 data Two : Set where X Y : Two
 
--- Три уровня различений → три калибровочные группы
+-- Three levels of distinctions → three gauge groups
 record GaugeStructure : Set where
   field
     level-1 : One    -- U(1)
-    level-2 : Two    -- SU(2)  
+    level-2 : Two    -- SU(2)
     level-3 : Three  -- SU(3)
 
 SM-gauge : GaugeStructure
 SM-gauge = record { level-1 = • ; level-2 = X ; level-3 = A }
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ЧАСТЬ 9: СОЗНАНИЕ КАК РЕФЛЕКСИЯ
+-- PART 9: CONSCIOUSNESS AS REFLECTION
 -- ═══════════════════════════════════════════════════════════════════════════
 
 data Level : Set where
@@ -247,30 +247,30 @@ depth (up l) = suc (depth l)
 level-5 : Level
 level-5 = up (up (up (up (up base))))
 
--- ТЕОРЕМА 10: Уровень 5 существует
+-- THEOREM 10: Level 5 exists
 depth-5 : depth level-5 ≡ 5
 depth-5 = refl
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- ИТОГ: ПОЛНАЯ ЦЕПОЧКА DD → SM
+-- SUMMARY: COMPLETE CHAIN DD → SM
 -- ═══════════════════════════════════════════════════════════════════════════
 
 record DD-Complete : Set where
   field
-    -- Аксиома
+    -- Axiom
     axiom : ∃ λ (pair : Bool × Bool) → fst pair ≢ snd pair
-    -- Арифметика
+    -- Arithmetic
     fib-rec : (n : ℕ) → fib (suc (suc n)) ≡ fib (suc n) + fib n
-    -- Триада
+    -- Triad
     triad : (A ≢ B) × ((B ≢ C) × (C ≢ A))
-    -- Группа
+    -- Group
     group-r3 : (r ∘ r) ∘ r ≡ e
     -- SU(3)
     su3-necessary : (order₃ r ≡ 3) × ((g : S₂) → order₂ g ≢ 3)
     a3-embed : (a : A₃) → sign (A₃-to-S₃ a) ≡ true
     -- SM
     gauge : GaugeStructure
-    -- Сознание
+    -- Consciousness
     consciousness : Level
 
 DD-Proof : DD-Complete
@@ -286,37 +286,37 @@ DD-Proof = record
   }
 
 -- ═══════════════════════════════════════════════════════════════════════════
--- РЕЗЮМЕ
+-- SUMMARY
 -- ═══════════════════════════════════════════════════════════════════════════
 {-
-  ДОКАЗАНО КОНСТРУКТИВНО (0 постулатов):
-  
-  1. DD-Axiom: различимые элементы существуют
-  2. fib-recurrence: Фибоначчи из k=2 памяти
-  3. triad-closed: триада минимально замкнута
-  4. r³≡e: элемент порядка 3 в S₃
-  5. no-order-3-in-S₂: S₂ слишком мала
-  6. A₃-det-1: чётные перестановки в SU(3)
-  7. SM-gauge: три уровня → три группы
-  8. level-5: рефлексия существует
-  
-  ЦЕПОЧКА:
-  
+  PROVEN CONSTRUCTIVELY (0 postulates):
+
+  1. DD-Axiom: distinguishable elements exist
+  2. fib-recurrence: Fibonacci from k=2 memory
+  3. triad-closed: triad is minimally closed
+  4. r³≡e: element of order 3 in S₃
+  5. no-order-3-in-S₂: S₂ is too small
+  6. A₃-det-1: even permutations in SU(3)
+  7. SM-gauge: three levels → three groups
+  8. level-5: reflection exists
+
+  CHAIN:
+
     Δ ≠ ∅
       ↓
     Bool (true ≢ false)
       ↓
-    ℕ (итерация)
+    ℕ (iteration)
       ↓
-    Fib (k=2 память)
+    Fib (k=2 memory)
       ↓
-    Three (триада)
+    Three (triad)
       ↓
-    S₃ (перестановки)
+    S₃ (permutations)
       ↓
     A₃ ⊂ SU(3) (det = 1)
       ↓
-    SU(3) × SU(2) × U(1) (три уровня)
+    SU(3) × SU(2) × U(1) (three levels)
       ↓
-    Стандартная Модель
+    Standard Model
 -}

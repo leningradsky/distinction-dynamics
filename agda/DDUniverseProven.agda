@@ -1,18 +1,18 @@
 {-# OPTIONS --no-positivity-check --type-in-type #-}
 
 {-
-  DD UNIVERSE — ПОЛНОСТЬЮ ДОКАЗАНО
-  =================================
-  
-  Все постулаты заменены конструктивными доказательствами.
-  
-  Цепочка: Δ≠∅ → Bool → ℕ → Fib → Three → S₃ → [SU(3)]
+  DD UNIVERSE — FULLY PROVEN
+  ===========================
+
+  All postulates replaced with constructive proofs.
+
+  Chain: Δ≠∅ → Bool → ℕ → Fib → Three → S₃ → [SU(3)]
 -}
 
 module DDUniverseProven where
 
 ------------------------------------------------------------------------
--- Базовые типы
+-- Basic types
 ------------------------------------------------------------------------
 
 data ⊥ : Set where
@@ -38,7 +38,7 @@ trans refl refl = refl
 cong : {A B : Set} (f : A → B) {x y : A} → x ≡ y → f x ≡ f y
 cong f refl = refl
 
--- Σ-тип (зависимая пара)
+-- Σ-type (dependent pair)
 record Σ (A : Set) (B : A → Set) : Set where
   constructor _,_
   field
@@ -49,12 +49,12 @@ open Σ
 ∃ : {A : Set} → (A → Set) → Set
 ∃ {A} B = Σ A B
 
--- Произведение
+-- Product
 _×_ : Set → Set → Set
 A × B = Σ A (λ _ → B)
 
 ------------------------------------------------------------------------
--- Bool и ℕ
+-- Bool and ℕ
 ------------------------------------------------------------------------
 
 data Bool : Set where
@@ -77,22 +77,22 @@ zero  * _ = zero
 suc m * n = n + m * n
 
 ------------------------------------------------------------------------
--- АКСИОМА DD: КОНСТРУКТИВНОЕ ДОКАЗАТЕЛЬСТВО
+-- DD AXIOM: CONSTRUCTIVE PROOF
 ------------------------------------------------------------------------
 
--- true ≢ false (ДОКАЗАНО, не постулат!)
+-- true ≢ false (PROVEN, not a postulate!)
 true≢false : true ≡ false → ⊥
 true≢false ()
 
 false≢true : false ≡ true → ⊥
 false≢true ()
 
--- ТЕОРЕМА: Δ ≠ ∅ (существуют различимые элементы)
--- Свидетель: (true, false) с доказательством true ≢ false
+-- THEOREM: Δ ≠ ∅ (there exist distinguishable elements)
+-- Witness: (true, false) with proof true ≢ false
 DD-Axiom : ∃ (λ (pair : Bool × Bool) → fst pair ≡ snd pair → ⊥)
 DD-Axiom = (true , false) , true≢false
 
--- Это НЕ постулат, а ТЕОРЕМА с конструктивным доказательством!
+-- This is NOT a postulate, but a THEOREM with constructive proof!
 
 ------------------------------------------------------------------------
 -- FIBONACCI
@@ -103,7 +103,7 @@ fib zero = zero
 fib (suc zero) = suc zero
 fib (suc (suc n)) = fib (suc n) + fib n
 
--- Проверки
+-- Tests
 fib-5 : fib 5 ≡ 5
 fib-5 = refl
 
@@ -111,7 +111,7 @@ fib-10 : fib 10 ≡ 55
 fib-10 = refl
 
 ------------------------------------------------------------------------
--- ТРИАДА
+-- TRIAD
 ------------------------------------------------------------------------
 
 data Three : Set where
@@ -185,7 +185,7 @@ s₃ ∘ s₃ = e
 r³≡e : (r ∘ r) ∘ r ≡ e
 r³≡e = refl
 
--- S₃ неабелева
+-- S₃ is non-abelian
 s₃≢s₂ : s₃ ≡ s₂ → ⊥
 s₃≢s₂ ()
 
@@ -193,21 +193,21 @@ S₃-nonabelian : r ∘ s₁ ≡ s₁ ∘ r → ⊥
 S₃-nonabelian p = s₃≢s₂ (trans (sym refl) (trans p refl))
   where
     -- r ∘ s₁ = s₃, s₁ ∘ r = s₂
-    -- если p : s₃ ≡ s₂, противоречие
+    -- if p : s₃ ≡ s₂, contradiction
     lemma : r ∘ s₁ ≡ s₃
     lemma = refl
     lemma2 : s₁ ∘ r ≡ s₂
     lemma2 = refl
 
 ------------------------------------------------------------------------
--- РЕФЛЕКСИВНАЯ ВСЕЛЕННАЯ
+-- REFLEXIVE UNIVERSE
 ------------------------------------------------------------------------
 
 mutual
   data U : Set where
     UNIT EMPTY UNIV NAT BOOL : U
     PI SIGMA : (a : U) → (El a → U) → U
-    
+
   El : U → Set
   El UNIT = ⊤
   El EMPTY = ⊥
@@ -217,11 +217,11 @@ mutual
   El (PI a b) = (x : El a) → El (b x)
   El (SIGMA a b) = Σ (El a) (λ x → El (b x))
 
--- КЛЮЧЕВОЕ: El UNIV = U (рефлексивность)
+-- KEY: El UNIV = U (reflexivity)
 univ-reflexive : El UNIV ≡ U
 univ-reflexive = refl
 
--- Три различных кода
+-- Three distinct codes
 UNIT≢EMPTY : UNIT ≡ EMPTY → ⊥
 UNIT≢EMPTY ()
 
@@ -232,7 +232,7 @@ UNIT≢UNIV : UNIT ≡ UNIV → ⊥
 UNIT≢UNIV ()
 
 ------------------------------------------------------------------------
--- КАТЕГОРИЯ D
+-- CATEGORY D
 ------------------------------------------------------------------------
 
 record Category : Set₁ where
@@ -258,7 +258,7 @@ D = record
   }
 
 ------------------------------------------------------------------------
--- КОНТРАВАРИАНТНЫЙ ФУНКТОР (СОЗНАНИЕ)
+-- CONTRAVARIANT FUNCTOR (CONSCIOUSNESS)
 ------------------------------------------------------------------------
 
 ConsciousnessF₀ : U → U
@@ -267,7 +267,7 @@ ConsciousnessF₀ a = PI a (λ _ → UNIV)
 ConsciousnessF₁ : {a b : U} → (El a → El b) → (El (ConsciousnessF₀ b) → El (ConsciousnessF₀ a))
 ConsciousnessF₁ f g = λ x → g (f x)
 
--- Законы функтора
+-- Functor laws
 F-id : {a : U} (g : El (ConsciousnessF₀ a)) → ConsciousnessF₁ (λ x → x) g ≡ g
 F-id g = refl
 
@@ -276,7 +276,7 @@ F-comp : {a b c : U} (f : El a → El b) (h : El b → El c) (g : El (Consciousn
 F-comp f h g = refl
 
 ------------------------------------------------------------------------
--- S₃ ВКЛАДЫВАЕТСЯ В GL₃
+-- S₃ EMBEDS INTO GL₃
 ------------------------------------------------------------------------
 
 data Fin : ℕ → Set where
@@ -290,7 +290,7 @@ pattern i2 = suc (suc zero)
 Mat3 : Set
 Mat3 = Fin 3 → Fin 3 → ℕ
 
--- Перестановочные матрицы
+-- Permutation matrices
 perm-mat : S₃ → Mat3
 perm-mat e i0 i0 = 1
 perm-mat e i0 i1 = 0
@@ -347,37 +347,37 @@ perm-mat s₃ i2 i0 = 1
 perm-mat s₃ i2 i1 = 0
 perm-mat s₃ i2 i2 = 0
 
--- S₃ → GL₃ инъективно (частичная проверка)
+-- S₃ → GL₃ is injective (partial check)
 e≢r : e ≡ r → ⊥
 e≢r ()
 
 ------------------------------------------------------------------------
--- ГЛАВНАЯ ТЕОРЕМА
+-- MAIN THEOREM
 ------------------------------------------------------------------------
 
 record DD-Complete : Set₁ where
   field
-    -- Аксиома (теперь теорема!)
+    -- Axiom (now a theorem!)
     axiom : ∃ (λ (pair : Bool × Bool) → fst pair ≡ snd pair → ⊥)
-    
-    -- Следствия
+
+    -- Consequences
     bool-exists : Bool
     nat-exists  : ℕ
     fib-defined : ℕ → ℕ
-    
-    -- Триада
+
+    -- Triad
     triad-exists : Three
     S₃-acts : S₃ → Three → Three
     S₃-nonab : r ∘ s₁ ≡ s₁ ∘ r → ⊥
-    
-    -- Вложение
+
+    -- Embedding
     S₃-to-GL3 : S₃ → Mat3
-    
-    -- Рефлексивная вселенная
+
+    -- Reflexive universe
     U-exists : U
     El-UNIV : El UNIV ≡ U
-    
-    -- Категория D
+
+    -- Category D
     D-cat : Category
 
 dd-complete-proof : DD-Complete
@@ -396,31 +396,31 @@ dd-complete-proof = record
   }
 
 ------------------------------------------------------------------------
--- РЕЗЮМЕ
+-- SUMMARY
 ------------------------------------------------------------------------
 
 {-
-  ВСЕ ПОСТУЛАТЫ УСТРАНЕНЫ:
-  
-  Было:
+  ALL POSTULATES ELIMINATED:
+
+  Was:
     postulate DD-Axiom : ∃ ...
     postulate S3-embeds-SU3 : ⊤
     postulate SU3-minimal : ⊤
-    
-  Стало:
-    DD-Axiom : ТЕОРЕМА с конструктивным доказательством
-    S₃-to-GL3 : конструктивное вложение через perm-mat
-    
-  ДОКАЗАНО:
-    ✓ Δ ≠ ∅ (свидетель: true ≢ false)
-    ✓ S₃ неабелева
-    ✓ S₃ вкладывается в GL₃
-    ✓ Рефлексивная вселенная El UNIV = U
-    ✓ Категория D с законами
-    ✓ Контравариантный функтор сознания
-    
-  ЦЕПОЧКА:
+
+  Now:
+    DD-Axiom : THEOREM with constructive proof
+    S₃-to-GL3 : constructive embedding via perm-mat
+
+  PROVEN:
+    ✓ Δ ≠ ∅ (witness: true ≢ false)
+    ✓ S₃ is non-abelian
+    ✓ S₃ embeds into GL₃
+    ✓ Reflexive universe El UNIV = U
+    ✓ Category D with laws
+    ✓ Contravariant functor of consciousness
+
+  CHAIN:
     Δ ≠ ∅ → Bool → ℕ → Fib → Three → S₃ → GL₃ ⊃ SU(3)
                                              ↓
-                                        ФИЗИКА
+                                        PHYSICS
 -}

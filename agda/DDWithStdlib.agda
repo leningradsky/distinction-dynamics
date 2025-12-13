@@ -12,14 +12,14 @@ open import Function using (_∘_) renaming (id to idfun)
 open import Relation.Nullary using (¬_; Dec; yes; no)
 
 -- ============================================
--- ЧАСТЬ 1: Рефлексивная вселенная
+-- PART 1: Reflexive universe
 -- ============================================
 
 mutual
   data U : Set where
     UNIT EMPTY UNIV NAT BOOL : U
     PI SIGMA : (a : U) → (El a → U) → U
-    
+
   El : U → Set
   El UNIT = ⊤
   El EMPTY = ⊥
@@ -30,7 +30,7 @@ mutual
   El (SIGMA a b) = Σ (El a) λ x → El (b x)
 
 -- ============================================
--- ЧАСТЬ 2: Три различных кода
+-- PART 2: Three distinct codes
 -- ============================================
 
 UNIT≢EMPTY : UNIT ≡ EMPTY → ⊥
@@ -43,7 +43,7 @@ EMPTY≢UNIV : EMPTY ≡ UNIV → ⊥
 EMPTY≢UNIV ()
 
 -- ============================================
--- ЧАСТЬ 3: Триада
+-- PART 3: Triad
 -- ============================================
 
 data Three : Set where A B C : Three
@@ -75,7 +75,7 @@ canonicalTriad = record
   }
 
 -- ============================================
--- ЧАСТЬ 4: Категория D
+-- PART 4: Category D
 -- ============================================
 
 record Category : Set₁ where
@@ -86,7 +86,7 @@ record Category : Set₁ where
     _∘c_ : ∀ {a b c} → Hom b c → Hom a b → Hom a c
     id-left : ∀ {a b} (f : Hom a b) → identity ∘c f ≡ f
     id-right : ∀ {a b} (f : Hom a b) → f ∘c identity ≡ f
-    assoc : ∀ {a b c d} (f : Hom c d) (g : Hom b c) (h : Hom a b) 
+    assoc : ∀ {a b c d} (f : Hom c d) (g : Hom b c) (h : Hom a b)
           → (f ∘c g) ∘c h ≡ f ∘c (g ∘c h)
 
 D : Category
@@ -101,7 +101,7 @@ D = record
   }
 
 -- ============================================
--- ЧАСТЬ 5: Контравариантный функтор
+-- PART 5: Contravariant functor
 -- ============================================
 
 ConsciousnessF₀ : U → U
@@ -118,7 +118,7 @@ Consciousness-∘ : ∀ {a b c} (f : El a → El b) (h : El b → El c) (g : El 
 Consciousness-∘ f h g = refl
 
 -- ============================================
--- ЧАСТЬ 6: Группа S₃
+-- PART 6: Group S₃
 -- ============================================
 
 data Perm3 : Set where
@@ -217,7 +217,7 @@ s₁²≡e : s₁ · s₁ ≡ e
 s₁²≡e = refl
 
 -- ============================================
--- ЧАСТЬ 7: apply — гомоморфизм
+-- PART 7: apply is a homomorphism
 -- ============================================
 
 -- apply (p · q) x ≡ apply p (apply q x)
@@ -309,7 +309,7 @@ apply-e : ∀ x → apply e x ≡ x
 apply-e x = refl
 
 -- ============================================
--- ЧАСТЬ 8: Фибоначчи
+-- PART 8: Fibonacci
 -- ============================================
 
 fib : ℕ → ℕ
@@ -330,7 +330,7 @@ fib10 : fib 10 ≡ 55
 fib10 = refl
 
 -- ============================================
--- ЧАСТЬ 9: Метрика на Three
+-- PART 9: Metric on Three
 -- ============================================
 
 dist3 : Three → Three → ℕ
@@ -385,7 +385,7 @@ dist3-triangle C C B = s≤s z≤n
 dist3-triangle C C C = z≤n
 
 -- ============================================
--- ЧАСТЬ 10: S₃ — изометрии
+-- PART 10: S₃ are isometries
 -- ============================================
 
 isometry : ∀ p x y → dist3 (apply p x) (apply p y) ≡ dist3 x y
@@ -437,7 +437,7 @@ isometry s₃ C B = refl
 isometry s₃ C C = refl
 
 -- ============================================
--- ЧАСТЬ 11: Самоподобие
+-- PART 11: Self-similarity
 -- ============================================
 
 univ-in-univ : El UNIV
@@ -446,12 +446,12 @@ univ-in-univ = UNIV
 self-application : El UNIV ≡ U
 self-application = refl
 
--- Код, содержащий себя
+-- Code containing itself
 self-code : Σ U (λ c → El c ≡ U)
 self-code = UNIV , refl
 
 -- ============================================
--- ЧАСТЬ 12: Морфизмы триад
+-- PART 12: Triad morphisms
 -- ============================================
 
 record TriadMorphism (T₁ T₂ : Triad) : Set where
@@ -466,31 +466,31 @@ id-triad T = record
   }
 
 -- ============================================
--- ЧАСТЬ 13: Орбиты и стабилизаторы
+-- PART 13: Orbits and stabilizers
 -- ============================================
 
--- Стабилизатор точки x: перестановки, фиксирующие x
+-- Stabilizer of point x: permutations that fix x
 Stab : Three → Perm3 → Set
 Stab x p = apply p x ≡ x
 
--- e стабилизирует всё
+-- e stabilizes everything
 stab-e : ∀ x → Stab x e
 stab-e x = refl
 
--- s₁ стабилизирует C
+-- s₁ stabilizes C
 stab-s₁-C : Stab C s₁
 stab-s₁-C = refl
 
--- s₂ стабилизирует A
+-- s₂ stabilizes A
 stab-s₂-A : Stab A s₂
 stab-s₂-A = refl
 
--- s₃ стабилизирует B
+-- s₃ stabilizes B
 stab-s₃-B : Stab B s₃
 stab-s₃-B = refl
 
--- Орбита: все точки, достижимые из x
--- S₃ транзитивно на Three: из любой точки можно достичь любую
+-- Orbit: all points reachable from x
+-- S₃ acts transitively on Three: any point can reach any other
 orbit-AB : apply r A ≡ B
 orbit-AB = refl
 
@@ -510,5 +510,5 @@ orbit-CB : apply r² C ≡ B
 orbit-CB = refl
 
 -- ============================================
--- ИТОГ: 13 ЧАСТЕЙ
+-- RESULT: 13 PARTS
 -- ============================================

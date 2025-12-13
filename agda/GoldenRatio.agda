@@ -2,19 +2,19 @@
 
 module GoldenRatio where
 
--- Натуральные числа
+-- Natural numbers
 data Nat : Set where
   zero : Nat
   suc : Nat -> Nat
 
--- Рациональные как пара (числитель, знаменатель)
+-- Rationals as a pair (numerator, denominator)
 record Rat : Set where
   constructor _/_
   field
     num : Nat
-    den : Nat  -- неявно +1, чтобы избежать деления на 0
+    den : Nat  -- implicitly +1 to avoid division by 0
 
--- Арифметика Nat
+-- Nat arithmetic
 _+N_ : Nat -> Nat -> Nat
 zero +N m = m
 suc n +N m = suc (n +N m)
@@ -23,19 +23,19 @@ _*N_ : Nat -> Nat -> Nat
 zero *N m = zero
 suc n *N m = m +N (n *N m)
 
--- Фибоначчи
+-- Fibonacci
 fib : Nat -> Nat
 fib zero = zero
 fib (suc zero) = suc zero
 fib (suc (suc n)) = fib (suc n) +N fib n
 
--- Последовательность отношений fib(n+1)/fib(n)
--- Это сходится к phi
+-- Sequence of ratios fib(n+1)/fib(n)
+-- This converges to phi
 fibRatio : Nat -> Rat
-fibRatio zero = suc zero / zero        -- 1/1 
+fibRatio zero = suc zero / zero        -- 1/1
 fibRatio (suc n) = fib (suc (suc n)) / fib (suc n)
 
--- Примеры:
+-- Examples:
 -- fibRatio 0 = 1/1 = 1
 -- fibRatio 1 = fib(2)/fib(1) = 1/1 = 1
 -- fibRatio 2 = fib(3)/fib(2) = 2/1 = 2
@@ -45,23 +45,23 @@ fibRatio (suc n) = fib (suc (suc n)) / fib (suc n)
 -- ...
 -- lim = phi = 1.618...
 
--- КЛЮЧЕВОЕ СВОЙСТВО PHI:
+-- KEY PROPERTY OF PHI:
 -- phi^2 = phi + 1
--- Эквивалентно: phi = 1 + 1/phi
+-- Equivalently: phi = 1 + 1/phi
 
--- Для fib: fib(n+2) = fib(n+1) + fib(n)
--- Делим на fib(n+1): fib(n+2)/fib(n+1) = 1 + fib(n)/fib(n+1)
--- То есть: r(n+1) = 1 + 1/r(n) где r(n) = fib(n+1)/fib(n)
+-- For fib: fib(n+2) = fib(n+1) + fib(n)
+-- Divide by fib(n+1): fib(n+2)/fib(n+1) = 1 + fib(n)/fib(n+1)
+-- That is: r(n+1) = 1 + 1/r(n) where r(n) = fib(n+1)/fib(n)
 
--- Это РЕКУРСИЯ x_{n+1} = 1 + 1/x_n
--- Её фиксированная точка: x = 1 + 1/x => x^2 = x + 1 => x = phi
+-- This is RECURSION x_{n+1} = 1 + 1/x_n
+-- Its fixed point: x = 1 + 1/x => x^2 = x + 1 => x = phi
 
--- Рекурсивный тип (бесконечное дерево)
+-- Recursive type (infinite tree)
 data InfTree : Set where
   node : InfTree -> InfTree -> InfTree
 
--- ИТОГ:
--- 1. Определили Nat, Rat, fib, fibRatio
--- 2. fibRatio(n) -> phi при n -> infinity
--- 3. phi удовлетворяет phi^2 = phi + 1
--- 4. Это СЛЕДУЕТ из рекурсии fib(n+2) = fib(n+1) + fib(n)
+-- CONCLUSION:
+-- 1. Defined Nat, Rat, fib, fibRatio
+-- 2. fibRatio(n) -> phi as n -> infinity
+-- 3. phi satisfies phi^2 = phi + 1
+-- 4. This FOLLOWS from the recursion fib(n+2) = fib(n+1) + fib(n)
