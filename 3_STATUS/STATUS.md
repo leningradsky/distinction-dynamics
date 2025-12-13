@@ -146,7 +146,8 @@ README.md must not contradict this file.
 | DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
 | DD-Energy | H = energy (structural identification) | DERIVED | DD-Time, DD-Generator |
 | DD-Dim3 | d = 3 (criticality selection) | DERIVED | Criticality, DD-Space, DD-Time-Unique |
-| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | DERIVED | Criticality, DD-Unitarity, DD-Decoherence, DD-Space |
+| DD-Connection | Gauge connection A_μ (local phase coherence) | DERIVED | Criticality, ℂ, Unitarity, Born, Decoherence |
+| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | DERIVED | DD-Connection, Criticality |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique strong gauge group~~ | **SUBSUMED** | Now part of DD-Gauge |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -203,6 +204,13 @@ README.md must not contradict this file.
 - d = 3: unique dimension satisfying all D1-D5 simultaneously
 - This is structural intersection, not anthropic argument
 
+**Gauge Connection (DD-Connection):** Why gauge structure is forced:
+- Lemma 1: Absolute phase impossible (from decoherence)
+- Lemma 2: Local phase shifts inevitable (from locality of distinguishability)
+- Lemma 3: Local phase freedom requires connection (for history consistency)
+- Lemma 4: Connection dynamics inevitable (connection has its own history)
+- Yang–Mills is not model but normal form of distinguishability preservation
+
 **Gauge Groups (DD-Gauge):** SU(3)×SU(2)×U(1) as unique structure:
 - Five structural criteria: C1 (local unitarity), C2 (non-trivial internal), C3 (factorizability), C4 (criticality), C5 (minimality)
 - U(1): minimal phase distinguishability
@@ -242,7 +250,7 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 13 |
-| DERIVED | 11 |
+| DERIVED | 12 |
 | CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |

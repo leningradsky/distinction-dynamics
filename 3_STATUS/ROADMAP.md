@@ -96,3 +96,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Gauge | SU(3)×SU(2)×U(1) by elimination proof | DERIVED — HYP-G1..G4 superseded |
 | 2025-12-13 | DD-Dim3 | Enhanced with D1-D5 admissibility criteria | Structural intersection argument |
 | 2025-12-13 | DD-Energy | Enhanced with Lemmas 1-4 elimination proof | H = energy by structural uniqueness |
+| 2025-12-13 | DD-Connection | Gauge connection from local phase coherence | DERIVED — T18, Lemmas 1-4 |
