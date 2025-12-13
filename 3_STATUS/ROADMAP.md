@@ -85,3 +85,5 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Unitarity | U(n) dynamics from criticality | Added — unitarity = distinguishability preservation |
 | 2025-12-13 | GAP-3 | DD-Time: ℝ forced by history completeness | CLOSED — ℤ/ℚ fail criticality, ℝ unique |
 | 2025-12-13 | DD-Generator | H hermitian from Stone's theorem | Added — U(t)=e^{-itH} forced by continuous unitarity |
+| 2025-12-13 | DD-Born | Born rule μ=\|ψ\|² from unitarity | DERIVED — unique distinguishability measure |
+| 2025-12-13 | FORCED_SPINE | 12-thesis derivation T0-T11 | Created — authoritative reference for complete chain |

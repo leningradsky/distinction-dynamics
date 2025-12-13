@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v0.9 (QM Kinematics Complete)
+**Version:** v1.0 (FORCED Spine Complete)
 
 ---
 
@@ -21,8 +21,11 @@ From this, DD forces:
 - Unitary dynamics U(n) — not a quantum postulate, but criticality preservation
 - Continuous time parameter t ∈ ℝ — not assumed, but forced by history completeness
 - Hermitian generator H with U(t) = e^{-itH} — Stone's theorem, forced by continuous unitarity
+- Born rule μ = |ψ|² — unique distinguishability measure (DERIVED from unitarity)
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
+
+**Key insight:** Physics is not derived because it's not an axiom. It's the only stable regime of history distinguishability.
 
 ## What This Is NOT
 
@@ -43,7 +46,7 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 | **FORCED** | 28 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
 | **HYP** | 18 | Hypotheses requiring justification |
-| **DERIVED** | 3 | Follows from HYP + FORCED |
+| **DERIVED** | 4 | Follows from HYP + FORCED |
 | **CONJ** | 3 | Conjectures (may be numerology) |
 | **CIRC** | 2 | Circular dependencies |
 | **PRED** | 1 | Testable prediction |

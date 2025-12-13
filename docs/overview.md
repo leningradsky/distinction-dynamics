@@ -12,6 +12,7 @@ From this, structural necessities follow:
 - Unitary dynamics U(n) (criticality preservation)
 - Continuous time t ∈ ℝ (history completeness)
 - Hermitian generator H with U(t) = e^{-itH} (Stone's theorem)
+- Born rule μ = |ψ|² (unique distinguishability measure)
 
 ## What DD Claims
 
@@ -29,10 +30,11 @@ From this, structural necessities follow:
 - Spacetime identification
 - Total: 18 claims
 
-### DERIVED (Given HYP)
-- SU(3) uniqueness
+### DERIVED (From FORCED Structure)
+- Born rule μ = |ψ|² (DD-Born theorem)
+- SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 3 claims
+- Total: 4 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula
@@ -43,7 +45,9 @@ From this, structural necessities follow:
 
 The FORCED chain derives the complete number tower ℕ → ℤ → ℚ → ℝ → ℂ from criticality alone.
 
-Continuum (ℝ), complex numbers (ℂ), unitary dynamics U(n), continuous time, and Hermitian generator H are all FORCED — not hypotheses.
+Continuum (ℝ), complex numbers (ℂ), unitary dynamics U(n), continuous time, Hermitian generator H, and Born rule are all FORCED/DERIVED — not hypotheses.
+
+**Physics is not derived because it's not an axiom. It's the only stable regime of history distinguishability.**
 
 This is complete QM kinematics derived without physics postulates.
 
@@ -58,8 +62,9 @@ This is complete QM kinematics derived without physics postulates.
 ## Files to Read
 
 1. [0_CORE/AXIOM.md](../0_CORE/AXIOM.md) — The primitive
-2. [1_DERIVATION/FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) — What is forced
-3. [3_STATUS/STATUS.md](../3_STATUS/STATUS.md) — Master truth file
+2. **[1_DERIVATION/FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md)** — Complete 12-thesis derivation
+3. [1_DERIVATION/FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) — Detailed proofs
+4. [3_STATUS/STATUS.md](../3_STATUS/STATUS.md) — Master truth file
 
 ## What DD Does NOT Claim
 

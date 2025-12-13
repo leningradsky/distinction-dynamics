@@ -2,6 +2,29 @@
 
 All notable changes to this project are documented here.
 
+## [1.0] - 2025-12-13
+
+### Added
+- **FORCED_SPINE.md**: Authoritative 12-thesis derivation (T0-T11)
+- **DD-Born theorem**: Born rule μ = |ψ|² derived from unitarity + measure axioms
+- Complete QM kinematics derivation without physics postulates
+
+### Changed
+- DERIVED count: 3 → 4 (added DD-Born)
+- Structural boundary clearly marked: FORCED/DERIVED above, HYP/CONJ below
+
+### Summary
+The FORCED spine is complete:
+- T0: Ø impossible (axiom)
+- T1-T4: Distinction → Bool → self-application → ℕ
+- T5-T6: Criticality → ℤ → ℚ → ℝ
+- T7-T8: ℂ → U(n)
+- T9-T10: ℝ-time → Hermitian H
+- T11: Born rule (DERIVED)
+
+Physics is not derived because it's not an axiom.
+It's the only stable regime of history distinguishability.
+
 ## [0.9] - 2025-12-13
 
 ### Added
