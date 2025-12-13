@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here.
 
+## [0.7] - 2025-12-13
+
+### Added
+- DD-Unitarity Theorem: U(n) dynamics forced by criticality (not QM postulate)
+- Unitarity Lemma: Non-unitary A has ‖Aⁿv‖ → 0 or ∞ (polar decomposition)
+- Critical Dynamics Constraints: K1 (no collapse), K2 (no explosion), K3 (distinguishability)
+
+### Changed
+- GAP-3 now correctly formulated: time = parameter of unitary histories over ℂ
+- Unitarity reframed as preservation of distinguishability, not probability
+
 ## [0.6] - 2025-12-13
 
 ### Added

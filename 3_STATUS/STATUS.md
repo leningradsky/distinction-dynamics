@@ -65,6 +65,7 @@ README.md must not contradict this file.
 | Chain-10 | ℚ (commensurability) | FORCED | Chain-9, CR-5, DEF-UAC |
 | Chain-11 | ℝ (limit closure) | FORCED | Chain-10, DEF-UAC |
 | Chain-12 | ℂ (automorphism closure) | FORCED | Chain-11, CR-7, DEF-UAC |
+| DD-Unitarity | U(n) dynamics | FORCED | Chain-12, DEF-UAC |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -80,6 +81,13 @@ README.md must not contradict this file.
 - CR-7 requires non-trivial automorphism structure for critical dynamics.
 - ℂ is the unique commutative division algebra over ℝ with continuous U(1) action.
 - Process orientation distinguishable via phase, without appealing to time (GAP-3).
+
+**Unitarity (DD-Unitarity):** U(n) dynamics forced by criticality preservation:
+- Polar decomposition: A = UP (U unitary, P positive-definite Hermitian)
+- If P ≠ I: eigenvalue λ < 1 ⟹ Aⁿv → 0 (Φ → 0); λ > 1 ⟹ Aⁿv → ∞ (Φ → ∞)
+- Both violate UAC; therefore P = I, A is unitary
+- Consequence: Aut_crit(X) = U(n) — pure linear algebra, no physics postulates
+- This is NOT a quantum axiom; it's preservation of distinguishability under iteration.
 
 ---
 
@@ -145,7 +153,7 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 25 |
+| FORCED | 26 |
 | DEF | 8 |
 | HYP | 19 |
 | DERIVED | 3 |

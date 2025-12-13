@@ -82,3 +82,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | GAP-4 | Irreversibility argument from Ø impossible | CLOSED — see FORCED_CHAIN.md Chain-7 |
 | 2025-12-13 | GAP-2 | ℤ/ℚ/ℝ forced by criticality closure | CLOSED — see FORCED_CHAIN.md Chain-9,10,11 |
 | 2025-12-13 | Chain-12 | ℂ forced by automorphism closure | Added — process distinguishability requires U(1) |
+| 2025-12-13 | DD-Unitarity | U(n) dynamics from criticality | Added — unitarity = distinguishability preservation |

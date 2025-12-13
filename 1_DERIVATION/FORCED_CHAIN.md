@@ -235,6 +235,73 @@ The following chain establishes that ℂ is not "added for convenience" but is t
 
 ---
 
+## Unitarity from Criticality (DD-Unitarity Theorem)
+
+The following establishes that unitarity is not a quantum mechanical postulate but a structural consequence of criticality for dynamics over ℂ.
+
+### Critical Dynamics Constraints
+
+For a representation X: C → Vect_ℂ where C is critical (0 < Φ < ∞):
+
+**K1 (No Collapse):** History must not degenerate:
+$$\|X(f_n \circ \cdots \circ f_1)v\| \not\to 0$$
+
+**K2 (No Explosion):** History must not diverge:
+$$\|X(f_n \circ \cdots \circ f_1)v\| \not\to \infty$$
+
+**K3 (Distinguishability):** Different histories remain distinguishable:
+$$f \neq g \Rightarrow X(f) \neq X(g)$$
+
+### FORCED: Unitarity Lemma
+
+- **Statement:** If A ∈ GL(V) is not unitary, then ∃v such that ‖Aⁿv‖ → 0 or ‖Aⁿv‖ → ∞
+- **Proof:**
+  1. By polar decomposition: A = UP where U is unitary, P is positive-definite Hermitian
+  2. P has spectral decomposition with real eigenvalues λ₁, ..., λₙ > 0
+  3. If P ≠ I, then either λ_min < 1 or λ_max > 1 (or both)
+  4. Case λ_min < 1: Let v be eigenvector for λ_min. Then Pⁿv = λ_minⁿ v → 0
+  5. Case λ_max > 1: Let v be eigenvector for λ_max. Then Pⁿv = λ_maxⁿ v → ∞
+  6. Since Aⁿ = UⁿPⁿ and U preserves norm: ‖Aⁿv‖ = ‖Pⁿv‖ → 0 or ∞
+- **Status:** FORCED (pure linear algebra, no physics)
+
+### FORCED: DD-Unitarity Theorem
+
+- **Statement:** In a critical representation X: C → Vect_ℂ, all admissible process automorphisms are unitary.
+- **Justification:**
+  1. Let A = X(f) for some morphism f
+  2. If A is not unitary, by Unitarity Lemma: ∃v with ‖Aⁿv‖ → 0 or ∞
+  3. ‖Aⁿv‖ → 0 violates K1 (collapse) ⟹ Φ → 0
+  4. ‖Aⁿv‖ → ∞ violates K2 (explosion) ⟹ Φ → ∞
+  5. Both violate UAC: 0 < Φ < ∞
+  6. Therefore A must be unitary
+  7. Conclusion: Aut_crit(X) = U(n) (or SU(n) modulo global phase)
+- **Depends on:** Chain-12 (ℂ), DEF-UAC (0 < Φ < ∞), Unitarity Lemma
+- **Note:** This derivation uses ONLY:
+  - Complex numbers (ℂ) — already FORCED
+  - Process iteration (composition)
+  - Criticality (UAC: 0 < Φ < ∞)
+
+  It does NOT use:
+  - Probability or measurement
+  - Born rule
+  - Schrödinger equation
+  - Energy or Hamiltonians
+  - Any physics postulates
+- **Status:** FORCED (unitarity = preservation of distinguishability under iteration)
+
+### Consequence for GAP-3 (Time)
+
+With unitarity established, GAP-3 can now be correctly formulated:
+
+**Time** = parameter of distinguishability of unitary histories over ℂ
+
+This was impossible to state before because:
+- Without ℂ: no phase, no orientation
+- Without unitarity: histories unstable (collapse or explosion)
+- Now: unitary trajectories over ℂ provide stable, distinguishable histories
+
+---
+
 ## Stopping Point for Pure FORCED Derivation
 
 **Beyond this point, additional hypotheses are required:**
@@ -243,9 +310,9 @@ The following chain establishes that ℂ is not "added for convenience" but is t
 - **Dyad insufficiency** requires definition of "self-observation" → HYP, not FORCED
 - **Gauge groups** require physical constraints → HYP-G1..G4 in BRIDGES.md
 - **Spacetime identification** requires Fisher metric bridge → HYP-F1, HYP-S4 in BRIDGES.md
-- **Time emergence** requires additional structure → GAP-3
+- **Time emergence** (GAP-3) → now correctly formulated, see below
 
-**Note:** Number systems (ℕ → ℤ → ℚ → ℝ → ℂ) are now FORCED via Chain-8..12. GAP-2 is closed.
+**Note:** Number systems (ℕ → ℤ → ℚ → ℝ → ℂ) and unitarity are now FORCED via Chain-8..12 + DD-Unitarity.
 
 **Summary of forced chain:**
 
@@ -276,11 +343,13 @@ Chain-11: ℝ ← FORCED (limit closure)
     ↓
 Chain-12: ℂ ← FORCED (automorphism closure)
     ↓
+DD-Unitarity: U(n) ← FORCED (criticality preservation)
+    ↓
 ════════════════════════════════════════
 FORCED DERIVATION ENDS HERE
-Number systems derived: ℕ → ℤ → ℚ → ℝ → ℂ
-GAP-2 closed.
-Next: GAP-3 (time) — requires ℂ as prerequisite
-See 2_EXPRESSION/BRIDGES.md
+Number systems: ℕ → ℤ → ℚ → ℝ → ℂ
+Dynamics: Aut_crit = U(n)
+GAP-2 closed. GAP-3 now correctly formulated.
+Time = parameter of unitary histories over ℂ
 ════════════════════════════════════════
 ```
