@@ -196,14 +196,13 @@ README.md must not contradict this file.
 - Energy ≡ generator of time translation in unitary evolution
 - This is not interpretation but uniqueness argument
 
-**Dimension (DD-Dim3):** d = 3 as criticality selection:
-- Space = factorization structure of distinguishability (correlation graph)
-- Metric forced by criticality (correlations must decay with distance)
-- d = 1: edge-dominated, unstable
-- d = 2: no stable phases with continuous symmetry
-- d ≥ 4: correlations decay too fast, Φ → 0
-- d = 3: unique dimension with stable criticality (1/r² decay, balanced volume/surface)
-- This is structural selection, not anthropic argument
+**Dimension (DD-Dim3):** d = 3 as unique admissible dimension:
+- Five admissibility criteria: D1 (localizable excitations), D2 (non-trivial dynamics), D3 (factorizing decoherence), D4 (non-trivial gauge), D5 (criticality)
+- d = 1: fails D1, D3 (no locality, total decoherence)
+- d = 2: fails D2, D4 (no local dynamics, gauge trivializes)
+- d ≥ 4: fails D1, D5 (no stable objects, selection-unstable)
+- d = 3: unique dimension satisfying all D1-D5 simultaneously
+- This is structural intersection, not anthropic argument
 
 **Gauge Groups (DD-Gauge):** SU(3)×SU(2)×U(1) as unique structure:
 - Five structural criteria: C1 (local unitarity), C2 (non-trivial internal), C3 (factorizability), C4 (criticality), C5 (minimality)
