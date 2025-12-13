@@ -308,9 +308,103 @@ All alternatives either lose invariance or explode Φ.
 
 ---
 
+## Level 7: Decoherence
+
+### T12: Decoherence (DD-Decoherence)
+
+**Statement:** "Measurement" is not a physical event but loss of phase distinguishability relative to observer subalgebra. No collapse exists.
+
+**Setup:**
+
+We have FORCED:
+1. States in H over ℂ
+2. Unitary evolution
+3. Born rule μ = |ψ|²
+4. Criticality: distinguishability preserved locally, not necessarily globally
+
+**Step 1. Composition of distinctions (FORCED):**
+
+For composite system:
+$$\mathcal{H} = \mathcal{H}_S \otimes \mathcal{H}_E$$
+
+Global state:
+$$|\Psi\rangle = \sum_i c_i |s_i\rangle \otimes |e_i\rangle$$
+
+This is not hypothesis — composition of distinctions = tensor product.
+
+**Step 2. Relative distinguishability:**
+
+Distinguishability is operational ability to distinguish alternatives.
+
+For observer with access only to S:
+$$\rho_S = \mathrm{Tr}_E(|\Psi\rangle\langle\Psi|)$$
+
+If ⟨eᵢ|eⱼ⟩ ≈ 0 for i ≠ j, phase information is destroyed *relative to S*.
+
+Key: not destroyed globally, but lost relative to observable subalgebra.
+
+**Step 3. Decoherence = factorization of Φ:**
+
+In DD terms:
+$$\Phi(\Psi) \longrightarrow \Phi(S) + \Phi(E)$$
+
+- Globally: Φ preserved (unitary evolution)
+- Locally: interference terms vanish
+
+This is factorization of distinguishability.
+
+**Step 4. Why collapse cannot exist:**
+
+Collapse as event would require:
+- Non-unitary evolution
+- Jump in H
+- Violation of criticality
+
+But in DD:
+- Unitarity is FORCED (T8)
+- Born rule is DERIVED (T11)
+- Distinguishability is relative to subalgebra
+
+Therefore: **no mechanism for collapse exists**.
+
+"Collapse" is not physical process but change of admissible distinguishability factorization.
+
+**Step 5. Why Born rule applies "after":**
+
+After decoherence:
+$$\rho_S \approx \sum_i |c_i|^2 |s_i\rangle\langle s_i|$$
+
+Alternatives became:
+- Orthogonal
+- Additive
+- Stable
+
+Born rule applies here and only here to factorized alternatives (and we proved no other rule is possible).
+
+**Theorem (DD-Decoherence):**
+
+In critical theory of distinctions:
+1. Physical collapse does not exist
+2. "Measurement" = loss of phase distinguishability relative to observer subalgebra
+3. Decoherence = factorization of global distinguishability
+4. Born rule applies to factorized alternatives as the unique stable measure
+
+**Status:** DERIVED (from T8, T11, tensor structure)
+
+**Depends on:** T8 (unitarity), T11 (Born rule)
+
+**Note:** This completes quantum mechanics without postulates:
+- Unitary dynamics (FORCED)
+- Born rule (DERIVED)
+- Decoherence (DERIVED)
+- No collapse (FORCED by unitarity)
+- Measurement as relative (DERIVED)
+
+---
+
 ## Boundary
 
-### T12: Structural Boundary
+### T13: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
@@ -353,12 +447,21 @@ T10: H hermitian — Stone's theorem (FORCED)
       ↓
 T11: Born rule — μ = |ψ|² (DERIVED)
       ↓
+T12: Decoherence — no collapse (DERIVED)
+      ↓
 ═══════════════════════════════════════
-       QM KINEMATICS COMPLETE
-       No physics postulates used
+     QUANTUM MECHANICS COMPLETE
+     No physics postulates used
 ═══════════════════════════════════════
 
-What remains:
+Derived without postulates:
+  • Unitary dynamics
+  • Born rule
+  • Decoherence
+  • No collapse
+  • Measurement as relative
+
+What remains (HYP/interpretation):
   • Energy interpretation of H
   • Spacetime as history coordination
   • Gauge groups as local automorphisms

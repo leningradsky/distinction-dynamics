@@ -2,6 +2,28 @@
 
 All notable changes to this project are documented here.
 
+## [1.1] - 2025-12-13
+
+### Added
+- **DD-Decoherence theorem (T12)**: Measurement without collapse
+  - Composition of distinctions = tensor product
+  - Distinguishability relative to subalgebra
+  - Φ factorization: Φ(Ψ) → Φ(S) + Φ(E)
+  - Collapse impossible (violates FORCED unitarity)
+  - Born rule applies to factorized alternatives
+
+### Changed
+- DERIVED count: 4 → 5 (added DD-Decoherence)
+- T12 → T13 (Boundary renumbered)
+
+### Summary
+Quantum mechanics is now complete without postulates:
+- Unitary dynamics (FORCED)
+- Born rule (DERIVED)
+- Decoherence (DERIVED)
+- No collapse (FORCED by unitarity)
+- Measurement as relative (DERIVED)
+
 ## [1.0] - 2025-12-13
 
 ### Added

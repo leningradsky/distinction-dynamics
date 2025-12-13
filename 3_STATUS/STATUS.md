@@ -139,18 +139,25 @@ README.md must not contradict this file.
 
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
-| DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DERIVED | DD-Unitarity, M1-M4 |
+| DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DERIVED | DD-Unitarity, P1-P3 |
+| DD-Decoherence | No collapse, measurement relative | DERIVED | DD-Unitarity, DD-Born |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
 
 **Born Rule (DD-Born):** Unique distinguishability measure from unitarity:
-- M1: Non-negativity (definition)
-- M2: Unitary invariance (from DD-Unitarity)
-- M3: Additivity on orthogonal alternatives (from criticality)
-- M4: Normalization (convention)
-- Uniqueness: f(Σxᵢ) = Σf(xᵢ), f(0)=0, f(1)=1 ⟹ f(x) = x
+- P1: Normalization (Σμ(ψᵢ) = 1)
+- P2: Additivity on orthogonal alternatives
+- P3: History invariance (μ(ψ) = μ(U(t)ψ))
+- Uniqueness: f(√(a+b)) = f(√a) + f(√b) ⟹ f(√x) = Cx ⟹ μ = |ψ|²
 - This is NOT Gleason's theorem; DD-Born works for any dimension.
+
+**Decoherence (DD-Decoherence):** Measurement without collapse:
+- Composition of distinctions = tensor product (FORCED)
+- Distinguishability relative to subalgebra
+- Φ(Ψ) → Φ(S) + Φ(E) (factorization)
+- Collapse impossible: would violate unitarity (FORCED)
+- Born rule applies to factorized alternatives
 
 ### Conjectures (CONJ)
 
@@ -182,7 +189,7 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 4 |
+| DERIVED | 5 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |

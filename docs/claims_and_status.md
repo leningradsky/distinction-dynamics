@@ -81,11 +81,12 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DERIVED Claims (4)
+## DERIVED Claims (5)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
 | DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DD-Unitarity | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Decoherence | No collapse, measurement relative | DD-Unitarity, DD-Born | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | SU(3)-unique | SU(3) is unique | HYP-G1..G4 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -127,10 +128,10 @@ Complete list of all claims with their status and location.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 4 |
+| DERIVED | 5 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **65** |
+| **Total** | **66** |
 
 **Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 moved to CONJ.

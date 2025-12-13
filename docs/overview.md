@@ -13,6 +13,7 @@ From this, structural necessities follow:
 - Continuous time t ∈ ℝ (history completeness)
 - Hermitian generator H with U(t) = e^{-itH} (Stone's theorem)
 - Born rule μ = |ψ|² (unique distinguishability measure)
+- Decoherence without collapse (measurement as relative distinguishability)
 
 ## What DD Claims
 
@@ -32,9 +33,10 @@ From this, structural necessities follow:
 
 ### DERIVED (From FORCED Structure)
 - Born rule μ = |ψ|² (DD-Born theorem)
+- Decoherence without collapse (DD-Decoherence theorem)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 4 claims
+- Total: 5 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula
