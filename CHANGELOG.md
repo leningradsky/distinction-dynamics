@@ -2,6 +2,21 @@
 
 All notable changes to this project are documented here.
 
+## [0.9] - 2025-12-13
+
+### Added
+- DD-Generator Theorem: Hermitian generator H forced by Stone's theorem
+- U(t) = e^{-itH} form uniquely determined by additive time → multiplicative operators
+- Complete QM kinematics derivation: ℂ, U(n), t ∈ ℝ, H hermitian — all FORCED
+
+### Changed
+- FORCED count: 27 → 28
+- H interpreted as "generator of distinguishability" (energy interpretation requires bridge)
+- Stopping point for pure FORCED derivation clearly marked
+
+### Note
+This completes the FORCED derivation chain. All further structure (Born rule, energy interpretation, gauge groups, spacetime) requires HYP or further derivation.
+
 ## [0.8] - 2025-12-13
 
 ### Added

@@ -11,6 +11,7 @@ From this, structural necessities follow:
 - Critical regime (exponential growth constraints)
 - Unitary dynamics U(n) (criticality preservation)
 - Continuous time t ∈ ℝ (history completeness)
+- Hermitian generator H with U(t) = e^{-itH} (Stone's theorem)
 
 ## What DD Claims
 
@@ -19,7 +20,8 @@ From this, structural necessities follow:
 - Critical regime constraints (CR-1 to CR-7)
 - Unitary dynamics U(n) (DD-Unitarity theorem)
 - Continuous time t ∈ ℝ (DD-Time theorem)
-- Total: 27 claims
+- Hermitian generator H (DD-Generator theorem)
+- Total: 28 claims
 
 ### HYP (Hypotheses for Physics)
 - Fisher metric = distinction geometry
@@ -41,7 +43,9 @@ From this, structural necessities follow:
 
 The FORCED chain derives the complete number tower ℕ → ℤ → ℚ → ℝ → ℂ from criticality alone.
 
-Continuum (ℝ), complex numbers (ℂ), unitary dynamics U(n), and continuous time are all FORCED — not hypotheses.
+Continuum (ℝ), complex numbers (ℂ), unitary dynamics U(n), continuous time, and Hermitian generator H are all FORCED — not hypotheses.
+
+This is complete QM kinematics derived without physics postulates.
 
 ## Falsifiability
 

@@ -4,7 +4,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (27)
+## FORCED Claims (28)
 
 | ID | Statement | Location |
 |----|-----------|----------|
@@ -22,6 +22,7 @@ Complete list of all claims with their status and location.
 | Chain-12 | ℂ (automorphism closure) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | DD-Unitarity | U(n) dynamics | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | DD-Time | t ∈ ℝ (history parameter) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| DD-Generator | H hermitian, U(t)=e^{-itH} | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | CR-1 | Finite local valence | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-2 | Finite generators | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-3 | Non-polynomial growth | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
@@ -122,13 +123,13 @@ Complete list of all claims with their status and location.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 27 |
+| FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
 | DERIVED | 3 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **63** |
+| **Total** | **64** |
 
 **Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 moved to CONJ.

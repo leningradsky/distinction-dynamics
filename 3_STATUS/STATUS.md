@@ -67,6 +67,7 @@ README.md must not contradict this file.
 | Chain-12 | ℂ (automorphism closure) | FORCED | Chain-11, CR-7, DEF-UAC |
 | DD-Unitarity | U(n) dynamics | FORCED | Chain-12, DEF-UAC |
 | DD-Time | t ∈ ℝ (history parameter) | FORCED | DD-Unitarity, DEF-UAC |
+| DD-Generator | H hermitian, U(t)=e^{-itH} | FORCED | DD-Time, DD-Unitarity, Stone |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -97,6 +98,13 @@ README.md must not contradict this file.
 - ℝ is unique: connected, complete, ordered abelian group (classical theorem)
 - Stone: continuous unitary groups are homomorphisms ℝ → U(n)
 - This is NOT "time is continuous because we observe it"; it's structural necessity.
+
+**Hermitian Generator (DD-Generator):** H and exponential form U(t) = e^{-itH} forced by Stone's theorem:
+- Continuous unitary groups U: ℝ → U(n) have unique Hermitian generator H
+- If H not Hermitian: e^{-itH} not unitary → collapse or explosion → violates UAC
+- Exponential form forced by: additive time → multiplicative operators, continuity → differentiability
+- H is "generator of distinguishability" — energy interpretation requires additional bridge.
+- This completes QM kinematics: ℂ, U(n), t ∈ ℝ, H hermitian — all FORCED, no physics postulates.
 
 ---
 
@@ -162,7 +170,7 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 27 |
+| FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
 | DERIVED | 3 |

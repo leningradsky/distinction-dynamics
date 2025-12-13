@@ -29,11 +29,11 @@ Based on [6_AUDITS/known_objections.md](../6_AUDITS/known_objections.md).
 ### Q: Too many hypotheses for "derivation"
 
 **A:** Partially correct. DD claims:
-- 27 FORCED results from axiom (including ℕ → ℤ → ℚ → ℝ → ℂ, U(n), continuous time)
+- 28 FORCED results from axiom (including ℕ → ℤ → ℚ → ℝ → ℂ, U(n), continuous time, Hermitian generator H)
 - 18 HYP bridges to physics (explicitly labeled)
 - Compatibility, not pure derivation
 
-The value is explicit labeling, not hidden assumptions.
+The value is explicit labeling, not hidden assumptions. The FORCED chain now derives complete QM kinematics without physics postulates.
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v0.8 (GAP-2, GAP-3 Closed)
+**Version:** v0.9 (QM Kinematics Complete)
 
 ---
 
@@ -20,6 +20,7 @@ From this, DD forces:
 - Critical regime constraints (finite generators, non-commutativity)
 - Unitary dynamics U(n) — not a quantum postulate, but criticality preservation
 - Continuous time parameter t ∈ ℝ — not assumed, but forced by history completeness
+- Hermitian generator H with U(t) = e^{-itH} — Stone's theorem, forced by continuous unitarity
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
 
@@ -39,7 +40,7 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 
 | Label | Count | Meaning |
 |-------|-------|---------|
-| **FORCED** | 27 | Logically necessary from axiom |
+| **FORCED** | 28 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
 | **HYP** | 18 | Hypotheses requiring justification |
 | **DERIVED** | 3 | Follows from HYP + FORCED |

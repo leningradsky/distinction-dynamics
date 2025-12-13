@@ -84,3 +84,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | Chain-12 | ℂ forced by automorphism closure | Added — process distinguishability requires U(1) |
 | 2025-12-13 | DD-Unitarity | U(n) dynamics from criticality | Added — unitarity = distinguishability preservation |
 | 2025-12-13 | GAP-3 | DD-Time: ℝ forced by history completeness | CLOSED — ℤ/ℚ fail criticality, ℝ unique |
+| 2025-12-13 | DD-Generator | H hermitian from Stone's theorem | Added — U(t)=e^{-itH} forced by continuous unitarity |
