@@ -115,3 +115,6 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | CIRC-1 | Broken | Generations derived independently of SU(3) |
 | 2025-12-13 | Koide | Promoted to DERIVED | Geometric invariant in ℂ³, not numerology |
 | 2025-12-13 | Status | Generations complete | All physics including N ≥ 3 now FORCED/DERIVED |
+| 2025-12-13 | DD-Rank | rank ≥ 2 forced (T31) | FORCED — rank 1 violates Δ ≠ Δ(Δ) |
+| 2025-12-13 | CIRC-2 | Broken | Rank derived independently of triad assumption |
+| 2025-12-13 | Status | All circularities resolved | CIRC = 0, complete derivation T0-T31 |

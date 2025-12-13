@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v2.4 (T0-T30 Complete Derivation Chain)
+**Version:** v2.5 (T0-T31 Complete Derivation — All Circularities Resolved)
 
 ---
 
@@ -32,7 +32,7 @@ From this, DD forces:
 
 **Key insight:** Physics is not derived because it's "true" — it's the only stable regime of history distinguishability. Per DD-NoAlt (T26), there are no ontological alternatives.
 
-**Authoritative reference:** [FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) — complete derivation T0-T30.
+**Authoritative reference:** [FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) — complete derivation T0-T31.
 
 ## What This Is NOT
 
@@ -49,11 +49,11 @@ From this, DD forces:
 
 | Label | Count | Meaning |
 |-------|-------|---------|
-| **FORCED** | 33 | Logically necessary from axiom |
+| **FORCED** | 34 | Logically necessary from axiom |
 | **DEF** | 9 | Definitions/conventions |
-| **DERIVED** | 18 | Follows from FORCED chain |
-| **CONJ** | 3 | Conjectures (numerical patterns) |
-| **CIRC** | 1 | Circular dependency (CIRC-2 only) |
+| **DERIVED** | 20 | Follows from FORCED chain |
+| **CONJ** | 4 | Conjectures (numerical patterns) |
+| **CIRC** | 0 | **All resolved** (T30, T31) |
 | **PRED** | 1 | Testable prediction |
 | ~~HYP~~ | 0 | **Eliminated** by DD-NoAlt (T26) |
 
@@ -73,7 +73,7 @@ From this, DD forces:
 |------|------|---------|
 | 5 min | This README | Overview and scope |
 | 10 min | [0_CORE/AXIOM.md](0_CORE/AXIOM.md) | The sole primitive |
-| 20 min | [1_DERIVATION/FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) | **Complete derivation T0-T30** |
+| 20 min | [1_DERIVATION/FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) | **Complete derivation T0-T31** |
 | 10 min | [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md) | Numerical patterns (CONJ) |
 | 5 min | [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) | How to break the theory |
 | 10 min | [3_STATUS/STATUS.md](3_STATUS/STATUS.md) | Master truth file |
@@ -113,13 +113,13 @@ See [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) for complete list.
 └── UAC.md             0 < Φ < ∞ criterion
 
 1_DERIVATION/     ← FORCED consequences
-├── FORCED_SPINE.md    ★ T0-T30 complete derivation (authoritative)
+├── FORCED_SPINE.md    ★ T0-T31 complete derivation (authoritative)
 ├── FORCED_CHAIN.md    Legacy notation (Chain-5..8, L1-L4, CR-1..7)
 └── CRITICAL_REGIME.md Structural constraints
 
 2_EXPRESSION/     ← Numerical patterns
 ├── BRIDGES.md         CONJ claims (α, Koide angles)
-└── CIRCULARITIES.md   CIRC-2 (Triad ⟷ Rank)
+└── CIRCULARITIES.md   Historical — all CIRC resolved
 
 3_STATUS/         ← Truth tracking
 ├── STATUS.md          Master truth file
@@ -149,7 +149,7 @@ See [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) for complete list.
 
 ---
 
-## Derivation Summary (T0-T30)
+## Derivation Summary (T0-T31)
 
 ```
 T0: Ø impossible (axiom)
@@ -172,12 +172,15 @@ T27-T28: Λ > 0, 0 < G < ∞ (FORCED)
     ↓
 T29: Einstein equations G_μν = 8πG T_μν (DERIVED)
     ↓
-T30: N_gen ≥ 3 fermion generations (FORCED)
+T30: N_gen ≥ 3 fermion generations (FORCED) — breaks CIRC-1
     ↓
-═══════════════════════════════════════════
+T31: rank ≥ 2 representation structure (FORCED) — breaks CIRC-2
+    ↓
+════════════════════════════════════════════════
   COMPLETE: Standard Model + GR structure
   All from "Ø is impossible"
-═══════════════════════════════════════════
+  All circularities resolved
+════════════════════════════════════════════════
 ```
 
 **See [FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) for complete proofs.**
@@ -201,6 +204,7 @@ What is **not** derived — numerical patterns that may be coincidence:
 - Spacetime d=3+1 → T17 DD-Dim3 (DERIVED)
 - Fermion generations N ≥ 3 → T30 DD-Generations (FORCED)
 - Koide Q = 2/3 → geometric invariant in ℂ³ (DERIVED from T30)
+- Representational rank ≥ 2 → T31 DD-Rank (FORCED)
 
 ---
 
@@ -261,6 +265,7 @@ Key rule: All claims must be labeled (FORCED/DEF/DERIVED/CONJ/CIRC/PRED).
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.5 | 2025-12-13 | T31 DD-Rank; rank ≥ 2 FORCED; CIRC-2 broken; all circularities resolved |
 | v2.4 | 2025-12-13 | T30 DD-Generations; N ≥ 3 FORCED; Koide geometric; CIRC-1 broken |
 | v2.3 | 2025-12-13 | T29 DD-Einstein; field equations DERIVED via Lovelock |
 | v2.2 | 2025-12-13 | T28 DD-Gravity; 0 < G < ∞ FORCED |
