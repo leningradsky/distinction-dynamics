@@ -4,10 +4,11 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (29)
+## FORCED Claims (30)
 
 | ID | Statement | Location |
 |----|-----------|----------|
+| DD-NoAlt | No ontological alternatives | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | L1 | Σ+ is non-empty | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | L2 | ≼ is partial order | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | L3 | C is thin | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
@@ -54,32 +55,17 @@ Complete list of all claims with their status and location.
 
 ---
 
-## HYP Claims (7 active, 11 superseded)
+## UNTRACED Claims (3) — formerly HYP
 
-| ID | Statement | Location |
-|----|-----------|----------|
-| ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** by Chain-9,10,11 |
-| ~~HYP-F1~~ | ~~Fisher metric = distinction geometry~~ | **SUPERSEDED** by DD-Fisher |
-| ~~HYP-F2~~ | ~~Time parameter (ℕ → ℝ)~~ | **SUPERSEDED** by DD-Time |
-| HYP-F3 | Fisher-Ricci flow | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| ~~HYP-Q1~~ | ~~Fisher → Schrödinger~~ | **SUPERSEDED** by DD-Generator |
-| HYP-Q2 | Physical constants ℏ, G | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) (c now DERIVED) |
-| ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** by DD-Gauge |
-| ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** by DD-Gauge |
-| ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** by DD-Gauge |
-| ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** by DD-Gauge |
-| ~~HYP-S1~~ | ~~3 spatial dimensions~~ | **SUPERSEDED** by DD-Dim3 |
-| ~~HYP-S2~~ | ~~Time from U(1) phase~~ | **SUPERSEDED** by DD-Generator |
-| ~~HYP-S3~~ | ~~Lorentz invariance~~ | **SUPERSEDED** by DD-Lorentz |
-| ~~HYP-S4~~ | ~~Fisher geometry = spacetime~~ | **SUPERSEDED** by DD-Fisher + DD-Space |
-| ~~HYP-P1~~ | ~~Higgs mechanism~~ | **SUPERSEDED** by DD-Mass |
-| HYP-P2 | Fermion generations | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) (CIRC-1) |
-| HYP-K1 | √m parameterization | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-K3 | sin²θ_W = 3/8 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-Λ1 | Λ > 0 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-P3 | Dynamics / time evolution | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+Per DD-NoAlt (T26), HYP is eliminated. Remaining items reclassified:
 
-**Active HYP:** HYP-F3, HYP-Q2 (ℏ, G only), HYP-P2, HYP-K1, HYP-K3, HYP-Λ1, HYP-P3.
+| ID | Statement | Status | Location |
+|----|-----------|--------|----------|
+| HYP-Q2 | Physical constants ℏ, G | UNTRACED | Chain not yet traced |
+| HYP-Λ1 | Λ > 0 | UNTRACED | Chain not yet traced |
+| HYP-P3 | Dynamics / time evolution | UNTRACED | Chain not yet traced |
+
+**Note:** 16 former HYP now DERIVED. HYP-P2 → CIRC-1. HYP-K1, HYP-K3 → CONJ. HYP-F3 → DERIVED (Ricci flow).
 
 ---
 
@@ -106,12 +92,14 @@ Complete list of all claims with their status and location.
 
 ---
 
-## CONJ Claims (2)
+## CONJ Claims (4)
 
 | ID | Statement | Fit | Location |
 |----|-----------|-----|----------|
 | CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | CONJ-K2 | θ ≈ 2/9 | ~99% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| HYP-K1 | √m parameterization | — | Numerical pattern |
+| HYP-K3 | sin²θ_W = 3/8 | — | Numerical pattern |
 
 ---
 
@@ -136,13 +124,13 @@ Complete list of all claims with their status and location.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 29 |
+| FORCED | 30 |
 | DEF | 8 |
-| HYP | 7 |
 | DERIVED | 16 |
-| CONJ | 2 |
+| UNTRACED | 3 |
+| CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **65** |
+| **Total** | **64** |
 
-**Note:** 11 HYP now SUPERSEDED by DERIVED theorems. New DERIVED: DD-Lorentz (T21), DD-Fisher (T22), DD-LightSpeed (T23), DD-Mass (T24). See FORCED_SPINE.md for complete derivation chain.
+**Note (T26):** HYP eliminated per DD-NoAlt (Forced World Theorem). Former HYP reclassified: 16 → DERIVED, 3 → UNTRACED, 2 → CONJ, 1 → CIRC. See FORCED_SPINE.md T0-T26 for complete derivation chain.

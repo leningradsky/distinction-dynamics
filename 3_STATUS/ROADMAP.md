@@ -104,3 +104,5 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-LightSpeed | Universal speed c from Lorentz structure | DERIVED — T23, c-part of HYP-Q2 superseded |
 | 2025-12-13 | DD-Mass | Higgs/SSB from gauge + localization | DERIVED — T24, HYP-P1 superseded |
 | 2025-12-13 | GAP-6 | d=3 + signature (1,3) fully derived | CLOSED — DD-Dim3 + DD-Time-Unique + DD-Lorentz |
+| 2025-12-13 | DD-NoAlt | Forced World Theorem (T26) | FORCED — no ontological alternatives, HYP eliminated |
+| 2025-12-13 | Category | HYP → UNTRACED/CONJ reclassification | Per DD-NoAlt, HYP is not valid category |

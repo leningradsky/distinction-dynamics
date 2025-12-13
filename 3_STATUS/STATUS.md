@@ -14,11 +14,15 @@ README.md must not contradict this file.
 | **FORCED** | Logically necessary from axiom + definitions |
 | **FORCED*** | Forced given interpretation (caveat documented) |
 | **DEF** | Definition or convention (added structure) |
-| **HYP** | Hypothesis requiring external justification |
-| **DERIVED** | Follows rigorously from HYP + FORCED/DEF |
-| **CONJ** | Conjecture, pattern match, possible numerology |
+| **DERIVED** | Follows rigorously from FORCED/DEF |
+| **UNTRACED** | Not yet traced (temporary status, will become DERIVED) |
+| **CONJ** | Numerical pattern, possibly untraceable |
 | **CIRC** | Circular dependency (mutual consistency, not derivation) |
 | **PRED** | Testable empirical prediction |
+
+**Note (T26):** The category HYP has been eliminated. Per DD-NoAlt (Forced World Theorem), there are no ontological alternatives. What was called "hypothesis" is either:
+- **UNTRACED**: Chain exists but not yet traced → will become DERIVED
+- **CONJ**: Numerical pattern that may be untraceable
 
 ---
 
@@ -69,6 +73,14 @@ README.md must not contradict this file.
 | DD-Time | t ∈ ℝ (history parameter) | FORCED | DD-Unitarity, DEF-UAC |
 | DD-Generator | H hermitian, U(t)=e^{-itH} | FORCED | DD-Time, DD-Unitarity, Stone |
 | DD-Factorization | ⊗ℋᵢ tensor structure | FORCED | Criticality, ℂ, Unitarity |
+| DD-NoAlt | No ontological alternatives | FORCED | T0, T1, T4, T9, T13 |
+
+**Forced World (DD-NoAlt):** No ontological alternatives exist:
+- Ontological possibility = distinguishable but nowhere distinguished → contradicts T0
+- What is undistinguished does not exist (Lemma 1)
+- Randomness = incomplete distinguishability, not property of world (Lemma 2)
+- SELECTED is not valid category; what appears as selection is forced from incomplete view
+- Classification: FORCED (traced), DERIVED (traced from FORCED), UNTRACED (not yet traced), CONJ (numerical)
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -118,30 +130,32 @@ README.md must not contradict this file.
 
 ## Layer 2: Bridges (2_EXPRESSION/)
 
-### Hypotheses (HYP)
+### Untraced Claims (formerly HYP)
+
+Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
-| ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** | Now Chain-9,10,11 |
-| ~~HYP-F1~~ | ~~Fisher metric ≡ distinction geometry~~ | **SUPERSEDED** | Now DD-Fisher |
-| ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **SUPERSEDED** | Now DD-Time |
-| HYP-F3 | Fisher-Ricci geometric flow | HYP | DD-Fisher, DD-Time |
-| ~~HYP-Q1~~ | ~~Fisher → Schrödinger equation~~ | **SUPERSEDED** | Now DD-Generator (diff form) |
-| HYP-Q2 | Physical constants ℏ, G | HYP (input) | c now DERIVED |
-| ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** | Now DD-Gauge |
-| ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** | Now DD-Gauge |
-| ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** | Now DD-Gauge |
-| ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** | Now DD-Gauge |
-| ~~HYP-S1~~ | ~~3 spatial dimensions~~ | **SUPERSEDED** | Now DD-Dim3 |
-| ~~HYP-S2~~ | ~~Time dimension from U(1) phase~~ | **SUPERSEDED** | Structural identity in DD-Generator |
-| ~~HYP-S3~~ | ~~Lorentz invariance~~ | **SUPERSEDED** | Now DD-Lorentz |
-| ~~HYP-S4~~ | ~~Fisher geometry ≡ spacetime~~ | **SUPERSEDED** | Now DD-Fisher + DD-Space |
-| ~~HYP-P1~~ | ~~Higgs mechanism~~ | **SUPERSEDED** | Now DD-Mass |
-| HYP-P2 | Fermion generations | HYP/CIRC | CIRC-1 |
-| HYP-K1 | √m parameterization | HYP | — |
-| HYP-K3 | sin²θ_W = 3/8 | HYP | — |
-| HYP-Λ1 | Λ > 0 (cosmological constant) | HYP (empirical) | — |
-| HYP-P3 | Dynamics / time evolution | HYP | — |
+| ~~HYP-C1~~ | ~~Continuum emergence~~ | **DERIVED** | Now Chain-9,10,11 |
+| ~~HYP-F1~~ | ~~Fisher metric ≡ distinction geometry~~ | **DERIVED** | Now DD-Fisher |
+| ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **DERIVED** | Now DD-Time |
+| ~~HYP-F3~~ | ~~Fisher-Ricci geometric flow~~ | **DERIVED** | Ricci flow = gradient of Φ-functional |
+| ~~HYP-Q1~~ | ~~Fisher → Schrödinger equation~~ | **DERIVED** | Now DD-Generator (diff form) |
+| HYP-Q2 | Physical constants ℏ, G | UNTRACED | c now DERIVED; ℏ, G chains not yet traced |
+| ~~HYP-G1~~ | ~~Local gauge invariance~~ | **DERIVED** | Now DD-Gauge |
+| ~~HYP-G2~~ | ~~Anomaly freedom~~ | **DERIVED** | Now DD-Gauge |
+| ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **DERIVED** | Now DD-Gauge |
+| ~~HYP-G4~~ | ~~Confinement~~ | **DERIVED** | Now DD-Gauge |
+| ~~HYP-S1~~ | ~~3 spatial dimensions~~ | **DERIVED** | Now DD-Dim3 |
+| ~~HYP-S2~~ | ~~Time dimension from U(1) phase~~ | **DERIVED** | Structural identity in DD-Generator |
+| ~~HYP-S3~~ | ~~Lorentz invariance~~ | **DERIVED** | Now DD-Lorentz |
+| ~~HYP-S4~~ | ~~Fisher geometry ≡ spacetime~~ | **DERIVED** | Now DD-Fisher + DD-Space |
+| ~~HYP-P1~~ | ~~Higgs mechanism~~ | **DERIVED** | Now DD-Mass |
+| HYP-P2 | Fermion generations | CIRC | CIRC-1 |
+| HYP-K1 | √m parameterization | CONJ | Numerical pattern |
+| HYP-K3 | sin²θ_W = 3/8 | CONJ | Numerical pattern |
+| HYP-Λ1 | Λ > 0 (cosmological constant) | UNTRACED | Chain not yet traced |
+| HYP-P3 | Dynamics / time evolution | UNTRACED | Chain not yet traced |
 
 ### Derived (DERIVED)
 
@@ -288,15 +302,19 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 29 |
+| FORCED | 30 |
 | DEF | 8 |
-| HYP | 7 |
-| DERIVED | 16 |
-| CONJ | 3 |
+| DERIVED | 17 |
+| UNTRACED | 3 |
+| CONJ | 5 |
 | CIRC | 2 |
 | PRED | 1 |
 
-**Note:** HYP reduced from 13 to 7 — six hypotheses now DERIVED: HYP-F1→DD-Fisher, HYP-Q1→DD-Generator, HYP-S2→DD-Generator, HYP-S3→DD-Lorentz, HYP-S4→DD-Fisher+Space, HYP-P1→DD-Mass.
+**Note (T26):** HYP eliminated per DD-NoAlt. Former HYP reclassified:
+- 15 now DERIVED (traced chains)
+- 3 now UNTRACED (HYP-Q2 ℏ/G, HYP-Λ1, HYP-P3)
+- 2 now CONJ (HYP-K1, HYP-K3)
+- 1 now CIRC (HYP-P2 → CIRC-1)
 
 ---
 
@@ -329,7 +347,7 @@ README.md must not contradict this file.
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative 12-thesis derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T26 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
