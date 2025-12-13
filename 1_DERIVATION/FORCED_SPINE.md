@@ -1,6 +1,6 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 1.3
+**Version:** 1.4
 **Status:** Authoritative reference for the FORCED chain
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
@@ -631,9 +631,142 @@ In critical theory of distinctions:
 
 ---
 
+## Level 10: Time as Distinguished Parameter
+
+### T15: Time Uniqueness (DD-Time-Unique)
+
+**Statement:** Among manifold parameters, exactly one is distinguished as "time" — the parameter of process distinguishability itself.
+
+**Setup:**
+
+We have DERIVED:
+1. Manifold structure of stable distinctions (T14)
+2. Unitary dynamics U(t) with t ∈ ℝ (T9)
+3. Criticality 0 < Φ < ∞ (T5)
+
+**Question:** Why is there exactly one distinguished parameter (time) while others are "space"?
+
+**Step 1. Evolution is necessary (statics forbidden):**
+
+Suppose distinguishability is static.
+
+Then:
+- All relations fixed
+- No new distinctions appear
+- None disappear
+
+Consequences:
+- Φ either minimal and frozen, or maximal and frozen
+- No selection process
+- No stability through dynamics
+- Criticality loses meaning as regime
+
+Therefore: **distinguishability must be parameterized by process**.
+
+**Step 2. Process cannot be cyclic:**
+
+Suppose process of distinguishability is cyclic.
+
+Then:
+- States of distinguishability repeat
+- Phases can be restored
+- Decoherence is globally reversible
+
+Consequences:
+- Measurement loses meaning
+- Stable classical objects don't persist
+- History indistinguishable from itself
+
+Therefore: **Φ loses directionality → history distinguishability collapses**.
+
+Cycles are forbidden.
+
+**Step 3. Process parameter must be linearly ordered:**
+
+Remaining options:
+- Partially ordered set
+- Branching structure
+- Linear parameter
+
+If parameter branches:
+- No single order of distinguishability
+- Cannot compare "before/after"
+- History not distinguishable as whole
+
+If parameter only partially ordered:
+- Incomparable states remain
+- Global decoherence doesn't close
+
+Only linear order preserves:
+- Global history distinguishability
+- Directionality
+- Process composition
+
+**Step 4. Why continuous (ℝ), not discrete (ℤ):**
+
+Suppose discrete parameter (ℤ).
+
+Then:
+- Evolution occurs in jumps
+- No distinguishability between steps
+- Small perturbations inexpressible
+
+But we already have:
+- Continuous space of distinguishability (T14)
+- Local small changes
+- Stability under small fluctuations
+
+If time discrete but space continuous:
+- Structural asymmetry
+- Unitary history stability violated
+- Criticality broken
+
+Therefore: **process parameter must be continuous**.
+
+Unique minimal linear continuous structure: **ℝ**
+
+**Step 5. Why exactly one such parameter:**
+
+Suppose multiple process parameters (t₁, t₂, ...).
+
+Then:
+- History ambiguity
+- Different "times" can conflict
+- Cannot define global phase
+
+Consequences:
+- Unitarity destroyed
+- Single history lost
+- Criticality violated
+
+Therefore: **exactly one distinguished process parameter exists**.
+
+**Theorem (DD-Time-Unique):**
+
+In critical theory of distinctions:
+1. Static distinguishability is forbidden
+2. Cyclic process is forbidden
+3. Process parameter must be linearly ordered
+4. It must be continuous (ℝ)
+5. It must be unique
+
+**Structural distinction:**
+- **Space parameters:** parameterize stable distinctions (where)
+- **Time parameter:** parameterizes process of distinguishability (change)
+
+This is the origin of spacetime signature: (1, d-1) is not postulated but forced.
+
+**Status:** DERIVED (from T5, T9, T14)
+
+**Depends on:** T5 (criticality), T9 (continuous time), T14 (space)
+
+**Note:** This explains why time is distinguished from space — not by convention but by structural role. Time parameterizes the process; space parameterizes what undergoes the process.
+
+---
+
 ## Boundary
 
-### T15: Structural Boundary
+### T16: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
@@ -682,8 +815,10 @@ T13: Classicality — stable fixed points (DERIVED)
       ↓
 T14: Space — manifold structure (DERIVED)
       ↓
+T15: Time uniqueness — (1,d-1) signature (DERIVED)
+      ↓
 ═══════════════════════════════════════
-  QM + CLASSICAL + SPACE EMERGENCE
+   QM + SPACETIME STRUCTURE COMPLETE
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -696,10 +831,12 @@ Derived without postulates:
   • Classical emergence
   • Space (manifold structure)
   • Metric (Φ-localization)
+  • Time as unique process parameter
+  • Spacetime signature (1, d-1)
 
 What remains (HYP/interpretation):
   • Energy interpretation of H
-  • Why d = 3+1 specifically
+  • Why d = 3 specifically (total 3+1)
   • Gauge groups as local automorphisms
   • Specific realization (our universe)
 ```

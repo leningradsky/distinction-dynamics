@@ -143,6 +143,7 @@ README.md must not contradict this file.
 | DD-Decoherence | No collapse, measurement relative | DERIVED | DD-Unitarity, DD-Born |
 | DD-Classicality | Classical states = stable fixed points | DERIVED | Criticality, DD-Decoherence |
 | DD-Space | Manifold structure of space | DERIVED | Criticality, DD-Classicality |
+| DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -176,6 +177,14 @@ README.md must not contradict this file.
 - Metric = quantitative form of Φ-localization
 - Dimension: 0, 1, ∞ forbidden; finite d > 1 required
 
+**Time Uniqueness (DD-Time-Unique):** Why exactly one time parameter:
+- Static distinguishability forbidden (no selection, no stability)
+- Cyclic process forbidden (decoherence reversible → history collapses)
+- Process parameter must be linearly ordered (branching → no global history)
+- Must be continuous ℝ (discrete ℤ incompatible with continuous space)
+- Must be unique (multiple times → unitarity destroyed)
+- Spacetime signature (1, d-1) is forced, not postulated
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
@@ -206,7 +215,7 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 7 |
+| DERIVED | 8 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |

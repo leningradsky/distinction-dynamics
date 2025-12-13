@@ -37,9 +37,10 @@ From this, structural necessities follow:
 - Decoherence without collapse (DD-Decoherence theorem)
 - Classical emergence (DD-Classicality theorem)
 - Space (manifold structure) (DD-Space theorem)
+- Time uniqueness, signature (1,d-1) (DD-Time-Unique theorem)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 7 claims
+- Total: 8 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula

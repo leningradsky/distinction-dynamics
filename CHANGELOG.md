@@ -2,6 +2,28 @@
 
 All notable changes to this project are documented here.
 
+## [1.4] - 2025-12-13
+
+### Added
+- **DD-Time-Unique theorem (T15)**: Time as distinguished process parameter
+  - Static distinguishability forbidden
+  - Cyclic process forbidden (decoherence must be irreversible)
+  - Process parameter must be linearly ordered
+  - Must be continuous ℝ (compatible with continuous space)
+  - Must be unique (multiple times destroy unitarity)
+  - Spacetime signature (1, d-1) is forced
+
+### Changed
+- DERIVED count: 7 → 8 (added DD-Time-Unique)
+- T15 → T16 (Boundary renumbered)
+
+### Summary
+QM + spacetime structure complete:
+- Space (manifold) from stable distinctions
+- **Time uniqueness from process distinguishability**
+- **Signature (1, d-1) forced, not postulated**
+- Only d = 3 (why 3+1) remains as HYP/CONJ
+
 ## [1.3] - 2025-12-13
 
 ### Added
