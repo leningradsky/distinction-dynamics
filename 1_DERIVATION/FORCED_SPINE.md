@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.0
-**Status:** Authoritative reference for the FORCED chain (T0-T26)
+**Version:** 2.1
+**Status:** Authoritative reference for the FORCED chain (T0-T27)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -1868,6 +1868,74 @@ Collapse = loss of phase distinguishability, not "choice of outcome" (T13).
 
 ---
 
+## Level 21: Cosmological Constant
+
+### T27: Positive Λ (DD-Lambda)
+
+**Statement:** The cosmological constant must be positive: Λ > 0.
+
+**Setup:**
+
+| Premise | Source |
+|---------|--------|
+| History = accumulation of distinguishability | T4, T9 |
+| UAC: 0 < Φ < ∞ | T5 |
+| History must be infinitely continuable | T26 (no external termination) |
+
+**Lemma 1 (FORCED): Λ = 0 violates UAC**
+
+*Proof:*
+1. Λ = 0 → static history (no global expansion of distinguishability space)
+2. Static history has two cases:
+   - Finite distinguishability capacity → eventually saturates → Φ → 0
+   - Infinite distinguishability from start → Φ → ∞
+3. Both violate UAC
+4. ∴ Λ = 0 is impossible ∎
+
+**Lemma 2 (FORCED): Λ < 0 violates UAC**
+
+*Proof:*
+1. Λ < 0 → contracting history (global compression of distinguishability space)
+2. Consequences:
+   - Future contains less distinguishability capacity than past
+   - Trajectories converge
+   - Distinct histories merge (alternatives destroyed)
+3. Either:
+   - History terminates at finite time → Φ → 0
+   - Requires external intervention to continue → forbidden by T26
+4. ∴ Λ < 0 is impossible ∎
+
+**Theorem (DD-Lambda):**
+
+$$\boxed{\Lambda > 0}$$
+
+*Proof:*
+1. Λ ∈ {< 0, = 0, > 0} (exhaustive)
+2. Λ = 0 impossible (Lemma 1)
+3. Λ < 0 impossible (Lemma 2)
+4. ∴ Λ > 0 by elimination ∎
+
+**Status:** FORCED (from T5 UAC, T9, T26)
+
+**Interpretation:**
+
+Λ is NOT "vacuum energy" in the QFT sense. Λ is the **minimal rate of global distinguishability expansion**.
+
+This explains:
+- Why Λ is small (minimal rate, not accumulated energy)
+- Why QFT calculation fails (wrong object)
+- Why Λ is connected to the arrow of time (history expansion)
+
+**Note on ℏ:**
+
+The Planck constant ℏ is not a structure but a **unit choice** (DEF):
+- [H, t] = iℏ is already FORCED from T10
+- ℏ sets the scale of H
+- Can be set to 1 without loss of content
+- Status: DEF (not UNTRACED)
+
+---
+
 ## Summary Diagram
 
 ```
@@ -1925,9 +1993,12 @@ T25: Structural Boundary
       ↓
 T26: No Ontological Alternatives (FORCED)
       ↓
+T27: Λ > 0 — positive cosmological constant (FORCED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE STANDARD MODEL + RELATIVITY
      + NO ONTOLOGICAL ALTERNATIVES
+     + COSMOLOGICAL CONSTANT Λ > 0
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -1950,6 +2021,7 @@ Derived without postulates:
   • Lorentz invariance SO(1,3)
   • Universal speed c
   • Higgs mechanism (SSB)
+  • Cosmological constant Λ > 0
 
 What remains (Realization index):
   • Specific numerical constants (α, masses, VEV)

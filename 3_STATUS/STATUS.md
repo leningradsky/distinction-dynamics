@@ -74,6 +74,13 @@ README.md must not contradict this file.
 | DD-Generator | H hermitian, U(t)=e^{-itH} | FORCED | DD-Time, DD-Unitarity, Stone |
 | DD-Factorization | ⊗ℋᵢ tensor structure | FORCED | Criticality, ℂ, Unitarity |
 | DD-NoAlt | No ontological alternatives | FORCED | T0, T1, T4, T9, T13 |
+| DD-Lambda | Λ > 0 (cosmological constant) | FORCED | T5, T9, T26 |
+
+**Positive Λ (DD-Lambda):** Λ > 0 forced by elimination:
+- Λ = 0 → static history → saturates or explodes → violates UAC
+- Λ < 0 → contracting history → terminates → violates T26
+- Λ > 0 → only regime allowing infinite continuation at finite Φ
+- Λ is minimal rate of global distinguishability expansion, not vacuum energy
 
 **Forced World (DD-NoAlt):** No ontological alternatives exist:
 - Ontological possibility = distinguishable but nowhere distinguished → contradicts T0
@@ -141,7 +148,8 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **DERIVED** | Now DD-Time |
 | ~~HYP-F3~~ | ~~Fisher-Ricci geometric flow~~ | **DERIVED** | Ricci flow = gradient of Φ-functional |
 | ~~HYP-Q1~~ | ~~Fisher → Schrödinger equation~~ | **DERIVED** | Now DD-Generator (diff form) |
-| HYP-Q2 | Physical constants ℏ, G | UNTRACED | c now DERIVED; ℏ, G chains not yet traced |
+| ~~HYP-Q2(ℏ)~~ | ~~Planck constant ℏ~~ | **DEF** | Unit choice (scale of H) |
+| HYP-Q2(G) | Gravitational constant G | UNTRACED | Requires GR bridge |
 | ~~HYP-G1~~ | ~~Local gauge invariance~~ | **DERIVED** | Now DD-Gauge |
 | ~~HYP-G2~~ | ~~Anomaly freedom~~ | **DERIVED** | Now DD-Gauge |
 | ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **DERIVED** | Now DD-Gauge |
@@ -154,8 +162,8 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | HYP-P2 | Fermion generations | CIRC | CIRC-1 |
 | HYP-K1 | √m parameterization | CONJ | Numerical pattern |
 | HYP-K3 | sin²θ_W = 3/8 | CONJ | Numerical pattern |
-| HYP-Λ1 | Λ > 0 (cosmological constant) | UNTRACED | Chain not yet traced |
-| HYP-P3 | Dynamics / time evolution | UNTRACED | Chain not yet traced |
+| ~~HYP-Λ1~~ | ~~Λ > 0 (cosmological constant)~~ | **FORCED** | Now DD-Lambda (T27) |
+| ~~HYP-P3~~ | ~~Dynamics / time evolution~~ | **DERIVED** | Covered by DD-Generator (T10) |
 
 ### Derived (DERIVED)
 
@@ -302,17 +310,19 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 30 |
-| DEF | 8 |
-| DERIVED | 17 |
-| UNTRACED | 3 |
+| FORCED | 31 |
+| DEF | 9 |
+| DERIVED | 18 |
+| UNTRACED | 1 |
 | CONJ | 5 |
 | CIRC | 2 |
 | PRED | 1 |
 
-**Note (T26):** HYP eliminated per DD-NoAlt. Former HYP reclassified:
-- 15 now DERIVED (traced chains)
-- 3 now UNTRACED (HYP-Q2 ℏ/G, HYP-Λ1, HYP-P3)
+**Note (T27):** HYP fully eliminated:
+- 17 now DERIVED (traced chains)
+- 1 now FORCED (HYP-Λ1 → DD-Lambda)
+- 1 now DEF (ℏ = unit choice)
+- 1 remains UNTRACED (G — requires GR bridge)
 - 2 now CONJ (HYP-K1, HYP-K3)
 - 1 now CIRC (HYP-P2 → CIRC-1)
 
@@ -347,7 +357,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T26 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T27 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`

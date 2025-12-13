@@ -106,3 +106,7 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | GAP-6 | d=3 + signature (1,3) fully derived | CLOSED — DD-Dim3 + DD-Time-Unique + DD-Lorentz |
 | 2025-12-13 | DD-NoAlt | Forced World Theorem (T26) | FORCED — no ontological alternatives, HYP eliminated |
 | 2025-12-13 | Category | HYP → UNTRACED/CONJ reclassification | Per DD-NoAlt, HYP is not valid category |
+| 2025-12-13 | DD-Lambda | Λ > 0 forced by elimination (T27) | FORCED — static/contracting histories violate UAC |
+| 2025-12-13 | HYP-P3 | Dynamics closed | DERIVED — covered by DD-Generator (T10) |
+| 2025-12-13 | ℏ | Planck constant reclassified | DEF — unit choice (scale of H) |
+| 2025-12-13 | Status | Only G remains UNTRACED | Requires GR bridge for derivation |

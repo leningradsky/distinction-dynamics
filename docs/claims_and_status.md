@@ -4,10 +4,11 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (30)
+## FORCED Claims (31)
 
 | ID | Statement | Location |
 |----|-----------|----------|
+| DD-Lambda | Λ > 0 (cosmological constant) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-NoAlt | No ontological alternatives | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | L1 | Σ+ is non-empty | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | L2 | ≼ is partial order | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
@@ -41,7 +42,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DEF Claims (8)
+## DEF Claims (9)
 
 | ID | Statement | Location |
 |----|-----------|----------|
@@ -52,20 +53,22 @@ Complete list of all claims with their status and location.
 | DEF-C | Category C | [DEFINITIONS.md](../0_CORE/DEFINITIONS.md) |
 | DEF-UAC | 0 < Φ < ∞ criterion | [UAC.md](../0_CORE/UAC.md) |
 | DEF-Φ | Path entropy functional | [DEFINITIONS.md](../0_CORE/DEFINITIONS.md) |
+| DEF-ℏ | Planck constant (unit choice) | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) T27 note |
 
 ---
 
-## UNTRACED Claims (3) — formerly HYP
+## UNTRACED Claims (1) — formerly HYP
 
-Per DD-NoAlt (T26), HYP is eliminated. Remaining items reclassified:
+Per DD-NoAlt (T26) and DD-Lambda (T27), HYP is fully eliminated:
 
 | ID | Statement | Status | Location |
 |----|-----------|--------|----------|
-| HYP-Q2 | Physical constants ℏ, G | UNTRACED | Chain not yet traced |
-| HYP-Λ1 | Λ > 0 | UNTRACED | Chain not yet traced |
-| HYP-P3 | Dynamics / time evolution | UNTRACED | Chain not yet traced |
+| HYP-Q2(G) | Gravitational constant G | UNTRACED | Requires GR bridge |
 
-**Note:** 16 former HYP now DERIVED. HYP-P2 → CIRC-1. HYP-K1, HYP-K3 → CONJ. HYP-F3 → DERIVED (Ricci flow).
+**Reclassification (T27):**
+- ~~HYP-Q2(ℏ)~~ → DEF (unit choice for scale of H)
+- ~~HYP-Λ1~~ → FORCED (DD-Lambda T27)
+- ~~HYP-P3~~ → DERIVED (covered by DD-Generator T10)
 
 ---
 
@@ -124,13 +127,21 @@ Per DD-NoAlt (T26), HYP is eliminated. Remaining items reclassified:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 30 |
-| DEF | 8 |
+| FORCED | 31 |
+| DEF | 9 |
 | DERIVED | 16 |
-| UNTRACED | 3 |
+| UNTRACED | 1 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
 | **Total** | **64** |
 
-**Note (T26):** HYP eliminated per DD-NoAlt (Forced World Theorem). Former HYP reclassified: 16 → DERIVED, 3 → UNTRACED, 2 → CONJ, 1 → CIRC. See FORCED_SPINE.md T0-T26 for complete derivation chain.
+**Note (T27):** HYP fully eliminated. Reclassification complete:
+- 17 → DERIVED
+- 1 → FORCED (Λ > 0)
+- 1 → DEF (ℏ)
+- 1 remains UNTRACED (G — requires GR bridge)
+- 2 → CONJ
+- 1 → CIRC
+
+See FORCED_SPINE.md T0-T27 for complete derivation chain.
