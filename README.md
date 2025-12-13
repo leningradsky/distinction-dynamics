@@ -26,6 +26,7 @@
 ### 1_DERIVATION: Forced Chain
 
 - [1_DERIVATION/FORCED_CHAIN.md](1_DERIVATION/FORCED_CHAIN.md): FORCED consequences of CORE definitions
+- [1_DERIVATION/CRITICAL_REGIME.md](1_DERIVATION/CRITICAL_REGIME.md): Structural constraints from 0 < Φ < ∞
 - [1_DERIVATION/DEPENDENCY_GRAPH.md](1_DERIVATION/DEPENDENCY_GRAPH.md): Visual dependency map
 
 ### 2_EXPRESSION: Bridges to Physics

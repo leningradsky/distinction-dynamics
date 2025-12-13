@@ -54,8 +54,17 @@ README.md must not contradict this file.
 | Chain-6 | Δ = Δ(Δ) (self-application) | FORCED | DEF-AX |
 | Chain-7 | Recursion (unbounded iteration) | FORCED* | Chain-6 |
 | Chain-8 | ℕ (natural numbers) | FORCED | Chain-7 |
+| CR-1 | Finite local valence (Φ < ∞) | FORCED | DEF-UAC |
+| CR-2 | Finite generators | FORCED | CR-1 |
+| CR-3 | Non-polynomial growth (Φ > 0) | FORCED | DEF-UAC |
+| CR-4 | Non-commutativity or branching | FORCED | CR-3 |
+| CR-5 | Minimal: ≥ 2 non-commuting generators | FORCED | CR-3, CR-4 |
+| CR-6 | Finite presentation | FORCED | CR-1, CR-5 |
+| CR-7 | Automorphism structure emerges | FORCED | CR-6 |
 
 **Caveat for Chain-7:** The interpretation of Δ = Δ(Δ) as unfolding process (rather than static fixed point) is an interpretive choice. Marked FORCED* to indicate this.
+
+**Critical Regime (CR-1 to CR-7):** Structural constraints from 0 < Φ < ∞. See `1_DERIVATION/CRITICAL_REGIME.md`.
 
 ---
 
@@ -121,7 +130,7 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 14 |
+| FORCED | 21 |
 | DEF | 8 |
 | HYP | 20 |
 | DERIVED | 3 |
@@ -161,6 +170,7 @@ README.md must not contradict this file.
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
+- Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
 - Bridges: `2_EXPRESSION/BRIDGES.md`
 - Circularities: `2_EXPRESSION/CIRCULARITIES.md`
