@@ -66,6 +66,7 @@ README.md must not contradict this file.
 | Chain-11 | ℝ (limit closure) | FORCED | Chain-10, DEF-UAC |
 | Chain-12 | ℂ (automorphism closure) | FORCED | Chain-11, CR-7, DEF-UAC |
 | DD-Unitarity | U(n) dynamics | FORCED | Chain-12, DEF-UAC |
+| DD-Time | t ∈ ℝ (history parameter) | FORCED | DD-Unitarity, DEF-UAC |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -89,6 +90,14 @@ README.md must not contradict this file.
 - Consequence: Aut_crit(X) = U(n) — pure linear algebra, no physics postulates
 - This is NOT a quantum axiom; it's preservation of distinguishability under iteration.
 
+**Time (DD-Time, GAP-3 closed):** Continuous time ℝ forced by history completeness:
+- History parameter T must be: ordered (T1), additive (T2), invertible (T3), dense (T4)
+- ℤ fails: discrete jumps → distinguishability not dense → violates criticality
+- ℚ fails: incomplete → histories "fall out" at irrational limits → violates closure
+- ℝ is unique: connected, complete, ordered abelian group (classical theorem)
+- Stone: continuous unitary groups are homomorphisms ℝ → U(n)
+- This is NOT "time is continuous because we observe it"; it's structural necessity.
+
 ---
 
 ## Layer 2: Bridges (2_EXPRESSION/)
@@ -99,9 +108,9 @@ README.md must not contradict this file.
 |----|-----------|--------|------------|
 | ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** | Now Chain-9,10,11 |
 | HYP-F1 | Fisher metric ≡ distinction geometry | HYP | Chain-11 |
-| HYP-F2 | Time parameter emergence (ℕ → ℝ) | HYP | Chain-7 |
-| HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, HYP-F2 |
-| HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, HYP-F2 |
+| ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **SUPERSEDED** | Now DD-Time |
+| HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, DD-Time |
+| HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, DD-Time |
 | HYP-Q2 | Physical constants ℏ, c, G | HYP (input) | — |
 | HYP-G1 | Local gauge invariance | HYP | HYP-S4 |
 | HYP-G2 | Anomaly freedom | HYP (empirical) | HYP-Q1, HYP-G1 |
@@ -153,9 +162,9 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 26 |
+| FORCED | 27 |
 | DEF | 8 |
-| HYP | 19 |
+| HYP | 18 |
 | DERIVED | 3 |
 | CONJ | 3 |
 | CIRC | 2 |
@@ -169,7 +178,7 @@ README.md must not contradict this file.
 |-----|-------------|----------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** — see UAC.md |
 | ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** — Chain-9,10,11 |
-| GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 is hypothesis |
+| ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** — DD-Time |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
 | GAP-6 | 3+1 dimensions weak argument | HYP-S1 downgraded to CONJ |

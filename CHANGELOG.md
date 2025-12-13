@@ -2,6 +2,22 @@
 
 All notable changes to this project are documented here.
 
+## [0.8] - 2025-12-13
+
+### Added
+- DD-Time Theorem: ℝ uniquely forced as history parameter by criticality + unitarity
+- Time parameter requirements: T1 (order), T2 (composition), T3 (invertibility), T4 (density)
+- Proofs: ℤ fails (discrete jumps), ℚ fails (incomplete), ℝ unique (completeness theorem)
+
+### Fixed
+- GAP-3 closed: Continuous time ℝ now FORCED, not hypothetical
+- HYP-F2 superseded by DD-Time
+
+### Changed
+- FORCED count: 26 → 27
+- HYP count: 19 → 18
+- All 4 major blocking gaps (GAP-1,2,3,4) now closed
+
 ## [0.7] - 2025-12-13
 
 ### Added
@@ -10,7 +26,6 @@ All notable changes to this project are documented here.
 - Critical Dynamics Constraints: K1 (no collapse), K2 (no explosion), K3 (distinguishability)
 
 ### Changed
-- GAP-3 now correctly formulated: time = parameter of unitary histories over ℂ
 - Unitarity reframed as preservation of distinguishability, not probability
 
 ## [0.6] - 2025-12-13

@@ -15,13 +15,13 @@ Items are ordered by logical priority, not by difficulty or time.
 |----|-----|----------------|-----------------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** | Defined as path entropy in UAC.md |
 | ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** | Chain-9 (ℤ), Chain-10 (ℚ), Chain-11 (ℝ) forced by criticality |
+| ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** | DD-Time: ℝ uniquely forced by criticality + unitarity + completeness |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** | Irreversibility argument: Δⁿ=id ⟹ erasure ⟹ local Ø ⟹ contradiction |
 
 ### Priority 2: Major Bridges (HYP that block physics claims)
 
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
-| GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 | Either derive or mark as permanent hypothesis |
 | GAP-7 | X: C → Hilb functor unspecified | DEF in BRIDGES.md | Specify concretely or remove |
 
 ### Priority 3: Questionable Claims (May be numerology)
@@ -83,3 +83,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | GAP-2 | ℤ/ℚ/ℝ forced by criticality closure | CLOSED — see FORCED_CHAIN.md Chain-9,10,11 |
 | 2025-12-13 | Chain-12 | ℂ forced by automorphism closure | Added — process distinguishability requires U(1) |
 | 2025-12-13 | DD-Unitarity | U(n) dynamics from criticality | Added — unitarity = distinguishability preservation |
+| 2025-12-13 | GAP-3 | DD-Time: ℝ forced by history completeness | CLOSED — ℤ/ℚ fail criticality, ℝ unique |

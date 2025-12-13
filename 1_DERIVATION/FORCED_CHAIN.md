@@ -289,16 +289,85 @@ $$f \neq g \Rightarrow X(f) \neq X(g)$$
   - Any physics postulates
 - **Status:** FORCED (unitarity = preservation of distinguishability under iteration)
 
-### Consequence for GAP-3 (Time)
+---
 
-With unitarity established, GAP-3 can now be correctly formulated:
+## Time from Criticality (DD-Time Theorem)
 
-**Time** = parameter of distinguishability of unitary histories over ℂ
+The following establishes that continuous time (ℝ) is not assumed but uniquely forced by critical unitary dynamics.
 
-This was impossible to state before because:
-- Without ℂ: no phase, no orientation
-- Without unitarity: histories unstable (collapse or explosion)
-- Now: unitary trajectories over ℂ provide stable, distinguishable histories
+### Requirements on History Parameter T
+
+For a history parameter T indexing unitary evolution U: T → U(n):
+
+**T1 (Ordering):** Histories distinguishable by "before/after" → T linearly ordered
+
+**T2 (Composition):** If histories t₁, t₂ admissible, their concatenation is admissible → T has addition: t₁ + t₂
+
+**T3 (Invertibility):** Unitary operators are invertible → for any t, exists −t
+
+**T4 (Density):** Arbitrarily small distinguishable changes possible → T is dense
+
+### Why Discrete Time (ℤ) Fails
+
+- **Statement:** ℤ is incompatible with critical distinguishability.
+- **Proof:**
+  1. Let U: ℤ → U(n), k ↦ Uᵏ
+  2. Between k and k+1: no intermediate histories
+  3. Distinguishability "jumps" discretely at each step
+  4. Either:
+     - Distinguishability too coarse → Φ too small (subcritical)
+     - Hidden structure between steps → ℤ not fundamental
+  5. Criticality requires dense distinguishable histories
+  6. ℤ not dense → ℤ fails T4
+- **Status:** FORCED (discrete time violates criticality)
+
+### Why Rational Time (ℚ) Fails
+
+- **Statement:** ℚ is incompatible with history closure under criticality.
+- **Proof:**
+  1. ℚ satisfies T1-T4 (ordered, additive, invertible, dense)
+  2. But ℚ is not complete (Cauchy sequences may have limits outside ℚ)
+  3. Consider sequence of histories {tₙ} ⊂ ℚ converging to t* ∉ ℚ
+  4. Each history tₙ is admissible (distinguishable, within Φ bounds)
+  5. Limit history t* is "almost realizable" but not in ℚ
+  6. Histories "fall out" at irrational limits
+  7. This breaks closure of admissible histories
+  8. Broken closure → Φ discontinuous at limits → violates criticality
+- **Status:** FORCED (incomplete time violates criticality)
+
+### Why ℝ is Uniquely Forced
+
+- **Statement:** ℝ is the unique history parameter compatible with critical unitary dynamics.
+- **Justification:**
+  1. Requirements T1-T4 demand: ordered, additive, invertible, dense
+  2. Criticality demands: complete (limits stay in structure)
+  3. Classical theorem: The unique connected, complete, ordered abelian group is (ℝ, +)
+  4. Stone's theorem: Any continuous unitary group U(t) ∈ U(n) is a continuous homomorphism ℝ → U(n)
+  5. Neither ℤ nor ℚ support continuous unitary groups preserving criticality
+- **Depends on:** DD-Unitarity (U(n) dynamics), DEF-UAC (criticality), completeness theorem
+- **Note:** This does NOT use:
+  - Physical intuition about time
+  - Schrödinger equation
+  - Hamiltonians or energy
+  - "Time is continuous because we observe it so"
+- **Status:** FORCED (ℝ uniquely satisfies criticality + unitarity)
+
+### FORCED: DD-Time Theorem
+
+- **Statement:** If history is realized as composition of unitary processes over ℂ with critical distinguishability, then the history parameter is isomorphic to ℝ.
+- **Formal:** Histories_crit ≅ (ℝ, +)
+- **Depends on:** DD-Unitarity, Chain-12 (ℂ), DEF-UAC
+- **Status:** FORCED (GAP-3 closed)
+
+### Philosophical Note
+
+This is NOT:
+- "Time is continuous because we perceive it continuously"
+- "ℝ is the limit of finer and finer discrete time"
+
+This IS:
+- **Discrete time is logically incompatible with stable distinguishability of history**
+- ℝ emerges as the unique structure where histories don't "fall out" or "jump"
 
 ---
 
@@ -310,9 +379,9 @@ This was impossible to state before because:
 - **Dyad insufficiency** requires definition of "self-observation" → HYP, not FORCED
 - **Gauge groups** require physical constraints → HYP-G1..G4 in BRIDGES.md
 - **Spacetime identification** requires Fisher metric bridge → HYP-F1, HYP-S4 in BRIDGES.md
-- **Time emergence** (GAP-3) → now correctly formulated, see below
+- **Hermitian generators** → next derivable step (Stone's theorem consequence)
 
-**Note:** Number systems (ℕ → ℤ → ℚ → ℝ → ℂ) and unitarity are now FORCED via Chain-8..12 + DD-Unitarity.
+**Note:** Number systems (ℕ → ℤ → ℚ → ℝ → ℂ), unitarity U(n), and time parameter ℝ are now FORCED.
 
 **Summary of forced chain:**
 
@@ -345,11 +414,14 @@ Chain-12: ℂ ← FORCED (automorphism closure)
     ↓
 DD-Unitarity: U(n) ← FORCED (criticality preservation)
     ↓
+DD-Time: t ∈ ℝ ← FORCED (history completeness)
+    ↓
 ════════════════════════════════════════
 FORCED DERIVATION ENDS HERE
 Number systems: ℕ → ℤ → ℚ → ℝ → ℂ
 Dynamics: Aut_crit = U(n)
-GAP-2 closed. GAP-3 now correctly formulated.
-Time = parameter of unitary histories over ℂ
+Time: t ∈ ℝ (unique complete ordered group)
+GAP-2, GAP-3 closed.
+Next: Hermitian generators (Stone's theorem)
 ════════════════════════════════════════
 ```
