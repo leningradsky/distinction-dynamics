@@ -115,9 +115,21 @@ Chain-7: Recursion ← FORCED* (with caveat)
     ↓
 Chain-8: ℕ ← FORCED (given Chain-7)
     ↓
+UAC: 0 < Φ < ∞ (definition)
+    ↓
+Φ = path entropy ← FORCED (see 0_CORE/UAC.md)
+    ↓
+CR-1..CR-7: Critical Regime ← FORCED (see CRITICAL_REGIME.md)
+  - Finite local valence
+  - Finite generators
+  - Non-commutativity
+  - ≥ 2 generators
+  - Finite presentation
+  - Automorphism structure
+    ↓
 ════════════════════════════════
 FORCED DERIVATION ENDS HERE
-All further steps require HYP/CONJ
+Physics = which critical structure?
 See 2_EXPRESSION/BRIDGES.md
 ════════════════════════════════
 ```

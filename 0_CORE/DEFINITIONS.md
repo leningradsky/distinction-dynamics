@@ -14,4 +14,8 @@
 
 - DEF C (category of admissible extensions): objects are elements of `A`; there is a unique morphism `u -> v` iff `u <= v`; identities are the reflexive morphisms; composition is inherited from transitivity of `<=`.
 
-- DEF Φ (criticality functional): a function symbol reserved for later bridges (e.g. `Φ : A -> R`); it is not used in `1_DERIVATION`.
+- DEF Φ (criticality functional): path entropy of the distinction structure.
+  - DEF Let P_S(n) := number of distinguishable compositions of length n in structure S.
+  - DEF Φ(S) := lim sup_{n→∞} (1/n) log P_S(n)
+  - FORCED Φ is the unique functional satisfying invariance, monotonicity, boundary sensitivity, locality, and dimensionlessness (see `0_CORE/UAC.md` for proof).
+  - DEF (UAC): S is admissible iff 0 < Φ(S) < ∞.
