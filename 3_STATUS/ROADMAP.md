@@ -98,3 +98,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Energy | Enhanced with Lemmas 1-4 elimination proof | H = energy by structural uniqueness |
 | 2025-12-13 | DD-Connection | Gauge connection from local phase coherence | DERIVED — T18, Lemmas 1-4 |
 | 2025-12-13 | DD-Gauge | Enhanced with Lemmas 1-6 elimination proof | SU(3)×SU(2)×U(1) unique by structural elimination |
+| 2025-12-13 | DD-Factorization | Tensor structure ⊗ℋᵢ FORCED by criticality | T11 — locality emerges from factorization |

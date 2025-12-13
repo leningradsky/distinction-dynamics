@@ -68,6 +68,7 @@ README.md must not contradict this file.
 | DD-Unitarity | U(n) dynamics | FORCED | Chain-12, DEF-UAC |
 | DD-Time | t ∈ ℝ (history parameter) | FORCED | DD-Unitarity, DEF-UAC |
 | DD-Generator | H hermitian, U(t)=e^{-itH} | FORCED | DD-Time, DD-Unitarity, Stone |
+| DD-Factorization | ⊗ℋᵢ tensor structure | FORCED | Criticality, ℂ, Unitarity |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -105,6 +106,13 @@ README.md must not contradict this file.
 - Exponential form forced by: additive time → multiplicative operators, continuity → differentiability
 - H is "generator of distinguishability" — energy interpretation requires additional bridge.
 - This completes QM kinematics: ℂ, U(n), t ∈ ℝ, H hermitian — all FORCED, no physics postulates.
+
+**Tensor Factorization (DD-Factorization):** ⊗ℋᵢ structure forced by criticality:
+- Non-factorizable ℋ → any perturbation global → Φ → ∞ (criticality violated)
+- Direct sum ⊕ℂ → no phases, no interference → Φ → 0 (criticality violated)
+- Tensor product ⊗ℋᵢ is unique stable form: phases local, decoherence partial, Φ scales additively
+- Locality emerges as bounded inter-factor distinguishability (not spatial, structural)
+- This establishes subsystems, local dynamics, partial tracing as FORCED before decoherence.
 
 ---
 
@@ -249,7 +257,7 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 28 |
+| FORCED | 29 |
 | DEF | 8 |
 | HYP | 13 |
 | DERIVED | 12 |

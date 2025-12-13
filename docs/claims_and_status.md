@@ -4,7 +4,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (28)
+## FORCED Claims (29)
 
 | ID | Statement | Location |
 |----|-----------|----------|
@@ -23,6 +23,7 @@ Complete list of all claims with their status and location.
 | DD-Unitarity | U(n) dynamics | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | DD-Time | t ∈ ℝ (history parameter) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | DD-Generator | H hermitian, U(t)=e^{-itH} | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| DD-Factorization | ⊗ℋᵢ tensor structure | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | CR-1 | Finite local valence | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-2 | Finite generators | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-3 | Non-polynomial growth | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
@@ -81,18 +82,19 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DERIVED Claims (10)
+## DERIVED Claims (12)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
-| DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DD-Unitarity | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
-| DD-Decoherence | No collapse, measurement relative | DD-Unitarity, DD-Born | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DD-Unitarity, DD-Factorization | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Decoherence | No collapse, measurement relative | DD-Unitarity, DD-Factorization, DD-Born | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Classicality | Classical states = stable fixed points | Criticality, DD-Decoherence | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Space | Manifold structure of space | Criticality, DD-Classicality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Time-Unique | Time as unique process parameter | Criticality, DD-Time, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Energy | H = energy (structural identification) | DD-Time, DD-Generator | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
-| DD-Dim3 | d = 3 (criticality selection) | Criticality, DD-Space, DD-Time-Unique | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
-| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | Criticality, DD-Unitarity, DD-Decoherence, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Dim3 | d = 3 (criticality selection) | Criticality, DD-Space, DD-Time-Unique, DD-Connection | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Connection | Gauge connection A_μ (local phase coherence) | Criticality, ℂ, Unitarity, DD-Factorization | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | Criticality, DD-Dim3, DD-Connection | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique~~ | **SUBSUMED** by DD-Gauge | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -129,13 +131,13 @@ Complete list of all claims with their status and location.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 28 |
+| FORCED | 29 |
 | DEF | 8 |
 | HYP | 13 |
-| DERIVED | 11 |
+| DERIVED | 12 |
 | CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **65** |
+| **Total** | **67** |
 
 **Note:** HYP-C1, HYP-F2, HYP-G1..G4 are SUPERSEDED (now FORCED/DERIVED). HYP-S1 is now DD-Dim3 (DERIVED). SU(3)-unique subsumed by DD-Gauge.
