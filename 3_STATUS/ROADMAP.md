@@ -93,3 +93,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Time-Unique | Time as unique process parameter | DERIVED — signature (1,d-1) forced |
 | 2025-12-13 | DD-Energy | H = energy structural identification | DERIVED — Noether + uniqueness argument |
 | 2025-12-13 | DD-Dim3 | d = 3 by criticality selection | DERIVED — unique stable dimension, GAP-6 CLOSED |
+| 2025-12-13 | DD-Gauge | SU(3)×SU(2)×U(1) by elimination proof | DERIVED — HYP-G1..G4 superseded |

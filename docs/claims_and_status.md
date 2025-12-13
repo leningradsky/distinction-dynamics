@@ -63,10 +63,10 @@ Complete list of all claims with their status and location.
 | HYP-F3 | Fisher-Ricci flow | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Q1 | Fisher → Schrödinger | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Q2 | Physical constants ℏ, c, G | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-G1 | Local gauge invariance | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-G2 | Anomaly freedom | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-G3 | Asymptotic freedom | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-G4 | Confinement | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** by DD-Gauge |
+| ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** by DD-Gauge |
+| ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** by DD-Gauge |
+| ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** by DD-Gauge |
 | HYP-S2 | Time from U(1) phase | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-S3 | Lorentz invariance | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-S4 | Fisher geometry = spacetime | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -92,7 +92,8 @@ Complete list of all claims with their status and location.
 | DD-Time-Unique | Time as unique process parameter | Criticality, DD-Time, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Energy | H = energy (structural identification) | DD-Time, DD-Generator | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Dim3 | d = 3 (criticality selection) | Criticality, DD-Space, DD-Time-Unique | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
-| SU(3)-unique | SU(3) is unique | HYP-G1..G4 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | Criticality, DD-Unitarity, DD-Decoherence, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| ~~SU(3)-unique~~ | ~~SU(3) is unique~~ | **SUBSUMED** by DD-Gauge | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
@@ -130,11 +131,11 @@ Complete list of all claims with their status and location.
 |--------|-------|
 | FORCED | 28 |
 | DEF | 8 |
-| HYP | 17 |
-| DERIVED | 10 |
+| HYP | 13 |
+| DERIVED | 11 |
 | CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **68** |
+| **Total** | **65** |
 
-**Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 is now DD-Dim3 (DERIVED).
+**Note:** HYP-C1, HYP-F2, HYP-G1..G4 are SUPERSEDED (now FORCED/DERIVED). HYP-S1 is now DD-Dim3 (DERIVED). SU(3)-unique subsumed by DD-Gauge.

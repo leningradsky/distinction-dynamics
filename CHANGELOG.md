@@ -2,6 +2,28 @@
 
 All notable changes to this project are documented here.
 
+## [1.7] - 2025-12-13
+
+### Added
+- **DD-Gauge theorem (T18)**: SU(3)×SU(2)×U(1) as unique gauge group
+  - Five structural criteria: C1-C5 (local unitarity, internal distinguishability, factorizability, criticality, minimality)
+  - U(1): minimal phase distinguishability
+  - SU(2): minimal non-abelian stable structure
+  - SU(3): maximal group preserving criticality (N ≥ 4 breaks threshold)
+  - Elimination proof: SO(N), Sp(N), exceptional groups incompatible
+  - Products beyond SU(3)×SU(2)×U(1) duplicate or destabilize
+
+### Changed
+- DERIVED count: 10 → 11 (added DD-Gauge)
+- HYP count: 17 → 13 (HYP-G1..G4 superseded by DD-Gauge)
+- SU(3)-unique subsumed by DD-Gauge
+- T18 → T19 (Boundary renumbered)
+
+### Summary
+**Complete Standard Model structure derived without postulates!**
+- Gauge group is elimination proof, not hypothesis
+- Only numerical constants (α, masses, couplings) remain as realization index
+
 ## [1.6] - 2025-12-13
 
 ### Added

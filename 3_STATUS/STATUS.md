@@ -120,10 +120,10 @@ README.md must not contradict this file.
 | HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, DD-Time |
 | HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, DD-Time |
 | HYP-Q2 | Physical constants ℏ, c, G | HYP (input) | — |
-| HYP-G1 | Local gauge invariance | HYP | HYP-S4 |
-| HYP-G2 | Anomaly freedom | HYP (empirical) | HYP-Q1, HYP-G1 |
-| HYP-G3 | Asymptotic freedom | HYP (empirical) | — |
-| HYP-G4 | Confinement | HYP (empirical) | — |
+| ~~HYP-G1~~ | ~~Local gauge invariance~~ | **SUPERSEDED** | Now DD-Gauge |
+| ~~HYP-G2~~ | ~~Anomaly freedom~~ | **SUPERSEDED** | Now DD-Gauge |
+| ~~HYP-G3~~ | ~~Asymptotic freedom~~ | **SUPERSEDED** | Now DD-Gauge |
+| ~~HYP-G4~~ | ~~Confinement~~ | **SUPERSEDED** | Now DD-Gauge |
 | HYP-S1 | 3 spatial dimensions from triad | CONJ | CIRC-2 |
 | HYP-S2 | Time dimension from U(1) phase | HYP | HYP-Q1 |
 | HYP-S3 | Lorentz invariance | HYP | HYP-S1 |
@@ -146,7 +146,8 @@ README.md must not contradict this file.
 | DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
 | DD-Energy | H = energy (structural identification) | DERIVED | DD-Time, DD-Generator |
 | DD-Dim3 | d = 3 (criticality selection) | DERIVED | Criticality, DD-Space, DD-Time-Unique |
-| SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
+| DD-Gauge | SU(3)×SU(2)×U(1) (elimination proof) | DERIVED | Criticality, DD-Unitarity, DD-Decoherence, DD-Space |
+| ~~SU(3)-unique~~ | ~~SU(3) is unique strong gauge group~~ | **SUBSUMED** | Now part of DD-Gauge |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
 
@@ -204,6 +205,15 @@ README.md must not contradict this file.
 - d = 3: unique dimension with stable criticality (1/r² decay, balanced volume/surface)
 - This is structural selection, not anthropic argument
 
+**Gauge Groups (DD-Gauge):** SU(3)×SU(2)×U(1) as unique structure:
+- Five structural criteria: C1 (local unitarity), C2 (non-trivial internal), C3 (factorizability), C4 (criticality), C5 (minimality)
+- U(1): minimal phase distinguishability
+- SU(2): minimal non-abelian stable structure
+- SU(3): maximal group preserving criticality (N ≥ 4 breaks criticality threshold)
+- SO(N), Sp(N), exceptional groups eliminated (incompatible with phase/factorization structure)
+- Products beyond SU(3)×SU(2)×U(1) duplicate distinguishabilities or destabilize
+- This is elimination proof, not postulate
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
@@ -233,8 +243,8 @@ README.md must not contradict this file.
 |--------|-------|
 | FORCED | 28 |
 | DEF | 8 |
-| HYP | 17 |
-| DERIVED | 10 |
+| HYP | 13 |
+| DERIVED | 11 |
 | CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |

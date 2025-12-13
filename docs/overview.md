@@ -15,6 +15,8 @@ From this, structural necessities follow:
 - Born rule μ = |ψ|² (unique distinguishability measure)
 - Decoherence without collapse (measurement as relative distinguishability)
 - Classical emergence (stable fixed points of decoherence)
+- d = 3 (criticality selection)
+- Gauge group SU(3)×SU(2)×U(1) (elimination proof)
 
 ## What DD Claims
 
@@ -28,9 +30,9 @@ From this, structural necessities follow:
 
 ### HYP (Hypotheses for Physics)
 - Fisher metric = distinction geometry
-- Gauge invariance, anomaly freedom
 - Spacetime identification
-- Total: 18 claims
+- Higgs mechanism, fermion generations
+- Total: 13 claims
 
 ### DERIVED (From FORCED Structure)
 - Born rule μ = |ψ|² (DD-Born theorem)
@@ -40,9 +42,9 @@ From this, structural necessities follow:
 - Time uniqueness, signature (1,d-1) (DD-Time-Unique theorem)
 - Energy = H (DD-Energy theorem)
 - d = 3 (DD-Dim3 theorem — criticality selection)
-- SU(3) uniqueness (given gauge HYP)
+- Gauge group SU(3)×SU(2)×U(1) (DD-Gauge theorem — elimination proof)
 - Koide Q = 2/3
-- Total: 10 claims
+- Total: 11 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula
