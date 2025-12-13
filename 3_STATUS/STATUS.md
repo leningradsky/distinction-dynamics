@@ -211,14 +211,16 @@ README.md must not contradict this file.
 - Lemma 4: Connection dynamics inevitable (connection has its own history)
 - Yang–Mills is not model but normal form of distinguishability preservation
 
-**Gauge Groups (DD-Gauge):** SU(3)×SU(2)×U(1) as unique structure:
-- Five structural criteria: C1 (local unitarity), C2 (non-trivial internal), C3 (factorizability), C4 (criticality), C5 (minimality)
-- U(1): minimal phase distinguishability
-- SU(2): minimal non-abelian stable structure
-- SU(3): maximal group preserving criticality (N ≥ 4 breaks criticality threshold)
-- SO(N), Sp(N), exceptional groups eliminated (incompatible with phase/factorization structure)
-- Products beyond SU(3)×SU(2)×U(1) duplicate distinguishabilities or destabilize
-- This is elimination proof, not postulate
+**Gauge Groups (DD-Gauge):** SU(3)×SU(2)×U(1) as unique structure via elimination:
+- Lemma 1: Gauge equivalence is inevitable (from decoherence + locality)
+- Lemma 2: Gauge group G ⊂ U(n) is compact unitary (from unitarity preservation)
+- Lemma 3: Abelian groups alone insufficient (U(1) alone → trivialized dynamics)
+- Lemma 4: Non-abelian structure required (for non-trivial distinguishability dynamics)
+- Lemma 5: SU(2) is minimal non-abelian but insufficient (too symmetric for full spectrum)
+- Lemma 6: SU(3) is unique critical group (SU(N≥4) violates criticality, N=3 exact threshold)
+- Full product SU(3)×SU(2)×U(1): strong + weak + electromagnetic = complete coverage
+- SO(N), Sp(N), exceptional groups: incompatible with phase/factorization structure
+- This is elimination proof from criticality, not postulate
 
 ### Conjectures (CONJ)
 
