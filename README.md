@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v1.7 (Complete Standard Model Structure — No Postulates)
+**Version:** v2.4 (T0-T30 Complete Derivation Chain)
 
 ---
 
@@ -30,19 +30,18 @@ From this, DD forces:
 - d = 3 — unique stable dimension by criticality selection (DERIVED)
 - SU(3)×SU(2)×U(1) — unique gauge group by elimination proof (DERIVED)
 
-DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
+**Key insight:** Physics is not derived because it's "true" — it's the only stable regime of history distinguishability. Per DD-NoAlt (T26), there are no ontological alternatives.
 
-**Key insight:** Physics is not derived because it's not an axiom. It's the only stable regime of history distinguishability.
+**Authoritative reference:** [FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) — complete derivation T0-T30.
 
 ## What This Is NOT
 
-- ❌ **Not a Theory of Everything** — DD does not derive all physics from one axiom
-- ❌ **Not complete** — Gauge groups, spacetime geometry require hypotheses
-- ❌ **Not claiming derivation of constants** — Values like α=137 may be numerology
-- ❌ **Not without assumptions** — ~18 HYP required for physics bridges
+- ❌ **Not a Theory of Everything** — DD derives structure, not numerical values
+- ❌ **Not claiming derivation of constants** — Values like α ≈ 1/137 remain CONJ
+- ❌ **Not falsified by specific values** — DD constrains domains (BOUND), not exact numbers
 
-**Better characterization:**
-> DD is a self-consistent framework showing that observed physics is compatible with an information-geometric triadic structure, with explicit labeling of what is forced vs assumed.
+**What DD claims:**
+> DD derives that physics *must* have certain structural features (gauge symmetry, 3+1 dimensions, N ≥ 3 generations) — not because they're axioms, but because alternatives violate UAC.
 
 ---
 
@@ -50,21 +49,19 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 
 | Label | Count | Meaning |
 |-------|-------|---------|
-| **FORCED** | 28 | Logically necessary from axiom |
-| **DEF** | 8 | Definitions/conventions |
-| **HYP** | 13 | Hypotheses requiring justification |
-| **DERIVED** | 11 | Follows from HYP + FORCED |
-| **CONJ** | 2 | Conjectures (may be numerology) |
-| **CIRC** | 2 | Circular dependencies |
+| **FORCED** | 33 | Logically necessary from axiom |
+| **DEF** | 9 | Definitions/conventions |
+| **DERIVED** | 18 | Follows from FORCED chain |
+| **CONJ** | 3 | Conjectures (numerical patterns) |
+| **CIRC** | 1 | Circular dependency (CIRC-2 only) |
 | **PRED** | 1 | Testable prediction |
+| ~~HYP~~ | 0 | **Eliminated** by DD-NoAlt (T26) |
 
 **Master truth file:** [3_STATUS/STATUS.md](3_STATUS/STATUS.md)
 
-**Open gaps:** GAP-5 (α=137), GAP-7 (functor)
+**Open gaps:** GAP-5 (α ≈ 1/137), GAP-7 (functor), GAP-8 (Koide numerics)
 
-**Closed today:** GAP-6 (3+1 dim → DD-Dim3)
-
-**Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility)
+**Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility), GAP-6 (d=3)
 
 ---
 
@@ -76,15 +73,15 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 |------|------|---------|
 | 5 min | This README | Overview and scope |
 | 10 min | [0_CORE/AXIOM.md](0_CORE/AXIOM.md) | The sole primitive |
-| 15 min | [1_DERIVATION/FORCED_CHAIN.md](1_DERIVATION/FORCED_CHAIN.md) | What is actually FORCED |
-| 10 min | [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md) | HYP/CONJ bridges to physics |
-| 10 min | [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) | How to break the theory |
+| 20 min | [1_DERIVATION/FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) | **Complete derivation T0-T30** |
+| 10 min | [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md) | Numerical patterns (CONJ) |
+| 5 min | [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) | How to break the theory |
 | 10 min | [3_STATUS/STATUS.md](3_STATUS/STATUS.md) | Master truth file |
 
 **Key questions for reviewers:**
-1. Is Chain-7 (irreversibility → ℕ) valid?
-2. Are the HYP bridges justified or ad hoc?
-3. Is CONJ-A1 (α=137) numerology or structure?
+1. Is T4 (irreversibility → ℕ) valid?
+2. Is T26 (DD-NoAlt) legitimate elimination of alternatives?
+3. Is CONJ-A1 (α ≈ 1/137) numerology or structure?
 
 ---
 
@@ -116,23 +113,22 @@ See [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) for complete list.
 └── UAC.md             0 < Φ < ∞ criterion
 
 1_DERIVATION/     ← FORCED consequences
-├── FORCED_CHAIN.md    Chain-5..8, L1-L4, CR-1..7
-├── CRITICAL_REGIME.md Structural constraints
-└── DEPENDENCY_GRAPH.md Visual map
+├── FORCED_SPINE.md    ★ T0-T30 complete derivation (authoritative)
+├── FORCED_CHAIN.md    Legacy notation (Chain-5..8, L1-L4, CR-1..7)
+└── CRITICAL_REGIME.md Structural constraints
 
-2_EXPRESSION/     ← Bridges to physics
-├── BRIDGES.md         All HYP/CONJ/DERIVED
-└── CIRCULARITIES.md   CIRC-1, CIRC-2
+2_EXPRESSION/     ← Numerical patterns
+├── BRIDGES.md         CONJ claims (α, Koide angles)
+└── CIRCULARITIES.md   CIRC-2 (Triad ⟷ Rank)
 
 3_STATUS/         ← Truth tracking
 ├── STATUS.md          Master truth file
-├── ROADMAP.md         Gap closure queue
-└── THEORY_POSITION.md Post-audit statement
+└── ROADMAP.md         Gap closure log
 
 6_AUDITS/         ← Self-criticism
-├── internal_audit.md   11 structural issues
-├── known_objections.md 13 objections acknowledged
-└── failure_modes.md    10 falsification conditions
+├── internal_audit.md   Structural issues
+├── known_objections.md Objections acknowledged
+└── failure_modes.md    Falsification conditions
 ```
 
 ### Formal Verification
@@ -153,60 +149,58 @@ See [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) for complete list.
 
 ---
 
-## FORCED Chain Summary
+## Derivation Summary (T0-T30)
 
 ```
-Ø impossible (DEF-AX)
+T0: Ø impossible (axiom)
     ↓
-Σ, A, ≼, C (definitions)
+T1-T3: Σ, A, ≼, C, Φ (definitions)
     ↓
-L1-L4: Category properties ← FORCED
+T4: Irreversibility → ℕ (FORCED)
     ↓
-Chain-5: Bool ← FORCED
+T5-T7: ℤ → ℚ → ℝ (FORCED by completeness)
     ↓
-Chain-6: Δ = Δ(Δ) ← FORCED (self-application)
+T8-T13: Unitarity, Generators, Born rule, Decoherence (FORCED)
     ↓
-Chain-7: {Δⁿ} infinite ← FORCED (irreversibility from Ø impossible)
+T14-T17: Space, Time, Energy, d=3 (DERIVED)
     ↓
-Chain-8: ℕ ≅ {Δⁿ} ← FORCED (monoid isomorphism)
+T18-T25: Gauge structure SU(3)×SU(2)×U(1) (DERIVED)
     ↓
-UAC: 0 < Φ < ∞ (definition)
+T26: DD-NoAlt — no ontological alternatives (FORCED)
     ↓
-CR-1..CR-7: Critical Regime ← FORCED
+T27-T28: Λ > 0, 0 < G < ∞ (FORCED)
     ↓
-════════════════════════════════
-FORCED DERIVATION ENDS HERE
-════════════════════════════════
+T29: Einstein equations G_μν = 8πG T_μν (DERIVED)
     ↓
-Physics bridges require HYP
-See 2_EXPRESSION/BRIDGES.md
+T30: N_gen ≥ 3 fermion generations (FORCED)
+    ↓
+═══════════════════════════════════════════
+  COMPLETE: Standard Model + GR structure
+  All from "Ø is impossible"
+═══════════════════════════════════════════
 ```
 
-**Key insight:** The entire FORCED chain uses only ℕ. Continuum (ℝ) is needed only for physics bridges, not for the core derivation.
+**See [FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) for complete proofs.**
 
 ---
 
-## Bridges to Physics (HYP)
+## Remaining Conjectures (CONJ)
 
-| Bridge | Status | Depends On |
-|--------|--------|------------|
-| Continuum emergence | HYP-C1 | Not derived |
-| Fisher metric | HYP-F1 | HYP-C1 |
-| Time parameter | HYP-F2 | Not derived |
-| Gauge invariance | HYP-G1 | HYP-S4 |
-| Anomaly freedom | HYP-G2 | Empirical |
-| Asymptotic freedom | HYP-G3 | Nobel 2004 |
-| Confinement | HYP-G4 | Empirical |
+What is **not** derived — numerical patterns that may be coincidence:
 
-**Derived results (given HYP):**
-- SU(3) uniqueness (elimination proof)
-- Koide Q = 2/3 (99.999% fit)
-- ε = √2
+| ID | Claim | Fit | Status |
+|----|-------|-----|--------|
+| CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | May be numerology |
+| CONJ-K2 | θ ≈ 2/9 (Koide angle) | ~99% | Geometric? |
+| HYP-K3 | sin²θ_W = 3/8 | — | Numerical pattern |
 
-**Conjectures (may be numerology):**
-- 1/α = 11² + 4² = 137 (CONJ-A1)
-- θ ≈ 2/9 (CONJ-K2)
-- 3+1 dimensions (CONJ)
+**What IS derived (no longer hypotheses):**
+- Continuum ℝ → T5-T7 (FORCED)
+- Time parameter → T15 DD-Time (DERIVED)
+- Gauge structure → T18-T25 DD-Gauge (DERIVED)
+- Spacetime d=3+1 → T17 DD-Dim3 (DERIVED)
+- Fermion generations N ≥ 3 → T30 DD-Generations (FORCED)
+- Koide Q = 2/3 → geometric invariant in ℂ³ (DERIVED from T30)
 
 ---
 
@@ -259,7 +253,7 @@ Note: Code is auxiliary verification, not part of formal spine.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-Key rule: All claims must be labeled (FORCED/DEF/HYP/CONJ/CIRC/PRED).
+Key rule: All claims must be labeled (FORCED/DEF/DERIVED/CONJ/CIRC/PRED).
 
 ---
 
@@ -267,12 +261,15 @@ Key rule: All claims must be labeled (FORCED/DEF/HYP/CONJ/CIRC/PRED).
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v1.7 | 2025-12-13 | DD-Gauge; SU(3)×SU(2)×U(1) DERIVED (elimination proof) |
-| v1.6 | 2025-12-13 | DD-Dim3; d = 3 DERIVED (criticality selection) |
-| v1.5 | 2025-12-13 | DD-Energy; H = energy DERIVED (not interpretation) |
-| v1.4 | 2025-12-13 | DD-Time-Unique; spacetime signature (1,d-1) DERIVED |
-| v1.3 | 2025-12-13 | DD-Space added; manifold structure DERIVED |
-| v0.4 | 2025-12-13 | GAP-1, GAP-4 closed; UAC discrete clarification |
-| v0.3 | 2025-12-13 | Post-audit spine; explicit labeling |
-| v0.2 | 2025-12-12 | Critical regime added |
+| v2.4 | 2025-12-13 | T30 DD-Generations; N ≥ 3 FORCED; Koide geometric; CIRC-1 broken |
+| v2.3 | 2025-12-13 | T29 DD-Einstein; field equations DERIVED via Lovelock |
+| v2.2 | 2025-12-13 | T28 DD-Gravity; 0 < G < ∞ FORCED |
+| v2.1 | 2025-12-13 | T27 DD-Lambda; Λ > 0 FORCED |
+| v2.0 | 2025-12-13 | T26 DD-NoAlt; HYP category eliminated; T0-T30 unified system |
+| v1.7 | 2025-12-13 | DD-Gauge; SU(3)×SU(2)×U(1) DERIVED |
+| v1.6 | 2025-12-13 | DD-Dim3; d = 3 DERIVED |
+| v1.5 | 2025-12-13 | DD-Energy; H = energy DERIVED |
+| v1.4 | 2025-12-13 | DD-Time-Unique; signature (1,d-1) DERIVED |
+| v1.3 | 2025-12-13 | DD-Space; manifold structure DERIVED |
+| v0.4 | 2025-12-13 | GAP-1, GAP-4 closed |
 | v0.1 | 2025-12-12 | Initial spine |

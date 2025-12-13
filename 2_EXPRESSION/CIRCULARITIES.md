@@ -1,58 +1,38 @@
 # Circular Dependencies
 
-**Last updated:** 2025-12-13
+**Last updated:** 2025-12-13 (v2.4)
 
-This file documents all circular dependencies in the derivation.
+This file documents circular dependencies in the derivation.
 Circles are not errors — they are mutual consistency requirements.
 They must not be presented as linear derivations.
 
+**Status:** CIRC-1 has been **BROKEN** by T30 (DD-Generations).
+
 ---
 
-## CIRC-1: SU(3) ⟷ 3 Generations
+## ~~CIRC-1: SU(3) ⟷ 3 Generations~~ — BROKEN
 
-### The Circle
+### Status: RESOLVED by DD-Generations (T30)
 
+**The circularity was:**
 ```
-SU(3) gauge group
-       ↓
-Anomaly cancellation requires N generations
-       ↓
-N = 3 for anomaly freedom with SU(3)
-       ↓
-3 generations assumed
-       ↓
-Triadic structure motivates SU(3)
-       ↓
-[returns to start]
+SU(3) gauge group ⟷ 3 fermion generations
 ```
 
-### Direction A: 3 generations → SU(3)
+**Resolution:** T30 (DD-Generations) derives N_gen ≥ 3 **independently** of SU(3):
 
-**Statement:** Given 3 fermion generations, SU(3) is necessary for anomaly freedom.
+1. **ℂ¹ forbidden:** CP violation eliminable by basis change
+2. **ℂ² forbidden:** CP-phase removable by unitary transformation
+3. **ℂ³ minimal:** First dimension with irremovable phase
 
-**Status:** DERIVED (given HYP-G2)
+This breaks the circle:
+- N ≥ 3 is now FORCED from CP violation requirement (T30)
+- SU(3) remains DERIVED from gauge constraints (T22)
+- The two are independently established, not mutually assumed
 
-**Justification:** Elimination proof — SU(2), SU(4), SU(5) fail anomaly constraints with 3 generations.
+**See:** [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) §Level 24 (T30)
 
-### Direction B: SU(3) → 3 generations
-
-**Statement:** Given SU(3), 3 generations is "natural" (fundamental rep is 3-dimensional).
-
-**Status:** HYP (not forced)
-
-**Problem:** The fundamental representation dimension does not logically force 3 physical generations. It makes 3 "natural" but not necessary.
-
-### Resolution
-
-This is **mutual consistency**, not derivation:
-
-- If you assume 3 generations, SU(3) follows (given anomaly requirement)
-- If you assume SU(3), 3 is a natural number (but not forced)
-- Together they form a self-consistent package
-
-**Empirical support:** LEP measured N_ν = 2.984 ± 0.008
-
-**What cannot be claimed:** "DD derives 3 generations from SU(3)" or "DD derives SU(3) from 3 generations" as independent facts.
+**Empirical support:** LEP measured N_ν = 2.984 ± 0.008 ✓
 
 ---
 
@@ -108,10 +88,12 @@ The circularity is in using rank 2 to motivate why we need triad, while triad gi
 
 ## Summary Table
 
-| ID | Circle | What's HYP | What's FORCED |
-|----|--------|------------|---------------|
-| CIRC-1 | SU(3) ⟷ generations | Generation count, anomaly requirement | Elimination given assumptions |
-| CIRC-2 | Triad ⟷ rank | Minimality, self-observation definition | Rank 2 from triad structure |
+| ID | Circle | Status | Resolution |
+|----|--------|--------|------------|
+| ~~CIRC-1~~ | SU(3) ⟷ generations | **BROKEN** | T30 derives N ≥ 3 independently |
+| CIRC-2 | Triad ⟷ rank | Active | Minimality + self-observation |
+
+**Remaining circularities:** 1 (CIRC-2 only)
 
 ---
 
