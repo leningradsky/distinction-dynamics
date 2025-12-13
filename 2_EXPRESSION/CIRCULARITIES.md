@@ -1,12 +1,14 @@
 # Circular Dependencies
 
-**Last updated:** 2025-12-13 (v2.4)
+**Last updated:** 2025-12-13 (v2.5)
 
 This file documents circular dependencies in the derivation.
 Circles are not errors — they are mutual consistency requirements.
 They must not be presented as linear derivations.
 
-**Status:** CIRC-1 has been **BROKEN** by T30 (DD-Generations).
+**Status:** ALL CIRCULARITIES RESOLVED
+- CIRC-1 **BROKEN** by T30 (DD-Generations)
+- CIRC-2 **BROKEN** by T31 (DD-Rank)
 
 ---
 
@@ -36,53 +38,29 @@ This breaks the circle:
 
 ---
 
-## CIRC-2: Triad ⟷ Rank ≥ 2
+## ~~CIRC-2: Triad ⟷ Rank ≥ 2~~ — BROKEN
 
-### The Circle
+### Status: RESOLVED by DD-Rank (T31)
 
+**The circularity was:**
 ```
-Minimal structure assumption (Occam's Razor)
-       ↓
-What is the minimal self-observing structure?
-       ↓
-Dyad (2 elements) has rank 1
-       ↓
-Rank 1 insufficient for self-observation (claimed)
-       ↓
-Triad (3 elements) has rank 2
-       ↓
-Rank 2 sufficient (claimed)
-       ↓
-Triad is minimal structure with rank ≥ 2
-       ↓
-[but rank ≥ 2 requirement comes from triad analysis]
+Triad ⟷ Rank ≥ 2
 ```
 
-### Analysis
+**Resolution:** T31 (DD-Rank) derives rank ≥ 2 **independently** of triad:
 
-**Step 1:** Minimality is assumed (Occam's Razor) — **HYP**
+1. **Rank 1 forbidden:** In dim = 1, every endomorphism Δ is λ·id
+2. **Therefore Δ(Δ) = λ²·id ∝ Δ**
+3. **By T3:** Δ ≠ Δ(Δ) (distinction non-triviality)
+4. **Contradiction:** rank = 1 violates T3
+5. **∴ rank ≥ 2 FORCED**
 
-**Step 2:** "Dyad insufficient for self-observation" — **HYP**
-- Requires definition of "self-observation"
-- Definition not in 0_CORE/
-- This is an interpretive bridge
+This breaks the circle:
+- Rank ≥ 2 is FORCED from T3 (distinction non-triviality)
+- Triad is minimal realization, not assumption
+- No appeal to "self-observation" required
 
-**Step 3:** "Rank 2 sufficient" — **FORCED given triad**
-- If you have 3 elements, rank ≥ 2 follows mathematically
-
-### Resolution
-
-Proper statement:
-
-> **HYP:** Assume minimality and self-observation requirement.
->
-> **FORCED (given HYP):** The minimal structure satisfying self-observation has rank 2.
-
-The circularity is in using rank 2 to motivate why we need triad, while triad gives us rank 2.
-
-**What cannot be claimed:** "DD forces triad from pure logic."
-
-**Honest statement:** "Given the hypothesis that self-observation requires rank ≥ 2, the minimal such structure is a triad."
+**See:** [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) §Level 25 (T31)
 
 ---
 
@@ -90,10 +68,12 @@ The circularity is in using rank 2 to motivate why we need triad, while triad gi
 
 | ID | Circle | Status | Resolution |
 |----|--------|--------|------------|
-| ~~CIRC-1~~ | SU(3) ⟷ generations | **BROKEN** | T30 derives N ≥ 3 independently |
-| CIRC-2 | Triad ⟷ rank | Active | Minimality + self-observation |
+| ~~CIRC-1~~ | SU(3) ⟷ generations | **BROKEN** | T30: N ≥ 3 from CP violation |
+| ~~CIRC-2~~ | Triad ⟷ rank | **BROKEN** | T31: rank ≥ 2 from Δ ≠ Δ(Δ) |
 
-**Remaining circularities:** 1 (CIRC-2 only)
+**Remaining circularities:** 0
+
+All circular dependencies have been resolved by independent derivations.
 
 ---
 

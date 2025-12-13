@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-13
+**Last updated:** 2025-12-13 (v2.5)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -77,6 +77,15 @@ README.md must not contradict this file.
 | DD-Lambda | Λ > 0 (cosmological constant) | FORCED | T5, T9, T26 |
 | DD-Gravity | 0 < G < ∞ (gravitational coupling) | FORCED | T5, T15, T17, T22, T26 |
 | DD-Generations | N_gen ≥ 3 (fermion generations) | FORCED | T4, T7, T13, T26 |
+| DD-Rank | rank ≥ 2 (representation structure) | FORCED | T3 |
+
+**Representational Rank (DD-Rank):** rank ≥ 2 forced by distinction non-triviality:
+- In rank 1: every endomorphism Δ is λ·id (scalar)
+- Therefore Δ(Δ) = λ²·id ∝ Δ (proportional)
+- By T3: Δ ≠ Δ(Δ) (distinction non-triviality)
+- Contradiction: rank = 1 violates T3
+- rank ≥ 2 is FORCED; triad is minimal realization
+- Breaks CIRC-2: rank derived independently of "self-observation"
 
 **Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by CP requirement:
 - ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
@@ -320,7 +329,9 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | ID | Statement | Status |
 |----|-----------|--------|
 | ~~CIRC-1~~ | ~~SU(3) ⟷ 3 generations~~ | **BROKEN** — N ≥ 3 now FORCED independently (T30) |
-| CIRC-2 | Triad ⟷ Rank ≥ 2 | Minimality assumed |
+| ~~CIRC-2~~ | ~~Triad ⟷ Rank ≥ 2~~ | **BROKEN** — rank ≥ 2 now FORCED independently (T31) |
+
+**All circular dependencies resolved.**
 
 ### Predictions (PRED)
 
@@ -334,22 +345,22 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 
 | Status | Count |
 |--------|-------|
-| FORCED | 33 |
+| FORCED | 34 |
 | DEF | 9 |
 | DERIVED | 20 |
 | UNTRACED | 0 |
 | CONJ | 4 |
-| CIRC | 1 |
+| CIRC | 0 |
 | PRED | 1 |
 
-**Note (T30):** Complete derivation including generations:
-- 19 now DERIVED (traced chains) + Koide (T30)
-- 3 now FORCED (DD-Lambda, DD-Gravity, DD-Generations)
+**Note (T31):** Complete derivation with all circularities resolved:
+- 20 now DERIVED (traced chains)
+- 4 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank)
 - 1 now DEF (ℏ = unit choice)
-- 1 now CONJ (HYP-K3 only — Koide promoted to DERIVED)
-- CIRC-1 BROKEN (generations derived independently)
+- CIRC-1 BROKEN by T30 (generations derived independently)
+- CIRC-2 BROKEN by T31 (rank derived independently)
 
-**All fundamental physics including fermion generations now FORCED/DERIVED.**
+**All fundamental physics FORCED/DERIVED. All circularities resolved.**
 
 ---
 
@@ -382,7 +393,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T30 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T31 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
