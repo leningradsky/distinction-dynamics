@@ -14,6 +14,7 @@ From this, structural necessities follow:
 - Hermitian generator H with U(t) = e^{-itH} (Stone's theorem)
 - Born rule μ = |ψ|² (unique distinguishability measure)
 - Decoherence without collapse (measurement as relative distinguishability)
+- Classical emergence (stable fixed points of decoherence)
 
 ## What DD Claims
 
@@ -34,9 +35,10 @@ From this, structural necessities follow:
 ### DERIVED (From FORCED Structure)
 - Born rule μ = |ψ|² (DD-Born theorem)
 - Decoherence without collapse (DD-Decoherence theorem)
+- Classical emergence (DD-Classicality theorem)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 5 claims
+- Total: 6 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula

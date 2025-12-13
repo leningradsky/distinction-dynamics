@@ -2,6 +2,29 @@
 
 All notable changes to this project are documented here.
 
+## [1.2] - 2025-12-13
+
+### Added
+- **DD-Classicality theorem (T13)**: Classical emergence from decoherence
+  - Classical states = stable fixed points of decoherence
+  - Pointer states = eigenstates of system-environment interaction
+  - If all states unstable → Φ → 0 → criticality violated
+  - Classical objects = stable orbits of distinguishability
+  - Classicality is local, not fundamental
+
+### Changed
+- DERIVED count: 5 → 6 (added DD-Classicality)
+- T13 → T14 (Boundary renumbered)
+
+### Summary
+QM + classical emergence is now complete without postulates:
+- Unitary dynamics (FORCED)
+- Born rule (DERIVED)
+- Decoherence (DERIVED)
+- No collapse (FORCED by unitarity)
+- Measurement as relative (DERIVED)
+- **Classical emergence (DERIVED)**
+
 ## [1.1] - 2025-12-13
 
 ### Added

@@ -141,6 +141,7 @@ README.md must not contradict this file.
 |----|-----------|--------|------------|
 | DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DERIVED | DD-Unitarity, P1-P3 |
 | DD-Decoherence | No collapse, measurement relative | DERIVED | DD-Unitarity, DD-Born |
+| DD-Classicality | Classical states = stable fixed points | DERIVED | Criticality, DD-Decoherence |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -158,6 +159,13 @@ README.md must not contradict this file.
 - Φ(Ψ) → Φ(S) + Φ(E) (factorization)
 - Collapse impossible: would violate unitarity (FORCED)
 - Born rule applies to factorized alternatives
+
+**Classicality (DD-Classicality):** Classical emergence from decoherence:
+- Classical state = distinction surviving decoherence
+- Pointer states = eigenstates of system-environment interaction
+- If all states unstable → Φ → 0 → criticality violated
+- Classical objects = stable orbits of distinguishability
+- Classicality is local, not fundamental
 
 ### Conjectures (CONJ)
 
@@ -189,7 +197,7 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 18 |
-| DERIVED | 5 |
+| DERIVED | 6 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |

@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v1.1 (QM Complete — No Postulates)
+**Version:** v1.2 (QM + Classical Emergence — No Postulates)
 
 ---
 
@@ -23,6 +23,7 @@ From this, DD forces:
 - Hermitian generator H with U(t) = e^{-itH} — Stone's theorem, forced by continuous unitarity
 - Born rule μ = |ψ|² — unique distinguishability measure (DERIVED from unitarity)
 - Decoherence without collapse — measurement as relative distinguishability (DERIVED)
+- Classical emergence — stable fixed points of decoherence (DERIVED)
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
 
@@ -47,7 +48,7 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 | **FORCED** | 28 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
 | **HYP** | 18 | Hypotheses requiring justification |
-| **DERIVED** | 5 | Follows from HYP + FORCED |
+| **DERIVED** | 6 | Follows from HYP + FORCED |
 | **CONJ** | 3 | Conjectures (may be numerology) |
 | **CIRC** | 2 | Circular dependencies |
 | **PRED** | 1 | Testable prediction |
