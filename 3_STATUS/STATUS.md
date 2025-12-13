@@ -189,6 +189,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 | DD-Fisher | Fisher metric uniqueness | DERIVED | Chain-12, DD-Born, Chentsov |
 | DD-LightSpeed | Universal speed c | DERIVED | DD-Lorentz, DD-Space |
 | DD-Mass | Mass mechanism (Higgs/SSB) | DERIVED | DD-Gauge, DD-Connection, Criticality |
+| DD-Einstein | G_μν = 8πG T_μν (field equations) | DERIVED | DD-Gravity, DD-NoAlt, Lovelock |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique strong gauge group~~ | **SUBSUMED** | Now part of DD-Gauge |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -280,7 +281,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 **Universal Speed (DD-LightSpeed):** c as derived constant:
 - c is the unique invariant speed in DD-Lorentz
 - ℏ is unit choice (sets scale for H in DD-Generator)
-- G remains HYP (requires GR bridge not yet established)
+- G is FORCED (DD-Gravity T28, DD-Einstein T29)
 - Supersedes c-part of HYP-Q2
 
 **Mass Mechanism (DD-Mass):** Higgs/SSB as unique mechanism:
@@ -289,6 +290,14 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Lemma 3: SSB is unique resolution (spontaneous breaking preserves structure, generates mass)
 - Higgs mechanism is NOT postulated but forced by DD-Gauge + D1 localization
 - Supersedes HYP-P1
+
+**Einstein Equations (DD-Einstein):** G_μν = 8πG T_μν as unique field equations:
+- Lemma 1: Source must be tensorial T_μν (directional distinguishability)
+- Lemma 2: Curvature must be Ricci type (topology-independent)
+- Lemma 3: Naive R_μν = κT_μν fails (Bianchi incompatible with conservation)
+- Lemma 4: Einstein tensor G_μν unique by Lovelock's theorem in 4D
+- GR is NOT one possible theory — it is the unique minimal form
+- Completes gravity derivation from DD-Gravity (T28)
 
 ### Conjectures (CONJ)
 
@@ -319,20 +328,20 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 |--------|-------|
 | FORCED | 32 |
 | DEF | 9 |
-| DERIVED | 18 |
+| DERIVED | 19 |
 | UNTRACED | 0 |
 | CONJ | 5 |
 | CIRC | 2 |
 | PRED | 1 |
 
-**Note (T28):** UNTRACED fully eliminated:
-- 17 now DERIVED (traced chains)
-- 2 now FORCED (HYP-Λ1 → DD-Lambda, HYP-Q2(G) → DD-Gravity)
+**Note (T29):** Complete derivation:
+- 18 now DERIVED (traced chains) + DD-Einstein (T29)
+- 2 now FORCED (DD-Lambda, DD-Gravity)
 - 1 now DEF (ℏ = unit choice)
 - 2 now CONJ (HYP-K1, HYP-K3)
 - 1 now CIRC (HYP-P2 → CIRC-1)
 
-**All fundamental physics is now FORCED/DERIVED.**
+**All fundamental physics is now FORCED/DERIVED. GR included.**
 
 ---
 
@@ -365,7 +374,7 @@ Per DD-NoAlt, HYP is eliminated. Items below are reclassified:
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T28 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T29 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`

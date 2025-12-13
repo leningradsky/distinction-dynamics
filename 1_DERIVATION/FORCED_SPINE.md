@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.2
-**Status:** Authoritative reference for the FORCED chain (T0-T28)
+**Version:** 2.3
+**Status:** Authoritative reference for the FORCED chain (T0-T29)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -2033,6 +2033,104 @@ This explains:
 
 ---
 
+## Level 23: Field Equations
+
+### T29: Einstein Field Equations (DD-Einstein)
+
+**Statement:** The Einstein field equations are the unique minimal form of local-global coupling:
+
+$$G_{\mu\nu} = 8\pi G \, T_{\mu\nu}$$
+
+**Setup:**
+
+| Premise | Source |
+|---------|--------|
+| Local-global coupling necessary | T28 Lemma 1 |
+| Coupling must be geometric | T28 Lemma 2 |
+| Coefficient G exists, finite, universal | T28 |
+| Distinguishability conserved | T26 (DD-NoAlt) |
+
+**Lemma 1 (FORCED): Source must be tensorial**
+
+*Proof:*
+1. Local distinguishability is directional (history has directions)
+2. Influence depends on how distinctions propagate
+3. Scalar or vector insufficient to capture directional flow
+4. ∴ Source must be rank-2 tensor T_μν ∎
+
+**Lemma 2 (FORCED): Curvature must be Ricci (not full Riemann)**
+
+*Proof:*
+1. Full Riemann tensor R_αβγδ contains:
+   - Local curvature (Ricci part)
+   - Topological/wave modes (Weyl part)
+2. Local energy cannot directly set global topology
+   (otherwise any particle could change number of handles)
+3. Source must couple only to locally-sensitive curvature
+4. ∴ Ricci tensor R_μν is the unique appropriate object ∎
+
+**Lemma 3 (FORCED): Naive coupling R_μν = κT_μν fails**
+
+*Proof:*
+1. Bianchi identity: ∇^μ(R_μν - ½Rg_μν) = 0 automatically
+2. But ∇^μR_μν ≠ 0 in general
+3. DD requires: distinguishability neither created nor destroyed
+4. This means ∇^μT_μν = 0 (conservation)
+5. R_μν = κT_μν inconsistent with conservation
+6. ∴ Naive coupling forbidden ∎
+
+**Lemma 4 (FORCED): Einstein tensor is unique**
+
+*Proof:*
+1. Need tensor G_μν such that ∇^μG_μν = 0 automatically
+2. Must be: local, second-order in metric, no new scales
+3. Lovelock's theorem: unique such tensor in 4D is
+   G_μν := R_μν - ½Rg_μν
+4. ∴ Einstein tensor is uniquely forced ∎
+
+**Theorem (DD-Einstein):**
+
+$$\boxed{G_{\mu\nu} = 8\pi G \, T_{\mu\nu}}$$
+
+*Proof:*
+1. Source is T_μν (Lemma 1)
+2. Curvature side is R_μν type (Lemma 2)
+3. Naive R_μν coupling fails (Lemma 3)
+4. Einstein tensor G_μν is unique consistent choice (Lemma 4)
+5. Coefficient is G from T28
+6. Factor 8π is normalization (DEF)
+7. ∴ Einstein field equations are uniquely forced ∎
+
+**Status:** DERIVED (from T28, T26, Lovelock)
+
+**Element Status Table:**
+
+| Element | Status | Meaning |
+|---------|--------|---------|
+| g_μν | FORCED | Geometry of history (T15, T22) |
+| R_μν | FORCED | Local deformation of history |
+| G_μν | FORCED | Bianchi-compatible curvature |
+| T_μν | FORCED | Local distinguishability density |
+| G | FORCED | Translation coefficient (T28) |
+| 8π | DEF | Normalization convention |
+
+**Note on Λ:** The cosmological constant Λ > 0 (T27) enters as:
+
+$$G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G \, T_{\mu\nu}$$
+
+This is compatible because Λg_μν also satisfies ∇^μ(Λg_μν) = 0.
+
+**Interpretation:**
+
+Einstein's equations are NOT a physical law discovered empirically. They are the **unique minimal form** that any history of distinctions must satisfy to be:
+- Globally consistent
+- Locally sensitive
+- Conservation-respecting
+
+GR is not "one possible theory of gravity" — it is the only structure compatible with critical history.
+
+---
+
 ## Summary Diagram
 
 ```
@@ -2094,13 +2192,14 @@ T27: Λ > 0 — positive cosmological constant (FORCED)
       ↓
 T28: 0 < G < ∞ — gravitational coupling (FORCED)
       ↓
+T29: G_μν = 8πG T_μν — Einstein equations (DERIVED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE STANDARD MODEL + RELATIVITY
-     + NO ONTOLOGICAL ALTERNATIVES
+     + EINSTEIN FIELD EQUATIONS
      + COSMOLOGICAL CONSTANT Λ > 0
-     + GRAVITATIONAL COUPLING G
       No physics postulates used
-      All fundamental constants derived
+      All structures uniquely forced
 ═══════════════════════════════════════
 
 Derived without postulates:
@@ -2124,6 +2223,7 @@ Derived without postulates:
   • Higgs mechanism (SSB)
   • Cosmological constant Λ > 0
   • Gravitational coupling G (existence and finiteness)
+  • Einstein field equations (unique minimal form)
 
 What remains (Realization index):
   • Specific numerical constants (α, masses, VEV)

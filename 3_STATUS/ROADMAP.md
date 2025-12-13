@@ -110,4 +110,5 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | HYP-P3 | Dynamics closed | DERIVED — covered by DD-Generator (T10) |
 | 2025-12-13 | ℏ | Planck constant reclassified | DEF — unit choice (scale of H) |
 | 2025-12-13 | DD-Gravity | G forced by elimination (T28) | FORCED — 0 < G < ∞, local-global coupling |
-| 2025-12-13 | Status | UNTRACED = 0 | All fundamental physics now FORCED/DERIVED |
+| 2025-12-13 | DD-Einstein | Field equations derived (T29) | DERIVED — G_μν = 8πG T_μν unique by Lovelock |
+| 2025-12-13 | Status | GR complete | All fundamental physics including GR now derived |

@@ -73,7 +73,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DERIVED Claims (16)
+## DERIVED Claims (17)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
@@ -90,6 +90,7 @@ Complete list of all claims with their status and location.
 | DD-Fisher | Fisher metric uniqueness (Chentsov) | Chain-12, DD-Born, Chentsov's theorem | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-LightSpeed | Universal speed c | DD-Lorentz, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Mass | Mass mechanism (Higgs/SSB) | DD-Gauge, DD-Connection, Criticality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Einstein | G_μν = 8πG T_μν (field equations) | DD-Gravity, DD-NoAlt, Lovelock | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | ~~SU(3)-unique~~ | ~~SU(3) is unique~~ | **SUBSUMED** by DD-Gauge | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -130,7 +131,7 @@ Complete list of all claims with their status and location.
 |--------|-------|
 | FORCED | 32 |
 | DEF | 9 |
-| DERIVED | 16 |
+| DERIVED | 17 |
 | UNTRACED | 0 |
 | CONJ | 4 |
 | CIRC | 2 |
@@ -144,10 +145,11 @@ Complete list of all claims with their status and location.
 - 2 → CONJ
 - 1 → CIRC
 
-**See FORCED_SPINE.md T0-T28 for complete derivation chain.**
+**See FORCED_SPINE.md T0-T29 for complete derivation chain.**
 
-All fundamental constants (c, ℏ, G, Λ) now have status:
+All fundamental constants and GR equations now derived:
 - c: DERIVED (DD-LightSpeed)
 - ℏ: DEF (unit choice)
 - G: FORCED (DD-Gravity)
 - Λ: FORCED (DD-Lambda)
+- G_μν = 8πG T_μν: DERIVED (DD-Einstein)
