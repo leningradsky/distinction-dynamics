@@ -64,6 +64,7 @@ README.md must not contradict this file.
 | Chain-9 | ℤ (iteration comparison) | FORCED | Chain-8, Chain-7, DEF-UAC |
 | Chain-10 | ℚ (commensurability) | FORCED | Chain-9, CR-5, DEF-UAC |
 | Chain-11 | ℝ (limit closure) | FORCED | Chain-10, DEF-UAC |
+| Chain-12 | ℂ (automorphism closure) | FORCED | Chain-11, CR-7, DEF-UAC |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
@@ -73,6 +74,12 @@ README.md must not contradict this file.
 - ℤ: Iteration comparison requires signed differences; finite structure would collapse Chain-7.
 - ℚ: Multi-generator (CR-5) comparison requires ratios; discontinuous Φ violates criticality.
 - ℝ: Cauchy limits must exist; incomplete structure has Φ → 0 or Φ → ∞ at limits.
+
+**Complex Numbers (Chain-12):** ℂ is forced by automorphism closure:
+- ℝ has only trivial automorphisms (id); processes indistinguishable by direction.
+- CR-7 requires non-trivial automorphism structure for critical dynamics.
+- ℂ is the unique commutative division algebra over ℝ with continuous U(1) action.
+- Process orientation distinguishable via phase, without appealing to time (GAP-3).
 
 ---
 
@@ -138,7 +145,7 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 24 |
+| FORCED | 25 |
 | DEF | 8 |
 | HYP | 19 |
 | DERIVED | 3 |

@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here.
 
+## [0.6] - 2025-12-13
+
+### Added
+- Chain-12: ℂ forced by automorphism closure (process distinguishability)
+- Process Distinguishability Lemma: Orientation requires U(1) phase, not external time
+
+### Changed
+- Number system chain now complete: ℕ → ℤ → ℚ → ℝ → ℂ (all FORCED)
+- GAP-3 (time) now has ℂ as prerequisite (phase before history)
+
 ## [0.5] - 2025-12-13
 
 ### Added

@@ -81,3 +81,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | GAP-1 | Defined Φ as path entropy | CLOSED — see UAC.md |
 | 2025-12-13 | GAP-4 | Irreversibility argument from Ø impossible | CLOSED — see FORCED_CHAIN.md Chain-7 |
 | 2025-12-13 | GAP-2 | ℤ/ℚ/ℝ forced by criticality closure | CLOSED — see FORCED_CHAIN.md Chain-9,10,11 |
+| 2025-12-13 | Chain-12 | ℂ forced by automorphism closure | Added — process distinguishability requires U(1) |

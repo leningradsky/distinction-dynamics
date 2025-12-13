@@ -181,17 +181,71 @@ The following chains establish that ℤ, ℚ, ℝ are not "added" but are the un
 
 ---
 
+## Process Distinguishability (Automorphism-Forced)
+
+The following chain establishes that ℂ is not "added for convenience" but is the unique extension of ℝ compatible with process distinguishability under criticality.
+
+**Key principle:** Criticality requires distinguishable, composable processes with non-trivial automorphism structure.
+
+### FORCED Chain-12: Complex Numbers (ℂ from Automorphism Closure)
+
+- **Statement:** ℂ is the minimal extension of ℝ with continuous automorphism group.
+- **Justification:**
+  1. From CR-7: Critical structures require non-trivial automorphism structure
+  2. In ℝ, the only field automorphisms are {id} (trivial)
+  3. The only order-preserving automorphisms of ℝ are {id}
+  4. Scaling automorphisms (x ↦ λx) exist, but these are ℝ×-action, not internal structure
+  5. For processes on ℝ: only magnitude is distinguishable, not orientation
+  6. Two processes P and P⁻¹ (forward/backward) are indistinguishable in ℝ without external marker
+  7. External marker = appealing to time (GAP-3) — circular if time not yet derived
+  8. Therefore: need internal orientation distinguisher
+  9. ℂ = ℝ[i]/(i² + 1) is the minimal algebraic extension where:
+     - Aut(ℂ/ℝ) = {id, conjugation} — non-trivial
+     - U(1) = {e^{iθ} : θ ∈ ℝ} acts continuously — phase rotation
+     - Processes can be "rotated" without loss of distinguishability
+  10. Alternatives fail:
+      - ℍ (quaternions): non-commutative → destroys field structure
+      - 𝕆 (octonions): non-associative → destroys composition
+      - Higher ℝⁿ: no multiplication → no process composition
+      - Split-complex: zero divisors → Φ undefined at null vectors
+  11. ℂ is the unique commutative, associative, division algebra over ℝ (Frobenius theorem)
+- **Depends on:** Chain-11 (ℝ), CR-7 (automorphism structure), DEF-UAC (Φ well-defined)
+- **Note:** This is NOT "adding i for quantum mechanics". The argument is purely structural:
+  - ℝ distinguishes magnitude ("how much")
+  - ℂ distinguishes orientation ("which way")
+  - Orientation is required for process distinguishability without external time.
+- **Status:** FORCED (ℂ is uniquely forced by automorphism closure over ℝ)
+
+### Process Distinguishability Lemma
+
+**Lemma:** Processes over ℝ alone cannot be distinguished by direction without external parameter.
+
+**Proof sketch:**
+1. A process P: ℝ → ℝ is a family of transformations
+2. The reverse process P⁻¹ has the same trajectory in ℝ (just traversed oppositely)
+3. To distinguish P from P⁻¹, need to mark "before" vs "after"
+4. This marking requires either:
+   - External time parameter (not yet derived → GAP-3)
+   - Internal phase/orientation (requires extension of ℝ)
+5. ℂ provides internal phase via U(1) action
+6. e^{iθ}·z rotates z by θ — distinguishes "forward" from "backward" intrinsically
+7. Therefore: process distinguishability requires ℂ (or equivalent structure)
+
+**Status:** FORCED (structural necessity for process orientation)
+
+---
+
 ## Stopping Point for Pure FORCED Derivation
 
 **Beyond this point, additional hypotheses are required:**
 
 - **Triadic structure** requires minimality assumption (Occam's Razor) → see `2_EXPRESSION/BRIDGES.md` CIRC-2
 - **Dyad insufficiency** requires definition of "self-observation" → HYP, not FORCED
-- **Complex numbers** require rotation metaphor → HYP, not FORCED
 - **Gauge groups** require physical constraints → HYP-G1..G4 in BRIDGES.md
 - **Spacetime identification** requires Fisher metric bridge → HYP-F1, HYP-S4 in BRIDGES.md
+- **Time emergence** requires additional structure → GAP-3
 
-**Note:** Continuum (ℝ) is now FORCED via Chain-9..11. GAP-2 is closed.
+**Note:** Number systems (ℕ → ℤ → ℚ → ℝ → ℂ) are now FORCED via Chain-8..12. GAP-2 is closed.
 
 **Summary of forced chain:**
 
@@ -220,10 +274,13 @@ Chain-10: ℚ ← FORCED (commensurability)
     ↓
 Chain-11: ℝ ← FORCED (limit closure)
     ↓
+Chain-12: ℂ ← FORCED (automorphism closure)
+    ↓
 ════════════════════════════════════════
 FORCED DERIVATION ENDS HERE
-Continuum derived. GAP-2 closed.
-Physics = which critical structure on ℝ?
+Number systems derived: ℕ → ℤ → ℚ → ℝ → ℂ
+GAP-2 closed.
+Next: GAP-3 (time) — requires ℂ as prerequisite
 See 2_EXPRESSION/BRIDGES.md
 ════════════════════════════════════════
 ```
