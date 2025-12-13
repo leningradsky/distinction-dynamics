@@ -144,6 +144,7 @@ README.md must not contradict this file.
 | DD-Classicality | Classical states = stable fixed points | DERIVED | Criticality, DD-Decoherence |
 | DD-Space | Manifold structure of space | DERIVED | Criticality, DD-Classicality |
 | DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
+| DD-Energy | H = energy (structural identification) | DERIVED | DD-Time, DD-Generator |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -185,6 +186,14 @@ README.md must not contradict this file.
 - Must be unique (multiple times → unitarity destroyed)
 - Spacetime signature (1, d-1) is forced, not postulated
 
+**Energy (DD-Energy):** H = energy is structural identification:
+- H is unique Hermitian generator of time translation (Stone)
+- Time symmetry t → t + δ has unique conserved generator (Noether)
+- Cannot be charge (no internal symmetries yet), cannot be momentum (no space in this context)
+- Generator must be observable distinction (criticality)
+- Energy ≡ generator of time translation in unitary evolution
+- This is not interpretation but uniqueness argument
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
@@ -214,8 +223,8 @@ README.md must not contradict this file.
 |--------|-------|
 | FORCED | 28 |
 | DEF | 8 |
-| HYP | 18 |
-| DERIVED | 8 |
+| HYP | 17 |
+| DERIVED | 9 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |

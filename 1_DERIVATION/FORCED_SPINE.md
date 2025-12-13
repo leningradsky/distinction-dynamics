@@ -1,6 +1,6 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 1.4
+**Version:** 1.5
 **Status:** Authoritative reference for the FORCED chain
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
@@ -764,9 +764,105 @@ This is the origin of spacetime signature: (1, d-1) is not postulated but forced
 
 ---
 
+## Level 11: Energy
+
+### T16: Energy (DD-Energy)
+
+**Statement:** The Hermitian generator H of time evolution is structurally identified as energy — not by interpretation but by uniqueness.
+
+**Setup:**
+
+We have FORCED:
+1. Continuous time t ∈ ℝ (T9)
+2. Unitary evolution U(t) = e^{-iHt} (T8, T10)
+3. Hermitian generator H (T10)
+
+**Question:** What is the physical meaning of H?
+
+**Step 1. What H does by definition:**
+
+By Stone's theorem:
+$$U(t) = e^{-iHt}$$
+
+H is the generator of translations along the history parameter.
+
+Therefore:
+- H measures how state changes under history shift
+- H determines the "cost" of distinguishability evolution
+
+**Step 2. Uniqueness of time-conjugate observable:**
+
+In any theory with:
+- Continuous time
+- Unitary evolution
+- Probability conservation
+
+there exists **exactly one** conserved quantity conjugate to time.
+
+This is not a physics postulate — it's a structural fact.
+
+If there is symmetry:
+$$t \mapsto t + \delta$$
+
+then by Noether's theorem (structurally, not physically):
+
+**A conserved generator of this symmetry exists.**
+
+**Step 3. Why it cannot be anything else:**
+
+Possible interpretations:
+- Charge? → Requires internal symmetries (not yet derived)
+- Momentum? → Requires space (T14 comes from classicality, not time)
+- "Abstract operator without meaning"? → Contradicts criticality
+
+The generator must be an **observable distinction**.
+
+In DD terms:
+- H generates change along time
+- Change of what? Of distinguishability
+- What measures ability to change distinguishability over time?
+
+**Only answer: energy**
+
+**Step 4. This is identification, not interpretation:**
+
+We do NOT say:
+> "Let's call H energy by convention"
+
+We show:
+> If continuous time and unitarity exist, the unique globally distinguishable invariant is energy
+
+Any theory with these properties **must have energy**.
+
+**Definition (DD-Energy):**
+
+$$\text{Energy} \equiv \text{generator of time translation in unitary evolution}$$
+
+This is structurally identical to:
+
+$$E = i\hbar \frac{\partial}{\partial t}$$
+
+The ℏ is a unit choice. The structure is forced.
+
+**Theorem (DD-Energy):**
+
+In critical theory of distinctions:
+1. Time translation has a unique Hermitian generator
+2. This generator is conjugate to history parameter
+3. It cannot be identified with any other observable
+4. It is structurally identical to energy
+
+**Status:** DERIVED (from T9, T10)
+
+**Depends on:** T9 (continuous time), T10 (Hermitian generator)
+
+**Note:** This is not "H is called energy." This is "what we call energy cannot be anything other than H." The identification is forced by structure, not chosen by convention.
+
+---
+
 ## Boundary
 
-### T16: Structural Boundary
+### T17: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
@@ -774,10 +870,10 @@ This is the origin of spacetime signature: (1, d-1) is not postulated but forced
 |---------|--------|
 | ℂ, U(n), t ∈ ℝ, H hermitian | FORCED |
 | Born rule μ = \|ψ\|² | DERIVED |
-| H = "energy" | HYP (interpretation) |
-| Spacetime geometry | HYP (emergent coordination) |
+| H = energy | DERIVED |
+| Spacetime signature (1, d-1) | DERIVED |
 | Specific gauge groups | HYP (realization index) |
-| 3+1 dimensions | HYP/CONJ (realization index) |
+| Why d = 3 specifically | HYP/CONJ |
 | Numerical constants | Realization index |
 
 ---
@@ -817,8 +913,10 @@ T14: Space — manifold structure (DERIVED)
       ↓
 T15: Time uniqueness — (1,d-1) signature (DERIVED)
       ↓
+T16: Energy — H identified structurally (DERIVED)
+      ↓
 ═══════════════════════════════════════
-   QM + SPACETIME STRUCTURE COMPLETE
+   COMPLETE QM + SPACETIME + ENERGY
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -833,9 +931,9 @@ Derived without postulates:
   • Metric (Φ-localization)
   • Time as unique process parameter
   • Spacetime signature (1, d-1)
+  • Energy as time-conjugate observable
 
-What remains (HYP/interpretation):
-  • Energy interpretation of H
+What remains (HYP/CONJ):
   • Why d = 3 specifically (total 3+1)
   • Gauge groups as local automorphisms
   • Specific realization (our universe)

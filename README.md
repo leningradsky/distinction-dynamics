@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v1.4 (QM + Spacetime Structure — No Postulates)
+**Version:** v1.5 (QM + Spacetime + Energy — No Postulates)
 
 ---
 
@@ -26,6 +26,7 @@ From this, DD forces:
 - Classical emergence — stable fixed points of decoherence (DERIVED)
 - Space (manifold structure) — parameterization of stable distinctions (DERIVED)
 - Time uniqueness — exactly one process parameter, signature (1,d-1) (DERIVED)
+- Energy — H structurally identified as time-conjugate observable (DERIVED)
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
 
@@ -49,8 +50,8 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 |-------|-------|---------|
 | **FORCED** | 28 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
-| **HYP** | 18 | Hypotheses requiring justification |
-| **DERIVED** | 8 | Follows from HYP + FORCED |
+| **HYP** | 17 | Hypotheses requiring justification |
+| **DERIVED** | 9 | Follows from HYP + FORCED |
 | **CONJ** | 3 | Conjectures (may be numerology) |
 | **CIRC** | 2 | Circular dependencies |
 | **PRED** | 1 | Testable prediction |
@@ -262,6 +263,7 @@ Key rule: All claims must be labeled (FORCED/DEF/HYP/CONJ/CIRC/PRED).
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v1.5 | 2025-12-13 | DD-Energy; H = energy DERIVED (not interpretation) |
 | v1.4 | 2025-12-13 | DD-Time-Unique; spacetime signature (1,d-1) DERIVED |
 | v1.3 | 2025-12-13 | DD-Space added; manifold structure DERIVED |
 | v0.4 | 2025-12-13 | GAP-1, GAP-4 closed; UAC discrete clarification |

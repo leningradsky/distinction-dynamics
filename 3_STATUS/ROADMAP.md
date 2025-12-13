@@ -91,3 +91,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Classicality | Classical emergence | DERIVED — stable fixed points of decoherence |
 | 2025-12-13 | DD-Space | Manifold structure forced | DERIVED — space = parameterization of distinctions |
 | 2025-12-13 | DD-Time-Unique | Time as unique process parameter | DERIVED — signature (1,d-1) forced |
+| 2025-12-13 | DD-Energy | H = energy structural identification | DERIVED — Noether + uniqueness argument |

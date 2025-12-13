@@ -81,7 +81,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## DERIVED Claims (8)
+## DERIVED Claims (9)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
@@ -90,6 +90,7 @@ Complete list of all claims with their status and location.
 | DD-Classicality | Classical states = stable fixed points | Criticality, DD-Decoherence | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Space | Manifold structure of space | Criticality, DD-Classicality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Time-Unique | Time as unique process parameter | Criticality, DD-Time, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Energy | H = energy (structural identification) | DD-Time, DD-Generator | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | SU(3)-unique | SU(3) is unique | HYP-G1..G4 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -130,8 +131,8 @@ Complete list of all claims with their status and location.
 |--------|-------|
 | FORCED | 28 |
 | DEF | 8 |
-| HYP | 18 |
-| DERIVED | 8 |
+| HYP | 17 |
+| DERIVED | 9 |
 | CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |

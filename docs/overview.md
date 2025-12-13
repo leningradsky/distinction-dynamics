@@ -38,9 +38,10 @@ From this, structural necessities follow:
 - Classical emergence (DD-Classicality theorem)
 - Space (manifold structure) (DD-Space theorem)
 - Time uniqueness, signature (1,d-1) (DD-Time-Unique theorem)
+- Energy = H (DD-Energy theorem)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 8 claims
+- Total: 9 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula

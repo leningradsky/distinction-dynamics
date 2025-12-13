@@ -2,6 +2,26 @@
 
 All notable changes to this project are documented here.
 
+## [1.5] - 2025-12-13
+
+### Added
+- **DD-Energy theorem (T16)**: H = energy as structural identification
+  - H is unique Hermitian generator of time translation
+  - Time symmetry has unique conserved generator (Noether)
+  - Cannot be charge/momentum (no internal symmetries/space in this context)
+  - Energy ≡ generator of time translation (structural, not interpretive)
+
+### Changed
+- DERIVED count: 8 → 9 (added DD-Energy)
+- HYP count: 18 → 17 (H = energy moved from HYP to DERIVED)
+- T16 → T17 (Boundary renumbered)
+
+### Summary
+Complete QM + spacetime + energy without postulates:
+- **Energy as time-conjugate observable (DERIVED)**
+- Not interpretation but structural identification
+- Only d = 3 and gauge groups remain as HYP/CONJ
+
 ## [1.4] - 2025-12-13
 
 ### Added
