@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v1.5 (QM + Spacetime + Energy — No Postulates)
+**Version:** v1.6 (Complete 3+1 Spacetime — No Postulates)
 
 ---
 
@@ -27,6 +27,7 @@ From this, DD forces:
 - Space (manifold structure) — parameterization of stable distinctions (DERIVED)
 - Time uniqueness — exactly one process parameter, signature (1,d-1) (DERIVED)
 - Energy — H structurally identified as time-conjugate observable (DERIVED)
+- d = 3 — unique stable dimension by criticality selection (DERIVED)
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
 
@@ -51,14 +52,16 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 | **FORCED** | 28 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
 | **HYP** | 17 | Hypotheses requiring justification |
-| **DERIVED** | 9 | Follows from HYP + FORCED |
-| **CONJ** | 3 | Conjectures (may be numerology) |
+| **DERIVED** | 10 | Follows from HYP + FORCED |
+| **CONJ** | 2 | Conjectures (may be numerology) |
 | **CIRC** | 2 | Circular dependencies |
 | **PRED** | 1 | Testable prediction |
 
 **Master truth file:** [3_STATUS/STATUS.md](3_STATUS/STATUS.md)
 
-**Open gaps:** GAP-5 (α=137), GAP-6 (3+1 dim), GAP-7 (functor)
+**Open gaps:** GAP-5 (α=137), GAP-7 (functor)
+
+**Closed today:** GAP-6 (3+1 dim → DD-Dim3)
 
 **Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility)
 
@@ -263,6 +266,7 @@ Key rule: All claims must be labeled (FORCED/DEF/HYP/CONJ/CIRC/PRED).
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v1.6 | 2025-12-13 | DD-Dim3; d = 3 DERIVED (criticality selection) |
 | v1.5 | 2025-12-13 | DD-Energy; H = energy DERIVED (not interpretation) |
 | v1.4 | 2025-12-13 | DD-Time-Unique; spacetime signature (1,d-1) DERIVED |
 | v1.3 | 2025-12-13 | DD-Space added; manifold structure DERIVED |

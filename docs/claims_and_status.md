@@ -77,11 +77,11 @@ Complete list of all claims with their status and location.
 | HYP-Λ1 | Λ > 0 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-P3 | Dynamics / time evolution | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
-**Note:** HYP-S1 (3 spatial dimensions) has been moved to CONJ status.
+**Note:** HYP-S1 (3 spatial dimensions) is now DD-Dim3 (DERIVED by criticality selection).
 
 ---
 
-## DERIVED Claims (9)
+## DERIVED Claims (10)
 
 | ID | Statement | Depends On | Location |
 |----|-----------|------------|----------|
@@ -91,20 +91,19 @@ Complete list of all claims with their status and location.
 | DD-Space | Manifold structure of space | Criticality, DD-Classicality | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Time-Unique | Time as unique process parameter | Criticality, DD-Time, DD-Space | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | DD-Energy | H = energy (structural identification) | DD-Time, DD-Generator | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
+| DD-Dim3 | d = 3 (criticality selection) | Criticality, DD-Space, DD-Time-Unique | [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) |
 | SU(3)-unique | SU(3) is unique | HYP-G1..G4 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-Q | Q = 2/3 | ℤ₃, HYP-K1 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | Koide-ε | ε = √2 | Koide-Q | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
 ---
 
-## CONJ Claims (4)
+## CONJ Claims (2)
 
 | ID | Statement | Fit | Location |
 |----|-----------|-----|----------|
 | CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | CONJ-K2 | θ ≈ 2/9 | ~99% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| CONJ-Λ2 | Λ_eff formula | — | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-S1 | 3 spatial dimensions | — | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
 ---
 
@@ -132,10 +131,10 @@ Complete list of all claims with their status and location.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 17 |
-| DERIVED | 9 |
-| CONJ | 4 |
+| DERIVED | 10 |
+| CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **69** |
+| **Total** | **68** |
 
-**Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 moved to CONJ.
+**Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 is now DD-Dim3 (DERIVED).

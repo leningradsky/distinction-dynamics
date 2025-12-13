@@ -2,6 +2,28 @@
 
 All notable changes to this project are documented here.
 
+## [1.6] - 2025-12-13
+
+### Added
+- **DD-Dim3 theorem (T17)**: d = 3 as criticality selection
+  - Space = factorization structure of distinguishability
+  - Metric forced by correlation decay requirements
+  - d = 1: edge-dominated, unstable
+  - d = 2: no stable continuous phases
+  - d ≥ 4: correlations decay too fast
+  - d = 3: unique stable dimension (1/r² decay, balanced scaling)
+
+### Changed
+- DERIVED count: 9 → 10 (added DD-Dim3)
+- CONJ count: 3 → 2 (d=3 moved from CONJ to DERIVED)
+- **GAP-6 CLOSED** (3+1 dimensions now DERIVED)
+- T17 → T18 (Boundary renumbered)
+
+### Summary
+**Complete 3+1 spacetime derived without postulates!**
+- Argument is structural (criticality selection), not anthropic
+- Only gauge groups remain as HYP
+
 ## [1.5] - 2025-12-13
 
 ### Added

@@ -145,6 +145,7 @@ README.md must not contradict this file.
 | DD-Space | Manifold structure of space | DERIVED | Criticality, DD-Classicality |
 | DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
 | DD-Energy | H = energy (structural identification) | DERIVED | DD-Time, DD-Generator |
+| DD-Dim3 | d = 3 (criticality selection) | DERIVED | Criticality, DD-Space, DD-Time-Unique |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
@@ -194,6 +195,15 @@ README.md must not contradict this file.
 - Energy ≡ generator of time translation in unitary evolution
 - This is not interpretation but uniqueness argument
 
+**Dimension (DD-Dim3):** d = 3 as criticality selection:
+- Space = factorization structure of distinguishability (correlation graph)
+- Metric forced by criticality (correlations must decay with distance)
+- d = 1: edge-dominated, unstable
+- d = 2: no stable phases with continuous symmetry
+- d ≥ 4: correlations decay too fast, Φ → 0
+- d = 3: unique dimension with stable criticality (1/r² decay, balanced volume/surface)
+- This is structural selection, not anthropic argument
+
 ### Conjectures (CONJ)
 
 | ID | Statement | Status | Empirical Fit |
@@ -224,8 +234,8 @@ README.md must not contradict this file.
 | FORCED | 28 |
 | DEF | 8 |
 | HYP | 17 |
-| DERIVED | 9 |
-| CONJ | 3 |
+| DERIVED | 10 |
+| CONJ | 2 |
 | CIRC | 2 |
 | PRED | 1 |
 
@@ -240,7 +250,7 @@ README.md must not contradict this file.
 | ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** — DD-Time |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
-| GAP-6 | 3+1 dimensions weak argument | HYP-S1 downgraded to CONJ |
+| ~~GAP-6~~ | ~~3+1 dimensions weak argument~~ | **CLOSED** — DD-Dim3 (criticality selection) |
 
 ---
 

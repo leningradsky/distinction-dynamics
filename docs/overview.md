@@ -39,14 +39,14 @@ From this, structural necessities follow:
 - Space (manifold structure) (DD-Space theorem)
 - Time uniqueness, signature (1,d-1) (DD-Time-Unique theorem)
 - Energy = H (DD-Energy theorem)
+- d = 3 (DD-Dim3 theorem — criticality selection)
 - SU(3) uniqueness (given gauge HYP)
 - Koide Q = 2/3
-- Total: 9 claims
+- Total: 10 claims
 
 ### CONJ (May Be Numerology)
 - α = 137 formula
-- 3+1 dimensions
-- Total: 3 claims
+- Total: 2 claims
 
 ## Key Insight
 

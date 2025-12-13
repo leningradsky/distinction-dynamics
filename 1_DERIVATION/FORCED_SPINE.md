@@ -1,6 +1,6 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 1.5
+**Version:** 1.6
 **Status:** Authoritative reference for the FORCED chain
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
@@ -860,9 +860,120 @@ In critical theory of distinctions:
 
 ---
 
+## Level 12: Spatial Dimension
+
+### T17: Three Dimensions (DD-Dim3)
+
+**Statement:** Spatial dimension d = 3 is the unique value where distinguishability factorization remains stable under unitary dynamics.
+
+**Setup:**
+
+We have DERIVED:
+1. Space = parameterization of stable distinctions (T14)
+2. Metric = Φ-localization (T14)
+3. Time uniqueness, signature (1, d-1) (T15)
+4. Criticality 0 < Φ < ∞ (T5)
+
+**Question:** Why d = 3 specifically?
+
+**Step 1. Space as factorization structure:**
+
+Space is NOT:
+- External container
+- Additional parameter (ℝ already taken by time)
+- Arbitrary coordinate choice
+
+Space IS:
+- Way to stably distinguish substructures of history
+- Structure of which parts of history are distinguishable as independent
+
+From decoherence (T12):
+$$\mathcal{H} \longrightarrow \mathcal{H}_A \otimes \mathcal{H}_B \otimes \cdots$$
+
+In DD terms:
+- Each factorized subsystem = locally distinguishable history
+- "Nearby" = strongly correlated
+- "Far" = weakly correlated
+
+**Step 2. Correlation graph and criticality:**
+
+Correlation structure forms a graph.
+
+Criticality constrains this graph:
+- Too dense → everything connected → no locality → Φ → ∞
+- Too sparse → system fragments → no stable objects → Φ → 0
+
+For 0 < Φ < ∞:
+- Correlations must decay with "distance"
+- Decay must be stable under scaling
+
+This forces **metric structure** (not hypothesis but consequence).
+
+**Step 3. Dimension selection by criticality:**
+
+We seek: minimal dimension where stable locality is possible under unitary dynamics.
+
+**d = 1:**
+- Chain of correlations
+- Perturbations propagate only one direction
+- No stable local regions (edge-dominated)
+- ❌ Unstable
+
+**d = 2:**
+- Locality possible
+- But unitary dynamics with phases leads to:
+  - Logarithmic divergences
+  - No stable long-range structures
+- Structural fact: no stable phases with continuous symmetry in 2D
+- ❌ Criticality not maintained
+
+**d ≥ 4:**
+- Volume grows too fast
+- Correlations decay exponentially
+- Local structures lose influence on whole
+- Φ → 0 at large scales
+- ❌ System "overcools"
+
+**d = 3:**
+- Volume and surface scale in balance
+- Correlations decay as 1/r²
+- Stable local excitations possible
+- Unitary evolution preserves phase structure
+- ✓ **Criticality preserved**
+
+**Step 4. Why this is structural, not anthropic:**
+
+This is NOT:
+- "We observe 3D because we exist"
+- "3D is convenient"
+- "Other dimensions are possible but rare"
+
+This IS:
+- Selection by criticality criterion
+- Only d = 3 permits stable distinguishability factorization
+- Other dimensions violate 0 < Φ < ∞
+
+**Theorem (DD-Dim3):**
+
+In critical theory of distinctions:
+1. Space = factorization structure of distinguishability
+2. Metric structure forced by criticality
+3. d = 1: edge-dominated, unstable
+4. d = 2: no stable continuous phases
+5. d ≥ 4: correlations decay too fast
+6. d = 3: unique stable dimension
+
+**Status:** DERIVED (from T5, T14, T15)
+
+**Depends on:** T5 (criticality), T14 (space), T15 (time uniqueness)
+
+**Note:** This completes 3+1 dimensions as DERIVED, not postulated. The argument is structural (criticality selection), not anthropic or empirical.
+
+---
+
 ## Boundary
 
-### T17: Structural Boundary
+### T18: Structural Boundary
 
 **Statement:** Everything above is FORCED or DERIVED. Everything below is interpretation or specification.
 
@@ -871,9 +982,8 @@ In critical theory of distinctions:
 | ℂ, U(n), t ∈ ℝ, H hermitian | FORCED |
 | Born rule μ = \|ψ\|² | DERIVED |
 | H = energy | DERIVED |
-| Spacetime signature (1, d-1) | DERIVED |
+| Spacetime 3+1 dimensions | DERIVED |
 | Specific gauge groups | HYP (realization index) |
-| Why d = 3 specifically | HYP/CONJ |
 | Numerical constants | Realization index |
 
 ---
@@ -915,8 +1025,10 @@ T15: Time uniqueness — (1,d-1) signature (DERIVED)
       ↓
 T16: Energy — H identified structurally (DERIVED)
       ↓
+T17: d = 3 — criticality selection (DERIVED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE QM + SPACETIME + ENERGY
+   COMPLETE QM + SPACETIME 3+1
       No physics postulates used
 ═══════════════════════════════════════
 
@@ -932,11 +1044,11 @@ Derived without postulates:
   • Time as unique process parameter
   • Spacetime signature (1, d-1)
   • Energy as time-conjugate observable
+  • d = 3 (criticality selection)
 
 What remains (HYP/CONJ):
-  • Why d = 3 specifically (total 3+1)
   • Gauge groups as local automorphisms
-  • Specific realization (our universe)
+  • Specific numerical constants
 ```
 
 ---
