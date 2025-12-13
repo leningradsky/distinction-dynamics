@@ -94,9 +94,9 @@ Understand DD's structure and identify weak points in under an hour.
 
 | Claim Type | Where Defined | Count |
 |------------|---------------|-------|
-| FORCED | FORCED_CHAIN.md | 21 |
-| HYP | BRIDGES.md | 20 |
+| FORCED | FORCED_CHAIN.md | 27 |
+| HYP | BRIDGES.md | 18 |
 | DERIVED | BRIDGES.md | 3 |
-| CONJ | BRIDGES.md | 3 |
+| CONJ | BRIDGES.md | 4 |
 | CIRC | CIRCULARITIES.md | 2 |
 | PRED | BRIDGES.md | 1 |

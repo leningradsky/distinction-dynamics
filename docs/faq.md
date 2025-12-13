@@ -28,10 +28,10 @@ Based on [6_AUDITS/known_objections.md](../6_AUDITS/known_objections.md).
 
 ### Q: Too many hypotheses for "derivation"
 
-**A:** Correct. DD does not claim pure derivation. It claims:
-- 21 FORCED results from axiom
-- 20 HYP bridges to physics (explicitly labeled)
-- Compatibility, not derivation
+**A:** Partially correct. DD claims:
+- 27 FORCED results from axiom (including ℕ → ℤ → ℚ → ℝ → ℂ, U(n), continuous time)
+- 18 HYP bridges to physics (explicitly labeled)
+- Compatibility, not pure derivation
 
 The value is explicit labeling, not hidden assumptions.
 
@@ -39,13 +39,23 @@ The value is explicit labeling, not hidden assumptions.
 
 ### Q: The continuum isn't derived
 
-**A:** Correct. HYP-C1 (continuum emergence) is explicitly marked as hypothesis. The FORCED chain uses only ℕ. Continuum is needed for physics bridges, not core derivation.
+**A:** This has been resolved. The continuum (ℝ) is now FORCED via Chain-9,10,11:
+- ℤ: forced by iteration comparison (signed differences)
+- ℚ: forced by commensurability (ratio comparison)
+- ℝ: forced by limit closure (Cauchy completeness required by criticality)
+
+HYP-C1 is now SUPERSEDED. GAP-2 is closed.
 
 ---
 
 ### Q: Time isn't derived
 
-**A:** Correct. HYP-F2 (time parameter) is hypothesis. The transition ℕ → ℝ for time is not derived. This is an acknowledged gap (GAP-3).
+**A:** This has been resolved. Continuous time t ∈ ℝ is now FORCED via DD-Time theorem:
+- ℤ fails: discrete jumps violate critical distinguishability
+- ℚ fails: incomplete → histories "fall out" at irrational limits
+- ℝ: unique connected, complete, ordered abelian group
+
+HYP-F2 is now SUPERSEDED. GAP-3 is closed.
 
 ---
 

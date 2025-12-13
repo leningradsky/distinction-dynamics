@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v0.4 (Post-Audit Stable Spine)
+**Version:** v0.8 (GAP-2, GAP-3 Closed)
 
 ---
 
@@ -16,17 +16,19 @@ DD is a **constraint framework** that derives structural necessities from a sing
 
 From this, DD forces:
 - Binary structure (Bool)
-- Natural numbers (ℕ)
+- Number systems: ℕ → ℤ → ℚ → ℝ → ℂ
 - Critical regime constraints (finite generators, non-commutativity)
+- Unitary dynamics U(n) — not a quantum postulate, but criticality preservation
+- Continuous time parameter t ∈ ℝ — not assumed, but forced by history completeness
 
 DD then explores **bridges** to physics through explicit hypotheses (HYP), showing that observed physics is *compatible* with distinction-based structure.
 
 ## What This Is NOT
 
 - ❌ **Not a Theory of Everything** — DD does not derive all physics from one axiom
-- ❌ **Not complete** — Continuum, time, and quantum mechanics require hypotheses
+- ❌ **Not complete** — Gauge groups, spacetime geometry require hypotheses
 - ❌ **Not claiming derivation of constants** — Values like α=137 may be numerology
-- ❌ **Not without assumptions** — ~20 HYP required for physics bridges
+- ❌ **Not without assumptions** — ~18 HYP required for physics bridges
 
 **Better characterization:**
 > DD is a self-consistent framework showing that observed physics is compatible with an information-geometric triadic structure, with explicit labeling of what is forced vs assumed.
@@ -37,9 +39,9 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 
 | Label | Count | Meaning |
 |-------|-------|---------|
-| **FORCED** | 21 | Logically necessary from axiom |
+| **FORCED** | 27 | Logically necessary from axiom |
 | **DEF** | 8 | Definitions/conventions |
-| **HYP** | 20 | Hypotheses requiring justification |
+| **HYP** | 18 | Hypotheses requiring justification |
 | **DERIVED** | 3 | Follows from HYP + FORCED |
 | **CONJ** | 3 | Conjectures (may be numerology) |
 | **CIRC** | 2 | Circular dependencies |
@@ -47,9 +49,9 @@ DD then explores **bridges** to physics through explicit hypotheses (HYP), showi
 
 **Master truth file:** [3_STATUS/STATUS.md](3_STATUS/STATUS.md)
 
-**Open gaps:** GAP-2 (continuum), GAP-3 (time), GAP-5 (α=137), GAP-6 (3+1 dim)
+**Open gaps:** GAP-5 (α=137), GAP-6 (3+1 dim), GAP-7 (functor)
 
-**Closed gaps:** GAP-1 (Φ defined), GAP-4 (Chain-7 FORCED via irreversibility)
+**Closed gaps:** GAP-1 (Φ), GAP-2 (continuum), GAP-3 (time), GAP-4 (irreversibility)
 
 ---
 

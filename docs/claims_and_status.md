@@ -4,7 +4,7 @@ Complete list of all claims with their status and location.
 
 ---
 
-## FORCED Claims (21)
+## FORCED Claims (27)
 
 | ID | Statement | Location |
 |----|-----------|----------|
@@ -16,6 +16,12 @@ Complete list of all claims with their status and location.
 | Chain-6 | Δ = Δ(Δ) (self-application) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | Chain-7 | {Δⁿ} infinite (irreversibility) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | Chain-8 | ℕ ≅ {Δⁿ} | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| Chain-9 | ℤ (iteration comparison) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| Chain-10 | ℚ (commensurability) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| Chain-11 | ℝ (limit closure) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| Chain-12 | ℂ (automorphism closure) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| DD-Unitarity | U(n) dynamics | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
+| DD-Time | t ∈ ℝ (history parameter) | [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md) |
 | CR-1 | Finite local valence | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-2 | Finite generators | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
 | CR-3 | Non-polynomial growth | [CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md) |
@@ -46,13 +52,13 @@ Complete list of all claims with their status and location.
 
 ---
 
-## HYP Claims (20)
+## HYP Claims (18)
 
 | ID | Statement | Location |
 |----|-----------|----------|
-| HYP-C1 | Continuum emergence | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** by Chain-9,10,11 |
 | HYP-F1 | Fisher metric = distinction geometry | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-F2 | Time parameter (ℕ → ℝ) | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| ~~HYP-F2~~ | ~~Time parameter (ℕ → ℝ)~~ | **SUPERSEDED** by DD-Time |
 | HYP-F3 | Fisher-Ricci flow | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Q1 | Fisher → Schrödinger | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Q2 | Physical constants ℏ, c, G | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -60,7 +66,6 @@ Complete list of all claims with their status and location.
 | HYP-G2 | Anomaly freedom | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-G3 | Asymptotic freedom | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-G4 | Confinement | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
-| HYP-S1 | 3 spatial dimensions | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-S2 | Time from U(1) phase | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-S3 | Lorentz invariance | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-S4 | Fisher geometry = spacetime | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
@@ -70,6 +75,8 @@ Complete list of all claims with their status and location.
 | HYP-K3 | sin²θ_W = 3/8 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-Λ1 | Λ > 0 | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | HYP-P3 | Dynamics / time evolution | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+
+**Note:** HYP-S1 (3 spatial dimensions) has been moved to CONJ status.
 
 ---
 
@@ -83,13 +90,14 @@ Complete list of all claims with their status and location.
 
 ---
 
-## CONJ Claims (3)
+## CONJ Claims (4)
 
 | ID | Statement | Fit | Location |
 |----|-----------|-----|----------|
 | CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | CONJ-K2 | θ ≈ 2/9 | ~99% | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 | CONJ-Λ2 | Λ_eff formula | — | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
+| HYP-S1 | 3 spatial dimensions | — | [BRIDGES.md](../2_EXPRESSION/BRIDGES.md) |
 
 ---
 
@@ -114,11 +122,13 @@ Complete list of all claims with their status and location.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 21 |
+| FORCED | 27 |
 | DEF | 8 |
-| HYP | 20 |
+| HYP | 18 |
 | DERIVED | 3 |
-| CONJ | 3 |
+| CONJ | 4 |
 | CIRC | 2 |
 | PRED | 1 |
-| **Total** | **58** |
+| **Total** | **63** |
+
+**Note:** HYP-C1 and HYP-F2 are SUPERSEDED (now FORCED). HYP-S1 moved to CONJ.

@@ -7,21 +7,25 @@ DD starts from a single prohibition: **Ø is impossible** (no-distinction is imp
 From this, structural necessities follow:
 - Binary structure (every distinction creates X and ¬X)
 - Self-application (Δ = Δ(Δ) — distinction distinguishes itself)
-- Natural numbers (ℕ emerges from composition monoid)
+- Number systems: ℕ → ℤ → ℚ → ℝ → ℂ (all FORCED by criticality)
 - Critical regime (exponential growth constraints)
+- Unitary dynamics U(n) (criticality preservation)
+- Continuous time t ∈ ℝ (history completeness)
 
 ## What DD Claims
 
 ### FORCED (Logically Necessary)
-- Bool, ℕ, category structure
+- Bool, ℕ, ℤ, ℚ, ℝ, ℂ, category structure
 - Critical regime constraints (CR-1 to CR-7)
-- Total: 21 claims
+- Unitary dynamics U(n) (DD-Unitarity theorem)
+- Continuous time t ∈ ℝ (DD-Time theorem)
+- Total: 27 claims
 
 ### HYP (Hypotheses for Physics)
-- Continuum emergence (not derived)
 - Fisher metric = distinction geometry
 - Gauge invariance, anomaly freedom
-- Total: 20 claims
+- Spacetime identification
+- Total: 18 claims
 
 ### DERIVED (Given HYP)
 - SU(3) uniqueness
@@ -35,9 +39,9 @@ From this, structural necessities follow:
 
 ## Key Insight
 
-The entire FORCED chain requires only ℕ (natural numbers).
+The FORCED chain derives the complete number tower ℕ → ℤ → ℚ → ℝ → ℂ from criticality alone.
 
-The continuum (ℝ) is NOT needed for core derivation — only for physics bridges.
+Continuum (ℝ), complex numbers (ℂ), unitary dynamics U(n), and continuous time are all FORCED — not hypotheses.
 
 ## Falsifiability
 
@@ -55,7 +59,7 @@ The continuum (ℝ) is NOT needed for core derivation — only for physics bridg
 
 ## What DD Does NOT Claim
 
-- Pure derivation from one axiom (requires ~20 HYP)
+- Pure derivation from one axiom (requires ~18 HYP for physics)
 - Derivation of all constants
 - Quantum gravity resolution
 - Consciousness explanation
