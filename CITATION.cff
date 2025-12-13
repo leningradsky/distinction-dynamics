@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Distinction Dynamics"
+abstract: "A constraint framework deriving structural necessities from a single prohibition."
+authors:
+  - family-names: "Shkursky"
+    given-names: "Andrey"
+version: "0.4"
+date-released: "2025-12-13"
+license: MIT
+repository-code: "https://github.com/leningradsky/distinction-dynamics"
+keywords:
+  - distinction
+  - information geometry
+  - constraint framework
+  - theoretical physics
+  - foundations

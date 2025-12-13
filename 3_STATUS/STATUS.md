@@ -52,7 +52,7 @@ README.md must not contradict this file.
 | L4 | C is small | FORCED | DEF-C |
 | Chain-5 | Bool (binary structure X/¬X) | FORCED | DEF-Σ |
 | Chain-6 | Δ = Δ(Δ) (self-application) | FORCED | DEF-AX |
-| Chain-7 | Recursion (unbounded iteration) | FORCED* | Chain-6 |
+| Chain-7 | Composition monoid infinite (irreversibility) | FORCED | DEF-AX, Chain-6 |
 | Chain-8 | ℕ (natural numbers) | FORCED | Chain-7 |
 | CR-1 | Finite local valence (Φ < ∞) | FORCED | DEF-UAC |
 | CR-2 | Finite generators | FORCED | CR-1 |
@@ -61,10 +61,50 @@ README.md must not contradict this file.
 | CR-5 | Minimal: ≥ 2 non-commuting generators | FORCED | CR-3, CR-4 |
 | CR-6 | Finite presentation | FORCED | CR-1, CR-5 |
 | CR-7 | Automorphism structure emerges | FORCED | CR-6 |
+| Chain-9 | ℤ (iteration comparison) | FORCED | Chain-8, Chain-7, DEF-UAC |
+| Chain-10 | ℚ (commensurability) | FORCED | Chain-9, CR-5, DEF-UAC |
+| Chain-11 | ℝ (limit closure) | FORCED | Chain-10, DEF-UAC |
+| Chain-12 | ℂ (automorphism closure) | FORCED | Chain-11, CR-7, DEF-UAC |
+| DD-Unitarity | U(n) dynamics | FORCED | Chain-12, DEF-UAC |
+| DD-Time | t ∈ ℝ (history parameter) | FORCED | DD-Unitarity, DEF-UAC |
+| DD-Generator | H hermitian, U(t)=e^{-itH} | FORCED | DD-Time, DD-Unitarity, Stone |
 
-**Caveat for Chain-7:** The interpretation of Δ = Δ(Δ) as unfolding process (rather than static fixed point) is an interpretive choice. Marked FORCED* to indicate this.
+**Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
 **Critical Regime (CR-1 to CR-7):** Structural constraints from 0 < Φ < ∞. See `1_DERIVATION/CRITICAL_REGIME.md`.
+
+**Continuum Closure (GAP-2 closed):** ℤ, ℚ, ℝ are not added but uniquely forced by criticality:
+- ℤ: Iteration comparison requires signed differences; finite structure would collapse Chain-7.
+- ℚ: Multi-generator (CR-5) comparison requires ratios; discontinuous Φ violates criticality.
+- ℝ: Cauchy limits must exist; incomplete structure has Φ → 0 or Φ → ∞ at limits.
+
+**Complex Numbers (Chain-12):** ℂ is forced by automorphism closure:
+- ℝ has only trivial automorphisms (id); processes indistinguishable by direction.
+- CR-7 requires non-trivial automorphism structure for critical dynamics.
+- ℂ is the unique commutative division algebra over ℝ with continuous U(1) action.
+- Process orientation distinguishable via phase, without appealing to time (GAP-3).
+
+**Unitarity (DD-Unitarity):** U(n) dynamics forced by criticality preservation:
+- Polar decomposition: A = UP (U unitary, P positive-definite Hermitian)
+- If P ≠ I: eigenvalue λ < 1 ⟹ Aⁿv → 0 (Φ → 0); λ > 1 ⟹ Aⁿv → ∞ (Φ → ∞)
+- Both violate UAC; therefore P = I, A is unitary
+- Consequence: Aut_crit(X) = U(n) — pure linear algebra, no physics postulates
+- This is NOT a quantum axiom; it's preservation of distinguishability under iteration.
+
+**Time (DD-Time, GAP-3 closed):** Continuous time ℝ forced by history completeness:
+- History parameter T must be: ordered (T1), additive (T2), invertible (T3), dense (T4)
+- ℤ fails: discrete jumps → distinguishability not dense → violates criticality
+- ℚ fails: incomplete → histories "fall out" at irrational limits → violates closure
+- ℝ is unique: connected, complete, ordered abelian group (classical theorem)
+- Stone: continuous unitary groups are homomorphisms ℝ → U(n)
+- This is NOT "time is continuous because we observe it"; it's structural necessity.
+
+**Hermitian Generator (DD-Generator):** H and exponential form U(t) = e^{-itH} forced by Stone's theorem:
+- Continuous unitary groups U: ℝ → U(n) have unique Hermitian generator H
+- If H not Hermitian: e^{-itH} not unitary → collapse or explosion → violates UAC
+- Exponential form forced by: additive time → multiplicative operators, continuity → differentiability
+- H is "generator of distinguishability" — energy interpretation requires additional bridge.
+- This completes QM kinematics: ℂ, U(n), t ∈ ℝ, H hermitian — all FORCED, no physics postulates.
 
 ---
 
@@ -74,11 +114,11 @@ README.md must not contradict this file.
 
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
-| HYP-C1 | Continuum emergence | HYP | Chain-8, DEF-C |
-| HYP-F1 | Fisher metric ≡ distinction geometry | HYP | HYP-C1 |
-| HYP-F2 | Time parameter emergence (ℕ → ℝ) | HYP | Chain-7 |
-| HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, HYP-F2 |
-| HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, HYP-F2 |
+| ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** | Now Chain-9,10,11 |
+| HYP-F1 | Fisher metric ≡ distinction geometry | HYP | Chain-11 |
+| ~~HYP-F2~~ | ~~Time parameter emergence (ℕ → ℝ)~~ | **SUPERSEDED** | Now DD-Time |
+| HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, DD-Time |
+| HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, DD-Time |
 | HYP-Q2 | Physical constants ℏ, c, G | HYP (input) | — |
 | HYP-G1 | Local gauge invariance | HYP | HYP-S4 |
 | HYP-G2 | Anomaly freedom | HYP (empirical) | HYP-Q1, HYP-G1 |
@@ -99,9 +139,51 @@ README.md must not contradict this file.
 
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
+| DD-Born | μ(ψ) = \|ψ\|² (Born rule) | DERIVED | DD-Unitarity, P1-P3 |
+| DD-Decoherence | No collapse, measurement relative | DERIVED | DD-Unitarity, DD-Born |
+| DD-Classicality | Classical states = stable fixed points | DERIVED | Criticality, DD-Decoherence |
+| DD-Space | Manifold structure of space | DERIVED | Criticality, DD-Classicality |
+| DD-Time-Unique | Time as unique process parameter | DERIVED | Criticality, DD-Time, DD-Space |
 | SU(3)-unique | SU(3) is unique strong gauge group | DERIVED | HYP-G1, HYP-G2, HYP-G3, HYP-G4 |
 | Koide-Q | Q = 2/3 | DERIVED | ℤ₃ symmetry, HYP-K1 |
 | Koide-ε | ε = √2 | DERIVED | Koide-Q |
+
+**Born Rule (DD-Born):** Unique distinguishability measure from unitarity:
+- P1: Normalization (Σμ(ψᵢ) = 1)
+- P2: Additivity on orthogonal alternatives
+- P3: History invariance (μ(ψ) = μ(U(t)ψ))
+- Uniqueness: f(√(a+b)) = f(√a) + f(√b) ⟹ f(√x) = Cx ⟹ μ = |ψ|²
+- This is NOT Gleason's theorem; DD-Born works for any dimension.
+
+**Decoherence (DD-Decoherence):** Measurement without collapse:
+- Composition of distinctions = tensor product (FORCED)
+- Distinguishability relative to subalgebra
+- Φ(Ψ) → Φ(S) + Φ(E) (factorization)
+- Collapse impossible: would violate unitarity (FORCED)
+- Born rule applies to factorized alternatives
+
+**Classicality (DD-Classicality):** Classical emergence from decoherence:
+- Classical state = distinction surviving decoherence
+- Pointer states = eigenstates of system-environment interaction
+- If all states unstable → Φ → 0 → criticality violated
+- Classical objects = stable orbits of distinguishability
+- Classicality is local, not fundamental
+
+**Space (DD-Space):** Manifold structure from distinguishability:
+- Classical distinctions form connected structure (isolated → Φ fails closure)
+- Graph structure forbidden (Φ → 0 at nodes, Φ discontinuous at edges)
+- Continuous structure required: manifold uniquely forced
+- Space = parameterization of stable distinctions
+- Metric = quantitative form of Φ-localization
+- Dimension: 0, 1, ∞ forbidden; finite d > 1 required
+
+**Time Uniqueness (DD-Time-Unique):** Why exactly one time parameter:
+- Static distinguishability forbidden (no selection, no stability)
+- Cyclic process forbidden (decoherence reversible → history collapses)
+- Process parameter must be linearly ordered (branching → no global history)
+- Must be continuous ℝ (discrete ℤ incompatible with continuous space)
+- Must be unique (multiple times → unitarity destroyed)
+- Spacetime signature (1, d-1) is forced, not postulated
 
 ### Conjectures (CONJ)
 
@@ -130,10 +212,10 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 21 |
+| FORCED | 28 |
 | DEF | 8 |
-| HYP | 20 |
-| DERIVED | 3 |
+| HYP | 18 |
+| DERIVED | 8 |
 | CONJ | 3 |
 | CIRC | 2 |
 | PRED | 1 |
@@ -145,9 +227,9 @@ README.md must not contradict this file.
 | Gap | Description | Blocking |
 |-----|-------------|----------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** — see UAC.md |
-| GAP-2 | Continuum not derived | HYP-C1 is hypothesis |
-| GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 is hypothesis |
-| GAP-4 | Chain-7 interpretation | FORCED* caveat unresolved |
+| ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** — Chain-9,10,11 |
+| ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** — DD-Time |
+| ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
 | GAP-6 | 3+1 dimensions weak argument | HYP-S1 downgraded to CONJ |
 
@@ -169,6 +251,7 @@ README.md must not contradict this file.
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative 12-thesis derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`

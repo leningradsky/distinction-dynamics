@@ -17,23 +17,18 @@
 
 ## 1. Discrete → Continuous Bridges
 
-### HYP-C1: Continuum Emergence
+### ~~HYP-C1: Continuum Emergence~~ — **SUPERSEDED**
 
-**Statement:** Continuous manifolds emerge from discrete distinction structure.
+> **This hypothesis has been superseded.** The continuum (ℝ) is now FORCED via Chain-9,10,11 in [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md). See GAP-2 closure.
 
-**Depends on:** FORCED Chain-8 (ℕ from recursion), DEF-C (category of distinctions)
+**Original statement:** Continuous manifolds emerge from discrete distinction structure.
 
-**Introduces:** Continuum, limits, topology, differential structure
+**Resolution:** Criticality (0 < Φ < ∞) forces:
+- ℤ: iteration comparison requires signed differences
+- ℚ: multi-generator comparison requires ratios
+- ℝ: Cauchy completeness required (incomplete structures violate criticality)
 
-**Justification:** The discrete poset (C, ≼) has infinite chains. Taking appropriate limits/completions yields continuous structures.
-
-**Status:** **Hypothetical bridge.** No derivation of why limits must exist or how topology emerges from pure distinction.
-
-**Alternative interpretations:**
-
-- Structure remains fundamentally discrete
-- Continuum is phenomenological approximation
-- Requires additional axioms (e.g., completeness, compactness)
+The continuum is not hypothetical — it is uniquely forced by criticality.
 
 ---
 
@@ -77,7 +72,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 
 **Statement:** The geometry of distinction configurations is the Fisher information metric.
 
-**Depends on:** HYP-C1 (continuum), DEF (Fisher metric)
+**Depends on:** Chain-11 (ℝ, FORCED continuum), DEF (Fisher metric)
 
 **Introduces:** Identification of abstract distinction space with statistical manifold
 
@@ -98,21 +93,20 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 
 ---
 
-### HYP-F2: Time Parameter Emergence
+### ~~HYP-F2: Time Parameter Emergence~~ — **SUPERSEDED**
 
-**Statement:** A continuous time parameter t ∈ ℝ emerges from distinction recursion.
+> **This hypothesis has been superseded.** Continuous time t ∈ ℝ is now FORCED via DD-Time theorem in [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md). See GAP-3 closure.
 
-**Depends on:** FORCED Chain-7 (recursion Δ = Δ(Δ(Δ(...))))
+**Original statement:** A continuous time parameter t ∈ ℝ emerges from distinction recursion.
 
-**Introduces:** Time as continuous parameter
+**Resolution:** Criticality + unitarity forces continuous time:
+- History parameter T must be: ordered, additive, invertible, dense
+- ℤ fails: discrete jumps → distinguishability not dense → subcritical
+- ℚ fails: incomplete → histories "fall out" at irrational limits
+- ℝ: unique connected, complete, ordered abelian group (classical theorem)
+- Stone's theorem: continuous unitary groups require ℝ → U(n) homomorphism
 
-**Status:** **Major gap.** The forced chain has discrete recursion (ℕ indexing). The jump to continuous t is unjustified.
-
-**Missing:**
-
-- Why continuous rather than discrete time steps?
-- Direction of time (why ∂_t not bidirectional)?
-- Metric on time (why dt² vs other measures)?
+Continuous time is not hypothetical — it is uniquely forced by critical unitary dynamics.
 
 ---
 
@@ -124,7 +118,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 ∂_t g_ij = -2 Ric_ij + 2 ∇_i∇_j log p
 ```
 
-**Depends on:** HYP-F1 (Fisher metric), HYP-F2 (time parameter)
+**Depends on:** HYP-F1 (Fisher metric), DD-Time (FORCED time parameter)
 
 **Introduces:** Parabolic PDE, geometric flow
 
@@ -146,7 +140,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 iℏ ∂_t ψ = Ĥψ
 ```
 
-**Depends on:** HYP-F1 (Fisher metric), HYP-F2 (time)
+**Depends on:** HYP-F1 (Fisher metric), DD-Time (FORCED time parameter)
 
 **Reference:** Frieden (2004) - *Physics from Fisher Information*
 
@@ -594,15 +588,18 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 6. ε = √2 - DERIVED (from Q)
 7. SU(3) uniqueness - DERIVED (given 4 physical constraints)
 
+### Now FORCED (Previously HYP):
+
+1. ~~Continuum existence (HYP-C1)~~ → FORCED via Chain-9,10,11
+2. ~~Time parameter (HYP-F2)~~ → FORCED via DD-Time theorem
+
 ### Requires Hypotheses (HYP):
 
-1. Continuum existence (HYP-C1)
-2. Fisher metric identification (HYP-F1)
-3. Time parameter (HYP-F2)
-4. Quantum framework (HYP-Q1)
-5. Gauge principle (HYP-G1)
-6. Lorentz invariance (HYP-S3)
-7. Physical spacetime identification (HYP-S4)
+1. Fisher metric identification (HYP-F1)
+2. Quantum framework (HYP-Q1)
+3. Gauge principle (HYP-G1)
+4. Lorentz invariance (HYP-S3)
+5. Physical spacetime identification (HYP-S4)
 
 ### Requires Physical Facts (Empirical Input):
 

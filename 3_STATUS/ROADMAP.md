@@ -14,14 +14,14 @@ Items are ordered by logical priority, not by difficulty or time.
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** | Defined as path entropy in UAC.md |
-| GAP-4 | Chain-7 interpretation | FORCED* | Either prove unfolding is forced or downgrade to HYP |
+| ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** | Chain-9 (ℤ), Chain-10 (ℚ), Chain-11 (ℝ) forced by criticality |
+| ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** | DD-Time: ℝ uniquely forced by criticality + unitarity + completeness |
+| ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** | Irreversibility argument: Δⁿ=id ⟹ erasure ⟹ local Ø ⟹ contradiction |
 
 ### Priority 2: Major Bridges (HYP that block physics claims)
 
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
-| GAP-2 | Continuum not derived | HYP-C1 | Either derive from discrete structure or accept as irreducible HYP |
-| GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 | Either derive or mark as permanent hypothesis |
 | GAP-7 | X: C → Hilb functor unspecified | DEF in BRIDGES.md | Specify concretely or remove |
 
 ### Priority 3: Questionable Claims (May be numerology)
@@ -79,3 +79,15 @@ These would require additional hypotheses beyond current scope.
 |------|-----|--------|--------|
 | 2025-12-13 | Initial | Created roadmap | 8 gaps identified |
 | 2025-12-13 | GAP-1 | Defined Φ as path entropy | CLOSED — see UAC.md |
+| 2025-12-13 | GAP-4 | Irreversibility argument from Ø impossible | CLOSED — see FORCED_CHAIN.md Chain-7 |
+| 2025-12-13 | GAP-2 | ℤ/ℚ/ℝ forced by criticality closure | CLOSED — see FORCED_CHAIN.md Chain-9,10,11 |
+| 2025-12-13 | Chain-12 | ℂ forced by automorphism closure | Added — process distinguishability requires U(1) |
+| 2025-12-13 | DD-Unitarity | U(n) dynamics from criticality | Added — unitarity = distinguishability preservation |
+| 2025-12-13 | GAP-3 | DD-Time: ℝ forced by history completeness | CLOSED — ℤ/ℚ fail criticality, ℝ unique |
+| 2025-12-13 | DD-Generator | H hermitian from Stone's theorem | Added — U(t)=e^{-itH} forced by continuous unitarity |
+| 2025-12-13 | DD-Born | Born rule μ=\|ψ\|² from unitarity | DERIVED — unique distinguishability measure |
+| 2025-12-13 | FORCED_SPINE | 12-thesis derivation T0-T11 | Created — authoritative reference for complete chain |
+| 2025-12-13 | DD-Decoherence | No collapse, measurement relative | DERIVED — factorization of distinguishability |
+| 2025-12-13 | DD-Classicality | Classical emergence | DERIVED — stable fixed points of decoherence |
+| 2025-12-13 | DD-Space | Manifold structure forced | DERIVED — space = parameterization of distinctions |
+| 2025-12-13 | DD-Time-Unique | Time as unique process parameter | DERIVED — signature (1,d-1) forced |
