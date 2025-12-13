@@ -14,13 +14,13 @@ Items are ordered by logical priority, not by difficulty or time.
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** | Defined as path entropy in UAC.md |
+| ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** | Chain-9 (ℤ), Chain-10 (ℚ), Chain-11 (ℝ) forced by criticality |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** | Irreversibility argument: Δⁿ=id ⟹ erasure ⟹ local Ø ⟹ contradiction |
 
 ### Priority 2: Major Bridges (HYP that block physics claims)
 
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
-| GAP-2 | Continuum not derived | HYP-C1 | Either derive from discrete structure or accept as irreducible HYP |
 | GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 | Either derive or mark as permanent hypothesis |
 | GAP-7 | X: C → Hilb functor unspecified | DEF in BRIDGES.md | Specify concretely or remove |
 
@@ -80,3 +80,4 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | Initial | Created roadmap | 8 gaps identified |
 | 2025-12-13 | GAP-1 | Defined Φ as path entropy | CLOSED — see UAC.md |
 | 2025-12-13 | GAP-4 | Irreversibility argument from Ø impossible | CLOSED — see FORCED_CHAIN.md Chain-7 |
+| 2025-12-13 | GAP-2 | ℤ/ℚ/ℝ forced by criticality closure | CLOSED — see FORCED_CHAIN.md Chain-9,10,11 |

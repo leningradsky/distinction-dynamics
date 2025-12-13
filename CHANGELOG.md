@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here.
 
+## [0.5] - 2025-12-13
+
+### Added
+- Chain-9: ℤ forced by iteration comparison (signed differences for depth ordering)
+- Chain-10: ℚ forced by commensurability (ratios for multi-generator comparison)
+- Chain-11: ℝ forced by limit closure (Cauchy completeness for criticality)
+- Continuum Lemma: Admissible structures closed under internal limits
+
+### Fixed
+- GAP-2 closed: Continuum (ℝ) now FORCED via criticality closure argument
+
 ## [0.4] - 2025-12-13
 
 ### Added

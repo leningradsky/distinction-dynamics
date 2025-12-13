@@ -61,10 +61,18 @@ README.md must not contradict this file.
 | CR-5 | Minimal: ≥ 2 non-commuting generators | FORCED | CR-3, CR-4 |
 | CR-6 | Finite presentation | FORCED | CR-1, CR-5 |
 | CR-7 | Automorphism structure emerges | FORCED | CR-6 |
+| Chain-9 | ℤ (iteration comparison) | FORCED | Chain-8, Chain-7, DEF-UAC |
+| Chain-10 | ℚ (commensurability) | FORCED | Chain-9, CR-5, DEF-UAC |
+| Chain-11 | ℝ (limit closure) | FORCED | Chain-10, DEF-UAC |
 
 **Chain-7 Resolution (GAP-4 closed):** Irreversibility follows from DEF-AX. If Δⁿ = id, then distinctions created between X and Δⁿ(X) would be erased, implying local Ø. Since Ø is impossible, {id, Δ, Δ², ...} must be infinite. This is a structural argument (no process/time needed).
 
 **Critical Regime (CR-1 to CR-7):** Structural constraints from 0 < Φ < ∞. See `1_DERIVATION/CRITICAL_REGIME.md`.
+
+**Continuum Closure (GAP-2 closed):** ℤ, ℚ, ℝ are not added but uniquely forced by criticality:
+- ℤ: Iteration comparison requires signed differences; finite structure would collapse Chain-7.
+- ℚ: Multi-generator (CR-5) comparison requires ratios; discontinuous Φ violates criticality.
+- ℝ: Cauchy limits must exist; incomplete structure has Φ → 0 or Φ → ∞ at limits.
 
 ---
 
@@ -74,8 +82,8 @@ README.md must not contradict this file.
 
 | ID | Statement | Status | Depends On |
 |----|-----------|--------|------------|
-| HYP-C1 | Continuum emergence | HYP | Chain-8, DEF-C |
-| HYP-F1 | Fisher metric ≡ distinction geometry | HYP | HYP-C1 |
+| ~~HYP-C1~~ | ~~Continuum emergence~~ | **SUPERSEDED** | Now Chain-9,10,11 |
+| HYP-F1 | Fisher metric ≡ distinction geometry | HYP | Chain-11 |
 | HYP-F2 | Time parameter emergence (ℕ → ℝ) | HYP | Chain-7 |
 | HYP-F3 | Fisher-Ricci geometric flow | HYP | HYP-F1, HYP-F2 |
 | HYP-Q1 | Fisher → Schrödinger equation | HYP | HYP-F1, HYP-F2 |
@@ -130,9 +138,9 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 21 |
+| FORCED | 24 |
 | DEF | 8 |
-| HYP | 20 |
+| HYP | 19 |
 | DERIVED | 3 |
 | CONJ | 3 |
 | CIRC | 2 |
@@ -145,7 +153,7 @@ README.md must not contradict this file.
 | Gap | Description | Blocking |
 |-----|-------------|----------|
 | ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** — see UAC.md |
-| GAP-2 | Continuum not derived | HYP-C1 is hypothesis |
+| ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** — Chain-9,10,11 |
 | GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 is hypothesis |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | GAP-5 | α = 137 formula unjustified | CONJ-A1 may be numerology |
