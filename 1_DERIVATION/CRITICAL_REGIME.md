@@ -222,6 +222,23 @@ The following require additional structure (HYP):
 
 ---
 
+## Note: All CR Constraints Are Discrete
+
+**Important:** All constraints CR-1 through CR-7 are formulated over ℕ.
+
+The classification COLLAPSE / CRITICAL / EXPLOSION uses only:
+- Path counts P(n) ∈ ℕ
+- Comparisons with polynomials nᵏ
+- Comparisons with exponentials kⁿ
+
+No real numbers, limits, or topology required.
+
+See `0_CORE/UAC.md` (Discrete vs Continuous Formulation) for details.
+
+**Consequence:** The entire critical regime analysis is FORCED from Chain-8 (ℕ) without needing HYP-C1 (continuum).
+
+---
+
 ## Next Step (Boundary of FORCED)
 
 To determine which specific structures describe physics:
