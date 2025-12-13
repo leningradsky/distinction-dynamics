@@ -17,10 +17,11 @@
 
 ## Repository Structure
 
-### 0_CORE: Primitive Prohibition
+### 0_CORE: Primitive Prohibition + Admissibility
 
 - [0_CORE/AXIOM.md](0_CORE/AXIOM.md): The sole primitive prohibition `Ø is impossible`
-- [0_CORE/DEFINITIONS.md](0_CORE/DEFINITIONS.md): Σ, Σ⁺, admissibility A, prefix order ≼, category C, reserved Φ
+- [0_CORE/DEFINITIONS.md](0_CORE/DEFINITIONS.md): Σ, Σ⁺, admissibility A, prefix order ≼, category C, Φ
+- [0_CORE/UAC.md](0_CORE/UAC.md): Universal Admissibility Criterion (0 < Φ < ∞) and Φ = path entropy
 
 ### 1_DERIVATION: Forced Chain
 

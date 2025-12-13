@@ -31,7 +31,14 @@ README.md must not contradict this file.
 | DEF-A | Admissibility A ⊆ Σ+ with (A1-A3) | DEF | DEFINITIONS.md |
 | DEF-≼ | Prefix order on A | DEF | DEFINITIONS.md |
 | DEF-C | Category C induced by ≼ | DEF | DEFINITIONS.md |
-| DEF-Φ | Criticality functional (reserved) | DEF | DEFINITIONS.md |
+| DEF-UAC | 0 < Φ(S) < ∞ (admissibility criterion) | DEF | UAC.md |
+| P1 | Φ invariance | FORCED | UAC.md |
+| P2 | Φ monotonicity | FORCED | UAC.md |
+| P3 | Φ boundary sensitivity | FORCED | UAC.md |
+| P4 | Φ locality aggregation | FORCED | UAC.md |
+| P5 | Φ dimensionlessness | FORCED | UAC.md |
+| Φ-unique | Φ = lim sup (1/n) log P(n) | FORCED | UAC.md, P1-P5 |
+| DEF-Φ | Path entropy functional | DEF | DEFINITIONS.md |
 
 ---
 
@@ -114,8 +121,8 @@ README.md must not contradict this file.
 
 | Status | Count |
 |--------|-------|
-| FORCED | 8 |
-| DEF | 6 |
+| FORCED | 14 |
+| DEF | 8 |
 | HYP | 20 |
 | DERIVED | 3 |
 | CONJ | 3 |
@@ -128,7 +135,7 @@ README.md must not contradict this file.
 
 | Gap | Description | Blocking |
 |-----|-------------|----------|
-| GAP-1 | Φ functional undefined | DEF-Φ reserved but unused |
+| ~~GAP-1~~ | ~~Φ functional undefined~~ | **CLOSED** — see UAC.md |
 | GAP-2 | Continuum not derived | HYP-C1 is hypothesis |
 | GAP-3 | Time (ℕ → ℝ) not derived | HYP-F2 is hypothesis |
 | GAP-4 | Chain-7 interpretation | FORCED* caveat unresolved |
@@ -152,6 +159,7 @@ README.md must not contradict this file.
 
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
+- UAC: `0_CORE/UAC.md`
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
 - Bridges: `2_EXPRESSION/BRIDGES.md`
