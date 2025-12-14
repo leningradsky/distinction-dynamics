@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.35 — Space FORCED, Next: Dimension)
+**Last updated:** 2025-12-14 (v2.36 — Dimension d=3+1 FORCED, Next: Gravity)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 154 |
+| FORCED | 161 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T77):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational, symmetry/conservation, unitarity, space all FORCED:
+**Note (T78):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational, symmetry/conservation, unitarity, space, dimension all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 75 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity+space (T32-T77)
+- 82 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity+space+dimension (T32-T78)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -664,7 +664,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T77: Continuous metric FORCED (unitarity preservation)
 - T77: X ~ ℝⁿ locally FORCED (from continuity)
 - **Space is NOT a container** — space is structure of distinguishability
-- **Next FORCED:** What determines dimension? Why finite? Why this particular d?
+
+**Dimension Layer (T78):**
+- T78: dim < ∞ FORCED (stable subsystems required, else instant decoherence)
+- T78: dim ≠ 1 FORCED (unitarity requires complex structure, rotations, phases)
+- T78: dim ≠ 2 FORCED (fermions require SU(2), SO(2) has no spinors)
+- T78: dim = 3 FORCED (minimal admissible: SO(3), SU(2), spinors, fermions)
+- T78: dim > 3 excluded FORCED (no stable atoms in higher dimensions)
+- T78: Time special FORCED (history parameter, not spatial direction)
+- T78: Signature (3,1) FORCED (inevitable from space/time distinction)
+- **"Why 3 dimensions?" ANSWERED** — only dimension compatible with distinguishability, unitarity, locality, stable structure
+- **Next FORCED:** What forces metric to be dynamic? What forces gravity?
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
