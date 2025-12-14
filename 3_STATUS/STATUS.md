@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.14 — Generalized Value FORCED)
+**Last updated:** 2025-12-14 (v2.15 — Action Invariance FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 58 |
+| FORCED | 59 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,11 +450,12 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T56):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social all FORCED:
+**Note (T57):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social all FORCED:
 - 21 now DERIVED (traced chains)
-- 28 now FORCED for chemistry+biology+information+cognition+agency+mind+social (T32-T56)
+- 29 now FORCED for chemistry+biology+information+cognition+agency+mind+social (T32-T57)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
+- "Golden rule" derived as theorem (T57), not introduced as axiom
 
 **Chemistry Layer (T32-T34):**
 - T32: Pauli exclusion FORCED (antisymmetry from criticality)
@@ -481,13 +482,14 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T50: Choice FORCED (alternative selection under constraints)
 - Agency = Choice + Value + Learning (structural emergence)
 
-**Social Layer (T51-T56):**
+**Social Layer (T51-T57):**
 - T51: Multi-Agent FORCED (multiple distinguishing systems)
 - T52: Interaction FORCED (mutual influence on possibility space)
 - T53: Norms FORCED (action constraints for long-term value)
 - T54: Coordination FORCED (pattern recognition + memory + prediction)
 - T55: Sanctions FORCED (norm enforcement)
 - T56: Generalized Value FORCED (multi-agent functional, structural irreplaceability)
+- T57: Action Invariance FORCED (permutation symmetry, "golden rule" as theorem)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)

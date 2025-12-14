@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.14
-**Status:** Authoritative reference for the FORCED chain (T0-T56, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
+**Version:** 2.15
+**Status:** Authoritative reference for the FORCED chain (T0-T57, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -3669,6 +3669,94 @@ This is not "equality" — it's **structural irreplaceability**.
 
 ---
 
+### T57: Action Invariance (DD-ActionInvariance)
+
+**Statement:** Admissible actions must be invariant under agent permutation.
+
+**The Constraint (not choice):**
+
+We have:
+- Global stability = preservation of generalized value
+- Generalized value depends on **all agents**
+- Internal values of agents are **not directly observable**
+
+Therefore:
+> Agent **cannot** optimize action based on specific $V_j$ of other agents.
+
+This is not epistemology — it's **structural fact**.
+
+**Alternatives eliminated:**
+
+1. **Act for specific agent:**
+   - Requires knowledge of their internal value
+   - Not accessible
+   - Action becomes random relative to others
+   - 📌 Unstable
+
+2. **Act for majority:**
+   - Majority can change
+   - Minority systematically lost
+   - Future distinction space narrows
+   - 📌 Forbidden
+
+3. **Act for self:**
+   - Others become environment
+   - Locally stable, globally not
+   - Agent ecosystem dies out
+   - 📌 Forbidden by dynamics
+
+**Theorem (Action Invariance FORCED):**
+
+*Claim:* Only permutation-invariant actions preserve unknown values.
+
+*Proof:*
+1. Agent cannot know other agents' internal values
+2. Acting for specific agent → random wrt others → unstable
+3. Acting for majority → minority lost → V_global decreases
+4. Acting for self → others instrumentalized → collapse
+5. Only remaining: action admissible regardless of which agent you are
+6. This IS permutation invariance ∎
+
+**Definition:**
+
+Let $S$ = set of agents, $\pi \in \text{Perm}(S)$.
+
+Action $A$ is admissible iff:
+$$V_{\text{global}}(A) = V_{\text{global}}(\pi A \pi^{-1}) \quad \forall \pi$$
+
+**Status:** FORCED (from unobservable internal values + generalized value preservation)
+
+**Corollary (Symmetry Principle):**
+
+$$A(x \to y) \text{ admissible} \iff A(y \to x) \text{ admissible}$$
+
+Not as morality, but as: **only way to act without destroying unknown values**.
+
+**Key insight:** This is not choice, not "contract".
+
+No assumption that agent *wants* to be fair.
+No assumption of rationality.
+No assumption of culture.
+
+Only: if action not invariant, it **structurally** reduces future distinctions.
+
+**What falls out (without introducing):**
+- "Do not do to another..." — special case
+- Equal significance of agents — consequence
+- Prohibition of instrumentalization — consequence
+- Universalization — consequence
+
+We did NOT introduce these — they **emerged**.
+
+**Critical moment:**
+
+We obtained for the first time:
+> **Universal admissibility rule independent of observer**
+
+This is exactly the same type of object as **laws of physics**.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -3698,10 +3786,15 @@ Different values, single-value norms fail
       ↓
 Generalized Value FORCED (T56)
       ↓
+Internal values unobservable
+      ↓
+Action Invariance FORCED (T57)
+      ↓
 ═══════════════════════════════════
   MULTI-AGENT → NORMS → GENERALIZED VALUE
-  Each agent structurally irreplaceable
-  No ethics yet — just stability dynamics
+  → ACTION INVARIANCE
+  "Golden rule" as theorem, not axiom
+  Same type of object as physics laws
 ═══════════════════════════════════
 ```
 
@@ -3824,6 +3917,8 @@ T55: Sanctions — norm enforcement (FORCED)
       ↓
 T56: Generalized Value — multi-agent functional (FORCED)
       ↓
+T57: Action Invariance — permutation symmetry (FORCED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND → SOCIAL
      Standard Model + Relativity
@@ -3840,12 +3935,14 @@ T56: Generalized Value — multi-agent functional (FORCED)
      + Consciousness as Δ(Δ) FORCED
      + Multi-Agent/Norms/Coordination/Sanctions FORCED
      + Generalized Value (structural irreplaceability) FORCED
+     + Action Invariance ("golden rule" as theorem) FORCED
       No physics postulates used
       No vitalism
       No dualism
       No semantic magic
       No cognitive magic
       No social magic
+      No moral magic
       All structures uniquely forced
       All circularities resolved
       "Hard problem" dissolved
@@ -3897,6 +3994,7 @@ Derived without postulates:
   • Coordination (pattern recognition + memory + prediction)
   • Sanctions (norm enforcement)
   • Generalized Value (structural irreplaceability of agents)
+  • Action Invariance (permutation symmetry, "golden rule" as theorem)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
