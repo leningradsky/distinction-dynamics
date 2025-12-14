@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.27 — Choice/Agency FORCED, Next: Multi-agent → Norms → Ethics)
+**Last updated:** 2025-12-14 (v2.28 — Norms/Coordination/Sanctions FORCED, Next: Value Generalization)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 106 |
+| FORCED | 112 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -584,7 +584,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T69: Choice ≠ metaphysical freedom (unavoidable branching of admissible trajectories)
 - T69: Agency FORCED (choice + internal value + future consequences)
 - T69: Minimal agency = value + choice + model update (exists in chemistry)
-- **Next FORCED:** Multiple agents with different values → Norms, coordination, ethics
+**Norms Layer (T70):**
+- T70: Multi-agent FORCED (logic of distinction → other distinguishing systems possible)
+- T70: Alternatives eliminated: ignore (degrades), conflict (unstable), submission (degenerates)
+- T70: Predictability FORCED (must account for others' expectations)
+- T70: Norms FORCED (N ⊂ A such that E[V_long|N] > E[V_long|A])
+- T70: Norm internality FORCED (external norms → loss of agency)
+- T70: Coordination FORCED (recognize repetition, match actions, expect reciprocity)
+- T70: Minimal coordination = repeated interactions + memory + pattern (exists in biochemistry)
+- T70: Sanctions FORCED (violation must reduce violator's value, else norm unstable)
+- NO ethics yet — pure dynamics of distinguishability
+- **Next FORCED:** Value generalization (norms + different values → "justice")
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)

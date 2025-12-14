@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.27
-**Status:** Authoritative reference for the FORCED chain (T0-T69, Physics → Chemistry → Biology → Consciousness → Society → Science → Choice/Agency COMPLETE)
+**Version:** 2.28
+**Status:** Authoritative reference for the FORCED chain (T0-T70, Physics → Chemistry → Biology → Consciousness → Society → Science → Choice/Agency → Norms COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -5571,6 +5571,195 @@ This **FORCED** leads to:
 
 ---
 
+### T70: Multi-Agent to Norms (DD-NormsFromAgency)
+
+**Statement:** Multiple agents with different values in a shared world FORCE norms, coordination, and sanctions.
+
+**Current point (fixed):**
+
+Already NOT discussed:
+- Agency exists (from value + choice)
+- Agent acts in world with constraints
+- Agent optimizes future distinguishability/value
+
+**New fact (not hypothesis — inevitability):**
+
+> Agent is **not the only** source of action in the world.
+
+This is not empirical — it's logic of distinction:
+If distinction is possible, then **other distinguishing systems** are possible.
+
+**What happens with ≥2 agents:**
+
+Let there be agents A and B.
+
+They:
+- Act in same world
+- Have partially overlapping resources
+- Have different histories → different values
+
+Therefore:
+> Actions of one agent affect available future distinctions of another.
+
+This is the key.
+
+**Theorem (All Alternatives Eliminated):**
+
+**❌ Alternative 1: Ignore other agents**
+
+Impossible:
+- Their actions change environment
+- Agent's predictions become wrong
+- Value falls
+
+*Agent degrades.*
+
+**❌ Alternative 2: Constant conflict**
+
+- Resources depleted
+- Uncertainty grows
+- Long-term value falls
+
+*Strategically unstable.*
+
+**❌ Alternative 3: Complete submission of one to another**
+
+- Loses own value
+- Agent ceases to be agent
+- System degenerates
+
+*Unstable.*
+
+**Theorem (Predictability FORCED):**
+
+*Claim:* Agent must account for other agents.
+
+*Proof:*
+1. Agent is forced to account for:
+   - Expectations of other agents
+   - Reactions to own actions
+   - Repeatability of interactions
+2. This leads to necessity of:
+   > **Predictability of behavior** ∎
+
+**Status:** FORCED (from multi-agent dynamics)
+
+**Definition (Norm — FORCED):**
+
+Norm = constraint on admissible actions that increases expected joint value over time.
+
+Formally:
+$$\mathcal{N} \subset \mathcal{A} \quad\text{such that}\quad \mathbb{E}[V_{\text{long}} \mid \mathcal{N}] > \mathbb{E}[V_{\text{long}} \mid \mathcal{A}]$$
+
+**Theorem (Norms Must Be Internal):**
+
+*Claim:* Norms cannot be externally imposed.
+
+*Proof:*
+1. If norm is imposed from outside:
+   - Agent cannot verify it
+   - Cannot adapt it
+   - Loses agency
+2. Therefore: norms must be **internally adoptable** ∎
+
+**Status:** FORCED (from agency preservation)
+
+**Theorem (Coordination FORCED):**
+
+*Claim:* Coordination emerges from norm adoption.
+
+*Proof:*
+For norm adoption, agent needs:
+1. Recognize repetition
+2. Match actions to consequences
+3. Expect reciprocal actions
+
+This is **coordination**, not morality ∎
+
+**Status:** FORCED (from norm internalization)
+
+**Definition (Minimal Coordination):**
+
+Minimal coordination does NOT require:
+- Language
+- Consciousness
+- Contracts
+
+It requires only:
+- Repeated interactions
+- Memory
+- Distinguishing "own/other pattern"
+
+**Note:** This exists already in biochemical systems (quorum sensing, signals).
+
+**Theorem (Sanctions FORCED):**
+
+*Claim:* Sanctions must exist for norms to be stable.
+
+*Proof:*
+1. If norm is violated, and this reduces value of other agents
+2. Then: violation must reduce expected value of violator
+3. Otherwise: norm is unstable
+4. Sanction = **trajectory correction**, not punishment ∎
+
+**Status:** FORCED (from norm stability)
+
+**What we obtained (without ethics):**
+
+NOT A SINGLE WORD about good/evil.
+
+We derived:
+- Agency
+- Multiplicity of agents
+- Conflict of interests
+- Necessity of predictability
+- Norms
+- Sanctions
+- Coordination
+
+This is **pure dynamics of distinguishability.**
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| Multi-agent | FORCED | Logic of distinction |
+| Predictability | FORCED | Multi-agent dynamics |
+| Norms | FORCED | Joint value optimization |
+| Norm internality | FORCED | Agency preservation |
+| Coordination | FORCED | Norm adoption |
+| Sanctions | FORCED | Norm stability |
+
+**Updated chain:**
+
+```
+Ø impossible
+    ↓
+Distinction → ℕ → ℝ → ℂ
+    ↓
+Unitary histories → Chemistry
+    ↓
+Autocatalysis → Code → Semantics
+    ↓
+Cognition → Error → Learning
+    ↓
+Value → Choice → Agency
+    ↓
+Multiple agents → Coordination
+    ↓
+Norms → Sanctions
+```
+
+**What is NOW FORCED:**
+
+Norms exist, but agents have **different internal values**.
+
+For norms to be stable, there must emerge:
+
+### Generalization of value
+
+(what will later be called "justice", but we're not there yet)
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -5776,8 +5965,10 @@ T68: Society/Science — communication, language, math, truth (FORCED)
       ↓
 T69: Choice/Agency — value + constraints → selection (FORCED)
       ↓
+T70: Norms — multi-agent → coordination → sanctions (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3
