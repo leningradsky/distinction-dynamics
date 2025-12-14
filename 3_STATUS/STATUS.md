@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.33 — Symmetry→Conservation FORCED, Next: Lagrangian Form)
+**Last updated:** 2025-12-14 (v2.34 — Unitarity FORCED, Next: Tensor Product Structure)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 139 |
+| FORCED | 146 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T75):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational, symmetry/conservation all FORCED:
+**Note (T76):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational, symmetry/conservation, unitarity all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 60 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation (T32-T75)
+- 67 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity (T32-T76)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -640,7 +640,20 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T75: Energy, momentum, charge = LABELS on forced invariants (not axioms)
 - **Skeleton of Lagrangian mechanics** — without space, time, particles
 - FORCED chain: distinguishability → sanction → action → variational → symmetry → conservation
-- **Next FORCED:** What constrains the form of L?
+
+**Unitarity Layer (T76):**
+- T76: ⟨ψ,φ⟩ ∈ ℂ FORCED (minimal distinguishability carrier)
+- T76: ℂ not ℝ FORCED (phase encoding required for interference)
+- T76: ⟨Uψ,Uφ⟩ = ⟨ψ,φ⟩ FORCED (distinguishability preservation)
+- T76: U†U = I FORCED (from inner product preservation)
+- T76: U(τ) continuous FORCED (variational principle compatibility)
+- T76: U(τ) = e^{-iHτ} FORCED (Stone's theorem)
+- T76: H = H† FORCED (from unitarity)
+- **Quantum dynamics without quantum postulates** — ℂ, U(n), H†=H all FORCED
+- NOT yet introduced: probability, measurement, energy, space, observer
+- Born rule follows from T11 (factorization + phase unobservability + additivity)
+- **Maximal FORCED level of dynamics reached**
+- **Next FORCED:** How do multiple subsystems compose? Tensor product structure?
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)

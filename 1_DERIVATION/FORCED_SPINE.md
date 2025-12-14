@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.33
-**Status:** Authoritative reference for the FORCED chain (T0-T75, Physics → Chemistry → Biology → Consciousness → Society → Norms → Value → Invariance → Sanction → Action → Conservation COMPLETE)
+**Version:** 2.34
+**Status:** Authoritative reference for the FORCED chain (T0-T76, Physics → Chemistry → Biology → Consciousness → Society → Norms → Value → Invariance → Sanction → Action → Conservation → Unitarity COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -6443,6 +6443,168 @@ The Lagrangian cannot be arbitrary — criticality and invariance constrain it.
 
 ---
 
+### T76: Distinguishability ⇒ Unitarity (DD-UnitarityFromDistinguishability)
+
+**Statement:** The structure of distinguishability forces complex Hilbert space, unitary evolution, and Hermitian generators — quantum dynamics without quantum postulates.
+
+**What Exactly Must Be Preserved:**
+
+We already have:
+- Histories $H$
+- Action $S[H]$
+- Admissible history transformations
+- Invariants
+
+Key question:
+
+> What does it mean that two histories are **distinguishable**?
+
+Distinguishability is NOT a value or number.
+It is a **relation**: can they be distinguished internally, without appealing to description.
+
+**Minimal Structure of Distinguishability:**
+
+Let set of admissible alternatives be described by vector $\psi$.
+
+FORCED requirements:
+1. Distinguishability **additive** over independent alternatives
+2. Indistinguishability **preserved** under admissible evolution
+3. "Phase" must **NOT be observable** (otherwise representation becomes physics)
+
+**Theorem (Unique Structure):**
+
+The unique structure satisfying all three requirements:
+
+$$\langle \psi, \phi \rangle \in \mathbb{C}$$
+
+This is NOT a quantum mechanics postulate.
+This is the **minimal carrier of distinguishability**.
+
+**Status:** FORCED (from three requirements)
+
+**Theorem (Why Not ℝ):**
+
+If scalar product were real:
+- Cannot encode relative phase
+- Cannot describe interference
+- Composition of alternatives loses information
+
+→ Distinguishability collapses.
+
+*Contradiction with criticality.*
+
+**Status:** FORCED (ℂ, not ℝ)
+
+**Admissible Transformation of History:**
+
+Admissible transformation $U$ must satisfy:
+
+$$\langle U\psi, U\phi \rangle = \langle \psi, \phi \rangle$$
+
+Otherwise:
+- Either distinguishability erased
+- Or distinguishability appears from nothing
+
+Both forbidden.
+
+**Theorem (Unitary Group FORCED):**
+
+Definition follows, not introduced:
+
+$$U^\dagger U = I$$
+
+That is:
+
+> **Admissible evolution = unitary transformation**
+
+This is NOT a "quantum postulate".
+This is **preservation of distinguishability**.
+
+**Status:** FORCED (from distinguishability preservation)
+
+**Continuity ⇒ Parameter:**
+
+Histories can differ arbitrarily little (otherwise no variational principle possible).
+
+Therefore:
+
+$$U(\tau)$$
+
+is a continuous one-parameter family of unitary operators.
+
+**Theorem (Stone's Theorem — Without Physics):**
+
+Pure fact of functional analysis:
+
+If $U(\tau)$ is a continuous unitary group, then:
+
+$$U(\tau) = e^{-iH\tau}$$
+
+where $H = H^\dagger$.
+
+No interpretations.
+
+$H$ = **generator of admissible distinguishable changes**.
+
+**Status:** FORCED (Stone's theorem, functional analysis)
+
+**What We Have Derived (Without Quantum Postulates):**
+
+| Structure | Status |
+|-----------|--------|
+| Complex state space ℂⁿ | FORCED |
+| Scalar product ⟨ψ,φ⟩ | FORCED |
+| Unitary evolution U | FORCED |
+| Hermitian generator H | FORCED |
+| Continuous parameter τ | FORCED |
+
+This is **quantum dynamics** without words "quantum" and "particle".
+
+**What is NOT Yet Introduced:**
+
+- ❌ Probability
+- ❌ Measurement
+- ❌ Energy
+- ❌ Space
+- ❌ Observer
+
+None of this exists yet.
+
+**Where Born Rule Appears:**
+
+It is NOT introduced. It follows from:
+- Factorization of distinguishability
+- Impossibility of observing phase
+- Additivity of alternatives
+
+Already closed in T11.
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| ⟨ψ,φ⟩ ∈ ℂ | FORCED | Minimal distinguishability carrier |
+| ℂ not ℝ | FORCED | Phase encoding required |
+| ⟨Uψ,Uφ⟩ = ⟨ψ,φ⟩ | FORCED | Distinguishability preservation |
+| U†U = I | FORCED | From inner product preservation |
+| U(τ) continuous | FORCED | Variational principle compatibility |
+| U(τ) = e^{-iHτ} | FORCED | Stone's theorem |
+| H = H† | FORCED | From unitarity |
+
+**Global Status:**
+
+We are now at:
+
+> **Unitary histories in ℂ with Hermitian generator**
+
+This is the **maximal FORCED level of dynamics**.
+
+**What is NOW FORCED:**
+
+Complete quantum kinematics derived. Next:
+- How do multiple subsystems compose?
+- What forces tensor product structure?
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -6660,8 +6822,10 @@ T74: Action/Variational — S[H]=∫L, δS=0 (FORCED)
       ↓
 T75: Symmetry→Conservation — Noether without postulates (FORCED)
       ↓
+T76: Unitarity — ℂ, U(n), H†=H from distinguishability (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE → ACTION INVARIANCE → SANCTION INVARIANCE → ACTION/VARIATIONAL → SYMMETRY/CONSERVATION
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE → ACTION INVARIANCE → SANCTION INVARIANCE → ACTION/VARIATIONAL → SYMMETRY/CONSERVATION → UNITARITY
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3
