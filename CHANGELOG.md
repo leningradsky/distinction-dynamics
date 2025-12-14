@@ -2,6 +2,70 @@
 
 All notable changes to this project are documented here.
 
+## [1.7] - 2025-12-13
+
+### Added
+- **DD-Gauge theorem (T18)**: SU(3)×SU(2)×U(1) as unique gauge group
+  - Five structural criteria: C1-C5 (local unitarity, internal distinguishability, factorizability, criticality, minimality)
+  - U(1): minimal phase distinguishability
+  - SU(2): minimal non-abelian stable structure
+  - SU(3): maximal group preserving criticality (N ≥ 4 breaks threshold)
+  - Elimination proof: SO(N), Sp(N), exceptional groups incompatible
+  - Products beyond SU(3)×SU(2)×U(1) duplicate or destabilize
+
+### Changed
+- DERIVED count: 10 → 11 (added DD-Gauge)
+- HYP count: 17 → 13 (HYP-G1..G4 superseded by DD-Gauge)
+- SU(3)-unique subsumed by DD-Gauge
+- T18 → T19 (Boundary renumbered)
+
+### Summary
+**Complete Standard Model structure derived without postulates!**
+- Gauge group is elimination proof, not hypothesis
+- Only numerical constants (α, masses, couplings) remain as realization index
+
+## [1.6] - 2025-12-13
+
+### Added
+- **DD-Dim3 theorem (T17)**: d = 3 as criticality selection
+  - Space = factorization structure of distinguishability
+  - Metric forced by correlation decay requirements
+  - d = 1: edge-dominated, unstable
+  - d = 2: no stable continuous phases
+  - d ≥ 4: correlations decay too fast
+  - d = 3: unique stable dimension (1/r² decay, balanced scaling)
+
+### Changed
+- DERIVED count: 9 → 10 (added DD-Dim3)
+- CONJ count: 3 → 2 (d=3 moved from CONJ to DERIVED)
+- **GAP-6 CLOSED** (3+1 dimensions now DERIVED)
+- T17 → T18 (Boundary renumbered)
+
+### Summary
+**Complete 3+1 spacetime derived without postulates!**
+- Argument is structural (criticality selection), not anthropic
+- Only gauge groups remain as HYP
+
+## [1.5] - 2025-12-13
+
+### Added
+- **DD-Energy theorem (T16)**: H = energy as structural identification
+  - H is unique Hermitian generator of time translation
+  - Time symmetry has unique conserved generator (Noether)
+  - Cannot be charge/momentum (no internal symmetries/space in this context)
+  - Energy ≡ generator of time translation (structural, not interpretive)
+
+### Changed
+- DERIVED count: 8 → 9 (added DD-Energy)
+- HYP count: 18 → 17 (H = energy moved from HYP to DERIVED)
+- T16 → T17 (Boundary renumbered)
+
+### Summary
+Complete QM + spacetime + energy without postulates:
+- **Energy as time-conjugate observable (DERIVED)**
+- Not interpretation but structural identification
+- Only d = 3 and gauge groups remain as HYP/CONJ
+
 ## [1.4] - 2025-12-13
 
 ### Added

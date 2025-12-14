@@ -25,37 +25,38 @@ Understand DD's structure and identify weak points in under an hour.
 
 ---
 
-## Phase 2: FORCED Chain (15 minutes)
+## Phase 2: FORCED Chain (20 minutes)
 
-### 2.1 Core Chain (10 min)
-**Read:** [1_DERIVATION/FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md)
+### 2.1 Complete Derivation (15 min)
+**Read:** [1_DERIVATION/FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md)
 
 **Focus on:**
-- Chain-6: Is Δ = Δ(Δ) valid?
-- Chain-7: Does irreversibility argument work?
-- Chain-8: Is ℕ ≅ {Δⁿ} justified?
+- T4: Does irreversibility argument work?
+- T7: Is ℝ genuinely forced by completeness?
+- T11: Is Born rule unique?
+- T26: Is DD-NoAlt (no alternatives) valid?
+- T30: Does CP violation force N ≥ 3?
 
-### 2.2 Critical Regime (5 min)
-**Skim:** [1_DERIVATION/CRITICAL_REGIME.md](../1_DERIVATION/CRITICAL_REGIME.md)
+### 2.2 Dependency Structure (5 min)
+**Skim:** [1_DERIVATION/DEPENDENCY_GRAPH.md](../1_DERIVATION/DEPENDENCY_GRAPH.md)
 
-**Key question:** Do CR-1 to CR-7 follow from UAC?
+**Key question:** Are T0-T30 dependencies valid?
 
 ---
 
-## Phase 3: Bridges (15 minutes)
+## Phase 3: Remaining Items (10 minutes)
 
-### 3.1 HYP Analysis (10 min)
+### 3.1 Conjectures (5 min)
 **Read:** [2_EXPRESSION/BRIDGES.md](../2_EXPRESSION/BRIDGES.md)
 
-**Key question:** Are the hypotheses:
-- Independent or redundant?
-- Justified or ad hoc?
-- Falsifiable?
+**Key question:** Are CONJ claims (α=137, θ≈2/9) structure or numerology?
 
 ### 3.2 Circularities (5 min)
 **Read:** [2_EXPRESSION/CIRCULARITIES.md](../2_EXPRESSION/CIRCULARITIES.md)
 
-**Key question:** Are CIRC-1 and CIRC-2 acknowledged or hidden?
+**Key question:** Is CIRC-2 (Triad ⟷ Rank) problematic?
+
+**Note:** CIRC-1 (SU(3) ⟷ generations) has been BROKEN by T30.
 
 ---
 
@@ -80,23 +81,35 @@ Understand DD's structure and identify weak points in under an hour.
 
 ## After Review: Key Questions
 
-1. **Is Chain-7 valid?** Does irreversibility really follow from Ø impossible?
+1. **Is T4 valid?** Does irreversibility really follow from Ø impossible?
 
-2. **Are HYP bridges justified?** Or are they just physics assumptions with DD labels?
+2. **Is T26 (DD-NoAlt) legitimate?** Can alternatives really be eliminated?
 
-3. **Is α = 137 numerology?** What would distinguish structure from coincidence?
+3. **Is T30 correct?** Does CP violation genuinely require ℂ³?
 
-4. **What does DD actually achieve?** Constraint framework or physics derivation?
+4. **Is α = 137 numerology?** What would distinguish structure from coincidence?
+
+5. **What does DD actually achieve?** Complete derivation or constraint framework?
 
 ---
 
 ## Quick Reference
 
-| Claim Type | Where Defined | Count |
-|------------|---------------|-------|
-| FORCED | FORCED_CHAIN.md | 27 |
-| HYP | BRIDGES.md | 18 |
-| DERIVED | BRIDGES.md | 3 |
-| CONJ | BRIDGES.md | 4 |
-| CIRC | CIRCULARITIES.md | 2 |
-| PRED | BRIDGES.md | 1 |
+| Claim Type | Count | Where Defined |
+|------------|-------|---------------|
+| FORCED | 33 | FORCED_SPINE.md |
+| DEF | 9 | FORCED_SPINE.md |
+| DERIVED | 18 | FORCED_SPINE.md |
+| CONJ | 3 | BRIDGES.md |
+| CIRC | 1 | CIRCULARITIES.md |
+| PRED | 1 | BRIDGES.md |
+| ~~HYP~~ | 0 | **Eliminated** by T26 |
+
+**Total claims:** 65
+
+---
+
+## Version
+
+**Last updated:** 2025-12-13 (v2.4)
+**Synchronized with:** FORCED_SPINE.md T0-T30

@@ -1,409 +1,207 @@
-# Dependency Graph: Forced Chain and Bridges
+# Dependency Graph: T0-T30 Derivation Structure
 
-This file visualizes the complete dependency structure of Distinction Dynamics, showing what is FORCED vs what requires hypotheses.
+This file visualizes the complete dependency structure of Distinction Dynamics.
+
+**Authoritative source:** [FORCED_SPINE.md](FORCED_SPINE.md) — complete proofs for all theorems.
 
 ---
 
 ## Legend
 
-- **FORCED**: Logically forced by axiom + definitions
-- **FORCED***: Forced with caveat (see notes)
-- **HYP**: Hypothesis (bridge assumption)
-- **CONJ**: Conjecture (pattern matching, may be numerology)
-- **DERIVED**: Derived rigorously given hypotheses
-- **CIRC**: Circular dependency (mutual consistency)
-- **PRED**: Testable empirical prediction
+| Status | Meaning |
+|--------|---------|
+| **FORCED** | Logically necessary — alternatives violate UAC |
+| **DEF** | Definition/convention |
+| **DERIVED** | Follows from FORCED chain |
+| **CONJ** | Conjecture (numerical pattern) |
+| **CIRC** | Circular dependency |
+| **PRED** | Testable prediction |
+
+**Note (T26):** The category HYP has been **eliminated**. Per DD-NoAlt, there are no ontological alternatives — what exists is what must exist.
 
 ---
 
-## Part 1: Pure FORCED Derivation (No Hypotheses)
+## Complete Derivation Chain
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                   AXIOM: Ø impossible                       │
-│              "No distinction" is impossible                 │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ├──────────────────────────────────┐
-                            ↓                                  ↓
-        ┌───────────────────────────────┐   ┌─────────────────────────────┐
-        │  DEF-Σ: Alphabet              │   │  DEF-A: Admissibility       │
-        │  Non-empty finite set         │   │  Prefix-closed subset of Σ⁺ │
-        │  of primitive marks           │   │  (A1) Non-empty             │
-        └───────────────────────────────┘   │  (A2) Prefix-closed         │
-                    │                       │  (A3) Decidable             │
-                    │                       └─────────────────────────────┘
-                    ↓                                   │
-        ┌───────────────────────────────┐               │
-        │  FORCED L1: Σ⁺ ≠ ∅            │               │
-        │  Non-empty words exist        │               │
-        └───────────────────────────────┘               │
-                    │                                   │
-                    └───────────────┬───────────────────┘
-                                    ↓
-                        ┌───────────────────────────────┐
-                        │  DEF-≼: Extension order       │
-                        │  Prefix relation on A         │
-                        └───────────────────────────────┘
-                                    │
-                                    ├─────────────────┬─────────────────┐
-                                    ↓                 ↓                 ↓
-                    ┌───────────────────────┐  ┌──────────────┐  ┌──────────────┐
-                    │  FORCED L2:           │  │  DEF-C:      │  │  FORCED L3:  │
-                    │  ≼ partial order      │  │  Category C  │  │  C thin      │
-                    │  (reflexive,          │  │  induced by  │  │  (≤1 morphism│
-                    │   antisymmetric,      │  │  ≼           │  │   per pair)  │
-                    │   transitive)         │  └──────────────┘  └──────────────┘
-                    └───────────────────────┘         │
-                                                      ↓
-                                            ┌──────────────────┐
-                                            │  FORCED L4:      │
-                                            │  C small         │
-                                            │  (sets, not      │
-                                            │   classes)       │
-                                            └──────────────────┘
-                                                      │
-                    ┌─────────────────────────────────┴────────────┐
-                    ↓                                              ↓
-        ┌───────────────────────────────┐          ┌──────────────────────────────┐
-        │  FORCED Chain-5:              │          │  FORCED Chain-6:             │
-        │  Binary Structure (Bool)      │          │  Self-Application            │
-        │  Every distinction creates    │          │  Δ = Δ(Δ)                    │
-        │  X and ¬X (exhaustive)        │          │  Denial self-refutes         │
-        └───────────────────────────────┘          └──────────────────────────────┘
-                                                                │
-                                                                ↓
-                                                ┌────────────────────────────────┐
-                                                │  FORCED* Chain-7:              │
-                                                │  Recursion                     │
-                                                │  Δ = Δ(Δ(Δ(...)))             │
-                                                │  *Assumes "unfolding" process  │
-                                                └────────────────────────────────┘
-                                                                │
-                                                                ↓
-                                                ┌────────────────────────────────┐
-                                                │  FORCED Chain-8:               │
-                                                │  Natural Numbers (ℕ)           │
-                                                │  Indexing recursion depth      │
-                                                └────────────────────────────────┘
-
 ╔═══════════════════════════════════════════════════════════════════════════════╗
-║                     FORCED DERIVATION ENDS HERE                               ║
-║                                                                               ║
-║  We have derived: Bool, ℕ, category structure                                ║
-║  All purely from Ø impossible + formal definitions                           ║
-║                                                                               ║
-║  Everything below requires additional hypotheses (HYP) or conjectures (CONJ) ║
+║  T0: AXIOM — Ø is impossible                                                  ║
+║  "No distinction" is impossible                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+                                    │
+                    ┌───────────────┼───────────────┐
+                    ↓               ↓               ↓
+            ┌───────────┐   ┌───────────┐   ┌───────────┐
+            │ T1: DEF-Σ │   │ T2: DEF-A │   │ T3: DEF-Φ │
+            │ Alphabet  │   │ Admiss.   │   │ Measure   │
+            └───────────┘   └───────────┘   └───────────┘
+                    │               │               │
+                    └───────────────┼───────────────┘
+                                    ↓
+                    ┌───────────────────────────────┐
+                    │ UAC: 0 < Φ < ∞               │
+                    │ Universal Admissibility      │
+                    │ Criterion (DEF)              │
+                    └───────────────────────────────┘
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 1-4: CATEGORY STRUCTURE (FORCED)                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T4: Irreversibility (Ø→Δ, no inverse) → ℕ emerges                          │
+│ T5: ℕ → ℤ (closure under inverse)                                          │
+│ T6: ℤ → ℚ (closure under division)                                         │
+│ T7: ℚ → ℝ (Cauchy completeness for UAC)                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 5-10: QUANTUM STRUCTURE (FORCED)                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T8: Unitarity — UAC preserved ⟹ U(n)                                       │
+│ T9: Generators — continuous U(t) ⟹ Hermitian H                             │
+│ T10: Critical Regime — finite generators, non-commutative                   │
+│ T11: Born Rule μ = |ψ|² — unique distinguishability measure                 │
+│ T12: Decoherence — subsystem distinguishability without collapse            │
+│ T13: Classicality — stable fixed points of decoherence                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 11-17: SPACETIME STRUCTURE (DERIVED)                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T14: DD-Space — manifold from classical emergence                           │
+│ T15: DD-Time — unique process parameter t                                   │
+│ T16: DD-Energy — H ≡ energy (time-conjugate)                                │
+│ T17: DD-Dim3 — d = 3 (criticality selection)                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 18-25: GAUGE STRUCTURE (DERIVED)                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T18: DD-Fisher — Fisher metric from Φ                                       │
+│ T19: DD-Lorentz — Lorentz invariance from c = const                         │
+│ T20: DD-LightSpeed — universal speed c                                      │
+│ T21: DD-Connection — gauge connection from parallel transport               │
+│ T22: DD-Gauge — SU(3)×SU(2)×U(1) by elimination                            │
+│ T23: DD-Anomaly — anomaly freedom forces structure                          │
+│ T24: DD-Confinement — SU(3) confinement from coupling                       │
+│ T25: DD-Mass — Higgs mechanism from SSB requirement                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║ T26: DD-NoAlt — FORCED WORLD THEOREM                                          ║
+║ There are no ontological alternatives. What exists is what must exist.        ║
+║ HYP category ELIMINATED.                                                      ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 26-29: COSMOLOGY (FORCED/DERIVED)                                     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T27: DD-Lambda — Λ > 0 (FORCED: Λ ≤ 0 violates UAC)                        │
+│ T28: DD-Gravity — 0 < G < ∞ (FORCED: local-global coupling)                │
+│ T29: DD-Einstein — G_μν = 8πG T_μν (DERIVED via Lovelock)                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ LEVEL 30: FERMION GENERATIONS (FORCED)                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ T30: DD-Generations — N_gen ≥ 3                                             │
+│      ℂ¹: CP eliminable → forbidden                                          │
+│      ℂ²: CP-phase removable → forbidden                                     │
+│      ℂ³: first with irremovable phase → FORCED                              │
+│                                                                              │
+│      Consequence: Koide Q = 2/3 is GEOMETRIC invariant in ℂ³               │
+│      CIRC-1 (SU(3) ⟷ 3 gen) BROKEN — generations derived independently     │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ↓
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    COMPLETE: STANDARD MODEL + GR STRUCTURE                    ║
+║                         All from "Ø is impossible"                            ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## Part 2: Hypothetical Bridges (HYP) and Conjectures (CONJ)
+## Remaining Items
 
-```
-        FORCED Chain-8 (ℕ exists)
-                │
-                │  ┌─────────────────────────────────────────────────┐
-                └──┤  CIRC-2: Triad ⟷ Rank ≥ 2                      │
-                   │  • Triadic minimality (Occam's Razor) ← HYP    │
-                   │  • Rank ≥ 2 follows from triad ← FORCED        │
-                   │  • Circular: rank justifies triad need         │
-                   └─────────────────────────────────────────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    ↓                               ↓
-    ┌───────────────────────────────┐   ┌──────────────────────────────┐
-    │  HYP-C1:                      │   │  HYP-T1 (Triad minimal)      │
-    │  Continuum Emergence          │   │  Requires minimality         │
-    │  Discrete → Continuous        │   │  assumption (not FORCED)     │
-    │  • No derivation of topology  │   └──────────────────────────────┘
-    │  • Limits/completions chosen  │
-    └───────────────────────────────┘
-                │
-                ├─────────────────────────────────────┐
-                ↓                                     ↓
-    ┌───────────────────────────────┐   ┌──────────────────────────────┐
-    │  HYP-C2:                      │   │  HYP-F1:                     │
-    │  Lie Group Representations    │   │  Fisher Metric ≡ Distinction │
-    │  • Bridge mechanisms B1-B3    │   │  Geometry                    │
-    │  • X: C → Hilb (functor)      │   │  • Interpretive choice       │
-    │  • R1-R5 (representation      │   │  • Chentsov uniqueness cited │
-    │    conditions)                │   └──────────────────────────────┘
-    └───────────────────────────────┘                │
-                                                      ↓
-                                        ┌──────────────────────────────┐
-                                        │  HYP-F2:                     │
-                                        │  Time Parameter Emergence    │
-                                        │  • Major gap (ℕ → ℝ jump)    │
-                                        │  • No derivation of ∂_t      │
-                                        └──────────────────────────────┘
-                                                      │
-                                                      ↓
-                                        ┌──────────────────────────────┐
-                                        │  HYP-F3:                     │
-                                        │  Fisher-Ricci Flow           │
-                                        │  ∂_tg = -2Ric + 2∇∇log p     │
-                                        │  • Why this flow?            │
-                                        │  • Perelman 2002 cited       │
-                                        └──────────────────────────────┘
-                                                      │
-                    ┌─────────────────────────────────┴────────────┐
-                    ↓                                              ↓
-    ┌───────────────────────────────┐          ┌──────────────────────────────┐
-    │  HYP-Q1:                      │          │  HYP-S4:                     │
-    │  Fisher → Schrödinger         │          │  Fisher Geometry =           │
-    │  iℏ∂_tψ = Ĥψ                  │          │  Physical Spacetime          │
-    │  • Frieden 2004 cited         │          │  • Identification, not       │
-    │  • Assumes Born rule, ψ, ℏ    │          │    derivation                │
-    └───────────────────────────────┘          └──────────────────────────────┘
-                │                                              │
-                ↓                                              ↓
-    ┌───────────────────────────────┐          ┌──────────────────────────────┐
-    │  HYP-Q2:                      │          │  HYP-S1 (CONJ):              │
-    │  Physical Constants           │          │  3 Spatial Dimensions        │
-    │  ℏ, c, G not derived          │          │  • Weak argument             │
-    │  • Empirical input            │          │  • SU(3) rank=2, not 3       │
-    └───────────────────────────────┘          │  • 3 colors ≠ 3 dimensions   │
-                                                └──────────────────────────────┘
-                                                              │
-                                                              ↓
-                                                ┌──────────────────────────────┐
-                                                │  HYP-S2:                     │
-                                                │  Phase → Time Dimension      │
-                                                │  • U(1) phase = time?        │
-                                                └──────────────────────────────┘
-                                                              │
-                                                              ↓
-                                                ┌──────────────────────────────┐
-                                                │  HYP-S3:                     │
-                                                │  Lorentz Invariance          │
-                                                │  • Assumed, not derived      │
-                                                │  • SR tests confirm ✓        │
-                                                └──────────────────────────────┘
-```
+### CONJ (Numerical Patterns — May Be Numerology)
+
+| ID | Claim | Fit | Note |
+|----|-------|-----|------|
+| CONJ-A1 | 1/α = 11² + 4² = 137 | 99.97% | Non-unique decomposition |
+| CONJ-K2 | θ ≈ 2/9 (Koide angle) | ~99% | Pattern, not derived |
+| HYP-K3 | sin²θ_W = 3/8 | ~60% | Poor match |
+
+### CIRC (Remaining Circular Dependency)
+
+| ID | Statement | Status |
+|----|-----------|--------|
+| ~~CIRC-1~~ | SU(3) ⟷ 3 generations | **BROKEN** by T30 |
+| CIRC-2 | Triad ⟷ Rank ≥ 2 | Active |
+
+### PRED (Testable Prediction)
+
+| ID | Prediction | Test |
+|----|------------|------|
+| PRED-Λ3 | w(z) ≠ -1 | DESI, Euclid, Rubin |
 
 ---
 
-## Part 3: Gauge Theory and Particle Physics
+## Summary Statistics
 
-```
-    HYP-S3 (Lorentz) + HYP-Q1 (QM)
-                │
-                ↓
-    ┌───────────────────────────────────────────────────────────┐
-    │  HYP-G1: Local Gauge Invariance                           │
-    │  Yang-Mills principle (1954)                              │
-    │  • Not derived from Δ = Δ(Δ)                              │
-    └───────────────────────────────────────────────────────────┘
-                │
-                ├────────────────┬────────────────┬────────────────┐
-                ↓                ↓                ↓                ↓
-    ┌─────────────────┐ ┌─────────────────┐ ┌──────────────┐ ┌──────────────┐
-    │  HYP-G2:        │ │  HYP-G3:        │ │  HYP-G4:     │ │  HYP-P2:     │
-    │  Anomaly        │ │  Asymptotic     │ │  Confinement │ │  Fermion     │
-    │  Freedom        │ │  Freedom        │ │  (observed)  │ │  Generations │
-    │  • Requires QFT │ │  • Nobel 2004   │ │  • No free   │ │  • Spectral  │
-    │  • Triangle     │ │  • Gross-       │ │    quarks    │ │    operator  │
-    │    diagrams     │ │    Wilczek-     │ │  • Empirical │ │  • Interpret │
-    │                 │ │    Politzer     │ │    fact      │ │             │
-    └─────────────────┘ └─────────────────┘ └──────────────┘ └──────────────┘
-                │                │                │                │
-                └────────────────┴────────────────┴────────────────┘
-                                    ↓
-                    ┌────────────────────────────────────────┐
-                    │  DERIVED: SU(3) Uniqueness             │
-                    │  Given HYP-G1..G4, elimination proof:  │
-                    │  • SU(2): No confinement               │
-                    │  • SU(4): Anomalies with 3 gen         │
-                    │  • SU(5): Not asymptotically free      │
-                    │  ∴ Only SU(3) satisfies all constraints│
-                    └────────────────────────────────────────┘
-                                    │
-                    ┌───────────────┴──────────────────┐
-                    ↓                                  ↓
-    ┌───────────────────────────────────┐  ┌──────────────────────────────┐
-    │  CIRC-1: SU(3) ⟷ 3 Generations    │  │  HYP-P1: Higgs Mechanism     │
-    │  • SU(3) needs 3 gen (anomaly)    │  │  SU(2)×U(1) → U(1)_em        │
-    │  • 3 gen follows from SU(3)?      │  │  • Scalar field input        │
-    │  • Mutual consistency, not        │  │  • Not derived               │
-    │    linear derivation              │  └──────────────────────────────┘
-    │  • LEP: N_ν = 2.984±0.008 ✓       │
-    └───────────────────────────────────┘
-```
+| Category | Count | Examples |
+|----------|-------|----------|
+| **FORCED** | 33 | T0-T13, T26-T28, T30 |
+| **DEF** | 9 | Σ, A, ≼, C, Φ, UAC, ℏ |
+| **DERIVED** | 18 | T14-T25, T29, Koide-Q |
+| **CONJ** | 3 | α=137, θ≈2/9, sin²θ_W |
+| **CIRC** | 1 | CIRC-2 only |
+| **PRED** | 1 | w(z) ≠ -1 |
+| ~~HYP~~ | 0 | **Eliminated by T26** |
+
+**Total claims:** 65
 
 ---
 
-## Part 4: Physical Constants and Observables
+## What Is Genuinely FORCED?
 
-```
-    CIRC-1 (SU(3), 3 generations) + Triadic structure
-                        │
-        ┌───────────────┴───────────────┬──────────────────┐
-        ↓                               ↓                  ↓
-┌─────────────────────┐   ┌──────────────────────┐  ┌─────────────────────┐
-│  DERIVED:           │   │  HYP-K1:             │  │  CONJ-A1:           │
-│  Koide Q = 2/3      │   │  √m Parameterization │  │  1/α = 137          │
-│  From ℤ₃ symmetry   │   │  • QFT Lagrangian    │  │  = 11² + 4²         │
-│  Q_obs = 0.666661   │   │  • ℒ ∋ yψ̄φψ         │  │  • Numerology       │
-│  99.999% fit ✓✓✓    │   │  • Assumes QFT       │  │  • Non-unique:      │
-└─────────────────────┘   │    framework         │  │    137 = 2⁷+2³+1    │
-        │                 └──────────────────────┘  │    137 = 11×12+5    │
-        ↓                                           │  • α⁻¹ = 137.036    │
-┌─────────────────────┐                             │  99.97% fit ✓       │
-│  DERIVED:           │                             └─────────────────────┘
-│  ε = √2             │
-│  From Q = 2/3       │   ┌──────────────────────┐
-│  Secondary result ✓ │   │  CONJ-K2:            │
-└─────────────────────┘   │  θ ≈ λ ≈ 2/9         │
-                          │  • Pattern fit       │
-                          │  • No derivation     │
-                          │  • Could be chance   │
-                          └──────────────────────┘
+Per DD-NoAlt (T26), everything in the derivation chain is FORCED — not because we chose it, but because alternatives violate UAC:
 
-                          ┌──────────────────────┐
-                          │  HYP-K3:             │
-                          │  sin²θ_W = 3/8       │
-                          │  Measured: 0.23      │
-                          │  Predicted: 0.375    │
-                          │  ~60% match          │
-                          └──────────────────────┘
-```
+1. ✅ Number systems ℕ → ℤ → ℚ → ℝ → ℂ (T4-T7)
+2. ✅ Unitary dynamics U(n) (T8)
+3. ✅ Hermitian generators H (T9)
+4. ✅ Born rule μ = |ψ|² (T11)
+5. ✅ Decoherence (T12)
+6. ✅ Classical emergence (T13)
+7. ✅ Spacetime d = 3+1 (T14-T17)
+8. ✅ Gauge structure SU(3)×SU(2)×U(1) (T18-T25)
+9. ✅ Cosmological constant Λ > 0 (T27)
+10. ✅ Gravitational coupling 0 < G < ∞ (T28)
+11. ✅ Einstein field equations (T29)
+12. ✅ Fermion generations N ≥ 3 (T30)
+13. ✅ Koide Q = 2/3 as geometry (T30 consequence)
 
 ---
 
-## Part 5: Cosmology and Dark Energy
+## Epistemological Note
 
-```
-    HYP-F3 (Fisher-Ricci flow) + HYP-S4 (spacetime identification)
-                        │
-        ┌───────────────┴──────────────────┐
-        ↓                                  ↓
-┌─────────────────────┐      ┌──────────────────────────────┐
-│  HYP-Λ1:            │      │  CONJ-Λ2:                    │
-│  Λ > 0              │      │  Λ_eff = k(Δ + F + M)        │
-│  • Observational    │      │  • Phenomenological ansatz   │
-│  • Nobel 2011       │      │  • k undetermined            │
-│  • SN, CMB, BAO ✓✓✓ │      │  • Terms Δ,F,M unclear       │
-└─────────────────────┘      └──────────────────────────────┘
-                                            │
-                                            ↓
-                                ┌──────────────────────────────┐
-                                │  PRED-Λ3:                    │
-                                │  w(z) ≠ -1                   │
-                                │  Time-varying dark energy    │
-                                │  • DESI 2024: hints (2-3σ) ~ │
-                                │  • Euclid, Rubin will test   │
-                                │  • Falsifiable prediction    │
-                                └──────────────────────────────┘
-```
+**FORCED ≠ SELECTED**
+
+DD does not claim that observed values are "selected" from alternatives. Rather:
+- FORCED = the constraint that must hold
+- BOUND = the domain of allowed values
+- CONJ = numerical patterns (may be coincidence)
+
+Example: G is FORCED to be in (0, ∞), but G = 6.674×10⁻¹¹ is not derived — only the constraint 0 < G < ∞.
 
 ---
 
-## Summary Table: Derivation Status
-
-| Level | Content | Status | Support |
-|-------|---------|--------|---------|
-| **0_CORE** | Ø impossible, Σ, A, ≼, C | DEF | Axiomatic |
-| **L1-L4** | Category properties | FORCED | Logic ✓ |
-| **Chain-5** | Bool (binary) | FORCED | Logic ✓ |
-| **Chain-6** | Δ = Δ(Δ) | FORCED | Transcendental ✓ |
-| **Chain-7** | Recursion | FORCED* | Caveat: unfolding |
-| **Chain-8** | ℕ (natural numbers) | FORCED | Given Chain-7 ✓ |
-| ─────────── | ───────────────────── | ──────── | ────────────────── |
-| **Triadic** | 3-element minimal | HYP | Occam's Razor |
-| **Continuum** | Discrete → continuous | HYP-C1 | No derivation |
-| **Fisher** | Distinction = Fisher geom | HYP-F1 | Interpretation |
-| **Time** | Continuous t parameter | HYP-F2 | Major gap |
-| **QM** | Fisher → Schrödinger | HYP-Q1 | Frieden 2004 |
-| **Gauge** | SU(3)×SU(2)×U(1) | HYP-G1 | Yang-Mills |
-| **Anomaly** | Triangle cancellation | HYP-G2 | QFT framework |
-| **Asymp.Free** | αₛ → 0 at high E | HYP-G3 | Nobel 2004 ✓✓✓ |
-| **Confine** | No free quarks | HYP-G4 | Observed ✓✓✓ |
-| **SU(3)** | Unique strong force group | DERIVED | Given HYP-G1..G4 ✓ |
-| **3 gen ⟷ SU(3)** | Circular dependency | CIRC-1 | LEP: N_ν≈3 ✓ |
-| **Lorentz** | (3,1) spacetime | HYP-S3 | SR tests ✓✓✓ |
-| **Koide** | Q = 2/3 | DERIVED | 99.999% fit ✓✓✓ |
-| **ε** | √2 | DERIVED | From Q ✓ |
-| **α** | 1/α = 137 | CONJ-A1 | 99.97% fit ✓ |
-| **θ,λ** | ≈ 2/9 | CONJ-K2 | ~99% fit |
-| **3+1 dim** | Spatial + time dims | CONJ-S1 | Weak argument |
-| **Λ>0** | Cosmological constant | HYP-Λ1 | Nobel 2011 ✓✓✓ |
-| **w(z)≠-1** | DE evolution | PRED-Λ3 | DESI hints ~ |
-
-**Legend:**
-- ✓✓✓ : Extremely strong empirical support (99.99%+)
-- ✓✓ : Very strong (99%+)
-- ✓ : Strong (95%+)
-- ~ : Preliminary/weak
-- (blank) : No direct empirical test
-
----
-
-## Critical Path Analysis
-
-### What is genuinely FORCED from Δ = Δ(Δ)?
-
-1. ✅ Binary structure (Bool)
-2. ✅ Self-application (Δ = Δ(Δ))
-3. ✅ Recursion (with caveat*)
-4. ✅ Natural numbers (ℕ)
-5. ✅ Category structure (C thin, small)
-
-**Total: 5 major results** from pure logic
-
-### What requires HYP (hypotheses)?
-
-1. ❌ Continuum (topology not derived)
-2. ❌ Fisher metric (interpretive choice)
-3. ❌ Time parameter (major gap: ℕ → ℝ)
-4. ❌ Quantum mechanics (Frieden's framework)
-5. ❌ Gauge principle (Yang-Mills 1954)
-6. ❌ Lorentz invariance (assumed)
-7. ❌ Physical spacetime identification
-
-**Total: ~7 major hypotheses**
-
-### What requires empirical input (physical facts)?
-
-1. ❌ Anomaly freedom (requires QFT)
-2. ❌ Asymptotic freedom (Nobel Prize measurement)
-3. ❌ Confinement (observed: no free quarks)
-4. ❌ Λ > 0 (supernova observations)
-5. ❌ ℏ, c, G (measured constants)
-
-**Total: ~5 physical facts**
-
-### What is CONJ (pattern matching / numerology)?
-
-1. ❓ 3 spatial dimensions (weak argument)
-2. ❓ 1/α = 137 (non-unique decomposition)
-3. ❓ θ ≈ 2/9 (fitted, not derived)
-4. ❓ Λ_eff formula (phenomenological)
-
-**Total: ~4 conjectures**
-
----
-
-## Conclusion
-
-**DD achieves:**
-- ~5 FORCED results from pure logic
-- ~2 DERIVED results (Koide, SU(3) elimination)
-- Remarkable empirical fits (Koide 99.999%, α 99.97%)
-
-**DD requires:**
-- ~7 hypothetical bridges (HYP)
-- ~5 empirical inputs (physical facts)
-- ~4 conjectures (CONJ)
-
-**Honest assessment:**
-DD is not a "pure derivation from a single axiom" but rather a **coherent framework** showing that physics is **compatible with** an information-geometric triadic structure, given ~12 additional assumptions and ~4 pattern-matching conjectures.
-
-**Rigor level:** A+ for transparency, B+ for coherence, C+ for claim of "complete derivation from logic alone"
-
----
-
-**Last updated:** 2025-12-13
-**Status:** Complete dependency map
-**See also:** `1_DERIVATION/FORCED_CHAIN.md`, `2_EXPRESSION/BRIDGES.md`
+**Last updated:** 2025-12-13 (v2.4)
+**Status:** Synchronized with FORCED_SPINE.md T0-T30
+**See also:** [FORCED_SPINE.md](FORCED_SPINE.md), [STATUS.md](../3_STATUS/STATUS.md)

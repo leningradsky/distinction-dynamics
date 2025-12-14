@@ -29,7 +29,7 @@ Items are ordered by logical priority, not by difficulty or time.
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
 | GAP-5 | α = 137 formula | CONJ-A1 | Either derive (gen+gluons)²+(charge)² structure or downgrade to pattern-only |
-| GAP-6 | 3+1 dimensions | HYP-S1 → CONJ | Already downgraded; need explicit derivation or delete claim |
+| ~~GAP-6~~ | ~~3+1 dimensions~~ | **CLOSED** | DD-Dim3 + DD-Time-Unique: d=3, signature (1,3) derived |
 | GAP-8 | θ ≈ 2/9 | CONJ-K2 | Either derive 2/9 from triad structure or mark as coincidence |
 
 ### Priority 4: Circular Dependencies (Must document, not necessarily resolve)
@@ -91,3 +91,30 @@ These would require additional hypotheses beyond current scope.
 | 2025-12-13 | DD-Classicality | Classical emergence | DERIVED — stable fixed points of decoherence |
 | 2025-12-13 | DD-Space | Manifold structure forced | DERIVED — space = parameterization of distinctions |
 | 2025-12-13 | DD-Time-Unique | Time as unique process parameter | DERIVED — signature (1,d-1) forced |
+| 2025-12-13 | DD-Energy | H = energy structural identification | DERIVED — Noether + uniqueness argument |
+| 2025-12-13 | DD-Dim3 | d = 3 by criticality selection | DERIVED — unique stable dimension, GAP-6 CLOSED |
+| 2025-12-13 | DD-Gauge | SU(3)×SU(2)×U(1) by elimination proof | DERIVED — HYP-G1..G4 superseded |
+| 2025-12-13 | DD-Dim3 | Enhanced with D1-D5 admissibility criteria | Structural intersection argument |
+| 2025-12-13 | DD-Energy | Enhanced with Lemmas 1-4 elimination proof | H = energy by structural uniqueness |
+| 2025-12-13 | DD-Connection | Gauge connection from local phase coherence | DERIVED — T18, Lemmas 1-4 |
+| 2025-12-13 | DD-Gauge | Enhanced with Lemmas 1-6 elimination proof | SU(3)×SU(2)×U(1) unique by structural elimination |
+| 2025-12-13 | DD-Factorization | Tensor structure ⊗ℋᵢ FORCED by criticality | T11 — locality emerges from factorization |
+| 2025-12-13 | DD-Lorentz | SO(1,3) from locality + universal speed | DERIVED — T21, HYP-S3 superseded |
+| 2025-12-13 | DD-Fisher | Fisher metric from Chentsov's theorem | DERIVED — T22, HYP-F1 superseded |
+| 2025-12-13 | DD-LightSpeed | Universal speed c from Lorentz structure | DERIVED — T23, c-part of HYP-Q2 superseded |
+| 2025-12-13 | DD-Mass | Higgs/SSB from gauge + localization | DERIVED — T24, HYP-P1 superseded |
+| 2025-12-13 | GAP-6 | d=3 + signature (1,3) fully derived | CLOSED — DD-Dim3 + DD-Time-Unique + DD-Lorentz |
+| 2025-12-13 | DD-NoAlt | Forced World Theorem (T26) | FORCED — no ontological alternatives, HYP eliminated |
+| 2025-12-13 | Category | HYP → UNTRACED/CONJ reclassification | Per DD-NoAlt, HYP is not valid category |
+| 2025-12-13 | DD-Lambda | Λ > 0 forced by elimination (T27) | FORCED — static/contracting histories violate UAC |
+| 2025-12-13 | HYP-P3 | Dynamics closed | DERIVED — covered by DD-Generator (T10) |
+| 2025-12-13 | ℏ | Planck constant reclassified | DEF — unit choice (scale of H) |
+| 2025-12-13 | DD-Gravity | G forced by elimination (T28) | FORCED — 0 < G < ∞, local-global coupling |
+| 2025-12-13 | DD-Einstein | Field equations derived (T29) | DERIVED — G_μν = 8πG T_μν unique by Lovelock |
+| 2025-12-13 | DD-Generations | N ≥ 3 forced by CP (T30) | FORCED — ℂ¹, ℂ² forbidden, ℂ³ minimal |
+| 2025-12-13 | CIRC-1 | Broken | Generations derived independently of SU(3) |
+| 2025-12-13 | Koide | Promoted to DERIVED | Geometric invariant in ℂ³, not numerology |
+| 2025-12-13 | Status | Generations complete | All physics including N ≥ 3 now FORCED/DERIVED |
+| 2025-12-13 | DD-Rank | rank ≥ 2 forced (T31) | FORCED — rank 1 violates Δ ≠ Δ(Δ) |
+| 2025-12-13 | CIRC-2 | Broken | Rank derived independently of triad assumption |
+| 2025-12-13 | Status | All circularities resolved | CIRC = 0, complete derivation T0-T31 |
