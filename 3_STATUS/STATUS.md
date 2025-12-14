@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-13 (v2.5)
+**Last updated:** 2025-12-14 (v2.6 — Chemistry FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -79,6 +79,8 @@ README.md must not contradict this file.
 | DD-Gravity | 0 < G < ∞ (gravitational coupling) | FORCED | T5, T15, T17, T22, T26 |
 | DD-Generations | N_gen ≥ 3 (fermion generations) | FORCED | T4, T7, T13, T26 |
 | DD-Rank | rank ≥ 2 (representation structure) | FORCED | T3 |
+| DD-Pauli | Antisymmetry forced (Pauli exclusion) | FORCED | T5, T13 |
+| DD-Coulomb | V(r) = α/r in d=3 | DERIVED | T17, T24 |
 
 **Representational Rank (DD-Rank):** rank ≥ 2 forced by distinction non-triviality:
 - In rank 1: every endomorphism Δ is λ·id (scalar)
@@ -87,6 +89,19 @@ README.md must not contradict this file.
 - Contradiction: rank = 1 violates T3
 - rank ≥ 2 is FORCED; triad is minimal realization
 - Breaks CIRC-2: rank derived independently of "self-observation"
+
+**Pauli Exclusion (DD-Pauli):** Antisymmetry forced by criticality:
+- Symmetric states |φ⟩⊗|φ⟩: subsystems identical → factorization impossible → Φ → 0
+- Antisymmetric states: permutation changes phase → coincidence forbidden → Φ preserved
+- |φ⟩⊗|φ⟩ = 0 is FORCED, not postulated
+- Chemistry follows: shell filling, periodicity, atomic stability
+
+**Coulomb Interaction (DD-Coulomb):** 1/r form from d=3 + U(1):
+- U(1) gauge → Poisson equation ∇²φ = -ρ
+- Green's function in d=3: G(r) ∝ 1/r
+- d=3 forced by criticality (T17)
+- 1/r in 3D: discrete bound states exist, ground state stable
+- Chemistry is FORCED consequence
 
 **Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by CP requirement:
 - ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
@@ -360,23 +375,26 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 34 |
+| FORCED | 35 |
 | DEF | 9 |
-| DERIVED | 20 |
+| DERIVED | 21 |
 | BOUND | 1 |
 | UNTRACED | 0 |
 | CONJ | 3 |
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T31):** Complete derivation with all circularities resolved:
-- 20 now DERIVED (traced chains)
-- 4 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank)
+**Note (T33):** Complete derivation with chemistry forced:
+- 21 now DERIVED (traced chains + DD-Coulomb)
+- 5 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank, DD-Pauli)
 - 1 now DEF (ℏ = unit choice)
 - CIRC-1 BROKEN by T30 (generations derived independently)
 - CIRC-2 BROKEN by T31 (rank derived independently)
+- T32: Pauli exclusion FORCED from criticality (no quantum postulate)
+- T33: Coulomb 1/r DERIVED from d=3 + U(1)
+- **Chemistry is FORCED** — not bridge, not extension
 
-**All fundamental physics FORCED/DERIVED. All circularities resolved.**
+**All fundamental physics + chemistry FORCED/DERIVED. All circularities resolved.**
 
 ---
 

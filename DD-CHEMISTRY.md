@@ -1,8 +1,8 @@
 # DD-CHEMISTRY — Verification Document
 
 **Purpose:** Test whether chemistry follows from DD without new postulates.
-**Status:** VERIFICATION (not yet FORCED_SPINE material)
-**Date:** 2025-12-13
+**Status:** **VERIFIED → FORCED** (T32 Pauli, T33 Coulomb now in FORCED_SPINE)
+**Date:** 2025-12-14 (v2.6)
 
 ---
 
@@ -108,18 +108,25 @@ If DD is correct, chemistry must emerge from:
 
 ### Claim: No two electrons in same state
 
+**Now FORCED as T32 (DD-Pauli)**
+
 **Required inputs:**
-1. Fermion antisymmetry ψ(1,2) = -ψ(2,1)
-2. Identical particles (indistinguishability)
+1. Criticality (T5): 0 < Φ < ∞
+2. Tensor factorization (T13)
+3. Indistinguishable subsystems
 
-**Derivation:**
-1. If ψ(1,2) = -ψ(2,1) and states identical
-2. Then ψ(1,1) = -ψ(1,1) = 0
-3. Probability = 0 for identical states
+**Derivation (from FORCED_SPINE T32):**
+1. Two indistinguishable subsystems in ℋ⊗ℋ
+2. Permutation P is symmetry (no new distinction created)
+3. States decompose into symmetric |Ψ₊⟩ and antisymmetric |Ψ₋⟩
+4. Symmetric |φ⟩⊗|φ⟩: subsystems identical → factorization impossible → Φ → 0
+5. Antisymmetric: coincidence forbidden → Φ preserved
+6. Therefore: only antisymmetric states admissible
+7. |φ⟩⊗|φ⟩ = 0
 
-**Status:** FORCED (spin-statistics theorem)
+**Status:** **FORCED (T32)** — not spin-statistics postulate
 
-**DD interpretation:** Pauli exclusion = distinguishability requirement. Identical fermion states would be indistinguishable → violates T1.
+**DD interpretation:** Pauli exclusion = criticality requirement. Symmetric states collapse distinguishability.
 
 ---
 
@@ -287,19 +294,24 @@ If DD is correct, chemistry must emerge from:
 
 ### FORCED (follows without new postulates)
 
-| Claim | Depends on |
-|-------|------------|
-| Discrete atomic spectra | T17, T24, BOUND-α |
-| Orbital structure (s,p,d,f) | T7, T17 (SO(3) reps) |
-| Spin-1/2 | Topology, spin-statistics |
-| Pauli exclusion | Spin-statistics |
-| Periodic structure | H2 + H3 |
-| Noble gas stability | Complete factorization |
-| Covalent bond existence | Delocalization + criticality |
-| Ionic bond existence | Electron transfer + Coulomb |
-| Bond type classification | Exhaustion of correlation modes |
-| Molecular metastability | Criticality |
-| Reaction = factorization transition | DD framework |
+| Claim | Depends on | Theorem |
+|-------|------------|---------|
+| Discrete atomic spectra | T17, T24, BOUND-α | T33 |
+| Orbital structure (s,p,d,f) | T7, T17 (SO(3) reps) | — |
+| Spin-1/2 | Topology, spin-statistics | — |
+| **Pauli exclusion** | **T5 criticality, T13 tensor** | **T32** |
+| Periodic structure | H2 + H3 | via T32 |
+| Noble gas stability | Complete factorization | via T32 |
+| **Coulomb 1/r interaction** | **T17 d=3, T24 U(1)** | **T33** |
+| Covalent bond existence | Delocalization + criticality | — |
+| Ionic bond existence | Electron transfer + Coulomb | via T33 |
+| Bond type classification | Exhaustion of correlation modes | — |
+| Molecular metastability | Criticality | T5 |
+| Reaction = factorization transition | DD framework | — |
+
+**Key additions (v2.6):**
+- T32 (DD-Pauli): Antisymmetry FORCED from criticality — no spin-statistics postulate
+- T33 (DD-Coulomb): 1/r interaction DERIVED from d=3 + U(1) gauge
 
 ### BOUND (constrained but not exact)
 

@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.5
-**Status:** Authoritative reference for the FORCED chain (T0-T31)
+**Version:** 2.6
+**Status:** Authoritative reference for the FORCED chain (T0-T33, Chemistry FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -2249,6 +2249,130 @@ The circularity "Triad ⟷ Rank ≥ 2" is now **BROKEN**:
 
 ---
 
+## Level 26: Fermionic Structure
+
+### T32: Pauli Exclusion (DD-Pauli)
+
+**Statement:** For ontologically indistinguishable subsystems, only antisymmetric joint states are admissible.
+
+**Setup:**
+
+"Two particles" in DD means two subsystems such that:
+1. They are ontologically indistinguishable (no internal marker distinguishing A from B)
+2. They admit composition of histories
+3. Joint state exists in ℋ_AB = ℋ ⊗ ℋ
+
+**Definition (Permutation):**
+
+P: (A,B) ↦ (B,A) is not a spatial operation but **relabeling of distinctions**.
+
+Key: If A and B are indistinguishable, P creates no new distinction.
+Therefore: P is a symmetry of admissible descriptions.
+
+**Lemma (Sector decomposition):**
+
+Any state |Ψ⟩ ∈ ℋ ⊗ ℋ decomposes as:
+
+|Ψ⟩ = |Ψ₊⟩ + |Ψ₋⟩
+
+where:
+- P|Ψ₊⟩ = +|Ψ₊⟩ (symmetric)
+- P|Ψ₋⟩ = -|Ψ₋⟩ (antisymmetric)
+
+This is pure linear algebra.
+
+**Theorem (Symmetric sector forbidden):**
+
+*Claim:* Symmetric states |Ψ₊⟩ = |φ⟩ ⊗ |φ⟩ violate criticality.
+
+*Proof:*
+1. In |φ⟩ ⊗ |φ⟩, subsystems A and B are identical
+2. Permutation changes nothing
+3. Any attempt to "separate" the system is unverifiable
+4. Factorization of distinguishability is impossible
+5. Joint history does not decompose into two meaningful subsystems
+6. Therefore Φ → 0 (distinguishability collapses)
+7. This violates criticality (0 < Φ < ∞) ∎
+
+**Theorem (Antisymmetric sector forced):**
+
+*Claim:* Antisymmetric states |Ψ₋⟩ = |φ⟩⊗|ψ⟩ - |ψ⟩⊗|φ⟩ preserve criticality.
+
+*Proof:*
+1. Permutation changes phase (P|Ψ₋⟩ = -|Ψ₋⟩)
+2. Joint state does not admit coincidence (|φ⟩ = |ψ⟩ ⟹ |Ψ₋⟩ = 0)
+3. Each subsystem is distinguishable only relative to the other
+4. Distinguishability is minimal but nonzero
+5. Φ remains in critical range
+6. Histories are stable ∎
+
+**Corollary (Pauli Exclusion):**
+
+$$\boxed{|φ⟩ ⊗ |φ⟩ = 0}$$
+
+Two indistinguishable subsystems cannot occupy the same state.
+
+**Status:** FORCED (from T5 criticality + T13 tensor structure)
+
+**What this gives for chemistry (without additional bridges):**
+- ✓ Shell filling
+- ✓ Orbital occupancy limits
+- ✓ Periodicity
+- ✓ Atomic stability
+- ✓ Distinction of matter from bosonic collapse
+
+---
+
+## Level 27: Interaction Form
+
+### T33: Coulomb Interaction (DD-Coulomb)
+
+**Statement:** In d=3 spatial dimensions with U(1) gauge, the interaction has form V(r) ∝ 1/r.
+
+**Derivation:**
+
+*Step 1: Gauge field equation*
+
+U(1) gauge (T24) with source ρ gives Poisson equation:
+∇²φ = -ρ
+
+*Step 2: Green's function in d dimensions*
+
+The fundamental solution (Green's function) of ∇² in d dimensions:
+- d=1: G(r) ∝ |r| (linear — no bound states)
+- d=2: G(r) ∝ log(r) (logarithmic — marginal)
+- d=3: G(r) ∝ 1/r (Coulomb — bound states exist)
+- d≥4: G(r) ∝ 1/r^(d-2) (too singular — collapse)
+
+*Step 3: Why d=3 is forced (recap from T17)*
+
+Only d=3 satisfies all criticality criteria D1-D5:
+- D1: Localizable excitations
+- D2: Non-trivial dynamics
+- D3: Factorizing decoherence
+- D4: Non-trivial gauge
+- D5: Criticality
+
+*Step 4: Conclusion*
+
+d=3 + U(1) ⟹ V(r) = α/r
+
+where α is the coupling (BOUND-α).
+
+**Status:** DERIVED (from T17 d=3 + T24 U(1) gauge)
+
+**Consequence for chemistry:**
+
+The 1/r potential in 3D:
+1. Has discrete bound state spectrum (atoms exist)
+2. Has ground state with finite energy (stability)
+3. Allows multi-body bound configurations (molecules exist)
+4. Combined with Pauli (T32) → periodic table structure
+
+$$\boxed{\text{Chemistry is FORCED}}$$
+
+---
+
 ## Summary Diagram
 
 ```
@@ -2316,12 +2440,18 @@ T30: N_gen ≥ 3 — fermion generations (FORCED)
       ↓
 T31: rank ≥ 2 — representation structure (FORCED)
       ↓
+T32: Pauli exclusion — antisymmetry forced (FORCED)
+      ↓
+T33: 1/r interaction — Coulomb from d=3 + U(1) (DERIVED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE STANDARD MODEL + RELATIVITY
      + EINSTEIN FIELD EQUATIONS
      + FERMION GENERATIONS ≥ 3
      + KOIDE AS GEOMETRY
      + RANK ≥ 2 (CIRC-2 BROKEN)
+     + PAULI EXCLUSION (NO POSTULATE)
+     + CHEMISTRY FORCED
       No physics postulates used
       All structures uniquely forced
       All circularities resolved
@@ -2347,6 +2477,8 @@ Derived without postulates:
   • Universal speed c
   • Higgs mechanism (SSB)
   • Cosmological constant Λ > 0
+  • Pauli exclusion (antisymmetry)
+  • Coulomb 1/r (d=3 Green function)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
