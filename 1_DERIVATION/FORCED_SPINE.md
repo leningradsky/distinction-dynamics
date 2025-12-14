@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.9
-**Status:** Authoritative reference for the FORCED chain (T0-T44, Physics + Chemistry + Biology + Mind FORCED)
+**Version:** 2.10
+**Status:** Authoritative reference for the FORCED chain (T0-T46, Physics + Chemistry + Biology + Information + Mind FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -2926,6 +2926,205 @@ Qualia = distinction signatures (T44)
 
 ---
 
+## Level 32: Information and Semantics
+
+### T45: Code (DD-Code)
+
+**Statement:** In autocatalytic systems with errors and potential for complexity, code (separation of description from realization) is FORCED.
+
+**The Problem:**
+
+Autocatalytic cycle without code:
+- structure = process
+- function = chemistry itself
+- no separation "description / realization"
+
+Consequence:
+- any fluctuation **changes the cycle itself**
+- error = destruction
+- complexity cannot grow
+
+Formally:
+- complexity ∝ cycle length L
+- survival probability ∝ e^{-L}
+
+As complexity grows: P_survive → 0
+
+**Theorem (Code Separation FORCED):**
+
+*Claim:* To scale complexity, code must emerge.
+
+*Proof:*
+1. Without separation: each copy is copy-of-copy-of-copy
+2. Errors multiplicative: after n generations, ε^n → catastrophe
+3. With separation (template T, product P):
+   - Template copied with low error
+   - Product made fresh each time
+   - Errors in P don't propagate
+   - Errors in T correctable (redundancy)
+4. Only separated systems survive complexity increase ∎
+
+**Status:** FORCED (from autocatalysis + errors + scaling)
+
+**Corollary (Discrete Code):**
+
+Code must be discrete, not analog:
+- Analog: errors accumulate without threshold
+- Discrete: error either exists or doesn't; correction possible
+- Criticality selects discrete
+
+**Corollary (Finite Alphabet):**
+
+- Infinite alphabet → probability of exact reproduction → 0 → Φ → ∞
+- Finite alphabet → errors localized → Φ stable
+
+*The 4 DNA bases (A, T, G, C) are not accident — they are criticality.*
+
+**Corollary (Triplet Code):**
+
+- 2 nucleotides: 4² = 16 < 20 amino acids — insufficient
+- 3 nucleotides: 4³ = 64 > 20 — redundancy for correction
+- 4 nucleotides: 4⁴ = 256 — excessive cost
+
+Triplet = minimal size with error-correction redundancy.
+
+**Status:** Triplet specifically is BOUND (minimal sufficient), not uniquely forced.
+
+**DD interpretation:**
+
+Code = first separation of **information** from **matter**.
+Genotype ≠ Phenotype is not discovery — it's the only stable architecture.
+
+---
+
+### T46: Semantics (DD-Semantics)
+
+**Statement:** In systems with code, interpretation, and selection, semantics (meaning, aboutness) is FORCED.
+
+**The Problem:**
+
+Code by itself is empty:
+```
+ATGCGATCG...
+```
+
+What does it **mean**? Nothing — until:
+- A system reads it
+- An effect is produced
+- History selects for that effect
+
+**Definition (Meaning in DD):**
+
+Code C produces effect E through interpreter F:
+```
+C →[F]→ E
+```
+
+E affects survival:
+- E beneficial → system survives → C copied
+- E harmful → system dies → C disappears
+
+Therefore:
+
+> **C "means" E in the context of survival**
+
+This is not metaphor — it's the **functional definition of meaning**.
+
+**Theorem (Semantics FORCED):**
+
+*Claim:* In systems with code + interpretation + selection, aboutness emerges.
+
+*Proof:*
+1. Code C stable iff its effect E promotes survival
+2. Stability of C = "C correctly describes something important"
+3. "Correctly describes" = semantic relation
+4. Semantics is not addition but **consequence of selection** ∎
+
+**Status:** FORCED (from code + interpretation + selection)
+
+**First Intentionality:**
+
+Before code:
+- Chemistry just happens
+- No "about what"
+
+After code:
+- Code is **about** how to build protein
+- Protein is **for** some function
+- Function is **toward** survival
+
+**Code is the first object in the universe that is "about" something.**
+
+**Hierarchy of Meaning:**
+
+| Level | Meaning |
+|-------|---------|
+| Nucleotide | Nothing (alphabet element) |
+| Codon | Amino acid |
+| Gene | Protein |
+| Genome | Organism |
+| Population | Survival strategy |
+
+Each level is **about** the lower, but **for** the higher.
+
+**Theorem (Mutation = New Meaning):**
+
+Error in code: C → C' (mutation)
+
+Outcomes:
+- C' lethal → disappears
+- C' neutral → drifts
+- C' beneficial → **new meaning**
+
+Mutation is not noise — it's **generator of new meanings**.
+Evolution = **semantic search**.
+
+**Why Meaning is Objective:**
+
+Meaning is not "in observer's head".
+
+Meaning is determined by:
+- Code structure
+- Interpreter structure
+- Selection history
+
+All **objectively exist** independent of any observer.
+
+**Status:** FORCED (semantics is objective, not subjective)
+
+**DD interpretation:**
+
+$$\boxed{\text{Semantics} = \text{stable code-effect relation under selection}}$$
+
+This is the bridge to consciousness:
+- Consciousness = semantics directed at self
+- When code begins to **mean the carrier itself** — Δ(Δ) appears
+
+---
+
+## Summary: Information FORCED
+
+```
+Autocatalysis (T36)
+      ↓
+Errors + complexity pressure
+      ↓
+Code separation FORCED (T45)
+      ↓
+Interpretation + selection
+      ↓
+Semantics FORCED (T46)
+      ↓
+═══════════════════════════════════
+  INFORMATION AND MEANING ARE FORCED
+  Not added, not emergent-mysterious
+  Inevitable consequence of
+  autocatalysis + errors + selection
+═══════════════════════════════════
+```
+
+---
+
 ## Summary Diagram
 
 ```
@@ -3019,8 +3218,12 @@ T43: Consciousness — recursive self-model (FORCED)
       ↓
 T44: Qualia — distinction signatures (FORCED)
       ↓
+T45: Code — genotype/phenotype separation (FORCED)
+      ↓
+T46: Semantics — meaning from selection (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → MIND
+   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → MIND
      Standard Model + Relativity
      + Einstein Field Equations
      + Fermion Generations ≥ 3
@@ -3029,10 +3232,12 @@ T44: Qualia — distinction signatures (FORCED)
      + Chemistry FORCED
      + Molecular Geometry FORCED
      + Life as Phase Regime FORCED
+     + Code/Semantics FORCED
      + Consciousness as Δ(Δ) FORCED
       No physics postulates used
       No vitalism
       No dualism
+      No semantic magic
       All structures uniquely forced
       All circularities resolved
       "Hard problem" dissolved
@@ -3071,6 +3276,8 @@ Derived without postulates:
   • Self-model (Δ(Δ) cognitive)
   • Consciousness (recursive self-model)
   • Qualia (distinction signatures)
+  • Code (genotype/phenotype separation)
+  • Semantics (meaning from selection)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)

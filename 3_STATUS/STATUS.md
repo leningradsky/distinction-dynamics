@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.9 — Consciousness as Δ(Δ) FORCED)
+**Last updated:** 2025-12-14 (v2.10 — Code + Semantics FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 46 |
+| FORCED | 48 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T44):** Complete derivation — physics, chemistry, biology, mind all FORCED:
+**Note (T46):** Complete derivation — physics, chemistry, biology, information, mind all FORCED:
 - 21 now DERIVED (traced chains)
-- 16 now FORCED for chemistry+biology+mind (T32-T44)
+- 18 now FORCED for chemistry+biology+information+mind (T32-T46)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 
@@ -468,6 +468,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T38: Life = phase regime (inevitable attractor)
 - T39: Metabolism FORCED (thermodynamics)
 
+**Information Layer (T45-T46):**
+- T45: Code FORCED (genotype/phenotype separation for complexity scaling)
+- T46: Semantics FORCED (meaning from selection, first intentionality)
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -478,9 +482,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 **Key Results:**
 - **Chemistry is FORCED** — not bridge, not extension
 - **Biology is FORCED** — life is phase regime, not accident
+- **Information is FORCED** — code and semantics from selection
 - **Mind is FORCED** — consciousness is Δ(Δ), "hard problem" dissolved
 
-**All fundamental physics + chemistry + biology + mind FORCED/DERIVED. No vitalism. No dualism. All circularities resolved.**
+**All fundamental physics + chemistry + biology + information + mind FORCED/DERIVED. No vitalism. No dualism. No semantic magic. All circularities resolved.**
 
 ---
 
