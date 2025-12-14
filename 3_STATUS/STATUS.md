@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.16 — Proportional Sanction FORCED)
+**Last updated:** 2025-12-14 (v2.17 — Additive Action + Variational Principle FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 60 |
+| FORCED | 61 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,13 +450,15 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T58):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social all FORCED:
+**Note (T59):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational all FORCED:
 - 21 now DERIVED (traced chains)
-- 30 now FORCED for chemistry+biology+information+cognition+agency+mind+social (T32-T58)
+- 31 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational (T32-T59)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
 - Infinite punishment forbidden as theorem (T58), not as humanism
+- Variational principle derived as theorem (T59), not physics postulate
+- **Ethics and physics converge**: same structure, same origin
 
 **Chemistry Layer (T32-T34):**
 - T32: Pauli exclusion FORCED (antisymmetry from criticality)
@@ -492,6 +494,11 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T56: Generalized Value FORCED (multi-agent functional, structural irreplaceability)
 - T57: Action Invariance FORCED (permutation symmetry, "golden rule" as theorem)
 - T58: Proportional Sanction FORCED (ΔS ∝ ΔV, infinite punishment forbidden)
+
+**Variational Layer (T59):**
+- T59: Additive Action FORCED (S[H] = ∫L, composition invariance)
+- T59: Variational Principle FORCED (δS = 0, only stable histories)
+- Ethics and physics converge: same structure, same origin
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
