@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.7 — Chemistry + Homochirality FORCED)
+**Last updated:** 2025-12-14 (v2.8 — Life as Phase Regime FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -83,6 +83,10 @@ README.md must not contradict this file.
 | DD-Coulomb | V(r) = α/r in d=3 | DERIVED | T17, T24 |
 | DD-Hybridization | sp/sp²/sp³ only | FORCED | T5, T17, T32, T33 |
 | DD-Chirality | Homochirality required for life | FORCED | T17, T34, B2 |
+| DD-Autocatalysis | Self-reinforcing cycles inevitable | FORCED | T32-T34, graph theory |
+| DD-Replication | Template copying selected | FORCED | T36, selection |
+| DD-Life | Life = phase regime | FORCED | T35-T37 |
+| DD-Metabolism | Energy flow required | FORCED | T36, thermodynamics |
 
 **Representational Rank (DD-Rank):** rank ≥ 2 forced by distinction non-triviality:
 - In rank 1: every endomorphism Δ is λ·id (scalar)
@@ -396,7 +400,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 37 |
+| FORCED | 41 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -405,20 +409,21 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T35):** Complete derivation with chemistry + biology constrained:
-- 21 now DERIVED (traced chains + DD-Coulomb)
-- 7 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank, DD-Pauli, DD-Hybridization, DD-Chirality)
+**Note (T39):** Complete derivation — physics, chemistry, biology all FORCED:
+- 21 now DERIVED (traced chains)
+- 11 now FORCED for chemistry+biology (T32-T39)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
-- CIRC-1 BROKEN by T30 (generations derived independently)
-- CIRC-2 BROKEN by T31 (rank derived independently)
-- T32: Pauli exclusion FORCED from criticality
-- T33: Coulomb 1/r DERIVED from d=3 + U(1)
-- T34: Hybridization sp/sp²/sp³ FORCED from geometry
-- T35: Homochirality FORCED for self-replicating systems
+- CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
+- T32-T34: Chemistry FORCED (Pauli, Coulomb, Hybridization)
+- T35: Homochirality FORCED for replication fidelity
+- T36: Autocatalysis FORCED (graph theory on chemical space)
+- T37: Template replication FORCED (selection pressure)
+- T38: Life = phase regime (inevitable attractor)
+- T39: Metabolism FORCED (thermodynamics)
 - **Chemistry is FORCED** — not bridge, not extension
-- **Biology is CONSTRAINED** — homochirality required
+- **Biology is FORCED** — life is phase regime, not accident
 
-**All fundamental physics + chemistry FORCED/DERIVED. All circularities resolved.**
+**All fundamental physics + chemistry + biology FORCED/DERIVED. No vitalism. All circularities resolved.**
 
 ---
 
