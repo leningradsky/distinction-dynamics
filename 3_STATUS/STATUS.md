@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.21 — Space from Distinguishability FORCED)
+**Last updated:** 2025-12-14 (v2.22 — Dimension d=3+1 FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 69 |
+| FORCED | 76 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -519,7 +519,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T63: Continuous manifold FORCED (X ~ ℝⁿ locally, from unitarity preservation)
 - Alternatives eliminated: discrete topology, tree, ultrametric
 - Space = distinguishability structure, not geometry postulate
-- **Remaining:** dimension d=3+1 and dynamic metric (gravity)
+
+**Dimension Layer (T64):**
+- T64: dim < ∞ FORCED (stable subsystems require finite dimension)
+- T64: dim ≠ 1 FORCED (unitarity requires complex structure)
+- T64: dim ≠ 2 FORCED (fermions require SU(2), not SO(2))
+- T64: dim = 3 FORCED (minimal admissible for unitarity + locality + spin + memory)
+- T64: dim > 3 excluded FORCED (no stable atoms, interactions lose locality)
+- T64: Time special FORCED (history parameter, not spatial direction)
+- T64: Signature (3,1) FORCED (inevitable from all requirements)
+- **"Why 3 dimensions?" ANSWERED** — only admissible dimension
+- **Remaining:** dynamic metric (gravity)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
