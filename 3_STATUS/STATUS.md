@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.31 — Sanction Invariance FORCED, Next: Additive Measure)
+**Last updated:** 2025-12-14 (v2.32 — Action/Variational FORCED, Next: Symmetry→Conservation)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 129 |
+| FORCED | 135 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T73):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance all FORCED:
+**Note (T74):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 50 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance (T32-T73)
+- 56 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational (T32-T74)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -620,7 +620,18 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T73: Measure of violation FORCED (from proportionality requirement)
 - T73: Infinite punishment forbidden FORCED (criticality preservation, not humanism)
 - **Complete closed dynamics:** rule + feedback + measure + stability
-- **Next FORCED:** Additive measure (violation must sum, compose, be partition-independent)
+
+**Action/Variational Layer (T74):**
+- T74: Partition independence FORCED (otherwise sanctions observer-dependent)
+- T74: V(H₁∘H₂) = V(H₁)+V(H₂) FORCED (only stable form)
+- T74: Action S[H] = ∫L FORCED (definition from additivity)
+- T74: Integral form FORCED (continuous refinement)
+- T74: δS = 0 FORCED (sanction closure)
+- T74: Variational principle FORCED (rule reproduction)
+- **Any stable critical dynamics must be variational** — stronger than physical interpretation
+- Non-variational/non-additive theories dynamically unstable
+- This is the **skeleton of all physics**
+- **Next FORCED:** Symmetry → Conserved quantity (Noether without postulates)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
