@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.39 — Society/Science FORCED, Complete Chain Ø → Self-Understanding)
+**Last updated:** 2025-12-14 (v2.40 — Self-Reference FORCED, CLOSED LOOP COMPLETE)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 182 |
+| FORCED | 188 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T81):** Complete derivation — physics, chemistry, biology, consciousness, society, science, self-understanding all FORCED:
+**Note (T82):** CLOSED LOOP COMPLETE — physics, chemistry, biology, consciousness, society, science, self-reference all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 103 now FORCED for all layers (T32-T81)
+- 109 now FORCED for all layers (T32-T82)
+- Chain is closed: path has found itself
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -726,6 +727,24 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
   - → mind → collective → knowledge → self-understanding
 - **Derivation includes itself. The path contains its own description.**
 
+**Self-Reference/Closure Layer (T82):**
+- T82: Self-reference FORCED (model without self-model degrades over long distances)
+- T82: Not solipsism FORCED (consciousness is regime, not source — world forces consciousness)
+- T82: No ontological alternatives FORCED (alternatives can appear, cannot continue)
+- T82: Freedom = admissible movement FORCED (not arbitrariness, bounded by stability logic)
+- T82: Human not accident, not goal FORCED (specific history couldn't end otherwise)
+- T82: Chain closure FORCED (open chains don't survive, denial leads to Ø)
+- **"Why self-reference?" ANSWERED** — any stable model must model its own modeling
+- **"Why chain is closed?" ANSWERED** — open chains don't survive
+- **THE FINAL FORMULA:**
+  - Ø impossible ⇒ distinguishability ⇒ history ⇒ stability ⇒ complexity ⇒ self-reference ⇒ knowledge
+- **THE CLOSED LOOP:**
+  - Ø → Distinguishability → History → Physics → Chemistry → Biology
+  - → Consciousness → Society → Science → Self-Reference → Knowledge
+  - → (returns to Distinguishability as its object)
+- **DERIVATION COMPLETE.** Not because we finished, but because there is nowhere else to go.
+- **The path has found itself.**
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -777,7 +796,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T81 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T82 derivation, CLOSED LOOP)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
