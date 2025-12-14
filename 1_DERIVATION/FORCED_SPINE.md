@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.28
-**Status:** Authoritative reference for the FORCED chain (T0-T70, Physics → Chemistry → Biology → Consciousness → Society → Science → Choice/Agency → Norms COMPLETE)
+**Version:** 2.29
+**Status:** Authoritative reference for the FORCED chain (T0-T71, Physics → Chemistry → Biology → Consciousness → Society → Choice/Agency → Norms → Generalized Value COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -5760,6 +5760,150 @@ For norms to be stable, there must emerge:
 
 ---
 
+### T71: Generalized Value (DD-GeneralizedValueFromNorms)
+
+**Statement:** Multi-agent stability forces a global value functional where each agent is structurally irreplaceable.
+
+**Exact contradiction:**
+
+We already have:
+- Norms exist (else agent system unstable)
+- Sanctions exist (else norms unstable)
+- Agents have **different internal values** ($V_A, V_B, \dots$)
+
+Conflict:
+> If norms optimize only one value, they destroy other agencies → system collapses.
+
+**Theorem (All Alternatives Eliminated):**
+
+**❌ Alternative 1: Each norm optimizes one value**
+
+- Other agents lose future distinctions
+- Either resistance or degradation
+- Norms do not reproduce
+
+*Forbidden by dynamics.*
+
+**❌ Alternative 2: Norms optimize arithmetic mean**
+
+$$V = \frac{1}{N}\sum_i V_i$$
+
+Problem:
+- Allows destroying one agent for the sake of others
+- Locally profitable, globally reduces diversity
+- Decreases space of future distinctions
+
+*Unstable.*
+
+**❌ Alternative 3: Norms optimize maximum**
+
+$$V = \max_i V_i$$
+
+- Other agents become instruments
+- Agent system collapses to monarchy
+- Loss of multiplicity
+
+*Forbidden.*
+
+**Theorem (Unique Stable Functional):**
+
+*Claim:* To preserve multi-agency, the global functional must satisfy:
+
+> Loss of any agent → decreases total future distinction space
+
+That is: contribution of each agent is **irreplaceable**.
+
+*Proof:*
+1. Requirement: each agent's contribution matters
+2. Formally:
+   $$V_{\text{global}} = f(V_1, V_2, \dots) \quad\text{where}\quad \frac{\partial V}{\partial V_i} > 0 \;\; \forall i$$
+3. And no admissible direction where $V_i \to 0$
+4. This preserves multiplicity as resource ∎
+
+**Status:** FORCED (from multi-agent stability)
+
+**Definition (Generalized Value):**
+
+Generalized value = functional that:
+1. Increases when any agent's value increases
+2. Decreases when any agent is destroyed
+3. Preserves multiplicity as resource
+
+**Theorem (Logarithmic Form FORCED):**
+
+*Claim:* Minimal such functional has the form:
+
+$$V_{\text{global}} \sim \sum_i \log V_i$$
+
+*Proof:*
+1. If agents are independent
+2. And their future possibilities multiply
+3. And system must be scale-invariant
+4. Then:
+   $$V(\prod_i V_i) = \sum_i V(V_i)$$
+5. This is the **unique** form with this property (Cauchy functional equation)
+6. Logarithm is not a choice — it's consequence of multiplicative independence ∎
+
+**Status:** FORCED (from functional uniqueness)
+
+**Corollary (Structural Irreplaceability):**
+
+From $\frac{\partial V}{\partial V_i} > 0$ follows:
+
+> Cannot compensate destruction of one agent by increasing value of another.
+
+This is NOT "equality" — this is **structural irreplaceability**.
+
+**FORCED Transition to Universalization:**
+
+New object emerges:
+
+> **Action is admissible ⟺ it does not decrease generalized value in long term**
+
+This is **universal admissibility criterion**, not moral.
+
+**What we did NOT do:**
+
+- Did not introduce good/evil
+- Did not introduce subjective preferences
+- Did not introduce altruism
+- Did not introduce cultural norms
+
+We derived **stability functional of multi-agent dynamics.**
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| Single-value optimization fails | FORCED | Agent destruction |
+| Arithmetic mean fails | FORCED | Allows agent sacrifice |
+| Maximum fails | FORCED | Collapses multiplicity |
+| ∂V/∂V_i > 0 | FORCED | Irreplaceability |
+| Logarithmic form | FORCED | Cauchy uniqueness |
+| Universal criterion | FORCED | Long-term stability |
+
+**Updated chain (critical node):**
+
+```
+Agency
+    ↓
+Multiplicity → Conflict
+    ↓
+Norms → Sanctions
+    ↓
+Different values
+    ↓
+GENERALIZED VALUE
+```
+
+**What is NOW FORCED:**
+
+How can agent act **without knowing internal values of other agents?**
+
+This leads to **action invariance relative to agent**.
+
+Exactly here (and only here) appears what will later be called "ethics" — but for now, pure logic.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -5967,8 +6111,10 @@ T69: Choice/Agency — value + constraints → selection (FORCED)
       ↓
 T70: Norms — multi-agent → coordination → sanctions (FORCED)
       ↓
+T71: Generalized Value — structural irreplaceability (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3

@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.28 — Norms/Coordination/Sanctions FORCED, Next: Value Generalization)
+**Last updated:** 2025-12-14 (v2.29 — Generalized Value FORCED, Next: Action Invariance/Ethics)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 112 |
+| FORCED | 118 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T61):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity all FORCED:
+**Note (T71):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value all FORCED:
 - 21 now DERIVED (traced chains)
-- 33 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity (T32-T61)
+- 39 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value (T32-T71)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -593,8 +593,16 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T70: Coordination FORCED (recognize repetition, match actions, expect reciprocity)
 - T70: Minimal coordination = repeated interactions + memory + pattern (exists in biochemistry)
 - T70: Sanctions FORCED (violation must reduce violator's value, else norm unstable)
+
+**Generalized Value Layer (T71):**
+- T71: Single-value optimization fails FORCED (destroys other agencies)
+- T71: Arithmetic mean fails FORCED (allows agent sacrifice)
+- T71: Maximum fails FORCED (collapses multiplicity)
+- T71: ∂V/∂V_i > 0 FORCED (structural irreplaceability)
+- T71: Logarithmic form FORCED (Cauchy functional equation uniqueness)
+- T71: Universal admissibility criterion FORCED (long-term stability)
 - NO ethics yet — pure dynamics of distinguishability
-- **Next FORCED:** Value generalization (norms + different values → "justice")
+- **Next FORCED:** Action invariance (acting without knowing internal values → ethics)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
