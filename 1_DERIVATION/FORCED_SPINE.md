@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.26
-**Status:** Authoritative reference for the FORCED chain (T0-T68, Physics → Chemistry → Biology → Consciousness → Society → Science COMPLETE)
+**Version:** 2.27
+**Status:** Authoritative reference for the FORCED chain (T0-T69, Physics → Chemistry → Biology → Consciousness → Society → Science → Choice/Agency COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -5398,6 +5398,179 @@ This is **boundary of distinguishability itself.**
 
 ---
 
+### T69: Choice and Agency (DD-ChoiceFromValue)
+
+**Statement:** Choice and agency are FORCED consequences of value + learning + resource constraints.
+
+**What we already have (no additions):**
+
+- Value (V)
+- Learning
+- Limited resources
+- History (irreversibility)
+
+Therefore:
+> Not all possible model updates can be realized.
+
+**The Key Contradiction:**
+
+At every moment, system faces:
+- Several distinctions have **positive value**
+- But resources allow **at most one trajectory update**
+
+This is not philosophy. This is **geometry of constraints.**
+
+**Theorem (All Alternatives Eliminated):**
+
+**❌ Alternative 1: Realize all valuable updates**
+
+Impossible:
+- Resources are finite
+- Updates conflict
+- Trajectory is singular
+
+*Logical contradiction.*
+
+**❌ Alternative 2: Choose randomly**
+
+- Destroys connection to value
+- Learning loses direction
+- System degrades
+
+*Unstable.*
+
+**❌ Alternative 3: Fixed priority forever**
+
+- Environment changes
+- Value is dynamic
+- Fixed order breaks
+
+*Unstable in time.*
+
+**Theorem (Choice FORCED):**
+
+*Claim:* System must locally compare alternatives by future value contribution.
+
+This IS **choice**.
+
+**Definition (Choice):**
+
+$$\arg\max_{\Delta_i \in \mathcal{A}} \mathbb{E}[V(\text{future} \mid \Delta_i)]$$
+
+where:
+- $\mathcal{A}$ = admissible actions (not all conceivable)
+- Expectation over environment uncertainty
+
+**Status:** FORCED (from value + constraints)
+
+**Theorem (Choice Necessary for Value):**
+
+*Claim:* Without choice, value cannot be realized.
+
+*Proof:*
+1. If no choice: value cannot be realized
+2. If no choice: learning cannot be directed
+3. If no choice: system loses stability
+4. Therefore: **value without choice is impossible** ∎
+
+**Status:** FORCED (from value realizability)
+
+**Theorem (Choice Locality FORCED):**
+
+*Claim:* Choice cannot be global, precomputed, or absolute.
+
+*Proof:*
+1. Limited knowledge
+2. Finite history
+3. Changing environment
+4. Therefore: **choice is always local, contextual, and historical** ∎
+
+**Status:** FORCED (from epistemic limits)
+
+**Clarification (Choice ≠ Freedom):**
+
+Important:
+- No "metaphysical freedom"
+- No "alternative universes"
+
+What exists:
+> **Unavoidable branching of admissible trajectories**
+> when impossible to realize them all.
+
+**Theorem (Agency FORCED):**
+
+*Claim:* Agency emerges from choice + value + consequences.
+
+*Proof:*
+If system:
+1. Makes choice
+2. Based on internal value
+3. Accounting for future consequences
+
+Then it becomes:
+> **Agent relative to its history**
+
+Agency = presence of internal trajectory criterion ∎
+
+**Status:** FORCED (from choice + value + prediction)
+
+**Definition (Minimal Agency):**
+
+Minimal agency does NOT require:
+- Consciousness
+- Language
+- Intentions
+
+It requires only:
+- Value
+- Choice
+- Model update
+
+**Note:** This exists already in chemistry.
+
+**What we obtained:**
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| Choice | FORCED | Value + constraints |
+| Choice locality | FORCED | Epistemic limits |
+| Agency | FORCED | Choice + value + prediction |
+| Minimal agency | FORCED | Value + choice + update |
+
+**Updated chain:**
+
+```
+Ø impossible
+    ↓
+Distinction → ℕ → ℝ → ℂ
+    ↓
+Unitary histories
+    ↓
+Chemistry
+    ↓
+Autocatalysis → Code → Semantics
+    ↓
+Cognition → Error → Learning
+    ↓
+Value → Choice → Agency
+```
+
+**What is NOW FORCED:**
+
+If there is agency, then the next contradiction arises:
+
+> Multiple agents
+> with non-coinciding values
+> in a shared world
+
+This **FORCED** leads to:
+
+### Norms, coordination, and ethics
+
+(not morality, but structure of joint survival)
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -5601,8 +5774,10 @@ T67: Biology — life, evolution, consciousness as regime (FORCED)
       ↓
 T68: Society/Science — communication, language, math, truth (FORCED)
       ↓
+T69: Choice/Agency — value + constraints → selection (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3

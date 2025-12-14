@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.26 — Society/Science FORCED, Complete trajectory to self-understanding)
+**Last updated:** 2025-12-14 (v2.27 — Choice/Agency FORCED, Next: Multi-agent → Norms → Ethics)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 102 |
+| FORCED | 106 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -576,7 +576,15 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - FORCED ≠ determinism, FORCED = instability of alternatives
 - Hourglass: narrow (Ø) → wide (possibilities) → narrow (stable forms)
 - **COMPLETE TRAJECTORY:** Ø → Distinction → History → Matter → Life → Mind → Collective → Knowledge → Self-understanding
-- **Remaining:** What happens when system fully realizes its own forcedness?
+
+**Choice/Agency Layer (T69):**
+- T69: Choice FORCED (value + constraints → must compare alternatives by future value)
+- T69: Choice = argmax E[V(future|Δ)] over admissible actions
+- T69: Choice locality FORCED (limited knowledge, finite history, changing environment)
+- T69: Choice ≠ metaphysical freedom (unavoidable branching of admissible trajectories)
+- T69: Agency FORCED (choice + internal value + future consequences)
+- T69: Minimal agency = value + choice + model update (exists in chemistry)
+- **Next FORCED:** Multiple agents with different values → Norms, coordination, ethics
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
