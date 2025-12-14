@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.25 — Biology as Regime FORCED, Consciousness = Δ(Δ) limit)
+**Last updated:** 2025-12-14 (v2.26 — Society/Science FORCED, Complete trajectory to self-understanding)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 95 |
+| FORCED | 102 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -564,6 +564,19 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - **"Origin of life problem" DISSOLVED** — life is FORCED
 - **"Hard problem of consciousness" DISSOLVED** — consciousness = Δ(Δ)
 - **COMPLETE CHAIN:** Ø → Distinction → Criticality → Physics → Chemistry → Biology → Consciousness
+
+**Society/Science Layer (T68):**
+- T68: Communication FORCED (individual limitations require Φ extension)
+- T68: Language FORCED (discrete, combinable code for scalability)
+- T68: Social structures FORCED (conflict resolution, Φ stabilization)
+- T68: Mathematics FORCED (pure distinguishability, language self-application)
+- T68: Science FORCED (model selection by distinguishability stability)
+- T68: Truth = invariant FORCED (survives observer change)
+- T68: Philosophical zombies impossible FORCED (distinguishability requires realization)
+- FORCED ≠ determinism, FORCED = instability of alternatives
+- Hourglass: narrow (Ø) → wide (possibilities) → narrow (stable forms)
+- **COMPLETE TRAJECTORY:** Ø → Distinction → History → Matter → Life → Mind → Collective → Knowledge → Self-understanding
+- **Remaining:** What happens when system fully realizes its own forcedness?
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
