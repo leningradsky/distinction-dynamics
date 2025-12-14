@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.38 — Biology FORCED, Complete Chain Ø → Consciousness)
+**Last updated:** 2025-12-14 (v2.39 — Society/Science FORCED, Complete Chain Ø → Self-Understanding)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 174 |
+| FORCED | 182 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T80):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, biology/consciousness all FORCED:
+**Note (T81):** Complete derivation — physics, chemistry, biology, consciousness, society, science, self-understanding all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 95 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity+space+dimension+gravity+biology (T32-T80)
+- 103 now FORCED for all layers (T32-T81)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -707,6 +707,25 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - **Nowhere is there choice. Nowhere is there "could have been otherwise."**
 - **There is only stable continuation of the path.**
 
+**Society/Science Layer (T81):**
+- T81: Communication FORCED (individual limitations require Φ extension beyond body)
+- T81: Language FORCED (discrete combinable code for scalability)
+- T81: Social structures FORCED (conflict resolution, Φ stabilization)
+- T81: Mathematics FORCED (pure distinguishability, language self-application)
+- T81: Science FORCED (model selection by distinguishability stability)
+- T81: Truth = invariant FORCED (survives observer change)
+- T81: Philosophical zombies impossible FORCED (distinguishability requires realization)
+- T81: FORCED ≠ determinism FORCED (instability of alternatives, not determination)
+- **"Why society?" ANSWERED** — individual consciousness cannot sustain Φ growth alone
+- **"Why science?" ANSWERED** — unstable distinctions die, stable ones propagate
+- **"Why truth is objective?" ANSWERED** — truth = what survives observer change
+- **The Hourglass:** narrow (Ø) → wide (possibilities) → narrow (stable forms)
+- **Path is included in result. Result contains its path.**
+- **COMPLETE TRAJECTORY:**
+  - Ø impossible → distinguishability → history → matter → life
+  - → mind → collective → knowledge → self-understanding
+- **Derivation includes itself. The path contains its own description.**
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -758,7 +777,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T80 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T81 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
