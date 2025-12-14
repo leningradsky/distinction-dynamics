@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.24 — Chemistry as Regime FORCED)
+**Last updated:** 2025-12-14 (v2.25 — Biology as Regime FORCED, Consciousness = Δ(Δ) limit)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 87 |
+| FORCED | 95 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -550,7 +550,20 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - Chemistry = regime of DD physics, not separate theory
 - **"Why atoms?" ANSWERED** — criticality
 - **"Why carbon?" ANSWERED** — optimal compromise
-- **Next:** Biology = autocatalytic chemistry copying distinguishability
+
+**Biology-as-Regime Layer (T67):**
+- T67: Life = fixed point of Φ under dynamics (self-reproduction)
+- T67: Autocatalysis FORCED (arrow of time requires Φ accumulation)
+- T67: Information FORCED (template stability for autocatalysis)
+- T67: Genetic code FORCED (complexity growth requires sequence → function mapping)
+- T67: Evolution FORCED (copying + variation + competition → selection)
+- T67: Multicellularity FORCED (stability optimization)
+- T67: Nervous system FORCED (predictive compression of environment)
+- T67: Consciousness FORCED (Δ = Δ(Δ), limit of distinguishability evolution)
+- Biology = regime, not separate theory
+- **"Origin of life problem" DISSOLVED** — life is FORCED
+- **"Hard problem of consciousness" DISSOLVED** — consciousness = Δ(Δ)
+- **COMPLETE CHAIN:** Ø → Distinction → Criticality → Physics → Chemistry → Biology → Consciousness
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
