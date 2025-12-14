@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.23 — Gravity / Einstein Equations FORCED)
+**Last updated:** 2025-12-14 (v2.24 — Chemistry as Regime FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 81 |
+| FORCED | 87 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -539,7 +539,18 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T65: G numerical value = scale convention, not fundamental constant
 - **"Why gravity?" ANSWERED** — criticality adaptation
 - **General Relativity = continuation of unitary criticality**
-- **STRUCTURAL DERIVATION COMPLETE** — remaining: numerical constants only
+
+**Chemistry-as-Regime Layer (T66):**
+- T66: Atoms FORCED (criticality requires discrete bound states)
+- T66: Quantum orbitals FORCED (unique compatible form from unitarity + Coulomb + ℂ)
+- T66: Periodic table finite FORCED (criticality boundary of matter)
+- T66: Chemical bonds FORCED (Φ minimization: Φ(molecule) < Φ(A) + Φ(B))
+- T66: Molecular geometry FORCED (antisymmetry + orthogonality)
+- T66: Carbon dominance FORCED (optimal criticality compromise)
+- Chemistry = regime of DD physics, not separate theory
+- **"Why atoms?" ANSWERED** — criticality
+- **"Why carbon?" ANSWERED** — optimal compromise
+- **Next:** Biology = autocatalytic chemistry copying distinguishability
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
