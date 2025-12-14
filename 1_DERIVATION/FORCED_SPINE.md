@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.10
-**Status:** Authoritative reference for the FORCED chain (T0-T46, Physics + Chemistry + Biology + Information + Mind FORCED)
+**Version:** 2.11
+**Status:** Authoritative reference for the FORCED chain (T0-T49, Physics + Chemistry + Biology + Information + Cognition + Mind FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -3125,6 +3125,199 @@ Semantics FORCED (T46)
 
 ---
 
+## Level 33: Cognition, Learning, Value
+
+### T47: Cognition (DD-Cognition)
+
+**Statement:** In systems with semantics and selection pressure, cognition (internal world-model for prediction) is FORCED.
+
+**The Problem:**
+
+Semantics means: code differences → consequence differences.
+But consequences lie in the **future**.
+Decisions must be made **now**.
+
+How to select based on future if future hasn't happened?
+
+**Alternatives eliminated:**
+
+1. **React only post-hoc:** System acts, dies, "learns" it was wrong. Not a survival strategy.
+2. **Fixed behavior:** World changes → code loses meaning → death.
+3. **Random action:** No accumulation, no adaptation.
+
+**Theorem (Cognition FORCED):**
+
+*Claim:* System must distinguish possible futures before one realizes.
+
+*Proof:*
+1. Selection requires anticipation (post-hoc = death)
+2. Anticipation requires internal structure mapping states → expected futures
+3. This structure IS cognition
+4. Without it, system cannot act on meaning → Φ → 0 ∎
+
+**Definition:**
+
+$$\text{Cognition} \iff \exists M : \text{states} \to \text{expected futures}$$
+
+**Status:** FORCED (from semantics + selection + temporal gap)
+
+**DD interpretation:**
+
+Cognition = compressed history used to distinguish futures.
+Not "intelligence" — structural necessity for semantic systems.
+
+$$\text{Model} = \text{compressed history}$$
+
+---
+
+### T48: Learning (DD-Learning)
+
+**Statement:** In cognitive systems with finite models and changing environments, learning (model update from error) is FORCED.
+
+**The Problem:**
+
+Any model:
+- Is finite
+- Built on past
+- Inevitably incomplete
+
+Therefore: any model eventually **errs**.
+
+**Alternatives eliminated:**
+
+1. **Ignore errors:** Wrong expectations → bad actions → death.
+2. **Rebuild model from scratch:** No accumulation → equivalent to no cognition.
+3. **Fix model forever:** World changes → model obsolete → death.
+
+**Theorem (Learning FORCED):**
+
+*Claim:* Model must change in response to prediction-observation divergence.
+
+*Proof:*
+1. Model predicts X, observes Y
+2. If model unchanged: error persists → consequences worsen
+3. If model destroyed: no cognition → death
+4. Only option: local update preserving structure
+5. This IS learning ∎
+
+**Definition:**
+
+$$\Delta_{\text{error}} = \Delta(\text{expected}, \text{observed}) \Rightarrow \Delta_{\text{model}}$$
+
+**Status:** FORCED (from cognition + finite model + changing world)
+
+**Key insight:** Error is not bug but **signal**.
+
+Without error: no learning.
+Without learning: model degrades.
+
+**Corollary (Gradient Learning):**
+
+Learning must be:
+- Local (global rebuild destroys meaning)
+- Iterative (single-shot unreliable)
+- Gradient-like (minimize error difference)
+
+Otherwise system either doesn't converge or destroys itself.
+
+**DD interpretation:**
+
+Learning = internal natural selection.
+Selection that acted on systems now acts **within model**.
+
+---
+
+### T49: Value (DD-Value)
+
+**Statement:** In learning systems with limited resources, value (error selection criterion) is FORCED.
+
+**The Problem:**
+
+Learning says **how** to change model.
+But not **which** errors to prioritize.
+
+Any error is multi-dimensional:
+- Which differences matter?
+- Which to ignore?
+- Which to fix first?
+
+Without additional structure, learning is undefined.
+
+**Alternatives eliminated:**
+
+1. **Learn equally from all errors:** Model explodes, entropy grows, distinction lost.
+2. **Fix errors randomly:** No convergence, no structure.
+3. **Fix priority forever:** Environment changes → priorities obsolete.
+
+**Theorem (Value FORCED):**
+
+*Claim:* System must weight errors relative to its continuation.
+
+*Proof:*
+1. Not all errors equally affect survival
+2. Resources limited → can't fix all
+3. Must select which errors matter
+4. Selection criterion = value
+5. Without value, learning undirected → system degrades ∎
+
+**Definition:**
+
+$$V(\Delta_i) \propto \frac{\partial (\text{system continuation})}{\partial \Delta_i}$$
+
+**Status:** FORCED (from learning + limited resources + historical continuity)
+
+**Key formula:**
+
+$$\text{model update} \sim V(\Delta) \cdot \Delta_{\text{error}}$$
+
+Without V: chaos.
+Without error: stagnation.
+
+**What value is NOT:**
+- Not morality
+- Not subjective preference
+- Not "meaning of life"
+
+It IS: **structural filter on admissible changes**.
+
+**DD interpretation:**
+
+Value = internal selection criterion.
+Two-level selection:
+1. External: systems survive
+2. Internal: distinctions in model survive
+
+Value is criterion for internal selection.
+
+---
+
+## Summary: Cognition Chain FORCED
+
+```
+Semantics (T46)
+      ↓
+Future unknown but must act now
+      ↓
+Cognition FORCED (T47) — world model
+      ↓
+Model finite, world changes
+      ↓
+Learning FORCED (T48) — error correction
+      ↓
+Resources limited, errors many
+      ↓
+Value FORCED (T49) — error selection
+      ↓
+═══════════════════════════════════
+  COGNITION, LEARNING, VALUE FORCED
+  Not psychology, not choice
+  Structural necessity for
+  semantic systems in changing world
+═══════════════════════════════════
+```
+
+---
+
 ## Summary Diagram
 
 ```
@@ -3222,8 +3415,14 @@ T45: Code — genotype/phenotype separation (FORCED)
       ↓
 T46: Semantics — meaning from selection (FORCED)
       ↓
+T47: Cognition — world model for prediction (FORCED)
+      ↓
+T48: Learning — error correction (FORCED)
+      ↓
+T49: Value — error selection criterion (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → MIND
+   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → MIND
      Standard Model + Relativity
      + Einstein Field Equations
      + Fermion Generations ≥ 3
@@ -3233,11 +3432,13 @@ T46: Semantics — meaning from selection (FORCED)
      + Molecular Geometry FORCED
      + Life as Phase Regime FORCED
      + Code/Semantics FORCED
+     + Cognition/Learning/Value FORCED
      + Consciousness as Δ(Δ) FORCED
       No physics postulates used
       No vitalism
       No dualism
       No semantic magic
+      No cognitive magic
       All structures uniquely forced
       All circularities resolved
       "Hard problem" dissolved
@@ -3278,6 +3479,9 @@ Derived without postulates:
   • Qualia (distinction signatures)
   • Code (genotype/phenotype separation)
   • Semantics (meaning from selection)
+  • Cognition (world model for prediction)
+  • Learning (error-driven model update)
+  • Value (error selection criterion)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)

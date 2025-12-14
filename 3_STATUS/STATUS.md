@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.10 — Code + Semantics FORCED)
+**Last updated:** 2025-12-14 (v2.11 — Cognition + Learning + Value FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 48 |
+| FORCED | 51 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T46):** Complete derivation — physics, chemistry, biology, information, mind all FORCED:
+**Note (T49):** Complete derivation — physics, chemistry, biology, information, cognition, mind all FORCED:
 - 21 now DERIVED (traced chains)
-- 18 now FORCED for chemistry+biology+information+mind (T32-T46)
+- 21 now FORCED for chemistry+biology+information+cognition+mind (T32-T49)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 
@@ -472,6 +472,11 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T45: Code FORCED (genotype/phenotype separation for complexity scaling)
 - T46: Semantics FORCED (meaning from selection, first intentionality)
 
+**Cognition Layer (T47-T49):**
+- T47: Cognition FORCED (world model for prediction)
+- T48: Learning FORCED (error-driven model update)
+- T49: Value FORCED (error selection criterion)
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -483,9 +488,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - **Chemistry is FORCED** — not bridge, not extension
 - **Biology is FORCED** — life is phase regime, not accident
 - **Information is FORCED** — code and semantics from selection
+- **Cognition is FORCED** — world model, learning, value from selection pressure
 - **Mind is FORCED** — consciousness is Δ(Δ), "hard problem" dissolved
 
-**All fundamental physics + chemistry + biology + information + mind FORCED/DERIVED. No vitalism. No dualism. No semantic magic. All circularities resolved.**
+**All fundamental physics + chemistry + biology + information + cognition + mind FORCED/DERIVED. No vitalism. No dualism. No semantic magic. No cognitive magic. All circularities resolved.**
 
 ---
 
