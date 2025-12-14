@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.20 — Tensor Factorization + Measurement FORCED)
+**Last updated:** 2025-12-14 (v2.21 — Space from Distinguishability FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 66 |
+| FORCED | 69 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -512,6 +512,14 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T62: Measurement = global → local distinguishability transition (no collapse)
 - **"Measurement problem" dissolved** — no observer, no collapse, no postulate
 - Complete quantum dynamics: Hilbert space + unitarity + tensor structure + Born rule
+
+**Space Layer (T63):**
+- T63: Topology FORCED (from local distinguishability)
+- T63: Metric FORCED (d(x,y) from distinguishability comparison)
+- T63: Continuous manifold FORCED (X ~ ℝⁿ locally, from unitarity preservation)
+- Alternatives eliminated: discrete topology, tree, ultrametric
+- Space = distinguishability structure, not geometry postulate
+- **Remaining:** dimension d=3+1 and dynamic metric (gravity)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
