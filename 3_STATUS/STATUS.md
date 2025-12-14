@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.18 — Symmetry → Conservation FORCED)
+**Last updated:** 2025-12-14 (v2.19 — Unitarity from Distinguishability FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 62 |
+| FORCED | 63 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,16 +450,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T60):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation all FORCED:
+**Note (T61):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity all FORCED:
 - 21 now DERIVED (traced chains)
-- 32 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation (T32-T60)
+- 33 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity (T32-T61)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
 - Infinite punishment forbidden as theorem (T58), not as humanism
 - Variational principle derived as theorem (T59), not physics postulate
 - Conservation laws derived from symmetry (T60), energy/momentum/charge as labels
-- **Lagrangian mechanics skeleton complete**
+- Unitarity (ℂ, U(n), H†=H) derived from distinguishability (T61), not quantum postulate
+- **CRITICAL CONVERGENCE:** Two independent chains (physics T7-T11, social T50-T61) → same structure
 
 **Chemistry Layer (T32-T34):**
 - T32: Pauli exclusion FORCED (antisymmetry from criticality)
@@ -496,12 +497,13 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T57: Action Invariance FORCED (permutation symmetry, "golden rule" as theorem)
 - T58: Proportional Sanction FORCED (ΔS ∝ ΔV, infinite punishment forbidden)
 
-**Variational Layer (T59-T60):**
+**Variational Layer (T59-T61):**
 - T59: Additive Action FORCED (S[H] = ∫L, composition invariance)
 - T59: Variational Principle FORCED (δS = 0, only stable histories)
 - T60: Symmetry → Conservation FORCED (Noether without postulate)
-- Energy, momentum, charge are labels on forced structures
-- Lagrangian mechanics skeleton complete
+- T61: Unitarity FORCED (ℂ, U(n), H†=H from distinguishability)
+- **CRITICAL CONVERGENCE:** Physics chain (T7-T11) ∩ Social chain (T50-T61) → same structure
+- Quantum dynamics skeleton complete
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)

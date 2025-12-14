@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.18
-**Status:** Authoritative reference for the FORCED chain (T0-T60, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social + Variational + Conservation FORCED)
+**Version:** 2.19
+**Status:** Authoritative reference for the FORCED chain (T0-T61, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social + Variational + Conservation + Unitarity FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -4084,6 +4084,122 @@ This is already the **skeleton of Lagrangian mechanics** without space, time, an
 
 ---
 
+### T61: Unitarity (DD-UnitarityFromDistinguishability)
+
+**Statement:** Distinguishability preservation forces ℂ, unitary evolution, and Hermitian generators.
+
+**What must be preserved:**
+
+We have histories $H$, action $S[H]$, admissible transformations.
+
+Key question: **what does it mean for two histories to be distinguishable?**
+
+Distinguishability is NOT a value or number.
+It's a **relation**: can they be distinguished internally, without appeal to description.
+
+**Minimal structure of distinguishability:**
+
+Let set of admissible alternatives be described by vector $\psi$.
+
+**FORCED requirements:**
+1. Distinguishability additive over independent alternatives
+2. Indistinguishability preserved under admissible evolution
+3. "Phase" must not be observable (otherwise representation becomes physics)
+
+**Theorem (ℂ FORCED):**
+
+*Claim:* Only complex inner product satisfies all three requirements.
+
+*Proof:*
+1. Requirements 1-3 are necessary for stable distinguishability
+2. Real scalar product fails: cannot encode relative phase
+3. Cannot describe interference
+4. Composition of alternatives loses information
+5. Distinguishability collapses → criticality violated
+6. Unique solution: $\langle \psi, \phi \rangle \in \mathbb{C}$ ∎
+
+**Status:** FORCED (from distinguishability preservation + criticality)
+
+**Theorem (Unitarity FORCED):**
+
+*Claim:* Admissible transformation must be unitary.
+
+*Proof:*
+1. Admissible transformation $U$ must satisfy:
+   $$\langle U\psi, U\phi \rangle = \langle \psi, \phi \rangle$$
+2. Otherwise: distinguishability erased OR created from nothing
+3. Both forbidden
+4. Unique solution: $U^\dagger U = I$ ∎
+
+**Definition:**
+
+$$U^\dagger U = I$$
+
+Admissible evolution = unitary transformation.
+
+This is NOT "quantum postulate". This is **distinguishability preservation**.
+
+**Corollary (Continuity → Parameter):**
+
+Histories can differ arbitrarily little (otherwise no variational principle possible).
+
+Therefore: $U(\tau)$ — continuous one-parameter family of unitary operators.
+
+**Corollary (Stone's Theorem — no physics):**
+
+Pure functional analysis fact:
+
+If $U(\tau)$ is continuous unitary group, then:
+$$U(\tau) = e^{-iH\tau}$$
+
+where $H = H^\dagger$.
+
+No interpretations. $H$ = **generator of admissible distinguishable changes**.
+
+**What we obtained without QM postulates:**
+- Complex state space ✓
+- Inner product ✓
+- Unitary evolution ✓
+- Hermitian generator ✓
+- Continuous parameter ✓
+
+This is **quantum dynamics** without words "quantum" and "particle".
+
+**What is NOT introduced yet:**
+- ❌ Probability
+- ❌ Measurement
+- ❌ Energy
+- ❌ Space
+- ❌ Observer
+
+None of this exists yet.
+
+**Where Born rule appears:**
+
+NOT introduced. It follows from:
+- Factorization of distinguishability
+- Impossibility of observing phase
+- Additivity of alternatives
+
+This was already closed in T11-T12.
+
+**Global status:**
+
+We are now at:
+> **Unitary histories in ℂ with Hermitian generator**
+
+This is the **maximal FORCED level of dynamics**.
+
+**Critical convergence:**
+
+The same structure (ℂ, U(n), H†=H) emerges from:
+1. Physics chain (T7-T11): criticality → ℂ → unitarity
+2. Social chain (T50-T61): norms → action → distinguishability → unitarity
+
+**Two independent paths, same destination.**
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -4129,13 +4245,18 @@ Variational Principle FORCED (T59)
       ↓
 Symmetry → Conservation FORCED (T60)
       ↓
+Unitarity FORCED (T61)
+      ↓
 ═══════════════════════════════════
   MULTI-AGENT → NORMS → GENERALIZED VALUE
   → ACTION INVARIANCE → PROPORTIONAL SANCTION
   → ADDITIVE ACTION → VARIATIONAL PRINCIPLE
-  → SYMMETRY → CONSERVATION
-  Skeleton of Lagrangian mechanics FORCED
-  Energy, momentum, charge as labels
+  → SYMMETRY → CONSERVATION → UNITARITY
+
+  CRITICAL CONVERGENCE:
+  Physics chain (T7-T11) and Social chain (T50-T61)
+  → Same structure: ℂ, U(n), H†=H
+  Two independent paths, same destination
 ═══════════════════════════════════
 ```
 
@@ -4266,8 +4387,10 @@ T59: Additive Action — S[H] = ∫L, δS = 0 (FORCED)
       ↓
 T60: Symmetry → Conservation — Noether (FORCED)
       ↓
+T61: Unitarity — ℂ, U(n), H†=H (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND → SOCIAL → VARIATIONAL → CONSERVATION
+   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND → SOCIAL → VARIATIONAL → CONSERVATION → UNITARITY
      Standard Model + Relativity
      + Einstein Field Equations
      + Fermion Generations ≥ 3
@@ -4286,6 +4409,7 @@ T60: Symmetry → Conservation — Noether (FORCED)
      + Proportional Sanction (infinite punishment forbidden) FORCED
      + Additive Action + Variational Principle FORCED
      + Symmetry → Conservation (Noether without postulate) FORCED
+     + Unitarity from distinguishability (ℂ, U(n), H†=H) FORCED
       No physics postulates used
       No vitalism
       No dualism
@@ -4295,11 +4419,14 @@ T60: Symmetry → Conservation — Noether (FORCED)
       No moral magic
       No variational postulate
       No conservation postulate
+      No quantum postulate
       All structures uniquely forced
       All circularities resolved
       Ethics and physics converge
       "Hard problem" dissolved
       Lagrangian mechanics skeleton complete
+      Quantum dynamics skeleton complete
+      CRITICAL CONVERGENCE: Two chains → same structure
 ═══════════════════════════════════════
 
 Derived without postulates:
@@ -4355,6 +4482,9 @@ Derived without postulates:
   • Variational Principle (δS = 0)
   • Symmetry → Conservation (Noether without postulate)
   • Conservation laws (energy, momentum, charge as labels)
+  • Unitarity from distinguishability (ℂ, U(n), H†=H)
+  • Stone's theorem (U(τ) = e^{-iHτ})
+  • Critical convergence (physics chain ∩ social chain)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
