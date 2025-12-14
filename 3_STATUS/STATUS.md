@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.8 — Life as Phase Regime FORCED)
+**Last updated:** 2025-12-14 (v2.9 — Consciousness as Δ(Δ) FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -197,6 +197,47 @@ README.md must not contradict this file.
 - Tensor product ⊗ℋᵢ is unique stable form: phases local, decoherence partial, Φ scales additively
 - Locality emerges as bounded inter-factor distinguishability (not spatial, structural)
 - This establishes subsystems, local dynamics, partial tracing as FORCED before decoherence.
+
+**Agency (DD-Agency):** Self-modifying systems selected:
+- Replicators compete for resources
+- Fixed-response systems fail under environmental variation
+- Modifiable-response systems survive change
+- Selection favors adaptive response = agency
+- Agency = self-modifying distinction-making
+
+**Modeling (DD-Modeling):** Internal models selected:
+- Reactive agents: respond only to present stimuli
+- Modeling agents: respond to present + predicted
+- Prediction enables avoidance, pursuit, planning
+- Modeling provides survival advantage
+- Modeling is selected
+
+**Self-Model (DD-Self-Model):** Self-models selected:
+- Agent's own state affects outcomes
+- Accurate prediction requires modeling own state
+- Self-model = Δ(Δ) at cognitive level
+- Agent makes distinctions about its own distinction-making
+
+**Consciousness (DD-Consciousness):** Recursive self-model:
+- Self-model selected → deeper self-model → more selected
+- Recursive self-model is limit of deepening
+- Temporal continuity required for planning
+- Integration required for coherent action
+- Consciousness = recursive, continuous, integrated self-model
+
+**Qualia (DD-Qualia):** Distinction signatures:
+- Each quale = specific distinction pattern
+- Different stimuli activate different patterns
+- Internal distinguishability = qualitative difference
+- Qualia = internal signatures of distinction types
+
+**"Hard Problem" Dissolved:**
+1. Distinction exists (T1)
+2. Self-referential distinction exists (T3)
+3. "What it's like" from inside = self-referential distinguishability
+4. "What it's like" from outside = objective description of same structure
+5. Same thing, different perspectives
+6. No gap to bridge — dualism unnecessary
 
 ---
 
@@ -400,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 41 |
+| FORCED | 46 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -409,21 +450,37 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T39):** Complete derivation — physics, chemistry, biology all FORCED:
+**Note (T44):** Complete derivation — physics, chemistry, biology, mind all FORCED:
 - 21 now DERIVED (traced chains)
-- 11 now FORCED for chemistry+biology (T32-T39)
+- 16 now FORCED for chemistry+biology+mind (T32-T44)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
-- T32-T34: Chemistry FORCED (Pauli, Coulomb, Hybridization)
+
+**Chemistry Layer (T32-T34):**
+- T32: Pauli exclusion FORCED (antisymmetry from criticality)
+- T33: Coulomb 1/r FORCED (d=3 + U(1) gauge)
+- T34: Hybridization FORCED (sp/sp²/sp³ geometries in 3D)
+
+**Biology Layer (T35-T39):**
 - T35: Homochirality FORCED for replication fidelity
 - T36: Autocatalysis FORCED (graph theory on chemical space)
 - T37: Template replication FORCED (selection pressure)
 - T38: Life = phase regime (inevitable attractor)
 - T39: Metabolism FORCED (thermodynamics)
+
+**Mind Layer (T40-T44):**
+- T40: Agency FORCED (self-modifying systems selected)
+- T41: Modeling FORCED (internal models selected)
+- T42: Self-Model FORCED (Δ(Δ) at cognitive level)
+- T43: Consciousness FORCED (recursive self-model with temporal continuity)
+- T44: Qualia FORCED (distinction signatures)
+
+**Key Results:**
 - **Chemistry is FORCED** — not bridge, not extension
 - **Biology is FORCED** — life is phase regime, not accident
+- **Mind is FORCED** — consciousness is Δ(Δ), "hard problem" dissolved
 
-**All fundamental physics + chemistry + biology FORCED/DERIVED. No vitalism. All circularities resolved.**
+**All fundamental physics + chemistry + biology + mind FORCED/DERIVED. No vitalism. No dualism. All circularities resolved.**
 
 ---
 
