@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.15
-**Status:** Authoritative reference for the FORCED chain (T0-T57, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
+**Version:** 2.16
+**Status:** Authoritative reference for the FORCED chain (T0-T58, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -3757,6 +3757,121 @@ This is exactly the same type of object as **laws of physics**.
 
 ---
 
+### T58: Proportional Sanction (DD-ProportionalSanction)
+
+**Statement:** Sanctions must be proportional to violations; infinite sanctions are forbidden.
+
+**The New Constraint (stricter than before):**
+
+We have:
+- Admissible actions = agent-invariant
+- Admissibility rule not directly observable
+- Rule must **reproduce over time**
+
+Therefore:
+> If rule is violated, system **must return** to admissible region.
+
+Otherwise rule is one-time and evolutionarily unstable.
+
+**What is sanction in DD (without morality):**
+
+Sanction ≠ punishment.
+Sanction = corrective transformation of history.
+
+Formally:
+$$\text{sanction} : H \to H'$$
+
+where $H'$ lies in admissible history class.
+
+**Alternatives eliminated:**
+
+1. **No sanction:**
+   - Rule not stable
+   - Violation becomes advantageous
+   - Rule disappears
+   - 📌 Forbidden by dynamics
+
+2. **Arbitrary sanction:**
+   - Different agents get different consequences
+   - Rule ceases to be invariant
+   - Hidden hierarchy appears
+   - 📌 Forbidden by symmetry
+
+3. **Absolute (infinite) sanction:**
+   - Small violation → agent destruction
+   - System loses distinction carriers
+   - Future collapses
+   - 📌 Forbidden by criticality
+
+**Theorem (Proportional Sanction FORCED):**
+
+*Claim:* Only proportional sanctions preserve both rule and agents.
+
+*Proof:*
+1. No sanction → rule unstable → disappears
+2. Arbitrary sanction → breaks invariance → hierarchy
+3. Infinite sanction → destroys agents → future collapses
+4. Only remaining: sanction proportional to violation
+5. ΔS ∝ ΔV (correction proportional to damage) ∎
+
+**Definition:**
+
+$$\Delta S \propto \Delta V$$
+
+where:
+- $\Delta V$ = loss of global distinguishability
+- $\Delta S$ = corrective action
+
+**Status:** FORCED (from rule stability + symmetry + criticality)
+
+**Corollary (Proportionality is stability point):**
+
+If sanction < violation: violation profitable, rule erodes.
+If sanction > violation: carriers destroyed, distinction lost.
+
+**Proportionality is unique stable fixed point.**
+
+Same argument as:
+- Linear response theory
+- Critical systems
+- Gauge calibration
+
+**Corollary (Measurability FORCED):**
+
+For sanction to be proportional, violation **must be measurable**.
+
+Therefore appears:
+> **Measure of violation**
+
+First moment where:
+- Quasi-numerical quantity appears
+- Distinction becomes measurable
+- History gets "weight"
+
+**Corollary (Infinite Sanction Forbidden):**
+
+*Absolute prohibition:*
+$$\Delta V < \infty \implies \Delta S < \infty$$
+
+Finite violation → finite response.
+Otherwise:
+- System ceases to be critical
+- Future terminates
+
+This is NOT humanism — this is **dynamics preservation**.
+
+**What we obtained (without ethical words):**
+- Action invariance
+- Agent symmetry
+- Necessity of sanctions
+- Proportionality
+- Prohibition of absolute punishment
+- Necessity of measurability
+
+This is a complete **dynamical law**.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -3790,11 +3905,16 @@ Internal values unobservable
       ↓
 Action Invariance FORCED (T57)
       ↓
+Rule must reproduce over time
+      ↓
+Proportional Sanction FORCED (T58)
+      ↓
 ═══════════════════════════════════
   MULTI-AGENT → NORMS → GENERALIZED VALUE
-  → ACTION INVARIANCE
-  "Golden rule" as theorem, not axiom
-  Same type of object as physics laws
+  → ACTION INVARIANCE → PROPORTIONAL SANCTION
+  Infinite punishment forbidden
+  Measurability required
+  Complete dynamical law
 ═══════════════════════════════════
 ```
 
@@ -3919,6 +4039,8 @@ T56: Generalized Value — multi-agent functional (FORCED)
       ↓
 T57: Action Invariance — permutation symmetry (FORCED)
       ↓
+T58: Proportional Sanction — ΔS ∝ ΔV (FORCED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND → SOCIAL
      Standard Model + Relativity
@@ -3936,6 +4058,7 @@ T57: Action Invariance — permutation symmetry (FORCED)
      + Multi-Agent/Norms/Coordination/Sanctions FORCED
      + Generalized Value (structural irreplaceability) FORCED
      + Action Invariance ("golden rule" as theorem) FORCED
+     + Proportional Sanction (infinite punishment forbidden) FORCED
       No physics postulates used
       No vitalism
       No dualism
@@ -3995,6 +4118,8 @@ Derived without postulates:
   • Sanctions (norm enforcement)
   • Generalized Value (structural irreplaceability of agents)
   • Action Invariance (permutation symmetry, "golden rule" as theorem)
+  • Proportional Sanction (ΔS ∝ ΔV, infinite punishment forbidden)
+  • Measurability of violations (quasi-numerical quantities)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
