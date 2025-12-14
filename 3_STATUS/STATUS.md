@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.6 — Chemistry FORCED)
+**Last updated:** 2025-12-14 (v2.7 — Chemistry + Homochirality FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -81,6 +81,8 @@ README.md must not contradict this file.
 | DD-Rank | rank ≥ 2 (representation structure) | FORCED | T3 |
 | DD-Pauli | Antisymmetry forced (Pauli exclusion) | FORCED | T5, T13 |
 | DD-Coulomb | V(r) = α/r in d=3 | DERIVED | T17, T24 |
+| DD-Hybridization | sp/sp²/sp³ only | FORCED | T5, T17, T32, T33 |
+| DD-Chirality | Homochirality required for life | FORCED | T17, T34, B2 |
 
 **Representational Rank (DD-Rank):** rank ≥ 2 forced by distinction non-triviality:
 - In rank 1: every endomorphism Δ is λ·id (scalar)
@@ -102,6 +104,25 @@ README.md must not contradict this file.
 - d=3 forced by criticality (T17)
 - 1/r in 3D: discrete bound states exist, ground state stable
 - Chemistry is FORCED consequence
+
+**Hybridization (DD-Hybridization):** sp/sp²/sp³ only in d=3:
+- Bond = joint minimization of distinguishability
+- Available: 1 s-orbital + 3 p-orbitals = 4D space
+- In 3D only 3 equivalent geometries survive criticality:
+  - sp: 2 directions, 180° (linear)
+  - sp²: 3 directions, 120° (planar)
+  - sp³: 4 directions, 109.5° (tetrahedral)
+- sp⁴ would require 4D; non-equivalent angles → unstable
+- Carbon chemistry, organic molecules are FORCED consequences
+
+**Chirality (DD-Chirality):** Homochirality required for life:
+- In d=3, mirror-asymmetric structures (chirality) exist (topology)
+- Chiral forms L and R are distinguishable
+- For self-replication: template matching requires geometric specificity
+- Mixed L/R → recognition errors → copying fails → Φ → 0
+- Only homochiral systems maintain criticality
+- Life must be single-handed: FORCED
+- Which hand (L vs R): BOUND (symmetry breaking)
 
 **Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by CP requirement:
 - ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
@@ -375,24 +396,27 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 35 |
+| FORCED | 37 |
 | DEF | 9 |
 | DERIVED | 21 |
-| BOUND | 1 |
+| BOUND | 2 |
 | UNTRACED | 0 |
 | CONJ | 3 |
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T33):** Complete derivation with chemistry forced:
+**Note (T35):** Complete derivation with chemistry + biology constrained:
 - 21 now DERIVED (traced chains + DD-Coulomb)
-- 5 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank, DD-Pauli)
-- 1 now DEF (ℏ = unit choice)
+- 7 now FORCED (DD-Lambda, DD-Gravity, DD-Generations, DD-Rank, DD-Pauli, DD-Hybridization, DD-Chirality)
+- 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30 (generations derived independently)
 - CIRC-2 BROKEN by T31 (rank derived independently)
-- T32: Pauli exclusion FORCED from criticality (no quantum postulate)
+- T32: Pauli exclusion FORCED from criticality
 - T33: Coulomb 1/r DERIVED from d=3 + U(1)
+- T34: Hybridization sp/sp²/sp³ FORCED from geometry
+- T35: Homochirality FORCED for self-replicating systems
 - **Chemistry is FORCED** — not bridge, not extension
+- **Biology is CONSTRAINED** — homochirality required
 
 **All fundamental physics + chemistry FORCED/DERIVED. All circularities resolved.**
 
