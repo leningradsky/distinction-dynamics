@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.30
-**Status:** Authoritative reference for the FORCED chain (T0-T72, Physics → Chemistry → Biology → Consciousness → Society → Choice/Agency → Norms → Generalized Value → Action Invariance COMPLETE)
+**Version:** 2.31
+**Status:** Authoritative reference for the FORCED chain (T0-T73, Physics → Chemistry → Biology → Consciousness → Society → Norms → Value → Action Invariance → Sanction Invariance COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -6036,6 +6036,154 @@ Otherwise the rule does not reproduce.
 
 ---
 
+### T73: Sanction Invariance (DD-SanctionInvariance)
+
+**Statement:** Sanctions must be proportional to violations and agent-invariant — completing the closed dynamics of admissibility.
+
+**New constraint (stricter than T72):**
+
+We already have:
+- Admissible actions = agent-invariant
+- Admissibility rule not directly observable
+- Rule must reproduce over time
+
+Consequence:
+> If rule is violated, system must return to admissible region.
+
+Otherwise rule is one-time and evolutionarily unstable.
+
+**Definition (Sanction in DD, without morality):**
+
+Sanction ≠ punishment
+
+Sanction = **corrective transformation of history**
+
+$$\text{sanction}: H \to H'$$
+
+where $H'$ is again in the admissible class of histories.
+
+**Theorem (All Sanction Types Eliminated):**
+
+**❌ Alternative A: No sanction**
+
+- Rule not stable
+- Profitable to violate
+- Rule disappears
+
+*Forbidden by dynamics.*
+
+**❌ Alternative B: Arbitrary sanction**
+
+- Different agents get different consequences
+- Rule loses invariance
+- Hidden hierarchy appears
+
+*Forbidden by symmetry.*
+
+**❌ Alternative C: Absolute (infinite) sanction**
+
+- Small violation → agent destruction
+- System loses distinction carriers
+- Future collapses
+
+*Forbidden by criticality.*
+
+**Theorem (Unique Stable Form):**
+
+Only one structure remains:
+
+> **Sanction proportional to violation**
+
+$$\Delta S \propto \Delta V$$
+
+where:
+- $\Delta V$ = loss of global distinguishability
+- $\Delta S$ = corrective action
+
+This is NOT a choice — this is the **only stable feedback**.
+
+**Status:** FORCED (from invariance + criticality)
+
+**Why Proportionality FORCED:**
+
+| If sanction... | Then... |
+|----------------|---------|
+| Smaller than violation | Violation profitable, rule erodes |
+| Larger than violation | Carriers destroyed, distinction disappears |
+| Proportional | Stability point |
+
+Same argument as for:
+- Linear response in physics
+- Critical systems
+- Gauge calibration
+
+**Theorem (Measure Emerges):**
+
+For sanction to be proportional, **violation must be measurable**.
+
+This is the first moment where:
+- Quasi-numerical quantity appears
+- Distinction becomes measurable
+- History gets "weight"
+
+**Status:** FORCED (from proportionality requirement)
+
+**Absolute Prohibition (FORCED):**
+
+> **Infinite sanction impossible**
+
+Because:
+- Finite violation → infinite response
+- System no longer critical
+- Future terminates
+
+This is NOT humanism — this is **preservation of dynamics**.
+
+**Status:** FORCED (from criticality)
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| No sanction fails | FORCED | Rule disappears |
+| Arbitrary sanction fails | FORCED | Breaks symmetry |
+| Infinite sanction fails | FORCED | Breaks criticality |
+| ΔS ∝ ΔV | FORCED | Only stable form |
+| Measure of violation | FORCED | From proportionality |
+| Infinite punishment forbidden | FORCED | Criticality preservation |
+
+**Summary: What We Have Derived (Without Ethical Words):**
+
+1. Action invariance
+2. Agent symmetry
+3. Necessity of sanctions
+4. Proportionality
+5. Prohibition of absolute punishments
+6. Necessity of violation measurability
+
+This is a **complete dynamical law**.
+
+**Key Point:**
+
+We now have:
+- Rule
+- Feedback
+- Measure
+- Stability
+
+This is **complete closed dynamics**.
+
+**What is NOW FORCED:**
+
+Measure of violation must:
+- Sum
+- Compose over time
+- Be independent of history partition
+
+Otherwise proportionality is undefined.
+
+This leads to **additive measure** — the same structure as action in physics.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -6247,8 +6395,10 @@ T71: Generalized Value — structural irreplaceability (FORCED)
       ↓
 T72: Action Invariance — permutation symmetry, ethics core (FORCED)
       ↓
+T73: Sanction Invariance — ΔS ∝ ΔV, closed dynamics (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE → ACTION INVARIANCE
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE → ACTION INVARIANCE → SANCTION INVARIANCE
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3
