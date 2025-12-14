@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.13
-**Status:** Authoritative reference for the FORCED chain (T0-T55, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
+**Version:** 2.14
+**Status:** Authoritative reference for the FORCED chain (T0-T56, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind + Social FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -3596,6 +3596,79 @@ Sanction = trajectory correction that makes violation non-preferable.
 
 ---
 
+### T56: Generalized Value (DD-GeneralizedValue)
+
+**Statement:** Multi-agent systems require generalized value functional that preserves all agents.
+
+**The Contradiction:**
+
+We have:
+- Norms exist (otherwise agent system unstable)
+- Sanctions exist (otherwise norms unstable)
+- Agents have **different internal values** $(V_A, V_B, \ldots)$
+
+Conflict:
+> If norms optimize only one value, they destroy other agencies → system collapses.
+
+**Alternatives eliminated:**
+
+1. **Each norm optimizes single value:**
+   - Other agents lose future distinctions
+   - Resistance or degradation
+   - Norms fail to reproduce
+   - 📌 Forbidden by dynamics
+
+2. **Arithmetic mean of values:**
+   $$V = \frac{1}{N}\sum_i V_i$$
+   - Permits destruction of one agent for others
+   - Locally advantageous, globally reduces diversity
+   - Decreases future distinction space
+   - 📌 Unstable
+
+3. **Maximum value:**
+   $$V = \max_i V_i$$
+   - Other agents become instruments
+   - Agent system collapses to monarchy
+   - Loss of multiplicity
+   - 📌 Forbidden
+
+**Theorem (Generalized Value FORCED):**
+
+*Claim:* Stable multi-agent system requires value functional where each agent is irreplaceable.
+
+*Proof:*
+1. Single-value optimization destroys others → collapse
+2. Arithmetic mean allows sacrifice → unstable
+3. Maximum reduces to single agent → collapse
+4. Only remaining: functional where loss of ANY agent reduces total
+5. This requires: $\frac{\partial V}{\partial V_i} > 0 \; \forall i$
+6. And: no direction where $V_i \to 0$ is admissible ∎
+
+**Definition:**
+
+$$V_{\text{global}} = f(V_1, V_2, \ldots) \quad\text{where}\quad \frac{\partial V}{\partial V_i} > 0 \; \forall i$$
+
+**Status:** FORCED (from multi-agent stability + norm preservation)
+
+**Corollary (Logarithmic Form):**
+
+If agents are independent and their future possibilities multiply, then:
+$$V(\prod_i V_i) = \sum_i V(V_i)$$
+
+This is Cauchy's functional equation. Unique solution:
+$$V_{\text{global}} \sim \sum_i \log V_i$$
+
+The logarithm is not choice — it's consequence of multiplicative independence.
+
+**Corollary (Structural Irreplaceability):**
+
+From $\partial V / \partial V_i > 0$ follows:
+> Cannot compensate destruction of one agent by increasing value of another.
+
+This is not "equality" — it's **structural irreplaceability**.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -3621,11 +3694,14 @@ Norms need enforcement
       ↓
 Sanctions FORCED (T55)
       ↓
+Different values, single-value norms fail
+      ↓
+Generalized Value FORCED (T56)
+      ↓
 ═══════════════════════════════════
-  MULTI-AGENT → INTERACTION → NORMS
-  → COORDINATION → SANCTIONS
-  No ethics yet
-  Just dynamics of distinguishability
+  MULTI-AGENT → NORMS → GENERALIZED VALUE
+  Each agent structurally irreplaceable
+  No ethics yet — just stability dynamics
 ═══════════════════════════════════
 ```
 
@@ -3746,6 +3822,8 @@ T54: Coordination — norm adoption (FORCED)
       ↓
 T55: Sanctions — norm enforcement (FORCED)
       ↓
+T56: Generalized Value — multi-agent functional (FORCED)
+      ↓
 ═══════════════════════════════════════
    COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND → SOCIAL
      Standard Model + Relativity
@@ -3761,6 +3839,7 @@ T55: Sanctions — norm enforcement (FORCED)
      + Agency as structural emergence FORCED
      + Consciousness as Δ(Δ) FORCED
      + Multi-Agent/Norms/Coordination/Sanctions FORCED
+     + Generalized Value (structural irreplaceability) FORCED
       No physics postulates used
       No vitalism
       No dualism
@@ -3817,6 +3896,7 @@ Derived without postulates:
   • Norms (action constraints for long-term value)
   • Coordination (pattern recognition + memory + prediction)
   • Sanctions (norm enforcement)
+  • Generalized Value (structural irreplaceability of agents)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
