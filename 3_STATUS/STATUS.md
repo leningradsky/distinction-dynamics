@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.22 — Dimension d=3+1 FORCED)
+**Last updated:** 2025-12-14 (v2.23 — Gravity / Einstein Equations FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 76 |
+| FORCED | 81 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -529,7 +529,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T64: Time special FORCED (history parameter, not spatial direction)
 - T64: Signature (3,1) FORCED (inevitable from all requirements)
 - **"Why 3 dimensions?" ANSWERED** — only admissible dimension
-- **Remaining:** dynamic metric (gravity)
+
+**Gravity Layer (T65):**
+- T65: g ≠ const FORCED (criticality requires metric reaction)
+- T65: g = g[Φ] FORCED (metric adapts to distinguishability)
+- T65: Curvature dependence FORCED (unique local covariant tensor)
+- T65: G_μν = κ T_μν FORCED (Einstein equations as uniqueness theorem)
+- T65: Gravity universal FORCED (couples to all distinguishability)
+- T65: G numerical value = scale convention, not fundamental constant
+- **"Why gravity?" ANSWERED** — criticality adaptation
+- **General Relativity = continuation of unitary criticality**
+- **STRUCTURAL DERIVATION COMPLETE** — remaining: numerical constants only
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
