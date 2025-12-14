@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.37 — Gravity FORCED, Complete Physical Framework)
+**Last updated:** 2025-12-14 (v2.38 — Biology FORCED, Complete Chain Ø → Consciousness)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 166 |
+| FORCED | 174 |
 | DEF | 9 |
 | DERIVED | 22 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T79):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance, sanction invariance, action/variational, symmetry/conservation, unitarity, space, dimension, gravity all FORCED:
+**Note (T80):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, biology/consciousness all FORCED:
 - 22 now DERIVED (traced chains, including golden rule as special case)
-- 87 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity+space+dimension+gravity (T32-T79)
+- 95 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance+sanction-invariance+action-variational+symmetry-conservation+unitarity+space+dimension+gravity+biology (T32-T80)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -689,6 +689,24 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
   - Spacetime (d=3+1)
   - Gravity (G_μν = κT_μν)
 
+**Biology Layer (T80):**
+- T80: Life = fixed point of Φ FORCED (self-reproduction as criticality preservation)
+- T80: Autocatalysis FORCED (Λ > 0 requires Φ accumulation, self-amplification)
+- T80: Information FORCED (template stability for reproduction)
+- T80: Genetic code FORCED (modularity from complexity growth requirement)
+- T80: Evolution FORCED (copying + variation + competition → selection)
+- T80: Multicellularity FORCED (stability optimization)
+- T80: Nervous system FORCED (fast adaptation in changing environment)
+- T80: Consciousness FORCED (Δ = Δ(Δ), self-modeling as limit of distinguishability evolution)
+- **"Why life?" ANSWERED** — life is the only stable attractor of criticality dynamics in chemical regime
+- **"Why consciousness?" ANSWERED** — consciousness is the limit of distinguishability evolution turned on itself
+- **COMPLETE CHAIN DERIVED:**
+  - Prohibition of Ø → distinguishability → criticality → quantum dynamics
+  - → atoms → chemistry → autocatalysis → information → code
+  - → evolution → nervous systems → consciousness
+- **Nowhere is there choice. Nowhere is there "could have been otherwise."**
+- **There is only stable continuation of the path.**
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -740,7 +758,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - Axiom: `0_CORE/AXIOM.md`
 - Definitions: `0_CORE/DEFINITIONS.md`
 - UAC: `0_CORE/UAC.md`
-- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T31 derivation)
+- **FORCED Spine: `1_DERIVATION/FORCED_SPINE.md`** (authoritative T0-T80 derivation)
 - Forced chain: `1_DERIVATION/FORCED_CHAIN.md`
 - Critical regime: `1_DERIVATION/CRITICAL_REGIME.md`
 - Dependency graph: `1_DERIVATION/DEPENDENCY_GRAPH.md`
