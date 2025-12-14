@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.29 — Generalized Value FORCED, Next: Action Invariance/Ethics)
+**Last updated:** 2025-12-14 (v2.30 — Action Invariance FORCED, Next: Sanction Invariance)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,18 +441,18 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 118 |
+| FORCED | 123 |
 | DEF | 9 |
-| DERIVED | 21 |
+| DERIVED | 22 |
 | BOUND | 2 |
 | UNTRACED | 0 |
 | CONJ | 3 |
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T71):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value all FORCED:
-- 21 now DERIVED (traced chains)
-- 39 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value (T32-T71)
+**Note (T72):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind, social, variational, conservation, unitarity, measurement, space, dimension, gravity, choice/agency, norms, generalized value, action invariance all FORCED:
+- 22 now DERIVED (traced chains, including golden rule as special case)
+- 44 now FORCED for chemistry+biology+information+cognition+agency+mind+social+variational+conservation+unitarity+measurement+space+dimension+gravity+choice+norms+generalized-value+action-invariance (T32-T72)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 - "Golden rule" derived as theorem (T57), not introduced as axiom
@@ -601,8 +601,17 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T71: ∂V/∂V_i > 0 FORCED (structural irreplaceability)
 - T71: Logarithmic form FORCED (Cauchy functional equation uniqueness)
 - T71: Universal admissibility criterion FORCED (long-term stability)
-- NO ethics yet — pure dynamics of distinguishability
-- **Next FORCED:** Action invariance (acting without knowing internal values → ethics)
+
+**Action Invariance Layer (T72):**
+- T72: Act for specific agent fails FORCED (internal values unobservable)
+- T72: Act for majority fails FORCED (minority systematically lost)
+- T72: Act for self fails FORCED (agent ecosystem collapse)
+- T72: Permutation invariance FORCED (only stable form of action)
+- T72: V(A) = V(πAπ⁻¹) FORCED (symmetry group, not norm)
+- T72: Golden rule as special case DERIVED (from invariance)
+- T72: Equal significance, prohibition of instrumentalization, universalization — all DERIVED
+- **First universal admissibility rule independent of observer** — same type as laws of physics
+- **Next FORCED:** Sanction invariance (if actions invariant, sanctions must be too)
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)

@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.29
-**Status:** Authoritative reference for the FORCED chain (T0-T71, Physics → Chemistry → Biology → Consciousness → Society → Choice/Agency → Norms → Generalized Value COMPLETE)
+**Version:** 2.30
+**Status:** Authoritative reference for the FORCED chain (T0-T72, Physics → Chemistry → Biology → Consciousness → Society → Choice/Agency → Norms → Generalized Value → Action Invariance COMPLETE)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -5904,6 +5904,138 @@ Exactly here (and only here) appears what will later be called "ethics" — but 
 
 ---
 
+### T72: Action Invariance (DD-ActionInvariance)
+
+**Statement:** Admissible actions must be invariant under agent permutation — the structural core of what will be called "ethics".
+
+**Exact constraint (not choice):**
+
+We already have:
+- Global stability = preservation of generalized value
+- Generalized value depends on all agents
+- Internal values of agents are NOT directly observable
+
+Consequence:
+> Agent cannot optimize action based on specific $V_j$ of other agents.
+
+This is NOT epistemology — this is **structural fact**.
+
+**Theorem (All Alternatives Eliminated):**
+
+**❌ Alternative A: Act for specific agent**
+
+- Requires knowing their internal value
+- Not available (internal values unobservable)
+- Action becomes random relative to others
+
+*Unstable.*
+
+**❌ Alternative B: Act for majority**
+
+- Majority can change
+- Minority systematically lost
+- Future distinction space narrows
+
+*Forbidden.*
+
+**❌ Alternative C: Act for self**
+
+- Others become environment
+- Locally stable, globally not
+- Agent ecosystem dies
+
+*Forbidden by dynamics.*
+
+**Theorem (Unique Admissible Form):**
+
+Only one type of rule remains:
+
+> Action must be admissible **regardless of which agent you are**
+
+Formally:
+
+$$A \text{ admissible} \iff A \text{ preserves } V_{\text{global}} \;\forall\; \text{possible } V_i$$
+
+This is **permutation invariance over agents**.
+
+**Status:** FORCED (from generalized value + unobservability)
+
+**FORCED Symmetry Principle:**
+
+$$A(x \to y) \text{ admissible} \iff A(y \to x) \text{ admissible}$$
+
+This is NOT morality. This is:
+> The only way to act without destroying unknown values.
+
+**Why this is NOT choice and NOT "contract":**
+
+Important:
+- NO assumption that agent wants to be fair
+- NO assumption of rationality
+- NO assumption of culture
+
+Only:
+> If action is not invariant, it **structurally reduces future distinctions**
+
+**Formalization (Minimal):**
+
+Let:
+- $S$ = set of agents
+- $\pi \in \text{Perm}(S)$
+
+Then admissible action $A$ satisfies:
+
+$$V_{\text{global}}(A) = V_{\text{global}}(\pi A \pi^{-1})$$
+
+This is a **symmetry group**, not a norm.
+
+**First Ethical Object (Without Ethics):**
+
+We obtained NOT a rule of behavior, but:
+
+> **Class of admissible transformations**
+
+This is the same type of object as:
+- Admissible gauge transformations
+- Admissible morphisms
+- Admissible histories
+
+**What is already derived (without names):**
+
+| Common Name | DD Status |
+|-------------|-----------|
+| "Golden rule" | Special case of invariance |
+| Equal significance of agents | Consequence |
+| Prohibition of instrumentalization | Consequence |
+| Universalization | Consequence |
+
+We did NOT introduce these — they **fell out**.
+
+**Critical Moment:**
+
+We have obtained for the first time:
+
+> **Universal admissibility rule independent of observer**
+
+This is **exactly the same type of object as laws of physics**.
+
+| Structure | Status | Source |
+|-----------|--------|--------|
+| Act for specific agent fails | FORCED | Unobservability |
+| Act for majority fails | FORCED | Minority loss |
+| Act for self fails | FORCED | Ecosystem collapse |
+| Permutation invariance | FORCED | Only stable form |
+| V(A) = V(πAπ⁻¹) | FORCED | Symmetry group |
+| Golden rule as special case | DERIVED | From invariance |
+
+**What is NOW FORCED:**
+
+If actions must be invariant, then **sanctions must also be invariant**.
+
+Otherwise the rule does not reproduce.
+
+---
+
 ## Summary: Social Chain FORCED
 
 ```
@@ -6113,8 +6245,10 @@ T70: Norms — multi-agent → coordination → sanctions (FORCED)
       ↓
 T71: Generalized Value — structural irreplaceability (FORCED)
       ↓
+T72: Action Invariance — permutation symmetry, ethics core (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE
+   COMPLETE: Ø → DISTINCTION → CRITICALITY → PHYSICS → CHEMISTRY → BIOLOGY → CONSCIOUSNESS → SOCIETY → SCIENCE → CHOICE/AGENCY → NORMS → GENERALIZED VALUE → ACTION INVARIANCE
      Standard Model + Relativity
      + Einstein Field Equations FORCED
      + Fermion Generations ≥ 3
