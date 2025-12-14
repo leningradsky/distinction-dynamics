@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.11 — Cognition + Learning + Value FORCED)
+**Last updated:** 2025-12-14 (v2.12 — Choice FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 51 |
+| FORCED | 52 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -450,9 +450,9 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | CIRC | 0 |
 | PRED | 1 |
 
-**Note (T49):** Complete derivation — physics, chemistry, biology, information, cognition, mind all FORCED:
+**Note (T50):** Complete derivation — physics, chemistry, biology, information, cognition, agency, mind all FORCED:
 - 21 now DERIVED (traced chains)
-- 21 now FORCED for chemistry+biology+information+cognition+mind (T32-T49)
+- 22 now FORCED for chemistry+biology+information+cognition+agency+mind (T32-T50)
 - 2 now BOUND (α ∈ window, L/R chirality choice)
 - CIRC-1 BROKEN by T30, CIRC-2 BROKEN by T31
 
@@ -477,6 +477,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T48: Learning FORCED (error-driven model update)
 - T49: Value FORCED (error selection criterion)
 
+**Agency Layer (T50):**
+- T50: Choice FORCED (alternative selection under constraints)
+- Agency = Choice + Value + Learning (structural emergence)
+
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
 - T41: Modeling FORCED (internal models selected)
@@ -489,9 +493,10 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - **Biology is FORCED** — life is phase regime, not accident
 - **Information is FORCED** — code and semantics from selection
 - **Cognition is FORCED** — world model, learning, value from selection pressure
+- **Agency is FORCED** — choice from value + constraints + singular trajectory
 - **Mind is FORCED** — consciousness is Δ(Δ), "hard problem" dissolved
 
-**All fundamental physics + chemistry + biology + information + cognition + mind FORCED/DERIVED. No vitalism. No dualism. No semantic magic. No cognitive magic. All circularities resolved.**
+**All fundamental physics + chemistry + biology + information + cognition + agency + mind FORCED/DERIVED. No vitalism. No dualism. No semantic magic. No cognitive magic. No free will magic. All circularities resolved.**
 
 ---
 

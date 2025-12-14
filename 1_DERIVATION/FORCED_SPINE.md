@@ -1,7 +1,7 @@
 # FORCED SPINE — Complete Derivation
 
-**Version:** 2.11
-**Status:** Authoritative reference for the FORCED chain (T0-T49, Physics + Chemistry + Biology + Information + Cognition + Mind FORCED)
+**Version:** 2.12
+**Status:** Authoritative reference for the FORCED chain (T0-T50, Physics + Chemistry + Biology + Information + Cognition + Agency + Mind FORCED)
 
 This document contains the complete logical derivation from the primitive prohibition to quantum kinematics. Every step is either FORCED (logically necessary) or DERIVED (follows from FORCED + minimal definitions).
 
@@ -3291,6 +3291,92 @@ Value is criterion for internal selection.
 
 ---
 
+### T50: Choice (DD-Choice)
+
+**Statement:** In systems with value and limited resources, choice (selection among alternatives) is FORCED.
+
+**The Problem:**
+
+At each moment:
+- Multiple distinctions have **positive value**
+- Resources allow **at most one** trajectory update
+- Trajectory is singular (can't be in two states)
+
+This is not philosophy. This is geometry of constraints.
+
+**Alternatives eliminated:**
+
+1. **Realize all valuable updates:** Impossible — resources finite, updates conflict, trajectory unique.
+2. **Choose randomly:** Destroys value-connection → learning loses direction → degradation.
+3. **Fixed priority forever:** Environment changes → priorities obsolete → failure.
+
+**Theorem (Choice FORCED):**
+
+*Claim:* System must locally compare alternatives by contribution to future value.
+
+*Proof:*
+1. Multiple updates have positive value
+2. Can only realize one (resource constraint)
+3. Random = disconnected from value = degradation
+4. Fixed = fails under change
+5. Only option: compare by expected future value
+6. This IS choice ∎
+
+**Definition:**
+
+$$\text{Choice} = \arg\max_{\Delta_i \in \mathcal{A}} \mathbb{E}[V(\text{future} \mid \Delta_i)]$$
+
+Where:
+- $\mathcal{A}$ = admissible actions (not all conceivable)
+- Expectation over environmental uncertainty
+
+**Status:** FORCED (from value + limited resources + singular trajectory)
+
+**Key insight:** Choice ≠ Freedom
+
+No "metaphysical freedom", no "alternative universes".
+
+There IS: **unavoidable branching of admissible trajectories with impossibility of realizing all**.
+
+**Corollary (Locality of Choice):**
+
+Choice cannot be:
+- Globally optimal (limited knowledge)
+- Pre-computed (changing environment)
+- Absolute (context-dependent)
+
+Choice is always **local, contextual, historical**.
+
+**Corollary (Agency emerges):**
+
+If system:
+- Makes choices
+- Based on internal value
+- Considering future consequences
+
+Then it becomes:
+> **Agent relative to its history**
+
+Agency = having internal trajectory criterion.
+
+**Minimal agency requires:**
+- Value ✓
+- Choice ✓
+- Model update ✓
+
+Does NOT require:
+- Consciousness
+- Language
+- Intentions
+
+**DD interpretation:**
+
+$$\text{Agency} = \text{Choice} + \text{Value} + \text{Learning}$$
+
+This exists already at chemistry level.
+
+---
+
 ## Summary: Cognition Chain FORCED
 
 ```
@@ -3308,11 +3394,15 @@ Resources limited, errors many
       ↓
 Value FORCED (T49) — error selection
       ↓
+Multiple valuable options, one trajectory
+      ↓
+Choice FORCED (T50) — alternative selection
+      ↓
 ═══════════════════════════════════
-  COGNITION, LEARNING, VALUE FORCED
-  Not psychology, not choice
-  Structural necessity for
-  semantic systems in changing world
+  COGNITION → LEARNING → VALUE → CHOICE
+  Agency emerges structurally
+  No metaphysical freedom needed
+  Just geometry of constraints
 ═══════════════════════════════════
 ```
 
@@ -3421,8 +3511,10 @@ T48: Learning — error correction (FORCED)
       ↓
 T49: Value — error selection criterion (FORCED)
       ↓
+T50: Choice — alternative selection (FORCED)
+      ↓
 ═══════════════════════════════════════
-   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → MIND
+   COMPLETE: PHYSICS → CHEMISTRY → BIOLOGY → INFORMATION → COGNITION → AGENCY → MIND
      Standard Model + Relativity
      + Einstein Field Equations
      + Fermion Generations ≥ 3
@@ -3432,7 +3524,8 @@ T49: Value — error selection criterion (FORCED)
      + Molecular Geometry FORCED
      + Life as Phase Regime FORCED
      + Code/Semantics FORCED
-     + Cognition/Learning/Value FORCED
+     + Cognition/Learning/Value/Choice FORCED
+     + Agency as structural emergence FORCED
      + Consciousness as Δ(Δ) FORCED
       No physics postulates used
       No vitalism
@@ -3482,6 +3575,8 @@ Derived without postulates:
   • Cognition (world model for prediction)
   • Learning (error-driven model update)
   • Value (error selection criterion)
+  • Choice (alternative selection under constraints)
+  • Agency (structural emergence from choice+value+learning)
   • Gravitational coupling G (existence and finiteness)
   • Einstein field equations (unique minimal form)
   • Fermion generations N ≥ 3 (CP violation requirement)
