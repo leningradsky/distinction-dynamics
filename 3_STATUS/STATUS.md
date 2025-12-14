@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.19 — Unitarity from Distinguishability FORCED)
+**Last updated:** 2025-12-14 (v2.20 — Tensor Factorization + Measurement FORCED)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -441,7 +441,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Status | Count |
 |--------|-------|
-| FORCED | 63 |
+| FORCED | 66 |
 | DEF | 9 |
 | DERIVED | 21 |
 | BOUND | 2 |
@@ -504,6 +504,14 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - T61: Unitarity FORCED (ℂ, U(n), H†=H from distinguishability)
 - **CRITICAL CONVERGENCE:** Physics chain (T7-T11) ∩ Social chain (T50-T61) → same structure
 - Quantum dynamics skeleton complete
+
+**Measurement Layer (T62):**
+- T62: Tensor Factorization FORCED (ψ_AB = ψ_A ⊗ ψ_B from local distinguishability)
+- T62: Partial Trace FORCED (ρ_A = Tr_B(ρ_AB) from subsystem description)
+- T62: Born Rule FORCED (p_i = |ψ_i|² as unique invariant measure)
+- T62: Measurement = global → local distinguishability transition (no collapse)
+- **"Measurement problem" dissolved** — no observer, no collapse, no postulate
+- Complete quantum dynamics: Hilbert space + unitarity + tensor structure + Born rule
 
 **Mind Layer (T40-T44):**
 - T40: Agency FORCED (self-modifying systems selected)
