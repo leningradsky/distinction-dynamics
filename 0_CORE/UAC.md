@@ -99,6 +99,33 @@ This is the admissible regime.
 
 ---
 
+## Important: Discrete vs Continuous Formulation
+
+**Key observation:** The UAC criterion (0 < Φ < ∞) does NOT require ℝ.
+
+The classification can be stated purely over ℕ:
+
+```
+COLLAPSE:   ∃k ∈ ℕ: P(n) ≤ nᵏ for all sufficiently large n
+EXPLOSION:  ∀k ∈ ℕ: ∃n: P(n) > kⁿ
+CRITICAL:   ¬COLLAPSE ∧ ¬EXPLOSION
+```
+
+| Concept | Requires ℝ? |
+|---------|-------------|
+| UAC as classification | No — ℕ suffices |
+| Φ as specific number | Yes — needs log, limits |
+| CR-1..CR-7 constraints | No — structural over ℕ |
+
+**Implication:** The critical regime is FORCED from ℕ alone. The continuum (ℝ) is needed only for:
+- Assigning a numerical value to Φ
+- Geometric/topological interpretations
+- Physical applications (HYP-C1)
+
+This clarifies GAP-2: continuum is NOT required for the FORCED chain, only for bridges to physics.
+
+---
+
 ## Equivalences in Other Contexts
 
 This definition of Φ is equivalent to known concepts:

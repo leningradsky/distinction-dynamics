@@ -17,23 +17,18 @@
 
 ## 1. Discrete → Continuous Bridges
 
-### HYP-C1: Continuum Emergence
+### ~~HYP-C1: Continuum Emergence~~ — **SUPERSEDED**
 
-**Statement:** Continuous manifolds emerge from discrete distinction structure.
+> **This hypothesis has been superseded.** The continuum (ℝ) is now FORCED via Chain-9,10,11 in [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md). See GAP-2 closure.
 
-**Depends on:** FORCED Chain-8 (ℕ from recursion), DEF-C (category of distinctions)
+**Original statement:** Continuous manifolds emerge from discrete distinction structure.
 
-**Introduces:** Continuum, limits, topology, differential structure
+**Resolution:** Criticality (0 < Φ < ∞) forces:
+- ℤ: iteration comparison requires signed differences
+- ℚ: multi-generator comparison requires ratios
+- ℝ: Cauchy completeness required (incomplete structures violate criticality)
 
-**Justification:** The discrete poset (C, ≼) has infinite chains. Taking appropriate limits/completions yields continuous structures.
-
-**Status:** **Hypothetical bridge.** No derivation of why limits must exist or how topology emerges from pure distinction.
-
-**Alternative interpretations:**
-
-- Structure remains fundamentally discrete
-- Continuum is phenomenological approximation
-- Requires additional axioms (e.g., completeness, compactness)
+The continuum is not hypothetical — it is uniquely forced by criticality.
 
 ---
 
@@ -43,7 +38,13 @@
 - DEF **(B2; limits/completions)**: introduce a directed system in `C` and take a direct limit of `X` in `Hilb` (or, separately, introduce a topology/metric on a state space and take a completion).
 - DEF **(B3; invariance constraints)**: introduce an action of a group `G` on the chosen target (e.g. by unitary operators on `X(u)`), and impose invariance/equivariance constraints.
 
-**Note:** B1-B3 are **definitional choices** (how we choose to represent discrete structure), not forced by Δ = Δ(Δ).
+**Note (v2.5):** B1-B3 are **definitional choices** for explicit construction. The *existence* of such representation is FORCED by the derivation chain:
+- T7: ℂ is FORCED by automorphism closure
+- T8: Unitarity U(n) is FORCED by criticality preservation
+- T9: Continuous history t ∈ ℝ is FORCED by completeness
+- T13: Tensor structure is FORCED by locality preservation
+
+The functor X: C → Hilb is therefore FORCED to exist (conceptually). The explicit construction is **GAP-7 (OPEN-TECH)** — a technical formalization task, not a conceptual gap.
 
 ## 2. Critical Representation Conditions (R1–R5)
 
@@ -77,7 +78,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 
 **Statement:** The geometry of distinction configurations is the Fisher information metric.
 
-**Depends on:** HYP-C1 (continuum), DEF (Fisher metric)
+**Depends on:** Chain-11 (ℝ, FORCED continuum), DEF (Fisher metric)
 
 **Introduces:** Identification of abstract distinction space with statistical manifold
 
@@ -98,21 +99,20 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 
 ---
 
-### HYP-F2: Time Parameter Emergence
+### ~~HYP-F2: Time Parameter Emergence~~ — **SUPERSEDED**
 
-**Statement:** A continuous time parameter t ∈ ℝ emerges from distinction recursion.
+> **This hypothesis has been superseded.** Continuous time t ∈ ℝ is now FORCED via DD-Time theorem in [FORCED_CHAIN.md](../1_DERIVATION/FORCED_CHAIN.md). See GAP-3 closure.
 
-**Depends on:** FORCED Chain-7 (recursion Δ = Δ(Δ(Δ(...))))
+**Original statement:** A continuous time parameter t ∈ ℝ emerges from distinction recursion.
 
-**Introduces:** Time as continuous parameter
+**Resolution:** Criticality + unitarity forces continuous time:
+- History parameter T must be: ordered, additive, invertible, dense
+- ℤ fails: discrete jumps → distinguishability not dense → subcritical
+- ℚ fails: incomplete → histories "fall out" at irrational limits
+- ℝ: unique connected, complete, ordered abelian group (classical theorem)
+- Stone's theorem: continuous unitary groups require ℝ → U(n) homomorphism
 
-**Status:** **Major gap.** The forced chain has discrete recursion (ℕ indexing). The jump to continuous t is unjustified.
-
-**Missing:**
-
-- Why continuous rather than discrete time steps?
-- Direction of time (why ∂_t not bidirectional)?
-- Metric on time (why dt² vs other measures)?
+Continuous time is not hypothetical — it is uniquely forced by critical unitary dynamics.
 
 ---
 
@@ -124,7 +124,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 ∂_t g_ij = -2 Ric_ij + 2 ∇_i∇_j log p
 ```
 
-**Depends on:** HYP-F1 (Fisher metric), HYP-F2 (time parameter)
+**Depends on:** HYP-F1 (Fisher metric), DD-Time (FORCED time parameter)
 
 **Introduces:** Parabolic PDE, geometric flow
 
@@ -146,7 +146,7 @@ g_ij(θ) = ∫ (∂_i log p)(∂_j log p) p(x|θ) dx
 iℏ ∂_t ψ = Ĥψ
 ```
 
-**Depends on:** HYP-F1 (Fisher metric), HYP-F2 (time)
+**Depends on:** HYP-F1 (Fisher metric), DD-Time (FORCED time parameter)
 
 **Reference:** Frieden (2004) - *Physics from Fisher Information*
 
@@ -455,9 +455,25 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 ---
 
-### CONJ-A1: Fine Structure Constant 1/α = 137
+### BOUND-α: Fine Structure Constant α ∈ Critical Window
 
-**Statement:** The inverse fine structure constant is:
+**Statement:** The electromagnetic coupling α is constrained to a critical window.
+
+**Status:** **BOUND** (constrained, not arbitrary)
+
+**Derivation from criticality:**
+
+1. **α → 0 forbidden:** U(1) coupling vanishes → electromagnetic interaction trivializes → gauge structure incomplete → violates DD-Gauge
+2. **α → 1 forbidden:** QED perturbation series fails → theory undefined at critical scales → Φ → ∞
+3. **α must lie in critical regime:** Neither trivial (Φ → 0) nor non-perturbative (Φ → ∞)
+
+The actual value α ≈ 1/137 is BOUND — constrained to this window by criticality, not "selected" from options.
+
+---
+
+### CONJ-A1: Formula 1/α = 11² + 4² = 137
+
+**Statement:** The specific inverse fine structure constant formula:
 
 ```
 1/α = 11² + 4² = 121 + 16 = 137
@@ -465,17 +481,17 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 
 **Interpretation:** 11 = 3 (generations) + 8 (gluons), 4 = 2² (charge degrees of freedom)
 
-**Depends on:** CIRC-1 (SU(3), 3 generations)
+**Depends on:** DD-Gauge (SU(3)×SU(2)×U(1)), DD-Generations (N ≥ 3)
 
-**Status:** **CONJ - Numerology.** Multiple problems:
+**Status:** **CONJ - Pattern.** Multiple issues:
 
 1. **Non-unique decomposition:** 137 = 2⁷+2³+1 = 11×12+5 = many others
-2. **No derivation:** Why (generations + gluons)² + (charge DOF)²?
+2. **No derivation:** Why specifically (generations + gluons)² + (charge DOF)²?
 3. **Empirical mismatch:** α⁻¹ = 137.035999... (not exactly 137)
 
-**Empirical fit:** 137.000 vs 137.036 → 99.97% agreement (good but not perfect)
+**Empirical fit:** 137.000 vs 137.036 → 99.97% agreement
 
-**Assessment:** Interesting pattern, but could be coincidence. Needs rigorous derivation of formula structure.
+**Assessment:** The VALUE α ≈ 1/137 is BOUND (constrained). The FORMULA 11² + 4² = 137 remains CONJ (pattern that may be coincidence).
 
 ---
 
@@ -594,15 +610,18 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 6. ε = √2 - DERIVED (from Q)
 7. SU(3) uniqueness - DERIVED (given 4 physical constraints)
 
+### Now FORCED (Previously HYP):
+
+1. ~~Continuum existence (HYP-C1)~~ → FORCED via Chain-9,10,11
+2. ~~Time parameter (HYP-F2)~~ → FORCED via DD-Time theorem
+
 ### Requires Hypotheses (HYP):
 
-1. Continuum existence (HYP-C1)
-2. Fisher metric identification (HYP-F1)
-3. Time parameter (HYP-F2)
-4. Quantum framework (HYP-Q1)
-5. Gauge principle (HYP-G1)
-6. Lorentz invariance (HYP-S3)
-7. Physical spacetime identification (HYP-S4)
+1. Fisher metric identification (HYP-F1)
+2. Quantum framework (HYP-Q1)
+3. Gauge principle (HYP-G1)
+4. Lorentz invariance (HYP-S3)
+5. Physical spacetime identification (HYP-S4)
 
 ### Requires Physical Facts (Empirical Input):
 
@@ -612,12 +631,15 @@ Q = (m_e + m_μ + m_τ) / (√m_e + √m_μ + √m_τ)² = 2/3
 4. Λ > 0 observation (HYP-Λ1)
 5. Physical constants ℏ, c, G (HYP-Q2)
 
+### Bounds (Constrained Values):
+
+1. α ∈ critical window (BOUND-α) — not arbitrary, constrained by criticality
+
 ### Conjectures (Pattern Matching):
 
-1. 3 spatial dimensions (CONJ via HYP-S1)
-2. α⁻¹ = 137 formula (CONJ-A1)
-3. θ ≈ 2/9 (CONJ-K2)
-4. Λ_eff formula (CONJ-Λ2)
+1. α⁻¹ = 11² + 4² = 137 formula (CONJ-A1) — specific formula, may be numerology
+2. θ ≈ 2/9 (CONJ-K2)
+3. Λ_eff formula (CONJ-Λ2)
 
 ---
 

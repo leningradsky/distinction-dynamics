@@ -1,0 +1,371 @@
+DIGEST 0b7c6cfd1e4b44678d8a4917c4c1e278
+FT7_Frobenius
+R153:157 Coq.Reals.Reals <> <> lib
+R175:177 Coq.micromega.Lra <> <> lib
+rec 406:409 <> Alg2
+proj 423:424 <> re
+proj 431:432 <> im
+R428:428 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R436:436 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 592:594 <> add
+R603:606 T7_Frobenius <> Alg2 rec
+binder 597:597 <> a:4
+binder 599:599 <> b:5
+R611:614 T7_Frobenius <> Alg2 rec
+R621:626 T7_Frobenius <> mkAlg2 constr
+R633:635 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R629:630 T7_Frobenius <> re proj
+R632:632 T7_Frobenius <> a:4 var
+R636:637 T7_Frobenius <> re proj
+R639:639 T7_Frobenius <> b:5 var
+R647:649 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R643:644 T7_Frobenius <> im proj
+R646:646 T7_Frobenius <> a:4 var
+R650:651 T7_Frobenius <> im proj
+R653:653 T7_Frobenius <> b:5 var
+def 714:716 <> mul
+R727:727 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 719:723 <> alpha:6
+R737:740 T7_Frobenius <> Alg2 rec
+binder 731:731 <> a:7
+binder 733:733 <> b:8
+R745:748 T7_Frobenius <> Alg2 rec
+R755:760 T7_Frobenius <> mkAlg2 constr
+R774:776 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R767:769 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R763:764 T7_Frobenius <> re proj
+R766:766 T7_Frobenius <> a:7 var
+R770:771 T7_Frobenius <> re proj
+R773:773 T7_Frobenius <> b:8 var
+R789:791 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R782:784 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R777:781 T7_Frobenius <> alpha:6 var
+R785:786 T7_Frobenius <> im proj
+R788:788 T7_Frobenius <> a:7 var
+R792:793 T7_Frobenius <> im proj
+R795:795 T7_Frobenius <> b:8 var
+R819:821 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R812:814 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R808:809 T7_Frobenius <> re proj
+R811:811 T7_Frobenius <> a:7 var
+R815:816 T7_Frobenius <> im proj
+R818:818 T7_Frobenius <> b:8 var
+R826:828 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R822:823 T7_Frobenius <> im proj
+R825:825 T7_Frobenius <> a:7 var
+R829:830 T7_Frobenius <> re proj
+R832:832 T7_Frobenius <> b:8 var
+def 867:871 <> norm2
+R878:881 T7_Frobenius <> Alg2 rec
+binder 874:874 <> a:9
+R886:886 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R902:904 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R895:897 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R891:892 T7_Frobenius <> re proj
+R894:894 T7_Frobenius <> a:9 var
+R898:899 T7_Frobenius <> re proj
+R901:901 T7_Frobenius <> a:9 var
+R909:911 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R905:906 T7_Frobenius <> im proj
+R908:908 T7_Frobenius <> a:9 var
+R912:913 T7_Frobenius <> im proj
+R915:915 T7_Frobenius <> a:9 var
+def 946:949 <> conj
+R956:959 T7_Frobenius <> Alg2 rec
+binder 952:952 <> a:10
+R964:967 T7_Frobenius <> Alg2 rec
+R972:977 T7_Frobenius <> mkAlg2 constr
+R980:981 T7_Frobenius <> re proj
+R983:983 T7_Frobenius <> a:10 var
+R987:988 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R989:990 T7_Frobenius <> im proj
+R992:992 T7_Frobenius <> a:10 var
+prf 1146:1161 <> norm2_mul_expand
+binder 1172:1176 <> alpha:11
+binder 1178:1178 <> a:12
+binder 1180:1180 <> b:13
+R1206:1213 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1185:1189 T7_Frobenius <> norm2 def
+R1192:1194 T7_Frobenius <> mul def
+R1196:1200 T7_Frobenius <> alpha:11 var
+R1202:1202 T7_Frobenius <> a:12 var
+R1204:1204 T7_Frobenius <> b:13 var
+R1251:1258 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1214:1214 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1248:1250 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1226:1228 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1219:1221 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1215:1216 T7_Frobenius <> re proj
+R1218:1218 T7_Frobenius <> a:12 var
+R1222:1223 T7_Frobenius <> re proj
+R1225:1225 T7_Frobenius <> b:13 var
+R1241:1243 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1234:1236 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1229:1233 T7_Frobenius <> alpha:11 var
+R1237:1238 T7_Frobenius <> im proj
+R1240:1240 T7_Frobenius <> a:12 var
+R1244:1245 T7_Frobenius <> im proj
+R1247:1247 T7_Frobenius <> b:13 var
+R1259:1259 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1285:1287 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1271:1273 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1264:1266 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1260:1261 T7_Frobenius <> re proj
+R1263:1263 T7_Frobenius <> a:12 var
+R1267:1268 T7_Frobenius <> im proj
+R1270:1270 T7_Frobenius <> b:13 var
+R1278:1280 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1274:1275 T7_Frobenius <> im proj
+R1277:1277 T7_Frobenius <> a:12 var
+R1281:1282 T7_Frobenius <> re proj
+R1284:1284 T7_Frobenius <> b:13 var
+R1314:1318 T7_Frobenius <> norm2 def
+R1321:1323 T7_Frobenius <> mul def
+R1342:1345 Coq.Reals.RIneq <> Rsqr def
+prf 1420:1449 <> norm_multiplicative_iff_minus1
+R1468:1471 T7_Frobenius <> Alg2 rec
+binder 1462:1462 <> a:14
+binder 1464:1464 <> b:15
+R1523:1523 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1576:1582 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 1531:1531 <> a:16
+binder 1533:1533 <> b:17
+R1556:1558 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1536:1540 T7_Frobenius <> norm2 def
+R1543:1545 T7_Frobenius <> mul def
+R1552:1552 T7_Frobenius <> a:16 var
+R1554:1554 T7_Frobenius <> b:17 var
+R1566:1568 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1559:1563 T7_Frobenius <> norm2 def
+R1565:1565 T7_Frobenius <> a:16 var
+R1569:1573 T7_Frobenius <> norm2 def
+R1575:1575 T7_Frobenius <> b:17 var
+R1583:1586 Coq.Init.Logic <> True ind
+prf 1696:1716 <> C_norm_multiplicative
+R1733:1736 T7_Frobenius <> Alg2 rec
+binder 1727:1727 <> a:18
+binder 1729:1729 <> b:19
+R1761:1763 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1741:1745 T7_Frobenius <> norm2 def
+R1748:1750 T7_Frobenius <> mul def
+R1757:1757 T7_Frobenius <> a:18 var
+R1759:1759 T7_Frobenius <> b:19 var
+R1771:1773 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1764:1768 T7_Frobenius <> norm2 def
+R1770:1770 T7_Frobenius <> a:18 var
+R1774:1778 T7_Frobenius <> norm2 def
+R1780:1780 T7_Frobenius <> b:19 var
+R1825:1829 T7_Frobenius <> norm2 def
+R1832:1834 T7_Frobenius <> mul def
+def 1935:1939 <> C_mul
+R1944:1946 T7_Frobenius <> mul def
+def 2024:2031 <> Dual_mul
+R2036:2038 T7_Frobenius <> mul def
+prf 2050:2066 <> dual_zero_divisor
+R2082:2087 T7_Frobenius <> mkAlg2 constr
+binder 2077:2077 <> e:20
+R2110:2112 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2098:2105 T7_Frobenius <> Dual_mul def
+R2107:2107 T7_Frobenius <> e:20 var
+R2109:2109 T7_Frobenius <> e:20 var
+R2113:2118 T7_Frobenius <> mkAlg2 constr
+R2141:2148 T7_Frobenius <> Dual_mul def
+R2151:2153 T7_Frobenius <> mul def
+def 2254:2262 <> Split_mul
+R2267:2269 T7_Frobenius <> mul def
+prf 2281:2298 <> split_zero_divisor
+R2313:2318 T7_Frobenius <> mkAlg2 constr
+binder 2308:2308 <> a:21
+R2338:2343 T7_Frobenius <> mkAlg2 constr
+binder 2333:2333 <> b:22
+R2370:2372 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2357:2365 T7_Frobenius <> Split_mul def
+R2367:2367 T7_Frobenius <> a:21 var
+R2369:2369 T7_Frobenius <> b:22 var
+R2373:2378 T7_Frobenius <> mkAlg2 constr
+R2401:2409 T7_Frobenius <> Split_mul def
+R2412:2414 T7_Frobenius <> mul def
+def 2558:2561 <> zero
+R2565:2568 T7_Frobenius <> Alg2 rec
+R2573:2578 T7_Frobenius <> mkAlg2 constr
+def 2612:2618 <> nonzero
+R2625:2628 T7_Frobenius <> Alg2 rec
+binder 2621:2621 <> a:23
+R2642:2645 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2641:2641 T7_Frobenius <> a:23 var
+R2646:2649 T7_Frobenius <> zero def
+def 2713:2729 <> has_zero_divisors
+R2740:2740 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2732:2736 <> alpha:24
+R2755:2761 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2765:2766 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2762:2762 <> a:25
+binder 2764:2764 <> b:26
+R2776:2779 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2767:2773 T7_Frobenius <> nonzero def
+R2775:2775 T7_Frobenius <> a:25 var
+R2789:2792 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2780:2786 T7_Frobenius <> nonzero def
+R2788:2788 T7_Frobenius <> b:26 var
+R2806:2808 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2793:2795 T7_Frobenius <> mul def
+R2797:2801 T7_Frobenius <> alpha:24 var
+R2803:2803 T7_Frobenius <> a:25 var
+R2805:2805 T7_Frobenius <> b:26 var
+R2809:2812 T7_Frobenius <> zero def
+prf 2854:2862 <> neq_by_im
+binder 2873:2873 <> a:27
+binder 2875:2875 <> b:28
+R2890:2893 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2882:2885 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2878:2879 T7_Frobenius <> im proj
+R2881:2881 T7_Frobenius <> a:27 var
+R2886:2887 T7_Frobenius <> im proj
+R2889:2889 T7_Frobenius <> b:28 var
+R2895:2898 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2894:2894 T7_Frobenius <> a:27 var
+R2899:2899 T7_Frobenius <> b:28 var
+prf 3053:3074 <> dual_has_zero_divisors
+R3078:3094 T7_Frobenius <> has_zero_divisors def
+R3116:3121 T7_Frobenius <> mkAlg2 constr
+R3130:3135 T7_Frobenius <> mkAlg2 constr
+R3116:3121 T7_Frobenius <> mkAlg2 constr
+R3130:3135 T7_Frobenius <> mkAlg2 constr
+R3152:3158 T7_Frobenius <> nonzero def
+R3161:3164 T7_Frobenius <> zero def
+R3167:3169 T7_Frobenius <> mul def
+R3208:3216 T7_Frobenius <> neq_by_im thm
+R3208:3216 T7_Frobenius <> neq_by_im thm
+R3241:3249 T7_Frobenius <> neq_by_im thm
+R3241:3249 T7_Frobenius <> neq_by_im thm
+prf 3335:3357 <> split_has_zero_divisors
+R3361:3377 T7_Frobenius <> has_zero_divisors def
+R3399:3404 T7_Frobenius <> mkAlg2 constr
+R3413:3418 T7_Frobenius <> mkAlg2 constr
+R3399:3404 T7_Frobenius <> mkAlg2 constr
+R3413:3418 T7_Frobenius <> mkAlg2 constr
+R3438:3444 T7_Frobenius <> nonzero def
+R3447:3450 T7_Frobenius <> zero def
+R3453:3455 T7_Frobenius <> mul def
+R3494:3502 T7_Frobenius <> neq_by_im thm
+R3494:3502 T7_Frobenius <> neq_by_im thm
+R3527:3535 T7_Frobenius <> neq_by_im thm
+R3527:3535 T7_Frobenius <> neq_by_im thm
+prf 3657:3674 <> C_no_zero_divisors
+binder 3687:3687 <> a:29
+binder 3689:3689 <> b:30
+R3711:3717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3704:3706 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3692:3694 T7_Frobenius <> mul def
+R3701:3701 T7_Frobenius <> a:29 var
+R3703:3703 T7_Frobenius <> b:30 var
+R3707:3710 T7_Frobenius <> zero def
+R3718:3718 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3739:3744 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3765:3765 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3727:3730 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3723:3725 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3719:3720 T7_Frobenius <> re proj
+R3722:3722 T7_Frobenius <> a:29 var
+R3735:3737 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3731:3732 T7_Frobenius <> im proj
+R3734:3734 T7_Frobenius <> a:29 var
+R3753:3756 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3749:3751 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3745:3746 T7_Frobenius <> re proj
+R3748:3748 T7_Frobenius <> b:30 var
+R3761:3763 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3757:3758 T7_Frobenius <> im proj
+R3760:3760 T7_Frobenius <> b:30 var
+R3933:3954 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3887:3891 T7_Frobenius <> norm2 def
+R3894:3896 T7_Frobenius <> mul def
+R3904:3909 T7_Frobenius <> mkAlg2 constr
+R3919:3924 T7_Frobenius <> mkAlg2 constr
+R3975:3977 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3955:3959 T7_Frobenius <> norm2 def
+R3962:3967 T7_Frobenius <> mkAlg2 constr
+R3978:3982 T7_Frobenius <> norm2 def
+R3985:3990 T7_Frobenius <> mkAlg2 constr
+R3933:3954 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3887:3891 T7_Frobenius <> norm2 def
+R3894:3896 T7_Frobenius <> mul def
+R3904:3909 T7_Frobenius <> mkAlg2 constr
+R3919:3924 T7_Frobenius <> mkAlg2 constr
+R3975:3977 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3955:3959 T7_Frobenius <> norm2 def
+R3962:3967 T7_Frobenius <> mkAlg2 constr
+R3978:3982 T7_Frobenius <> norm2 def
+R3985:3990 T7_Frobenius <> mkAlg2 constr
+R4011:4031 T7_Frobenius <> C_norm_multiplicative thm
+R4011:4031 T7_Frobenius <> C_norm_multiplicative thm
+R4068:4072 T7_Frobenius <> norm2 def
+R4075:4078 T7_Frobenius <> zero def
+R4260:4263 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R4256:4258 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4246:4248 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4241:4243 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4251:4253 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4281:4283 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4271:4273 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4266:4268 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4276:4278 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4260:4263 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R4256:4258 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4246:4248 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4241:4243 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4251:4253 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4281:4283 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4271:4273 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4266:4268 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4276:4278 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4298:4311 Coq.Reals.RIneq <> Rmult_integral thm
+R4298:4311 Coq.Reals.RIneq <> Rmult_integral thm
+R4386:4389 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4381:4383 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4386:4389 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4381:4383 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4425:4428 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4420:4422 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4425:4428 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4420:4422 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4454:4456 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4454:4456 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4482:4484 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4482:4484 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4541:4544 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4536:4538 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4541:4544 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4536:4538 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4580:4583 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4575:4577 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4580:4583 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R4575:4577 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4609:4611 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4609:4611 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4637:4639 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4637:4639 Coq.Init.Logic <> ::type_scope:x_'='_x not
+prf 4728:4738 <> T7_C_unique
+R5079:5082 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5060:5076 T7_Frobenius <> has_zero_divisors def
+R5102:5108 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5161:5161 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5083:5099 T7_Frobenius <> has_zero_divisors def
+binder 5116:5116 <> a:31
+binder 5118:5118 <> b:32
+R5141:5143 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5121:5125 T7_Frobenius <> norm2 def
+R5128:5130 T7_Frobenius <> mul def
+R5137:5137 T7_Frobenius <> a:31 var
+R5139:5139 T7_Frobenius <> b:32 var
+R5151:5153 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5144:5148 T7_Frobenius <> norm2 def
+R5150:5150 T7_Frobenius <> a:31 var
+R5154:5158 T7_Frobenius <> norm2 def
+R5160:5160 T7_Frobenius <> b:32 var
+R5187:5208 T7_Frobenius <> dual_has_zero_divisors thm
+R5226:5248 T7_Frobenius <> split_has_zero_divisors thm
+R5258:5278 T7_Frobenius <> C_norm_multiplicative thm
+R5187:5208 T7_Frobenius <> dual_has_zero_divisors thm
+R5226:5248 T7_Frobenius <> split_has_zero_divisors thm
+R5258:5278 T7_Frobenius <> C_norm_multiplicative thm

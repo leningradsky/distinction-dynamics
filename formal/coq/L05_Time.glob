@@ -1,0 +1,160 @@
+DIGEST 5b6862eef0368e932ef63f4ac7cb0494
+FL05_Time
+R74:78 Coq.Reals.Reals <> <> lib
+R96:98 Coq.micromega.Lra <> <> lib
+def 192:195 <> Time
+R200:200 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+prf 234:248 <> T9_time_ordered
+R267:270 L05_Time <> Time def
+binder 259:260 <> t1:1
+binder 262:263 <> t2:2
+R280:283 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R275:277 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R273:274 L05_Time <> t1:1 var
+R278:279 L05_Time <> t2:2 var
+R291:294 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R286:288 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R284:285 L05_Time <> t1:1 var
+R289:290 L05_Time <> t2:2 var
+R297:299 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R295:296 L05_Time <> t1:1 var
+R300:301 L05_Time <> t2:2 var
+prf 358:370 <> T9_time_dense
+R389:392 L05_Time <> Time def
+binder 381:382 <> t1:3
+binder 384:385 <> t2:4
+R402:408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R397:399 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R395:396 L05_Time <> t1:3 var
+R400:401 L05_Time <> t2:4 var
+R409:415 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R424:425 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R420:423 L05_Time <> Time def
+binder 416:416 <> t:5
+R432:435 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R428:430 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R426:427 L05_Time <> t1:3 var
+R431:431 L05_Time <> t:5 var
+R437:439 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R436:436 L05_Time <> t:5 var
+R440:441 L05_Time <> t2:4 var
+R467:467 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R475:478 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R470:472 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R467:467 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R475:478 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R470:472 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+prf 534:547 <> T9_time_add_id
+R562:565 L05_Time <> Time def
+binder 558:558 <> t:6
+R573:575 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R569:571 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R568:568 L05_Time <> t:6 var
+R576:576 L05_Time <> t:6 var
+prf 613:627 <> T9_time_add_inv
+R642:645 L05_Time <> Time def
+binder 638:638 <> t:7
+R656:658 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R649:652 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R655:655 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R648:648 L05_Time <> t:7 var
+R653:653 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R654:654 L05_Time <> t:7 var
+rec 787:799 <> OneParamGroup
+proj 814:819 <> action
+proj 847:852 <> opg_id
+proj 884:891 <> opg_comp
+R827:830 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R823:826 L05_Time <> Time def
+R835:838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R831:834 L05_Time <> Time def
+R839:842 L05_Time <> Time def
+binder 863:863 <> x:10
+R876:878 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R866:871 L05_Time <> action:9 meth
+R875:875 L05_Time <> x:10 var
+R879:879 L05_Time <> x:10 var
+binder 902:903 <> t1:12
+binder 905:906 <> t2:13
+binder 908:908 <> x:14
+R934:936 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R911:916 L05_Time <> action:9 meth
+R922:927 L05_Time <> action:9 meth
+R932:932 L05_Time <> x:14 var
+R929:930 L05_Time <> t2:13 var
+R918:919 L05_Time <> t1:12 var
+R937:942 L05_Time <> action:9 meth
+R954:954 L05_Time <> x:14 var
+R947:949 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R945:946 L05_Time <> t1:12 var
+R950:951 L05_Time <> t2:13 var
+prf 1012:1019 <> trans_id
+R1034:1037 L05_Time <> Time def
+binder 1030:1030 <> x:16
+R1045:1047 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1041:1043 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1040:1040 L05_Time <> x:16 var
+R1048:1048 L05_Time <> x:16 var
+prf 1083:1092 <> trans_comp
+R1113:1116 L05_Time <> Time def
+binder 1103:1104 <> t1:17
+binder 1106:1107 <> t2:18
+binder 1109:1109 <> x:19
+R1132:1134 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1119:1119 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1126:1129 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1121:1123 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1120:1120 L05_Time <> x:19 var
+R1124:1125 L05_Time <> t2:18 var
+R1130:1131 L05_Time <> t1:17 var
+R1136:1139 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1147:1147 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1135:1135 L05_Time <> x:19 var
+R1142:1144 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1140:1141 L05_Time <> t1:17 var
+R1145:1146 L05_Time <> t2:18 var
+def 1187:1203 <> translation_group
+R1207:1219 L05_Time <> OneParamGroup rec
+R1226:1230 L05_Time <> mkOPG constr
+binder 1237:1237 <> t:20
+binder 1239:1239 <> x:21
+R1245:1247 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1244:1244 L05_Time <> x:21 var
+R1248:1248 L05_Time <> t:20 var
+R1251:1258 L05_Time <> trans_id thm
+R1260:1269 L05_Time <> trans_comp thm
+prf 1428:1443 <> T10_homomorphism
+R1459:1471 L05_Time <> OneParamGroup rec
+binder 1455:1455 <> g:22
+binder 1474:1475 <> t1:23
+binder 1477:1478 <> t2:24
+binder 1480:1480 <> x:25
+R1505:1507 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1485:1490 L05_Time <> action proj
+R1492:1492 L05_Time <> g:22 var
+R1497:1499 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1495:1496 L05_Time <> t1:23 var
+R1500:1501 L05_Time <> t2:24 var
+R1504:1504 L05_Time <> x:25 var
+R1508:1513 L05_Time <> action proj
+R1515:1515 L05_Time <> g:22 var
+R1517:1518 L05_Time <> t1:23 var
+R1521:1526 L05_Time <> action proj
+R1528:1528 L05_Time <> g:22 var
+R1530:1531 L05_Time <> t2:24 var
+R1533:1533 L05_Time <> x:25 var
+R1568:1575 L05_Time <> opg_comp proj
+R1568:1575 L05_Time <> opg_comp proj
+prf 1614:1625 <> T10_identity
+R1641:1653 L05_Time <> OneParamGroup rec
+binder 1637:1637 <> g:26
+binder 1656:1656 <> x:27
+R1673:1675 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1661:1666 L05_Time <> action proj
+R1668:1668 L05_Time <> g:26 var
+R1672:1672 L05_Time <> x:27 var
+R1676:1676 L05_Time <> x:27 var
+R1700:1705 L05_Time <> opg_id proj
+R1700:1705 L05_Time <> opg_id proj
+prf 1722:1729 <> L05_done
+R1733:1736 Coq.Init.Logic <> True ind

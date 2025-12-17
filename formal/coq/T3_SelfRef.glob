@@ -1,0 +1,120 @@
+DIGEST 954d3e868439c5ddcbab222375404f02
+FT3_SelfRef
+ind 301:301 <> U
+constr 327:330 <> BOOL
+constr 340:342 <> NAT
+constr 352:355 <> UNIT
+constr 365:369 <> ARROW
+R334:334 T3_SelfRef <> U:1 ind
+R346:346 T3_SelfRef <> U:1 ind
+R359:359 T3_SelfRef <> U:1 ind
+R374:377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R373:373 T3_SelfRef <> U:1 ind
+R379:382 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R378:378 T3_SelfRef <> U:1 ind
+R383:383 T3_SelfRef <> U:1 ind
+scheme 301:301 <> U_rect
+scheme 301:301 <> U_ind
+scheme 301:301 <> U_rec
+scheme 301:301 <> U_sind
+def 426:427 <> El
+R438:442 T3_SelfRef <> U ind
+binder 434:434 <> c:3
+R467:467 T3_SelfRef <> c:3 var
+R478:481 T3_SelfRef <> BOOL constr
+R486:489 Coq.Init.Datatypes <> bool ind
+R495:497 T3_SelfRef <> NAT constr
+R502:504 Coq.Init.Datatypes <> nat ind
+R510:513 T3_SelfRef <> UNIT constr
+R518:521 Coq.Init.Datatypes <> unit ind
+R527:531 T3_SelfRef <> ARROW constr
+R544:547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R540:541 T3_SelfRef <> El:4 def
+R548:549 T3_SelfRef <> El:4 def
+R720:720 T3_SelfRef <> U ind
+R767:770 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R766:766 T3_SelfRef <> U ind
+R761:762 T3_SelfRef <> El def
+def 1037:1047 <> code_eq_dec
+R1058:1058 T3_SelfRef <> U ind
+binder 1050:1051 <> c1:6
+binder 1053:1054 <> c2:7
+R1063:1063 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1071:1075 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1084:1084 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R1066:1068 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1064:1065 T3_SelfRef <> c1:6 var
+R1069:1070 T3_SelfRef <> c2:7 var
+R1078:1081 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1076:1077 T3_SelfRef <> c1:6 var
+R1082:1083 T3_SelfRef <> c2:7 var
+prf 1164:1174 <> BOOL_ne_NAT
+R1182:1185 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1178:1181 T3_SelfRef <> BOOL constr
+R1186:1188 T3_SelfRef <> NAT constr
+def 1467:1483 <> universe_at_level
+R1490:1493 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1487:1489 Coq.Init.Datatypes <> nat ind
+binder 1508:1508 <> n:8
+R1513:1515 Coq.Init.Datatypes <> nat ind
+ind 1662:1663 <> U1
+constr 1679:1685 <> u1_bool
+constr 1696:1701 <> u1_nat
+constr 1712:1717 <> u1_set
+constr 1758:1765 <> u1_arrow
+R1689:1690 T3_SelfRef <> U1:9 ind
+R1705:1706 T3_SelfRef <> U1:9 ind
+R1721:1722 T3_SelfRef <> U1:9 ind
+R1771:1774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1769:1770 T3_SelfRef <> U1:9 ind
+R1777:1780 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1775:1776 T3_SelfRef <> U1:9 ind
+R1781:1782 T3_SelfRef <> U1:9 ind
+scheme 1662:1663 <> U1_rect
+scheme 1662:1663 <> U1_ind
+scheme 1662:1663 <> U1_rec
+scheme 1662:1663 <> U1_sind
+def 1939:1948 <> El1_simple
+R1955:1956 T3_SelfRef <> U1 ind
+binder 1951:1951 <> c:11
+R1977:1977 T3_SelfRef <> c:11 var
+R1988:1994 T3_SelfRef <> u1_bool constr
+R1999:2002 Coq.Init.Datatypes <> bool ind
+R2008:2013 T3_SelfRef <> u1_nat constr
+R2018:2020 Coq.Init.Datatypes <> nat ind
+R2026:2031 T3_SelfRef <> u1_set constr
+R2036:2038 Coq.Init.Datatypes <> nat ind
+R2078:2085 T3_SelfRef <> u1_arrow constr
+R2094:2096 Coq.Init.Datatypes <> nat ind
+def 2619:2631 <> self_ref_prop
+binder 2650:2650 <> P:13
+R2661:2664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2660:2660 T3_SelfRef <> P:13 var
+R2665:2665 T3_SelfRef <> P:13 var
+prf 2780:2792 <> T3_stratified
+R3060:3060 T3_SelfRef <> U ind
+binder 3056:3056 <> c:14
+R3063:3063 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3072:3076 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3086:3086 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3065:3067 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3064:3064 T3_SelfRef <> c:14 var
+R3068:3071 T3_SelfRef <> BOOL constr
+R3078:3081 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3077:3077 T3_SelfRef <> c:14 var
+R3082:3085 T3_SelfRef <> BOOL constr
+ind 3474:3478 <> UProp
+constr 3494:3500 <> up_true
+constr 3514:3521 <> up_false
+R3504:3508 T3_SelfRef <> UProp:15 ind
+R3525:3529 T3_SelfRef <> UProp:15 ind
+scheme 3474:3478 <> UProp_ind
+scheme 3474:3478 <> UProp_sind
+def 3602:3613 <> self_in_prop
+binder 3633:3633 <> P:17
+R3645:3648 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3644:3644 T3_SelfRef <> P:17 var
+R3649:3650 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3651:3651 T3_SelfRef <> P:17 var
+prf 4260:4270 <> T3_safe_coq
+R4274:4277 Coq.Init.Logic <> True ind

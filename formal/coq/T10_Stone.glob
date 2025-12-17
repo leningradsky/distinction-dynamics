@@ -1,0 +1,567 @@
+DIGEST ecd528c894e7bcacf36acae6de21d09f
+FT10_Stone
+R143:147 Coq.Reals.Reals <> <> lib
+R165:167 Coq.micromega.Lra <> <> lib
+rec 235:235 <> C
+proj 246:247 <> Re
+proj 254:255 <> Im
+R251:251 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R259:259 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 276:277 <> C0
+R281:281 T10_Stone <> C rec
+R286:288 T10_Stone <> mkC constr
+def 306:307 <> C1
+R311:311 T10_Stone <> C rec
+R316:318 T10_Stone <> mkC constr
+def 336:337 <> Ci
+R341:341 T10_Stone <> C rec
+R346:348 T10_Stone <> mkC constr
+def 367:370 <> Cadd
+R379:379 T10_Stone <> C rec
+binder 373:373 <> a:4
+binder 375:375 <> b:5
+R384:384 T10_Stone <> C rec
+R389:391 T10_Stone <> mkC constr
+R398:400 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R394:395 T10_Stone <> Re proj
+R397:397 T10_Stone <> a:4 var
+R401:402 T10_Stone <> Re proj
+R404:404 T10_Stone <> b:5 var
+R412:414 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R408:409 T10_Stone <> Im proj
+R411:411 T10_Stone <> a:4 var
+R415:416 T10_Stone <> Im proj
+R418:418 T10_Stone <> b:5 var
+def 433:436 <> Cmul
+R445:445 T10_Stone <> C rec
+binder 439:439 <> a:6
+binder 441:441 <> b:7
+R450:450 T10_Stone <> C rec
+R458:460 T10_Stone <> mkC constr
+R474:476 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R467:469 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R463:464 T10_Stone <> Re proj
+R466:466 T10_Stone <> a:6 var
+R470:471 T10_Stone <> Re proj
+R473:473 T10_Stone <> b:7 var
+R481:483 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R477:478 T10_Stone <> Im proj
+R480:480 T10_Stone <> a:6 var
+R484:485 T10_Stone <> Im proj
+R487:487 T10_Stone <> b:7 var
+R502:504 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R495:497 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R491:492 T10_Stone <> Re proj
+R494:494 T10_Stone <> a:6 var
+R498:499 T10_Stone <> Im proj
+R501:501 T10_Stone <> b:7 var
+R509:511 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R505:506 T10_Stone <> Im proj
+R508:508 T10_Stone <> a:6 var
+R512:513 T10_Stone <> Re proj
+R515:515 T10_Stone <> b:7 var
+def 530:534 <> Cconj
+R541:541 T10_Stone <> C rec
+binder 537:537 <> a:8
+R546:546 T10_Stone <> C rec
+R551:553 T10_Stone <> mkC constr
+R556:557 T10_Stone <> Re proj
+R559:559 T10_Stone <> a:8 var
+R563:564 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R565:566 T10_Stone <> Im proj
+R568:568 T10_Stone <> a:8 var
+def 583:588 <> Cnorm2
+R595:595 T10_Stone <> C rec
+binder 591:591 <> a:9
+R600:600 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R616:618 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R609:611 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R605:606 T10_Stone <> Re proj
+R608:608 T10_Stone <> a:9 var
+R612:613 T10_Stone <> Re proj
+R615:615 T10_Stone <> a:9 var
+R623:625 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R619:620 T10_Stone <> Im proj
+R622:622 T10_Stone <> a:9 var
+R626:627 T10_Stone <> Im proj
+R629:629 T10_Stone <> a:9 var
+def 644:649 <> Cscale
+R656:656 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 652:652 <> r:10
+R664:664 T10_Stone <> C rec
+binder 660:660 <> a:11
+R669:669 T10_Stone <> C rec
+R674:676 T10_Stone <> mkC constr
+R680:682 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R679:679 T10_Stone <> r:10 var
+R683:684 T10_Stone <> Re proj
+R686:686 T10_Stone <> a:11 var
+R691:693 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R690:690 T10_Stone <> r:10 var
+R694:695 T10_Stone <> Im proj
+R697:697 T10_Stone <> a:11 var
+def 764:769 <> Cexp_i
+R780:780 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 772:776 <> theta:12
+R785:785 T10_Stone <> C rec
+R790:792 T10_Stone <> mkC constr
+R795:797 Coq.Reals.Rtrigo_def <> cos def
+R799:803 T10_Stone <> theta:12 var
+R807:809 Coq.Reals.Rtrigo_def <> sin def
+R811:815 T10_Stone <> theta:12 var
+prf 862:872 <> Cexp_i_unit
+binder 883:887 <> theta:13
+R911:913 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R890:895 T10_Stone <> Cnorm2 def
+R898:903 T10_Stone <> Cexp_i def
+R905:909 T10_Stone <> theta:13 var
+R941:946 T10_Stone <> Cnorm2 def
+R949:954 T10_Stone <> Cexp_i def
+R984:986 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R975:977 Coq.Reals.Rtrigo_def <> cos def
+R987:989 Coq.Reals.Rtrigo_def <> cos def
+R1004:1004 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1014:1016 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1005:1007 Coq.Reals.Rtrigo_def <> cos def
+R1030:1033 Coq.Reals.RIneq <> Rsqr def
+R984:986 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R975:977 Coq.Reals.Rtrigo_def <> cos def
+R987:989 Coq.Reals.Rtrigo_def <> cos def
+R1004:1004 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1014:1016 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1005:1007 Coq.Reals.Rtrigo_def <> cos def
+R1063:1065 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1054:1056 Coq.Reals.Rtrigo_def <> sin def
+R1066:1068 Coq.Reals.Rtrigo_def <> sin def
+R1083:1083 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1093:1095 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1084:1086 Coq.Reals.Rtrigo_def <> sin def
+R1109:1112 Coq.Reals.RIneq <> Rsqr def
+R1063:1065 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1054:1056 Coq.Reals.Rtrigo_def <> sin def
+R1066:1068 Coq.Reals.Rtrigo_def <> sin def
+R1083:1083 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1093:1095 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R1084:1086 Coq.Reals.Rtrigo_def <> sin def
+R1132:1141 Coq.Reals.Raxioms <> Rplus_comm thm
+R1132:1141 Coq.Reals.Raxioms <> Rplus_comm thm
+R1132:1141 Coq.Reals.Raxioms <> Rplus_comm thm
+R1152:1160 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+R1152:1160 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+prf 1229:1238 <> Cexp_i_add
+binder 1249:1250 <> t1:14
+binder 1252:1253 <> t2:15
+R1274:1276 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1258:1263 T10_Stone <> Cexp_i def
+R1268:1270 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1266:1267 T10_Stone <> t1:14 var
+R1271:1272 T10_Stone <> t2:15 var
+R1277:1280 T10_Stone <> Cmul def
+R1283:1288 T10_Stone <> Cexp_i def
+R1290:1291 T10_Stone <> t1:14 var
+R1295:1300 T10_Stone <> Cexp_i def
+R1302:1303 T10_Stone <> t2:15 var
+R1331:1336 T10_Stone <> Cexp_i def
+R1339:1342 T10_Stone <> Cmul def
+R1373:1380 Coq.Reals.Cos_plus <> cos_plus thm
+R1373:1380 Coq.Reals.Cos_plus <> cos_plus thm
+R1373:1380 Coq.Reals.Cos_plus <> cos_plus thm
+R1401:1408 Coq.Reals.Rtrigo1 <> sin_plus thm
+R1401:1408 Coq.Reals.Rtrigo1 <> sin_plus thm
+R1401:1408 Coq.Reals.Rtrigo1 <> sin_plus thm
+prf 1450:1457 <> Cexp_i_0
+R1469:1471 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1461:1466 T10_Stone <> Cexp_i def
+R1472:1473 T10_Stone <> C1 def
+R1492:1497 T10_Stone <> Cexp_i def
+R1500:1501 T10_Stone <> C1 def
+R1525:1529 Coq.Reals.Rtrigo_def <> cos_0 thm
+R1525:1529 Coq.Reals.Rtrigo_def <> cos_0 thm
+R1525:1529 Coq.Reals.Rtrigo_def <> cos_0 thm
+R1557:1561 Coq.Reals.Rtrigo_def <> sin_0 thm
+R1557:1561 Coq.Reals.Rtrigo_def <> sin_0 thm
+R1557:1561 Coq.Reals.Rtrigo_def <> sin_0 thm
+rec 1774:1793 <> OneParamUnitaryGroup
+proj 1809:1809 <> U
+proj 1823:1826 <> U_id
+proj 1842:1847 <> U_comp
+proj 1901:1909 <> U_unitary
+R1814:1817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1813:1813 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1818:1818 T10_Stone <> C rec
+R1833:1835 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1830:1830 T10_Stone <> U:17 meth
+R1836:1837 T10_Stone <> C1 def
+binder 1858:1859 <> t1:19
+binder 1861:1862 <> t2:20
+R1876:1878 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1865:1865 T10_Stone <> U:17 meth
+R1870:1872 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1868:1869 T10_Stone <> t1:19 var
+R1873:1874 T10_Stone <> t2:20 var
+R1879:1882 T10_Stone <> Cmul def
+R1885:1885 T10_Stone <> U:17 meth
+R1887:1888 T10_Stone <> t1:19 var
+R1892:1892 T10_Stone <> U:17 meth
+R1894:1895 T10_Stone <> t2:20 var
+binder 1920:1920 <> t:22
+R1935:1937 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1923:1928 T10_Stone <> Cnorm2 def
+R1931:1931 T10_Stone <> U:17 meth
+R1933:1933 T10_Stone <> t:22 var
+def 2019:2027 <> exp_group
+R2038:2038 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2030:2034 <> omega:24
+R2043:2062 T10_Stone <> OneParamUnitaryGroup rec
+R2082:2087 T10_Stone <> mkOPUG constr
+binder 2094:2094 <> t:25
+R2099:2104 T10_Stone <> Cexp_i def
+R2112:2114 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2115:2115 T10_Stone <> t:25 var
+R2082:2087 T10_Stone <> mkOPUG constr
+binder 2094:2094 <> t:26
+R2099:2104 T10_Stone <> Cexp_i def
+R2112:2114 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2115:2115 T10_Stone <> t:26 var
+R2157:2162 T10_Stone <> Cexp_i def
+R2165:2166 T10_Stone <> C1 def
+R2192:2200 Coq.Reals.RIneq <> Rmult_0_r thm
+R2192:2200 Coq.Reals.RIneq <> Rmult_0_r thm
+R2192:2200 Coq.Reals.RIneq <> Rmult_0_r thm
+R2209:2213 Coq.Reals.Rtrigo_def <> cos_0 thm
+R2209:2213 Coq.Reals.Rtrigo_def <> cos_0 thm
+R2230:2238 Coq.Reals.RIneq <> Rmult_0_r thm
+R2230:2238 Coq.Reals.RIneq <> Rmult_0_r thm
+R2230:2238 Coq.Reals.RIneq <> Rmult_0_r thm
+R2247:2251 Coq.Reals.Rtrigo_def <> sin_0 thm
+R2247:2251 Coq.Reals.Rtrigo_def <> sin_0 thm
+R2307:2312 T10_Stone <> Cexp_i def
+R2315:2318 T10_Stone <> Cmul def
+R2351:2368 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2351:2368 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2351:2368 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2379:2386 Coq.Reals.Cos_plus <> cos_plus thm
+R2379:2386 Coq.Reals.Cos_plus <> cos_plus thm
+R2379:2386 Coq.Reals.Cos_plus <> cos_plus thm
+R2409:2426 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2409:2426 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2409:2426 Coq.Reals.Raxioms <> Rmult_plus_distr_l thm
+R2437:2444 Coq.Reals.Rtrigo1 <> sin_plus thm
+R2437:2444 Coq.Reals.Rtrigo1 <> sin_plus thm
+R2437:2444 Coq.Reals.Rtrigo1 <> sin_plus thm
+R2492:2502 T10_Stone <> Cexp_i_unit thm
+R2492:2502 T10_Stone <> Cexp_i_unit thm
+def 2701:2709 <> generator
+R2716:2735 T10_Stone <> OneParamUnitaryGroup rec
+binder 2712:2712 <> g:27
+R2740:2740 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3023:3024 T10_Stone <> Im proj
+R3027:3027 T10_Stone <> U proj
+R3029:3029 T10_Stone <> g:27 var
+prf 3147:3159 <> generator_exp
+binder 3170:3174 <> omega:28
+R3193:3237 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3181:3183 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R3189:3191 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R3184:3188 T10_Stone <> omega:28 var
+R3184:3188 T10_Stone <> omega:28 var
+R3265:3267 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3238:3246 T10_Stone <> generator def
+R3249:3257 T10_Stone <> exp_group def
+R3259:3263 T10_Stone <> omega:28 var
+R3268:3270 Coq.Reals.Rtrigo_def <> sin def
+R3272:3276 T10_Stone <> omega:28 var
+R3303:3311 T10_Stone <> generator def
+R3314:3322 T10_Stone <> exp_group def
+R3342:3350 Coq.Reals.RIneq <> Rmult_1_r thm
+R3342:3350 Coq.Reals.RIneq <> Rmult_1_r thm
+R3342:3350 Coq.Reals.RIneq <> Rmult_1_r thm
+prf 3706:3719 <> Stone_converse
+R3734:3734 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3730:3730 <> H:29
+R3739:3745 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3770:3806 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3839:3839 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3750:3769 T10_Stone <> OneParamUnitaryGroup rec
+binder 3746:3746 <> g:30
+binder 3814:3814 <> t:31
+R3822:3824 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3817:3817 T10_Stone <> U proj
+R3819:3819 T10_Stone <> g:30 var
+R3821:3821 T10_Stone <> t:31 var
+R3825:3830 T10_Stone <> Cexp_i def
+R3834:3836 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3833:3833 T10_Stone <> H:29 var
+R3837:3837 T10_Stone <> t:31 var
+R3871:3879 T10_Stone <> exp_group def
+R3871:3879 T10_Stone <> exp_group def
+def 4107:4118 <> self_adjoint
+R4125:4125 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4121:4121 <> H:32
+R4138:4141 Coq.Init.Logic <> True ind
+prf 4184:4201 <> Stone_self_adjoint
+R4216:4216 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4212:4212 <> H:33
+R4235:4240 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4221:4232 T10_Stone <> self_adjoint def
+R4234:4234 T10_Stone <> H:33 var
+R4241:4247 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4272:4278 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4307:4307 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4252:4271 T10_Stone <> OneParamUnitaryGroup rec
+binder 4248:4248 <> g:34
+binder 4286:4286 <> t:35
+R4303:4305 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4289:4294 T10_Stone <> Cnorm2 def
+R4297:4297 T10_Stone <> U proj
+R4299:4299 T10_Stone <> g:34 var
+R4301:4301 T10_Stone <> t:35 var
+R4368:4376 T10_Stone <> exp_group def
+R4368:4376 T10_Stone <> exp_group def
+R4400:4410 T10_Stone <> Cexp_i_unit thm
+R4400:4410 T10_Stone <> Cexp_i_unit thm
+prf 4580:4597 <> generator_additive
+binder 4608:4609 <> H1:36
+binder 4611:4612 <> H2:37
+binder 4614:4614 <> t:38
+R4659:4661 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4619:4622 T10_Stone <> Cmul def
+R4625:4630 T10_Stone <> Cexp_i def
+R4635:4637 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4633:4634 T10_Stone <> H1:36 var
+R4638:4638 T10_Stone <> t:38 var
+R4643:4648 T10_Stone <> Cexp_i def
+R4653:4655 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4651:4652 T10_Stone <> H2:37 var
+R4656:4656 T10_Stone <> t:38 var
+R4662:4667 T10_Stone <> Cexp_i def
+R4670:4670 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4678:4681 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4673:4675 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4671:4672 T10_Stone <> H1:36 var
+R4676:4677 T10_Stone <> H2:37 var
+R4682:4682 T10_Stone <> t:38 var
+R4716:4725 T10_Stone <> Cexp_i_add thm
+R4716:4725 T10_Stone <> Cexp_i_add thm
+R4716:4725 T10_Stone <> Cexp_i_add thm
+def 4911:4916 <> evolve
+R4923:4923 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4919:4919 <> H:39
+R4931:4931 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4927:4927 <> t:40
+R4942:4942 T10_Stone <> C rec
+binder 4935:4938 <> psi0:41
+R4947:4947 T10_Stone <> C rec
+R4954:4957 T10_Stone <> Cmul def
+R4960:4965 T10_Stone <> Cexp_i def
+R4971:4973 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4968:4969 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R4970:4970 T10_Stone <> H:39 var
+R4974:4974 T10_Stone <> t:40 var
+R4978:4981 T10_Stone <> psi0:41 var
+prf 5024:5037 <> evolve_unitary
+binder 5048:5048 <> H:42
+binder 5050:5050 <> t:43
+binder 5052:5055 <> psi0:44
+R5084:5086 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5060:5065 T10_Stone <> Cnorm2 def
+R5068:5073 T10_Stone <> evolve def
+R5075:5075 T10_Stone <> H:42 var
+R5077:5077 T10_Stone <> t:43 var
+R5079:5082 T10_Stone <> psi0:44 var
+R5087:5092 T10_Stone <> Cnorm2 def
+R5094:5097 T10_Stone <> psi0:44 var
+R5134:5139 T10_Stone <> evolve def
+R5142:5145 T10_Stone <> Cmul def
+R5148:5153 T10_Stone <> Cexp_i def
+R5156:5161 T10_Stone <> Cnorm2 def
+R5185:5187 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5182:5183 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5197:5199 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5205:5205 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5201:5203 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5185:5187 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5182:5183 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5197:5199 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5205:5205 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5201:5203 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5227:5233 Coq.Reals.Rtrigo1 <> cos_neg thm
+R5236:5242 Coq.Reals.Rtrigo1 <> sin_neg thm
+R5227:5233 Coq.Reals.Rtrigo1 <> cos_neg thm
+R5227:5233 Coq.Reals.Rtrigo1 <> cos_neg thm
+R5236:5242 Coq.Reals.Rtrigo1 <> sin_neg thm
+R5236:5242 Coq.Reals.Rtrigo1 <> sin_neg thm
+R5285:5287 Coq.Reals.Rtrigo_def <> cos def
+R5291:5293 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5285:5287 Coq.Reals.Rtrigo_def <> cos def
+R5291:5293 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5311:5313 Coq.Reals.Rtrigo_def <> sin def
+R5317:5319 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5311:5313 Coq.Reals.Rtrigo_def <> sin def
+R5317:5319 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5562:5576 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5525:5525 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5541:5545 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5561:5561 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5531:5533 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R5527:5529 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5537:5539 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5534:5535 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5551:5553 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R5547:5549 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5557:5559 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5554:5555 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5577:5577 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5593:5597 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5613:5613 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5583:5585 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5579:5581 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5589:5591 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5586:5587 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5603:5605 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5599:5601 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5609:5611 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5606:5607 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5626:5626 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5640:5644 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5658:5658 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5632:5634 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5628:5630 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5636:5638 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5650:5652 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5646:5648 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5654:5656 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5562:5576 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5525:5525 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5541:5545 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5561:5561 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5531:5533 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R5527:5529 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5537:5539 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5534:5535 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5551:5553 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R5547:5549 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5557:5559 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5554:5555 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5577:5577 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5593:5597 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5613:5613 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5583:5585 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5579:5581 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5589:5591 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5586:5587 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5603:5605 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5599:5601 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5609:5611 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5606:5607 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R5626:5626 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5640:5644 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5658:5658 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5632:5634 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5628:5630 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5636:5638 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5650:5652 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5646:5648 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5654:5656 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5707:5709 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5696:5698 Coq.Reals.Rtrigo_def <> cos def
+R5702:5704 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5710:5712 Coq.Reals.Rtrigo_def <> cos def
+R5716:5718 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5729:5729 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5741:5743 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5730:5732 Coq.Reals.Rtrigo_def <> cos def
+R5736:5738 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5757:5760 Coq.Reals.RIneq <> Rsqr def
+R5707:5709 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5696:5698 Coq.Reals.Rtrigo_def <> cos def
+R5702:5704 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5710:5712 Coq.Reals.Rtrigo_def <> cos def
+R5716:5718 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5729:5729 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5741:5743 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5730:5732 Coq.Reals.Rtrigo_def <> cos def
+R5736:5738 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5792:5794 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5781:5783 Coq.Reals.Rtrigo_def <> sin def
+R5787:5789 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5795:5797 Coq.Reals.Rtrigo_def <> sin def
+R5801:5803 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5814:5814 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5826:5828 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5815:5817 Coq.Reals.Rtrigo_def <> sin def
+R5821:5823 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5842:5845 Coq.Reals.RIneq <> Rsqr def
+R5792:5794 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5781:5783 Coq.Reals.Rtrigo_def <> sin def
+R5787:5789 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5795:5797 Coq.Reals.Rtrigo_def <> sin def
+R5801:5803 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5814:5814 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5826:5828 Coq.Reals.RIneq <> ::R_scope:x_'²' not
+R5815:5817 Coq.Reals.Rtrigo_def <> sin def
+R5821:5823 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5865:5874 Coq.Reals.Raxioms <> Rplus_comm thm
+R5877:5885 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+R5865:5874 Coq.Reals.Raxioms <> Rplus_comm thm
+R5865:5874 Coq.Reals.Raxioms <> Rplus_comm thm
+R5877:5885 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+R5877:5885 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+prf 5957:5965 <> T10_Stone
+R6032:6032 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6117:6168 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6044:6044 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6040:6040 <> H:45
+R6047:6053 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6078:6084 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6058:6077 T10_Stone <> OneParamUnitaryGroup rec
+binder 6054:6054 <> g:46
+binder 6092:6092 <> t:47
+R6100:6102 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6095:6095 T10_Stone <> U proj
+R6097:6097 T10_Stone <> g:46 var
+R6099:6099 T10_Stone <> t:47 var
+R6103:6108 T10_Stone <> Cexp_i def
+R6112:6114 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6111:6111 T10_Stone <> H:45 var
+R6115:6115 T10_Stone <> t:47 var
+R6169:6169 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6222:6288 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6362:6362 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 6177:6177 <> H:48
+binder 6179:6179 <> t:49
+binder 6181:6183 <> psi:50
+R6209:6211 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6186:6191 T10_Stone <> Cnorm2 def
+R6194:6199 T10_Stone <> evolve def
+R6201:6201 T10_Stone <> H:48 var
+R6203:6203 T10_Stone <> t:49 var
+R6205:6207 T10_Stone <> psi:50 var
+R6212:6217 T10_Stone <> Cnorm2 def
+R6219:6221 T10_Stone <> psi:50 var
+binder 6296:6297 <> H1:51
+binder 6299:6300 <> H2:52
+binder 6302:6302 <> t:53
+R6341:6343 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6305:6308 T10_Stone <> Cmul def
+R6311:6316 T10_Stone <> Cexp_i def
+R6321:6321 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6319:6320 T10_Stone <> H1:51 var
+R6322:6322 T10_Stone <> t:53 var
+R6327:6332 T10_Stone <> Cexp_i def
+R6337:6337 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6335:6336 T10_Stone <> H2:52 var
+R6338:6338 T10_Stone <> t:53 var
+R6344:6349 T10_Stone <> Cexp_i def
+R6352:6352 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6358:6359 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6355:6355 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R6353:6354 T10_Stone <> H1:51 var
+R6356:6357 T10_Stone <> H2:52 var
+R6360:6360 T10_Stone <> t:53 var
+R6401:6414 T10_Stone <> Stone_converse thm
+R6401:6414 T10_Stone <> Stone_converse thm
+R6427:6440 T10_Stone <> evolve_unitary thm
+R6427:6440 T10_Stone <> evolve_unitary thm
+R6453:6470 T10_Stone <> generator_additive thm
+R6453:6470 T10_Stone <> generator_additive thm

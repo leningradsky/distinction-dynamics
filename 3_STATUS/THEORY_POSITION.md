@@ -1,90 +1,99 @@
 # Theory Position (Post-Audit)
 
-**Last updated:** 2025-12-13
+**Last updated:** 2025-12-13 (v2.4)
 
 ---
 
-## 1. What Is Established (FORCED)
+## 1. What Is Established (FORCED: T0-T30)
 
-From the sole prohibition (Ø impossible) and formal definitions, the following is strictly derived without interpretation:
+From the sole prohibition (Ø impossible) and formal definitions, the following is strictly derived:
 
-- **Binary structure (Bool)**
-  Any distinction generates structure X / not-X.
+### Core Structure (T0-T13)
+- **Binary structure (Bool)** — any distinction generates X / not-X
+- **Self-application** — Δ = Δ(Δ)
+- **Number systems** — ℕ → ℤ → ℚ → ℝ → ℂ (all FORCED by completeness)
+- **Unitary dynamics** — U(n) forced by UAC preservation
+- **Hermitian generators** — H forced by continuous U(t)
+- **Born rule** — μ = |ψ|² as unique distinguishability measure
+- **Decoherence** — subsystem distinguishability without collapse
+- **Classical emergence** — stable fixed points of decoherence
 
-- **Self-application**
-  Denying distinction is itself a distinction:
-  Δ = Δ(Δ)
+### Spacetime (T14-T17)
+- **Space manifold** — emerges from classical structure
+- **Time uniqueness** — exactly one process parameter
+- **Energy** — H ≡ energy (time-conjugate)
+- **d = 3** — unique stable dimension by criticality selection
 
-- **Recursion**
-  Self-application has no internal stop — admits iteration.
+### Gauge Structure (T18-T25)
+- **SU(3)×SU(2)×U(1)** — unique gauge group by elimination proof
+- **Anomaly freedom** — forces specific matter content
+- **Confinement** — SU(3) coupling behavior
+- **Higgs mechanism** — SSB requirement for massive gauge bosons
 
-- **Natural numbers (ℕ)**
-  Emerge as indexing of recursion depth.
+### Cosmology (T26-T30)
+- **DD-NoAlt** — no ontological alternatives exist
+- **Λ > 0** — positive cosmological constant (UAC requires infinite future)
+- **0 < G < ∞** — finite gravitational coupling
+- **Einstein equations** — G_μν = 8πG T_μν (Lovelock uniqueness)
+- **N_gen ≥ 3** — fermion generations from CP violation requirement
 
-- **Minimal categorical structure**
-  A thin category / partial order of admissible structures.
-
-**Note:** This is the solid logical core.
-It is not physical, not ontological, not empirical.
-It is a meta-structure of admissibility.
+**Note (T26):** Per DD-NoAlt, the category HYP has been eliminated. There are no "hypotheses" — what exists is what must exist.
 
 ---
 
-## 2. What DD Actually Claims (Strong but Limited)
+## 2. What DD Claims (Post-T26)
 
-DD does not derive physics.
+DD asserts:
 
-DD asserts a narrower and stronger statement:
+> Physics is not derived because it's "true" — it's the only structure that doesn't violate UAC. There are no alternatives.
 
-> Observable physics is compatible with minimal recursive distinction structure, and many alternative structures are incompatible.
+**FORCED ≠ SELECTED**: DD does not claim values are "chosen" from options. DD claims alternatives are impossible.
 
 In other words:
 
-- DD is a **filter of the admissible**, not a generator of reality
-- It answers not "what exists?" but "what can be realized without destroying distinguishability"
+- DD is a **filter of the admissible** — ruling out impossible structures
+- It answers not "what exists?" but "what can exist without destroying distinguishability"
+- Per DD-NoAlt: the answer is unique
 
 ---
 
-## 3. What Is Obtained With Explicit Hypotheses (HYP → DERIVED)
+## 3. What Remains Undetermined
 
-If the following external inputs are explicitly added:
+### CONJ (Numerical Patterns — May Be Numerology)
+- 1/α = 11² + 4² = 137 (CONJ-A1) — 99.97% fit
+- θ ≈ 2/9 (CONJ-K2) — ~99% fit
+- sin²θ_W = 3/8 (HYP-K3) — poor fit
 
-- existence of continuum
-- information geometry (Fisher)
-- physical principle of gauge invariance
-- empirical facts (anomalies, confinement, Λ > 0)
+### CIRC (Remaining Circular Dependency)
+- CIRC-2: Triad ⟷ Rank ≥ 2
 
-then DD consistently reproduces:
+### PRED (Testable Prediction)
+- w(z) ≠ -1 — dark energy evolution
 
-- gauge group structure (including SU(3))
-- necessity of generations (via anomalies, but circular)
-- mass mechanism via local symmetry breaking
-- time direction as growth of distinguishability
-- non-zero cosmological constant
-- numerical regularities (Koide, ε)
-
-**Note:** This is not proof, but consistent reconstruction.
+### Specific Numerical Values
+DD derives domains (BOUND), not exact values:
+- G ∈ (0, ∞) — but not G = 6.674×10⁻¹¹
+- Λ > 0 — but not Λ ≈ 10⁻¹²² in Planck units
+- N ≥ 3 — but not exactly N = 3
 
 ---
 
 ## 4. What DD Does Better Than Other Approaches
 
-DD does the following simultaneously:
-
 1. **Separates layers:**
-   - logical necessity
-   - hypotheses
-   - empirical facts
-   - numerical coincidences
+   - FORCED = logical necessity (33 claims)
+   - DERIVED = follows from FORCED (18 claims)
+   - CONJ = numerical patterns (3 claims)
+   - DEF = definitions (9 claims)
 
-2. **Explicitly shows the knowledge boundary:**
-   Where we must assume, not derive.
+2. **Eliminates "hypothesis" as category:**
+   Per T26, there are no ontological alternatives — HYP is not a valid status.
 
-3. **Explains not "why so" but "why not otherwise":**
-   A fundamentally different type of explanation.
+3. **Explains "why not otherwise":**
+   Alternative structures violate UAC — fundamentally different type of explanation.
 
 4. **Interprets physics as stabilized criticality:**
-   The world is not maximum and not minimum, but the boundary of distinction stability.
+   The world is the boundary of distinction stability, not maximum or minimum.
 
 ---
 
@@ -92,27 +101,27 @@ DD does the following simultaneously:
 
 The strongest conclusion of DD is not physical, but structural:
 
-> What is realized is not everything possible, but only what withstands self-application of distinguishability.
+> What is realized is not "one possibility among many" — it is the unique structure that withstands self-application of distinguishability.
 
 This simultaneously explains:
 
-- why there is structure, not chaos
-- why there is evolution, not statics
-- why there are laws, but they are not absolute
-- why consciousness and reflection are possible
-- why the world is "not too simple" and "not too complex"
+- why there is structure, not chaos (Φ > 0)
+- why there is evolution, not statics (irreversibility)
+- why there are laws (criticality constraints)
+- why the world is "not too simple" and "not too complex" (0 < Φ < ∞)
 
 ---
 
 ## 6. One-Paragraph Summary
 
-Distinction Dynamics is a minimal metatheory of admissibility showing that from the prohibition of emptiness, a recursive distinction structure inevitably emerges (Bool → ℕ → category), and that physical reality as we observe it is one of the stable regimes of this structure given continuum, geometry, and empirical constraints. DD does not derive physics, but explains why many alternative ontologies and "possible worlds" are structurally inadmissible.
+Distinction Dynamics is a derivation framework showing that from the prohibition "Ø is impossible," the complete structure of physics is forced: number systems, quantum mechanics, gauge theory, gravity, and cosmology. Per DD-NoAlt (T26), there are no ontological alternatives — the category HYP has been eliminated. DD does not derive numerical values, but derives structural necessities: SU(3)×SU(2)×U(1), d = 3+1, N_gen ≥ 3, Λ > 0, 0 < G < ∞. What was once "hypothesis" is now traced as unique solution to UAC constraints.
 
 ---
 
 ## Reference Files
 
-- Logical status: `3_STATUS/STATUS.md`
-- Forced derivation: `1_DERIVATION/FORCED_CHAIN.md`
-- Bridges: `2_EXPRESSION/BRIDGES.md`
-- Gaps: `3_STATUS/ROADMAP.md`
+- Logical status: [STATUS.md](STATUS.md)
+- Complete derivation: [FORCED_SPINE.md](../1_DERIVATION/FORCED_SPINE.md) (T0-T30)
+- Dependency graph: [DEPENDENCY_GRAPH.md](../1_DERIVATION/DEPENDENCY_GRAPH.md)
+- Remaining conjectures: [BRIDGES.md](../2_EXPRESSION/BRIDGES.md)
+- Progress log: [ROADMAP.md](ROADMAP.md)

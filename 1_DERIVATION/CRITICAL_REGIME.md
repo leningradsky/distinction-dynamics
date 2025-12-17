@@ -209,27 +209,49 @@ If S is critical with d generators, then Aut(S) is:
 
 ---
 
-## What This Does Not Force
+## What This Does Not Directly Determine
 
-The following require additional structure (HYP):
+The critical regime constrains but does not uniquely fix:
 
-| Item | Why Not Forced | Location |
-|------|----------------|----------|
-| Specific d value | Multiple d give 0 < Φ < ∞ | HYP |
-| Continuous structure | Discrete is sufficient | HYP-C1 |
-| Specific group (SU(n)) | Multiple groups satisfy constraints | HYP-G1 |
-| Spatial interpretation | Algebraic ≠ geometric | HYP-S1 |
+| Item | Status | Resolution |
+|------|--------|------------|
+| Specific d value | Multiple d give 0 < Φ < ∞ | d = 3 → DD-Dim3 (T17) |
+| Continuous structure | Discrete is sufficient for CR | ℝ forced by completeness (T7) |
+| Specific group | Multiple groups satisfy constraints | SU(3)×SU(2)×U(1) → DD-Gauge (T22) |
+| Spatial interpretation | Algebraic → geometric | DD-Space (T14) |
+
+**Note (T26):** Per DD-NoAlt, these are not "hypotheses" — they are the unique solutions traced in FORCED_SPINE.md.
 
 ---
 
-## Next Step (Boundary of FORCED)
+## Note: All CR Constraints Are Discrete
 
-To determine which specific structures describe physics:
-→ Requires bridge hypotheses in `2_EXPRESSION/BRIDGES.md`
+**Important:** All constraints CR-1 through CR-7 are formulated over ℕ.
 
-The FORCED chain establishes: **physics lives in the critical class**.
+The classification COLLAPSE / CRITICAL / EXPLOSION uses only:
+- Path counts P(n) ∈ ℕ
+- Comparisons with polynomials nᵏ
+- Comparisons with exponentials kⁿ
 
-It does not establish: **which member of the critical class**.
+No real numbers, limits, or topology required.
+
+See `0_CORE/UAC.md` (Discrete vs Continuous Formulation) for details.
+
+**Consequence:** The entire critical regime analysis is FORCED from T4 (ℕ) without additional assumptions.
+
+---
+
+## Continuation
+
+The critical regime establishes **physics lives in the critical class**.
+
+Which specific member? Determined by elimination in T14-T30:
+- DD-Space (T14) → manifold structure
+- DD-Dim3 (T17) → d = 3
+- DD-Gauge (T22) → SU(3)×SU(2)×U(1)
+- DD-Generations (T30) → N ≥ 3
+
+**See:** [FORCED_SPINE.md](FORCED_SPINE.md) for complete derivation T0-T30.
 
 ---
 

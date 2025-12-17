@@ -1,0 +1,118 @@
+DIGEST cf40877b7fc37bf688254f34e5af1770
+FL03_Criticality
+R77:82 Coq.ZArith.ZArith <> <> lib
+R84:89 Coq.QArith.QArith <> <> lib
+R91:95 Coq.Reals.Reals <> <> lib
+R113:115 Coq.micromega.Lia <> <> lib
+R117:119 Coq.micromega.Lra <> <> lib
+def 201:208 <> critical
+R217:217 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 211:213 <> phi:1
+R231:233 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R234:236 L03_Criticality <> phi:1 var
+prf 248:267 <> T5_critical_positive
+binder 278:280 <> phi:2
+R295:298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R283:290 L03_Criticality <> critical def
+R292:294 L03_Criticality <> phi:2 var
+R300:302 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R303:305 L03_Criticality <> phi:2 var
+prf 439:449 <> T6_Z_exists
+R453:459 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R465:466 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R464:464 Coq.Numbers.BinNums <> Z ind
+binder 460:460 <> z:3
+R469:471 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R468:468 L03_Criticality <> z:3 var
+prf 519:530 <> T6_Z_ordered
+R547:547 Coq.Numbers.BinNums <> Z ind
+binder 541:541 <> a:4
+binder 543:543 <> b:5
+R556:559 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R552:554 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R551:551 L03_Criticality <> a:4 var
+R555:555 L03_Criticality <> b:5 var
+R565:568 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R561:563 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R560:560 L03_Criticality <> a:4 var
+R564:564 L03_Criticality <> b:5 var
+R570:572 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R569:569 L03_Criticality <> a:4 var
+R573:573 L03_Criticality <> b:5 var
+prf 630:640 <> T6_Q_exists
+R644:650 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R656:657 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R655:655 Coq.QArith.QArith_base <> Q rec
+binder 651:651 <> q:6
+R658:660 Coq.QArith.QArith_base <> Qlt def
+R664:664 L03_Criticality <> q:6 var
+R683:683 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R683:683 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+prf 747:757 <> T6_R_exists
+R761:767 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R773:774 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R772:772 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 768:768 <> r:7
+R776:778 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R775:775 L03_Criticality <> r:7 var
+prf 818:827 <> T6_R_dense
+R844:844 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 838:838 <> x:8
+binder 840:840 <> y:9
+R852:855 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R848:850 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R847:847 L03_Criticality <> x:8 var
+R851:851 L03_Criticality <> y:9 var
+R856:862 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R868:869 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R867:867 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 863:863 <> z:10
+R871:873 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R875:877 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R870:870 L03_Criticality <> x:8 var
+R874:874 L03_Criticality <> z:10 var
+R874:874 L03_Criticality <> z:10 var
+R878:878 L03_Criticality <> y:9 var
+R904:904 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R910:913 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R906:908 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R904:904 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R910:913 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R906:908 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+def 957:962 <> Z_to_R
+R969:969 Coq.Numbers.BinNums <> Z ind
+binder 965:965 <> z:11
+R974:974 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R979:981 Coq.Reals.Rdefinitions <> IZR def
+R983:983 L03_Criticality <> z:11 var
+def 997:1002 <> Q_to_R
+R1009:1009 Coq.QArith.QArith_base <> Q rec
+binder 1005:1005 <> q:12
+R1014:1014 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1019:1021 Coq.Reals.Rdefinitions <> Q2R def
+R1023:1023 L03_Criticality <> q:12 var
+prf 1067:1082 <> T6_Z_embed_order
+R1099:1099 Coq.Numbers.BinNums <> Z ind
+binder 1093:1093 <> a:13
+binder 1095:1095 <> b:14
+R1111:1114 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1104:1106 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R1103:1103 L03_Criticality <> a:13 var
+R1107:1107 L03_Criticality <> b:14 var
+R1123:1125 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1115:1120 L03_Criticality <> Z_to_R def
+R1122:1122 L03_Criticality <> a:13 var
+R1126:1131 L03_Criticality <> Z_to_R def
+R1133:1133 L03_Criticality <> b:14 var
+R1157:1162 Coq.Reals.RIneq <> IZR_lt thm
+R1157:1162 Coq.Reals.RIneq <> IZR_lt thm
+prf 1215:1225 <> T6_N_nonneg
+R1240:1242 Coq.Init.Datatypes <> nat ind
+binder 1236:1236 <> n:15
+R1246:1249 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1250:1252 Coq.Reals.Raxioms <> INR def
+R1254:1254 L03_Criticality <> n:15 var
+R1278:1284 Coq.Reals.RIneq <> pos_INR thm
+R1278:1284 Coq.Reals.RIneq <> pos_INR thm
+prf 1301:1308 <> L03_done
+R1312:1315 Coq.Init.Logic <> True ind
