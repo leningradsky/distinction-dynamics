@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v2.9 (T0-T44 Complete Derivation — Physics + Chemistry + Biology + Mind)
+**Version:** v2.10 (T0-T44 Complete + QFT Deepening + Tripod Argument)
 
 ---
 

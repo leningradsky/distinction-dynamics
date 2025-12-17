@@ -128,11 +128,32 @@ README.md must not contradict this file.
 - Life must be single-handed: FORCED
 - Which hand (L vs R): BOUND (symmetry breaking)
 
-**Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by CP requirement:
-- ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
-- ℂ² → CP-phase removable by unitary → CP not physical → forbidden
-- ℂ³ → first dimension with irremovable phase → minimal admissible
-- N ≥ 3 is FORCED; equality N = 3 may be selection (minimal)
+**Fermion Generations (DD-Generations):** N_gen ≥ 3 forced by five converging arguments:
+
+1. **CP Requirement (T30):**
+   - ℂ¹ → CP eliminable by basis change → no irreversible history → forbidden
+   - ℂ² → CP-phase removable by unitary → CP not physical → forbidden
+   - ℂ³ → first dimension with irremovable phase → minimal admissible
+
+2. **Witten Anomaly:**
+   - SU(2) gauge theory requires odd number of doublets
+   - N = 3 is minimal odd number with non-trivial flavor dynamics
+
+3. **Triadic Closure (T4):**
+   - Minimal closed structure beyond dyad is triad
+   - SU(3) color forces triadic structure → propagates to flavor sector
+
+4. **Tripod Geometric Stability:**
+   - In d = 3 flavor space: 1 point (no structure), 2 points (unstable line)
+   - 3 points = minimal stable configuration (triangle/tripod)
+   - 4+ points redundant for stability
+   - Same criticality that forces d = 3 spatial dimensions forces N = 3 generations
+
+5. **Spectral Gap (SU(3) eigenvalues):**
+   - First three eigenvalues of Laplacian on SU(3) are stable under distinction flow
+   - Large gap after third eigenvalue → only 3 modes survive
+
+- N ≥ 3 is FORCED; equality N = 3 from minimality (selection of simplest)
 - Breaks CIRC-1: generations derived independently of SU(3)
 
 **Gravitational Coupling (DD-Gravity):** 0 < G < ∞ forced by elimination:
@@ -410,7 +431,15 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 - **Too large** (α → 1): QED perturbation series fails → theory undefined at critical scales
 - **Critical window**: α must fall in regime where gauge coupling is neither trivial nor non-perturbative
 - The actual value α ≈ 1/137 is BOUND (constrained), not SELECTED (chosen from options)
-- The specific formula 11² + 4² = 137 remains CONJ (pattern, may be coincidence)
+
+**Numerical patterns observed (all remain CONJ):**
+- **Gauge decomposition**: 11² + 4² = 137, where 11 = 3 + 8 (SU(3) dimension), 4 = 2² (SU(2) structure)
+- **Geometric series**: 4π³ + π² + π ≈ 137.04 (powers of π converging)
+- **Running coupling**: α(μ) evolves with energy scale, converges at GUT scale with SU(2), SU(3)
+
+**Status distinction:**
+- α ∈ critical window: **BOUND** (follows from gauge/criticality constraints)
+- Specific formula for 137: **CONJ** (pattern, may be coincidence)
 
 ### Conjectures (CONJ)
 
