@@ -1,0 +1,476 @@
+DIGEST d160d103740e9361ceb96e78d54781b4
+FDDSpine
+R277:288 Coq.Init.Nat <> <> lib
+R306:323 Coq.Arith.PeanoNat <> <> lib
+prf 523:530 <> T0_Axiom
+R534:534 Coq.Init.Logic <> ::type_scope:'~'_x not
+R535:539 Coq.Init.Logic <> False ind
+prf 774:787 <> T1_Distinction
+R791:798 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R809:811 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R805:808 Coq.Init.Datatypes <> bool ind
+binder 799:799 <> a:1
+R805:808 Coq.Init.Datatypes <> bool ind
+binder 801:801 <> b:2
+R813:816 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R812:812 DDSpine <> a:1 var
+R817:817 DDSpine <> b:2 var
+R836:839 Coq.Init.Datatypes <> true constr
+R842:846 Coq.Init.Datatypes <> false constr
+R836:839 Coq.Init.Datatypes <> true constr
+R842:846 Coq.Init.Datatypes <> false constr
+prf 879:891 <> true_ne_false
+R899:902 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R895:898 Coq.Init.Datatypes <> true constr
+R903:907 Coq.Init.Datatypes <> false constr
+prf 945:957 <> false_ne_true
+R966:969 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R961:965 Coq.Init.Datatypes <> false constr
+R970:973 Coq.Init.Datatypes <> true constr
+prf 1165:1173 <> T2_Binary
+R1189:1192 Coq.Init.Datatypes <> bool ind
+binder 1185:1185 <> b:3
+R1204:1207 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1197:1199 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1196:1196 DDSpine <> b:3 var
+R1200:1203 Coq.Init.Datatypes <> true constr
+R1209:1211 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1208:1208 DDSpine <> b:3 var
+R1212:1216 Coq.Init.Datatypes <> false constr
+prf 1459:1471 <> T4_N_Infinite
+R1486:1488 Coq.Init.Datatypes <> nat ind
+binder 1482:1482 <> n:4
+R1492:1495 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1491:1491 DDSpine <> n:4 var
+R1496:1496 Coq.Init.Datatypes <> S constr
+R1498:1498 DDSpine <> n:4 var
+ind 1757:1761 <> Three
+constr 1776:1776 <> A
+constr 1790:1790 <> B
+constr 1804:1804 <> C
+R1780:1784 DDSpine <> Three:5 ind
+R1794:1798 DDSpine <> Three:5 ind
+R1808:1812 DDSpine <> Three:5 ind
+scheme 1757:1761 <> Three_rect
+scheme 1757:1761 <> Three_ind
+scheme 1757:1761 <> Three_rec
+scheme 1757:1761 <> Three_sind
+prf 1849:1854 <> A_ne_B
+R1859:1862 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1858:1858 DDSpine <> A constr
+R1863:1863 DDSpine <> B constr
+prf 1901:1906 <> B_ne_C
+R1911:1914 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1910:1910 DDSpine <> B constr
+R1915:1915 DDSpine <> C constr
+prf 1953:1958 <> C_ne_A
+R1963:1966 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1962:1962 DDSpine <> C constr
+R1967:1967 DDSpine <> A constr
+prf 2005:2010 <> A_ne_C
+R2015:2018 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2014:2014 DDSpine <> A constr
+R2019:2019 DDSpine <> C constr
+prf 2057:2062 <> B_ne_A
+R2067:2070 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2066:2066 DDSpine <> B constr
+R2071:2071 DDSpine <> A constr
+prf 2109:2114 <> C_ne_B
+R2119:2122 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2118:2118 DDSpine <> C constr
+R2123:2123 DDSpine <> B constr
+prf 2183:2194 <> Triad_Closed
+R2204:2207 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2199:2202 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2198:2198 DDSpine <> A constr
+R2203:2203 DDSpine <> B constr
+R2214:2217 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2209:2212 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2208:2208 DDSpine <> B constr
+R2213:2213 DDSpine <> C constr
+R2219:2222 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2218:2218 DDSpine <> C constr
+R2223:2223 DDSpine <> A constr
+R2249:2254 DDSpine <> A_ne_B thm
+R2272:2277 DDSpine <> B_ne_C thm
+R2287:2292 DDSpine <> C_ne_A thm
+R2249:2254 DDSpine <> A_ne_B thm
+R2272:2277 DDSpine <> B_ne_C thm
+R2287:2292 DDSpine <> C_ne_A thm
+ind 2469:2470 <> S3
+constr 2485:2485 <> e
+constr 2498:2498 <> r
+constr 2528:2529 <> r2
+constr 2560:2560 <> s
+constr 2586:2587 <> sr
+constr 2599:2601 <> sr2
+R2491:2492 DDSpine <> S3:7 ind
+R2504:2505 DDSpine <> S3:7 ind
+R2534:2535 DDSpine <> S3:7 ind
+R2566:2567 DDSpine <> S3:7 ind
+R2592:2593 DDSpine <> S3:7 ind
+R2605:2606 DDSpine <> S3:7 ind
+scheme 2469:2470 <> S3_rect
+scheme 2469:2470 <> S3_ind
+scheme 2469:2470 <> S3_rec
+scheme 2469:2470 <> S3_sind
+def 2648:2653 <> S3_mul
+R2662:2663 DDSpine <> S3 ind
+binder 2656:2656 <> g:9
+binder 2658:2658 <> h:10
+R2668:2669 DDSpine <> S3 ind
+R2685:2685 DDSpine <> h:10 var
+R2682:2682 DDSpine <> g:9 var
+R2696:2696 DDSpine <> e constr
+R2713:2713 DDSpine <> e constr
+R2724:2724 DDSpine <> r constr
+R2727:2727 DDSpine <> r constr
+R2732:2733 DDSpine <> r2 constr
+R2739:2739 DDSpine <> r constr
+R2742:2743 DDSpine <> r2 constr
+R2748:2748 DDSpine <> e constr
+R2754:2755 DDSpine <> r2 constr
+R2758:2758 DDSpine <> r constr
+R2763:2763 DDSpine <> e constr
+R2769:2770 DDSpine <> r2 constr
+R2773:2774 DDSpine <> r2 constr
+R2779:2779 DDSpine <> r constr
+R2785:2785 DDSpine <> s constr
+R2788:2788 DDSpine <> s constr
+R2793:2793 DDSpine <> e constr
+R2799:2799 DDSpine <> s constr
+R2802:2802 DDSpine <> r constr
+R2807:2809 DDSpine <> sr2 constr
+R2815:2815 DDSpine <> s constr
+R2818:2819 DDSpine <> r2 constr
+R2824:2825 DDSpine <> sr constr
+R2831:2831 DDSpine <> r constr
+R2834:2834 DDSpine <> s constr
+R2839:2840 DDSpine <> sr constr
+R2846:2847 DDSpine <> r2 constr
+R2850:2850 DDSpine <> s constr
+R2855:2857 DDSpine <> sr2 constr
+R2863:2864 DDSpine <> sr constr
+R2867:2867 DDSpine <> s constr
+R2872:2873 DDSpine <> r2 constr
+R2879:2881 DDSpine <> sr2 constr
+R2884:2884 DDSpine <> s constr
+R2889:2889 DDSpine <> r constr
+R2895:2895 DDSpine <> s constr
+R2898:2899 DDSpine <> sr constr
+R2904:2904 DDSpine <> r constr
+R2910:2910 DDSpine <> s constr
+R2913:2915 DDSpine <> sr2 constr
+R2920:2921 DDSpine <> r2 constr
+R2927:2928 DDSpine <> sr constr
+R2931:2931 DDSpine <> r constr
+R2936:2936 DDSpine <> s constr
+R2942:2943 DDSpine <> sr constr
+R2946:2947 DDSpine <> r2 constr
+R2952:2954 DDSpine <> sr2 constr
+R2960:2962 DDSpine <> sr2 constr
+R2965:2965 DDSpine <> r constr
+R2970:2971 DDSpine <> sr constr
+R2977:2979 DDSpine <> sr2 constr
+R2982:2983 DDSpine <> r2 constr
+R2988:2988 DDSpine <> s constr
+R2994:2994 DDSpine <> r constr
+R2997:2998 DDSpine <> sr constr
+R3003:3003 DDSpine <> s constr
+R3009:3009 DDSpine <> r constr
+R3012:3014 DDSpine <> sr2 constr
+R3019:3020 DDSpine <> sr constr
+R3026:3027 DDSpine <> r2 constr
+R3030:3031 DDSpine <> sr constr
+R3036:3038 DDSpine <> sr2 constr
+R3044:3045 DDSpine <> r2 constr
+R3048:3050 DDSpine <> sr2 constr
+R3055:3055 DDSpine <> s constr
+R3061:3062 DDSpine <> sr constr
+R3065:3066 DDSpine <> sr constr
+R3071:3072 DDSpine <> r2 constr
+R3078:3079 DDSpine <> sr constr
+R3082:3084 DDSpine <> sr2 constr
+R3089:3089 DDSpine <> e constr
+R3095:3097 DDSpine <> sr2 constr
+R3100:3101 DDSpine <> sr constr
+R3106:3106 DDSpine <> e constr
+R3112:3114 DDSpine <> sr2 constr
+R3117:3119 DDSpine <> sr2 constr
+R3124:3124 DDSpine <> r constr
+def 3169:3176 <> S3_order
+R3183:3184 DDSpine <> S3 ind
+binder 3179:3179 <> g:13
+R3189:3191 Coq.Init.Datatypes <> nat ind
+R3204:3204 DDSpine <> g:13 var
+R3215:3215 DDSpine <> e constr
+R3226:3226 DDSpine <> r constr
+R3237:3238 DDSpine <> r2 constr
+R3249:3249 DDSpine <> s constr
+R3260:3261 DDSpine <> sr constr
+R3272:3274 DDSpine <> sr2 constr
+prf 3311:3317 <> r_cubed
+R3342:3344 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3321:3326 DDSpine <> S3_mul def
+R3329:3334 DDSpine <> S3_mul def
+R3336:3336 DDSpine <> r constr
+R3338:3338 DDSpine <> r constr
+R3341:3341 DDSpine <> r constr
+R3345:3345 DDSpine <> e constr
+prf 3396:3404 <> s_squared
+R3418:3420 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3408:3413 DDSpine <> S3_mul def
+R3415:3415 DDSpine <> s constr
+R3417:3417 DDSpine <> s constr
+R3421:3421 DDSpine <> e constr
+prf 3478:3484 <> r_order
+R3498:3500 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3488:3495 DDSpine <> S3_order def
+R3497:3497 DDSpine <> r constr
+def 3576:3582 <> S3_sign
+R3589:3590 DDSpine <> S3 ind
+binder 3585:3585 <> g:15
+R3595:3598 Coq.Init.Datatypes <> bool ind
+R3611:3611 DDSpine <> g:15 var
+R3622:3622 DDSpine <> e constr
+R3627:3630 Coq.Init.Datatypes <> true constr
+R3636:3636 DDSpine <> r constr
+R3641:3644 Coq.Init.Datatypes <> true constr
+R3650:3651 DDSpine <> r2 constr
+R3656:3659 Coq.Init.Datatypes <> true constr
+R3665:3665 DDSpine <> s constr
+R3670:3674 Coq.Init.Datatypes <> false constr
+R3680:3681 DDSpine <> sr constr
+R3686:3690 Coq.Init.Datatypes <> false constr
+R3696:3698 DDSpine <> sr2 constr
+R3703:3707 Coq.Init.Datatypes <> false constr
+ind 3883:3884 <> S2
+constr 3899:3900 <> e2
+constr 3913:3917 <> swap2
+R3906:3907 DDSpine <> S2:17 ind
+R3921:3922 DDSpine <> S2:17 ind
+scheme 3883:3884 <> S2_rect
+scheme 3883:3884 <> S2_ind
+scheme 3883:3884 <> S2_rec
+scheme 3883:3884 <> S2_sind
+def 3937:3944 <> S2_order
+R3951:3952 DDSpine <> S2 ind
+binder 3947:3947 <> g:19
+R3957:3959 Coq.Init.Datatypes <> nat ind
+R3972:3972 DDSpine <> g:19 var
+R3983:3984 DDSpine <> e2 constr
+R3995:3999 DDSpine <> swap2 constr
+prf 4059:4071 <> S2_no_order_3
+R4086:4087 DDSpine <> S2 ind
+binder 4082:4082 <> g:21
+R4100:4103 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4090:4097 DDSpine <> S2_order def
+R4099:4099 DDSpine <> g:21 var
+ind 4323:4324 <> A3
+constr 4339:4341 <> e_A
+constr 4353:4355 <> r_A
+constr 4367:4370 <> r2_A
+R4346:4347 DDSpine <> A3:22 ind
+R4360:4361 DDSpine <> A3:22 ind
+R4374:4375 DDSpine <> A3:22 ind
+scheme 4323:4324 <> A3_rect
+scheme 4323:4324 <> A3_ind
+scheme 4323:4324 <> A3_rec
+scheme 4323:4324 <> A3_sind
+def 4390:4396 <> A3_toS3
+R4403:4404 DDSpine <> A3 ind
+binder 4399:4399 <> a:24
+R4409:4410 DDSpine <> S3 ind
+R4423:4423 DDSpine <> a:24 var
+R4434:4436 DDSpine <> e_A constr
+R4441:4441 DDSpine <> e constr
+R4447:4449 DDSpine <> r_A constr
+R4454:4454 DDSpine <> r constr
+R4460:4463 DDSpine <> r2_A constr
+R4468:4469 DDSpine <> r2 constr
+prf 4527:4536 <> A3_det_one
+R4551:4552 DDSpine <> A3 ind
+binder 4547:4547 <> a:26
+R4574:4576 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4555:4561 DDSpine <> S3_sign def
+R4564:4570 DDSpine <> A3_toS3 def
+R4572:4572 DDSpine <> a:26 var
+R4577:4580 Coq.Init.Datatypes <> true constr
+prf 4794:4808 <> T30_Generations
+R4829:4833 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4864:4864 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4825:4827 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4815:4822 DDSpine <> S3_order def
+R4824:4824 DDSpine <> r constr
+R4845:4846 DDSpine <> S2 ind
+binder 4841:4841 <> g:27
+R4859:4862 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4849:4856 DDSpine <> S2_order def
+R4858:4858 DDSpine <> g:27 var
+R4910:4922 DDSpine <> S2_no_order_3 thm
+R4910:4922 DDSpine <> S2_no_order_3 thm
+prf 5093:5105 <> SU3_necessary
+R5125:5130 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5121:5123 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5111:5118 DDSpine <> S3_order def
+R5120:5120 DDSpine <> r constr
+R5131:5131 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5162:5169 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5211:5211 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5143:5144 DDSpine <> S2 ind
+binder 5139:5139 <> g:28
+R5157:5160 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5147:5154 DDSpine <> S2_order def
+R5156:5156 DDSpine <> g:28 var
+R5181:5182 DDSpine <> A3 ind
+binder 5177:5177 <> a:29
+R5204:5206 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5185:5191 DDSpine <> S3_sign def
+R5194:5200 DDSpine <> A3_toS3 def
+R5202:5202 DDSpine <> a:29 var
+R5207:5210 Coq.Init.Datatypes <> true constr
+R5259:5271 DDSpine <> S2_no_order_3 thm
+R5281:5290 DDSpine <> A3_det_one thm
+R5259:5271 DDSpine <> S2_no_order_3 thm
+R5281:5290 DDSpine <> A3_det_one thm
+def 5466:5471 <> dim_U1
+R5475:5477 Coq.Init.Datatypes <> nat ind
+def 5496:5502 <> dim_SU2
+R5506:5508 Coq.Init.Datatypes <> nat ind
+def 5542:5548 <> dim_SU3
+R5552:5554 Coq.Init.Datatypes <> nat ind
+def 5588:5593 <> dim_SM
+R5597:5599 Coq.Init.Datatypes <> nat ind
+R5620:5622 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R5610:5612 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R5604:5609 DDSpine <> dim_U1 def
+R5613:5619 DDSpine <> dim_SU2 def
+R5623:5629 DDSpine <> dim_SU3 def
+prf 5641:5652 <> dim_SM_is_12
+R5662:5664 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5656:5661 DDSpine <> dim_SM def
+def 5858:5860 <> fib
+R5867:5869 Coq.Init.Datatypes <> nat ind
+binder 5863:5863 <> n:30
+R5874:5876 Coq.Init.Datatypes <> nat ind
+R5889:5889 DDSpine <> n:30 var
+R5922:5922 Coq.Init.Datatypes <> S constr
+R5925:5925 Coq.Init.Datatypes <> S constr
+R5945:5947 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R5939:5941 DDSpine <> fib:31 def
+R5948:5950 DDSpine <> fib:31 def
+prf 5970:5980 <> fib_7_is_13
+R5989:5991 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5984:5986 DDSpine <> fib def
+prf 6030:6039 <> fib_4_is_3
+R6048:6050 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6043:6045 DDSpine <> fib def
+def 6287:6295 <> alpha_inv
+R6299:6301 Coq.Init.Datatypes <> nat ind
+R6353:6355 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R6337:6340 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R6352:6352 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R6309:6309 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R6320:6324 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R6336:6336 Coq.Init.Nat <> ::nat_scope:x_'*'_x not
+R6316:6318 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R6310:6315 DDSpine <> dim_U1 def
+R6332:6334 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R6325:6331 DDSpine <> dim_SU2 def
+R6348:6350 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R6341:6347 DDSpine <> dim_SU3 def
+R6356:6358 DDSpine <> fib def
+prf 6372:6383 <> alpha_is_137
+R6396:6398 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6387:6395 DDSpine <> alpha_inv def
+def 6461:6469 <> koide_num
+R6473:6475 Coq.Init.Datatypes <> nat ind
+def 6494:6502 <> koide_den
+R6506:6508 Coq.Init.Datatypes <> nat ind
+def 6560:6571 <> weinberg_num
+R6575:6577 Coq.Init.Datatypes <> nat ind
+R6582:6584 DDSpine <> fib def
+def 6600:6611 <> weinberg_den
+R6615:6617 Coq.Init.Datatypes <> nat ind
+R6622:6624 DDSpine <> fib def
+prf 6638:6653 <> weinberg_is_3_13
+R6673:6676 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6669:6671 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6657:6668 DDSpine <> weinberg_num def
+R6689:6691 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6677:6688 DDSpine <> weinberg_den def
+rec 6890:6898 <> DDSummary
+proj 6914:6915 <> t0
+proj 6929:6930 <> t1
+proj 6965:6966 <> t4
+proj 6992:6996 <> triad
+proj 7030:7032 <> su3
+proj 7137:7141 <> dim12
+proj 7160:7167 <> alpha137
+R6919:6919 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6920:6924 Coq.Init.Logic <> False ind
+R6934:6941 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6952:6954 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6948:6951 Coq.Init.Datatypes <> bool ind
+binder 6942:6942 <> a:35
+R6948:6951 Coq.Init.Datatypes <> bool ind
+binder 6944:6944 <> b:36
+R6956:6959 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6955:6955 DDSpine <> a:35 var
+R6960:6960 DDSpine <> b:36 var
+binder 6977:6977 <> n:38
+R6981:6984 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6980:6980 DDSpine <> n:38 var
+R6985:6985 Coq.Init.Datatypes <> S constr
+R6987:6987 DDSpine <> n:38 var
+R7006:7009 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7001:7004 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7000:7000 DDSpine <> A constr
+R7005:7005 DDSpine <> B constr
+R7016:7019 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7011:7014 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7010:7010 DDSpine <> B constr
+R7015:7015 DDSpine <> C constr
+R7021:7024 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7020:7020 DDSpine <> C constr
+R7025:7025 DDSpine <> A constr
+R7050:7053 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7046:7048 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7036:7043 DDSpine <> S3_order def
+R7045:7045 DDSpine <> r constr
+R7054:7054 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7085:7090 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7132:7132 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7066:7067 DDSpine <> S2 ind
+binder 7062:7062 <> g:41
+R7080:7083 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7070:7077 DDSpine <> S2_order def
+R7079:7079 DDSpine <> g:41 var
+R7102:7103 DDSpine <> A3 ind
+binder 7098:7098 <> a:42
+R7125:7127 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7106:7112 DDSpine <> S3_sign def
+R7115:7121 DDSpine <> A3_toS3 def
+R7123:7123 DDSpine <> a:42 var
+R7128:7131 Coq.Init.Datatypes <> true constr
+R7151:7153 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7145:7150 DDSpine <> dim_SM def
+R7180:7182 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7171:7179 DDSpine <> alpha_inv def
+prf 7199:7209 <> DD_Complete
+R7213:7221 DDSpine <> DDSummary rec
+R7256:7263 DDSpine <> T0_Axiom thm
+R7256:7263 DDSpine <> T0_Axiom thm
+R7276:7289 DDSpine <> T1_Distinction thm
+R7276:7289 DDSpine <> T1_Distinction thm
+R7302:7314 DDSpine <> T4_N_Infinite thm
+R7302:7314 DDSpine <> T4_N_Infinite thm
+R7327:7338 DDSpine <> Triad_Closed thm
+R7327:7338 DDSpine <> Triad_Closed thm
+R7351:7363 DDSpine <> SU3_necessary thm
+R7351:7363 DDSpine <> SU3_necessary thm
+R7376:7387 DDSpine <> dim_SM_is_12 thm
+R7376:7387 DDSpine <> dim_SM_is_12 thm
+R7400:7411 DDSpine <> alpha_is_137 thm
+R7400:7411 DDSpine <> alpha_is_137 thm
+R7921:7931 DDSpine <> DD_Complete thm

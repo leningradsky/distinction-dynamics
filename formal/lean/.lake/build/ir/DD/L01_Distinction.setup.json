@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "dd",
+ "options": {"relaxedAutoImplicit": false, "autoImplicit": false},
+ "name": "DD.L01_Distinction",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

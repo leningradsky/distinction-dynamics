@@ -1,0 +1,178 @@
+DIGEST f35c3cf7914ebe0a13fa526942fb4088
+FDD.T5_Iteration
+R78:82 Coq.Reals.Reals <> <> lib
+R100:102 Coq.micromega.Lra <> <> lib
+R120:124 Coq.micromega.Psatz <> <> lib
+rec 171:174 <> Vec2
+proj 188:189 <> v1
+proj 196:197 <> v2
+R193:193 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R201:201 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 217:221 <> norm2
+R228:231 DD.T5_Iteration <> Vec2 rec
+binder 224:224 <> v:4
+R236:236 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R252:254 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R245:247 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R241:242 DD.T5_Iteration <> v1 proj
+R244:244 DD.T5_Iteration <> v:4 var
+R248:249 DD.T5_Iteration <> v1 proj
+R251:251 DD.T5_Iteration <> v:4 var
+R259:261 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R255:256 DD.T5_Iteration <> v2 proj
+R258:258 DD.T5_Iteration <> v:4 var
+R262:263 DD.T5_Iteration <> v2 proj
+R265:265 DD.T5_Iteration <> v:4 var
+def 279:281 <> Phi
+R288:291 DD.T5_Iteration <> Vec2 rec
+binder 284:284 <> v:5
+R296:296 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R301:305 DD.T5_Iteration <> norm2 def
+R307:307 DD.T5_Iteration <> v:5 var
+rec 318:321 <> Mat2
+proj 335:337 <> a11
+proj 344:346 <> a12
+proj 353:355 <> a21
+proj 362:364 <> a22
+R341:341 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R350:350 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R359:359 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R368:368 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 385:389 <> apply
+R396:399 DD.T5_Iteration <> Mat2 rec
+binder 392:392 <> M:11
+R407:410 DD.T5_Iteration <> Vec2 rec
+binder 403:403 <> v:12
+R415:418 DD.T5_Iteration <> Vec2 rec
+R425:430 DD.T5_Iteration <> mkVec2 constr
+R445:447 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R438:440 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R433:435 DD.T5_Iteration <> a11 proj
+R437:437 DD.T5_Iteration <> M:11 var
+R441:442 DD.T5_Iteration <> v1 proj
+R444:444 DD.T5_Iteration <> v:12 var
+R453:455 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R448:450 DD.T5_Iteration <> a12 proj
+R452:452 DD.T5_Iteration <> M:11 var
+R456:457 DD.T5_Iteration <> v2 proj
+R459:459 DD.T5_Iteration <> v:12 var
+R484:486 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R477:479 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R472:474 DD.T5_Iteration <> a21 proj
+R476:476 DD.T5_Iteration <> M:11 var
+R480:481 DD.T5_Iteration <> v1 proj
+R483:483 DD.T5_Iteration <> v:12 var
+R492:494 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R487:489 DD.T5_Iteration <> a22 proj
+R491:491 DD.T5_Iteration <> M:11 var
+R495:496 DD.T5_Iteration <> v2 proj
+R498:498 DD.T5_Iteration <> v:12 var
+def 514:518 <> Scale
+R525:525 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 521:521 <> s:13
+R530:533 DD.T5_Iteration <> Mat2 rec
+R538:543 DD.T5_Iteration <> mkMat2 constr
+R545:545 DD.T5_Iteration <> s:13 var
+R551:551 DD.T5_Iteration <> s:13 var
+prf 561:570 <> Scale_norm
+binder 581:581 <> s:14
+binder 583:583 <> v:15
+R611:613 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R586:590 DD.T5_Iteration <> norm2 def
+R593:597 DD.T5_Iteration <> apply def
+R600:604 DD.T5_Iteration <> Scale def
+R606:606 DD.T5_Iteration <> s:14 var
+R609:609 DD.T5_Iteration <> v:15 var
+R619:621 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R615:617 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R614:614 DD.T5_Iteration <> s:14 var
+R618:618 DD.T5_Iteration <> s:14 var
+R622:626 DD.T5_Iteration <> norm2 def
+R628:628 DD.T5_Iteration <> v:15 var
+R663:667 DD.T5_Iteration <> apply def
+R670:674 DD.T5_Iteration <> Scale def
+R677:681 DD.T5_Iteration <> norm2 def
+def 732:738 <> iterate
+R745:748 DD.T5_Iteration <> Mat2 rec
+binder 741:741 <> M:16
+R756:758 Coq.Init.Datatypes <> nat ind
+binder 752:752 <> n:17
+R766:769 DD.T5_Iteration <> Vec2 rec
+binder 762:762 <> v:18
+R774:777 DD.T5_Iteration <> Vec2 rec
+R790:790 DD.T5_Iteration <> n:17 var
+R801:801 Coq.Init.Datatypes <> O constr
+R806:806 DD.T5_Iteration <> v:18 var
+R812:812 Coq.Init.Datatypes <> S constr
+R820:824 DD.T5_Iteration <> apply def
+R826:826 DD.T5_Iteration <> M:16 var
+R829:835 DD.T5_Iteration <> iterate:19 def
+R842:842 DD.T5_Iteration <> v:18 var
+R837:837 DD.T5_Iteration <> M:16 var
+prf 894:906 <> iterate_Scale
+binder 917:917 <> s:21
+binder 919:919 <> n:22
+binder 921:921 <> v:23
+R955:957 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R926:930 DD.T5_Iteration <> norm2 def
+R933:939 DD.T5_Iteration <> iterate def
+R942:946 DD.T5_Iteration <> Scale def
+R948:948 DD.T5_Iteration <> s:21 var
+R951:951 DD.T5_Iteration <> n:22 var
+R953:953 DD.T5_Iteration <> v:23 var
+R969:971 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R958:958 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R964:967 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R960:962 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R959:959 DD.T5_Iteration <> s:21 var
+R963:963 DD.T5_Iteration <> s:21 var
+R968:968 DD.T5_Iteration <> n:22 var
+R972:976 DD.T5_Iteration <> norm2 def
+R978:978 DD.T5_Iteration <> v:23 var
+R1044:1050 DD.T5_Iteration <> iterate def
+R1061:1070 DD.T5_Iteration <> Scale_norm thm
+R1061:1070 DD.T5_Iteration <> Scale_norm thm
+R1061:1070 DD.T5_Iteration <> Scale_norm thm
+R1097:1099 Coq.Reals.Rpow_def <> pow def
+prf 1143:1150 <> pow_ge_1
+binder 1161:1161 <> a:24
+binder 1163:1163 <> n:25
+R1172:1175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1167:1170 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1166:1166 DD.T5_Iteration <> a:24 var
+R1181:1184 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1177:1179 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1176:1176 DD.T5_Iteration <> a:24 var
+R1180:1180 DD.T5_Iteration <> n:25 var
+R1262:1265 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1254:1256 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1258:1260 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1267:1269 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1283:1299 Coq.Reals.RIneq <> Rmult_ge_compat_l thm
+R1262:1265 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1254:1256 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1258:1260 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1267:1269 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1283:1299 Coq.Reals.RIneq <> Rmult_ge_compat_l thm
+prf 1329:1336 <> pow_le_1
+binder 1347:1347 <> a:26
+binder 1349:1349 <> n:27
+R1363:1366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1356 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R1358:1361 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R1357:1357 DD.T5_Iteration <> a:26 var
+R1357:1357 DD.T5_Iteration <> a:26 var
+R1372:1375 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1368:1370 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1367:1367 DD.T5_Iteration <> a:26 var
+R1371:1371 DD.T5_Iteration <> n:27 var
+R1460:1463 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1452:1454 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1456:1458 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1465:1467 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1460:1463 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1452:1454 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1456:1458 Coq.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1465:1467 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1484:1498 Coq.Reals.RIneq <> Rmult_le_compat thm
+R1484:1498 Coq.Reals.RIneq <> Rmult_le_compat thm

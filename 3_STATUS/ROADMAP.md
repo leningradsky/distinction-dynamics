@@ -22,7 +22,7 @@ Items are ordered by logical priority, not by difficulty or time.
 
 | ID | Gap | Current Status | Required Action |
 |----|-----|----------------|-----------------|
-| GAP-7 | X: C → Hilb functor unspecified | DEF in BRIDGES.md | Specify concretely or remove |
+| ~~GAP-7~~ | ~~X: C → Hilb functor~~ | **CLOSED** | DDHilbert.agda — structural functor verified |
 
 ### Priority 3: Questionable Claims (May be numerology)
 

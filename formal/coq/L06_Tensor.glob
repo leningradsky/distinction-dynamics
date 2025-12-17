@@ -1,0 +1,599 @@
+DIGEST 141e2e7d2ff8289335e5132b6f60b355
+FL06_Tensor
+R129:133 Coq.Reals.Reals <> <> lib
+R151:153 Coq.micromega.Lra <> <> lib
+rec 221:221 <> C
+proj 232:233 <> Re
+proj 240:241 <> Im
+R237:237 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R245:245 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 262:263 <> C0
+R267:267 L06_Tensor <> C rec
+R272:274 L06_Tensor <> mkC constr
+def 292:293 <> C1
+R297:297 L06_Tensor <> C rec
+R302:304 L06_Tensor <> mkC constr
+def 322:325 <> Cadd
+R334:334 L06_Tensor <> C rec
+binder 328:328 <> a:4
+binder 330:330 <> b:5
+R339:339 L06_Tensor <> C rec
+R344:346 L06_Tensor <> mkC constr
+R353:355 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R349:350 L06_Tensor <> Re proj
+R352:352 L06_Tensor <> a:4 var
+R356:357 L06_Tensor <> Re proj
+R359:359 L06_Tensor <> b:5 var
+R367:369 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R363:364 L06_Tensor <> Im proj
+R366:366 L06_Tensor <> a:4 var
+R370:371 L06_Tensor <> Im proj
+R373:373 L06_Tensor <> b:5 var
+def 388:391 <> Cmul
+R400:400 L06_Tensor <> C rec
+binder 394:394 <> a:6
+binder 396:396 <> b:7
+R405:405 L06_Tensor <> C rec
+R413:415 L06_Tensor <> mkC constr
+R429:431 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R422:424 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R418:419 L06_Tensor <> Re proj
+R421:421 L06_Tensor <> a:6 var
+R425:426 L06_Tensor <> Re proj
+R428:428 L06_Tensor <> b:7 var
+R436:438 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R432:433 L06_Tensor <> Im proj
+R435:435 L06_Tensor <> a:6 var
+R439:440 L06_Tensor <> Im proj
+R442:442 L06_Tensor <> b:7 var
+R457:459 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R450:452 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R446:447 L06_Tensor <> Re proj
+R449:449 L06_Tensor <> a:6 var
+R453:454 L06_Tensor <> Im proj
+R456:456 L06_Tensor <> b:7 var
+R464:466 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R460:461 L06_Tensor <> Im proj
+R463:463 L06_Tensor <> a:6 var
+R467:468 L06_Tensor <> Re proj
+R470:470 L06_Tensor <> b:7 var
+def 485:490 <> Cscale
+R497:497 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 493:493 <> r:8
+R505:505 L06_Tensor <> C rec
+binder 501:501 <> z:9
+R510:510 L06_Tensor <> C rec
+R515:517 L06_Tensor <> mkC constr
+R521:523 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R520:520 L06_Tensor <> r:8 var
+R524:525 L06_Tensor <> Re proj
+R527:527 L06_Tensor <> z:9 var
+R532:534 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R531:531 L06_Tensor <> r:8 var
+R535:536 L06_Tensor <> Im proj
+R538:538 L06_Tensor <> z:9 var
+def 553:558 <> Cnorm2
+R565:565 L06_Tensor <> C rec
+binder 561:561 <> z:10
+R570:570 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R586:588 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R579:581 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R575:576 L06_Tensor <> Re proj
+R578:578 L06_Tensor <> z:10 var
+R582:583 L06_Tensor <> Re proj
+R585:585 L06_Tensor <> z:10 var
+R593:595 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R589:590 L06_Tensor <> Im proj
+R592:592 L06_Tensor <> z:10 var
+R596:597 L06_Tensor <> Im proj
+R599:599 L06_Tensor <> z:10 var
+rec 669:670 <> H2
+proj 682:683 <> c0
+proj 690:691 <> c1
+R687:687 L06_Tensor <> C rec
+R695:695 L06_Tensor <> C rec
+def 712:718 <> H2_zero
+R722:723 L06_Tensor <> H2 rec
+R728:731 L06_Tensor <> mkH2 constr
+R733:734 L06_Tensor <> C0 def
+R736:737 L06_Tensor <> C0 def
+def 751:756 <> H2_add
+R765:766 L06_Tensor <> H2 rec
+binder 759:759 <> a:14
+binder 761:761 <> b:15
+R771:772 L06_Tensor <> H2 rec
+R777:780 L06_Tensor <> mkH2 constr
+R783:786 L06_Tensor <> Cadd def
+R789:790 L06_Tensor <> c0 proj
+R792:792 L06_Tensor <> a:14 var
+R796:797 L06_Tensor <> c0 proj
+R799:799 L06_Tensor <> b:15 var
+R804:807 L06_Tensor <> Cadd def
+R810:811 L06_Tensor <> c1 proj
+R813:813 L06_Tensor <> a:14 var
+R817:818 L06_Tensor <> c1 proj
+R820:820 L06_Tensor <> b:15 var
+def 836:843 <> H2_scale
+R850:850 L06_Tensor <> C rec
+binder 846:846 <> r:16
+R858:859 L06_Tensor <> H2 rec
+binder 854:854 <> v:17
+R864:865 L06_Tensor <> H2 rec
+R870:873 L06_Tensor <> mkH2 constr
+R876:879 L06_Tensor <> Cmul def
+R881:881 L06_Tensor <> r:16 var
+R884:885 L06_Tensor <> c0 proj
+R887:887 L06_Tensor <> v:17 var
+R892:895 L06_Tensor <> Cmul def
+R897:897 L06_Tensor <> r:16 var
+R900:901 L06_Tensor <> c1 proj
+R903:903 L06_Tensor <> v:17 var
+def 939:942 <> ket0
+R946:947 L06_Tensor <> H2 rec
+R952:955 L06_Tensor <> mkH2 constr
+R957:958 L06_Tensor <> C1 def
+R960:961 L06_Tensor <> C0 def
+def 988:991 <> ket1
+R995:996 L06_Tensor <> H2 rec
+R1001:1004 L06_Tensor <> mkH2 constr
+R1006:1007 L06_Tensor <> C0 def
+R1009:1010 L06_Tensor <> C1 def
+def 1068:1072 <> Cconj
+R1079:1079 L06_Tensor <> C rec
+binder 1075:1075 <> z:18
+R1084:1084 L06_Tensor <> C rec
+R1089:1091 L06_Tensor <> mkC constr
+R1094:1095 L06_Tensor <> Re proj
+R1097:1097 L06_Tensor <> z:18 var
+R1101:1102 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R1103:1104 L06_Tensor <> Im proj
+R1106:1106 L06_Tensor <> z:18 var
+def 1121:1125 <> inner
+R1134:1135 L06_Tensor <> H2 rec
+binder 1128:1128 <> a:19
+binder 1130:1130 <> b:20
+R1140:1140 L06_Tensor <> C rec
+R1147:1150 L06_Tensor <> Cadd def
+R1153:1156 L06_Tensor <> Cmul def
+R1159:1163 L06_Tensor <> Cconj def
+R1166:1167 L06_Tensor <> c0 proj
+R1169:1169 L06_Tensor <> a:19 var
+R1174:1175 L06_Tensor <> c0 proj
+R1177:1177 L06_Tensor <> b:20 var
+R1182:1185 L06_Tensor <> Cmul def
+R1188:1192 L06_Tensor <> Cconj def
+R1195:1196 L06_Tensor <> c1 proj
+R1198:1198 L06_Tensor <> a:19 var
+R1203:1204 L06_Tensor <> c1 proj
+R1206:1206 L06_Tensor <> b:20 var
+def 1242:1246 <> norm2
+R1253:1254 L06_Tensor <> H2 rec
+binder 1249:1249 <> v:21
+R1259:1259 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1277:1279 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1264:1269 L06_Tensor <> Cnorm2 def
+R1272:1273 L06_Tensor <> c0 proj
+R1275:1275 L06_Tensor <> v:21 var
+R1280:1285 L06_Tensor <> Cnorm2 def
+R1288:1289 L06_Tensor <> c1 proj
+R1291:1291 L06_Tensor <> v:21 var
+rec 1384:1385 <> H4
+proj 1400:1402 <> c00
+proj 1437:1439 <> c01
+proj 1474:1476 <> c10
+proj 1511:1513 <> c11
+R1406:1406 L06_Tensor <> C rec
+R1443:1443 L06_Tensor <> C rec
+R1480:1480 L06_Tensor <> C rec
+R1517:1517 L06_Tensor <> C rec
+def 1609:1614 <> tensor
+R1623:1624 L06_Tensor <> H2 rec
+binder 1617:1617 <> a:27
+binder 1619:1619 <> b:28
+R1629:1630 L06_Tensor <> H4 rec
+R1637:1640 L06_Tensor <> mkH4 constr
+R1643:1646 L06_Tensor <> Cmul def
+R1649:1650 L06_Tensor <> c0 proj
+R1652:1652 L06_Tensor <> a:27 var
+R1656:1657 L06_Tensor <> c0 proj
+R1659:1659 L06_Tensor <> b:28 var
+R1686:1689 L06_Tensor <> Cmul def
+R1692:1693 L06_Tensor <> c0 proj
+R1695:1695 L06_Tensor <> a:27 var
+R1699:1700 L06_Tensor <> c1 proj
+R1702:1702 L06_Tensor <> b:28 var
+R1729:1732 L06_Tensor <> Cmul def
+R1735:1736 L06_Tensor <> c1 proj
+R1738:1738 L06_Tensor <> a:27 var
+R1742:1743 L06_Tensor <> c0 proj
+R1745:1745 L06_Tensor <> b:28 var
+R1772:1775 L06_Tensor <> Cmul def
+R1778:1779 L06_Tensor <> c1 proj
+R1781:1781 L06_Tensor <> a:27 var
+R1785:1786 L06_Tensor <> c1 proj
+R1788:1788 L06_Tensor <> b:28 var
+def 1845:1849 <> ket00
+R1853:1854 L06_Tensor <> H4 rec
+R1859:1862 L06_Tensor <> mkH4 constr
+R1864:1865 L06_Tensor <> C1 def
+R1867:1868 L06_Tensor <> C0 def
+R1870:1871 L06_Tensor <> C0 def
+R1873:1874 L06_Tensor <> C0 def
+def 1888:1892 <> ket01
+R1896:1897 L06_Tensor <> H4 rec
+R1902:1905 L06_Tensor <> mkH4 constr
+R1907:1908 L06_Tensor <> C0 def
+R1910:1911 L06_Tensor <> C1 def
+R1913:1914 L06_Tensor <> C0 def
+R1916:1917 L06_Tensor <> C0 def
+def 1931:1935 <> ket10
+R1939:1940 L06_Tensor <> H4 rec
+R1945:1948 L06_Tensor <> mkH4 constr
+R1950:1951 L06_Tensor <> C0 def
+R1953:1954 L06_Tensor <> C0 def
+R1956:1957 L06_Tensor <> C1 def
+R1959:1960 L06_Tensor <> C0 def
+def 1974:1978 <> ket11
+R1982:1983 L06_Tensor <> H4 rec
+R1988:1991 L06_Tensor <> mkH4 constr
+R1993:1994 L06_Tensor <> C0 def
+R1996:1997 L06_Tensor <> C0 def
+R1999:2000 L06_Tensor <> C0 def
+R2002:2003 L06_Tensor <> C1 def
+prf 2044:2058 <> tensor_basis_00
+R2078:2080 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2062:2067 L06_Tensor <> tensor def
+R2069:2072 L06_Tensor <> ket0 def
+R2074:2077 L06_Tensor <> ket0 def
+R2081:2085 L06_Tensor <> ket00 def
+R2104:2109 L06_Tensor <> tensor def
+R2112:2115 L06_Tensor <> ket0 def
+R2118:2122 L06_Tensor <> ket00 def
+R2125:2128 L06_Tensor <> Cmul def
+R2131:2132 L06_Tensor <> C1 def
+R2135:2136 L06_Tensor <> C0 def
+prf 2186:2200 <> tensor_basis_01
+R2220:2222 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2204:2209 L06_Tensor <> tensor def
+R2211:2214 L06_Tensor <> ket0 def
+R2216:2219 L06_Tensor <> ket1 def
+R2223:2227 L06_Tensor <> ket01 def
+R2246:2251 L06_Tensor <> tensor def
+R2254:2257 L06_Tensor <> ket0 def
+R2260:2263 L06_Tensor <> ket1 def
+R2266:2270 L06_Tensor <> ket01 def
+R2273:2276 L06_Tensor <> Cmul def
+R2279:2280 L06_Tensor <> C1 def
+R2283:2284 L06_Tensor <> C0 def
+def 2442:2451 <> is_product
+R2460:2461 L06_Tensor <> H4 rec
+binder 2454:2456 <> psi:29
+R2476:2482 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2495:2496 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2493:2494 L06_Tensor <> H2 rec
+binder 2483:2485 <> phi:30
+R2493:2494 L06_Tensor <> H2 rec
+binder 2487:2489 <> chi:31
+R2511:2513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2497:2502 L06_Tensor <> tensor def
+R2504:2506 L06_Tensor <> phi:30 var
+R2508:2510 L06_Tensor <> chi:31 var
+R2514:2516 L06_Tensor <> psi:29 var
+def 2596:2608 <> bell_phi_plus
+R2612:2613 L06_Tensor <> H4 rec
+R2620:2623 L06_Tensor <> mkH4 constr
+R2626:2628 L06_Tensor <> mkC constr
+R2632:2632 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R2633:2636 Coq.Reals.R_sqrt <> sqrt def
+R2644:2645 L06_Tensor <> C0 def
+R2647:2648 L06_Tensor <> C0 def
+R2651:2653 L06_Tensor <> mkC constr
+R2657:2657 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R2658:2661 Coq.Reals.R_sqrt <> sqrt def
+def 2735:2751 <> product_criterion
+R2760:2761 L06_Tensor <> H4 rec
+binder 2754:2756 <> psi:32
+R2800:2802 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2776:2779 L06_Tensor <> Cmul def
+R2782:2784 L06_Tensor <> c00 proj
+R2786:2788 L06_Tensor <> psi:32 var
+R2792:2794 L06_Tensor <> c11 proj
+R2796:2798 L06_Tensor <> psi:32 var
+R2803:2806 L06_Tensor <> Cmul def
+R2809:2811 L06_Tensor <> c01 proj
+R2813:2815 L06_Tensor <> psi:32 var
+R2819:2821 L06_Tensor <> c10 proj
+R2823:2825 L06_Tensor <> psi:32 var
+prf 2838:2862 <> product_implies_criterion
+binder 2873:2875 <> psi:33
+R2894:2897 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2880:2889 L06_Tensor <> is_product def
+R2891:2893 L06_Tensor <> psi:33 var
+R2898:2914 L06_Tensor <> product_criterion def
+R2916:2918 L06_Tensor <> psi:33 var
+R2967:2983 L06_Tensor <> product_criterion def
+R3011:3016 L06_Tensor <> tensor def
+R3186:3189 L06_Tensor <> Cmul def
+prf 3349:3374 <> bell_not_product_criterion
+R3380:3381 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3382:3398 L06_Tensor <> product_criterion def
+R3400:3412 L06_Tensor <> bell_phi_plus def
+R3431:3447 L06_Tensor <> product_criterion def
+R3450:3462 L06_Tensor <> bell_phi_plus def
+R3465:3468 L06_Tensor <> Cmul def
+R3471:3472 L06_Tensor <> C0 def
+R3624:3626 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3618:3621 Coq.Reals.R_sqrt <> sqrt def
+R3640:3649 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R3624:3626 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3618:3621 Coq.Reals.R_sqrt <> sqrt def
+R3640:3649 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R3685:3687 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3676:3678 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3679:3682 Coq.Reals.R_sqrt <> sqrt def
+R3701:3716 Coq.Reals.RIneq <> Rdiv_lt_0_compat thm
+R3685:3687 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3676:3678 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3679:3682 Coq.Reals.R_sqrt <> sqrt def
+R3701:3716 Coq.Reals.RIneq <> Rdiv_lt_0_compat thm
+R3766:3768 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3751:3754 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3765:3765 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3742:3744 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3745:3748 Coq.Reals.R_sqrt <> sqrt def
+R3756:3758 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3759:3762 Coq.Reals.R_sqrt <> sqrt def
+R3782:3798 Coq.Reals.RIneq <> Rmult_gt_0_compat thm
+R3766:3768 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3751:3754 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3765:3765 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3742:3744 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3745:3748 Coq.Reals.R_sqrt <> sqrt def
+R3756:3758 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3759:3762 Coq.Reals.R_sqrt <> sqrt def
+R3782:3798 Coq.Reals.RIneq <> Rmult_gt_0_compat thm
+rec 3924:3926 <> DM2
+proj 3941:3945 <> rho00
+proj 3952:3956 <> rho01
+proj 3965:3969 <> rho10
+proj 3976:3980 <> rho11
+R3949:3949 L06_Tensor <> C rec
+R3960:3960 L06_Tensor <> C rec
+R3973:3973 L06_Tensor <> C rec
+R3984:3984 L06_Tensor <> C rec
+def 4055:4064 <> pure_to_dm
+R4071:4072 L06_Tensor <> H2 rec
+binder 4067:4067 <> v:39
+R4077:4079 L06_Tensor <> DM2 rec
+R4086:4090 L06_Tensor <> mkDM2 constr
+R4093:4096 L06_Tensor <> Cmul def
+R4099:4100 L06_Tensor <> c0 proj
+R4102:4102 L06_Tensor <> v:39 var
+R4106:4110 L06_Tensor <> Cconj def
+R4113:4114 L06_Tensor <> c0 proj
+R4116:4116 L06_Tensor <> v:39 var
+R4130:4133 L06_Tensor <> Cmul def
+R4136:4137 L06_Tensor <> c0 proj
+R4139:4139 L06_Tensor <> v:39 var
+R4143:4147 L06_Tensor <> Cconj def
+R4150:4151 L06_Tensor <> c1 proj
+R4153:4153 L06_Tensor <> v:39 var
+R4167:4170 L06_Tensor <> Cmul def
+R4173:4174 L06_Tensor <> c1 proj
+R4176:4176 L06_Tensor <> v:39 var
+R4180:4184 L06_Tensor <> Cconj def
+R4187:4188 L06_Tensor <> c0 proj
+R4190:4190 L06_Tensor <> v:39 var
+R4204:4207 L06_Tensor <> Cmul def
+R4210:4211 L06_Tensor <> c1 proj
+R4213:4213 L06_Tensor <> v:39 var
+R4217:4221 L06_Tensor <> Cconj def
+R4224:4225 L06_Tensor <> c1 proj
+R4227:4227 L06_Tensor <> v:39 var
+def 4284:4298 <> partial_trace_2
+R4307:4308 L06_Tensor <> H4 rec
+binder 4301:4303 <> psi:40
+R4313:4315 L06_Tensor <> DM2 rec
+R4322:4326 L06_Tensor <> mkDM2 constr
+R4373:4375 L06_Tensor <> mkC constr
+R4394:4396 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4378:4383 L06_Tensor <> Cnorm2 def
+R4386:4388 L06_Tensor <> c00 proj
+R4390:4392 L06_Tensor <> psi:40 var
+R4397:4402 L06_Tensor <> Cnorm2 def
+R4405:4407 L06_Tensor <> c01 proj
+R4409:4411 L06_Tensor <> psi:40 var
+R4466:4469 L06_Tensor <> Cadd def
+R4472:4475 L06_Tensor <> Cmul def
+R4478:4480 L06_Tensor <> c00 proj
+R4482:4484 L06_Tensor <> psi:40 var
+R4488:4492 L06_Tensor <> Cconj def
+R4495:4497 L06_Tensor <> c10 proj
+R4499:4501 L06_Tensor <> psi:40 var
+R4517:4520 L06_Tensor <> Cmul def
+R4523:4525 L06_Tensor <> c01 proj
+R4527:4529 L06_Tensor <> psi:40 var
+R4533:4537 L06_Tensor <> Cconj def
+R4540:4542 L06_Tensor <> c11 proj
+R4544:4546 L06_Tensor <> psi:40 var
+R4600:4603 L06_Tensor <> Cadd def
+R4606:4609 L06_Tensor <> Cmul def
+R4612:4614 L06_Tensor <> c10 proj
+R4616:4618 L06_Tensor <> psi:40 var
+R4622:4626 L06_Tensor <> Cconj def
+R4629:4631 L06_Tensor <> c00 proj
+R4633:4635 L06_Tensor <> psi:40 var
+R4651:4654 L06_Tensor <> Cmul def
+R4657:4659 L06_Tensor <> c11 proj
+R4661:4663 L06_Tensor <> psi:40 var
+R4667:4671 L06_Tensor <> Cconj def
+R4674:4676 L06_Tensor <> c01 proj
+R4678:4680 L06_Tensor <> psi:40 var
+R4730:4732 L06_Tensor <> mkC constr
+R4751:4753 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4735:4740 L06_Tensor <> Cnorm2 def
+R4743:4745 L06_Tensor <> c10 proj
+R4747:4749 L06_Tensor <> psi:40 var
+R4754:4759 L06_Tensor <> Cnorm2 def
+R4762:4764 L06_Tensor <> c11 proj
+R4766:4768 L06_Tensor <> psi:40 var
+def 4899:4903 <> trace
+R4912:4914 L06_Tensor <> DM2 rec
+binder 4906:4908 <> rho:41
+R4919:4919 L06_Tensor <> C rec
+R4926:4929 L06_Tensor <> Cadd def
+R4932:4936 L06_Tensor <> rho00 proj
+R4938:4940 L06_Tensor <> rho:41 var
+R4944:4948 L06_Tensor <> rho11 proj
+R4950:4952 L06_Tensor <> rho:41 var
+prf 5042:5067 <> product_partial_trace_pure
+binder 5078:5080 <> phi:42
+binder 5082:5084 <> chi:43
+R5100:5105 L06_Tensor <> tensor def
+R5107:5109 L06_Tensor <> phi:42 var
+R5111:5113 L06_Tensor <> chi:43 var
+binder 5093:5095 <> psi:44
+R5131:5145 L06_Tensor <> partial_trace_2 def
+R5147:5149 L06_Tensor <> psi:44 var
+binder 5124:5126 <> rho:45
+R5255:5260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5251:5253 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5242:5246 L06_Tensor <> norm2 def
+R5248:5250 L06_Tensor <> chi:43 var
+R5293:5298 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5275:5277 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5261:5262 L06_Tensor <> Re proj
+R5265:5269 L06_Tensor <> rho00 proj
+R5271:5273 L06_Tensor <> rho:45 var
+R5278:5283 L06_Tensor <> Cnorm2 def
+R5286:5287 L06_Tensor <> c0 proj
+R5289:5291 L06_Tensor <> phi:42 var
+R5313:5315 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5299:5300 L06_Tensor <> Re proj
+R5303:5307 L06_Tensor <> rho11 proj
+R5309:5311 L06_Tensor <> rho:45 var
+R5316:5321 L06_Tensor <> Cnorm2 def
+R5324:5325 L06_Tensor <> c1 proj
+R5327:5329 L06_Tensor <> phi:42 var
+R5391:5405 L06_Tensor <> partial_trace_2 def
+R5408:5413 L06_Tensor <> tensor def
+R5432:5437 L06_Tensor <> Cnorm2 def
+R5440:5443 L06_Tensor <> Cmul def
+R5588:5592 L06_Tensor <> norm2 def
+R5595:5600 L06_Tensor <> Cnorm2 def
+prf 5905:5922 <> bell_reduced_mixed
+R5939:5953 L06_Tensor <> partial_trace_2 def
+R5955:5967 L06_Tensor <> bell_phi_plus def
+binder 5932:5934 <> rho:46
+R5994:5997 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5988:5990 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5974:5975 L06_Tensor <> Re proj
+R5978:5982 L06_Tensor <> rho00 proj
+R5984:5986 L06_Tensor <> rho:46 var
+R5992:5992 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6012:6014 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5998:5999 L06_Tensor <> Re proj
+R6002:6006 L06_Tensor <> rho11 proj
+R6008:6010 L06_Tensor <> rho:46 var
+R6016:6016 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6043:6057 L06_Tensor <> partial_trace_2 def
+R6060:6072 L06_Tensor <> bell_phi_plus def
+R6084:6089 L06_Tensor <> Cnorm2 def
+R6092:6093 L06_Tensor <> C0 def
+R6127:6129 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6121:6124 Coq.Reals.R_sqrt <> sqrt def
+R6143:6152 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R6127:6129 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6121:6124 Coq.Reals.R_sqrt <> sqrt def
+R6143:6152 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R6193:6195 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6184:6186 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6178:6181 Coq.Reals.R_sqrt <> sqrt def
+R6187:6190 Coq.Reals.R_sqrt <> sqrt def
+R6209:6217 Coq.Reals.R_sqrt <> sqrt_sqrt thm
+R6193:6195 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6184:6186 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6178:6181 Coq.Reals.R_sqrt <> sqrt def
+R6187:6190 Coq.Reals.R_sqrt <> sqrt def
+R6209:6217 Coq.Reals.R_sqrt <> sqrt_sqrt thm
+R6248:6251 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6242:6245 Coq.Reals.R_sqrt <> sqrt def
+R6248:6251 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6242:6245 Coq.Reals.R_sqrt <> sqrt def
+R6333:6336 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6347:6347 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6324:6326 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6327:6330 Coq.Reals.R_sqrt <> sqrt def
+R6338:6340 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6341:6344 Coq.Reals.R_sqrt <> sqrt def
+R6357:6360 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6376:6376 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6367:6369 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6361:6364 Coq.Reals.R_sqrt <> sqrt def
+R6370:6373 Coq.Reals.R_sqrt <> sqrt def
+R6333:6336 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6347:6347 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6324:6326 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6327:6330 Coq.Reals.R_sqrt <> sqrt def
+R6338:6340 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6341:6344 Coq.Reals.R_sqrt <> sqrt def
+R6357:6360 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6376:6376 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6367:6369 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6361:6364 Coq.Reals.R_sqrt <> sqrt def
+R6370:6373 Coq.Reals.R_sqrt <> sqrt def
+R6486:6489 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6500:6500 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6477:6479 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6480:6483 Coq.Reals.R_sqrt <> sqrt def
+R6491:6493 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6494:6497 Coq.Reals.R_sqrt <> sqrt def
+R6510:6513 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6529:6529 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6520:6522 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6514:6517 Coq.Reals.R_sqrt <> sqrt def
+R6523:6526 Coq.Reals.R_sqrt <> sqrt def
+R6486:6489 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6500:6500 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6477:6479 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6480:6483 Coq.Reals.R_sqrt <> sqrt def
+R6491:6493 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6494:6497 Coq.Reals.R_sqrt <> sqrt def
+R6510:6513 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6529:6529 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6520:6522 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6514:6517 Coq.Reals.R_sqrt <> sqrt def
+R6523:6526 Coq.Reals.R_sqrt <> sqrt def
+prf 6619:6638 <> T11_tensor_structure
+R6677:6677 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6728:6792 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6691:6692 L06_Tensor <> H2 rec
+binder 6685:6685 <> a:47
+binder 6687:6687 <> b:48
+R6695:6701 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6710:6711 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6708:6709 L06_Tensor <> H4 rec
+binder 6702:6704 <> psi:49
+R6715:6717 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6712:6714 L06_Tensor <> psi:49 var
+R6718:6723 L06_Tensor <> tensor def
+R6725:6725 L06_Tensor <> a:47 var
+R6727:6727 L06_Tensor <> b:48 var
+R6793:6793 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6845:6898 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6932:6932 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 6801:6803 <> psi:50
+R6820:6823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6806:6815 L06_Tensor <> is_product def
+R6817:6819 L06_Tensor <> psi:50 var
+R6824:6840 L06_Tensor <> product_criterion def
+R6842:6844 L06_Tensor <> psi:50 var
+R6899:6900 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6901:6917 L06_Tensor <> product_criterion def
+R6919:6931 L06_Tensor <> bell_phi_plus def
+R6985:6990 L06_Tensor <> tensor def
+R6985:6990 L06_Tensor <> tensor def
+R7021:7045 L06_Tensor <> product_implies_criterion thm
+R7021:7045 L06_Tensor <> product_implies_criterion thm
+R7058:7083 L06_Tensor <> bell_not_product_criterion thm
+R7058:7083 L06_Tensor <> bell_not_product_criterion thm

@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "dd",
+ "options": {"relaxedAutoImplicit": false, "autoImplicit": false},
+ "name": "DD.L02_Iteration",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

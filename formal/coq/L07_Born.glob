@@ -1,0 +1,398 @@
+DIGEST c2dd4da52a7161fe4e38c70b6c297cf2
+FL07_Born
+R107:111 Coq.Reals.Reals <> <> lib
+R129:131 Coq.micromega.Lra <> <> lib
+rec 188:188 <> C
+proj 199:200 <> Re
+proj 207:208 <> Im
+R204:204 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R212:212 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 228:229 <> C0
+R233:233 L07_Born <> C rec
+R238:240 L07_Born <> mkC constr
+def 258:259 <> C1
+R263:263 L07_Born <> C rec
+R268:270 L07_Born <> mkC constr
+def 288:291 <> Cadd
+R300:300 L07_Born <> C rec
+binder 294:294 <> a:4
+binder 296:296 <> b:5
+R305:305 L07_Born <> C rec
+R310:312 L07_Born <> mkC constr
+R319:321 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R315:316 L07_Born <> Re proj
+R318:318 L07_Born <> a:4 var
+R322:323 L07_Born <> Re proj
+R325:325 L07_Born <> b:5 var
+R333:335 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R329:330 L07_Born <> Im proj
+R332:332 L07_Born <> a:4 var
+R336:337 L07_Born <> Im proj
+R339:339 L07_Born <> b:5 var
+def 354:357 <> Cmul
+R366:366 L07_Born <> C rec
+binder 360:360 <> a:6
+binder 362:362 <> b:7
+R371:371 L07_Born <> C rec
+R379:381 L07_Born <> mkC constr
+R395:397 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R388:390 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R384:385 L07_Born <> Re proj
+R387:387 L07_Born <> a:6 var
+R391:392 L07_Born <> Re proj
+R394:394 L07_Born <> b:7 var
+R402:404 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R398:399 L07_Born <> Im proj
+R401:401 L07_Born <> a:6 var
+R405:406 L07_Born <> Im proj
+R408:408 L07_Born <> b:7 var
+R423:425 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R416:418 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R412:413 L07_Born <> Re proj
+R415:415 L07_Born <> a:6 var
+R419:420 L07_Born <> Im proj
+R422:422 L07_Born <> b:7 var
+R430:432 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R426:427 L07_Born <> Im proj
+R429:429 L07_Born <> a:6 var
+R433:434 L07_Born <> Re proj
+R436:436 L07_Born <> b:7 var
+def 451:455 <> Cconj
+R462:462 L07_Born <> C rec
+binder 458:458 <> z:8
+R467:467 L07_Born <> C rec
+R472:474 L07_Born <> mkC constr
+R477:478 L07_Born <> Re proj
+R480:480 L07_Born <> z:8 var
+R484:485 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R486:487 L07_Born <> Im proj
+R489:489 L07_Born <> z:8 var
+def 504:509 <> Cnorm2
+R516:516 L07_Born <> C rec
+binder 512:512 <> z:9
+R521:521 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R537:539 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R530:532 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R526:527 L07_Born <> Re proj
+R529:529 L07_Born <> z:9 var
+R533:534 L07_Born <> Re proj
+R536:536 L07_Born <> z:9 var
+R544:546 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R540:541 L07_Born <> Im proj
+R543:543 L07_Born <> z:9 var
+R547:548 L07_Born <> Im proj
+R550:550 L07_Born <> z:9 var
+def 564:569 <> Cscale
+R576:576 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 572:572 <> r:10
+R584:584 L07_Born <> C rec
+binder 580:580 <> z:11
+R589:589 L07_Born <> C rec
+R594:596 L07_Born <> mkC constr
+R600:602 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R599:599 L07_Born <> r:10 var
+R603:604 L07_Born <> Re proj
+R606:606 L07_Born <> z:11 var
+R611:613 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R610:610 L07_Born <> r:10 var
+R614:615 L07_Born <> Im proj
+R617:617 L07_Born <> z:11 var
+rec 658:659 <> H2
+proj 671:672 <> c0
+proj 679:680 <> c1
+R676:676 L07_Born <> C rec
+R684:684 L07_Born <> C rec
+def 701:705 <> norm2
+R712:713 L07_Born <> H2 rec
+binder 708:708 <> v:15
+R718:718 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R736:738 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R723:728 L07_Born <> Cnorm2 def
+R731:732 L07_Born <> c0 proj
+R734:734 L07_Born <> v:15 var
+R739:744 L07_Born <> Cnorm2 def
+R747:748 L07_Born <> c1 proj
+R750:750 L07_Born <> v:15 var
+def 766:775 <> normalized
+R782:783 L07_Born <> H2 rec
+binder 778:778 <> v:16
+R803:805 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R796:800 L07_Born <> norm2 def
+R802:802 L07_Born <> v:16 var
+def 906:910 <> prob0
+R919:920 L07_Born <> H2 rec
+binder 913:915 <> psi:17
+R925:925 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R930:935 L07_Born <> Cnorm2 def
+R938:939 L07_Born <> c0 proj
+R941:943 L07_Born <> psi:17 var
+def 958:962 <> prob1
+R971:972 L07_Born <> H2 rec
+binder 965:967 <> psi:18
+R977:977 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R982:987 L07_Born <> Cnorm2 def
+R990:991 L07_Born <> c1 proj
+R993:995 L07_Born <> psi:18 var
+prf 1045:1055 <> prob_nonneg
+binder 1066:1068 <> psi:19
+R1087:1090 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1082:1085 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1073:1077 L07_Born <> prob0 def
+R1079:1081 L07_Born <> psi:19 var
+R1100:1103 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1091:1095 L07_Born <> prob1 def
+R1097:1099 L07_Born <> psi:19 var
+R1139:1143 L07_Born <> prob0 def
+R1146:1150 L07_Born <> prob1 def
+R1153:1158 L07_Born <> Cnorm2 def
+prf 1247:1258 <> prob_sum_one
+binder 1269:1271 <> psi:20
+R1290:1293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1276:1285 L07_Born <> normalized def
+R1287:1289 L07_Born <> psi:20 var
+R1315:1317 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1303:1305 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1294:1298 L07_Born <> prob0 def
+R1300:1302 L07_Born <> psi:20 var
+R1306:1310 L07_Born <> prob1 def
+R1312:1314 L07_Born <> psi:20 var
+R1357:1361 L07_Born <> prob0 def
+R1364:1368 L07_Born <> prob1 def
+R1371:1380 L07_Born <> normalized def
+R1383:1387 L07_Born <> norm2 def
+rec 1570:1571 <> U2
+proj 1585:1587 <> u00
+proj 1594:1596 <> u01
+proj 1605:1607 <> u10
+proj 1614:1616 <> u11
+R1591:1591 L07_Born <> C rec
+R1600:1600 L07_Born <> C rec
+R1611:1611 L07_Born <> C rec
+R1620:1620 L07_Born <> C rec
+def 1666:1672 <> apply_U
+R1679:1680 L07_Born <> U2 rec
+binder 1675:1675 <> U:26
+R1690:1691 L07_Born <> H2 rec
+binder 1684:1686 <> psi:27
+R1696:1697 L07_Born <> H2 rec
+R1704:1707 L07_Born <> mkH2 constr
+R1710:1713 L07_Born <> Cadd def
+R1716:1719 L07_Born <> Cmul def
+R1722:1724 L07_Born <> u00 proj
+R1726:1726 L07_Born <> U:26 var
+R1730:1731 L07_Born <> c0 proj
+R1733:1735 L07_Born <> psi:27 var
+R1740:1743 L07_Born <> Cmul def
+R1746:1748 L07_Born <> u01 proj
+R1750:1750 L07_Born <> U:26 var
+R1754:1755 L07_Born <> c1 proj
+R1757:1759 L07_Born <> psi:27 var
+R1772:1775 L07_Born <> Cadd def
+R1778:1781 L07_Born <> Cmul def
+R1784:1786 L07_Born <> u10 proj
+R1788:1788 L07_Born <> U:26 var
+R1792:1793 L07_Born <> c0 proj
+R1795:1797 L07_Born <> psi:27 var
+R1802:1805 L07_Born <> Cmul def
+R1808:1810 L07_Born <> u11 proj
+R1812:1812 L07_Born <> U:26 var
+R1816:1817 L07_Born <> c1 proj
+R1819:1821 L07_Born <> psi:27 var
+def 1926:1932 <> unitary
+R1939:1940 L07_Born <> U2 rec
+binder 1935:1935 <> U:28
+R2018:2051 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2014:2016 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1997:1999 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1983:1988 L07_Born <> Cnorm2 def
+R1991:1993 L07_Born <> u00 proj
+R1995:1995 L07_Born <> U:28 var
+R2000:2005 L07_Born <> Cnorm2 def
+R2008:2010 L07_Born <> u10 proj
+R2012:2012 L07_Born <> U:28 var
+R2087:2131 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2083:2085 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2066:2068 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2052:2057 L07_Born <> Cnorm2 def
+R2060:2062 L07_Born <> u01 proj
+R2064:2064 L07_Born <> U:28 var
+R2069:2074 L07_Born <> Cnorm2 def
+R2077:2079 L07_Born <> u11 proj
+R2081:2081 L07_Born <> U:28 var
+R2235:2237 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2209:2211 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2181:2185 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2155:2157 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2142:2144 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2132:2133 L07_Born <> Re proj
+R2136:2138 L07_Born <> u00 proj
+R2140:2140 L07_Born <> U:28 var
+R2145:2146 L07_Born <> Re proj
+R2149:2151 L07_Born <> u01 proj
+R2153:2153 L07_Born <> U:28 var
+R2168:2170 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2158:2159 L07_Born <> Im proj
+R2162:2164 L07_Born <> u00 proj
+R2166:2166 L07_Born <> U:28 var
+R2171:2172 L07_Born <> Im proj
+R2175:2177 L07_Born <> u01 proj
+R2179:2179 L07_Born <> U:28 var
+R2196:2198 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2186:2187 L07_Born <> Re proj
+R2190:2192 L07_Born <> u10 proj
+R2194:2194 L07_Born <> U:28 var
+R2199:2200 L07_Born <> Re proj
+R2203:2205 L07_Born <> u11 proj
+R2207:2207 L07_Born <> U:28 var
+R2222:2224 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2212:2213 L07_Born <> Im proj
+R2216:2218 L07_Born <> u10 proj
+R2220:2220 L07_Born <> U:28 var
+R2225:2226 L07_Born <> Im proj
+R2229:2231 L07_Born <> u11 proj
+R2233:2233 L07_Born <> U:28 var
+prf 2295:2316 <> unitary_preserves_norm
+binder 2327:2327 <> U:29
+binder 2329:2331 <> psi:30
+R2345:2348 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2336:2342 L07_Born <> unitary def
+R2344:2344 L07_Born <> U:29 var
+R2370:2372 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2349:2353 L07_Born <> norm2 def
+R2356:2362 L07_Born <> apply_U def
+R2364:2364 L07_Born <> U:29 var
+R2366:2368 L07_Born <> psi:30 var
+R2373:2377 L07_Born <> norm2 def
+R2379:2381 L07_Born <> psi:30 var
+R2440:2446 L07_Born <> apply_U def
+R2449:2453 L07_Born <> norm2 def
+R2456:2461 L07_Born <> Cnorm2 def
+R2464:2467 L07_Born <> Cadd def
+R2470:2473 L07_Born <> Cmul def
+prf 3370:3391 <> unitary_preserves_prob
+binder 3402:3402 <> U:31
+binder 3404:3406 <> psi:32
+R3420:3423 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3411:3417 L07_Born <> unitary def
+R3419:3419 L07_Born <> U:31 var
+R3438:3441 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3424:3433 L07_Born <> normalized def
+R3435:3437 L07_Born <> psi:32 var
+R3442:3451 L07_Born <> normalized def
+R3454:3460 L07_Born <> apply_U def
+R3462:3462 L07_Born <> U:31 var
+R3464:3466 L07_Born <> psi:32 var
+R3511:3520 L07_Born <> normalized def
+R3538:3559 L07_Born <> unitary_preserves_norm prfax
+R3538:3559 L07_Born <> unitary_preserves_norm prfax
+R3538:3559 L07_Born <> unitary_preserves_norm prfax
+R3538:3559 L07_Born <> unitary_preserves_norm prfax
+def 3658:3671 <> post_measure_0
+R3680:3681 L07_Born <> H2 rec
+binder 3674:3676 <> psi:33
+R3686:3687 L07_Born <> H2 rec
+R3703:3706 Coq.Reals.R_sqrt <> sqrt def
+R3709:3713 L07_Born <> prob0 def
+R3715:3717 L07_Born <> psi:33 var
+binder 3698:3698 <> p:34
+R3725:3728 L07_Born <> mkH2 constr
+R3731:3736 L07_Born <> Cscale def
+R3740:3740 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3741:3741 L07_Born <> p:34 var
+R3745:3746 L07_Born <> c0 proj
+R3748:3750 L07_Born <> psi:33 var
+R3754:3755 L07_Born <> C0 def
+prf 3814:3836 <> post_measure_normalized
+binder 3847:3849 <> psi:35
+R3867:3872 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3863:3865 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3854:3858 L07_Born <> prob0 def
+R3860:3862 L07_Born <> psi:35 var
+R3873:3882 L07_Born <> normalized def
+R3885:3898 L07_Born <> post_measure_0 def
+R3900:3902 L07_Born <> psi:35 var
+R3939:3948 L07_Born <> normalized def
+R3951:3964 L07_Born <> post_measure_0 def
+R3967:3971 L07_Born <> norm2 def
+R3974:3979 L07_Born <> Cscale def
+R3982:3987 L07_Born <> Cnorm2 def
+R3990:3991 L07_Born <> C0 def
+R3994:3998 L07_Born <> prob0 def
+R4025:4026 L07_Born <> c0 proj
+R4025:4026 L07_Born <> c0 proj
+R4172:4174 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4168:4170 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4176:4178 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4172:4174 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4168:4170 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4176:4178 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4207:4209 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4207:4209 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4250:4252 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4244:4247 Coq.Reals.R_sqrt <> sqrt def
+R4266:4275 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R4250:4252 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4244:4247 Coq.Reals.R_sqrt <> sqrt def
+R4266:4275 Coq.Reals.R_sqrt <> sqrt_lt_R0 thm
+R4320:4322 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4311:4313 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4305:4308 Coq.Reals.R_sqrt <> sqrt def
+R4314:4317 Coq.Reals.R_sqrt <> sqrt def
+R4336:4344 Coq.Reals.R_sqrt <> sqrt_sqrt thm
+R4320:4322 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4311:4313 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4305:4308 Coq.Reals.R_sqrt <> sqrt def
+R4314:4317 Coq.Reals.R_sqrt <> sqrt def
+R4336:4344 Coq.Reals.R_sqrt <> sqrt_sqrt thm
+R4436:4438 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4417:4420 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4435:4435 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4413:4415 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4404:4406 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4407:4410 Coq.Reals.R_sqrt <> sqrt def
+R4431:4433 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4422:4424 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4425:4428 Coq.Reals.R_sqrt <> sqrt def
+R4453:4456 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4471:4471 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4449:4451 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4440:4442 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4443:4446 Coq.Reals.R_sqrt <> sqrt def
+R4467:4469 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4458:4460 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4461:4464 Coq.Reals.R_sqrt <> sqrt def
+R4484:4484 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4498:4502 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4518:4518 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4490:4492 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4486:4488 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4494:4496 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4509:4511 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4503:4506 Coq.Reals.R_sqrt <> sqrt def
+R4512:4515 Coq.Reals.R_sqrt <> sqrt def
+R4436:4438 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4417:4420 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4435:4435 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4413:4415 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4404:4406 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4407:4410 Coq.Reals.R_sqrt <> sqrt def
+R4431:4433 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4422:4424 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4425:4428 Coq.Reals.R_sqrt <> sqrt def
+R4453:4456 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4471:4471 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4449:4451 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4440:4442 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4443:4446 Coq.Reals.R_sqrt <> sqrt def
+R4467:4469 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4458:4460 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4461:4464 Coq.Reals.R_sqrt <> sqrt def
+R4484:4484 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4498:4502 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4518:4518 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4490:4492 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4486:4488 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4494:4496 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4509:4511 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4503:4506 Coq.Reals.R_sqrt <> sqrt def
+R4512:4515 Coq.Reals.R_sqrt <> sqrt def

@@ -1,0 +1,65 @@
+DIGEST 6a6e4521bee7ea6c376ac249bf3ab3f0
+FL01_Distinction
+prf 91:92 <> T0
+R101:104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R96:100 Coq.Init.Logic <> False ind
+R105:109 Coq.Init.Logic <> False ind
+prf 168:180 <> true_ne_false
+R188:191 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R184:187 Coq.Init.Datatypes <> true constr
+R192:196 Coq.Init.Datatypes <> false constr
+prf 234:235 <> T1
+R239:246 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R257:259 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R253:256 Coq.Init.Datatypes <> bool ind
+binder 247:247 <> x:1
+R253:256 Coq.Init.Datatypes <> bool ind
+binder 249:249 <> y:2
+R261:264 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R260:260 L01_Distinction <> x:1 var
+R265:265 L01_Distinction <> y:2 var
+R282:285 Coq.Init.Datatypes <> true constr
+R288:292 Coq.Init.Datatypes <> false constr
+R282:285 Coq.Init.Datatypes <> true constr
+R288:292 Coq.Init.Datatypes <> false constr
+R301:313 L01_Distinction <> true_ne_false thm
+R301:313 L01_Distinction <> true_ne_false thm
+prf 357:358 <> T2
+R373:376 Coq.Init.Datatypes <> bool ind
+binder 369:369 <> b:3
+R387:390 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R380:382 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R379:379 L01_Distinction <> b:3 var
+R383:386 Coq.Init.Datatypes <> true constr
+R392:394 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R391:391 L01_Distinction <> b:3 var
+R395:399 Coq.Init.Datatypes <> false constr
+ind 479:479 <> U
+constr 490:493 <> BOOL
+constr 497:500 <> UNIT
+scheme 479:479 <> U_rect
+scheme 479:479 <> U_ind
+scheme 479:479 <> U_rec
+scheme 479:479 <> U_sind
+prf 512:523 <> BOOL_ne_UNIT
+R531:534 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R527:530 L01_Distinction <> BOOL constr
+R535:538 L01_Distinction <> UNIT constr
+prf 576:577 <> T3
+R581:588 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R596:598 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R595:595 L01_Distinction <> U ind
+binder 589:589 <> x:6
+R595:595 L01_Distinction <> U ind
+binder 591:591 <> y:7
+R600:603 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R599:599 L01_Distinction <> x:6 var
+R604:604 L01_Distinction <> y:7 var
+R621:624 L01_Distinction <> BOOL constr
+R627:630 L01_Distinction <> UNIT constr
+R621:624 L01_Distinction <> BOOL constr
+R627:630 L01_Distinction <> UNIT constr
+R639:650 L01_Distinction <> BOOL_ne_UNIT thm
+R639:650 L01_Distinction <> BOOL_ne_UNIT thm
+prf 678:685 <> L01_done
+R689:692 Coq.Init.Logic <> True ind

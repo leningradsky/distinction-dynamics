@@ -1,0 +1,179 @@
+DIGEST a83090df76543bd8e0948b91fd9f2c64
+FL04_Complex
+R78:82 Coq.Reals.Reals <> <> lib
+R100:102 Coq.micromega.Lra <> <> lib
+rec 187:187 <> C
+proj 204:205 <> Re
+proj 212:213 <> Im
+R209:209 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R217:217 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 256:257 <> C0
+R261:261 L04_Complex <> C rec
+R266:268 L04_Complex <> mkC constr
+def 286:287 <> C1
+R291:291 L04_Complex <> C rec
+R296:298 L04_Complex <> mkC constr
+def 316:317 <> Ci
+R321:321 L04_Complex <> C rec
+R326:328 L04_Complex <> mkC constr
+def 386:389 <> Cadd
+R398:398 L04_Complex <> C rec
+binder 392:392 <> a:4
+binder 394:394 <> b:5
+R403:403 L04_Complex <> C rec
+R408:410 L04_Complex <> mkC constr
+R417:419 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R413:414 L04_Complex <> Re proj
+R416:416 L04_Complex <> a:4 var
+R420:421 L04_Complex <> Re proj
+R423:423 L04_Complex <> b:5 var
+R431:433 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R427:428 L04_Complex <> Im proj
+R430:430 L04_Complex <> a:4 var
+R434:435 L04_Complex <> Im proj
+R437:437 L04_Complex <> b:5 var
+def 452:455 <> Cmul
+R464:464 L04_Complex <> C rec
+binder 458:458 <> a:6
+binder 460:460 <> b:7
+R469:469 L04_Complex <> C rec
+R477:479 L04_Complex <> mkC constr
+R493:495 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R486:488 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R482:483 L04_Complex <> Re proj
+R485:485 L04_Complex <> a:6 var
+R489:490 L04_Complex <> Re proj
+R492:492 L04_Complex <> b:7 var
+R500:502 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R496:497 L04_Complex <> Im proj
+R499:499 L04_Complex <> a:6 var
+R503:504 L04_Complex <> Im proj
+R506:506 L04_Complex <> b:7 var
+R521:523 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R514:516 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R510:511 L04_Complex <> Re proj
+R513:513 L04_Complex <> a:6 var
+R517:518 L04_Complex <> Im proj
+R520:520 L04_Complex <> b:7 var
+R528:530 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R524:525 L04_Complex <> Im proj
+R527:527 L04_Complex <> a:6 var
+R531:532 L04_Complex <> Re proj
+R534:534 L04_Complex <> b:7 var
+def 549:553 <> Cconj
+R560:560 L04_Complex <> C rec
+binder 556:556 <> a:8
+R565:565 L04_Complex <> C rec
+R570:572 L04_Complex <> mkC constr
+R575:576 L04_Complex <> Re proj
+R578:578 L04_Complex <> a:8 var
+R582:583 Coq.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R584:585 L04_Complex <> Im proj
+R587:587 L04_Complex <> a:8 var
+def 619:624 <> Cnorm2
+R631:631 L04_Complex <> C rec
+binder 627:627 <> a:9
+R636:636 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R652:654 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R645:647 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R641:642 L04_Complex <> Re proj
+R644:644 L04_Complex <> a:9 var
+R648:649 L04_Complex <> Re proj
+R651:651 L04_Complex <> a:9 var
+R659:661 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R655:656 L04_Complex <> Im proj
+R658:658 L04_Complex <> a:9 var
+R662:663 L04_Complex <> Im proj
+R665:665 L04_Complex <> a:9 var
+prf 763:774 <> T7_i_squared
+R788:790 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R778:781 L04_Complex <> Cmul def
+R783:784 L04_Complex <> Ci def
+R786:787 L04_Complex <> Ci def
+R791:793 L04_Complex <> mkC constr
+R819:822 L04_Complex <> Cmul def
+R825:826 L04_Complex <> Ci def
+prf 919:936 <> T7_conj_involutive
+R951:951 L04_Complex <> C rec
+binder 947:947 <> z:10
+R969:971 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R954:958 L04_Complex <> Cconj def
+R961:965 L04_Complex <> Cconj def
+R967:967 L04_Complex <> z:10 var
+R972:972 L04_Complex <> z:10 var
+R1005:1009 L04_Complex <> Cconj def
+prf 1081:1092 <> T7_conj_norm
+R1107:1107 L04_Complex <> C rec
+binder 1103:1103 <> z:11
+R1126:1128 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1110:1115 L04_Complex <> Cnorm2 def
+R1118:1122 L04_Complex <> Cconj def
+R1124:1124 L04_Complex <> z:11 var
+R1129:1134 L04_Complex <> Cnorm2 def
+R1136:1136 L04_Complex <> z:11 var
+R1169:1173 L04_Complex <> Cconj def
+R1176:1181 L04_Complex <> Cnorm2 def
+def 1315:1321 <> unitary
+R1329:1332 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1328:1328 L04_Complex <> C rec
+R1333:1333 L04_Complex <> C rec
+binder 1324:1324 <> f:12
+R1359:1359 L04_Complex <> C rec
+binder 1355:1355 <> z:13
+R1374:1376 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1362:1367 L04_Complex <> Cnorm2 def
+R1370:1370 L04_Complex <> f:12 var
+R1372:1372 L04_Complex <> z:13 var
+R1377:1382 L04_Complex <> Cnorm2 def
+R1384:1384 L04_Complex <> z:13 var
+prf 1422:1434 <> T8_id_unitary
+R1438:1444 L04_Complex <> unitary def
+binder 1451:1451 <> z:14
+R1456:1456 L04_Complex <> z:14 var
+R1474:1480 L04_Complex <> unitary def
+prf 1547:1561 <> T8_conj_unitary
+R1565:1571 L04_Complex <> unitary def
+R1573:1577 L04_Complex <> Cconj def
+R1594:1600 L04_Complex <> unitary def
+R1617:1628 L04_Complex <> T7_conj_norm thm
+R1617:1628 L04_Complex <> T7_conj_norm thm
+def 1704:1708 <> Cunit
+R1715:1715 L04_Complex <> C rec
+binder 1711:1711 <> w:15
+R1736:1738 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1728:1733 L04_Complex <> Cnorm2 def
+R1735:1735 L04_Complex <> w:15 var
+def 1803:1807 <> phase
+R1818:1818 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1810:1814 <> theta:16
+R1823:1823 L04_Complex <> C rec
+R1828:1830 L04_Complex <> mkC constr
+R1833:1835 Coq.Reals.Rtrigo_def <> cos def
+R1837:1841 L04_Complex <> theta:16 var
+R1845:1847 Coq.Reals.Rtrigo_def <> sin def
+R1849:1853 L04_Complex <> theta:16 var
+prf 1866:1878 <> T8_phase_unit
+binder 1889:1893 <> theta:17
+R1896:1900 L04_Complex <> Cunit def
+R1903:1907 L04_Complex <> phase def
+R1909:1913 L04_Complex <> theta:17 var
+R1947:1951 L04_Complex <> Cunit def
+R1954:1958 L04_Complex <> phase def
+R1961:1966 L04_Complex <> Cnorm2 def
+R1989:1998 Coq.Reals.Raxioms <> Rplus_comm thm
+R1989:1998 Coq.Reals.Raxioms <> Rplus_comm thm
+R1989:1998 Coq.Reals.Raxioms <> Rplus_comm thm
+R2009:2017 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+R2009:2017 Coq.Reals.Rtrigo1 <> sin2_cos2 thm
+prf 2085:2098 <> T8_U1_identity
+R2109:2111 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2102:2106 L04_Complex <> phase def
+R2112:2113 L04_Complex <> C1 def
+R2132:2136 L04_Complex <> phase def
+R2139:2140 L04_Complex <> C1 def
+R2162:2166 Coq.Reals.Rtrigo_def <> cos_0 thm
+R2162:2166 Coq.Reals.Rtrigo_def <> cos_0 thm
+R2179:2183 Coq.Reals.Rtrigo_def <> sin_0 thm
+R2179:2183 Coq.Reals.Rtrigo_def <> sin_0 thm
+prf 2218:2225 <> L04_done
+R2229:2232 Coq.Init.Logic <> True ind

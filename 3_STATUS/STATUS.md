@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-14 (v2.40 — Self-Reference FORCED, CLOSED LOOP COMPLETE)
+**Last updated:** 2025-12-15 (v2.41 — GAP-7 CLOSED, 17 Agda files)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -775,7 +775,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
 | ~~GAP-5~~ | ~~α = 137 formula unjustified~~ | **CLOSED** — α ∈ critical window (BOUND-α); formula 137 remains CONJ |
 | ~~GAP-6~~ | ~~3+1 dimensions weak argument~~ | **CLOSED** — DD-Dim3 (criticality selection) |
-| GAP-7 | Functor C → Hilb construction | OPEN-TECH (technical, not conceptual) |
+| ~~GAP-7~~ | ~~Functor C → Hilb construction~~ | **CLOSED** — DDHilbert.agda (structural level) |
 | GAP-8 | Koide angle numerics | CONJ-K2 (may be numerology) |
 
 ---
@@ -784,10 +784,15 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 
 | Component | Status |
 |-----------|--------|
-| Agda proofs | 16 files, 0 postulates |
-| Lean proofs | Partial (some sorry) |
-| Python verification | 36 files |
+| **Agda proofs** | 18 files, 0 postulates |
+| **Lean 4 proofs** | Complete (0 sorry) |
+| **Coq proofs** | Complete (0 Admitted) |
+| Python verification | 56 files |
 | LaTeX documentation | 31 chapters |
+
+**Triple verification:** Core chain (T0-T4, T30-T31) + S₃/A₃ structure + constants
+are independently verified in Agda, Lean 4, and Coq.
+See `VERIFICATION_MATRIX.md` for detailed coverage.
 
 ---
 

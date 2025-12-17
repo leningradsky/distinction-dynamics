@@ -1,0 +1,358 @@
+DIGEST 5cb99d1ccc3fa032a372703b4fc99b0c
+FT5_T8_Criticality
+R147:151 Coq.Reals.Reals <> <> lib
+R169:171 Coq.micromega.Lra <> <> lib
+R189:193 Coq.micromega.Psatz <> <> lib
+rec 265:268 <> Vec2
+proj 282:283 <> v1
+proj 290:291 <> v2
+R287:287 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R295:295 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 312:316 <> norm2
+R323:326 T5_T8_Criticality <> Vec2 rec
+binder 319:319 <> v:4
+R331:331 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R347:349 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R340:342 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R336:337 T5_T8_Criticality <> v1 proj
+R339:339 T5_T8_Criticality <> v:4 var
+R343:344 T5_T8_Criticality <> v1 proj
+R346:346 T5_T8_Criticality <> v:4 var
+R354:356 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R350:351 T5_T8_Criticality <> v2 proj
+R353:353 T5_T8_Criticality <> v:4 var
+R357:358 T5_T8_Criticality <> v2 proj
+R360:360 T5_T8_Criticality <> v:4 var
+def 375:377 <> Phi
+R384:387 T5_T8_Criticality <> Vec2 rec
+binder 380:380 <> v:5
+R392:392 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R397:401 T5_T8_Criticality <> norm2 def
+R403:403 T5_T8_Criticality <> v:5 var
+def 448:455 <> critical
+R464:464 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 458:460 <> phi:6
+R478:480 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R481:483 T5_T8_Criticality <> phi:6 var
+prf 493:504 <> Phi_positive
+binder 515:515 <> v:7
+R540:543 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R527:530 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R522:525 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R518:519 T5_T8_Criticality <> v1 proj
+R521:521 T5_T8_Criticality <> v:7 var
+R535:538 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R531:532 T5_T8_Criticality <> v2 proj
+R534:534 T5_T8_Criticality <> v:7 var
+R545:547 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R548:550 T5_T8_Criticality <> Phi def
+R552:552 T5_T8_Criticality <> v:7 var
+R587:589 T5_T8_Criticality <> Phi def
+R592:596 T5_T8_Criticality <> norm2 def
+R612:614 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R619:621 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R615:616 T5_T8_Criticality <> v1 proj
+R622:623 T5_T8_Criticality <> v1 proj
+R638:648 Coq.Reals.R_sqr <> Rsqr_pos_lt thm
+R612:614 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R619:621 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R615:616 T5_T8_Criticality <> v1 proj
+R622:623 T5_T8_Criticality <> v1 proj
+R638:648 Coq.Reals.R_sqr <> Rsqr_pos_lt thm
+R677:680 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R685:687 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R681:682 T5_T8_Criticality <> v2 proj
+R688:689 T5_T8_Criticality <> v2 proj
+R704:712 Coq.Reals.RIneq <> Rle_0_sqr thm
+R677:680 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R685:687 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R681:682 T5_T8_Criticality <> v2 proj
+R688:689 T5_T8_Criticality <> v2 proj
+R704:712 Coq.Reals.RIneq <> Rle_0_sqr thm
+R738:741 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R746:748 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R742:743 T5_T8_Criticality <> v1 proj
+R749:750 T5_T8_Criticality <> v1 proj
+R765:773 Coq.Reals.RIneq <> Rle_0_sqr thm
+R738:741 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R746:748 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R742:743 T5_T8_Criticality <> v1 proj
+R749:750 T5_T8_Criticality <> v1 proj
+R765:773 Coq.Reals.RIneq <> Rle_0_sqr thm
+R790:792 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R797:799 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R793:794 T5_T8_Criticality <> v2 proj
+R800:801 T5_T8_Criticality <> v2 proj
+R816:826 Coq.Reals.R_sqr <> Rsqr_pos_lt thm
+R790:792 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R797:799 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R793:794 T5_T8_Criticality <> v2 proj
+R800:801 T5_T8_Criticality <> v2 proj
+R816:826 Coq.Reals.R_sqr <> Rsqr_pos_lt thm
+rec 897:900 <> Mat2
+proj 914:916 <> a11
+proj 923:925 <> a12
+proj 932:934 <> a21
+proj 941:943 <> a22
+R920:920 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R929:929 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R938:938 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R947:947 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 964:968 <> apply
+R975:978 T5_T8_Criticality <> Mat2 rec
+binder 971:971 <> M:13
+R986:989 T5_T8_Criticality <> Vec2 rec
+binder 982:982 <> v:14
+R994:997 T5_T8_Criticality <> Vec2 rec
+R1004:1009 T5_T8_Criticality <> mkVec2 constr
+R1024:1026 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1017:1019 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1012:1014 T5_T8_Criticality <> a11 proj
+R1016:1016 T5_T8_Criticality <> M:13 var
+R1020:1021 T5_T8_Criticality <> v1 proj
+R1023:1023 T5_T8_Criticality <> v:14 var
+R1032:1034 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1027:1029 T5_T8_Criticality <> a12 proj
+R1031:1031 T5_T8_Criticality <> M:13 var
+R1035:1036 T5_T8_Criticality <> v2 proj
+R1038:1038 T5_T8_Criticality <> v:14 var
+R1063:1065 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1056:1058 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1051:1053 T5_T8_Criticality <> a21 proj
+R1055:1055 T5_T8_Criticality <> M:13 var
+R1059:1060 T5_T8_Criticality <> v1 proj
+R1062:1062 T5_T8_Criticality <> v:14 var
+R1071:1073 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1066:1068 T5_T8_Criticality <> a22 proj
+R1070:1070 T5_T8_Criticality <> M:13 var
+R1074:1075 T5_T8_Criticality <> v2 proj
+R1077:1077 T5_T8_Criticality <> v:14 var
+def 1093:1094 <> Id
+R1098:1101 T5_T8_Criticality <> Mat2 rec
+R1106:1111 T5_T8_Criticality <> mkMat2 constr
+prf 1129:1136 <> Id_apply
+binder 1147:1147 <> v:15
+R1160:1162 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1150:1154 T5_T8_Criticality <> apply def
+R1156:1157 T5_T8_Criticality <> Id def
+R1159:1159 T5_T8_Criticality <> v:15 var
+R1163:1163 T5_T8_Criticality <> v:15 var
+R1196:1200 T5_T8_Criticality <> apply def
+R1203:1204 T5_T8_Criticality <> Id def
+def 1290:1296 <> unitary
+R1303:1306 T5_T8_Criticality <> Mat2 rec
+binder 1299:1299 <> M:16
+binder 1328:1328 <> v:17
+R1348:1350 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1331:1335 T5_T8_Criticality <> norm2 def
+R1338:1342 T5_T8_Criticality <> apply def
+R1344:1344 T5_T8_Criticality <> M:16 var
+R1346:1346 T5_T8_Criticality <> v:17 var
+R1351:1355 T5_T8_Criticality <> norm2 def
+R1357:1357 T5_T8_Criticality <> v:17 var
+prf 1369:1378 <> Id_unitary
+R1382:1388 T5_T8_Criticality <> unitary def
+R1390:1391 T5_T8_Criticality <> Id def
+R1410:1416 T5_T8_Criticality <> unitary def
+R1437:1444 T5_T8_Criticality <> Id_apply thm
+R1437:1444 T5_T8_Criticality <> Id_apply thm
+R1437:1444 T5_T8_Criticality <> Id_apply thm
+def 1519:1523 <> Scale
+R1530:1530 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1526:1526 <> s:18
+R1535:1538 T5_T8_Criticality <> Mat2 rec
+R1543:1548 T5_T8_Criticality <> mkMat2 constr
+R1550:1550 T5_T8_Criticality <> s:18 var
+R1556:1556 T5_T8_Criticality <> s:18 var
+prf 1566:1575 <> Scale_norm
+binder 1586:1586 <> s:19
+binder 1588:1588 <> v:20
+R1616:1618 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1591:1595 T5_T8_Criticality <> norm2 def
+R1598:1602 T5_T8_Criticality <> apply def
+R1605:1609 T5_T8_Criticality <> Scale def
+R1611:1611 T5_T8_Criticality <> s:19 var
+R1614:1614 T5_T8_Criticality <> v:20 var
+R1624:1626 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1620:1622 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1619:1619 T5_T8_Criticality <> s:19 var
+R1623:1623 T5_T8_Criticality <> s:19 var
+R1627:1631 T5_T8_Criticality <> norm2 def
+R1633:1633 T5_T8_Criticality <> v:20 var
+R1668:1672 T5_T8_Criticality <> apply def
+R1675:1679 T5_T8_Criticality <> Scale def
+R1682:1686 T5_T8_Criticality <> norm2 def
+prf 1759:1775 <> Scale_unitary_iff
+binder 1786:1786 <> s:21
+R1809:1813 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1792:1798 T5_T8_Criticality <> unitary def
+R1801:1805 T5_T8_Criticality <> Scale def
+R1807:1807 T5_T8_Criticality <> s:21 var
+R1819:1821 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1815:1817 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1814:1814 T5_T8_Criticality <> s:21 var
+R1818:1818 T5_T8_Criticality <> s:21 var
+R1872:1878 T5_T8_Criticality <> unitary def
+R1905:1910 T5_T8_Criticality <> mkVec2 constr
+R1905:1910 T5_T8_Criticality <> mkVec2 constr
+R1931:1940 T5_T8_Criticality <> Scale_norm thm
+R1931:1940 T5_T8_Criticality <> Scale_norm thm
+R1931:1940 T5_T8_Criticality <> Scale_norm thm
+R1959:1963 T5_T8_Criticality <> norm2 def
+R2014:2020 T5_T8_Criticality <> unitary def
+R2045:2054 T5_T8_Criticality <> Scale_norm thm
+R2045:2054 T5_T8_Criticality <> Scale_norm thm
+R2045:2054 T5_T8_Criticality <> Scale_norm thm
+prf 2131:2152 <> nonunitary_Phi_changes
+binder 2163:2163 <> s:22
+binder 2165:2165 <> v:23
+R2180:2183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2175:2178 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2171:2173 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2170:2170 T5_T8_Criticality <> s:22 var
+R2174:2174 T5_T8_Criticality <> s:22 var
+R2206:2211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2193:2196 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2188:2191 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2184:2185 T5_T8_Criticality <> v1 proj
+R2187:2187 T5_T8_Criticality <> v:23 var
+R2201:2204 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2197:2198 T5_T8_Criticality <> v2 proj
+R2200:2200 T5_T8_Criticality <> v:23 var
+R2235:2238 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2212:2214 T5_T8_Criticality <> Phi def
+R2217:2221 T5_T8_Criticality <> apply def
+R2224:2228 T5_T8_Criticality <> Scale def
+R2230:2230 T5_T8_Criticality <> s:22 var
+R2233:2233 T5_T8_Criticality <> v:23 var
+R2239:2241 T5_T8_Criticality <> Phi def
+R2243:2243 T5_T8_Criticality <> v:23 var
+R2282:2284 T5_T8_Criticality <> Phi def
+R2295:2304 T5_T8_Criticality <> Scale_norm thm
+R2295:2304 T5_T8_Criticality <> Scale_norm thm
+R2295:2304 T5_T8_Criticality <> Scale_norm thm
+R2323:2325 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2326:2330 T5_T8_Criticality <> norm2 def
+R2345:2356 T5_T8_Criticality <> Phi_positive thm
+R2323:2325 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2326:2330 T5_T8_Criticality <> norm2 def
+R2345:2356 T5_T8_Criticality <> Phi_positive thm
+R2410:2412 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2400:2402 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2396:2398 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2403:2407 T5_T8_Criticality <> norm2 def
+R2414:2416 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2417:2421 T5_T8_Criticality <> norm2 def
+R2410:2412 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2400:2402 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2396:2398 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2403:2407 T5_T8_Criticality <> norm2 def
+R2414:2416 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2417:2421 T5_T8_Criticality <> norm2 def
+R2442:2455 Coq.Reals.RIneq <> Rmult_eq_reg_r thm
+R2442:2455 Coq.Reals.RIneq <> Rmult_eq_reg_r thm
+prf 2557:2569 <> Phi_explosion
+binder 2580:2580 <> s:24
+binder 2582:2582 <> v:25
+R2592:2595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2588:2590 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2587:2587 T5_T8_Criticality <> s:24 var
+R2618:2623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2605:2608 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2600:2603 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2596:2597 T5_T8_Criticality <> v1 proj
+R2599:2599 T5_T8_Criticality <> v:25 var
+R2613:2616 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2609:2610 T5_T8_Criticality <> v2 proj
+R2612:2612 T5_T8_Criticality <> v:25 var
+R2647:2649 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2624:2626 T5_T8_Criticality <> Phi def
+R2629:2633 T5_T8_Criticality <> apply def
+R2636:2640 T5_T8_Criticality <> Scale def
+R2642:2642 T5_T8_Criticality <> s:24 var
+R2645:2645 T5_T8_Criticality <> v:25 var
+R2650:2652 T5_T8_Criticality <> Phi def
+R2654:2654 T5_T8_Criticality <> v:25 var
+R2693:2695 T5_T8_Criticality <> Phi def
+R2706:2715 T5_T8_Criticality <> Scale_norm thm
+R2706:2715 T5_T8_Criticality <> Scale_norm thm
+R2706:2715 T5_T8_Criticality <> Scale_norm thm
+R2734:2736 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2737:2741 T5_T8_Criticality <> norm2 def
+R2756:2767 T5_T8_Criticality <> Phi_positive thm
+R2734:2736 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2737:2741 T5_T8_Criticality <> norm2 def
+R2756:2767 T5_T8_Criticality <> Phi_positive thm
+R2804:2806 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2800:2802 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2804:2806 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2800:2802 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+prf 2872:2883 <> Phi_collapse
+binder 2894:2894 <> s:26
+binder 2896:2896 <> v:27
+R2910:2913 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2902:2904 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R2906:2908 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R2905:2905 T5_T8_Criticality <> s:26 var
+R2905:2905 T5_T8_Criticality <> s:26 var
+R2936:2941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2923:2926 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2918:2921 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2914:2915 T5_T8_Criticality <> v1 proj
+R2917:2917 T5_T8_Criticality <> v:27 var
+R2931:2934 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2927:2928 T5_T8_Criticality <> v2 proj
+R2930:2930 T5_T8_Criticality <> v:27 var
+R2965:2967 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2942:2944 T5_T8_Criticality <> Phi def
+R2947:2951 T5_T8_Criticality <> apply def
+R2954:2958 T5_T8_Criticality <> Scale def
+R2960:2960 T5_T8_Criticality <> s:26 var
+R2963:2963 T5_T8_Criticality <> v:27 var
+R2968:2970 T5_T8_Criticality <> Phi def
+R2972:2972 T5_T8_Criticality <> v:27 var
+R3018:3020 T5_T8_Criticality <> Phi def
+R3031:3040 T5_T8_Criticality <> Scale_norm thm
+R3031:3040 T5_T8_Criticality <> Scale_norm thm
+R3031:3040 T5_T8_Criticality <> Scale_norm thm
+R3059:3061 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3062:3066 T5_T8_Criticality <> norm2 def
+R3081:3092 T5_T8_Criticality <> Phi_positive thm
+R3059:3061 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3062:3066 T5_T8_Criticality <> norm2 def
+R3081:3092 T5_T8_Criticality <> Phi_positive thm
+R3129:3131 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3125:3127 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3129:3131 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3125:3127 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+prf 3221:3253 <> criticality_unitarity_equivalence
+binder 3266:3266 <> M:28
+R3271:3271 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3380:3430 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3279:3279 <> v:29
+R3304:3321 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3291:3294 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3286:3289 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3282:3283 T5_T8_Criticality <> v1 proj
+R3285:3285 T5_T8_Criticality <> v:29 var
+R3299:3302 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3295:3296 T5_T8_Criticality <> v2 proj
+R3298:3298 T5_T8_Criticality <> v:29 var
+R3341:3344 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3323:3325 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3326:3328 T5_T8_Criticality <> Phi def
+R3331:3335 T5_T8_Criticality <> apply def
+R3337:3337 T5_T8_Criticality <> M:28 var
+R3339:3339 T5_T8_Criticality <> v:29 var
+R3360:3362 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3345:3347 T5_T8_Criticality <> Phi def
+R3350:3354 T5_T8_Criticality <> apply def
+R3356:3356 T5_T8_Criticality <> M:28 var
+R3358:3358 T5_T8_Criticality <> v:29 var
+R3376:3378 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3368:3370 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3363:3365 T5_T8_Criticality <> Phi def
+R3367:3367 T5_T8_Criticality <> v:29 var
+R3371:3373 T5_T8_Criticality <> Phi def
+R3375:3375 T5_T8_Criticality <> v:29 var
+R3431:3434 Coq.Init.Logic <> True ind

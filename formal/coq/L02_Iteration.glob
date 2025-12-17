@@ -1,0 +1,47 @@
+DIGEST a97dfa5f88a7b2e4c04bb310eb8e03e7
+FL02_Iteration
+R57:61 Coq.Arith.Arith <> <> lib
+R63:65 Coq.micromega.Lia <> <> lib
+prf 95:108 <> add_identity_l
+binder 119:119 <> n:1
+R127:129 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R123:125 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R126:126 L02_Iteration <> n:1 var
+R130:130 L02_Iteration <> n:1 var
+prf 167:180 <> add_identity_r
+binder 191:191 <> n:2
+R199:201 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R195:197 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R194:194 L02_Iteration <> n:2 var
+R202:202 L02_Iteration <> n:2 var
+prf 231:239 <> add_assoc
+binder 250:250 <> m:3
+binder 252:252 <> n:4
+binder 254:254 <> p:5
+R268:270 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R257:257 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R263:266 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R259:261 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R258:258 L02_Iteration <> m:3 var
+R262:262 L02_Iteration <> n:4 var
+R267:267 L02_Iteration <> p:5 var
+R272:275 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R281:281 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R271:271 L02_Iteration <> m:3 var
+R277:279 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R276:276 L02_Iteration <> n:4 var
+R280:280 L02_Iteration <> p:5 var
+prf 349:350 <> T4
+binder 361:361 <> n:6
+R367:370 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R364:364 Coq.Init.Datatypes <> S constr
+R366:366 L02_Iteration <> n:6 var
+R371:371 L02_Iteration <> n:6 var
+prf 482:487 <> no_max
+binder 498:498 <> n:7
+R502:504 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R501:501 L02_Iteration <> n:7 var
+R505:505 Coq.Init.Datatypes <> S constr
+R507:507 L02_Iteration <> n:7 var
+prf 547:554 <> L02_done
+R558:561 Coq.Init.Logic <> True ind
