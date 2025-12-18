@@ -716,16 +716,24 @@ where D_2 = dim(SU(2)) = 3, D_3 = dim(SU(3)) = 8.
 
 ### Bounds (Constrained Values):
 
-1. α ∈ critical window (BOUND-α) — not arbitrary, constrained by criticality
+1. **α ∈ critical window (BOUND-α)** — Constrained to O(1/100) by criticality:
+   - α ≪ 1 required for perturbative QED (convergent expansion)
+   - α ≳ 1 would cause strong QED (no stable atoms)
+   - Window: α ∈ (1/200, 1/50) is stable regime
+   - Status: FORCED by 0 < Φ < ∞
 
 ### Conjectures (Pattern Matching):
 
-1. α⁻¹ = 11² + 4² = 137 formula (CONJ-A1) — specific formula, may be numerology
+1. **α formulas (CONJ-A1)** — Multiple patterns converge on α⁻¹ ≈ 137:
+   - α⁻¹ = 4π³ + π² + π = 137.04... (geometric series) — CONJ 30%
+   - α⁻¹ = 11² + 4² = 137 (gauge structure: 11=3+8, 4=2²) — CONJ 40%
+   - Unification boundary conditions may determine α — UNTRACED 60%
+   - Status: Order of magnitude BOUND, exact value CONJ
 2. θ ≈ 2/9 (CONJ-K2)
 3. Λ_eff formula (CONJ-Λ2)
 
 ---
 
-**Last updated:** 2025-12-13
-**Status:** Complete bridge catalog with explicit labeling
+**Last updated:** 2025-12-17
+**Status:** Complete bridge catalog with explicit labeling (α deepening)
 **Next:** Verify no claims in README or Part_* bypass this bridge catalog

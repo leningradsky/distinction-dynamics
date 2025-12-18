@@ -1,6 +1,6 @@
 # STATUS.md — Master Truth File
 
-**Last updated:** 2025-12-15 (v2.41 — GAP-7 CLOSED, 17 Agda files)
+**Last updated:** 2025-12-17 (v2.42 — α-BOUND deepening, 18 Agda files)
 
 This file is the authoritative source for the logical status of all claims in the repository.
 README.md must not contradict this file.
@@ -802,7 +802,7 @@ The electromagnetic coupling α is not arbitrary but constrained to a critical w
 | ~~GAP-2~~ | ~~Continuum not derived~~ | **CLOSED** — Chain-9,10,11 |
 | ~~GAP-3~~ | ~~Time (ℕ → ℝ) not derived~~ | **CLOSED** — DD-Time |
 | ~~GAP-4~~ | ~~Chain-7 interpretation~~ | **CLOSED** — irreversibility from DEF-AX |
-| ~~GAP-5~~ | ~~α = 137 formula unjustified~~ | **CLOSED** — α ∈ critical window (BOUND-α); formula 137 remains CONJ |
+| ~~GAP-5~~ | ~~α = 137 formula unjustified~~ | **CLOSED** — α ∈ critical window O(1/100) BOUND; formulas (4π³+π²+π, 11²+4²) remain CONJ |
 | ~~GAP-6~~ | ~~3+1 dimensions weak argument~~ | **CLOSED** — DD-Dim3 (criticality selection) |
 | ~~GAP-7~~ | ~~Functor C → Hilb construction~~ | **CLOSED** — DDHilbert.agda (structural level) |
 | GAP-8 | Koide angle numerics | CONJ-K2 (may be numerology) |

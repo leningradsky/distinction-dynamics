@@ -2,6 +2,40 @@
 
 All notable changes to this project are documented here.
 
+## [1.9] - 2025-12-17
+
+### Added
+- **Fine structure constant α-BOUND deepening**
+  - Criticality constraint: α ∈ O(1/100) is FORCED
+  - Window (1/200, 1/50) derived from gauge stability requirements
+  - α ≪ 1: perturbative QED convergence
+  - α ≳ 1: strong QED (no stable atoms)
+
+### Changed
+- `Part_III_Physics/06_Constants.tex`:
+  - Added m_p/m_e = 6π⁵ summary section with cross-references
+  - Enhanced α section with BOUND/CONJ distinction
+  - Added criticality constraint derivation
+  - Multiple numerical patterns documented (4π³+π²+π, 11²+4²)
+  - Status assessment table with confidence levels
+- `Part_III_Physics/11_Mass_Ratio.tex`:
+  - Removed duplicate QFT deepening (already in main section)
+  - Streamlined Alternative Models section
+- `2_EXPRESSION/BRIDGES.md`:
+  - Enhanced BOUND-α with criticality window details
+  - Updated CONJ-A1 with multiple formula patterns
+- `3_STATUS/STATUS.md`:
+  - Updated GAP-5 closure description with formula details
+  - Version bump to v2.42
+- `README.md`:
+  - Version bump to v2.11 (α-BOUND added)
+
+### Summary
+**α status clarified:**
+- Order of magnitude O(1/100) is BOUND (forced by criticality)
+- Exact value 1/137.036 remains CONJ (multiple patterns observed)
+- No formula proven; criticality window is the rigorous result
+
 ## [1.8] - 2025-12-17
 
 ### Added

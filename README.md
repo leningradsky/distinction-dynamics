@@ -2,7 +2,7 @@
 
 > **Δ = Δ(Δ)** — Distinction distinguishes itself
 
-**Version:** v2.10 (T0-T44 Complete + QFT Deepening + Tripod Argument)
+**Version:** v2.11 (T0-T44 Complete + QFT Deepening + Tripod Argument + α-BOUND)
 
 ---
 
@@ -105,6 +105,7 @@ From this, DD forces:
 | 10 min | [0_CORE/AXIOM.md](0_CORE/AXIOM.md) | The sole primitive |
 | 30 min | [1_DERIVATION/FORCED_SPINE.md](1_DERIVATION/FORCED_SPINE.md) | **Complete derivation T0-T44** |
 | 10 min | [2_EXPRESSION/BRIDGES.md](2_EXPRESSION/BRIDGES.md) | Numerical patterns (CONJ) |
+| 15 min | [DD-WORLDVIEW.md](DD-WORLDVIEW.md) | **Big picture: DD & Millennium Problems** |
 | 5 min | [6_AUDITS/failure_modes.md](6_AUDITS/failure_modes.md) | How to break the theory |
 | 10 min | [3_STATUS/STATUS.md](3_STATUS/STATUS.md) | Master truth file |
 | 20 min | DD-CHEMISTRY.md, DD-BIOLOGY.md | Emergent layers verification |

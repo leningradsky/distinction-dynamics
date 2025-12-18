@@ -1,0 +1,20 @@
+{
+  "final_entropy": -1345.700873563914,
+  "final_order_param": 0.02891938346852458,
+  "final_mean": 0.9973798446006957,
+  "final_std": 0.0005859371437945342,
+  "winding_number": 0,
+  "critical_deviation": 0.37934585585080094,
+  "phi_convergence": 0.3862055117419859,
+  "params": {
+    "size": 128,
+    "steps": 1000,
+    "dt": 0.01,
+    "coupling": 0.12,
+    "self_ref": 0.5,
+    "noise": 0.01,
+    "boundary": "periodic",
+    "triadic_strength": 0.35,
+    "critical_threshold": 0.6180339887498948
+  }
+}
