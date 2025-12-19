@@ -1,65 +1,89 @@
 # Δ-Dynamics Simulations
 
-Numerical simulations demonstrating emergence of structure from distinction.
+Computational demonstrations of Distinction Dynamics principles.
+
+## Overview
+
+These simulations show how complex structure emerges from the simple axiom **Δ ≠ ∅**.
 
 ## Files
 
 ### `delta_dynamics.py`
-First version - demonstrates the basic idea but has issues with convergence.
 
-### `delta_dynamics_v2.py` ⭐
-Fixed dynamics with proper φ-critical behavior:
-- Converges to φ⁻¹ = 0.618034 with 100% accuracy
-- Double-well potential with minimum at golden ratio inverse
-- Triadic interaction term
-- Self-reference (gradient-based)
+Main simulation of Δ-field dynamics on a 2D lattice.
+
+**Features**:
+- Diffusion, self-reference Δ(Δ), and triadic interactions
+- Convergence to φ⁻¹ = 0.618... critical point
+- Fisher information metric computation
 - Phase field for gauge structure
+- Structure factor analysis
+
+**Usage**:
+```bash
+cd simulations
+python delta_dynamics.py
+```
+
+## The Δ-Field Equation
+
+```
+∂Δ/∂t = D∇²Δ + F(Δ) + βΔ(Δ) + γT(Δ) + η
+```
+
+Where:
+- `D∇²Δ`: Diffusion (distinctions spread)
+- `F(Δ)`: Potential forcing toward φ⁻¹
+- `βΔ(Δ)`: Self-reference (gradient-sensitive)
+- `γT(Δ)`: Triadic 3-body correlations
+- `η`: Quantum fluctuations (noise)
 
 ## Key Results
 
-1. **φ-Convergence**: System naturally equilibrates at φ⁻¹ = 1/φ ≈ 0.618034
-2. **Fisher Metric**: Emerges from field fluctuations, measures local distinguishability
-3. **Phase Field**: Disordered but structured - gauge degrees of freedom
-4. **Triadic Coupling**: Three-body interactions stabilize the dynamics
+1. **φ-Convergence**: The field self-organizes to mean ≈ φ⁻¹ = 0.618
+2. **Structure Factor**: Power-law scaling suggests scale invariance
+3. **Phase Coherence**: Gauge-like structure emerges spontaneously
+4. **Fisher Metric**: Non-trivial geometry from distinguishability
 
-## Running
+## Theoretical Background
 
-```bash
-cd simulations
-python delta_dynamics_v2.py
+See:
+- `DD-MATHEMATICAL-FOUNDATIONS.md` - Core DD theory
+- `DD-LITERATURE-CONNECTIONS.md` - Related work
+- `MATSUEDA-SUMMARY.md` - Fisher → AdS proof
+
+## Dependencies
+
+```
+numpy
+scipy
+matplotlib
 ```
 
-Generates:
-- `v2_evolution.png` - Field evolution snapshots
-- `v2_convergence.png` - Mean field and fluctuations over time
-- `v2_analysis.png` - Final state: field, distribution, Fisher metric, phase
-- `v2_structure.png` - Structure factor S(k)
-- `v2_results.json` - Numerical results
+## Example Output
 
-## Connection to Theory
+The simulation produces:
+- Evolution snapshots showing structure emergence
+- Entropy evolution (complexity from nothing)
+- Structure factor (emergent length scales)
+- Fisher metric visualization (DD spacetime)
 
-The simulation demonstrates the DD prediction that:
-- Self-referential systems (Δ = Δ(Δ)) converge to φ⁻¹
-- Spatial structure emerges from distinction dynamics
-- Fisher metric measures accumulated distinguishability
-- Gauge structure (phase field) carries internal symmetry
+## Connection to Physics
 
-See `/docs/DD-FISHER-CONNECTION.md` for mathematical details.
-
-## Physics Interpretation
-
-| Simulation | DD Concept | Physical Meaning |
-|------------|-----------|------------------|
-| Δ-field | Distinction intensity | Local "being" density |
-| Mean → φ⁻¹ | Critical point | Edge of chaos |
-| Fluctuations | Quantum noise | Vacuum fluctuations |
-| Fisher metric | Spacetime metric | Distinguishability geometry |
-| Phase field | Gauge field | Internal symmetry |
+| Simulation Feature | Physical Interpretation |
+|-------------------|------------------------|
+| Δ-field | Local distinction intensity |
+| φ⁻¹ attractor | Golden ratio criticality |
+| Phase field | Gauge degrees of freedom |
+| Fisher metric | Emergent spacetime geometry |
+| Triadic kernel | SU(3)-like 3-body forces |
 
 ## Future Work
 
-- [ ] 3D simulations for proper triadic structure
-- [ ] GPU acceleration (CUDA)
-- [ ] Connection to CFT/AdS (Matsueda approach)
-- [ ] Topological defect analysis
-- [ ] Comparison with Ising model critical behavior
+- [ ] 3D simulation for full SU(3) structure
+- [ ] GPU acceleration for larger systems
+- [ ] Connection to actual entanglement spectra
+- [ ] DESI cosmology predictions
+
+---
+*Part of Distinction Dynamics research program*

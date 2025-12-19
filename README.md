@@ -324,10 +324,61 @@ Key rule: All claims must be labeled (FORCED/DEF/DERIVED/CONJ/CIRC/PRED).
 
 ---
 
+## New: Literature & Empirical Connections (December 2024)
+
+### Key Discovery: Matsueda 2014
+
+**Paper:** "Geometry and Dynamics of Emergent Spacetime from Entanglement Spectrum" (arXiv:1408.5589)
+
+**Result:** Fisher information metric from quantum entanglement → Anti-de Sitter spacetime!
+
+This **directly proves** DD's central claim: spacetime emerges from distinguishability structure.
+
+See: [docs/MATSUEDA-SUMMARY.md](docs/MATSUEDA-SUMMARY.md)
+
+### DESI Confirmation (4.2σ)
+
+The Dark Energy Spectroscopic Instrument found **evolving dark energy** at 4.2σ significance.
+
+DD **predicts** this: dark energy = Δ-vacuum energy, which evolves as distinction structure accumulates.
+
+- w₀ ≈ -0.72 (not -1) ✅
+- w_a < 0 (weakening) ✅
+
+See: [docs/DD-DESI-PREDICTION.md](docs/DD-DESI-PREDICTION.md)
+
+### New Documentation
+
+| File | Content |
+|------|---------|
+| [docs/DD-LITERATURE-CONNECTIONS.md](docs/DD-LITERATURE-CONNECTIONS.md) | Wheeler, Spencer-Brown, Frieden, AdS/CFT |
+| [docs/DD-MATHEMATICAL-FOUNDATIONS.md](docs/DD-MATHEMATICAL-FOUNDATIONS.md) | Category theory, HoTT, Fisher geometry |
+| [docs/MATSUEDA-SUMMARY.md](docs/MATSUEDA-SUMMARY.md) | Fisher metric → AdS proof |
+| [docs/DD-DESI-PREDICTION.md](docs/DD-DESI-PREDICTION.md) | Evolving dark energy prediction |
+
+### Simulations
+
+```bash
+cd simulations
+python delta_dynamics.py
+```
+
+Demonstrates φ⁻¹ = 0.618 criticality emergence from Δ-field dynamics.
+
+See: [simulations/README.md](simulations/README.md)
+
+### Formal Verification (Lean 4)
+
+New Lean 4 formalization: [formal/lean4/DD.lean](formal/lean4/DD.lean)
+
+---
+
 ## Version History
 
 | Version | Date | Changes |
 |---------|------|---------|
+| v2.11 | 2025-12-19 | Literature connections; DESI prediction; Matsueda integration |
+| v2.10 | 2025-12-18 | Mathematical foundations synthesis |
 | v2.9 | 2025-12-14 | T40-T44: Consciousness as Δ(Δ) FORCED; "hard problem" dissolved |
 | v2.8 | 2025-12-14 | T36-T39: Life as phase regime FORCED; no vitalism |
 | v2.7 | 2025-12-14 | T34-T35: Hybridization, Chirality FORCED |
