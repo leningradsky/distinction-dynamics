@@ -1,15 +1,7 @@
-Add triadic topology, conservation law D+A=R, base modules
+Add helper modules: Symmetry, Resource, Spiral, Physics, Reflexive
 
-New modules:
-- Base.agda: fundamental types
-- Axiom.agda: single axiom Delta!=Empty
-- Triad.agda: triadic structure, accumulation, spiral
-- Zones.agda: Interior/Boundary/Exterior topology
-- Levels.agda: L0-L5 hierarchy, dim+asym=const
-- Conservation.agda: proven D+A=R law
-- Topology.agda: P-violation from boundary direction
-- Dimensions.agda: processing dimensions
-- Unity.agda: connecting all components
-
-Key insight: Dimension + Asymmetry = Constant
-Same principle at all scales: C+O=R
+- Symmetry.agda: S3 group, permutations, A3 subgroup
+- Resource.agda: C+O=R distribution principle
+- Spiral.agda: A->AB->ABC->A' dynamics, 3+1 from spiral
+- Physics.agda: SM interpretation, gauge groups as zones
+- Reflexive.agda: DD self-application, fixed point at L5

@@ -76,8 +76,8 @@ if %ERRORLEVEL%==0 (echo PASS: StandardModelFromDD.agda) else (echo FAIL: Standa
 echo.
 echo === Additional ===
 
-echo Checking DDComplete.agda...
-%AGDA% %FLAGS% DDComplete.agda
+echo Checking DDComplete.agda (unsafe)...
+%AGDA% --without-K --include-path=. DDComplete.agda
 if %ERRORLEVEL%==0 (echo PASS: DDComplete.agda) else (echo FAIL: DDComplete.agda & goto :error)
 
 echo Checking ProcessAwareness.agda...

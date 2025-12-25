@@ -36,8 +36,8 @@ EqCode EMPTY EMPTY = UNIT
 EqCode UNIV UNIV = UNIT
 EqCode _ _ = EMPTY
 
- DistinctCode : U -> U -> U
- DistinctCode a b = PI (EqCode a b) (\_ -> EMPTY)
+DistinctCode : U -> U -> U
+DistinctCode a b = PI (EqCode a b) (\_ -> EMPTY)
 
 data Three : Set where A B C : Three
 

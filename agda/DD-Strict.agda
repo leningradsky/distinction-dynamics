@@ -209,6 +209,9 @@ observer C A = B
 observer A C = B  -- симметрия
 observer B A = C
 observer C B = A
+observer A A = A  -- диагональ (вырожденный случай)
+observer B B = B
+observer C C = C
 
 -- Теорема: для любой пары в триаде есть наблюдатель
 triad-closed : (x y : Triad) → ¬ (x ≡ y) → Triad
