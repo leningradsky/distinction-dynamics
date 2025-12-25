@@ -1,0 +1,15 @@
+Add triadic topology, conservation law D+A=R, base modules
+
+New modules:
+- Base.agda: fundamental types
+- Axiom.agda: single axiom Delta!=Empty
+- Triad.agda: triadic structure, accumulation, spiral
+- Zones.agda: Interior/Boundary/Exterior topology
+- Levels.agda: L0-L5 hierarchy, dim+asym=const
+- Conservation.agda: proven D+A=R law
+- Topology.agda: P-violation from boundary direction
+- Dimensions.agda: processing dimensions
+- Unity.agda: connecting all components
+
+Key insight: Dimension + Asymmetry = Constant
+Same principle at all scales: C+O=R
