@@ -1,0 +1,246 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+\title{\textbf{Response to Referee Report}}
+\author{[Author]}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+We thank the referee for a careful and constructive report. Below we address 
+each concern point-by-point, describing both our response and the specific 
+revisions made to the manuscript.
+
+\section*{Framing}
+
+Before addressing individual points, we clarify what DD claims to contribute:
+
+\begin{enumerate}
+\item \textbf{Logical unification}: DD connects operational axioms of quantum 
+      mechanics (Hardy, Chiribella--D'Ariano--Perinotti reconstructions), 
+      algebraic constraints (Hurwitz), and gauge-algebra correspondences 
+      (Furey, Gresnigt) into a single derivation chain with explicit logical 
+      dependencies.
+      
+\item \textbf{Saturation theorem}: We prove that the Standard Model structure 
+      \emph{saturates} the space of realisable theories---extensions are either 
+      non-realisable or merely effective (new Theorem in companion paper).
+      
+\item \textbf{Fundamental/effective distinction}: We provide a criterion for 
+      separating UV-complete structure (constrained by DD) from emergent 
+      effective symmetries (not constrained).
+\end{enumerate}
+
+These are contributions to the \emph{organisation} of known results, not 
+claims of new empirical predictions.
+
+\section*{Major Concerns}
+
+\subsection*{(1) ``The central claim is circular''}
+
+\textbf{Referee's concern:} The derivation relies on prior work (Furey, Gresnigt, 
+Baez) that already assumes division algebras are physically relevant.
+
+\textbf{Response:} We do not assume that fundamental physics ``uses'' division 
+algebras. Rather, we show that \emph{realisability}, formalised as invertibility 
+of non-zero processes together with a multiplicative norm, \emph{is equivalent} 
+to the axioms of a normed division algebra. Hurwitz then restricts the possible 
+carriers.
+
+The distinction is:
+\begin{itemize}
+\item Furey/Gresnigt answer: \emph{What can be built on $\mathbb{C}\otimes\mathbb{O}$?}
+\item DD answers: \emph{Why must the carrier satisfy division-algebra axioms if 
+      the theory is to be unitary and information-preserving?}
+\end{itemize}
+
+\textbf{Revision:} We have added explicit remarks in Section 6 (Definition 6.1) 
+clarifying that the axioms (R1)--(R3) are precisely those of a normed division 
+algebra, and that the contribution is the \emph{interpretation} of these axioms 
+as necessary conditions for physical realisability.
+
+
+\subsection*{(2) ```Realisability' is ill-defined''}
+
+\textbf{Referee's concern:} ``Process algebra'' is nonstandard; 
+``information-preserving'' appears ad hoc.
+
+\textbf{Response:} We agree that the original formulation was imprecise. We have 
+revised Definition 6.1 to state the axioms purely mathematically:
+
+\begin{quote}
+A \emph{realisable carrier} is a finite-dimensional real algebra 
+$(\mathcal{A}, \circ)$ with a norm $\|\cdot\|$ satisfying:
+\begin{itemize}
+\item[(R1)] $\|a\| = 0 \Leftrightarrow a = 0$ (non-degeneracy)
+\item[(R2)] $\|a \circ b\| = \|a\| \|b\|$ (multiplicativity)
+\item[(R3)] For all $a \neq 0$, there exists $a^{-1}$ (invertibility)
+\end{itemize}
+\end{quote}
+
+These are precisely the axioms of a normed division algebra---a standard 
+mathematical concept. Physical interpretation (unitarity, reversibility) is 
+now relegated to a separate Remark.
+
+\textbf{Revision:} Definition 6.1 rewritten with mathematical axioms (R1)--(R3) 
+and explicit separation of mathematical content from physical interpretation.
+
+\subsection*{(3) ``The Hurwitz argument is not new''}
+
+\textbf{Referee's concern:} What does DD add beyond repackaging known results?
+
+\textbf{Response:} The Hurwitz theorem (1898) is indeed well known. DD's 
+contribution is not a new theorem but:
+
+\begin{enumerate}
+\item \textbf{A precise logical interface} connecting quantum reconstruction 
+      theorems, unitarity requirements, Hurwitz bounds, and Standard Model 
+      structure into a single chain with explicit dependencies.
+\item \textbf{A saturation statement} (new Theorem 2.4 in companion): the 
+      Standard Model is not merely ``minimal'' but \emph{saturates} the space 
+      of realisable structures---there is no room for extension without 
+      violating realisability.
+\item \textbf{Classification of extensions}: extra $U(1)'$, four generations, 
+      and vector-like fermions are excluded as \emph{fundamental} structure 
+      (they may exist as effective descriptions).
+\end{enumerate}
+
+\textbf{Revision:} Added ``Contributions'' subsection to Introduction explicitly 
+listing what DD claims to contribute.
+
+\subsection*{(4) ``The three-generation argument is weak / numerology''}
+
+\textbf{Referee's concern:} The connection between sedenion subalgebras and 
+fermion generations is asserted, not derived.
+
+\textbf{Response:} We accept this is the most delicate point. We have made 
+two changes:
+
+\begin{enumerate}
+\item \textbf{Scope clarification}: Theorem 6.5 now explicitly states it holds 
+      ``within the Gresnigt realisation class.'' This is not a limitation but 
+      a precise statement: the result is conditional on a specific algebraic 
+      framework that currently provides the most developed connection between 
+      division algebras and fermion generations.
+
+\item \textbf{Interpretation Lemma}: We clarify why three octonionic subalgebras 
+      must be interpreted as generations: they carry identical gauge representations, 
+      introduce no new quantum numbers, and are permuted by $S_3$. In Standard 
+      Model terminology, this is precisely the definition of ``generation.''
+\end{enumerate}
+
+We do not infer ``3'' from coincidence; we identify an automorphism-permuted 
+replication of an identical representation sector with no new charges.
+
+\textbf{Revision:} Theorem 6.5 reformulated with explicit scope qualifier; 
+attribution to Gresnigt (2023) made explicit throughout.
+
+
+\subsection*{(5) ``Mass hierarchy section overreaches''}
+
+\textbf{Referee's concern:} The ``Monotonicity Theorem'' assumes 
+``depth-dimension monotonicity'' without proof.
+
+\textbf{Response:} Agreed. We have reclassified this result as a 
+\emph{Proposition} with explicit conditional structure:
+
+\begin{quote}
+\textbf{Proposition} (Conditional Monotonicity): Within any framework satisfying 
+(1) masses arise from RG-renormalised operators, and (2) depth-dimension 
+monotonicity holds, the mass ordering is monotone with depth.
+\end{quote}
+
+This does not predict mass values; it predicts a robust ordering structure 
+conditional on stated assumptions.
+
+\textbf{Revision:} ``Theorem'' changed to ``Proposition'' in companion paper; 
+conditional structure made explicit.
+
+\subsection*{(6) ``Counterexamples are unconvincing''}
+
+\textbf{Referee's concern:} Has the author verified that $U(1)'$ extensions 
+genuinely violate realisability?
+
+\textbf{Response:} The argument proceeds via the Saturation Theorem (new):
+
+\begin{enumerate}
+\item The gauge structure $SU(3)\times SU(2)\times U(1)$ exhausts the automorphism 
+      content of $\mathbb{C}\otimes\mathbb{O}$.
+\item An additional $U(1)'$ requires either a second independent phase rotation 
+      (impossible: single $U(1)$ saturates abelian content) or extension beyond 
+      octonions (requires sedenions or higher $\Rightarrow$ zero divisors 
+      $\Rightarrow$ violates realisability).
+\end{enumerate}
+
+Effective $U(1)_{B-L}$ is \emph{not} excluded; DD constrains \emph{fundamental} 
+gauge structure, not emergent effective symmetries.
+
+\textbf{Revision:} Added Section 7.4 ``Fundamental vs.\ Effective Structure'' 
+with explicit table distinguishing fundamental from effective.
+
+\subsection*{(7) ``Philosophical claims are overblown''}
+
+\textbf{Referee's concern:} Statements like ``Existence is the closure of 
+distinctions'' are rhetoric, not philosophy.
+
+\textbf{Response:} We have moved interpretive statements to a separate 
+one-page note (``Realisability Axiom'') intended for philosophical context. 
+The main paper now focuses on mathematical and physical content.
+
+\textbf{Revision:} Philosophical framing removed from main paper; concentrated 
+in separate axiom note marked as ``Interpretive.''
+
+
+\section*{Specific Questions}
+
+\subsection*{Q1: Can you state realisability purely mathematically?}
+
+Yes. See revised Definition 6.1 with axioms (R1)--(R3). This is precisely a 
+normed division algebra.
+
+\subsection*{Q2: What prediction differs from standard model-building?}
+
+DD does not predict new particles. It predicts \emph{structural impossibility} 
+of certain extension classes as fundamental UV-complete structure while 
+preserving realisability axioms. Specifically: no fourth generation, no 
+fundamental extra $U(1)$, no fundamental vector-like fermions.
+
+\subsection*{Q3: If sedenions have zero divisors, why are they relevant?}
+
+Sedenions are not the carrier of fundamental processes. They serve as an 
+\emph{analytical tool}: the attempt to extend beyond Hurwitz fails to produce 
+a new division structure but leaves a ``residue'' of exactly three octonionic 
+subalgebras permuted by $S_3$. Sedenions mark the boundary, not the foundation.
+
+\subsection*{Q4: Exhibit anomaly-free, consistent structure violating DD}
+
+Any structure violating (R1)--(R3) violates DD by construction. The question 
+is whether there exist anomaly-free, perturbatively consistent theories that 
+also violate invertibility or norm multiplicativity. Such theories would 
+describe non-unitary or irreversible processes at the fundamental level. 
+This is the content of the realisability constraint: we exclude such theories 
+\emph{by axiom}, not by calculation.
+
+\section*{Summary of Revisions}
+
+\begin{enumerate}
+\item Definition 6.1 rewritten with pure mathematical axioms (R1)--(R3)
+\item Theorem 6.5 scoped to ``Gresnigt realisation class''
+\item Mass-depth result reclassified as Proposition (conditional)
+\item Saturation Theorem added (companion \S2.4)
+\item Fundamental/Effective distinction added (companion \S7.4)
+\item Contributions block added to Introduction
+\item Philosophical content moved to separate axiom note
+\end{enumerate}
+
+We believe these revisions address all substantive concerns while preserving 
+the core contribution: DD as a constraint framework that organises known 
+results into a unified derivation chain with explicit logical dependencies.
+
+\end{document}

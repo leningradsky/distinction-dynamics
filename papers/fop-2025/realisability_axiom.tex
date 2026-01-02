@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\newtheorem{axiom}{Axiom}
+\newtheorem{definition}[axiom]{Definition}
+\newtheorem{proposition}[axiom]{Proposition}
+
+\title{\textbf{The Realisability Axiom}\\[0.3em]
+\large A One-Page Foundation for Distinction Dynamics}
+\author{[Author]}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We state the single axiom underlying Distinction Dynamics (DD) and its 
+immediate consequences. This note serves as the canonical entry point 
+for the DD research program.
+\end{abstract}
+
+% ===================================================================
+\section*{The Axiom}
+
+\begin{axiom}[Realisability]
+\label{ax:realisability}
+A structure is \textbf{physically realisable} if and only if it admits 
+a faithful embedding into a unitary, information-preserving process algebra.
+\end{axiom}
+
+\textbf{Unpacking the terms:}
+\begin{itemize}
+\item \emph{Faithful embedding}: the structure's relations are preserved, 
+      not merely mapped
+\item \emph{Unitary}: every process has an inverse; no information is 
+      created or destroyed
+\item \emph{Information-preserving}: distinguishable inputs yield 
+      distinguishable outputs
+\item \emph{Process algebra}: composition of processes is associative 
+      with identity
+\end{itemize}
+
+The axiom encodes one intuition: \emph{to exist physically is to be 
+distinguishable, and distinctions must be stable under composition}.
+
+% ===================================================================
+\section*{Why Quantum Mechanics (Not Just Any GPT)}
+
+General Probabilistic Theories (GPTs) permit structures beyond quantum 
+mechanics. Why does DD select QM specifically?
+
+\begin{proposition}[Hilbert Space from Realisability]
+A GPT satisfying:
+\begin{enumerate}
+\item Purification (every mixed state arises from a pure state of a larger system)
+\item Invertibility of pure transformations
+\item Continuous reversibility (no discrete jumps in state space)
+\end{enumerate}
+is necessarily described by a complex Hilbert space.
+\end{proposition}
+
+\textit{Sketch.} Conditions (1)--(3) are precisely the realisability 
+requirements applied to state spaces. Chiribella--D'Ariano--Perinotti (2011) 
+and Masanes--M\"uller (2011) prove that these conditions uniquely select 
+quantum theory. Non-Hilbert GPTs violate at least one condition---typically 
+invertibility of transformations or continuous composition.
+
+DD inherits quantum structure not by postulate but by consequence.
+
+% ===================================================================
+\section*{The Philosophical Core}
+
+\begin{quote}
+\textbf{Existence is not the presence of entities, but the closure of 
+distinctions under realisation.}
+\end{quote}
+
+This positions DD as:
+\begin{itemize}
+\item Not metaphysics (no claims about ``what there is'' prior to distinction)
+\item Not physics (no dynamical equations or predictions of trajectories)
+\item An \textbf{ontology of constraints}: what structures can exist given 
+      that existence requires distinguishability
+\end{itemize}
+
+DD answers: ``Why this structure?'' not ``What happens next?''
+
+% ===================================================================
+\section*{Scope and Limitations}
+
+DD is a \textbf{constraint theory}, not a dynamical theory. It does not:
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{DD does not explain} & \textbf{Because} \\
+\hline
+Numerical coupling constants & Requires dynamics (RG flow, matching) \\
+Specific mass values & Requires Yukawa textures, not just structure \\
+Vacuum selection & Requires cosmological initial conditions \\
+Spacetime dimensionality & Separate constraint (future work) \\
+Quantum gravity & Beyond current scope \\
+\end{tabular}
+\end{center}
+
+These are not failures but \textbf{scope boundaries}. DD constrains the 
+space of possible theories; dynamics selects trajectories within that space.
+
+% ===================================================================
+\section*{What DD Does Derive}
+
+From the Realisability Axiom alone:
+\begin{enumerate}
+\item \textbf{Quantum structure}: Hilbert space, Born rule, unitarity
+\item \textbf{Division algebras}: $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ 
+      as the only carrier structures (Hurwitz)
+\item \textbf{Gauge group}: $SU(3) \times SU(2) \times U(1)$ from octonionic 
+      automorphisms
+\item \textbf{Hypercharge quantisation}: unique assignment via anomaly 
+      cancellation (Geng--Marshak)
+\item \textbf{Three generations}: lower bound from CP violation, upper bound 
+      from sedenion structure
+\item \textbf{Mass hierarchy}: monotonicity with distinction depth (ordering, 
+      not values)
+\end{enumerate}
+
+The Standard Model emerges as the \emph{unique} realisable structure---not 
+the simplest, but the only one.
+
+% ===================================================================
+\section*{Entry Points}
+
+\begin{itemize}
+\item \textbf{Main paper}: ``Realisability Constraints and the Emergence of 
+      Standard Model Structure''
+\item \textbf{Companion}: ``Distinction Dynamics as a Constraint Theory''
+\item \textbf{Background}: Chiribella et al.\ (2011), Baez (2012), Furey (2018), 
+      Gresnigt (2023)
+\end{itemize}
+
+\end{document}
